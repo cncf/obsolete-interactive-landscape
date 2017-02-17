@@ -20,7 +20,6 @@ search.addWidget(
 );
 
 
-
 var hitTemplate =
     '<div style="display:inline-block">'+
     '<div class="" style="width:100px; height:100px; background-image: url(\'{{_highlightResult.logo.value}}\');"></div>' +
@@ -28,9 +27,7 @@ var hitTemplate =
     '</div>';
 
 var noResultsTemplate =
-        '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>'
-
-    ;
+     '<div class="text-center">No results found matching <strong>{{query}}</strong>.</div>';
 
 
 search.addWidget(
@@ -69,7 +66,8 @@ search.addWidget(
         attributeName: 'city',
         limit: 10,
         templates: {
-            header: 'City'
+            header: 'City2',
+            body: '<div>Check me out</div>'
         },
         cssClasses: {
             list: 'btn btn-primary',
@@ -136,7 +134,6 @@ search.start();
 
 $(document).ready(function(){
 
-    //TODO: Replace this for event trigger
     updateCurrent(); // This will run on page load
     setInterval(function(){
 
@@ -235,7 +232,14 @@ function updateCurrent() {
     });
 
 
+}
 
 
+//FILTERS WINDOW OPEN - CLOSE
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }

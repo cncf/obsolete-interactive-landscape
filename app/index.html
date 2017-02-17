@@ -2,10 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>F</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-
+	<title>Cloud Native</title>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css" />
 
@@ -13,116 +10,116 @@
 	<link rel="stylesheet" href="css/libs/normalize.css">
 	<link type="text/css" href="css/libs/font-awesome.min.css" rel="stylesheet" />
 	<link type="text/css" href="css/libs/jquery-ui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/temporary/flexboxes.css">
 	<link rel="stylesheet" href="css/temporary/main.css">
+
 	<!--endbuild-->
 
-
-	<!--[if lte IE 9]>
-	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" type="text/css" href="svg/diagram-svg.css" />
 
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a href="#">About</a>
-	<a href="#">Services</a>
-	<a href="#">Clients</a>
-	<a href="#">Contact</a>
-	<ul class="nav nav-list">
-		<li><a href=""><i class="fa fa-home"></i> Home</a></li>
-		<li class="separator"></li>
-	</ul>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About2</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+		<ul class="nav nav-list">
+			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+			<li class="separator"></li>
+		</ul>
 
-	<h5><i class="fa fa-chevron-right"></i> OpenSource</h5>
-	<div id="openSource" class="updateme"></div>
+		<h5><i class="fa fa-chevron-right"></i> OpenSource</h5>
+		<div id="openSource" class="updateme"></div>
 
-</div>
-
-<div class="row">
-	<div class="col-sm-8">
-		<div class="input-group">
-			<input type="text" class="form-control" id="q" />
-			<span class="input-group-btn">
-          <button class="btn btn-default"><i class="fa fa-search"></i></button>
-        </span>
-		</div>
 	</div>
-	<div class="col-sm-4">
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-	</div>
-</div>
 
-<div class="row">
-	<div class="col-sm-5">
-
-		<div id="city" class="updateme"></div>
-
-		<button class="btn btn-md">Infrastructure</button>
-		<button class="btn btn-md">Provisioning</button>
-		<button class="btn btn-md">Runtime</button>
-		<button class="btn btn-md">Orchestration and Management</button>
-		<button class="btn btn-md">Data</button>
-		<button class="btn btn-md">Platforms</button>
-		<button class="btn btn-md">Observability & Analysis</button>
-	</div>
-	<div class="col-sm-7">
-		<div class="current">
-			<div class="current-box">
-				<p id="currentCity" class="city">Q&A</p>
-				<p id="currentDomain" class="domain">general</p>
-			</div>
-
-			<div class="dialog-box">
-				<div class="box-a timeline-center">
-					<i class="fa fa-circle timeline-detail-icon"></i>
-				</div>
-				<div class="box-b"></div>
-
-				<div class="box-c q-title">
-					<div id="stats" class="text-left text-muted"></div>
-				</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="input-group">
+				<input type="text" class="form-control" id="q" />
+				<span class="input-group-btn">
+			  <button class="btn btn-default"><i class="fa fa-search"></i></button>
+			</span>
 			</div>
 		</div>
-
-		<div id="hits">
+		<div class="col-sm-4">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 		</div>
 	</div>
 
-</div>
+	<div class="row">
+		<div class="col-sm-5">
+
+			<div id="city" class="updateme"></div>
+
+			<button class="btn btn-md">Infrastructure</button>
+			<button class="btn btn-md">Provisioning</button>
+			<button class="btn btn-md">Runtime</button>
+			<button class="btn btn-md">Orchestration and Management</button>
+			<button class="btn btn-md">Data</button>
+			<button class="btn btn-md">Platforms</button>
+			<button class="btn btn-md">Observability & Analysis</button>
 
 
+			<div class="main">
 
+				<div id="svgcontainer"></div>
 
+			</div>
 
-<div id="pagination" class="footer"> </div>
+		</div>
+		<div class="col-sm-7">
+			<div class="current">
+				<div class="current-box">
+					<p id="currentCity" class="city">Q&A</p>
+					<p id="currentDomain" class="domain">general</p>
+				</div>
 
+				<div class="dialog-box">
+					<div class="box-a timeline-center">
+						<i class="fa fa-circle timeline-detail-icon"></i>
+					</div>
+					<div class="box-b"></div>
+
+					<div class="box-c q-title">
+						<div id="stats" class="text-left text-muted"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="hits">
+			</div>
+		</div>
+
+	</div>
+
+	<div id="pagination" class="footer"> </div>
+
+	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 
 	<!--build:js js/main.min.js -->
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+	<script src="js/search.js"></script>
+	<script src="svg/diagram-svg.js"></script>
 	<!--endbuild-->
 
-
 	<script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+
+        $(document).ready(function(){
+            $("a[href*='id=portland']").css("background-color", "yellow");}
+            );
+
+
+        $("a[href*='id=ABC']").addClass('active_jquery_menu');
+
 	</script>
-
-
-	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
-
-	<script src="search.js"></script>
 
 
 </body>
