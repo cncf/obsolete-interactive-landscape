@@ -1,7 +1,7 @@
 {
-  "name": "cn",
-  "version": "1.0.0",
-  "description": "cn",
+  "name": "CloudNativeLandscape",
+  "version": "0.1.0",
+  "description": "CNCF",
   "main": "index.js",
   "scripts": {
     "watch-css": "catw -c 'lessc -' 'style/*.less' -o static/bundle.css -v",
@@ -27,6 +27,6 @@
     "run-sequence": "^1.2.2",
     "watchify": "~0.4.1"
   },
-  "author": "cn",
-  "license": ""
+  "author": "cid",
+  "license": "MIT"
 }
