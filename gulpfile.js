@@ -31,7 +31,7 @@ gulp.task('build', function(callback){
 gulp.task('sassimage', function () {
     return gulp.src('_sources/images/**/*.+(jpeg|jpg|png|gif|svg)')
         .pipe(compassImagehelper({
-            targetFile: 'scss/elements.scss', // default target filename is '_sass-image.scss'
+            targetFile: 'scss/main.scss', // default target filename is '_sass-image.scss'
             // template: 'your-sass-image-template.mustache',
             images_path: 'images/',
             css_path: 'css/'

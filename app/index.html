@@ -4,14 +4,20 @@
 	<meta charset="UTF-8">
 	<title>F</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
 
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css" />
 
-	<link rel="stylesheet" type="text/css" href="main.css" />
-	<link rel="stylesheet" type="text/css" href="flexboxes.css" />
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/normalize.css">
+	<link type="text/css" href="css/libs/font-awesome.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/libs/jquery-ui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/temporary/flexboxes.css">
+	<link rel="stylesheet" href="css/temporary/main.css">
+	<!--endbuild-->
+
+
 	<!--[if lte IE 9]>
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	<![endif]-->
@@ -92,14 +98,15 @@
 
 
 
-<div id="pagination" class="footer">
+<div id="pagination" class="footer"> </div>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			crossorigin="anonymous"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--build:js js/main.min.js -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!--endbuild-->
 
 
 	<script>
