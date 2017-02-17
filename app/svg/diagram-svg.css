@@ -349,14 +349,14 @@
   -o-transform: scale(0, 0);
   transform: scale(0, 0); }
 
-#timeline > g:hover [id$=badge], #timeline > g:hover [id$=details] {
+#diagram > g:hover [id$=badge], #diagram > g:hover [id$=details] {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -o-transform: scale(1, 1);
   transform: scale(1, 1); }
 
-#timeline > g:hover [id$=title] {
+#diagram > g:hover [id$=title] {
   -webkit-transform: scale(1) translate(0px, 0px);
   -moz-transform: scale(1) translate(0px, 0px);
   -ms-transform: scale(1) translate(0px, 0px);
