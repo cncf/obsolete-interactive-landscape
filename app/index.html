@@ -25,87 +25,33 @@
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Brand</a>
+			<a class="navbar-brand" href="#">
+				<img class="img-responsive" alt="Brand" src="images/logo.png">
+			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-			<form class="navbar-form navbar-right">
+
+			<div class="navbar-form navbar-right">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
+
+					<div class="input-group">
+						<input type="text" class="form-control" id="q" placeholder="search" />
+						<span class="input-group-btn">
+					  <button class="btn btn-default"><i class="fa fa-search"></i></button>
+					</span>
+
 				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
-			</form>
+			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
+				<li><span style="font-size:30px;cursor:pointer" onclick="openNav()">filters</span></li>
+
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
 
-
-
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">About2</a>
-		<a href="#">Services</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
-		<ul class="nav nav-list">
-			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
-			<li class="separator"></li>
-		</ul>
-
-		<h5><i class="fa fa-chevron-right"></i> OpenSource</h5>
-		<div id="openSource" class="updateme"></div>
-
-	</div>
-
-	<div class="row">
-		<div class="col-xs-8">
-			<div class="input-group">
-				<input type="text" class="form-control" id="q" />
-				<span class="input-group-btn">
-			  <button class="btn btn-default"><i class="fa fa-search"></i></button>
-			</span>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-		</div>
-	</div>
 
 	<div class="row">
 		<div class="col-xs-offset-1 col-xs-4">
@@ -143,6 +89,21 @@
 	</div>
 
 	<div id="pagination" class="footer"> </div>
+
+
+	//FILTERS
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white">&times;</a>
+		<ul class="nav nav-list">
+			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
+			<li class="separator"></li>
+		</ul>
+
+		<h5><i class="fa fa-chevron-right"></i> OpenSource</h5>
+		<div id="openSource" class="updateme"></div>
+
+	</div>
+
 
 	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 

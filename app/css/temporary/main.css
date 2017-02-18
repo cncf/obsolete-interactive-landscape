@@ -180,6 +180,13 @@ section {
     section .thank-you a {
       color: #CE1312; }
 
+.navbar-brand {
+  max-width: 400px; }
+
+.navbar-default {
+  background-color: transparent !important;
+  border-color: transparent !important; }
+
 .ais-search-box--input {
   padding-left: 14px; }
 
@@ -197,16 +204,17 @@ section {
   background: #BBBBBB; }
 
 .sidenav {
-  height: 100%;
+  height: 70%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 100px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px; }
+  padding-top: 60px;
+  border-radius: 20px 0 0 20px; }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
