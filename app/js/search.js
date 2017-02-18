@@ -238,8 +238,10 @@ function updateCurrent() {
 //FILTERS WINDOW OPEN - CLOSE
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidenavTrigger").addClass('hiddenxx');
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("sidenavTrigger").removeClass('hidden');
 }

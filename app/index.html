@@ -36,16 +36,11 @@
 			<div class="navbar-form navbar-right">
 				<div class="form-group">
 
-					<div class="input-group">
-						<input type="text" class="form-control" id="q" placeholder="search" />
-						<span class="input-group-btn">
-					  <button class="btn btn-default"><i class="fa fa-search"></i></button>
-					</span>
 
 				</div>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><span style="font-size:30px;cursor:pointer" onclick="openNav()">filters</span></li>
+				<li></li>
 
 			</ul>
 		</div><!-- /.navbar-collapse -->
@@ -92,8 +87,23 @@
 
 
 	//FILTERS
+
+	<div id="sidenavTrigger" class="sidenav-trigger" style="position:fixed; top:120px; right:0;">
+		<span class="" style="cursor:pointer" onclick="openNav()">
+			<i class="fa fa-chevron-circle-left fa-2x"></i>
+		</span>
+	</div>
+
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white">&times;</a>
+
+		<div class="input-group">
+			<input type="text" class="form-control" id="q" placeholder="search" />
+			<span class="input-group-btn">
+				<button class="btn btn-default"><i class="fa fa-search"></i></button>
+			</span>
+		</div>
+
 		<ul class="nav nav-list">
 			<li><a href=""><i class="fa fa-home"></i> Home</a></li>
 			<li class="separator"></li>
