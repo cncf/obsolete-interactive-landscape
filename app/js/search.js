@@ -22,7 +22,7 @@ search.addWidget(
 
 var hitTemplate =
     '<div style="display:inline-block">'+
-    '<div class="" style="width:100px; height:100px; background-image: url(\'{{_highlightResult.logo.value}}\');"></div>' +
+    '<div class="company" style="background-image: url(\'{{_highlightResult.logo.value}}\');"></div>' +
     '<span class="box-b">{{{_highlightResult.name.value}}}</span>'+
     '</div>';
 
@@ -238,10 +238,20 @@ function updateCurrent() {
 //FILTERS WINDOW OPEN - CLOSE
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("sidenavTrigger").addClass('hiddenxx');
+    document.getElementById("sidenavTrigger").style.width = "0";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("sidenavTrigger").removeClass('hidden');
+    document.getElementById("sidenavTrigger").style.width = "50px";
 }
+
+
+//test to assign links to SVG
+
+$(this).ready(function(){
+    //console.log(domains);
+    $("#floor1").onclick(function(){
+
+    })
+});

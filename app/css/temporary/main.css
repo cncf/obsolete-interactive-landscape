@@ -187,6 +187,15 @@ section {
   background-color: transparent !important;
   border-color: transparent !important; }
 
+.partners {
+  max-width: 500px; }
+
+.company {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #CCCCCC; }
+
 .ais-search-box--input {
   padding-left: 14px; }
 
@@ -241,8 +250,9 @@ section {
     font-size: 18px; } }
 
 .ais-hits--item {
-  background-color: red;
-  display: inline-block; }
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px; }
 
 .q-title {
   font-size: 1.3em;
