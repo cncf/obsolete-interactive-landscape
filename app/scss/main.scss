@@ -1,5 +1,4 @@
-
-@charset 'utf-8';
+@charset "utf-8";
 
 $white: #FFFFFF;
 $media-red: #E91D00;
@@ -16,13 +15,31 @@ $shadow-color: rgba(0, 0, 0, .1);
 
 @font-face {
   font-family: RobotoSlab;
-  src: url("fonts/RobotoSlab-Regular.ttf");
+  src: url(""); //locate font
 }
+
+$background-gradient-color1 : #F5F5F5;
+$background-gradient-color2 : #FFFFFF;
+
+html {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: -webkit-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+  background: -moz-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+  background: -ms-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+  background: -o-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+  background: linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+}
+
 
 body{
   font-family: RobotoSlab;
-  min-height: 100%;
-  background: #FFF;
+  background-color: transparent !important;
+
 }
 
 a {
@@ -87,7 +104,7 @@ header {
 }
 
 section {
-  margin: 0px 0px 10px 50px;
+  margin: 0 0 10px 50px;
   padding: 0;
   display: -webkit-flex;
   display:         flex;
@@ -256,6 +273,7 @@ section {
     }
   }
 
+
   .thank-you {
     font-size: .8em;
     margin-top: 18px;
@@ -379,7 +397,7 @@ section {
   background-color: #FAFAFA;
   padding: 5px 20px 10px 30px;
   margin: 10px 15px 0 10px;
-  border-radius: 50px 50px 0px 50px;
+  border-radius: 50px 50px 0 50px;
   font-size: 0.7em;
   color: #8b93b3;
   line-height: 0.9em;

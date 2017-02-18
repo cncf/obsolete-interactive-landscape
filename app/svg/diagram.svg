@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+	 viewBox="0 0 379.2 548.8" style="enable-background:new 0 0 379.2 548.8;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.6;fill:#FFFFFF;stroke:#3E56A6;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{opacity:0.5;fill:#FFFFFF;stroke:#3E56A6;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -24,87 +24,90 @@
 	.st18{font-size:9.9171px;}
 	.st19{opacity:0.6;}
 	.st20{fill:#FFFFFF;stroke:#1B86C8;stroke-miterlimit:10;}
+	.st21{fill:#FFFFFF;}
 </style>
 <g id="diagram">
 	<g id="floor1">
 		<g id="floor1-badge">
-			<polygon class="st0" points="374.9,641.4 161,641.4 236.7,530.6 450.6,530.6 			"/>
-			<polygon class="st0" points="374.9,621.1 161,621.1 236.7,510.3 450.6,510.3 			"/>
-			<rect x="161" y="621.1" class="st1" width="213.9" height="20.4"/>
-			<polygon class="st1" points="374.9,641.4 374.9,621.1 450.6,510.3 450.6,530.6 			"/>
+			<polygon class="st0" points="265.4,519.6 51.5,519.6 127.3,408.8 341.1,408.8 			"/>
+			<polygon class="st0" points="265.4,499.2 51.5,499.2 127.3,388.5 341.1,388.5 			"/>
+			<rect x="51.5" y="499.2" class="st1" width="213.9" height="20.4"/>
+			<polygon class="st1" points="265.4,519.6 265.4,499.2 341.1,388.5 341.1,408.8 			"/>
 		</g>
 		<g id="floor1-title">
-			<text transform="matrix(1 0 0 1 184.1758 614.4651)" class="st2 st3 st4">Infrastructure</text>
+			<text transform="matrix(1 0 0 1 74.7203 492.6219)" class="st2 st3 st4">Infrastructure</text>
 		</g>
 	</g>
 	<g id="floor2">
-		<g id="floor2-badge">
+		<g id="floor2-badge_1_">
 			<g>
-				<polygon class="st5" points="370.1,557 156.2,557 231.9,446.2 445.8,446.2 				"/>
-				<polygon class="st5" points="370.1,536.6 156.2,536.6 231.9,425.8 445.8,425.8 				"/>
-				<rect x="156.9" y="536.6" class="st6" width="213.9" height="20.4"/>
-				<polygon class="st6" points="370.8,557 370.8,536.6 446.5,425.8 446.5,446.2 				"/>
+				<polygon class="st5" points="260.6,435.1 46.8,435.1 122.5,324.3 336.3,324.3 				"/>
+				<polygon class="st5" points="260.6,414.8 46.8,414.8 122.5,304 336.3,304 				"/>
+				<rect x="47.5" y="414.8" class="st6" width="213.9" height="20.4"/>
+				<polygon class="st6" points="261.3,435.1 261.3,414.8 337.1,304 337.1,324.3 				"/>
 			</g>
 		</g>
-		<text id="floor2-title" transform="matrix(1 0 0 1 180.7461 529.4709)" class="st7 st3 st4">Provisioning</text>
+		<g id="floor2-title_1_">
+			<text transform="matrix(1 0 0 1 196.336 407.628)" class="st7 st3 st4">Provisioning</text>
+		</g>
 	</g>
 	<g id="floor3">
 		<g id="floor3-badge">
 			<g>
-				<polygon class="st8" points="293.1,475.5 156.9,475.5 232.7,364.8 368.8,364.8 				"/>
-				<polygon class="st8" points="293.1,455.2 156.9,455.2 232.7,344.4 368.8,344.4 				"/>
-				<rect x="156.9" y="455.2" class="st9" width="136.1" height="20.4"/>
-				<polygon class="st9" points="293.1,475.5 293.1,455.2 368.8,344.4 368.8,364.8 				"/>
+				<polygon class="st8" points="183.6,353.7 47.5,353.7 123.2,242.9 259.3,242.9 				"/>
+				<polygon class="st8" points="183.6,333.3 47.5,333.3 123.2,222.6 259.3,222.6 				"/>
+				<rect x="47.5" y="333.3" class="st9" width="136.1" height="20.4"/>
+				<polygon class="st9" points="183.6,353.7 183.6,333.3 259.3,222.6 259.3,242.9 				"/>
 			</g>
 		</g>
 		<g id="floor3-title">
-			<text transform="matrix(1 0 0 1 181.0273 448.5432)" class="st10 st3 st4">Runtime</text>
+			<text transform="matrix(1 0 0 1 71.5718 326.7)" class="st10 st3 st4">Runtime</text>
 		</g>
 	</g>
 	<g id="floor4">
-		<g id="floor4-badge">
-			<polygon class="st11" points="293.1,403.3 156.9,403.3 232.7,292.5 368.8,292.5 			"/>
-			<polygon class="st11" points="293.1,382.9 156.9,382.9 232.7,272.2 368.8,272.2 			"/>
-			<rect x="156.9" y="382.9" class="st12" width="136.1" height="20.4"/>
-			<polygon class="st13" points="293.1,403.3 293.1,382.9 368.8,272.2 368.8,292.5 			"/>
+		<g id="floor4-badge_1_">
+			<polygon class="st11" points="183.6,281.4 47.5,281.4 123.2,170.7 259.3,170.7 			"/>
+			<polygon class="st11" points="183.6,261.1 47.5,261.1 123.2,150.3 259.3,150.3 			"/>
+			<rect x="47.5" y="261.1" class="st12" width="136.1" height="20.4"/>
+			<polygon class="st13" points="183.6,281.4 183.6,261.1 259.3,150.3 259.3,170.7 			"/>
 		</g>
-		<g id="floor4-title">
-			<text transform="matrix(1 0 0 1 172.8887 374.6536)" class="st14 st3 st4">Orchestration </text>
+		<g id="floor4-title_1_">
+			<text transform="matrix(1 0 0 1 63.4332 252.8103)" class="st14 st3 st4">Orchestration </text>
 		</g>
 	</g>
 	<g id="floor5">
 		<g id="floor5-badge">
-			<polygon class="st15" points="370.8,282.2 156.9,282.2 232.7,171.4 446.5,171.4 			"/>
-			<polygon class="st15" points="370.8,261.8 156.9,261.8 232.7,151.1 446.5,151.1 			"/>
-			<rect x="156.9" y="261.8" class="st16" width="213.9" height="20.4"/>
-			<polygon class="st16" points="370.8,282.2 370.8,261.8 446.5,151.1 446.5,171.4 			"/>
+			<polygon class="st15" points="261.3,160.3 47.5,160.3 123.2,49.6 337.1,49.6 			"/>
+			<polygon class="st15" points="261.3,140 47.5,140 123.2,29.2 337.1,29.2 			"/>
+			<rect x="47.5" y="140" class="st16" width="213.9" height="20.4"/>
+			<polygon class="st16" points="261.3,160.3 261.3,140 337.1,29.2 337.1,49.6 			"/>
 		</g>
 		<g id="floor5-title">
-			<text transform="matrix(1 0 0 1 175.6309 250.1526)" class="st17 st3 st18">Application &amp; Development</text>
+			<text transform="matrix(1 0 0 1 66.1753 128.3094)" class="st17 st3 st18">Application &amp; Development</text>
 		</g>
 	</g>
 	<g id="floor6">
-		<g id="floor6-badge" class="st19">
+		<g id="floor6-badge_1_" class="st19">
 			<g>
-				<polygon class="st15" points="336.8,371.6 337.6,477.7 409.7,369.6 409,263.6 				"/>
-				<polygon class="st15" points="346.9,371.6 347.7,477.7 419.8,369.6 419.1,263.6 				"/>
+				<polygon class="st15" points="227.4,249.8 228.1,355.8 300.3,247.8 299.5,141.7 				"/>
+				<polygon class="st15" points="237.5,249.8 238.2,355.8 310.4,247.8 309.6,141.7 				"/>
 			</g>
-			<polygon class="st20" points="346.9,371.6 336.8,371.6 337.6,477.7 347.7,477.7 			"/>
-			<polygon class="st20" points="419.1,263.6 409,263.6 336.8,371.6 346.9,371.6 			"/>
+			<polygon class="st20" points="237.5,249.8 227.4,249.8 228.1,355.8 238.2,355.8 			"/>
+			<polygon class="st20" points="309.6,141.7 299.5,141.7 227.4,249.8 237.5,249.8 			"/>
 		</g>
 	</g>
 	<g id="floor7x">
 		<g id="floor7-badge" class="st19">
 			<g>
-				<polygon class="st15" points="372.2,371.6 372.9,477.7 445.1,369.6 444.3,263.6 				"/>
-				<polygon class="st15" points="382.3,371.6 383,477.7 455.2,369.6 454.4,263.6 				"/>
+				<polygon class="st15" points="262.7,249.8 263.5,355.8 335.6,247.8 334.9,141.7 				"/>
+				<polygon class="st15" points="272.8,249.8 273.6,355.8 345.7,247.8 345,141.7 				"/>
 			</g>
-			<polygon class="st20" points="382.3,371.6 372.2,371.6 372.9,477.7 383,477.7 			"/>
-			<polygon class="st20" points="454.4,263.6 444.3,263.6 372.2,371.6 382.3,371.6 			"/>
+			<polygon class="st20" points="272.8,249.8 262.7,249.8 263.5,355.8 273.6,355.8 			"/>
+			<polygon class="st20" points="345,141.7 334.9,141.7 262.7,249.8 272.8,249.8 			"/>
 		</g>
 	</g>
 </g>
 <g id="base">
-	<rect x="458.6" y="168.8" class="st2" width="43.9" height="43.9"/>
+	<rect x="350.6" y="522.2" class="st21" width="13.4" height="13.4"/>
 </g>
 </svg>
