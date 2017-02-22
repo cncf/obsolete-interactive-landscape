@@ -15,8 +15,17 @@ $shadow-color: rgba(0, 0, 0, .1);
 
 
 @font-face {
-  font-family: RobotoSlab;
-  src: url(""); //locate font
+  font-family: OpenSans;
+  src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSansCondensed;
+  src: url(fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 $background-gradient-color1 : #F5F5F5;
@@ -38,10 +47,11 @@ html {
 
 
 body{
-  font-family: RobotoSlab;
+  font-family: 'OpenSans','helvetica',sans-serif;
   background-color: transparent !important;
 
 }
+.mainFont{font-family: 'OpenSans','helvetica',sans-serif;}
 
 a {
   color: $media-text-color;

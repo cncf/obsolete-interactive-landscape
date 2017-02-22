@@ -1,3 +1,27 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSansCondensed;
+  src: url(fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.mainFont{
+  font-family: OpenSans,helvetica,sans-serif;
+  color:red;
+
+}
+text{font-family: OpenSans,helvetica,sans-serif;
+  color:green;
+}
+
+
 @-moz-keyframes left-brace-intro {
   0% {
     -moz-transform: translateX(220px);

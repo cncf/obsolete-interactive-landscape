@@ -1,6 +1,14 @@
 @font-face {
-  font-family: RobotoSlab;
-  src: url(""); }
+  font-family: OpenSans;
+  src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: OpenSansCondensed;
+  src: url(fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 html {
   height: 100%;
@@ -16,8 +24,11 @@ html {
   background: linear-gradient(to left top, #F5F5F5, #FFFFFF); }
 
 body {
-  font-family: RobotoSlab;
+  font-family: 'OpenSans','helvetica',sans-serif;
   background-color: transparent !important; }
+
+.mainFont {
+  font-family: 'OpenSans','helvetica',sans-serif; }
 
 a {
   color: #333333; }
