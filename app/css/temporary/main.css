@@ -76,121 +76,6 @@ header {
         background: #F8F8F8;
         border-radius: 0; }
 
-section {
-  margin: 0 0 10px 50px;
-  padding: 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row;
-  flex-flow: row; }
-  section aside {
-    margin: 25px 0 0 4px;
-    padding: 5px;
-    border-radius: 0 4px 4px 0;
-    -webkit-flex: 1 1 30%;
-    flex: 1 1 30%;
-    order: 3;
-    color: grey;
-    text-align: left; }
-    section aside .nav {
-      margin: 0 20px; }
-      section aside .nav li a {
-        display: block;
-        padding: 2px 10px;
-        margin: 10px 0; }
-        section aside .nav li a:hover {
-          color: #FFFFFF;
-          background: #333333; }
-      section aside .nav li.separator {
-        height: 1px;
-        background: #E8E8E8; }
-    section aside h5 {
-      color: #CE1312;
-      margin-left: 30px;
-      text-transform: uppercase;
-      font-size: 10px;
-      margin-top: 20px; }
-    section aside .badge {
-      font-size: .8em;
-      background: #BBBBBB;
-      position: relative;
-      top: 1px; }
-    section aside #genres label {
-      display: block;
-      cursor: pointer;
-      padding: 4px 4px 4px 8px;
-      font-weight: normal;
-      font-size: .9em;
-      margin: 0 0 -1px; }
-      section aside #genres label:hover {
-        color: #FFFFFF;
-        background: #333333; }
-      section aside #genres label input {
-        display: none; }
-    section aside #genres .active label {
-      border: 1px solid #CE1312;
-      margin-top: -1px; }
-    section aside #genres .active .badge {
-      background: #333333; }
-    section aside #ratings {
-      margin-left: 10px; }
-      section aside #ratings .ais-stars-list--link {
-        font-size: .9em; }
-        section aside #ratings .ais-stars-list--link:hover, section aside #ratings .ais-stars-list--link:active, section aside #ratings .ais-stars-list--link:focus {
-          text-decoration: none; }
-      section aside #ratings .ais-stars-list--count {
-        font-size: 8px; }
-      section aside #ratings .ais-star-rating--item {
-        margin-bottom: 6px; }
-      section aside #ratings .ais-star-rating--item__active a {
-        color: #CE1312; }
-  section article {
-    margin: 0;
-    padding: 0;
-    -webkit-flex: 1 1 70%;
-    flex: 1 1 70%;
-    order: 2; }
-    section article .top {
-      margin: 0 0 0 0; }
-    section article #stats {
-      padding: 0 14px 60px 10px;
-      font-size: .5em;
-      line-height: 24px; }
-    section article #hits {
-      padding: 0 15px; }
-    section article #pagination .pagination a {
-      background: #F8F8F8;
-      padding: 3px 8px;
-      color: #333333;
-      margin-right: 4px; }
-      section article #pagination .pagination a.active {
-        border-color: #b5b5b5;
-        background: #E8E8E8; }
-      section article #pagination .pagination a:hover {
-        border-color: #cfcfcf;
-        background: #ebebeb; }
-    section article .hit em {
-      font-style: normal;
-      background: #f1ff0f;
-      text-decoration: underline; }
-    section article .hit .media-object {
-      height: 130px;
-      width: 130px;
-      overflow: hidden;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center; }
-    section article .hit .media-heading {
-      color: #167AC6;
-      font-weight: normal;
-      font-size: 18px; }
-  section .thank-you {
-    font-size: .8em;
-    margin-top: 18px;
-    margin-left: 30px; }
-    section .thank-you a {
-      color: #CE1312; }
-
 .navbar-brand {
   max-width: 400px; }
 
@@ -198,14 +83,45 @@ section {
   background-color: transparent !important;
   border-color: transparent !important; }
 
+.main-title {
+  max-width: 300px; }
+
 .partners {
-  max-width: 500px; }
+  max-width: 300px; }
 
 .company {
-  width: 70px;
-  height: 70px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px #CCCCCC; }
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #CCCCCC;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.company-name {
+  font-size: 0.6em;
+  color: #9e9e9e;
+  text-align: center;
+  min-width: 100%;
+  padding: 5px 0 0 0; }
+
+.hits-box {
+  background-color: white;
+  border-width: 0 0 0 4px;
+  border-color: #3a7ea2;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 20px 20px 100px 20px;
+  margin-right: 20px; }
+
+.hits-box h1 {
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.hits-box h5 {
+  font-size: 0.8em;
+  font-color: #ccc;
+  font-style: italic;
+  font-weight: 300; }
 
 .ais-search-box--input {
   padding-left: 14px; }

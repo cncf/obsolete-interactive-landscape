@@ -23,7 +23,7 @@ search.addWidget(
 var hitTemplate =
     '<div style="display:inline-block">'+
     '<div class="company" style="background-image: url(\'{{_highlightResult.logo.value}}\');"></div>' +
-    '<span class="box-b">{{{_highlightResult.name.value}}}</span>'+
+    '<div class="company-name">{{{_highlightResult.name.value}}}</div>'+
     '</div>';
 
 var noResultsTemplate =
@@ -33,7 +33,7 @@ var noResultsTemplate =
 search.addWidget(
     instantsearch.widgets.hits({
         container: '#hits',
-        hitsPerPage: 10,
+        hitsPerPage: 30,
         templates: {
             empty: noResultsTemplate,
             item: hitTemplate
@@ -64,7 +64,7 @@ search.addWidget(
     instantsearch.widgets.menu({
         container: '#city',
         attributeName: 'city',
-        limit: 10,
+        limit: 30,
         templates: {
             header: 'City2',
             body: '<div>Check me out</div>'
@@ -96,7 +96,7 @@ search.addWidget(
         container: '#openSource',
         attributeName: 'openSource',
         operator: 'and',
-        limit: 10,
+        limit: 30,
         cssClasses: {
             list: 'nav nav-list',
             count: 'badge pull-right',
