@@ -10,6 +10,15 @@
   font-weight: normal;
   font-style: normal; }
 
+.fw-a {
+  font-weight: 200; }
+
+.fw-b {
+  font-weight: 400; }
+
+.fw-c {
+  font-weight: 700; }
+
 html {
   height: 100%;
   -webkit-background-size: cover;
@@ -76,8 +85,15 @@ header {
         background: #F8F8F8;
         border-radius: 0; }
 
-.navbar-brand {
-  max-width: 400px; }
+.navbar-header {
+  color: #000 !important;
+  font-size: 1.7em;
+  padding: 20px; }
+
+.version {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc; }
 
 .navbar-default {
   background-color: transparent !important;
@@ -105,7 +121,7 @@ header {
   padding: 5px 0 0 0; }
 
 .hits-box {
-  background-color: white;
+  background-color: #F5F5F5;
   border-width: 0 0 0 4px;
   border-color: #3a7ea2;
   border-style: solid;
@@ -114,8 +130,9 @@ header {
   margin-right: 20px; }
 
 .hits-box h1 {
-  font-size: 1.5em;
-  font-weight: 300; }
+  font-size: 2em;
+  font-weight: 300;
+  color: #2e6da4; }
 
 .hits-box h5 {
   font-size: 0.8em;

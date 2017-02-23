@@ -28,8 +28,13 @@ $shadow-color: rgba(0, 0, 0, .1);
 
 }
 
+.fw-a{font-weight:200}
+.fw-b{font-weight:400}
+.fw-c{font-weight:700}
+
 $background-gradient-color1 : #F5F5F5;
 $background-gradient-color2 : #FFFFFF;
+
 
 html {
   height: 100%;
@@ -43,6 +48,7 @@ html {
   background: -ms-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
   background: -o-linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
   background: linear-gradient( to left top, $background-gradient-color1, $background-gradient-color2);
+
 }
 
 
@@ -114,13 +120,22 @@ header {
   }
 }
 
-.navbar-brand{
-  max-width:400px;
+.navbar-header{
+  color:#000 !important;
+  font-size:1.7em;
+  padding:20px;
+}
+.version{
+  font-size:1.2rem;
+  font-style: italic;
+  color:#ccc;
+
 }
 .navbar-default {
   background-color: transparent !important;
   border-color: transparent !important;
 }
+
 
 .main-title{
   max-width:300px
@@ -147,7 +162,7 @@ header {
 }
 
 .hits-box{
-  background-color: white;
+  background-color: $background-gradient-color1;
   border-width: 0 0 0 4px ;
   border-color:#3a7ea2;
   border-style: solid;
@@ -157,8 +172,9 @@ header {
 }
 
 .hits-box h1{
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 300;
+  color:#2e6da4;
 }
 
 .hits-box h5{
