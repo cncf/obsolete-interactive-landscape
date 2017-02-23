@@ -242,12 +242,16 @@ function updateCurrent() {
 //FILTERS WINDOW OPEN - CLOSE
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("sidenavTrigger").style.width = "0";
+    document.getElementById("sidenavTrigger").style.opacity = "0";
+    document.getElementById("sidenavTrigger").style.color = "black";
+    //document.getElementById("sidenavTrigger").style.opacity = "0";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("sidenavTrigger").style.width = "50px";
+    document.getElementById("sidenavTrigger").style.opacity = "1";
+    document.getElementById("sidenavTrigger").style.color = "white";
+    //document.getElementById("sidenavTrigger").style.opacity = "1";
 }
 
 

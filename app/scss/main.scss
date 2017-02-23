@@ -203,7 +203,55 @@ header {
 //SIDENAV
 //__________________________________________________
 
-.sidenav {
+.sidenav-trigger{
+  position:fixed;
+  top:70px;
+  right:0;
+  background-color:rgba(0, 0, 0, 0.2);
+  color:#fff;
+  border-radius: 20px 0 0 20px;
+  padding:30px 10px 30px 10px;
+  font-size:0.8em;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+
+
+  .rotated-text {
+    display: inline-block;
+    overflow: hidden;
+    width: 1.5em;
+  }
+  .rotated-text__inner {
+    display: inline-block;
+    white-space: nowrap;
+    /* this is for shity "non IE" browsers
+       that dosn't support writing-mode */
+    -webkit-transform: translate(1.1em,0) rotate(90deg);
+    -moz-transform: translate(1.1em,0) rotate(90deg);
+    -o-transform: translate(1.1em,0) rotate(90deg);
+    transform: translate(1.1em,0) rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    /* IE9+ */
+    -ms-transform: none;
+    -ms-transform-origin: none;
+    /* IE8+ */
+    -ms-writing-mode: tb-rl;
+    /* IE7 and below */
+    *writing-mode: tb-rl;
+  }
+  .rotated-text__inner:before {
+    content: "";
+    float: left;
+    margin-top: 100%;
+  }
+
+}
+
+
+.sidenav{
   height: 88%;
   width: 0;
   position: fixed;
@@ -215,9 +263,7 @@ header {
   transition: 0.5s;
   padding-top: 60px;
   border-radius: 20px 0 0 20px;
-}
 
-.sidenav{
     a {
       padding: 5px 0px 5px 0px;
       text-decoration: none;
@@ -237,7 +283,6 @@ header {
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-right: 50px;
     }
 
     ul {
