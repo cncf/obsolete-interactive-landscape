@@ -185,15 +185,6 @@ header {
 }
 
 
-.ais-search-box--input {
-  padding-left: 14px;
-}
-
-.ais-refinement-list--label{
-  display: block;
-  font-size: 0.9em;
-}
-
 .genre, .year {
   margin: 12px 0;
 }
@@ -211,11 +202,11 @@ header {
 //__________________________________________________
 
 .sidenav {
-  height: 70%;
+  height: 88%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 100px;
+  top: 70px;
   right: 0;
   background-color:rgba(0, 0, 0, 0.7);
   overflow-x: hidden;
@@ -224,27 +215,70 @@ header {
   border-radius: 20px 0 0 20px;
 }
 
-.sidenav a {
-  padding: 6px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #FFF;
-  display: block;
-  transition: 0.3s
+.sidenav{
+    a {
+      padding: 5px 0px 5px 0px;
+      text-decoration: none;
+      font-size: 11px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
 
+    }
+
+    a:hover, .offcanvas a:focus{
+      color: #000;
+    }
+
+    .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+    }
+
+    ul {
+      position:absolute;
+      bottom:10px;
+      width:100%;
+
+      a{
+        padding-left:30px;
+      }
+
+    }
+
+   .filter-box{
+      font-size: 0.9em;
+      padding: 5px 20px 5px 30px;
+      color:white;
+      border: 3px solid #acacac;
+      border-width: 0 0 1px 0;
+
+      h5{
+        color:#CCC;
+        font-size:0.6em;
+        margin-left:-20px;
+
+      }
+      .ais-search-box--input {
+        padding-left: 14px;
+      }
+
+      .ais-refinement-list--label{
+        display: block;
+
+      }
+      .badge{
+        font-size:0.8em;
+      }
+
+    }
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-  color: #000;
-}
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-right: 50px;
-}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -353,11 +387,12 @@ header {
 }
 
 .dropdown li a:hover {
-  color:#fff
+  color:#fff;
+  padding-left:30px;
 }
 
 .dropdown a.selected {
-  color:red
+  color:#FFF;
 }
 
 .dropdown ul {

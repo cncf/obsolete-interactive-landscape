@@ -107,13 +107,17 @@ search.addWidget(
 
 
 
-// search.addWidget(
-//     instantsearch.widgets.menu({
-//         container: '#lang',
-//         attributeName: 'lang',
-//         limit: 10
-//     })
-// );
+search.addWidget(
+    instantsearch.widgets.menu({
+        container: '#domains',
+        attributeName: 'domains',
+        cssClasses: {
+            list: 'nav nav-list',
+            count: 'badge pull-right',
+            active: 'active'
+        }
+    })
+);
 
 
 //

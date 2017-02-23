@@ -140,13 +140,6 @@ header {
   font-style: italic;
   font-weight: 300; }
 
-.ais-search-box--input {
-  padding-left: 14px; }
-
-.ais-refinement-list--label {
-  display: block;
-  font-size: 0.9em; }
-
 .genre, .year {
   margin: 12px 0; }
 
@@ -157,11 +150,11 @@ header {
   background: #BBBBBB; }
 
 .sidenav {
-  height: 70%;
+  height: 88%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 100px;
+  top: 70px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow-x: hidden;
@@ -170,14 +163,14 @@ header {
   border-radius: 20px 0 0 20px; }
 
 .sidenav a {
-  padding: 6px 8px 8px 32px;
+  padding: 5px 0px 5px 0px;
   text-decoration: none;
-  font-size: 12px;
-  color: #FFF;
+  font-size: 11px;
+  color: #fff;
   display: block;
   transition: 0.3s; }
 
-.sidenav a:hover, .offcanvas a:focus {
+.sidenav a:hover, .sidenav .offcanvas a:focus {
   color: #000; }
 
 .sidenav .closebtn {
@@ -186,6 +179,30 @@ header {
   right: 25px;
   font-size: 36px;
   margin-right: 50px; }
+
+.sidenav ul {
+  position: absolute;
+  bottom: 10px;
+  width: 100%; }
+  .sidenav ul a {
+    padding-left: 30px; }
+
+.sidenav .filter-box {
+  font-size: 0.9em;
+  padding: 5px 20px 5px 30px;
+  color: white;
+  border: 3px solid #acacac;
+  border-width: 0 0 1px 0; }
+  .sidenav .filter-box h5 {
+    color: #CCC;
+    font-size: 0.6em;
+    margin-left: -20px; }
+  .sidenav .filter-box .ais-search-box--input {
+    padding-left: 14px; }
+  .sidenav .filter-box .ais-refinement-list--label {
+    display: block; }
+  .sidenav .filter-box .badge {
+    font-size: 0.8em; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -285,10 +302,11 @@ header {
   width: 100%; }
 
 .dropdown li a:hover {
-  color: #fff; }
+  color: #fff;
+  padding-left: 30px; }
 
 .dropdown a.selected {
-  color: red; }
+  color: #FFF; }
 
 .dropdown ul {
   list-style: none outside none;
