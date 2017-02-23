@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+// Utilities
+@import "themes/clear";
+
 
 $white: #FFFFFF;
 $media-red: #E91D00;
@@ -32,8 +35,7 @@ $shadow-color: rgba(0, 0, 0, .1);
 .fw-b{font-weight:400}
 .fw-c{font-weight:700}
 
-$background-gradient-color1 : #F5F5F5;
-$background-gradient-color2 : #FFFFFF;
+
 
 
 html {

@@ -11,6 +11,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var sassimage = require('gulp-sass-image');
 var compassImagehelper = require('gulp-compass-imagehelper');
+var sassThemes = require('gulp-sass-themes');
 
 
 //Start Dev environment
@@ -23,7 +24,7 @@ gulp.task('dev', function(callback){
 //Create Build
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-        ['sass', 'sassimage', 'useref', 'images', 'fonts'],
+        ['sass','sassimage', 'useref', 'images', 'fonts'],
         callback
     )
 });
@@ -39,7 +40,7 @@ gulp.task('sassimage', function () {
         .pipe(gulp.dest('sass'));
 });
 
-//Converting to SCSS to CSS
+//Converting from SCSS to CSS
 gulp.task('sass', function(){
     return gulp.src(['app/scss/**/*.scss'])
         .pipe(sass())
