@@ -186,7 +186,6 @@ header {
   }
 }
 
-
 .genre, .year {
   margin: 12px 0;
 }
@@ -202,6 +201,19 @@ header {
 .alpha{padding-left:0px;}
 .omega{padding-right:0px;}
 
+.social-icons {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #CCC;
+  border-radius: 20px 0 0 20px;
+  padding: 30px 10px 30px 10px;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+
+}
 //__________________________________________________
 //SIDENAV
 //__________________________________________________
