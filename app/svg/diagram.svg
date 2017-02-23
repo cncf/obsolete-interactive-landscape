@@ -25,6 +25,7 @@
 	.st19{opacity:0.6;}
 	.st20{fill:#FFFFFF;stroke:#1B86C8;stroke-miterlimit:10;}
 	.st21{fill:#FFFFFF;}
+	.st22{fill:none;stroke:#4AC7EE;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g id="diagram">
 	<g id="floor1">
@@ -109,5 +110,6 @@
 </g>
 <g id="base">
 	<rect x="350.6" y="522.2" class="st21" width="13.4" height="13.4"/>
+	<polyline class="st22" points="212.9,231.7 299.9,231.7 387.7,99.6 	"/>
 </g>
 </svg>

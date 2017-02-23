@@ -165,25 +165,25 @@ header {
 
 .hits-box{
   background-color: $background-gradient-color1;
-  border-width: 0 0 0 4px ;
-  border-color:#3a7ea2;
+  border-width: 0 0 0 2px ;
+  border-color:#4ac7ee;
   border-style: solid;
   border-radius: 0 10px 10px 0;
   padding:20px 20px 100px 20px;
   margin-right:20px;
-}
 
-.hits-box h1{
-  font-size: 2em;
-  font-weight: 300;
-  color:#2e6da4;
-}
+  h1{
+    font-size: 2em;
+    font-weight: 100;
+    color:#4ac7ee;
+  }
 
-.hits-box h5{
-  font-size: 0.8em;
-  font-color: #ccc;
-  font-style: italic;
-  font-weight: 300;
+  h5{
+    font-size: 0.7em;
+    font-color: #ccc;
+    font-style: italic;
+    font-weight: 300;
+  }
 }
 
 
@@ -198,6 +198,9 @@ header {
 .genre .badge {
   background: #BBBBBB;
 }
+
+.alpha{padding-left:0px;}
+.omega{padding-right:0px;}
 
 //__________________________________________________
 //SIDENAV
