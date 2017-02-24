@@ -168,16 +168,25 @@
 
             .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0px",left:"150px",width:"300px",opacity:0.9}})
             .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"50px",left:"150px",width:"300px",opacity:0.2}})
+            .set('#slide01 .image3',{css:{display:"block",position:"absolute",top:"150px",left:"100px",width:"300px",opacity:0.2}})
 	    	.to($('#slide01 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
             .to($('#slide01 .image1'), 0.2, {autoAlpha: 0.2, ease:Power1.easeNone}, 1.5)
-            .to($('#slide01 .box1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide01 h1'), {text: 'Title here'})
-	    	.set($('#slide01 p'), {text: "Subtitle here"})
+
+	    	.set($('#slide01 h1'), {text: 'Floor 222222'})//numero2
+	    	.set($('#slide01 p'), {text: "Subtitle 222222"})
 	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
-	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
             .to($('#slide01 .image2'), 0.5, {autoAlpha: 0.9, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
+	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+
+    		.set($('#slide01 h1'), {text: 'Floor 333333'})//numero 3
+            .set($('#slide01 p'), {text: "Subtitle 333333"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            .to($('#slide01 .image3'), 0.5, {autoAlpha: 0.9, ease:Power1.easeNone}, 1.5)
+            .set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
+
+
 
 	    var pinScene01 = new ScrollMagic.Scene({
 	        triggerElement: '#slide01', 
