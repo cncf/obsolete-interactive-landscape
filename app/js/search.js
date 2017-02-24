@@ -94,7 +94,7 @@ search.addWidget(
 search.addWidget(
     instantsearch.widgets.refinementList({
         container: '#openSource',
-        attributeName: 'openSource',
+        attributeName: 'oss',
         operator: 'and',
         limit: 30,
         cssClasses: {
@@ -106,11 +106,23 @@ search.addWidget(
 );
 
 
+// search.addWidget(
+//     instantsearch.widgets.menu({
+//         container: '#domains',
+//         attributeName: 'domains',
+//         cssClasses: {
+//             list: 'nav nav-list',
+//             count: 'badge pull-right',
+//             active: 'active'
+//         }
+//     })
+// );
 
 search.addWidget(
-    instantsearch.widgets.menu({
-        container: '#domains',
-        attributeName: 'domains',
+    instantsearch.widgets.hierarchicalMenu({
+        container: '#categories',
+        attributes: ['category', 'subcategory'],
+        sortBy: ['name:asc'],
         cssClasses: {
             list: 'nav nav-list',
             count: 'badge pull-right',
@@ -118,7 +130,6 @@ search.addWidget(
         }
     })
 );
-
 
 //
 // search.addWidget(
