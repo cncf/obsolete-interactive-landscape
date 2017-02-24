@@ -166,32 +166,85 @@
 
 	    pinScene01Tl
 
-            .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0px",left:"150px",width:"300px",opacity:0.9}})
-            .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"50px",left:"150px",width:"300px",opacity:0.2}})
-            .set('#slide01 .image3',{css:{display:"block",position:"absolute",top:"150px",left:"100px",width:"300px",opacity:0.2}})
-	    	.to($('#slide01 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-            .to($('#slide01 .image1'), 0.2, {autoAlpha: 0.2, ease:Power1.easeNone}, 1.5)
-	    	.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+            .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0px",left:"50px",width:"400px",opacity:0.2}})
+            .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"60px",left:"50px",width:"400px",opacity:0.2}})
 
+            .set('#slide01 .image3',{css:{display:"block",position:"absolute",top:"40px",left:"320px",width:"120px",opacity:0.2}})
+            .set('#slide01 .image4',{css:{display:"block",position:"absolute",top:"40px",left:"270px",width:"120px",opacity:0.2}})
+
+            .set('#slide01 .image5',{css:{display:"block",position:"absolute",top:"120px",left:"50px",width:"400px",opacity:0.2}})
+            .set('#slide01 .image6',{css:{display:"block",position:"absolute",top:"180px",left:"50px",width:"400px",opacity:0.2}})
+            .set('#slide01 .image7',{css:{display:"block",position:"absolute",top:"240px",left:"50px",width:"400px",opacity:0.9}})
+			//turn-off 1
+	    	.to($('#slide01 h1'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+            .to($('#slide01 .image7'), 0.6, {autoAlpha: 0.2, ease:Power1.easeNone}, 1.5)
+	    	.to($('#slide01 section'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+			//turn-on 2
 	    	.set($('#slide01 h1'), {text: 'Floor 222222'})//numero2
 	    	.set($('#slide01 p'), {text: "Subtitle 222222"})
-	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
-            .to($('#slide01 .image2'), 0.5, {autoAlpha: 0.9, ease:Power1.easeNone}, 1.5)
+	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0')
+            .to($('#slide01 .image6'), 0.9, {autoAlpha: 1, ease:Power1.easeIn}, 1)
 	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+			//turn-off 2
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .image6'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0.2, ease:Power1.easeOut}, '-=0.5')
+			//turn-on 3
+            .set($('#slide01 h1'), {text: 'Floor 333333'})//numero3
+            .set($('#slide01 p'), {text: "Subtitle 3333333"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image5'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            //turn-off 3
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .image5'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0.2, ease:Power1.easeOut}, '-=0.5')
+            //turn-on 4
+            .set($('#slide01 h1'), {text: 'Floor 444444'})//numero3
+            .set($('#slide01 p'), {text: "Subtitle 444444"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image4'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            //turn-off 4
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .image4'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0.2, ease:Power1.easeOut}, '-=0.5')
+            //turn-on 5
+            .set($('#slide01 h1'), {text: 'Floor 555555'})//numero3
+            .set($('#slide01 p'), {text: "Subtitle 555555"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image3'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            //turn-off 5
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .image3'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0.2, ease:Power1.easeOut}, '-=0.5')
+            //turn-on 6
+            .set($('#slide01 h1'), {text: 'Floor 666666'})//numero3
+            .set($('#slide01 p'), {text: "Subtitle 666666"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image2'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            //turn-off 6
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .image2'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0.2, ease:Power1.easeOut}, '-=0.5')
+            //turn-on 7
+            .set($('#slide01 h1'), {text: 'Floor 7777777'})//numero3
+            .set($('#slide01 p'), {text: "Subtitle 7777777"})
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image1'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
 
-    		.set($('#slide01 h1'), {text: 'Floor 333333'})//numero 3
-            .set($('#slide01 p'), {text: "Subtitle 333333"})
-            .fromTo($('#slide01 h1'), 0.7, {y: '+=0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
-            .fromTo($('#slide01 section'), 0.6, {y: '+=0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            .to($('#slide01 .image3'), 0.5, {autoAlpha: 0.9, ease:Power1.easeNone}, 1.5)
-            .set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
+        	.set($('#slide01 h1'), {css:{color:"red"}}, '+=2');
+	    //.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
 
 
 
 	    var pinScene01 = new ScrollMagic.Scene({
 	        triggerElement: '#slide01', 
 	        triggerHook: 0,
-	        duration: "250%"
+	        duration: "850%"
 	    })
 	    .setPin("#slide01")
 	    .setTween(pinScene01Tl)
