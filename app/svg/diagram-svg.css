@@ -1,15 +1,20 @@
 @font-face {
   font-family: OpenSans;
-  src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: OpenSansCondensed;
-  src: url(fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
+  src: url(../fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 
+}
+
+a.svg {
+  position: relative;
+  display: inline-block;
 }
 
 .mainFont{
@@ -387,145 +392,8 @@ text{font-family: OpenSans,helvetica,sans-serif;
   -o-transform: scale(1.5) translate(0px, 0px);
   transform: scale(1.5) translate(0px, 0px); }
 
-#floor5 {
-  -webkit-transform-origin: 517px 484px;
-  -moz-transform-origin: 517px 484px;
-  -ms-transform-origin: 517px 484px;
-  -o-transform-origin: 517px 484px;
-  transform-origin: 517px 484px; }
 
-#floor5-badge {
-  -webkit-transform-origin: 445px 488px;
-  -moz-transform-origin: 445px 488px;
-  -ms-transform-origin: 445px 488px;
-  -o-transform-origin: 445px 488px;
-  transform-origin: 445px 488px; }
 
-#floor5-title {
-  -webkit-transform-origin: 310px 396px;
-  -moz-transform-origin: 310px 396px;
-  -ms-transform-origin: 310px 396px;
-  -o-transform-origin: 310px 396px;
-  transform-origin: 310px 396px; }
-
-#floor5-details {
-  -webkit-transform-origin: 311px 489px;
-  -moz-transform-origin: 311px 489px;
-  -ms-transform-origin: 311px 489px;
-  -o-transform-origin: 311px 489px;
-  transform-origin: 311px 489px; }
-
-#floor4 {
-  -webkit-transform-origin: 514px 603px;
-  -moz-transform-origin: 514px 603px;
-  -ms-transform-origin: 514px 603px;
-  -o-transform-origin: 514px 603px;
-  transform-origin: 514px 603px; }
-
-#floor4-badge {
-  -webkit-transform-origin: 580px 606px;
-  -moz-transform-origin: 580px 606px;
-  -ms-transform-origin: 580px 606px;
-  -o-transform-origin: 580px 606px;
-  transform-origin: 580px 606px; }
-
-#floor4-title {
-  -webkit-transform-origin: 712px 513px;
-  -moz-transform-origin: 712px 513px;
-  -ms-transform-origin: 712px 513px;
-  -o-transform-origin: 712px 513px;
-  transform-origin: 712px 513px; }
-
-#floor4-details {
-  -webkit-transform-origin: 710px 620px;
-  -moz-transform-origin: 710px 620px;
-  -ms-transform-origin: 710px 620px;
-  -o-transform-origin: 710px 620px;
-  transform-origin: 710px 620px; }
-
-#floor3 {
-  -webkit-transform-origin: 511px 769px;
-  -moz-transform-origin: 511px 769px;
-  -ms-transform-origin: 511px 769px;
-  -o-transform-origin: 511px 769px;
-  transform-origin: 511px 769px; }
-
-#floor3-badge {
-  -webkit-transform-origin: 445px 775px;
-  -moz-transform-origin: 445px 775px;
-  -ms-transform-origin: 445px 775px;
-  -o-transform-origin: 445px 775px;
-  transform-origin: 445px 775px; }
-
-#floor3-title {
-  -webkit-transform-origin: 312px 680px;
-  -moz-transform-origin: 312px 680px;
-  -ms-transform-origin: 312px 680px;
-  -o-transform-origin: 312px 680px;
-  transform-origin: 312px 680px; }
-
-#floor3-details {
-  -webkit-transform-origin: 310px 790px;
-  -moz-transform-origin: 310px 790px;
-  -ms-transform-origin: 310px 790px;
-  -o-transform-origin: 310px 790px;
-  transform-origin: 310px 790px; }
-
-#floor2 {
-  -webkit-transform-origin: 512px 1002px;
-  -moz-transform-origin: 512px 1002px;
-  -ms-transform-origin: 512px 1002px;
-  -o-transform-origin: 512px 1002px;
-  transform-origin: 512px 1002px; }
-
-#floor2-badge {
-  -webkit-transform-origin: 586px 1000px;
-  -moz-transform-origin: 586px 1000px;
-  -ms-transform-origin: 586px 1000px;
-  -o-transform-origin: 586px 1000px;
-  transform-origin: 586px 1000px; }
-
-#floor2-title {
-  -webkit-transform-origin: 718px 921px;
-  -moz-transform-origin: 718px 921px;
-  -ms-transform-origin: 718px 921px;
-  -o-transform-origin: 718px 921px;
-  transform-origin: 718px 921px; }
-
-#floor2-details {
-  -webkit-transform-origin: 717px 1021px;
-  -moz-transform-origin: 717px 1021px;
-  -ms-transform-origin: 717px 1021px;
-  -o-transform-origin: 717px 1021px;
-  transform-origin: 717px 1021px; }
-
-#floor1 {
-  -webkit-transform-origin: 513px 1199px;
-  -moz-transform-origin: 513px 1199px;
-  -ms-transform-origin: 513px 1199px;
-  -o-transform-origin: 513px 1199px;
-  transform-origin: 513px 1199px; }
-
-#floor1-badge {
-  -webkit-transform-origin: 444px 1193px;
-  -moz-transform-origin: 444px 1193px;
-  -ms-transform-origin: 444px 1193px;
-  -o-transform-origin: 444px 1193px;
-  transform-origin: 444px 1193px; }
-
-#floor1-title {
-  -webkit-transform-origin: 313px 1097px;
-  -moz-transform-origin: 313px 1097px;
-  -ms-transform-origin: 313px 1097px;
-  -o-transform-origin: 313px 1097px;
-  transform-origin: 313px 1097px; }
-
-#floor1-details {
-  -webkit-transform-origin: 316px 1202px;
-  -moz-transform-origin: 316px 1202px;
-  -ms-transform-origin: 316px 1202px;
-  -o-transform-origin: 316px 1202px;
-  transform-origin: 316px 1202px; }
 
 .svgLoaded #logo {
   -webkit-animation: fade-in 0.5s ease-in-out;
