@@ -165,16 +165,18 @@
 	    var pinScene01Tl = new TimelineMax();
 
 	    pinScene01Tl
-			.set('#slide01 .imageBase',{css:{display:"block", position:"absolute", top:"300px",left:"100px",width:"300px",opacity:0.5}})
-            .set('#slide01 .image1',{css:{display:"block",width:"200px",opacity:0.5}})
+
+            .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0px",left:"150px",width:"300px",opacity:0.9}})
+            .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"50px",left:"150px",width:"300px",opacity:0.2}})
 	    	.to($('#slide01 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-            .to($('#slide01 .image1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
+            .to($('#slide01 .image1'), 0.2, {autoAlpha: 0.2, ease:Power1.easeNone}, 1.5)
             .to($('#slide01 .box1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide01 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide01 h1'), {text: 'Repositories'})
-	    	.set($('#slide01 p'), {text: "Remember that time spent on a rock climb isn't subtracted from your life span."})
+	    	.set($('#slide01 h1'), {text: 'Title here'})
+	    	.set($('#slide01 p'), {text: "Subtitle here"})
 	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            .to($('#slide01 .image2'), 0.5, {autoAlpha: 0.9, ease:Power1.easeNone}, 1.5)
 	    	.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
 
 	    var pinScene01 = new ScrollMagic.Scene({
@@ -194,8 +196,8 @@
 	    pinScene02Tl
 	    	.to($('#slide02 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide02 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide02 h1'), {text: "The Memories"})
-	    	.set($('#slide02 p'), {text: "You never climb the same mountain twice, not even in memory. Memory rebuilds the mountain, changes the weather, retells the jokes, remakes all the moves."})
+	    	.set($('#slide02 h1'), {text: "Title here"})
+	    	.set($('#slide02 p'), {text: "Subtitle here"})
 	    	.to($('#slide02 .bcg'), 0.6, {scale: 1.2, transformOrigin: '0% 0%', ease:Power0.easeNone})
 	    	.fromTo($('#slide02 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide02 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
