@@ -155,7 +155,7 @@ h1 {
     z-index: 1;
     opacity: 0.5;
     .header-container & {
-        background-image: url(../../images/bg_cloud01.jpg);
+        background-image: url(../../images/bg_cloud04.jpg);
         background-size: cover;
     }
     #slide01 & {
@@ -163,7 +163,7 @@ h1 {
         background-size: cover;
     }
     #slide02 & {
-        background: url(../../images/bg_cloud02.jpg) no-repeat center center;
+        background: url(../../images/bg_cloud04.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -439,6 +439,7 @@ p {
         color:#FFF !important;
         font-size:1.5em;
         padding:20px;
+        text-align:left;
 
     }
     .fw-a{font-weight:200}
