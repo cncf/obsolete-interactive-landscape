@@ -74,7 +74,7 @@ html, body {
 h1 {
     font-size: 2em;
     margin-top: 0;
-    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+    //font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -391,15 +391,17 @@ p {
         width: 80%;
         height: 300px;
         border-radius: 10px;
-        display:inline-flex;
+        display:flex;
         background-color: rgba(255, 255, 255, 0.3);
         margin-top:30px;
 
+
     }
     .box-1{
-        flex-grow:2;
+        //flex-grow:2;
         padding:20px;
-        width:50%;
+        width:40%;
+
 
     }
     .box-2{
@@ -412,6 +414,7 @@ p {
         padding: 0px 20px 100px 20px;
         margin-right: 20px;
         text-align:left;
+        width:60%;
 
 
     }
@@ -520,6 +523,33 @@ p {
         position:"absolute";
         left:"20%";
     }
+
+    $f1-color: #17aaad;
+    $f2-color: #1b86c8;
+    $f3-color: #688ca5;
+    $f4-color: #635b89;
+    $f5-color: #478466;
+    $f6-color: #6c9a40;
+    $f7-color: #3e56a6;
+
+    .tag-1a{color:$f1-color;}
+    .tag-2a{color:$f2-color;}
+    .tag-3a{color:$f3-color;}
+    .tag-4a{color:$f4-color;}
+    .tag-5a{color:$f5-color;}
+    .tag-6a{color:$f6-color;}
+    .tag-7a{color:$f7-color;}
+
+
+    .navbar-header{
+        color:#000 !important;
+        font-size:1.9em;
+        padding:20px;
+
+    }
+    .fw-a{font-weight:200}
+    .fw-b{font-weight:400}
+    .fw-c{font-weight:700}
 
 
 }
