@@ -195,7 +195,6 @@
             .set('#slide01 .image6b',{css:{display:"block",position:"absolute",top:"80%",left:"20%",opacity:0}})
             .set('#slide01 .image7',{css:{display:"block",position:"absolute",top:"100%",left:"200%",opacity:0}})
             .set('#slide01 .image7b',{css:{display:"block",position:"absolute",top:"100%",left:"20%",opacity:0}})
-			//turn-off 1
 
             .to($('#slide01 .image7'), 0.1, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image6'), 0.2, {css:{left:"20%",opacity:0.6}}, 0)
@@ -204,10 +203,7 @@
             .to($('#slide01 .image3'), 0.5, {css:{left:"87%",opacity:0.6}}, 0)
             .to($('#slide01 .image2'), 0.6, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image1'), 0.7, {css:{left:"20%",opacity:0.6}}, 0)
-
-
-
-
+            //turn-off 1
             .to($('#slide01 .image7b'), 0.5, {css:{opacity:0.9}}, 0.2)
             .to($('#slide01 .tag-7a'), 0.4, {css:{opacity:0.9}})
 	    	.to($('#slide01 h1'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
@@ -223,7 +219,6 @@
 			//turn-off 2
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //.fromTo($('#slide01 .image6b'),  0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
 			//turn-on 3
             .set($('#slide01 h1'), {text: 'Runtime'})//numero3
             .set($('#slide01 p'), {text: "Runtime"})

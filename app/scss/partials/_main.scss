@@ -1,3 +1,10 @@
+$f1-color: #17aaad;
+$f2-color: #1b86c8;
+$f3-color: #688ca5;
+$f4-color: #635b89;
+$f5-color: #478466;
+$f6-color: #6c9a40;
+$f7-color: #3e56a6;
 
 html {
     color: #222;
@@ -408,9 +415,6 @@ p {
     .box-2{
         flex-grow:2;
         //background-color: rgba(255, 255, 255, 0.8);
-        border-width: 0 0 0 3px;
-        border-color: #4ac7ee;
-        border-style: solid;
         border-radius: 0 10px 10px 0;
         padding: 0px 20px 100px 20px;
         margin-right: 20px;
@@ -418,11 +422,47 @@ p {
         width:80%;
 
 
+
     }
+    .category-box{
+        border-width: 0 0 0 3px;
+        border-color: #cccccc;
+        border-style: solid;
+        background-color: rgba(255, 0, 255, 0.1);
+        width:60%;
+        height:500px;
+        position:absolute;
+        top:0;
+
+
+    }
+
+    .cb-1{
+        border-color: $f1-color;
+    }
+    .cb-2{
+        border-color: $f2-color;
+    }
+    .cb-3{
+        border-color: $f3-color;
+    }
+    .cb-4{
+        border-color: $f4-color;
+    }
+    .cb-5{
+        border-color: $f5-color;
+    }
+    .cb-6{
+        border-color: $f6-color;
+    }
+    .cb-7{
+        border-color: $f7-color;
+    }
+
+
     .box-items{
         display:flex;
         flex-wrap:wrap;
-
 
     }
 
@@ -433,7 +473,7 @@ p {
         padding-top:20px;
         padding-left:40%;
         font-weight:100;
-        color:#fff !important;
+        color:#666 !important;
 
     }
     .navbar-header{
@@ -541,13 +581,6 @@ p {
         left:"20%";
     }
 
-    $f1-color: #17aaad;
-    $f2-color: #1b86c8;
-    $f3-color: #688ca5;
-    $f4-color: #635b89;
-    $f5-color: #478466;
-    $f6-color: #6c9a40;
-    $f7-color: #3e56a6;
 
     .tag-1a{color:$f1-color;}
     .tag-2a{color:$f2-color;}
@@ -556,6 +589,7 @@ p {
     .tag-5a{color:$f5-color;}
     .tag-6a{color:$f6-color;}
     .tag-7a{color:$f7-color;}
+
 
 
 
