@@ -421,27 +421,28 @@ p {
         text-align:left;
         width:80%;
     }
-    .category-box{
-        border-width: 0 0 0 3px;
-        border-color: #cccccc;
-        border-style: solid;
-        //background-color: rgba(255, 0, 255, 0.1);
-        width:60%;
-        height:500px;
-        position:absolute;
-        top:0;
-        opacity:0;
-        padding:0 40px;
+
+
+    @each $number, $color,$toplocation in
+                    (1,$f1-color),
+                    (2,$f2-color),
+                    (3,$f3-color),
+                    (4,$f4-color),
+                    (5,$f5-color),
+                    (6,$f6-color),
+                    (7,$f7-color) {
+        .category-box-#{$number}{
+            border-color: $color;
+            border-width: 0 0 0 3px;
+            border-style: solid;
+            width:60%;
+            height:500px;
+            position:absolute;
+            top:0;
+            opacity:0;
+            padding:0 40px;
+        }
     }
-    .cb-1{ border-color: $f1-color; }
-    .cb-2{ border-color: $f2-color; }
-    .cb-3{ border-color: $f3-color; }
-    .cb-4{ border-color: $f4-color; }
-    .cb-5{ border-color: $f5-color; }
-    .cb-6{ border-color: $f6-color; }
-    .cb-7{ border-color: $f7-color; }
-
-
 
     @each $number, $color,$toplocation in
                     (1,$f1-color,50),
@@ -454,13 +455,15 @@ p {
         .category-line-#{$number}{
             background-color: $color;
             top: #{$toplocation}px;
-            width:100px;
+            width:150px;
             height:2px;
-            background-color:#ccc;
             position:absolute;
-            left:-100px;
+            left:-150px;
         }
     }
+
+
+
 
 
     .box-items{
