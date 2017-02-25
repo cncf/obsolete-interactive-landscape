@@ -428,11 +428,13 @@ p {
         border-width: 0 0 0 3px;
         border-color: #cccccc;
         border-style: solid;
-        background-color: rgba(255, 0, 255, 0.1);
+        //background-color: rgba(255, 0, 255, 0.1);
         width:60%;
         height:500px;
         position:absolute;
         top:0;
+        opacity:0;
+        padding:0 40px;
 
 
     }

@@ -196,83 +196,92 @@
             .set('#slide01 .image7',{css:{display:"block",position:"absolute",top:"100%",left:"200%",opacity:0}})
             .set('#slide01 .image7b',{css:{display:"block",position:"absolute",top:"100%",left:"20%",opacity:0}})
 
-            .to($('#slide01 .image7'), 0.1, {css:{left:"20%",opacity:0.6}}, 0)
+            .set('#slide01 .cb-7',{css:{opacity:1}})
+
+            .to($('#slide01 .image7'), 0, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image6'), 0.2, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image5'), 0.3, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image4'), 0.4, {css:{left:"70%",opacity:0.6}}, 0)
             .to($('#slide01 .image3'), 0.5, {css:{left:"87%",opacity:0.6}}, 0)
             .to($('#slide01 .image2'), 0.6, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image1'), 0.7, {css:{left:"20%",opacity:0.6}}, 0)
-            //turn-off 1
-            .to($('#slide01 .image7b'), 0.5, {css:{opacity:0.9}}, 0.2)
-            .to($('#slide01 .tag-7a'), 0.4, {css:{opacity:0.9}})
+
+            //OFF 1
+            .to($('#slide01 .image7b'), 1, {css:{opacity:0.9}}, 0.2)
+            .to($('#slide01 .tag-7a'), 0.4, {css:{opacity:1}},'-=1')
 	    	.to($('#slide01 h1'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide01 section'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-			//turn-on 2
+            .fromTo($('#slide01 .cb-7'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+			//ON 2
 	    	.set($('#slide01 h1'), {text: 'Provisioning'})//numero2
 	    	.set($('#slide01 p'), {text: ".."})
-
 	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0')
-            .to($('#slide01 .image6b'), 0.9, {autoAlpha: 1, ease:Power1.easeIn}, 1)
-            .to($('#slide01 .tag-6a'), 0.4, {css:{opacity:0.9}})
+            .to($('#slide01 .image6b'), 1.5, {autoAlpha: 1, ease:Power1.easeIn}, 1)
+            .to($('#slide01 .tag-6a'), 0.4, {css:{opacity:1}},'-=1')
 	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-			//turn-off 2
+            .fromTo($('#slide01 .cb-6'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+			//OFF 2
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-			//turn-on 3
+            .fromTo($('#slide01 .cb-6'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+			//ON 3
             .set($('#slide01 h1'), {text: 'Runtime'})//numero3
             .set($('#slide01 p'), {text: "Runtime"})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image5b'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            .to($('#slide01 .tag-5a'), 0.4, {css:{opacity:0.9}})
+            .fromTo($('#slide01 .image5b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-5a'), 0.4, {css:{opacity:1}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            //turn-off 3
+            .fromTo($('#slide01 .cb-5'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 3
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //.fromTo($('#slide01 .image5b'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //turn-on 4
+            .fromTo($('#slide01 .cb-5'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            //ON 4
             .set($('#slide01 h1'), {text: 'Platforms'})//numero3
             .set($('#slide01 p'), {text: "Platforms"})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image4b'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            .to($('#slide01 .tag-4a'), 0.4, {css:{opacity:0.9}})
+            .fromTo($('#slide01 .image4b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-4a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            //turn-off 4
+            .fromTo($('#slide01 .cb-4'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 4
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //.fromTo($('#slide01 .image4b'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //turn-on 5
+            .fromTo($('#slide01 .cb-4'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            //ON 5
             .set($('#slide01 h1'), {text: 'Obserbability & Analysis'})//numero3
             .set($('#slide01 p'), {text: "Obserbability & Analysis"})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image3b'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            .to($('#slide01 .tag-3a'), 0.4, {css:{opacity:0.9}})
+            .fromTo($('#slide01 .image3b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-3a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            //turn-off 5
+            .fromTo($('#slide01 .cb-3'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 5
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //.fromTo($('#slide01 .image3b'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //turn-on 6
+            .fromTo($('#slide01 .cb-3'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            //ON 6
             .set($('#slide01 h1'), {text: 'Orchestration and Management'})//numero3
             .set($('#slide01 p'), {text: "Orchestration and Management"})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image2b'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            .to($('#slide01 .tag-2a'), 0.4, {css:{opacity:0.9}})
+            .fromTo($('#slide01 .image2b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-2a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            //turn-off 6
+            .fromTo($('#slide01 .cb-2'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 6
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //.fromTo($('#slide01 .image2b'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            //turn-on 7
+            .fromTo($('#slide01 .cb-2'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            //ON 7
             .set($('#slide01 h1'), {text: 'Data + Application  + APIs'})//numero3
             .set($('#slide01 p'), {text: "Data + Application "})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image1b'), 0.4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            .to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}})
+            .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            .fromTo($('#slide01 .cb-1'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
 
         	.set($('#slide01 h1'), {css:{color:"red"}}, '+=2');
-	    //.set($('#slide01 h1'), {autoAlpha: 1}, '+=2');
 
 
 
