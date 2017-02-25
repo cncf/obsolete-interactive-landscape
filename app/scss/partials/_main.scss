@@ -343,16 +343,17 @@ p {
 /* =Footer */
 .footer-container {
     text-align: center;
-    font-size: 14px;
+    font-size: 0.8em;
     color: transparentize($lightest,.5);
     background-color: #06060d;
+    padding:50px;
     h3 {
         margin: 0;
         padding: 20px 0;
         font-weight: normal;
     }
     a {
-        color: transparentize($lightest,.5);
+        color: transparentize($lightest,.2);
     }
 }
 
@@ -457,7 +458,7 @@ p {
         width:40px;
         height:40px;
         border-radius: 5px;
-        box-shadow: 2px 2px 5px #0f2866;
+        box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
