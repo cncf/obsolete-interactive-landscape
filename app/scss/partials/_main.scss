@@ -314,6 +314,7 @@ p {
     }
 }
 
+
 /* =Content Block */
 .content-block {
     background-color: $darkest;
@@ -380,6 +381,153 @@ p {
     margin-bottom: 30px;
 }
 
+/* =Infographic */
+
+/* =Infographic */
+
+.infog01{
+    .logobox {
+        //background-color: white;
+        width: 80%;
+        height: 300px;
+        border-radius: 10px;
+        display:inline-flex;
+        background-color: rgba(255, 255, 255, 0.3);
+        margin-top:30px;
+
+    }
+    .box-1{
+        flex-grow:2;
+        padding:20px;
+        width:50%;
+
+    }
+    .box-2{
+        flex-grow:2;
+        //background-color: rgba(255, 255, 255, 0.8);
+        border-width: 0 0 0 1px;
+        border-color: #4ac7ee;
+        border-style: solid;
+        border-radius: 0 10px 10px 0;
+        padding: 0px 20px 100px 20px;
+        margin-right: 20px;
+        text-align:left;
+
+
+    }
+    .box-items{
+        display:flex;
+        flex-wrap:wrap;
+
+
+    }
+
+    .title{
+        font-size:2em;
+        text-align: left;
+        padding-left:40%;
+
+    }
+
+    .item {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .company{
+        width:40px;
+        height:40px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #CCCCCC;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    .company-name{
+        font-size: 0.5em;
+        color: #9e9e9e;
+        text-align: center;
+        min-width: 100%;
+        padding: 5px 0 0 0;
+    }
+    .diagram-container{
+        //background-color: rgba(242, 104, 255, 0.4);
+        position:absolute;
+        left:-20px;
+
+        width:350px;
+        height:300px;
+    }
+
+    .image-diagram{
+        width:100%;
+        height:70%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .image1{
+        background-image: url('../../images/stage-01.png');
+    }
+    .image1b{
+        background-image: url('../../images/stage-01-b.png');
+    }
+
+    .image2{
+        background-image: url('../../images/stage-02.png');
+    }
+    .image2b{
+        background-image: url('../../images/stage-02-b.png');
+    }
+
+    .image3{
+        background-image: url('../../images/stage-03.png');
+    }
+    .image3b{
+        background-image: url('../../images/stage-03-b.png');
+    }
+
+    .image4{
+        background-image: url('../../images/stage-04.png');
+    }
+    .image4b{
+        background-image: url('../../images/stage-04-b.png');
+    }
+
+    .image5{
+        background-image: url('../../images/stage-05.png');
+    }
+    .image5b{
+        background-image: url('../../images/stage-05-b.png');
+    }
+
+    .image6{
+        background-image: url('../../images/stage-06.png');
+    }
+    .image6b{
+        background-image: url('../../images/stage-06-b.png');
+    }
+
+    .image7{
+        background-image: url('../../images/stage-07.png');
+    }
+    .image7b{
+        background-image: url('../../images/stage-07-b.png');
+    }
+
+    .itag{
+        font-size:0.6em;
+        display:"block";
+        position:"absolute";
+        left:"20%";
+    }
+
+
+}
+
+
+
+
+
 
 /* ==========================================================================
    Media Queries
@@ -426,7 +574,7 @@ p {
         }
         overflow-x: hidden;
         .wrapper {
-            padding-top: 120px;
+            padding-top: 0px;
             position: absolute;
             top: 50%;
             left: 50%;
