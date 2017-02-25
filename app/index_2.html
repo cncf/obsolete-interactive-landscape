@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cloud Native</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css" />
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/normalize.css">
+	<link type="text/css" href="css/libs/font-awesome.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/libs/jquery-ui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/temporary/flexboxes.css">
+	<link rel="stylesheet" href="css/temporary/main.css">
+
+	<!--endbuild-->
+
+	<link rel="stylesheet" type="text/css" href="svg/diagram-svg.css" />
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+				<span class="fw-c">Cloud Native</span>
+				<span class="fw-a">Landscape</span>
+				<p class="version">v.0.2.1</p>
+                <a href="javascript:void(0)" class="btn btn-xs" onclick="updateCurrent()" style="color:#CCC">update : </a>
+                <span id="filter1"></span> + <span id="filter2"></span>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<div class="navbar-form navbar-right">
+				<div class="form-group">
+					<img class="partners img-responsive" alt="Brand" src="images/logo-cncf.png">
+
+				</div>
+			</div>
+
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+	<div style="width:500px; height:500px; position:absolute; top:0px; ">
+		<a href="#" onclick="processURL('/?q=&hPP=30&idx=test_cloudNative&p=0&hFR[category][0]=Provisioning&namethis=Provisioningx')">
+			<object data="svg/stage-02.svg" type="image/svg+xml" style="position:relative; top:80px; left:10px;">
+				<img src="svg/stage-02.png" />
+			</object>
+		</a>
+	</div>
+
+<a href="#">
+	<object data="img/stage-01.svg" type="image/svg+xml" class="mailicon">
+	</object>
+</a>
+
+
+
+
+
+
+
+
+	<div class="row">
+		<div class="col-xs-6 col-sm-5 col-md-4 omega">
+
+
+
+			<!--<a href="/?q=&hPP=30&idx=test_cloudNative&p=0&hFR[category][0]=Provisioning&namethis=Provisioningx" class="svg">-->
+				<!--<object data="svg/stage-01.svg" type="image/svg+xml" class="mailicon" style="position:relative; top:80px; left:10px;">-->
+					<!--<img src="svg/stage-01.png" />-->
+				<!--</object>-->
+			<!--</a>-->
+
+			<a href="http://google.com" class="svg">
+				<object data="img/stage-02.svg" type="image/svg+xml" class="mailicon">
+				</object>
+			</a>
+
+			<!--<div class="main">-->
+				<!--<div id="svgcontainer"></div>-->
+			<!--</div>-->
+			<!--<div id="cats" class="updateme"></div>-->
+
+			<a href="/?q=&hPP=30&idx=test_cloudNative&p=0&hFR[category][0]=Runtime" class="btn btn-md">Runtimes</a>
+
+            <a href="" onclick="processURL('/?q=&hPP=30&idx=test_cloudNative&p=0&hFR[category][0]=Provisioning&namethis=Provisioningx')">Provisioning</a>
+
+        </div>
+		<div class="col-xs-6 col-sm-6 col-md-7 alpha">
+			<div class="hits-box">
+				<h1 id="sectionTitle"><i class="fa fa-hand-spock-o"></i> Orchestration</h1>
+
+				<h5 id="stats"></h5>
+				<hr/>
+				<div id="hits"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="pagination" class="footer"> </div>
+
+
+	<!--//SOCIALMEDIA-->
+	<div class="social-icons">
+		<i class="fa fa-twitter fa-3x"></i>
+		<br/>
+		<i class="fa fa-github fa-3x"></i>
+	</div>
+
+
+	<!--//FILTERS-->
+
+	<div id="sidenavTrigger" class="sidenav-trigger" style="cursor:pointer" onclick="openNav()">
+			<div class="rotated-text">
+				<span class="rotated-text__inner">
+					<i class="fa fa-chevron-circle-down"></i> Filters
+				</span>
+			</div>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white">&times;</a>
+
+		<div class="input-group">
+			<input type="text" class="form-control" id="q" placeholder="search" />
+			<span class="input-group-btn">git
+				<button class="btn btn-default"><i class="fa fa-search"></i></button>
+			</span>
+		</div>
+
+
+		<div class="filter-box">
+			<h5><i class="fa fa-chevron-right"></i> Categories</h5>
+			<div id="categories" class="updateme"></div>
+		</div>
+
+		<div class="filter-box">
+			<h5><i class="fa fa-chevron-right"></i> OpenSource</h5>
+			<div id="openSource" class="updateme"></div>
+		</div>
+
+
+		<div class="filter-box">
+			<h5><i class="fa fa-chevron-right"></i> Category menu</h5>
+			<div id="categorymenu" class="updateme"></div>
+		</div>
+
+
+
+		<ul class="nav nav-list">
+			<li><a href=""><i class="fa fa-cloud "> </i> CNCF website</a></li>
+			<li class="separator"></li>
+			<li><a href=""><i class="fa fa-github "> </i> Github Repository</a></li>
+
+
+		</ul>
+		<div class="filter-box">
+			<h5><i class="fa fa-chevron-right"></i> Themes</h5>
+			<a><i class="fa fa-toggle-on fa-1x"></i> Dark Theme</a>
+		</div>
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+
+	<!--build:js js/main.min.js -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/search.js"></script>
+	<script src="svg/diagram-svg.js"></script>
+	<!--endbuild-->
+
+	<script>
+
+
+        $(document).ready(function(){
+            $("a[href*='id=portland']").css("background-color", "yellow");}
+            );
+
+
+        $("a[href*='id=ABC']").addClass('active_jquery_menu');
+
+	</script>
+
+
+</body>
+</html>
