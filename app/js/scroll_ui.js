@@ -169,6 +169,7 @@
 
             .set('#slide01 .logobox',{css:{position:"absolute",top:"50px",left:"150px",opacity:0.9}})
             .set('#slide01 .navbar-header',{css:{position:"absolute",top:"-90px",left:"50px",opacity:0.9}})
+            .set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"-70px",right:"50px",opacity:0.9}})
 
             .set('#slide01 .tag-1a',{css:{position:"absolute",top:"56%",left:"30%",opacity:0}})
             .set('#slide01 .tag-2a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0}})
