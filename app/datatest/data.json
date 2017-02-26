@@ -1,0 +1,618 @@
+{
+  "name": "CNCF",
+  "update": "022517",
+  "children": [
+    {
+      "name": "Infrastructure",
+      "slug": "infrastructure",
+      "key":"7",
+      "children": [
+        {
+          "name": "",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Provisioning",
+      "slug": "provisioning",
+      "key":"6",
+      "children": [
+        {
+          "name": "Infrastructure Automation",
+          "slug": "infrastructure_automation",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Host Management / Tooling",
+          "slug": "host_management",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Secure Images",
+          "slug": "secure_images",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Runtime",
+      "slug": "runtime",
+      "key":"5",
+      "children": [
+        {
+          "name": "OS",
+          "slug": "os",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cloud-Native Storage",
+          "slug": "cloud_native_storage",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Container Runtime",
+          "slug": "container_runtime",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Cloud-Native Network",
+          "slug": "cloud_native_network",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orchestration & Management",
+      "slug": "orchestration_and_management",
+      "key":"2",
+      "children": [
+        {
+          "name": "Scheduling & Orchestration",
+          "slug": "scheduling_and_orchestration",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Coordination & Service Discovery",
+          "slug": "coordination_and_services_discovery",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Service Management",
+          "slug": "service_management",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "slug": "data",
+      "key":"1",
+      "children": [
+        {
+          "name": "Database",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Data Warehouse",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Messaging / Streaming",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Application Definition & Development",
+      "slug": "application_definition_and_development",
+      "key":"1",
+      "children": [
+        {
+          "name": "Languages & Frameworks",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "SCM",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Registry Services",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Application Definition & Image Build",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "CI / CD",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "API's",
+      "slug": "apis",
+      "key":"1",
+      "children": [
+        {
+          "name": "Services as Code",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "API Management",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Platforms",
+      "slug": "platforms",
+      "key":"4",
+      "children": [
+        {
+          "name": "Paas / Container Service",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Event-based compute",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Observability and analysis",
+      "key":"3",
+      "children": [
+        {
+          "name": "Monitoring",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Logging",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Tracing",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        },
+        {
+          "name": "Specialized Tools",
+          "items": [
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            },
+            {
+              "name": "AWS",
+              "company":"Amazon",
+              "logo": "awslogo.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

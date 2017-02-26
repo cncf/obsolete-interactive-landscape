@@ -162,6 +162,8 @@
 	    // SCENE 6 - pin the first section
 	    // and update text
 
+
+
 	    var pinScene01Tl = new TimelineMax();
 
 	    pinScene01Tl
@@ -294,7 +296,43 @@
 	    .setTween(pinScene01Tl)
 	    .addTo(controller);
 
-	    // SCENE 7 - pin the second section
+
+        function getData(){
+            $.ajax({
+                type: 'GET',
+                url: 'datatest/data.json',
+                data: { get_param: 'value' },
+                success: function (data) {
+                    var names = data
+                    $('#cand').html(data);
+
+                    console.log(data);
+
+                    for (var i in data.children){
+
+                        var category =data.children[i].name;
+                        var key =data.children[i].key;
+                        var boxClass= ".category-box-"+key ;
+
+                        var thisBox = $('<div>')
+                            .addClass('luna')
+                            .text(category);
+
+                        $(boxClass).append(thisBox);
+
+                        console.log(category);
+                    }
+
+                }
+
+            });
+
+        }
+		getData();
+
+
+
+            // SCENE 7 - pin the second section
 	    // and update text
 
 	    var pinScene02Tl = new TimelineMax();
@@ -339,6 +377,12 @@
 			}
 		});
 
-	}
+
+
+
+
+
+
+    }
 
 }(jQuery));
