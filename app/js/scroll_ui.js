@@ -169,7 +169,7 @@
 	    pinScene01Tl
 
             .set('#slide01 .cat-icon',{css:{position:"absolute",top:"56%",right:"10%",opacity:1}})
-            .set('#slide01 .logobox',{css:{position:"absolute",top:"50px",left:"150px",opacity:0.9}})
+            .set('#slide01 .logobox',{css:{position:"absolute",top:"-20px",left:"150px",opacity:0.9}})
             .set('#slide01 .navbar-header',{css:{position:"absolute",top:"-90px",left:"50px",opacity:0.9}})
             .set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"-70px",right:"50px",opacity:0.9}})
 
@@ -315,20 +315,26 @@
                             .text(category.name);
 						$(boxClass).append(element);
 
+                        var companiesClass= "companies-"+category.key ;
+                        var companies = $('<div>')
+                            .addClass(companiesClass);
+                        $(boxClass).append(companies);
+
                         //The Subcategories
 						for(var c in category.children){
 							var subCategory = category.children[c];
 
-                            var element = $('<h5>')
+                            var boxItemsClass= "box-items"+category.key+"-"+c ;
+
+                            var boxitems = $('<div>')
+                                .addClass(boxItemsClass)
+                            	.addClass('box-items');
+                            $("."+companiesClass).append(boxitems);
+
+                            var element = $('<h4>')
                                 .addClass('subcategory')
                                 .text(subCategory.name);
-                            $(boxClass).append(element);
-
-                            var boxItemsClass= "box-items"+category.key+"-"+c ;
-                            var boxitems = $('<div>')
-                                .addClass(boxItemsClass);
-                            $(boxClass).append(boxitems);
-
+                            $(boxitems).append(element);
 
 
                             console.log(subCategory.name);

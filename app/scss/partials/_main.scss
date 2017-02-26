@@ -420,8 +420,35 @@ p {
         margin-right: 20px;
         text-align:left;
         width:80%;
+
+        h2{
+            color:red;
+            font-size:1.5em;
+            font-weight:100;
+            margin-left:-20px
+        }
+        h4{
+            color:orange;
+            font-size:0.7em;
+            font-weight:400;
+            margin:0px;
+        }
     }
 
+    @for $i from 1 through 7 {
+        .companies-#{$i} {
+            display:flex;
+        }
+    }
+
+
+    .box-items{
+        padding:20px;
+        border-width:0 0 0 1px;
+        border-color:#CCC;
+        border-style: solid;
+
+    }
 
     @each $number, $color,$toplocation in
                     (1,$f1-color),
@@ -435,12 +462,12 @@ p {
             border-color: $color;
             border-width: 0 0 0 3px;
             border-style: solid;
-            width:60%;
             height:500px;
             position:absolute;
             top:0;
             opacity:0;
             padding:0 40px;
+
         }
     }
 
@@ -469,14 +496,6 @@ p {
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-image: url('../../images/icon01.png');
-
-    }
-
-
-
-    .box-items{
-        display:flex;
-        flex-wrap:wrap;
 
     }
 
@@ -518,7 +537,7 @@ p {
 
     }
     .company-name{
-        font-size: 0.5em;
+        font-size: 0.4em;
         color: #9e9e9e;
         text-align: center;
         min-width: 100%;
