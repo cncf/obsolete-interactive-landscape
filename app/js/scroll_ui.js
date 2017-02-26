@@ -310,20 +310,32 @@
                         var category =data.children[i];
                         var boxClass= ".category-box-"+category.key ;
 
-                        var thisBox = $('<h3>')
+                        var element = $('<h2>')
                             .addClass('category')
                             .text(category.name);
-						$(boxClass).append(thisBox);
+						$(boxClass).append(element);
 
                         //The Subcategories
 						for(var c in category.children){
 							var subCategory = category.children[c];
 
-                            var thisBox = $('<h5>')
-                                .addClass('category')
+                            var element = $('<h5>')
+                                .addClass('subcategory')
                                 .text(subCategory.name);
-                            $(boxClass).append(thisBox);
+                            $(boxClass).append(element);
+							//console.log(subCategory)
 
+							//The companies
+							for(var g in subCategory.items){
+								var company = subCategory.items[g];
+
+								var element = $('<span>')
+									.addClass('company')
+									.text(company.name);
+								$(boxClass).append(element);
+
+
+							}
 
 
 						}
