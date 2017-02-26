@@ -303,24 +303,32 @@
                 url: 'datatest/data.json',
                 data: { get_param: 'value' },
                 success: function (data) {
-                    var names = data
-                    $('#cand').html(data);
 
-                    console.log(data);
-
+                	//The categories
                     for (var i in data.children){
 
-                        var category =data.children[i].name;
-                        var key =data.children[i].key;
-                        var boxClass= ".category-box-"+key ;
+                        var category =data.children[i];
+                        var boxClass= ".category-box-"+category.key ;
 
-                        var thisBox = $('<div>')
-                            .addClass('luna')
-                            .text(category);
+                        var thisBox = $('<h3>')
+                            .addClass('category')
+                            .text(category.name);
+						$(boxClass).append(thisBox);
 
-                        $(boxClass).append(thisBox);
+                        //The Subcategories
+						for(var c in category.children){
+							var subCategory = category.children[c];
 
-                        console.log(category);
+                            var thisBox = $('<h5>')
+                                .addClass('category')
+                                .text(subCategory.name);
+                            $(boxClass).append(thisBox);
+
+
+
+						}
+
+
                     }
 
                 }
