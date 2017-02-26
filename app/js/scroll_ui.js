@@ -329,10 +329,17 @@
 							for(var g in subCategory.items){
 								var company = subCategory.items[g];
 
-								var element = $('<span>')
+								var image =$('<div>')
 									.addClass('company')
+									.attr('style',"background-image:url('"+company.logo+"')")
+									.appendTo('box-items');
+
+
+								var boxitem = $('<div>')
+									.addClass('box-items')
 									.text(company.name);
-								$(boxClass).append(element);
+
+								$(boxClass).append(boxitem);
 
 
 							}
