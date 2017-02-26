@@ -208,39 +208,34 @@
             .to($('#slide01 .image2'), 0.6, {css:{left:"20%",opacity:0.6}}, 0)
             .to($('#slide01 .image1'), 0.7, {css:{left:"20%",opacity:0.6}}, 0)
 
-            //OFF 1
+            //OFF 7
             .to($('#slide01 .image7b'), 1, {css:{opacity:0.9}}, 0.2)
             .to($('#slide01 .tag-7a'), 0.4, {css:{opacity:1}},'-=1')
 	    	.to($('#slide01 h1'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide01 section'), 0.6, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
             .fromTo($('#slide01 .category-box-7'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-			//ON 2
-	    	.set($('#slide01 h1'), {text: 'Provisioning'})//numero2
-	    	.set($('#slide01 p'), {text: ".."})
+			//ON 6
+
 	    	.fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0')
             .to($('#slide01 .image6b'), 1.5, {autoAlpha: 1, ease:Power1.easeIn}, 1)
             .to($('#slide01 .tag-6a'), 0.4, {css:{opacity:1}},'-=1')
 	    	.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
             .fromTo($('#slide01 .category-box-6'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
-			//OFF 2
+			//OFF 6
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
             .fromTo($('#slide01 .category-box-6'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-			//ON 3
-            .set($('#slide01 h1'), {text: 'Runtime'})//numero3
-            .set($('#slide01 p'), {text: "Runtime"})
+			//ON 5
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
             .fromTo($('#slide01 .image5b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
             .to($('#slide01 .tag-5a'), 0.4, {css:{opacity:1}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
             .fromTo($('#slide01 .category-box-5'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
-            //OFF 3
+            //OFF 5
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
             .fromTo($('#slide01 .category-box-5'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
             //ON 4
-            .set($('#slide01 h1'), {text: 'Platforms'})//numero3
-            .set($('#slide01 p'), {text: "Platforms"})
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
             .fromTo($('#slide01 .image4b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
             .to($('#slide01 .tag-4a'), 0.4, {css:{opacity:0.9}},'-=1')
@@ -250,38 +245,52 @@
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
             .fromTo($('#slide01 .category-box-4'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-            //ON 5
-            .set($('#slide01 h1'), {text: 'Obserbability & Analysis'})//numero3
-            .set($('#slide01 p'), {text: "Obserbability & Analysis"})
+            //ON 3
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
             .fromTo($('#slide01 .image3b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
             .to($('#slide01 .tag-3a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
             .fromTo($('#slide01 .category-box-3'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
-            //OFF 5
+            //OFF 3
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
             .fromTo($('#slide01 .category-box-3'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-            //ON 6
-            .set($('#slide01 h1'), {text: 'Orchestration and Management'})//numero3
-            .set($('#slide01 p'), {text: "Orchestration and Management"})
+            //ON 2
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
             .fromTo($('#slide01 .image2b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
             .to($('#slide01 .tag-2a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
             .fromTo($('#slide01 .category-box-2'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
-            //OFF 6
+            //OFF 2
             .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
             .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
             .fromTo($('#slide01 .category-box-2'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-            //ON 7
-            .set($('#slide01 h1'), {text: 'Data + Application  + APIs'})//numero3
-            .set($('#slide01 p'), {text: "Data + Application "})
+            //ON 1A
             .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
             .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
             .to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
             .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            .fromTo($('#slide01 .category-box-1'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            .fromTo($('#slide01 .category-box-1a'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 1A
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .category-box-1a'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+			//ON1B
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            .fromTo($('#slide01 .category-box-1b'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
+            //OFF 1B
+            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            .fromTo($('#slide01 .category-box-1b'), 2, {y: '0'}, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            //ON 1C
+            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            .to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
+            .fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            .fromTo($('#slide01 .category-box-1c'), 1, {y: '+=40'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn}, '-=2')
 
         	.set($('#slide01 h1'), {css:{color:"red"}}, '+=2');
 
@@ -317,7 +326,7 @@
 
                         var companiesClass= "companies-"+category.key ;
                         var companies = $('<div>')
-                            .addClass(companiesClass);
+                            .addClass(companiesClass + " companies");
                         $(boxClass).append(companies);
 
                         //The Subcategories
