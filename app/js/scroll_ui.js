@@ -168,7 +168,7 @@
 
 	    pinScene01Tl
 
-
+            .set('#slide01 .cat-icon',{css:{position:"absolute",top:"56%",right:"10%",opacity:1}})
             .set('#slide01 .logobox',{css:{position:"absolute",top:"50px",left:"150px",opacity:0.9}})
             .set('#slide01 .navbar-header',{css:{position:"absolute",top:"-90px",left:"50px",opacity:0.9}})
             .set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"-70px",right:"50px",opacity:0.9}})
@@ -319,15 +319,17 @@
 						for(var c in category.children){
 							var subCategory = category.children[c];
 
-                            var boxItemsClass= "box-items"+category.key+"-"+c ;
-                            var boxitems = $('<div>')
-                                .addClass(boxItemsClass)
-                            $(boxClass).append(boxitems);
-
                             var element = $('<h5>')
                                 .addClass('subcategory')
                                 .text(subCategory.name);
                             $(boxClass).append(element);
+
+                            var boxItemsClass= "box-items"+category.key+"-"+c ;
+                            var boxitems = $('<div>')
+                                .addClass(boxItemsClass);
+                            $(boxClass).append(boxitems);
+
+
 
                             console.log(subCategory.name);
                             for(var m in subCategory.items){
@@ -342,7 +344,7 @@
                                     .addClass(companyItem)
                                     .attr("style","display:inline-block");
 
-                                $("."+boxItemsClass).after(item);
+                                $("."+boxItemsClass).append(item);
 
                                 var image =$('<div>')
                                     .addClass('company')
