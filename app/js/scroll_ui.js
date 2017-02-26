@@ -319,28 +319,40 @@
 						for(var c in category.children){
 							var subCategory = category.children[c];
 
+                            var boxItemsClass= "box-items"+category.key ;
+                            var boxitems = $('<div>')
+                                .addClass(boxItemsClass)
+                            $(boxClass).append(boxitems);
+
                             var element = $('<h5>')
                                 .addClass('subcategory')
                                 .text(subCategory.name);
                             $(boxClass).append(element);
-							//console.log(subCategory)
+
+
+
 
 							//The companies
 							for(var g in subCategory.items){
 								var company = subCategory.items[g];
+								console.log(g);
+                                var itemClass= "item-"+category.key+"-"+g ;
+								var item=$('<div>')
+									.addClass(itemClass)
+                            		.attr("style","display:inline-block");
 
-								var image =$('<div>')
+                                $("."+boxItemsClass).append(item);
+
+
+                                var image =$('<div>')
 									.addClass('company')
-									.attr('style',"background-image:url('"+company.logo+"')")
-									.appendTo('box-items');
+									.attr('style',"background-image:url('"+company.logo+"')");
+								$("."+itemClass).append(image);
 
-
-								var boxitem = $('<div>')
-									.addClass('box-items')
-									.text(company.name);
-
-								$(boxClass).append(boxitem);
-
+                                var name =$('<div>')
+                                    .addClass('company-name')
+                                    .text(company.name)
+                                $("."+itemClass).append(name);
 
 							}
 
