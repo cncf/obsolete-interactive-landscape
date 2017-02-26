@@ -319,7 +319,7 @@
 						for(var c in category.children){
 							var subCategory = category.children[c];
 
-                            var boxItemsClass= "box-items"+category.key ;
+                            var boxItemsClass= "box-items"+category.key+"-"+c ;
                             var boxitems = $('<div>')
                                 .addClass(boxItemsClass)
                             $(boxClass).append(boxitems);
@@ -329,35 +329,70 @@
                                 .text(subCategory.name);
                             $(boxClass).append(element);
 
+                            console.log(subCategory.name);
+                            for(var m in subCategory.items){
 
+                                var company = subCategory.items[m];
+                                console.log(company.name);
+                                var companyItem= "item-"+category.key+'-'+c+'-'+m;
+								console.log('uniquecompanyid:'+companyItem);
 
+                                var item=$('<div>')
+                                    .addClass('item')
+                                    .addClass(companyItem)
+                                    .attr("style","display:inline-block");
 
-							//The companies
-							for(var g in subCategory.items){
-								var company = subCategory.items[g];
-								console.log(g);
-                                var itemClass= "item-"+category.key+"-"+g ;
-								var item=$('<div>')
-									.addClass(itemClass)
-                            		.attr("style","display:inline-block");
-
-                                $("."+boxItemsClass).append(item);
-
+                                $("."+boxItemsClass).after(item);
 
                                 var image =$('<div>')
-									.addClass('company')
-									.attr('style',"background-image:url('"+company.logo+"')");
-								$("."+itemClass).append(image);
+                                    .addClass('company')
+                                    .attr('style',"background-image:url('"+company.logo+"')");
+                                $("."+companyItem).append(image);
 
                                 var name =$('<div>')
                                     .addClass('company-name')
                                     .text(company.name)
-                                $("."+itemClass).append(name);
+                                $("."+companyItem).append(name);
 
+                                //console.log(subCategory.items[m]);
 							}
 
 
 						}
+
+
+
+                        for(var g in category.children){
+
+
+
+
+                            // var company = items[g];
+                            //
+                            // //console.log("this is g:"+ g);
+                            // var itemClass= "item-"+category.key+"-"+g ;
+                            // //console.log("count:"+counter+",itemClass:"+ itemClass);
+                            //
+                            // var item=$('<div>')
+                            //     .addClass('item')
+                            //     .addClass(itemClass)
+                            //     .attr("style","display:inline-block");
+                            //
+                            // $("."+boxItemsClass).append(item);
+                            //
+                            //
+                            // var image =$('<div>')
+                            //     .addClass('company')
+                            //     .attr('style',"background-image:url('"+company.logo+"')");
+                            // $("."+itemClass).append(image);
+                            //
+                            // var name =$('<div>')
+                            //     .addClass('company-name')
+                            //     .text(company.name)
+                            // $("."+itemClass).append(name);
+
+                        }
+
 
 
                     }
