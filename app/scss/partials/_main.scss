@@ -396,8 +396,8 @@ p {
 .infog01{
     .logobox {
         //background-color: white;
-        width: 80%;
-        height: 500px;
+        width: 85%;
+        height: 550px;
         border-radius: 10px;
         display:flex;
         background-color: rgba(255, 255, 255, 0.1);
@@ -440,9 +440,10 @@ p {
 
         h2{
             color:black;
-            font-size:1.4em;
+            font-size:1.6em;
             font-weight:100;
-            margin-left:-20px
+            margin-left:-20px;
+            padding-bottom:10px;
         }
         h4{
             color:#666;
@@ -459,8 +460,8 @@ p {
         }
 
         .company{
-            width:35px;
-            height:35px;
+            width:32px;
+            height:32px;
             border-radius: 5px;
             box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
             background-repeat: no-repeat;
@@ -504,9 +505,9 @@ p {
                     ('1a',$f1-color,50),
                     ('1b',$f1-color,50),
                     ('1c',$f1-color,50),
-                    (2,$f2-color,100),
-                    (3,$f3-color,156),
-                    (4,$f4-color,160),
+                    (2,$f2-color,130),
+                    (3,$f3-color,170),
+                    (4,$f4-color,170),
                     (5,$f5-color,220),
                     (6,$f6-color,300),
                     (7,$f7-color,350) {
