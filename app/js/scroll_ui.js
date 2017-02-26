@@ -346,11 +346,11 @@
                             $(boxitems).append(element);
 
 
-                            console.log(subCategory.name);
+                            //console.log(subCategory.name);
                             for(var m in subCategory.items){
 
                                 var company = subCategory.items[m];
-                                console.log(company.name);
+                                console.log(company.productname);
                                 var companyItem= "item-"+category.key+'-'+c+'-'+m;
 								console.log('uniquecompanyid:'+companyItem);
 
@@ -368,7 +368,7 @@
 
                                 var name =$('<div>')
                                     .addClass('company-name')
-                                    .text(company.name)
+                                    .text(company.productname)
                                 $("."+companyItem).append(name);
 
                                 //console.log(subCategory.items[m]);
