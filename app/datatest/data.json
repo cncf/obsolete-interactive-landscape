@@ -12,48 +12,48 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "company":"Company",
+              "logo": "images/logos/aws.png"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Google Compute Platform",
+              "company":"Company",
+              "logo": "images/logos/googlecloud.jpg"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Azure Cloud",
+              "company":"Company",
+              "logo": "images/logos/azure.png"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Digital Ocean",
+              "company":"Company",
+              "logo": "images/logos/digitalocean.jpg"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "OpenStack",
+              "company":"Company",
+              "logo": "images/logos/openstack.jpg"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Vmware",
+              "company":"Company",
+              "logo": "images/logos/vmware.png"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Packet",
+              "company":"Company",
+              "logo": "images/logos/packet.jpg"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Oracle Cloud",
+              "company":"Company",
+              "logo": "images/logos/oracle.jpg"
             },
             {
-              "name": "AWS",
-              "company":"Amazon",
-              "logo": "images/fakeorg.jpeg"
+              "name": "Alibaba Cloud",
+              "company":"Company",
+              "logo": "images/logos/alibabacloud.jpg"
             }
           ]
         }
@@ -111,27 +111,27 @@
           "items": [
             {
               "name": "hm1",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "hm2",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "hm3",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "hm2",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "hm3",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -142,27 +142,27 @@
           "items": [
             {
               "name": "si1",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "si2",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "si3",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "si2",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "si3",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -180,27 +180,27 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -211,102 +211,102 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -317,32 +317,32 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -353,102 +353,102 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
 
@@ -467,77 +467,77 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -548,47 +548,47 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -599,82 +599,82 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -691,87 +691,87 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -781,37 +781,37 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -821,52 +821,52 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -883,77 +883,77 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -963,17 +963,17 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -983,32 +983,32 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1018,37 +1018,37 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1058,87 +1058,87 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1155,87 +1155,87 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1245,57 +1245,57 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1312,152 +1312,152 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
 
@@ -1468,67 +1468,67 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1544,167 +1544,167 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1714,47 +1714,47 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1764,22 +1764,22 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]
@@ -1789,52 +1789,52 @@
           "items": [
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             },
             {
               "name": "AWS",
-              "company":"Amazon",
+              "company":"Company",
               "logo": "images/fakeorg.jpeg"
             }
           ]

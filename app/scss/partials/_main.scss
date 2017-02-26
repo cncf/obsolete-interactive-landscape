@@ -469,11 +469,15 @@ p {
 
         }
         .company-name{
+
             font-size: 0.4em;
             color: #9e9e9e;
             text-align: center;
-            min-width: 100%;
-            padding: 5px 0 0 0;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 30px;
         }
     }
 
