@@ -367,7 +367,10 @@
 
                                 var image =$('<div>')
                                     .addClass('company')
-                                    .attr('style',"background-image:url('"+company.logo+"')");
+                                    .attr('style',"background-image:url('"+company.logo+"')")
+                                    .attr("data-toggle","tooltip")
+                                    .attr("data-placement","top")
+                                    .attr("title", company.productname);
                                 $("."+companyItem).append(image);
 
                                 var name =$('<div>')
@@ -437,6 +440,9 @@
 				}
 			}
 		});
+
+
+
 
 
 

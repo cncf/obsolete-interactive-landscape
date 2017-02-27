@@ -40,7 +40,7 @@
         <h1 class="title">Cloud Native Landscape</h1>
         <p>The Cloud Native Computing Foundation (CNCF) is a nonprofit organization committed to advancing the development of cloud native technology and services
 
-
+            <!--<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>-->
         </p>
 
         <img style="width:550px; padding:40px 0 0 0;" class="intro-logos" alt="Brand" src="images/logo-cncf-in.png">
@@ -254,7 +254,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 <script type="text/javascript" src="js/scroll_ui.js"></script>
@@ -262,7 +262,12 @@
 
 <script>
 
+    //starting tooltips
+    $( document ).ready(function() {
 
+        $('[data-toggle="tooltip"]').tooltip()
+
+    });
 
 </script>
 
