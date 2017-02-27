@@ -174,27 +174,31 @@
             .set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"-70px",right:"50px",opacity:0.9}})
 
             .set('#slide01 .tag-1a',{css:{position:"absolute",top:"56%",left:"30%",opacity:0}})
-            .set('#slide01 .tag-2a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0}})
-            .set('#slide01 .tag-3a',{css:{position:"absolute",top:"70%",left:"98%",opacity:0}})
-            .set('#slide01 .tag-4a',{css:{position:"absolute",top:"72%",left:"79%",opacity:0}})
+            .set('#slide01 .tag-4a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0}})
+            .set('#slide01 .tag-2a',{css:{position:"absolute",top:"70%",left:"98%",opacity:0}})
+            .set('#slide01 .tag-3a',{css:{position:"absolute",top:"72%",left:"79%",opacity:0}})
             .set('#slide01 .tag-5a',{css:{position:"absolute",top:"115%",left:"30%",opacity:0}})
             .set('#slide01 .tag-6a',{css:{position:"absolute",top:"135%",left:"30%",opacity:0}})
             .set('#slide01 .tag-7a',{css:{position:"absolute",top:"155%",left:"30%",opacity:0}})
 
             .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0%",left:"-100%",opacity:0}})
             .set('#slide01 .image1b',{css:{display:"block",position:"absolute",top:"0%",left:"20%",opacity:0}})
-            .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"30%",left:"-80%",opacity:0}})
-            .set('#slide01 .image2b',{css:{display:"block",position:"absolute",top:"30%",left:"20%",opacity:0}})
 
-            .set('#slide01 .image3',{css:{display:"block",position:"absolute",top:"30%",left:"-70%",width:"34%",height:"100%",opacity:0}})
-            .set('#slide01 .image3b',{css:{display:"block",position:"absolute",top:"30%",left:"87%",width:"34%",height:"100%",opacity:0}})
-            .set('#slide01 .image4',{css:{display:"block",position:"absolute",top:"30%",left:"-100%",width:"34%",height:"100%",opacity:0}})
-            .set('#slide01 .image4b',{css:{display:"block",position:"absolute",top:"30%",left:"70%",width:"34%",height:"100%",opacity:0}})
+            .set('#slide01 .image4',{css:{display:"block",position:"absolute",top:"30%",left:"-80%",opacity:0}})
+            .set('#slide01 .image4b',{css:{display:"block",position:"absolute",top:"30%",left:"20%",opacity:0}})
+
+            .set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"30%",left:"-70%",width:"34%",height:"100%",opacity:0}})
+            .set('#slide01 .image2b',{css:{display:"block",position:"absolute",top:"30%",left:"87%",width:"34%",height:"100%",opacity:0}})
+
+            .set('#slide01 .image3',{css:{display:"block",position:"absolute",top:"30%",left:"-100%",width:"34%",height:"100%",opacity:0}})
+            .set('#slide01 .image3b',{css:{display:"block",position:"absolute",top:"30%",left:"70%",width:"34%",height:"100%",opacity:0}})
 
             .set('#slide01 .image5',{css:{display:"block",position:"absolute",top:"60%",left:"100%",opacity:0}})
             .set('#slide01 .image5b',{css:{display:"block",position:"absolute",top:"60%",left:"20%",opacity:0}})
+
             .set('#slide01 .image6',{css:{display:"block",position:"absolute",top:"80%",left:"150%",opacity:0}})
             .set('#slide01 .image6b',{css:{display:"block",position:"absolute",top:"80%",left:"20%",opacity:0}})
+
             .set('#slide01 .image7',{css:{display:"block",position:"absolute",top:"100%",left:"200%",opacity:0}})
             .set('#slide01 .image7b',{css:{display:"block",position:"absolute",top:"100%",left:"20%",opacity:0.7}})
 
