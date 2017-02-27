@@ -272,7 +272,7 @@ header {
   .sidenav a {
     font-size: 18px; } }
 
-.ais-hits--item {
+.ais-hits--item {$21
   display: inline-block;
   border-radius: 5px;
   padding: 5px; }

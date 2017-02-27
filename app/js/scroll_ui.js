@@ -69,6 +69,7 @@
 			.set($('#preloader'), {className: '+=is-hidden'})
 			.from($('#intro .title'), 1, {autoAlpha: 0, ease:Power1.easeOut}, '-=0.2')
 			.from($('#intro p'), 0.7, {autoAlpha: 0, ease:Power1.easeOut}, '+=0.2')
+
 			.from($('.scroll-hint'), 0.3, {y: -20, autoAlpha: 0, ease:Power1.easeOut}, '+=0.1');
 
 		return preloaderOutTl;
@@ -169,7 +170,7 @@
 	    pinScene01Tl
 
             .set('#slide01 .cat-icon',{css:{position:"absolute",top:"56%",right:"10%",opacity:1}})
-            .set('#slide01 .logobox',{css:{position:"absolute",top:"-20px",left:"150px",opacity:0.9}})
+            .set('#slide01 .logobox',{css:{position:"absolute",top:"-50px",left:"150px",opacity:0.9}})
             .set('#slide01 .navbar-header',{css:{position:"absolute",top:"-90px",left:"50px",opacity:0.9}})
             .set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"-70px",right:"50px",opacity:0.9}})
 
@@ -376,43 +377,7 @@
 
 
 							}
-
-
 						}
-
-
-
-                        for(var g in category.children){
-
-
-
-
-                            // var company = items[g];
-                            //
-                            // //console.log("this is g:"+ g);
-                            // var itemClass= "item-"+category.key+"-"+g ;
-                            // //console.log("count:"+counter+",itemClass:"+ itemClass);
-                            //
-                            // var item=$('<div>')
-                            //     .addClass('item')
-                            //     .addClass(itemClass)
-                            //     .attr("style","display:inline-block");
-                            //
-                            // $("."+boxItemsClass).append(item);
-                            //
-                            //
-                            // var image =$('<div>')
-                            //     .addClass('company')
-                            //     .attr('style',"background-image:url('"+company.logo+"')");
-                            // $("."+itemClass).append(image);
-                            //
-                            // var name =$('<div>')
-                            //     .addClass('company-name')
-                            //     .text(company.name)
-                            // $("."+itemClass).append(name);
-
-                        }
-
 
 
                     }
@@ -434,9 +399,11 @@
 	    pinScene02Tl
 	    	.to($('#slide02 h1'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
 	    	.to($('#slide02 section'), 0.2, {autoAlpha: 0, ease:Power1.easeNone}, 1.5)
-	    	.set($('#slide02 h1'), {text: "Title here"})
-	    	.set($('#slide02 p'), {text: "Subtitle here"})
+	    	.set($('#slide02 h1'), {text: "Call to action here"})
+	    	.set($('#slide02 p'), {text: "details here"})
 	    	.to($('#slide02 .bcg'), 0.6, {scale: 1.2, transformOrigin: '0% 0%', ease:Power0.easeNone})
+            .to($('#slide01 .contact'), 0, {css:{opacity:0}},0)
+            .set($('#slide02 .contact'), {css:{opacity:0}})
 	    	.fromTo($('#slide02 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.4')
 	    	.fromTo($('#slide02 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
 	    	.set($('#slide02 h1'), {autoAlpha: 1}, '+=2.5');

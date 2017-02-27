@@ -2039,25 +2039,8 @@
               "company":"",
               "logo": "images/logos/",
               "visible": true
-            },
-            {
-              "productname": "Papertrail",
-              "company":"",
-              "logo": "images/logos/",
-              "visible": true
-            },
-            {
-              "productname": "Greylog",
-              "company":"",
-              "logo": "images/logos/",
-              "visible": true
-            },
-            {
-              "productname": "Loom Systems",
-              "company":"",
-              "logo": "images/logos/",
-              "visible": true
             }
+
           ]
         },
         {

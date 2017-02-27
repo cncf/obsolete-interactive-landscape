@@ -245,17 +245,17 @@ nav {
     }
 }
 .scroll-hint {
-    color: $darkest;
+    color: $lightest;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 40px;
-    border: 3px $lightest solid;
+    border: 1px $lightest solid;
     font-size: 13px;
     font-weight: bold;
     font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: rgba(255,255,255,0.9);
+
     z-index: 2;
 }
 
@@ -397,7 +397,7 @@ p {
     .logobox {
         //background-color: white;
         width: 85%;
-        height: 550px;
+        height: 580px;
         border-radius: 10px;
         display:flex;
         background-color: rgba(255, 255, 255, 0.1);
@@ -496,7 +496,7 @@ p {
             border-color: $color;
             border-width: 0 0 0 3px;
             border-style: solid;
-            height:500px;
+            height:560px;
             position:absolute;
             top:0;
             opacity:0;
@@ -652,12 +652,37 @@ p {
     .tag-6a{color:$f6-color;}
     .tag-7a{color:$f7-color;}
 
-
+    .cn-title{
+        text-shadow: 0px 0px 5px #839ccc;
+    }
 
 
 }
 
 
+.contactus{
+    display:flex;
+    align-items:flex-center;
+    padding:15px 0;
+    font-size:1em;
+    i{padding-right:20px; height:40px}
+    a{
+        padding:0 30px 0 0;
+        color: #8cd2ff;
+    }
+}
+
+.menu-icon {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+
+}
 
 
 
@@ -684,7 +709,7 @@ p {
         position: relative;
         .wrapper {
             position: absolute;
-            top: 50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -120%);
             margin: 0;
