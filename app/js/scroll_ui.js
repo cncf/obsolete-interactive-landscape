@@ -180,21 +180,17 @@
             .set('#slide01 .box-3',{css:{"flex-grow":20}})
 
 
-            .set('#slide01 .tag-1a',{css:{position:"absolute",top:"56%",left:"60%",opacity:0.2}})
-            .set('#slide01 .tag-4a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0.3}})
-            .set('#slide01 .tag-2a',{css:{position:"absolute",top:"75%",left:"90%",opacity:0.3}})
-            .set('#slide01 .tag-3a',{css:{position:"absolute",top:"87%",left:"77%",opacity:0.3}})
-            .set('#slide01 .tag-5a',{css:{position:"absolute",top:"115%",left:"30%",opacity:0.3}})
-            .set('#slide01 .tag-6a',{css:{position:"absolute",top:"135%",left:"30%",opacity:0.3}})
-            .set('#slide01 .tag-7a',{css:{position:"absolute",top:"155%",left:"30%",opacity:0.3}})
+            .set('#slide01 .tag-1a',{css:{position:"absolute",top:"56%",left:"60%",opacity:0}})
+            .set('#slide01 .tag-4a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0}})
+            .set('#slide01 .tag-2a',{css:{position:"absolute",top:"75%",left:"90%",opacity:0}})
+            .set('#slide01 .tag-3a',{css:{position:"absolute",top:"87%",left:"77%",opacity:0}})
+            .set('#slide01 .tag-5a',{css:{position:"absolute",top:"115%",left:"30%",opacity:0}})
+            .set('#slide01 .tag-6a',{css:{position:"absolute",top:"135%",left:"30%",opacity:0}})
+            .set('#slide01 .tag-7a',{css:{position:"absolute",top:"155%",left:"30%",opacity:0}})
 
 
-            .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0%",left:"20%",opacity:0.9}})
-            .set('#slide01 .image1a',{css:{display:"block",position:"absolute",top:"0%",left:"20%",opacity:0}})
-			//2-4    3-2     4-3
             .set('#slide01 .image1',{css:{display:"block",position:"absolute",top:"0%",left:"20%",opacity:0.9}})
             .set('#slide01 .image1b',{css:{display:"block",position:"absolute",top:"0%",left:"20%",opacity:0}})
-
 			//2-4
 			.set('#slide01 .image2',{css:{display:"block",position:"absolute",top:"30%",left:"87%",width:"34%",height:"100%",opacity:0.9}})
 			.set('#slide01 .image2b',{css:{display:"block",position:"absolute",top:"30%",left:"87%",width:"34%",height:"100%",opacity:0}})
@@ -299,57 +295,60 @@
             //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
 
 
-            //ON 1A  AAAAAAA
-            .fromTo($('#slide01 .category-box-1A'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .to($('#slide01 .tag-1Aa'), 2, {css:{opacity:1}},'-=1')
-            .fromTo($('#slide01 .image1Ab'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=2')
-            //OFF 1A
-            .fromTo($('#slide01 tag-1Aa'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
-            .fromTo($('#slide01 .category-box-1A'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-
-
-            //ON 1B  BBBBBBBB
-            .fromTo($('#slide01 .category-box-1B'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .to($('#slide01 .tag-1Ba'), 2, {css:{opacity:1}},'-=1')
-            .fromTo($('#slide01 .image1Bb'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=2')
-            //OFF 1B
-            .fromTo($('#slide01 tag-1Ba'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
-            .fromTo($('#slide01 .category-box-1B'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-
-
-            //ON 1C  CCCCCCCCCC
-            .fromTo($('#slide01 .category-box-1C'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .to($('#slide01 .tag-1Ba'), 2, {css:{opacity:1}},'-=1')
-            .fromTo($('#slide01 .image1Bb'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=2')
-            //OFF 1C
-            .fromTo($('#slide01 tag-1Ba'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
-            .fromTo($('#slide01 .category-box-1B'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-				
-
-
-
-
-
             //ON 1A
-            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            //.to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
-            //.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            .fromTo($('#slide01 .category-box-1a'), 0, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn},'-=2')
+            .fromTo($('#slide01 .category-box-1a'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
+            .to($('#slide01 .tag-1a'), 3, {css:{opacity:1}},'-=1')
+            .fromTo($('#slide01 .image1b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=2')
             //OFF 1A
-            .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
-            //.fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
-            .fromTo($('#slide01 .category-box-1a'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            .fromTo($('#slide01 .image1a'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
-            //ON1B
-            .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
-            .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
-            //.to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
-            //.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
-            .fromTo($('#slide01 .category-box-1b'), 0, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn},'-=2')
+            .fromTo($('#slide01 .category-box-1a'), 1, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
+
+
+            //ON 1B
+            .fromTo($('#slide01 .category-box-1b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
+            .to($('#slide01 .tag-1a'), 3, {css:{opacity:1}},'-=1')
+            //OFF 1B
+            .fromTo($('#slide01 .category-box-1b'), 1, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
+
+
+            //ON 1C
+            .fromTo($('#slide01 .category-box-1c'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
+            .to($('#slide01 .tag-1c'), 3, {css:{opacity:1}},'-=1')
+            //OFF 1B
+            .fromTo($('#slide01 .category-box-1c'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
+
+            .to($('#slide01 .tag-1c'), 3, {css:{opacity:1}},'-=1')
+            .to($('#slide01 .bcg2'), 0.5, {css:{"flex-grow":1, opacity:1}},'-=1')
+
+            .to($('#slide01 .itag'), 0.5, {css:{opacity:0}})
+            .to($('#slide01 .diagram-container'),4,{css:{position:"absolute",left:"0", top:"-20px", width:"600px",height:"300px", opacity:1}})
+            .to($('#slide01 .box-3'), 0.5, {css:{"flex-grow":20, opacity:1}},'-=1')
+            .to($('#slide01 .box-1'), 0.5, {css:{"flex-grow":30, opacity:1}},'-=1')
+            .to($('#slide01 .box-2'), 0.5, {css:{"flex-grow":1, opacity:0}},'-=1')
+
+
+
+
+
+
+
+
+            // //ON 1A
+            // .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            // .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            // //.to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
+            // //.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            // .fromTo($('#slide01 .category-box-1a'), 0, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn},'-=2')
+            // //OFF 1A
+            // .fromTo($('#slide01 h1'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=1')
+            // //.fromTo($('#slide01 section'), 0.6, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=0.5')
+            // .fromTo($('#slide01 .category-box-1a'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
+            // .fromTo($('#slide01 .image1a'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+            // //ON1B
+            // .fromTo($('#slide01 h1'), 0.7, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0')
+            // .fromTo($('#slide01 .image1b'), 1.5, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.5')
+            // //.to($('#slide01 .tag-1a'), 0.4, {css:{opacity:0.9}},'-=1')
+            // //.fromTo($('#slide01 section'), 0.6, {y: '+=20'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=0.6')
+            // .fromTo($('#slide01 .category-box-1b'), 0, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn},'-=2')
 
 
 
