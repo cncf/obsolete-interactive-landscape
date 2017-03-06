@@ -170,7 +170,7 @@
 	    pinScene01Tl
 
             .set('#slide01 .navbar-header',{css:{position:"fixed",top:"0px",left:"50px",opacity:0.9}})
-            .set('#slide01 .partners',{css:{position:"fixed",width:"400px",top:"0px",right:"50px",opacity:0.9}})
+            .set('#slide01 .partners',{css:{position:"fixed",width:"400px",top:"20px",right:"50px",opacity:0.9}})
 
 			.set('#slide01 .diagram-container',{css:{position:"relative",top:"26%",right:"10%", width:"600px",height:"300px", opacity:1}})
 
@@ -224,7 +224,7 @@
             // .to($('#slide01 .image1'), 0.7, {css:{opacity:0.3}}, 0)
 
 			//Diagram moves
-            .to($('#slide01 .diagram-container'), 1, {css:{position:"relative",top:"40px",left:"0", width:"250px",height:"150px", opacity:1}})
+            .to($('#slide01 .diagram-container'), 1, {css:{position:"relative",top:"40px",left:"-30px", width:"250px",height:"150px", opacity:1}})
 
             //.set('#slide01 .navbar-header',1,{css:{position:"absolute",top:"-30px",left:"100px",opacity:1}})
             //.set('#slide01 .partners',{css:{position:"absolute",width:"400px",top:"0px",right:"50px",opacity:0.9}})
@@ -331,7 +331,7 @@
 	    var pinScene01 = new ScrollMagic.Scene({
 	        triggerElement: '#slide01', 
 	        triggerHook: 0,
-	        duration: "350%"
+	        duration: "100%"
 	    })
 	    .setPin("#slide01")
 	    .setTween(pinScene01Tl)
@@ -373,7 +373,8 @@
                             $("."+companiesClass).append(boxitems);
 
                             var element = $('<h4>')
-                                .addClass('subcategory')
+                                .addClass(" subcategory ")
+								.addClass(" subcategory-"+category.key)
                                 .text(subCategory.name);
                             $(boxitems).append(element);
 
