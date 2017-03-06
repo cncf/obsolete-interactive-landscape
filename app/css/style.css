@@ -196,8 +196,7 @@ textarea {
   padding: 0.2em 0; }
 
 body {
-  font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-  background-color: #212121; }
+  font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif; }
 
 .wrapper {
   width: 80%;
@@ -455,6 +454,9 @@ p {
 
 /* =Infographic */
 /* =Infographic */
+.border {
+  border: 1px dotted red; }
+
 .infog01 .logobox {
   width: 100%;
   display: flex;
@@ -539,100 +541,91 @@ p {
   border-color: #17aaad;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-1b {
   border-color: #17aaad;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-1c {
   border-color: #17aaad;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-4 {
   border-color: #1b86c8;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-2 {
   border-color: #688ca5;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-3 {
   border-color: #635b89;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-5 {
   border-color: #478466;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-6 {
   border-color: #6c9a40;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-box-7 {
   border-color: #3e56a6;
   border-width: 0 0 0 3px;
   border-style: solid;
-  height: 560px;
+  height: 900px;
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px 0 10px;
-  overflow: scroll; }
+  padding: 0 40px 0 10px; }
 
 .infog01 .category-line-1a {
   background-color: #17aaad;
