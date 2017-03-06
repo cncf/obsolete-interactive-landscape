@@ -24,7 +24,7 @@ gulp.task('dev', function(callback){
 //Create Build
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-        ['sass','sassimage', 'useref', 'images', 'fonts'],
+        ['sass','sassimage', 'useref', 'images', 'fonts','datatest'],
         callback
     )
 });
@@ -44,7 +44,7 @@ gulp.task('sassimage', function () {
 gulp.task('sass', function(){
     return gulp.src(['app/scss/**/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest('app/css/temporary'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -97,6 +97,13 @@ gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 });
+
+//Sending Fonts to Dist
+gulp.task('datatest', function() {
+  return gulp.src('app/datatest/**/*')
+      .pipe(gulp.dest('dist/datatest'))
+});
+
 
 //Deleting previous dist builds
 gulp.task('clean:dist', function(){

@@ -162,15 +162,15 @@ h1 {
     z-index: 1;
     opacity: 0.5;
     .header-container & {
-        background-image: url(../../images/bg_cloud04.jpg);
+        background-image: url(../images/bg_cloud04.jpg);
         background-size: cover;
     }
     #slide01 & {
-        background: url(../../images/bg_cloud05.jpg) no-repeat center center;
+        background: url(../images/bg_cloud06.jpg) no-repeat center center;
         background-size: cover;
     }
     #slide02 & {
-        background: url(../../images/bg_cloud04.jpg) no-repeat center center;
+        background: url(../images/bg_cloud04.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -396,30 +396,28 @@ p {
 .infog01{
     .logobox {
         //background-color: white;
-        width: 85%;
-        height: 580px;
-        border-radius: 10px;
+       width:100%;
         display:flex;
         background-color: rgba(255, 255, 255, 0.1);
         margin-top:30px;
 
 
+
     }
     .box-1{
-        //flex-grow:2;
-        padding:20px;
-        width:40%;
+        flex-shrink:1;
 
 
     }
     .box-2{
-        flex-grow:2;
+        flex-grow:20;
         //background-color: rgba(255, 255, 255, 0.8);
         border-radius: 0 10px 10px 0;
         padding: 0px 20px 100px 20px;
         margin-right: 20px;
-        text-align:left;
-        width:100%;
+        text-align: left;
+
+
 
         .companies{
             display:flex;
@@ -456,18 +454,28 @@ p {
             height:100px;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            background-image: url('../../images/icon01.png');
+            background-image: url('../images/icon01.png');
         }
 
         .company{
-            width:32px;
-            height:32px;
+            width:50px;
+            height:50px;
             border-radius: 5px;
             box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
             background-repeat: no-repeat;
             background-size: 100% 100%;
 
         }
+        .companyBig{
+            width:100px;
+            height:100px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
         .company-name{
 
             font-size: 0.4em;
@@ -506,15 +514,15 @@ p {
     }
 
     @each $number, $color,$y,$x in
-                    ('1a',$f1-color,70,200),
-                    ('1b',$f1-color,70,200),
-                    ('1c',$f1-color,70,200),
-                    (2,$f2-color,170,90),
-                    (3,$f3-color,190,150),
-                    (4,$f4-color,230,280),
-                    (5,$f5-color,290,200),
-                    (6,$f6-color,350,150),
-                    (7,$f7-color,400,150) {
+                    ('1a',$f1-color,70,20),
+                    ('1b',$f1-color,70,20),
+                    ('1c',$f1-color,70,20),
+                    (2,$f2-color,170,20),
+                    (3,$f3-color,190,20),
+                    (4,$f4-color,230,20),
+                    (5,$f5-color,290,20),
+                    (6,$f6-color,350,20),
+                    (7,$f7-color,400,20) {
         .category-line-#{$number}{
             background-color: $color;
             top: #{$y}px;
@@ -522,6 +530,7 @@ p {
             height:2px;
             position:absolute;
             left:-#{$x}px;
+
         }
     }
 
@@ -573,12 +582,13 @@ p {
 
 
     .diagram-container{
-        //background-color: rgba(242, 104, 255, 0.4);
-        position:absolute;
-        left:-20px;
+        background-color: rgba(242, 104, 255, 0.4);
+        position:relative;
+        left:60px;
+        width:150px;
+        height:100px;
+        margin:0 80px 0 0px;
 
-        width:350px;
-        height:300px;
     }
 
     .image-diagram{
@@ -588,69 +598,87 @@ p {
         background-size: 100% 100%;
     }
     .image1{
-        background-image: url('../../images/stage-01.png');
+        background-image: url('../images/stage-01.png');
     }
     .image1b{
-        background-image: url('../../images/stage-01-b.png');
+        background-image: url('../images/stage-01-b.png');
     }
 
     .image2{
-        background-image: url('../../images/stage-02.png');
+        background-image: url('../images/stage-02.png');
     }
     .image2b{
-        background-image: url('../../images/stage-02-b.png');
+        background-image: url('../images/stage-02-b.png');
     }
 
     .image3{
-        background-image: url('../../images/stage-03.png');
+        background-image: url('../images/stage-03.png');
     }
     .image3b{
-        background-image: url('../../images/stage-03-b.png');
+        background-image: url('../images/stage-03-b.png');
     }
 
     .image4{
-        background-image: url('../../images/stage-04.png');
+        background-image: url('../images/stage-04.png');
     }
     .image4b{
-        background-image: url('../../images/stage-04-b.png');
+        background-image: url('../images/stage-04-b.png');
     }
 
     .image5{
-        background-image: url('../../images/stage-05.png');
+        background-image: url('../images/stage-05.png');
     }
     .image5b{
-        background-image: url('../../images/stage-05-b.png');
+        background-image: url('../images/stage-05-b.png');
     }
 
     .image6{
-        background-image: url('../../images/stage-06.png');
+        background-image: url('../images/stage-06.png');
     }
     .image6b{
-        background-image: url('../../images/stage-06-b.png');
+        background-image: url('../images/stage-06-b.png');
     }
 
     .image7{
-        background-image: url('../../images/stage-07.png');
+        background-image: url('../images/stage-07.png');
     }
     .image7b{
-        background-image: url('../../images/stage-07-b.png');
+        background-image: url('../images/stage-07-b.png');
     }
 
     .itag{
-        font-size:0.6em;
+        font-size:0.7em;
         display:"block";
         position:"absolute";
         left:"20%";
+        text-shadow: 1px 1px 1px #FFF;
+        font-weight:600;
     }
 
 
-    .tag-1a{color:$f1-color;}
-    .tag-2a{color:$f2-color;}
-    .tag-3a{color:$f3-color;}
-    .tag-4a{color:$f4-color;}
-    .tag-5a{color:$f5-color;}
-    .tag-6a{color:$f6-color;}
-    .tag-7a{color:$f7-color;}
+    .tag-1a{
+        color:darken($f1-color,10%);
+    }
+    .tag-2a{
+        color:darken($f2-color,10%);
+    }
+    .tag-3a{
+        color:darken($f3-color,10%);
+    }
+    .tag-4a{
+        color:darken($f4-color,10%);
+    }
+    .tag-5a{
+        color:darken($f5-color,10%);
+    }
+    .tag-6a{
+        color:darken($f6-color,10%);
+    }
+    .tag-7a{
+        color:darken($f7-color,10%);
+    }
+
+
 
     .cn-title{
         text-shadow: 0px 0px 5px #839ccc;
@@ -682,6 +710,34 @@ p {
     transform: translateY(-50%);
     transition: all 0.3s linear;
 
+}
+.c-tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.c-tooltip .c-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    box-shadow: 2px 1px 5px #CCC;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.c-tooltip:hover .c-tooltiptext {
+    visibility: visible;
 }
 
 

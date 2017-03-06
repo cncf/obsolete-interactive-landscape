@@ -18,19 +18,19 @@ $highlight-color: #f1ff0f;
 $shadow-color: rgba(0, 0, 0, .1);
 
 
-@font-face {
-  font-family: OpenSans;
-  src: url(/fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: OpenSansCondensed;
-  src: url(/fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-
-}
+//@font-face {
+//  font-family: OpenSans;
+//  src: url(/fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//@font-face {
+//  font-family: OpenSansCondensed;
+//  src: url(/fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf) format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//
+//}
 
 a.svg {
   position: relative;
@@ -104,7 +104,7 @@ hr {
 .header-filters {
   z-index: 2;
   height:50px;
-  background: url('images/logo.png');
+  //background: url('images/logo.png');
   background-repeat: no-repeat;
   //background-position:left;
   background-size: 180px;
