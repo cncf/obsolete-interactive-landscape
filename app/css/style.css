@@ -280,7 +280,7 @@ h1 {
     background-image: url(../images/bg_cloud04.jpg);
     background-size: cover; }
   #slide01 .bcg {
-    background: url(../images/bg_cloud06.jpg) no-repeat center center;
+    background: url(../images/bg_cloud05.jpg) no-repeat center center;
     background-size: cover; }
   #slide02 .bcg {
     background: url(../images/bg_cloud04.jpg) no-repeat center center;
@@ -458,7 +458,6 @@ p {
 .infog01 .logobox {
   width: 100%;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
   margin-top: 0px; }
 
 .infog01 .box-1 {
@@ -474,6 +473,12 @@ p {
     height: 70%;
     background-repeat: no-repeat;
     background-size: 100% 100%; }
+  .infog01 .box-1 .menu-container {
+    background-color: rgba(242, 104, 255, 0.4);
+    position: absolute;
+    bottom: 0px; }
+    .infog01 .box-1 .menu-container a {
+      display: block; }
 
 .infog01 .box-2 {
   flex-grow: 20;
@@ -488,7 +493,6 @@ p {
     border-radius: 5px;
     padding: 5px; }
   .infog01 .box-2 .box-items {
-    padding: 0 10px 0 5px;
     border-width: 0 0 0 1px;
     border-color: #CCC;
     border-style: solid; }
@@ -496,7 +500,6 @@ p {
     color: black;
     font-size: 1.6em;
     font-weight: 100;
-    margin-left: -20px;
     padding-bottom: 10px; }
   .infog01 .box-2 h4 {
     color: #666;
@@ -524,14 +527,13 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 100%; }
   .infog01 .box-2 .company-name {
-    font-size: 0.4em;
+    font-size: 0.6em;
     color: #262626;
     text-align: center;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 30px; }
+    max-width: 60px; }
 
 .infog01 .category-box-1a {
   border-color: #17aaad;
@@ -541,7 +543,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-1b {
   border-color: #17aaad;
@@ -551,7 +554,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-1c {
   border-color: #17aaad;
@@ -561,7 +565,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-4 {
   border-color: #1b86c8;
@@ -571,7 +576,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-2 {
   border-color: #688ca5;
@@ -581,7 +587,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-3 {
   border-color: #635b89;
@@ -591,7 +598,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-5 {
   border-color: #478466;
@@ -601,7 +609,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-6 {
   border-color: #6c9a40;
@@ -611,7 +620,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-box-7 {
   border-color: #3e56a6;
@@ -621,7 +631,8 @@ p {
   position: absolute;
   top: 0;
   opacity: 0;
-  padding: 0 40px; }
+  padding: 0 40px 0 10px;
+  overflow: scroll; }
 
 .infog01 .category-line-1a {
   background-color: #17aaad;
@@ -902,7 +913,8 @@ p {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+  color: red; }
 
 .c-tooltip {
   position: relative;

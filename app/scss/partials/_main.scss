@@ -166,7 +166,7 @@ h1 {
         background-size: cover;
     }
     #slide01 & {
-        background: url(../images/bg_cloud06.jpg) no-repeat center center;
+        background: url(../images/bg_cloud05.jpg) no-repeat center center;
         background-size: cover;
     }
     #slide02 & {
@@ -395,12 +395,9 @@ p {
 
 .infog01{
     .logobox {
-        //background-color: white;
        width:100%;
         display:flex;
-        background-color: rgba(255, 255, 255, 0.1);
         margin-top:0px;
-
 
 
     }
@@ -423,6 +420,18 @@ p {
             background-repeat: no-repeat;
             background-size: 100% 100%;
         }
+
+        .menu-container{
+            background-color: rgba(242, 104, 255, 0.4);
+            position:absolute;
+            bottom:0px;
+            a{
+                display: block;
+            }
+
+        }
+
+
 
     }
 
@@ -447,7 +456,7 @@ p {
             padding: 5px;
         }
         .box-items{
-            padding:0 10px 0 5px;
+            //padding:0 10px 0 5px;
             border-width:0 0 0 1px;
             border-color:#CCC;
             border-style: solid;
@@ -458,7 +467,7 @@ p {
             color:black;
             font-size:1.6em;
             font-weight:100;
-            margin-left:-20px;
+            //margin-left:-20px;
             padding-bottom:10px;
         }
         h4{
@@ -496,14 +505,16 @@ p {
 
         .company-name{
 
-            font-size: 0.4em;
+            font-size: 0.6em;
             color: #262626;
             text-align: center;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 30px;
+            max-width: 60px;
+
+
+
         }
     }
 
@@ -526,7 +537,8 @@ p {
             position:absolute;
             top:0;
             opacity:0;
-            padding:0 40px;
+            padding: 0 40px 0 10px;
+            overflow:scroll;
 
         }
     }
@@ -710,6 +722,7 @@ p {
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.3s linear;
+    color:red;
 
 }
 .c-tooltip {
