@@ -8,8 +8,8 @@
       "key":"7",
       "children": [
         {
-          "name": "Infrastructure",
-          "slug": "infrastructure",
+          "name": "",
+          "slug": "",
           "items": [
             {
               "productname": "AWS",
@@ -63,6 +63,12 @@
               "productname": "Alibaba Cloud",
               "company":"Alibaba",
               "logo": "images/logos/alibabacloud.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Fujitsu",
+              "company":"",
+              "logo": "images/logos/fujitsu.jpg",
               "visible": true
             }
           ]
@@ -528,6 +534,12 @@
               "company":"",
               "logo": "images/logos/neuvector.jpg",
               "visible": true
+            },
+            {
+              "productname": "Weaveworks",
+              "company":"Weave",
+              "logo": "images/logos/weaveworks.jpg",
+              "visible": true
             }
 
           ]
@@ -720,7 +732,7 @@
             {
               "productname": "Weave Flux",
               "company":"Weave",
-              "logo": "images/logos/weaveflux.jpg",
+              "logo": "images/logos/weaveworks.jpg",
               "visible": true
             },
             {
@@ -787,6 +799,12 @@
               "productname": "Avro",
               "company":"Apache",
               "logo": "images/logos/avro.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Vamp",
+              "company":"Vamp.io",
+              "logo": "images/logos/vamp.jpg",
               "visible": true
             }
           ]
@@ -1116,6 +1134,12 @@
               "company":"",
               "logo": "images/logos/lightbend.png",
               "visible": true
+            },
+            {
+              "productname": "C #",
+              "company":"",
+              "logo": "images/logos/csharp.jpg",
+              "visible": true
             }
           ]
         },
@@ -1184,7 +1208,7 @@
           ]
         },
         {
-          "name": "Application Definition",
+          "name": "Application Definition & Image Build",
           "items": [
             {
               "productname": "Packer",
@@ -1334,7 +1358,14 @@
               "company":"Huawei",
               "logo": "images/logos/containerops.jpg",
               "visible": true
+            },
+            {
+              "productname": "Appveyor",
+              "company":"",
+              "logo": "images/logos/appveyor.png",
+              "visible": true
             }
+
           ]
         }
       ]
@@ -1345,7 +1376,7 @@
       "key":"1c",
       "children": [
         {
-          "name": "Services as Code",
+          "productname": "Services as Code",
           "items": [
             {
               "productname": "Twilio",
@@ -1681,6 +1712,18 @@
               "company":"",
               "logo": "images/logos/kontena.png",
               "visible": true
+            },
+            {
+              "productname": "Navops",
+              "company":"",
+              "logo": "images/logos/navops.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Gravitational",
+              "company":"",
+              "logo": "images/logos/gravitational.jpg",
+              "visible": true
             }
 
           ]
@@ -1856,9 +1899,9 @@
               "visible": true
             },
             {
-              "productname": "Ruxit",
+              "productname": "Dynatrace",
               "company":"Dynatrace",
-              "logo": "images/logos/ruxit.jpg",
+              "logo": "images/logos/dynatrace.jpg",
               "visible": true
             },
             {
@@ -1974,6 +2017,12 @@
               "company":"",
               "logo": "images/logos/catchpoint2.jpg",
               "visible": true
+            },
+            {
+              "productname": "CoScale",
+              "company":"",
+              "logo": "images/logos/coscale.jpg",
+              "visible": true
             }
           ]
         },
@@ -2014,6 +2063,12 @@
               "productname": "FluentD",
               "company":"",
               "logo": "images/logos/fluentd.jpg",
+              "visible": true
+            },
+            {
+              "productname": "PaperTrail",
+              "company":"",
+              "logo": "images/logos/papertrail.png",
               "visible": true
             }
 
