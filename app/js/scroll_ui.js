@@ -444,11 +444,15 @@
 
 										//The text content
 										var content =$('<div>')
-
                                             .addClass(companyTooltip+"_content")
                                             .addClass(" content");
-
 											$(tooltip).append(content);
+
+											//Social Media
+											var social =$('<i>')
+												.addClass("fa fa-twitter right")
+												.attr("href","https://twitter.com");
+											$("."+companyTooltip+"_content").append(social);
 
 
 											//The Product
@@ -465,6 +469,8 @@
 											var description =$('<p>')
 												.text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
 											$("."+companyTooltip+"_content").append(description);
+
+
 
 
 

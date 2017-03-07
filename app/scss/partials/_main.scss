@@ -836,7 +836,7 @@ p {
     left: 50%;
     margin-left: -400px;
 
-    h4{ font-size:0.9em; font-weight: 400;}
+    h4{ font-size:1em; font-weight: 800;}
     p{ font-size:0.6em; font-weight: 300;}
 
     .companyLogo{
@@ -855,11 +855,17 @@ p {
 
     }
 
+    .right{
+        float:right;
+    }
+
+    .left{
+        float:left;
+    }
+
 
 
 }
-
-
 
 
 .c-tooltip:hover .c-tooltiptext {
