@@ -364,7 +364,7 @@ p {
 /* =Footer */
 .footer-container {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: transparentize($lightest,.5);
     background-color: #06060d;
     padding:50px;
@@ -377,6 +377,27 @@ p {
         color: transparentize($lightest,.2);
     }
 }
+
+/* =Footer */
+.footer2 {
+    text-align: center;
+    font-size: 0.7em;
+    color: transparentize($lightest,.5);
+    background-color: #06060d;
+    padding:20px;
+    position:fixed;
+    bottom:0px;
+    h3 {
+        margin: 0;
+        padding: 20px 0;
+        font-weight: normal;
+    }
+    a {
+        color: transparentize($lightest,.2);
+    }
+}
+
+
 
 /* =Simple animation up */
 .slideInUp {
@@ -542,7 +563,7 @@ p {
         text-align: left;
 
         .categories{
-            font-size: 1.5em;
+            font-size: 1.1em;
 
             @each $number, $color,$toplocation in
                             (1,$f1-color,170),
@@ -557,8 +578,18 @@ p {
                     top:0px;
                     right:0;
                     opacity:0.9;
+                    font-weight: 400;
+                    padding:1px 10px;
+                    background-color: white;
+                    margin:12px 0;
+
                     color: $color ;
-                    padding:5px 0;
+                    border-radius:4px 3px 3px 4px;
+                    border: 1px solid #{$color};
+                    border-width: 0px 0px 0px 10px;
+
+                    //color: #FFF;
+                    //background-color: $color;
                 }
             }
 
