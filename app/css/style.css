@@ -546,13 +546,6 @@ p {
     box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
     background-repeat: no-repeat;
     background-size: 100% 100%; }
-  .infog01 .box-2 .companyBig {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; }
   .infog01 .box-2 .company-name {
     font-size: 0.6em;
     color: #262626;
@@ -1111,20 +1104,38 @@ p {
 
 .c-tooltip .c-tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #000;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   font-weight: 500;
   text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
+  vertical-align: top;
+  border-radius: 10px 40px 0 10px;
+  padding: 10px 10px;
   box-shadow: 2px 1px 5px #CCC;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
   bottom: 80%;
   left: 50%;
-  margin-left: -60px; }
+  margin-left: -400px; }
+  .c-tooltip .c-tooltiptext h4 {
+    font-size: 0.9em;
+    font-weight: 400; }
+  .c-tooltip .c-tooltiptext p {
+    font-size: 0.6em;
+    font-weight: 300; }
+  .c-tooltip .c-tooltiptext .companyLogo {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    float: left; }
+  .c-tooltip .c-tooltiptext .content {
+    display: inline-block;
+    width: 300px;
+    color: white;
+    text-align: left;
+    padding: 5px; }
 
 .c-tooltip:hover .c-tooltiptext {
   visibility: visible; }

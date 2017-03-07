@@ -411,27 +411,13 @@
                                     .attr("style","display:inline-block");
                                 $("."+boxItemsClass).append(item);
 
-															//The tooltip
-																var tooltip =$('<span>')
-																	.addClass(companyTooltip+" c-tooltiptext")
-																	.text(company.productname);
 
-																$("."+companyItem).append(tooltip);
-
-                                var image =$('<div>')
+                                var image =$('<h4>')
                                     .addClass('company')
                                     .attr('style',"background-image:url('"+company.logo+"')")
                                     .attr("data-placement","top")
                                     .attr("title", company.productname);
                                 $("."+companyItem).append(image);
-
-
-                                // var image2 =$('<div>')
-									// 	.addClass('companyBig')
-									// 	.attr('style',"background-image:url('"+company.logo+"')");
-                                //
-                                // $("."+companyTooltip).append(image2);
-
 
                                 var name =$('<div>')
                                     .addClass('company-name')
@@ -440,8 +426,61 @@
 
 
 
+								//The tooltip container
+									var tooltip =$('<span>')
+										.addClass(companyTooltip+" c-tooltiptext");
+									$("."+companyItem).append(tooltip);
 
-							}
+
+
+								//The tooltip content`
+
+										//The image
+										var image2 =$('<img>')
+											.addClass('companyLogo')
+											.attr('src',company.logo);
+											$(tooltip).append(image2);
+
+
+										//The text content
+										var content =$('<div>')
+
+                                            .addClass(companyTooltip+"_content")
+                                            .addClass(" content");
+
+											$(tooltip).append(content);
+
+
+											//The Product
+											var productName =$('<h5>')
+												.text(company.productname);
+											$("."+companyTooltip+"_content").append(productName);
+
+											//The Company Name
+											var companyName =$('<p>')
+												.text(company.company);
+											$("."+companyTooltip+"_content").append(companyName);
+
+											//Description
+											var description =$('<p>')
+												.text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
+											$("."+companyTooltip+"_content").append(description);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            }
 						}
 
 
