@@ -442,10 +442,12 @@ p {
   text-align: center;
   font-size: 0.7em;
   color: rgba(255, 255, 255, 0.5);
-  background-color: #06060d;
-  padding: 20px;
+  background-color: rgba(33, 33, 33, 0.5);
+  padding: 5px;
   position: fixed;
-  bottom: 0px; }
+  bottom: 0px;
+  width: 100%;
+  opacity: 0; }
   .footer2 h3 {
     margin: 0;
     padding: 20px 0;

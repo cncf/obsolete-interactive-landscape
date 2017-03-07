@@ -383,10 +383,12 @@ p {
     text-align: center;
     font-size: 0.7em;
     color: transparentize($lightest,.5);
-    background-color: #06060d;
-    padding:20px;
+    background-color: transparentize($darkest,.5);
+    padding:5px;
     position:fixed;
     bottom:0px;
+    width:100%;
+    opacity:0;
     h3 {
         margin: 0;
         padding: 20px 0;

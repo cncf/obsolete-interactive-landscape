@@ -180,7 +180,7 @@
             .set('#slide01 .box-3',{css:{"flex-grow":20}})
 
 
-            .set('#slide01 .tag-1a',{css:{position:"absolute",top:"56%",left:"60%",opacity:0}})
+            .set('#slide01 .tag-1a',{css:{position:"absolute",top:"54%",left:"30%",opacity:0}})
             .set('#slide01 .tag-4a',{css:{position:"absolute",top:"85%",left:"30%",opacity:0}})
             .set('#slide01 .tag-2a',{css:{position:"absolute",top:"75%",left:"90%",opacity:0}})
             .set('#slide01 .tag-3a',{css:{position:"absolute",top:"87%",left:"77%",opacity:0}})
@@ -239,70 +239,55 @@
 
             //ON 7  INFRASTRUCTURE
             .fromTo($('#slide01 .category-box-7'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image7b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image7b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-7a'), 3, {css:{opacity:1}})
             //OFF 7
-
             .fromTo($('#slide01 .category-box-7'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image7b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+
 
             //ON 6  PROVISIONING
             .fromTo($('#slide01 .category-box-6'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image6b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image6b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-6a'), 3, {css:{opacity:1}})
-
             //OFF 6
-
             .fromTo($('#slide01 .category-box-6'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image6b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
 
 
 			//ON 5  RUNTIME
             .fromTo($('#slide01 .category-box-5'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image5b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image5b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-5a'), 3, {css:{opacity:1}})
-
             //OFF 5
-
             .fromTo($('#slide01 .category-box-5'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
 
 
             //ON 4  ORC
             .fromTo($('#slide01 .category-box-4'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image4b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image4b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-4a'), 3, {css:{opacity:1}})
-
             //OFF 4
-
             .fromTo($('#slide01 .category-box-4'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
 
 
             //ON 3  PLATFORM
             .fromTo($('#slide01 .category-box-3'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image3b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image3b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-3a'), 3, {css:{opacity:1}})
-
             //OFF 3
-
             .fromTo($('#slide01 .category-box-3'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
+
 
             //ON 2  OBSERVABILITY
             .fromTo($('#slide01 .category-box-2'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image2b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image2b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-2a'), 3, {css:{opacity:1}})
-
             //OFF 2
-
             .fromTo($('#slide01 .category-box-2'), 0, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut})
-            //.fromTo($('#slide01 .image5b'), 2, {y: '0'}, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '-=1')
 
 
             //ON 1A
             .fromTo($('#slide01 .category-box-1a'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeIn})
-            .fromTo($('#slide01 .image1b'), 1, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
+            .fromTo($('#slide01 .image1b'), 4, {y: '0'}, {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '-=1')
             .to($('#slide01 .tag-1a'), 3, {css:{opacity:1}})
 
             //OFF 1A
@@ -330,6 +315,8 @@
             .to($('#slide01 .box-3'), 0.5, {css:{"flex-grow":20, opacity:1}},'-=1')
             .to($('#slide01 .box-1'), 0.5, {css:{"flex-grow":40, opacity:1}},'-=1')
             .to($('#slide01 .box-2'), 0.5, {css:{"flex-grow":1, opacity:0}},'-=1')
+
+            .to($('#slide01 .footer2'), 3, {css:{opacity:1}},'+=10')
 
 
 
