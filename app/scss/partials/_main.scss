@@ -537,7 +537,7 @@ p {
         .company-name{
 
             font-size: 0.6em;
-            color: #262626;
+            color: #454545;
             text-align: center;
             display: inline-block;
             //white-space: nowrap;
@@ -545,7 +545,8 @@ p {
             max-width: 50px;
             line-height: 1em;
             padding:0 0 2px 0;
-            margin-top:5px;
+            margin-top:0px;
+            vertical-align: top;
 
         }
     }
@@ -825,7 +826,7 @@ p {
     font-weight: 500;
     text-align: center;
     vertical-align: top;
-    border-radius: 10px 40px 0 10px;
+    border-radius: 10px 40px 0 20px;
     padding: 10px 10px;
     box-shadow: 2px 1px 5px #CCC;
 
@@ -836,8 +837,8 @@ p {
     left: 50%;
     margin-left: -400px;
 
-    h4{ font-size:1em; font-weight: 800;}
-    p{ font-size:0.6em; font-weight: 300;}
+    h4{ font-size:1.2em; font-weight: 800;}
+    p{ font-size:0.7em; font-weight: 300;}
 
     .companyLogo{
         width:70px;
@@ -852,6 +853,11 @@ p {
         color:white;
         text-align:left;
         padding:5px;
+
+    }
+    .fa{padding-left:12px;}
+
+    .stars{
 
     }
 

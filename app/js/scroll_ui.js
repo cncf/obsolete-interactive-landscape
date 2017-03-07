@@ -448,27 +448,54 @@
                                             .addClass(" content");
 											$(tooltip).append(content);
 
-											//Social Media
+											var companyContent = "."+companyTooltip+"_content";
+
+											//Twitter
 											var social =$('<i>')
 												.addClass("fa fa-twitter right")
 												.attr("href","https://twitter.com");
-											$("."+companyTooltip+"_content").append(social);
+											$(companyContent).append(social);
+											//Github Stars
+											var stars =$('<span>')
+												.addClass("label right")
+												.text("2,342");
+											$(companyContent).append(stars);
+
+											//Github
+											var social =$('<i>')
+												.addClass("fa fa-github right")
+												.attr("href","https://twitter.com");
+											$(companyContent).append(social);
+
+											//OSS
+											var oss =$('<span>')
+												.addClass("label right")
+												.text("OSS");
+											$(companyContent).append(oss);
+
+											//Open Source
+											var open =$('<i>')
+												.addClass("fa fa-code right");
+											$(companyContent).append(open);
+
+
+
 
 
 											//The Product
 											var productName =$('<h5>')
 												.text(company.productname);
-											$("."+companyTooltip+"_content").append(productName);
+											$(companyContent).append(productName);
 
 											//The Company Name
 											var companyName =$('<p>')
 												.text(company.company);
-											$("."+companyTooltip+"_content").append(companyName);
+											$(companyContent).append(companyName);
 
 											//Description
 											var description =$('<p>')
 												.text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
-											$("."+companyTooltip+"_content").append(description);
+											$(companyContent).append(description);
 
 
 

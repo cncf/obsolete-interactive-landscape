@@ -548,14 +548,15 @@ p {
     background-size: 100% 100%; }
   .infog01 .box-2 .company-name {
     font-size: 0.6em;
-    color: #262626;
+    color: #454545;
     text-align: center;
     display: inline-block;
     overflow: hidden;
     max-width: 50px;
     line-height: 1em;
     padding: 0 0 2px 0;
-    margin-top: 5px; }
+    margin-top: 0px;
+    vertical-align: top; }
 
 .infog01 .box-3 {
   text-align: left; }
@@ -1110,7 +1111,7 @@ p {
   font-weight: 500;
   text-align: center;
   vertical-align: top;
-  border-radius: 10px 40px 0 10px;
+  border-radius: 10px 40px 0 20px;
   padding: 10px 10px;
   box-shadow: 2px 1px 5px #CCC;
   /* Position the tooltip */
@@ -1120,10 +1121,10 @@ p {
   left: 50%;
   margin-left: -400px; }
   .c-tooltip .c-tooltiptext h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 800; }
   .c-tooltip .c-tooltiptext p {
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 300; }
   .c-tooltip .c-tooltiptext .companyLogo {
     width: 70px;
@@ -1136,6 +1137,8 @@ p {
     color: white;
     text-align: left;
     padding: 5px; }
+  .c-tooltip .c-tooltiptext .fa {
+    padding-left: 12px; }
   .c-tooltip .c-tooltiptext .right {
     float: right; }
   .c-tooltip .c-tooltiptext .left {
