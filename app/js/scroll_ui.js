@@ -493,27 +493,10 @@
                                                 .text(company.brief);
 											$(companyContent).append(description);
 
+														}
+										}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            }
-						}
-
-
-                    }
+										}
 
                 }
 
@@ -570,14 +553,6 @@
 				}
 			}
 		});
-
-
-
-
-
-
-
-
 
 
     }

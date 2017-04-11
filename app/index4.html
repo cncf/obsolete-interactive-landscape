@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+
+	 <title>CNCF 0.2</title>
+
+	 <!--build:css css/styles.min.css-->
+	 <link rel="stylesheet" href="css/libs/normalize.css">
+	 <link type="text/css" href="css/libs/font-awesome.min.css" rel="stylesheet" />
+	 <link type="text/css" href="css/libs/jquery-ui.min.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+
+	 <link rel="stylesheet" href="css/style.css">
+
+	 <!--endbuild-->
+	 <style>
+		  /*
+	Demo Styles: NOT REQUIRED
+*/
+		  html,
+		  body {
+				margin: 0;
+				height: 100%
+		  }
+
+		  a {
+				color: white;
+				text-decoration: none;
+		  }
+
+		  a:hover {
+				text-decoration: underline;
+		  }
+		  a.active {
+				color: #FF0000;
+				text-decoration: underline;
+		  }
+
+		  h1,
+		  p {
+				margin: 0;
+				padding: 0;
+		  }
+
+		  header {
+				position: fixed;
+				top: 10px;
+				left: 10px;
+		  }
+
+		  .module {
+				position:fixed;
+				width:100%;
+				height:500px;
+				top:100px;
+				color:black;
+				opacity: 0;
+				z-index: 2;
+
+		  }
+
+		  .module.active{
+				opacity:1;
+				-webkit-transition: opacity 0.3s ease-in;
+				-moz-transition: opacity 0.3s ease-in;
+				-o-transition: opacity 0.3s ease-in;
+				-ms-transition: opacity 0.3s ease-in;
+				transition: opacity 0.3s ease-in;
+				z-index: 6;
+
+
+		  }
+
+		  .module.first {
+				opacity: 1;
+				z-index: 4;
+		  }
+
+
+		  section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color: #EFEFEF;
+		  }
+
+		  .full-screen {
+				height: 100%; /* makes panels the entire window height */
+		  }
+
+		  .blue {
+				background-color: #3883d8;
+		  }
+		  .red {
+				background-color: #cf3535;
+		  }
+		  .orange {
+				background-color: #ea6300;
+		  }
+
+
+
+	 </style>
+</head>
+<body>
+
+	 <div class="infog01">
+		  <div class="module first" id="module-anchor0">
+				<div class="box-1 stillbox">
+					 <a href="#section-3" id="anchor3">Go to indexxxxxxx</a>
+					 <div class="diagram-container">
+						  <div class="image-diagram image7"></div>
+						  <div class="image-diagram image7b"></div>
+						  <div class="image-diagram image6"></div>
+						  <div class="image-diagram image6b"></div>
+						  <div class="image-diagram image5"></div>
+						  <div class="image-diagram image5b"></div>
+
+						  <div class="image-diagram image4"></div>
+						  <div class="image-diagram image4b"></div>
+
+						  <div class="image-diagram image3"></div>
+						  <div class="image-diagram image3b"></div>
+
+						  <div class="image-diagram image2"></div>
+						  <div class="image-diagram image2b"></div>
+						  <a href="#section-1" id="anchor1">
+						  		<div class="image-diagram image1"></div>
+						  </a>
+						  <div class="image-diagram image1b"></div>
+
+						  <div class="itag tag-7a">Infrastructure</div>
+						  <div class="itag tag-6a">Provisioning</div>
+						  <div class="itag tag-5a">Runtime</div>
+						  <div class="itag tag-4a">Orchestration</div>
+						  <div class="itag tag-3a">Platforms</div>
+						  <div class="itag tag-2a">Observability & Analysis</div>
+						  <div class="itag tag-1a">Data & App definition</div>
+					 </div>
+
+				</div>
+
+		  </div>
+		  <div class="module" id="module-anchor1">
+				<div class="stillbox">
+					 <h1>This is module 1</h1>
+					 <h1>This is module 1</h1>
+					 <h1>This is module 1</h1>
+					 <a href="#section-3" id="anchor3">@1 Go to 3</a>
+				</div>
+		  </div>
+		  <div class="module" id="module-anchor2">
+				<div class="stillbox">
+					 <h1>This is module 2</h1>
+					 <h1>This is module 2</h1>
+					 <h1>This is module 2</h1>
+					 <a href="#section-1" id="anchor1">Go to 1</a>
+				</div>
+		  </div>
+		  <div class="module" id="module-anchor3">
+				<div class="stillbox">
+					 <h1>This is module 3</h1>
+					 <h1>This is module 3</h1>
+					 <h1>This is module 3</h1>
+					 <a href="#section-2" id="anchor2">Go to 2</a>
+				</div>
+		  </div>
+
+	 </div>
+
+	 <header role="banner">
+		  <nav class="anchor-nav" role="navigation">
+				<a href="#intro" id="intro-anchor">Intro</a>
+				<a href="#section-1" id="anchor1">Section 1</a>
+				<a href="#section-2" id="anchor2">Section 2</a>
+				<a href="#section-3" id="anchor3">Section 3</a>
+		  </nav>
+	 </header>
+
+
+
+	 <main class="full-screen" id="intro" role="main">
+
+
+
+		  <section class="full-screen blue " id="start">
+				<h1>Anchor Navigation</h1>
+		  </section>
+
+		  <section class="full-screen orange " id="section-1">
+				<div>
+					 <p>Section Uno</p>
+				</div>
+		  </section>
+
+		  <section class="full-screen red" id="section-2">
+				<div>
+					 <p>Section Dos</p>
+				</div>
+		  </section>
+
+		  <section class="full-screen blue" id="section-3">
+				<div>
+					 <p>Section Tres</p>
+				</div>
+		  </section>
+	 </main>
+
+
+
+
+
+<!--build:js js/main.min.js -->
+<script type="text/javascript" src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<script src="js/deps/jquery-1.11.2.js"></script>
+<script src="js/deps/TweenMax.min.js"></script>
+<script src="js/deps/TextPlugin.min.js"></script>
+<script src="js/deps/imagesloaded.pkgd.min.js"></script>
+<script src="js/deps/ScrollMagic.min.js"></script>
+<script src="js/deps/animation.gsap.js"></script>
+<script src="js/deps/ScrollToPlugin.min.js"></script>
+<script src="js/deps/debug.addIndicators.min.js"></script>
+
+<script type="text/javascript" src="js/jump.js"></script>
+
+<!--endbuild-->
+
+<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	 ga('create', 'UA-92791800-1', 'auto');
+	 ga('send', 'pageview');
+</script>
+</body>
+</html>
+
