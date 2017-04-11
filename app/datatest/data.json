@@ -8,25 +8,41 @@
       "key":"7",
       "children": [
         {
-          "name": "",
+          "name": "Infrastructure",
           "slug": "",
           "items": [
+            {
+              "productname": "Alibaba Cloud",
+              "company":"Alibaba",
+              "logo": "images/logos/alibabacloud.jpg",
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
+              "visible": true
+
+            },
             {
               "productname": "AWS",
               "company":"AWS",
               "logo": "images/logos/aws.png",
-              "visible": true
-            },
-            {
-              "productname": "Google Compute Platform",
-              "company":"Google",
-              "logo": "images/logos/googlecloud.jpg",
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
               "visible": true
             },
             {
               "productname": "Azure Cloud",
               "company":"Microsoft",
               "logo": "images/logos/azure.png",
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
               "visible": true
             },
             {
@@ -36,21 +52,21 @@
               "visible": true
             },
             {
+              "productname": "Fujitsu",
+              "company":"",
+              "logo": "images/logos/fujitsu.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Google Compute Platform",
+              "company":"Google",
+              "logo": "images/logos/googlecloud.jpg",
+              "visible": true
+            },
+            {
               "productname": "OpenStack",
               "company":"OpenStack",
               "logo": "images/logos/openstack.jpg",
-              "visible": true
-            },
-            {
-              "productname": "VMware",
-              "company":"VMware",
-              "logo": "images/logos/vmware.png",
-              "visible": true
-            },
-            {
-              "productname": "Packet",
-              "company":"",
-              "logo": "images/logos/packet.jpg",
               "visible": true
             },
             {
@@ -60,17 +76,18 @@
               "visible": true
             },
             {
-              "productname": "Alibaba Cloud",
-              "company":"Alibaba",
-              "logo": "images/logos/alibabacloud.jpg",
+              "productname": "Packet",
+              "company":"",
+              "logo": "images/logos/packet.jpg",
               "visible": true
             },
             {
-              "productname": "Fujitsu",
-              "company":"",
-              "logo": "images/logos/fujitsu.jpg",
+              "productname": "VMware",
+              "company":"VMware",
+              "logo": "images/logos/vmware.png",
               "visible": true
             }
+
           ]
         }
       ]
@@ -85,21 +102,15 @@
           "slug": "infrastructure_automation",
           "items": [
             {
-              "productname": "Terraform",
-              "company":"Hashicorp",
-              "logo": "images/logos/terraform.png",
-              "visible": true
-            },
-            {
-              "productname": "Infrakit",
-              "company":"Docker",
-              "logo": "images/logos/docker.jpg",
-              "visible": true
-            },
-            {
               "productname": "Bosch",
               "company":"Cloud Foundry",
               "logo": "images/logos/bosch.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Cloud coreo",
+              "company":"",
+              "logo": "images/logos/cloudcoreo.jpg",
               "visible": true
             },
             {
@@ -115,15 +126,21 @@
               "visible": true
             },
             {
+              "productname": "Infrakit",
+              "company":"Docker",
+              "logo": "images/logos/docker.jpg",
+              "visible": true
+            },
+            {
               "productname": "Redspread",
               "company":"CoreOS",
               "logo": "images/logos/redspread.jpg",
               "visible": true
             },
             {
-              "productname": "Cloudcoreo",
-              "company":"",
-              "logo": "images/logos/cloudcoreo.jpg",
+              "productname": "Terraform",
+              "company":"Hashicorp",
+              "logo": "images/logos/terraform.png",
               "visible": true
             }
           ]
@@ -133,15 +150,15 @@
           "slug": "host_management",
           "items": [
             {
-              "productname": "Puppet",
-              "company":"",
-              "logo": "images/logos/puppetize.jpg",
-              "visible": true
-            },
-            {
               "productname": "Ansible",
               "company":"",
               "logo": "images/logos/ansible.jpg",
+              "visible": true
+            },
+            {
+              "productname": "CFE Engine",
+              "company":"",
+              "logo": "images/logos/cfe.jpg",
               "visible": true
             },
             {
@@ -151,15 +168,15 @@
               "visible": true
             },
             {
-              "productname": "Salt",
-              "company":"Saltstack",
-              "logo": "images/logos/saltstack.jpg",
+              "productname": "Puppet",
+              "company":"",
+              "logo": "images/logos/puppetize.jpg",
               "visible": true
             },
             {
-              "productname": "CFE Engine",
-              "company":"",
-              "logo": "images/logos/cfe.jpg",
+              "productname": "Salt",
+              "company":"Saltstack",
+              "logo": "images/logos/saltstack.jpg",
               "visible": true
             }
           ]
@@ -168,24 +185,6 @@
           "name": "Secure Images",
           "slug": "secure_images",
           "items": [
-            {
-              "productname": "Trusted Registry",
-              "company":"Docker",
-              "logo": "images/logos/docker.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Clair",
-              "company":"CoreOS",
-              "logo": "images/logos/clair.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Twistlock",
-              "company":"",
-              "logo": "images/logos/twistlock.jpg",
-              "visible": true
-            },
             {
               "productname": "Anchore",
               "company":"",
@@ -196,6 +195,24 @@
               "productname": "Aqua",
               "company":"",
               "logo": "images/logos/aqua.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Clair",
+              "company":"CoreOS",
+              "logo": "images/logos/clair.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Trusted Registry",
+              "company":"Docker",
+              "logo": "images/logos/docker.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Twistlock",
+              "company":"",
+              "logo": "images/logos/twistlock.jpg",
               "visible": true
             }
           ]
@@ -212,15 +229,15 @@
           "slug": "os",
           "items": [
             {
-              "productname": "CoreOS",
-              "company":"CoreOS",
-              "logo": "images/logos/coreos.png",
-              "visible": true
-            },
-            {
               "productname": "Atomic",
               "company":"Red Hat",
               "logo": "images/logos/atomic.jpg",
+              "visible": true
+            },
+            {
+              "productname": "CoreOS",
+              "company":"CoreOS",
+              "logo": "images/logos/coreos.png",
               "visible": true
             },
             {
@@ -248,21 +265,27 @@
           "slug": "cloud_native_storage",
           "items": [
             {
-              "productname": "S3",
-              "company":"AWS",
-              "logo": "images/logos/awss3.jpg",
+              "productname": "Ceph",
+              "company":"",
+              "logo": "images/logos/ceph.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Datera",
+              "company":"",
+              "logo": "images/logos/datera.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Diamanti",
+              "company":"",
+              "logo": "images/logos/diamanti.jpg",
               "visible": true
             },
             {
               "productname": "EBS",
               "company":"AWS",
               "logo": "images/logos/awsebs.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Ceph",
-              "company":"",
-              "logo": "images/logos/ceph.jpg",
               "visible": true
             },
             {
@@ -278,6 +301,30 @@
               "visible": true
             },
             {
+              "productname": "Hedvig",
+              "company":"",
+              "logo": "images/logos/hedvig.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Iguaz",
+              "company":"Iguaz.io",
+              "logo": "images/logos/iguaz.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Infinit",
+              "company":"Docker",
+              "logo": "images/logos/infinit.jpg",
+              "visible": true
+            },
+            {
+              "productname": "libStorage",
+              "company":"Rex-Ray - EMC",
+              "logo": "images/logos/libstorage.jpg",
+              "visible": true
+            },
+            {
               "productname": "Minio",
               "company":"",
               "logo": "images/logos/minio.jpg",
@@ -290,27 +337,21 @@
               "visible": true
             },
             {
+              "productname": "Quobyte",
+              "company":"",
+              "logo": "images/logos/quobyte.jpg",
+              "visible": true
+            },
+            {
+              "productname": "S3",
+              "company":"AWS",
+              "logo": "images/logos/awss3.jpg",
+              "visible": true
+            },
+            {
               "productname": "StorageOS",
               "company":"",
               "logo": "images/logos/storageos.jpg",
-              "visible": true
-            },
-            {
-              "productname": "libStorage",
-              "company":"Rex-Ray - EMC",
-              "logo": "images/logos/libstorage.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Diamanti",
-              "company":"",
-              "logo": "images/logos/diamanti.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Rook",
-              "company":"rook.io",
-              "logo": "images/logos/rook.jpg",
               "visible": true
             },
             {
@@ -320,39 +361,9 @@
               "visible": true
             },
             {
-              "productname": "Springpath",
-              "company":"",
-              "logo": "images/logos/springpath.png",
-              "visible": true
-            },
-            {
-              "productname": "Hedvig",
-              "company":"",
-              "logo": "images/logos/hedvig.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Datera",
-              "company":"",
-              "logo": "images/logos/datera.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SolidFire",
-              "company":"",
-              "logo": "images/logos/solidfire.png",
-              "visible": true
-            },
-            {
-              "productname": "Infinit",
-              "company":"Docker",
-              "logo": "images/logos/infinit.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Iguaz",
-              "company":"Iguaz.io",
-              "logo": "images/logos/iguaz.jpg",
+              "productname": "Rook",
+              "company":"rook.io",
+              "logo": "images/logos/rook.jpg",
               "visible": true
             },
             {
@@ -362,9 +373,15 @@
               "visible": true
             },
             {
-              "productname": "Quobyte",
+              "productname": "Springpath",
               "company":"",
-              "logo": "images/logos/quobyte.jpg",
+              "logo": "images/logos/springpath.png",
+              "visible": true
+            },
+            {
+              "productname": "SolidFire",
+              "company":"",
+              "logo": "images/logos/solidfire.png",
               "visible": true
             }
           ]
@@ -374,27 +391,15 @@
           "slug": "container_runtime",
           "items": [
             {
-              "productname": "Docker",
-              "company":"Docker",
-              "logo": "images/logos/docker.jpg",
-              "visible": true
-            },
-            {
               "productname": "Containerd",
               "company":"Docker",
               "logo": "images/logos/containerd.jpg",
               "visible": true
             },
             {
-              "productname": "Rkt",
-              "company":"CoreOS",
-              "logo": "images/logos/rkt.jpg",
-              "visible": true
-            },
-            {
-              "productname": "RunC",
-              "company":"OCI",
-              "logo": "images/logos/runc.jpg",
+              "productname": "Docker",
+              "company":"Docker",
+              "logo": "images/logos/docker.jpg",
               "visible": true
             },
             {
@@ -408,6 +413,18 @@
               "company":"Canonical",
               "logo": "images/logos/lxd.jpg",
               "visible": true
+            },
+            {
+              "productname": "Rkt",
+              "company":"CoreOS",
+              "logo": "images/logos/rkt.jpg",
+              "visible": true
+            },
+            {
+              "productname": "RunC",
+              "company":"OCI",
+              "logo": "images/logos/runc.jpg",
+              "visible": true
             }
           ]
         },
@@ -416,15 +433,21 @@
           "slug": "cloud_native_network",
           "items": [
             {
-              "productname": "Docker Networking",
-              "company":"Docker",
-              "logo": "images/logos/networking.jpg",
+              "productname": "Aporeto",
+              "company":"",
+              "logo": "images/logos/aporeto.jpg",
               "visible": true
             },
             {
-              "productname": "Project Calico",
+              "productname": "Aviatrix",
               "company":"",
-              "logo": "images/logos/calico.png",
+              "logo": "images/logos/aviatrix.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Big Switch Network",
+              "company":"",
+              "logo": "images/logos/bigswitch.jpeg",
               "visible": true
             },
             {
@@ -434,33 +457,51 @@
               "visible": true
             },
             {
+              "productname": "Contiv",
+              "company":"Cisco",
+              "logo": "images/logos/contiv.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Cumulus",
+              "company":"",
+              "logo": "images/logos/cumulus.png",
+              "visible": true
+            },
+            {
+              "productname": "CNI",
+              "company":"",
+              "logo": "images/logos/cni.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Docker Networking",
+              "company":"Docker",
+              "logo": "images/logos/networking.jpg",
+              "visible": true
+            },
+            {
               "productname": "Flannel",
               "company":"CoreOS + Tigera",
               "logo": "images/logos/tigera.png",
               "visible": true
             },
             {
-              "productname": "VPC",
-              "company":"AWS",
-              "logo": "images/logos/vpc.png",
-              "visible": true
-            },
-            {
-              "productname": "WeaveNet",
-              "company":"Weave",
-              "logo": "images/logos/weavenet.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Aporeto",
+              "productname": "Midokura",
               "company":"",
-              "logo": "images/logos/aporeto.jpg",
+              "logo": "images/logos/midokura.png",
               "visible": true
             },
             {
-              "productname": "Contiv",
-              "company":"Cisco",
-              "logo": "images/logos/contiv.jpg",
+              "productname": "NeuVector",
+              "company":"",
+              "logo": "images/logos/neuvector.jpg",
+              "visible": true
+            },
+            {
+              "productname": "NSX",
+              "company":"VMware",
+              "logo": "images/logos/nsxvmware.jpg",
               "visible": true
             },
             {
@@ -476,39 +517,21 @@
               "visible": true
             },
             {
-              "productname": "Romana",
-              "company":"",
-              "logo": "images/logos/romana.png",
-              "visible": true
-            },
-            {
-              "productname": "Aviatrix",
-              "company":"",
-              "logo": "images/logos/aviatrix.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Cumulus",
-              "company":"",
-              "logo": "images/logos/cumulus.png",
-              "visible": true
-            },
-            {
-              "productname": "NSX",
-              "company":"VMware",
-              "logo": "images/logos/nsxvmware.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Midokura",
-              "company":"",
-              "logo": "images/logos/midokura.png",
-              "visible": true
-            },
-            {
               "productname": "Plumgrid",
               "company":"",
               "logo": "images/logos/plumgrid.png",
+              "visible": true
+            },
+            {
+              "productname": "Project Calico",
+              "company":"",
+              "logo": "images/logos/calico.png",
+              "visible": true
+            },
+            {
+              "productname": "Romana",
+              "company":"",
+              "logo": "images/logos/romana.png",
               "visible": true
             },
             {
@@ -518,25 +541,19 @@
               "visible": true
             },
             {
-              "productname": "Big Switch Network",
-              "company":"",
-              "logo": "images/logos/bigswitch.jpeg",
+              "productname": "VPC",
+              "company":"AWS",
+              "logo": "images/logos/vpc.png",
               "visible": true
             },
             {
-              "productname": "CNI",
-              "company":"",
-              "logo": "images/logos/cni.jpg",
+              "productname": "WeaveNet",
+              "company":"Weave",
+              "logo": "images/logos/weavenet.jpg",
               "visible": true
             },
             {
-              "productname": "NeuVector",
-              "company":"",
-              "logo": "images/logos/neuvector.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Weaveworks",
+              "productname": "Weave Works",
               "company":"Weave",
               "logo": "images/logos/weaveworks.jpg",
               "visible": true
@@ -556,75 +573,9 @@
           "slug": "scheduling_and_orchestration",
           "items": [
             {
-              "productname": "Kubernetes",
-              "company":"Google",
-              "logo": "images/logos/kubernetes.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Mesos",
-              "company":"",
-              "logo": "images/logos/mesos.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Docker Swarm",
-              "company":"Docker",
-              "logo": "images/logos/docker.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Nomad",
-              "company":"",
-              "logo": "images/logos/nomad.jpg",
-              "visible": true
-            },
-            {
-              "productname": "ECS",
-              "company":"AWS",
-              "logo": "images/logos/ecs-aws.jpg",
-              "visible": true
-            },
-            {
               "productname": "Apache Aurora",
               "company":"Apache",
               "logo": "images/logos/aurora.png",
-              "visible": true
-            },
-            {
-              "productname": "Marathon",
-              "company":"Mesosphere",
-              "logo": "images/logos/marathon.jpg",
-              "visible": true
-            },
-            {
-              "productname": "YARN",
-              "company":"Apache",
-              "logo": "images/logos/hadoop.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Firmament",
-              "company":"",
-              "logo": "images/logos/firmament.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Diego",
-              "company":"Cloud Foundry",
-              "logo": "images/logos/cloudfoundry.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Helios",
-              "company":"Spotify",
-              "logo": "images/logos/spotify.png",
-              "visible": true
-            },
-            {
-              "productname": "Singularity",
-              "company":"Hubspot",
-              "logo": "images/logos/hubspot.jpg",
               "visible": true
             },
             {
@@ -634,21 +585,93 @@
               "visible": true
             },
             {
-              "productname": "Skipjaq",
-              "company":"",
-              "logo": "images/logos/skipjaq.jpg",
+              "productname": "Diego",
+              "company":"Cloud Foundry",
+              "logo": "images/logos/cloudfoundry.jpg",
               "visible": true
             },
             {
-              "productname": "Microscaling",
+              "productname": "Docker Swarm",
+              "company":"Docker",
+              "logo": "images/logos/docker.jpg",
+              "visible": true
+            },
+            {
+              "productname": "ECS",
+              "company":"AWS",
+              "logo": "images/logos/ecs-aws.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Firmament",
               "company":"",
-              "logo": "images/logos/microscaling.jpg",
+              "logo": "images/logos/firmament.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Helios",
+              "company":"Spotify",
+              "logo": "images/logos/spotify.png",
               "visible": true
             },
             {
               "productname": "HyperPilot",
               "company":"",
               "logo": "images/logos/hyperpilot.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Kubernetes",
+              "company":"CNCF",
+              "logo": "images/logos/kubernetes.jpg",
+              "website":"https://kubernetes.io/",
+              "brief":"Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.",
+              "twitter":"https://twitter.com/kubernetesio",
+              "github":"https://github.com/kubernetes/kubernetes",
+              "ghstars":"21,212",
+              "oss":true,
+              "visible": true
+            },
+            {
+              "productname": "Marathon",
+              "company":"Mesosphere",
+              "logo": "images/logos/marathon.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Mesos",
+              "company":"",
+              "logo": "images/logos/mesos.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Micro Scaling",
+              "company":"",
+              "logo": "images/logos/microscaling.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Nomad",
+              "company":"",
+              "logo": "images/logos/nomad.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Singularity",
+              "company":"Hubspot",
+              "logo": "images/logos/hubspot.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Skipjaq",
+              "company":"",
+              "logo": "images/logos/skipjaq.jpg",
+              "visible": true
+            },
+            {
+              "productname": "YARN",
+              "company":"Apache",
+              "logo": "images/logos/hadoop.jpg",
               "visible": true
             }
           ]
@@ -664,27 +687,9 @@
               "visible": true
             },
             {
-              "productname": "Zookeeper",
-              "company":"Apache",
-              "logo": "images/logos/zookeeper.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SkyDNS",
-              "company":"",
-              "logo": "images/logos/skydns.jpg",
-              "visible": true
-            },
-            {
               "productname": "CoreDNS",
               "company":"",
               "logo": "images/logos/coredns.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Registrator",
-              "company":"Glider Labs",
-              "logo": "images/logos/gliderlabs.png",
               "visible": true
             },
             {
@@ -694,15 +699,33 @@
               "visible": true
             },
             {
+              "productname": "Hyperbahn",
+              "company":"Uber",
+              "logo": "images/logos/uber.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Registrator",
+              "company":"Glider Labs",
+              "logo": "images/logos/gliderlabs.png",
+              "visible": true
+            },
+            {
+              "productname": "SkyDNS",
+              "company":"",
+              "logo": "images/logos/skydns.jpg",
+              "visible": true
+            },
+            {
               "productname": "Smartstack / Synapse",
               "company":"Airbnb",
               "logo": "images/logos/airbnb.jpg",
               "visible": true
             },
             {
-              "productname": "Hyperbahn",
-              "company":"Uber",
-              "logo": "images/logos/uber.jpg",
+              "productname": "Zookeeper",
+              "company":"Apache",
+              "logo": "images/logos/zookeeper.jpg",
               "visible": true
             }
           ]
@@ -712,9 +735,27 @@
           "slug": "service_management",
           "items": [
             {
-              "productname": "NGINX",
+              "productname": "Avi Networks",
               "company":"",
-              "logo": "images/logos/nginx.jpg",
+              "logo": "images/logos/avi.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Avro",
+              "company":"Apache",
+              "logo": "images/logos/avro.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Backplane",
+              "company":"",
+              "logo": "images/logos/backplane.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Datawire",
+              "company":"",
+              "logo": "images/logos/datawire.jpg",
               "visible": true
             },
             {
@@ -724,27 +765,21 @@
               "visible": true
             },
             {
-              "productname": "HAProxy",
-              "company":"",
-              "logo": "images/logos/haproxy.png",
-              "visible": true
-            },
-            {
-              "productname": "Weave Flux",
-              "company":"Weave",
-              "logo": "images/logos/weaveworks.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Linkerd - Service Mesh",
-              "company":"Buoyant",
-              "logo": "images/logos/linkerd.png",
-              "visible": true
-            },
-            {
               "productname": "Envoy",
               "company":"Lyft",
               "logo": "images/logos/envoy.jpg",
+              "visible": true
+            },
+            {
+              "productname": "gRPC",
+              "company":"",
+              "logo": "images/logos/grpc.png",
+              "visible": true
+            },
+            {
+              "productname": "HAProxy",
+              "company":"",
+              "logo": "images/logos/haproxy.png",
               "visible": true
             },
             {
@@ -754,9 +789,21 @@
               "visible": true
             },
             {
-              "productname": "Datawire",
+              "productname": "Linkerd - Service Mesh",
+              "company":"Buoyant",
+              "logo": "images/logos/linkerd.png",
+              "visible": true
+            },
+            {
+              "productname": "NGINX",
               "company":"",
-              "logo": "images/logos/datawire.jpg",
+              "logo": "images/logos/nginx.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Thrift",
+              "company":"Apache",
+              "logo": "images/logos/apache.jpg",
               "visible": true
             },
             {
@@ -772,39 +819,15 @@
               "visible": true
             },
             {
-              "productname": "Backplane",
-              "company":"",
-              "logo": "images/logos/backplane.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Avi Networks",
-              "company":"",
-              "logo": "images/logos/avi.jpg",
-              "visible": true
-            },
-            {
-              "productname": "gRPC",
-              "company":"",
-              "logo": "images/logos/grpc.png",
-              "visible": true
-            },
-            {
-              "productname": "Thrift",
-              "company":"Apache",
-              "logo": "images/logos/apache.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Avro",
-              "company":"Apache",
-              "logo": "images/logos/avro.jpg",
-              "visible": true
-            },
-            {
               "productname": "Vamp",
               "company":"Vamp.io",
               "logo": "images/logos/vamp.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Weave Flux",
+              "company":"Weave",
+              "logo": "images/logos/weaveworks.jpg",
               "visible": true
             }
           ]
@@ -820,105 +843,207 @@
           "name": "Database",
           "items": [
             {
-              "productname": "RDS / Aurora",
-              "company":"AWS",
-              "logo": "images/logos/rds-aurora-aws.png",
-              "visible": true
-            },
-            {
-              "productname": "MySQL",
-              "company":"Oracle",
-              "logo": "images/logos/mysql.png",
-              "visible": true
-            },
-            {
-              "productname": "Postgres",
-              "company":"",
-              "logo": "images/logos/postgres.png",
-              "visible": true
-            },
-            {
-              "productname": "Oracle",
-              "company":"Oracle",
-              "logo": "images/logos/oracle.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SQL Server",
-              "company":"Microsoft",
-              "logo": "images/logos/sqlserver.jpg",
-              "visible": true
-            },
-            {
-              "productname": "IBM DB2",
-              "company":"IBM",
-              "logo": "images/logos/ibmdb2.png",
-              "visible": true
-            },
-            {
-              "productname": "MongoDB",
-              "company":"",
-              "logo": "images/logos/mongodb.png",
-              "visible": true
-            },
-            {
               "productname": "Cassandra",
-              "company":"",
+              "company":"Apache",
               "logo": "images/logos/cassandra.jpg",
+              "website":"http://cassandra.apache.org/",
+              "brief":"The Apache Cassandra database is the right choice when you need scalability and high availability without compromising performance. ",
+              "twitter":"http://twitter.com/cassandra",
+              "github":"https://github.com/apache/cassandra",
+              "ghstars":"3,336",
+              "oss":true,
               "visible": true
             },
             {
-              "productname": "Redis",
-              "company":"",
-              "logo": "images/logos/redis.jpg",
+              "productname": "BigChain",
+              "company":"BigChain DB",
+              "logo": "images/logos/chaindb.png",
+              "website":"https://www.bigchaindb.com/",
+              "brief":"BigchainDB allows developers and enterprise to deploy blockchain proof-of-concepts, platforms and applications with a scalable blockchain database, supporting a wide range of industries and use cases. ",
+              "twitter":"https://twitter.com/BigchainDB",
+              "github":"https://github.com/bigchaindb",
+              "ghstars":"989",
+              "oss":true,
               "visible": true
             },
             {
-              "productname": "CockroachDB",
-              "company":"",
+              "productname": "Cockroach DB",
+              "company":"Cockroach Labs",
               "logo": "images/logos/cockroach.jpg",
+              "website":"https://www.cockroachlabs.com/",
+              "brief":"An open source, survivable, strongly consistent, scale-out SQL database.",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
               "visible": true
             },
             {
-              "productname": "MariaDB",
-              "company":"",
-              "logo": "images/logos/mariadb.png",
+              "productname": "Couchbase",
+              "company":"Couchbase",
+              "logo": "images/logos/couchbase.png",
+              "website":"https://developer.couchbase.com/",
+              "brief":"Open source, document-oriented NoSQL database for modern web, mobile, and IoT applications. Designed for ease of development and internet-scale performance.",
+              "twitter":"https://twitter.com/cockroachdb",
+              "github":"",
+              "ghstars":"https://twitter.com/couchbase",
+              "oss":true,
               "visible": true
             },
             {
               "productname": "Crate",
               "company":"crate.io",
               "logo": "images/logos/crate.png",
+              "website":"https://crate.io/",
+              "brief":"Store and analyze massive amounts of machine data in real time",
+              "twitter":"https://twitter.com/Crateio",
+              "github":"https://github.com/crate",
+              "ghstars":"1,576",
+              "oss":false,
+              "visible": true
+            },
+            {
+              "productname": "IBM DB2",
+              "company":"IBM",
+              "logo": "images/logos/ibmdb2.png",
+              "website":"https://www.ibm.com/analytics/us/en/technology/db2/",
+              "brief":"Support massive volumes of data to petabyte levels, while dramatically accelerating complex queries for optimal business efficiency.",
+              "twitter":"https://twitter.com/IBM_DB2",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
+              "visible": true
+            },
+            {
+              "productname": "MariaDB",
+              "company":"",
+              "logo": "images/logos/mariadb.png",
+              "website":"",
+              "brief":"No-boundaries database software for the digital, cloud and cognitive era",
+              "twitter":"https://twitter.com/IBM_DB2",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
+              "visible": true
+            },
+            {
+              "productname": "MongoDB",
+              "company":"Mongo DB",
+              "logo": "images/logos/mongodb.png",
+              "website":"https://www.mongodb.com/",
+              "brief":"MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas.",
+              "twitter":"https://twitter.com/mongodb",
+              "github":"https://github.com/mongodb",
+              "ghstars":"11,042",
+              "oss":true,
+              "visible": true
+            },
+            {
+              "productname": "MySQL",
+              "company":"Oracle",
+              "logo": "images/logos/mysql.png",
+              "website":"https://www.mysql.com",
+              "brief":"the world's most popular open source database. MySQL can cost-effectively help you deliver high performance, scalable database applications.",
+              "twitter":"https://twitter.com/#!/mysql",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
               "visible": true
             },
             {
               "productname": "NomsDB",
-              "company":"",
+              "company":"Attic Labs",
               "logo": "images/logos/nomsdb.jpg",
+              "website":"https://github.com/attic-labs/noms",
+              "brief":"Noms is a decentralized database philosophically descendant from the Git version control system.",
+              "twitter":"https://twitter.com/nomsdb",
+              "github":"https://github.com/attic-labs/noms",
+              "ghstars":"6,012",
+              "oss":true,
               "visible": true
             },
             {
-              "productname": "Chain",
-              "company":"",
-              "logo": "images/logos/chaindb.png",
+              "productname": "Oracle",
+              "company":"Oracle",
+              "logo": "images/logos/oracle.jpg",
+              "website":"https://www.oracle.com/database/index.html",
+              "brief":"Oracle’s latest database cloud innovations help more businesses than ever leverage industry-leading enterprise capabilities while simplifying access for IT and developers.",
+              "twitter":"http://www.oracle.com/us/social-media/twitter/index.html",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
               "visible": true
             },
             {
-              "productname": "Couchbase",
-              "company":"",
-              "logo": "images/logos/couchbase.png",
+              "productname": "Postgres",
+              "company":"PostgreSQL",
+              "logo": "images/logos/postgres.png",
+              "website":"https://www.postgresql.org/",
+              "brief":"Sophisticated open-source Object-Relational DBMS supporting almost all SQL constructs, including subselects, transactions, and user-defined types",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
+              "visible": true
+            },
+            {
+              "productname": "Redis",
+              "company":"Redis Labs",
+              "logo": "images/logos/redis.jpg",
+              "website":"https://redis.io/",
+              "brief":"Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.",
+              "twitter":"https://twitter.com/redisfeed",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
               "visible": true
             },
             {
               "productname": "RethinkDB",
-              "company":"",
+              "company":"Rethink DB",
               "logo": "images/logos/rethinkdb.jpg",
+              "website":"https://www.rethinkdb.com/",
+              "brief":"RethinkDB is the open-source, scalable database that makes building realtime apps dramatically easier.",
+              "twitter":"https://twitter.com/rethinkdb",
+              "github":"https://github.com/rethinkdb/rethinkdb",
+              "ghstars":"18,395",
+              "oss":true,
+              "visible": true
+            },
+            {
+              "productname": "RDS / Aurora",
+              "company":"AWS",
+              "logo": "images/logos/rds-aurora-aws.png",
+              "website":"http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Aurora.html",
+              "brief":"Amazon Aurora is a fully managed, MySQL-compatible, relational database engine that combines the speed and reliability of high-end commercial databases with the simplicity and cost-effectiveness of open-source databases. ",
+              "twitter":"https://twitter.com/awscloud",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
+              "visible": true
+            },
+            {
+              "productname": "SQL Server",
+              "company":"Microsoft",
+              "logo": "images/logos/sqlserver.jpg",
+              "website":"https://www.microsoft.com/en-us/sql-server/sql-server-2016",
+              "brief":"Build intelligent, mission-critical applications using a scalable, hybrid database platform that has everything built in—from in-memory performance and advanced security to in-database analytics.",
+              "twitter":"https://twitter.com/SQLServer",
+              "github":"",
+              "ghstars":"",
+              "oss":false,
               "visible": true
             },
             {
               "productname": "TiDB",
-              "company":"",
+              "company":"Pingcab",
               "logo": "images/logos/tidb.jpg",
+              "website":"https://github.com/pingcap/tidb",
+              "brief":"TiDB is a distributed SQL database. Inspired by the design of Google F1 and Google Spanner, TiDB supports the best features of both traditional RDBMS and NoSQL.",
+              "twitter":"https://twitter.com/PingCAP",
+              "github":"https://github.com/pingcap/tidb",
+              "ghstars":"7,128",
+              "oss":true,
               "visible": true
             }
           ]
@@ -927,33 +1052,9 @@
           "name": "Data Warehouse",
           "items": [
             {
-              "productname": "Redshift",
-              "company":"AWS",
-              "logo": "images/logos/redshift.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SQL Data Warehouse",
-              "company":"Microsoft",
-              "logo": "images/logos/sqldatawarehouse.jpg",
-              "visible": true
-            },
-            {
               "productname": "BigQuery",
               "company":"Google",
               "logo": "images/logos/bigquery.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Snowflake",
-              "company":"",
-              "logo": "images/logos/snowflake.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Spark",
-              "company":"Hadoop",
-              "logo": "images/logos/spark.jpg",
               "visible": true
             },
             {
@@ -967,12 +1068,60 @@
               "company":"",
               "logo": "images/logos/qubole.jpeg",
               "visible": true
+            },
+            {
+              "productname": "Redshift",
+              "company":"AWS",
+              "logo": "images/logos/redshift.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Snowflake",
+              "company":"",
+              "logo": "images/logos/snowflake.jpg",
+              "visible": true
+            },
+            {
+              "productname": "SQL Data Warehouse",
+              "company":"Microsoft",
+              "logo": "images/logos/sqldatawarehouse.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Spark",
+              "company":"Hadoop",
+              "logo": "images/logos/spark.jpg",
+              "visible": true
             }
           ]
         },
         {
           "name": "Messaging / Streaming",
           "items": [
+            {
+              "productname": "Apex",
+              "company":"Apache",
+              "logo": "images/logos/apexapache.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Dataflow",
+              "company":"Google",
+              "logo": "images/logos/dataflow.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Flink",
+              "company":"Apache",
+              "logo": "images/logos/flink.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Heron",
+              "company":"",
+              "logo": "images/logos/heron.jpg",
+              "visible": true
+            },
             {
               "productname": "Kafka",
               "company":"",
@@ -986,42 +1135,6 @@
               "visible": true
             },
             {
-              "productname": "Dataflow",
-              "company":"Google",
-              "logo": "images/logos/dataflow.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Spark Streaming",
-              "company":"",
-              "logo": "images/logos/spark.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Heron",
-              "company":"",
-              "logo": "images/logos/heron.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Flink",
-              "company":"Apache",
-              "logo": "images/logos/flink.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Apex",
-              "company":"Apache",
-              "logo": "images/logos/apexapache.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Storm",
-              "company":"Apache",
-              "logo": "images/logos/storm.jpg",
-              "visible": true
-            },
-            {
               "productname": "NATS",
               "company":"",
               "logo": "images/logos/nats.jpg",
@@ -1031,6 +1144,18 @@
               "productname": "RabbitMQ",
               "company":"",
               "logo": "images/logos/rabbitmq.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Spark Streaming",
+              "company":"",
+              "logo": "images/logos/spark.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Storm",
+              "company":"Apache",
+              "logo": "images/logos/storm.jpg",
               "visible": true
             }
           ]
@@ -1046,9 +1171,33 @@
           "name": "Languages & Frameworks",
           "items": [
             {
+              "productname": "Angular",
+              "company":"",
+              "logo": "images/logos/angular.jpg",
+              "website":"",
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true,
+              "visible": true
+            },
+            {
+              "productname": "C #",
+              "company":"",
+              "logo": "images/logos/csharp.jpg",
+              "visible": true
+            },
+            {
               "productname": "Go",
               "company":"",
               "logo": "images/logos/golang.jpg",
+              "visible": true
+            },
+            {
+              "productname": "GoKit",
+              "company":"",
+              "logo": "images/logos/gokit.jpg",
               "visible": true
             },
             {
@@ -1058,15 +1207,21 @@
               "visible": true
             },
             {
-              "productname": "Node.js",
-              "company":"",
-              "logo": "images/logos/nodejs.jpg",
-              "visible": true
-            },
-            {
               "productname": "Java",
               "company":"",
               "logo": "images/logos/java.png",
+              "visible": true
+            },
+            {
+              "productname": "Lightbend",
+              "company":"",
+              "logo": "images/logos/lightbend.png",
+              "visible": true
+            },
+            {
+              "productname": "Meteor",
+              "company":"",
+              "logo": "images/logos/meteor.jpg",
               "visible": true
             },
             {
@@ -1076,9 +1231,9 @@
               "visible": true
             },
             {
-              "productname": "Ruby",
+              "productname": "Node.js",
               "company":"",
-              "logo": "images/logos/ruby.jpg",
+              "logo": "images/logos/nodejs.jpg",
               "visible": true
             },
             {
@@ -1094,51 +1249,27 @@
               "visible": true
             },
             {
-              "productname": "GoKit",
-              "company":"",
-              "logo": "images/logos/gokit.jpg",
-              "visible": true
-            },
-            {
-              "productname": "React",
-              "company":"",
-              "logo": "images/logos/react.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Angular",
-              "company":"",
-              "logo": "images/logos/angular.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Meteor",
-              "company":"",
-              "logo": "images/logos/meteor.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Spring",
-              "company":"",
-              "logo": "images/logos/spring.jpg",
-              "visible": true
-            },
-            {
               "productname": "Rails",
               "company":"",
               "logo": "images/logos/rails.jpg",
               "visible": true
             },
             {
-              "productname": "Lightbend",
-              "company":"",
-              "logo": "images/logos/lightbend.png",
+              "productname": "React",
+              "company":"Facebook",
+              "logo": "images/logos/react.jpg",
               "visible": true
             },
             {
-              "productname": "C #",
+              "productname": "Ruby",
               "company":"",
-              "logo": "images/logos/csharp.jpg",
+              "logo": "images/logos/ruby.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Spring",
+              "company":"",
+              "logo": "images/logos/spring.jpg",
               "visible": true
             }
           ]
@@ -1147,15 +1278,15 @@
           "name": "SCM",
           "items": [
             {
-              "productname": "Github",
-              "company":"",
-              "logo": "images/logos/github.jpg",
-              "visible": true
-            },
-            {
               "productname": "BitBucket",
               "company":"Atlassian",
               "logo": "images/logos/bitbucket.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Github",
+              "company":"",
+              "logo": "images/logos/github.jpg",
               "visible": true
             },
             {
@@ -1170,21 +1301,15 @@
           "name": "Registry Services",
           "items": [
             {
-              "productname": "DockerHub",
-              "company":"Docker",
-              "logo": "images/logos/dockerhub.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Quay",
-              "company":"CoreOS",
-              "logo": "images/logos/quay.jpg",
-              "visible": true
-            },
-            {
               "productname": "Artifactory",
               "company":"Jfrog",
               "logo": "images/logos/artifactory.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Atomic Registry",
+              "company":"",
+              "logo": "images/logos/atomic.jpg",
               "visible": true
             },
             {
@@ -1194,9 +1319,15 @@
               "visible": true
             },
             {
-              "productname": "Atomic Registry",
-              "company":"",
-              "logo": "images/logos/atomic.jpg",
+              "productname": "DockerHub",
+              "company":"Docker",
+              "logo": "images/logos/dockerhub.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Quay",
+              "company":"CoreOS",
+              "logo": "images/logos/quay.jpg",
               "visible": true
             },
             {
@@ -1211,21 +1342,9 @@
           "name": "Application Definition & Image Build",
           "items": [
             {
-              "productname": "Packer",
-              "company":"Hashicorp",
-              "logo": "images/logos/packer.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Compose",
-              "company":"Docker",
-              "logo": "images/logos/compose.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Habitat",
-              "company":"Chef",
-              "logo": "images/logos/chef.jpg",
+              "productname": "Ant",
+              "company":"Apache",
+              "logo": "images/logos/ant.jpg",
               "visible": true
             },
             {
@@ -1235,21 +1354,33 @@
               "visible": true
             },
             {
+              "productname": "Compose",
+              "company":"Docker",
+              "logo": "images/logos/compose.jpg",
+              "visible": true
+            },
+            {
               "productname": "Gradle",
               "company":"",
               "logo": "images/logos/gradle.jpg",
               "visible": true
             },
             {
-              "productname": "Ant",
-              "company":"Apache",
-              "logo": "images/logos/ant.jpg",
+              "productname": "Habitat",
+              "company":"Chef",
+              "logo": "images/logos/chef.jpg",
               "visible": true
             },
             {
               "productname": "Maven",
               "company":"",
               "logo": "images/logos/maven.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Packer",
+              "company":"Hashicorp",
+              "logo": "images/logos/packer.jpg",
               "visible": true
             }
           ]
@@ -1258,33 +1389,9 @@
           "name": "CI / CD",
           "items": [
             {
-              "productname": "Jenkins",
+              "productname": "Appveyor",
               "company":"",
-              "logo": "images/logos/jenkins.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Travis",
-              "company":"",
-              "logo": "images/logos/travis.jpg",
-              "visible": true
-            },
-            {
-              "productname": "CircleCI",
-              "company":"",
-              "logo": "images/logos/circleci.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Drone",
-              "company":"",
-              "logo": "images/logos/droneio.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Codeship",
-              "company":"",
-              "logo": "images/logos/codeship.jpeg",
+              "logo": "images/logos/appveyor.png",
               "visible": true
             },
             {
@@ -1294,27 +1401,21 @@
               "visible": true
             },
             {
+              "productname": "Buddy Build",
+              "company":"",
+              "logo": "images/logos/buddybuild.jpg",
+              "visible": true
+            },
+            {
               "productname": "Cloudbees",
               "company":"",
               "logo": "images/logos/cloudbees.jpg",
               "visible": true
             },
             {
-              "productname": "Spinnaker",
+              "productname": "Circle CI",
               "company":"",
-              "logo": "images/logos/spinnaker.png",
-              "visible": true
-            },
-            {
-              "productname": "Shippable",
-              "company":"",
-              "logo": "images/logos/shippable.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Wercker",
-              "company":"",
-              "logo": "images/logos/wercker.jpg",
+              "logo": "images/logos/circleci.jpg",
               "visible": true
             },
             {
@@ -1324,33 +1425,9 @@
               "visible": true
             },
             {
-              "productname": "BuddyBuild",
+              "productname": "Codeship",
               "company":"",
-              "logo": "images/logos/buddybuild.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Distelli",
-              "company":"",
-              "logo": "images/logos/distelli.jpg",
-              "visible": true
-            },
-            {
-              "productname": "TeamCity",
-              "company":"",
-              "logo": "images/logos/teamcity.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Solano Labs",
-              "company":"",
-              "logo": "images/logos/solanolabs.png",
-              "visible": true
-            },
-            {
-              "productname": "Semaphore",
-              "company":"",
-              "logo": "images/logos/semaphore.jpg",
+              "logo": "images/logos/codeship.jpeg",
               "visible": true
             },
             {
@@ -1360,12 +1437,65 @@
               "visible": true
             },
             {
-              "productname": "Appveyor",
+              "productname": "Distelli",
               "company":"",
-              "logo": "images/logos/appveyor.png",
+              "logo": "images/logos/distelli.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Drone",
+              "company":"",
+              "logo": "images/logos/droneio.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Jenkins",
+              "company":"",
+              "logo": "images/logos/jenkins.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Semaphore",
+              "company":"",
+              "logo": "images/logos/semaphore.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Shippable",
+              "company":"",
+              "logo": "images/logos/shippable.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Solano Labs",
+              "company":"",
+              "logo": "images/logos/solanolabs.png",
+              "visible": true
+            },
+            {
+              "productname": "Spinnaker",
+              "company":"",
+              "logo": "images/logos/spinnaker.png",
+              "visible": true
+            },
+            {
+              "productname": "TeamCity",
+              "company":"",
+              "logo": "images/logos/teamcity.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Travis",
+              "company":"",
+              "logo": "images/logos/travis.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Wercker",
+              "company":"",
+              "logo": "images/logos/wercker.jpg",
               "visible": true
             }
-
           ]
         }
       ]
@@ -1376,18 +1506,12 @@
       "key":"1c",
       "children": [
         {
-          "productname": "Services as Code",
+          "name": "Services as Code",
           "items": [
             {
-              "productname": "Twilio",
+              "productname": "Algolia",
               "company":"",
-              "logo": "images/logos/twilio.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Stripe",
-              "company":"",
-              "logo": "images/logos/stripe.png",
+              "logo": "images/logos/algolia.jpg",
               "visible": true
             },
             {
@@ -1397,33 +1521,9 @@
               "visible": true
             },
             {
-              "productname": "Segment",
-              "company":"",
-              "logo": "images/logos/segment.jpg",
-              "visible": true
-            },
-            {
               "productname": "Checkr",
               "company":"",
               "logo": "images/logos/checkr.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SendGrid",
-              "company":"",
-              "logo": "images/logos/sendgrid.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Smyte",
-              "company":"",
-              "logo": "images/logos/smyte.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Algolia",
-              "company":"",
-              "logo": "images/logos/algolia.jpg",
               "visible": true
             },
             {
@@ -1439,15 +1539,27 @@
               "visible": true
             },
             {
+              "productname": "Plaid",
+              "company":"",
+              "logo": "images/logos/plaid.jpg",
+              "visible": true
+            },
+            {
               "productname": "keen.io",
               "company":"",
               "logo": "images/logos/keenio.jpg",
               "visible": true
             },
             {
-              "productname": "Plaid",
+              "productname": "Segment",
               "company":"",
-              "logo": "images/logos/plaid.jpg",
+              "logo": "images/logos/segment.jpg",
+              "visible": true
+            },
+            {
+              "productname": "SendGrid",
+              "company":"",
+              "logo": "images/logos/sendgrid.jpg",
               "visible": true
             },
             {
@@ -1455,36 +1567,30 @@
               "company":"",
               "logo": "images/logos/shopify.jpg",
               "visible": true
+            },
+            {
+              "productname": "Smyte",
+              "company":"",
+              "logo": "images/logos/smyte.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Stripe",
+              "company":"",
+              "logo": "images/logos/stripe.png",
+              "visible": true
+            },
+            {
+              "productname": "Twilio",
+              "company":"",
+              "logo": "images/logos/twilio.jpg",
+              "visible": true
             }
           ]
         },
         {
           "name": "API Management",
           "items": [
-            {
-              "productname": "Mulesoft",
-              "company":"",
-              "logo": "images/logos/mulesoft.jpg",
-              "visible": true
-            },
-            {
-              "productname": "API Gateway",
-              "company":"AWS",
-              "logo": "images/logos/apigateway-aws.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Kong",
-              "company":"Mashape",
-              "logo": "images/logos/kong.png",
-              "visible": true
-            },
-            {
-              "productname": "Apigee",
-              "company":"Google",
-              "logo": "images/logos/apigee.jpg",
-              "visible": true
-            },
             {
               "productname": "3scale",
               "company":"Red Hat",
@@ -1498,9 +1604,39 @@
               "visible": true
             },
             {
+              "productname": "API Gateway",
+              "company":"AWS",
+              "logo": "images/logos/apigateway-aws.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Apigee",
+              "company":"Google",
+              "logo": "images/logos/apigee.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Kong",
+              "company":"Mashape",
+              "logo": "images/logos/kong.png",
+              "visible": true
+            },
+            {
               "productname": "Mashery",
               "company":"Tibco",
               "logo": "images/logos/mashery.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Mulesoft",
+              "company":"",
+              "logo": "images/logos/mulesoft.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Tray.io",
+              "company":"",
+              "logo": "images/logos/tray.jpg",
               "visible": true
             },
             {
@@ -1513,12 +1649,6 @@
               "productname": "WSO2",
               "company":"",
               "logo": "images/logos/wso2.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Tray.io",
-              "company":"",
-              "logo": "images/logos/tray.jpg",
               "visible": true
             },
             {
@@ -1540,33 +1670,27 @@
           "name": "Paas / Container Service",
           "items": [
             {
-              "productname": "Docker Datacenter",
-              "company":"Docker",
-              "logo": "images/logos/docker-datacenter.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Docker Cloud",
-              "company":"Docker",
-              "logo": "images/logos/docker-cloud.jpg",
-              "visible": true
-            },
-            {
-              "productname": "GCE",
+              "productname": "Apcera",
               "company":"",
-              "logo": "images/logos/google-gce.jpg",
+              "logo": "images/logos/apcera.jpg",
               "visible": true
             },
             {
-              "productname": "Heroku",
+              "productname": "Apprenda",
               "company":"",
-              "logo": "images/logos/heroku.jpg",
+              "logo": "images/logos/apprenda.jpg",
               "visible": true
             },
             {
-              "productname": "Tectonic",
-              "company":"CoreOS",
-              "logo": "images/logos/tectonic.jpg",
+              "productname": "Atomist",
+              "company":"",
+              "logo": "images/logos/atomist.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Cloud66",
+              "company":"",
+              "logo": "images/logos/cloud66.jpg",
               "visible": true
             },
             {
@@ -1576,9 +1700,27 @@
               "visible": true
             },
             {
-              "productname": "OpenShift",
+              "productname": "ContainerShip",
               "company":"",
-              "logo": "images/logos/openshift.jpg",
+              "logo": "images/logos/containership.jpg",
+              "visible": true
+            },
+            {
+              "productname": "ContainerX",
+              "company":"Cisco",
+              "logo": "images/logos/containerx.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Convox",
+              "company":"",
+              "logo": "images/logos/convox.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Datawire",
+              "company":"",
+              "logo": "images/logos/datawire.jpg",
               "visible": true
             },
             {
@@ -1594,81 +1736,15 @@
               "visible": true
             },
             {
-              "productname": "Apcera",
-              "company":"",
-              "logo": "images/logos/apcera.jpg",
+              "productname": "Docker Cloud",
+              "company":"Docker",
+              "logo": "images/logos/docker-cloud.jpg",
               "visible": true
             },
             {
-              "productname": "Apprenda",
-              "company":"",
-              "logo": "images/logos/apprenda.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Rancher",
-              "company":"",
-              "logo": "images/logos/rancheros.jpg",
-              "visible": true
-            },
-            {
-              "productname": "PhotoPlatform",
-              "company":"VMware",
-              "logo": "images/logos/photoplatform.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Triton",
-              "company":"Joyent",
-              "logo": "images/logos/triton.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Platform9",
-              "company":"",
-              "logo": "images/logos/platform9.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Flynn",
-              "company":"",
-              "logo": "images/logos/flynn.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Datawire",
-              "company":"",
-              "logo": "images/logos/datawire.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Atomist",
-              "company":"",
-              "logo": "images/logos/atomist.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Convox",
-              "company":"",
-              "logo": "images/logos/convox.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Iron.io",
-              "company":"",
-              "logo": "images/logos/ironio.jpg",
-              "visible": true
-            },
-            {
-              "productname": "ContainerX",
-              "company":"Cisco",
-              "logo": "images/logos/containerx.jpg",
-              "visible": true
-            },
-            {
-              "productname": "PaaSTA",
-              "company":"Yelp",
-              "logo": "images/logos/paasta.jpg",
+              "productname": "Docker Datacenter",
+              "company":"Docker",
+              "logo": "images/logos/docker-datacenter.jpg",
               "visible": true
             },
             {
@@ -1678,9 +1754,15 @@
               "visible": true
             },
             {
-              "productname": "Nirmata",
+              "productname": "Flynn",
               "company":"",
-              "logo": "images/logos/nirmata.jpg",
+              "logo": "images/logos/flynn.jpg",
+              "visible": true
+            },
+            {
+              "productname": "GCE",
+              "company":"",
+              "logo": "images/logos/google-gce.jpg",
               "visible": true
             },
             {
@@ -1690,21 +1772,21 @@
               "visible": true
             },
             {
-              "productname": "Cloud66",
+              "productname": "Gravitational",
               "company":"",
-              "logo": "images/logos/cloud66.jpg",
+              "logo": "images/logos/gravitational.jpg",
               "visible": true
             },
             {
-              "productname": "ContainerShip",
+              "productname": "Heroku",
               "company":"",
-              "logo": "images/logos/containership.jpg",
+              "logo": "images/logos/heroku.jpg",
               "visible": true
             },
             {
-              "productname": "StackEngine",
-              "company":"Oracle",
-              "logo": "images/logos/stackengine.jpg",
+              "productname": "Iron.io",
+              "company":"",
+              "logo": "images/logos/ironio.jpg",
               "visible": true
             },
             {
@@ -1720,27 +1802,68 @@
               "visible": true
             },
             {
-              "productname": "Gravitational",
+              "productname": "Nirmata",
               "company":"",
-              "logo": "images/logos/gravitational.jpg",
+              "logo": "images/logos/nirmata.jpg",
+              "visible": true
+            },
+            {
+              "productname": "OpenShift",
+              "company":"",
+              "logo": "images/logos/openshift.jpg",
+              "visible": true
+            },
+            {
+              "productname": "PaaSTA",
+              "company":"Yelp",
+              "logo": "images/logos/paasta.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Photo Platform",
+              "company":"VMware",
+              "logo": "images/logos/photoplatform.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Platform9",
+              "company":"",
+              "logo": "images/logos/platform9.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Rancher",
+              "company":"",
+              "logo": "images/logos/rancheros.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Stack Engine",
+              "company":"Oracle",
+              "logo": "images/logos/stackengine.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Tectonic",
+              "company":"CoreOS",
+              "logo": "images/logos/tectonic.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Triton",
+              "company":"Joyent",
+              "logo": "images/logos/triton.jpg",
               "visible": true
             }
-
           ]
         },
         {
           "name": "Event-based compute",
           "items": [
             {
-              "productname": "Lambda",
-              "company":"AWS",
-              "logo": "images/logos/lambda.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Cloud Functions",
-              "company":"Google",
-              "logo": "images/logos/cloudfunctions.jpg",
+              "productname": "Apex",
+              "company":"",
+              "logo": "images/logos/apex.jpg",
               "visible": true
             },
             {
@@ -1750,27 +1873,32 @@
               "visible": true
             },
             {
-              "productname": "OpenWhisk",
-              "company":"",
-              "logo": "images/logos/openwhisk.jpg",
-              "visible": true
+              "productname": "Blocks",
+              "company":"PubNub",
+              "logo": "images/logos/pubnub.jpg",
+              "visible":true,
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true
             },
             {
-              "productname": "IronFunctions",
-              "company":"iron.io",
-              "logo": "images/logos/ironfunctions.jpg",
-              "visible": true
+              "productname": "Cloud Functions",
+              "company":"Google",
+              "logo": "images/logos/cloudfunctions.jpg",
+              "visible": true,
+              "brief":"",
+              "twitter":"",
+              "github":"",
+              "ghstars":"",
+              "oss":true
+
             },
             {
               "productname": "Firebase",
               "company":"Google",
               "logo": "images/logos/firebase.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Webtask",
-              "company":"Auth0",
-              "logo": "images/logos/webtask.jpg",
               "visible": true
             },
             {
@@ -1780,15 +1908,27 @@
               "visible": true
             },
             {
-              "productname": "Blocks",
-              "company":"PubNub",
-              "logo": "images/logos/pubnub.jpg",
+              "productname": "Iron Functions",
+              "company":"iron.io",
+              "logo": "images/logos/ironfunctions.jpg",
               "visible": true
             },
             {
-              "productname": "Stackhut",
+              "productname": "Lambda",
+              "company":"AWS",
+              "logo": "images/logos/lambda.jpg",
+              "visible": true
+            },
+            {
+              "productname": "LeverOS",
               "company":"",
-              "logo": "images/logos/stackhut.jpg",
+              "logo": "images/logos/leveros.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Open Whisk",
+              "company":"",
+              "logo": "images/logos/openwhisk.jpg",
               "visible": true
             },
             {
@@ -1798,15 +1938,15 @@
               "visible": true
             },
             {
-              "productname": "Apex",
+              "productname": "Stackhut",
               "company":"",
-              "logo": "images/logos/apex.jpg",
+              "logo": "images/logos/stackhut.jpg",
               "visible": true
             },
             {
-              "productname": "LeverOS",
-              "company":"",
-              "logo": "images/logos/leveros.jpg",
+              "productname": "Webtask",
+              "company":"Auth0",
+              "logo": "images/logos/webtask.jpg",
               "visible": true
             }
           ]
@@ -1821,189 +1961,9 @@
           "name": "Monitoring",
           "items": [
             {
-              "productname": "NewRelic",
-              "company":"",
-              "logo": "images/logos/newrelic.jpg",
-              "visible": true
-            },
-            {
               "productname": "AppDynamics",
               "company":"",
               "logo": "images/logos/appdynamics.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Datadog",
-              "company":"",
-              "logo": "images/logos/datadog.jpg",
-              "visible": true
-            },
-            {
-              "productname": "CloudWatch",
-              "company":"AWS",
-              "logo": "images/logos/cloudwatch.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Stackdriver",
-              "company":"Google",
-              "logo": "images/logos/stackdriver.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Prometheus",
-              "company":"",
-              "logo": "images/logos/prometheus.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Lightstep",
-              "company":"",
-              "logo": "images/logos/lightstep.jpg",
-              "visible": true
-            },
-            {
-              "productname": "SysDig",
-              "company":"",
-              "logo": "images/logos/sysdig.jpg",
-              "visible": true
-            },
-            {
-              "productname": "WaveFront",
-              "company":"",
-              "logo": "images/logos/wavefront.png",
-              "visible": true
-            },
-            {
-              "productname": "SignalFx",
-              "company":"",
-              "logo": "images/logos/signalfx.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Weave Scope",
-              "company":"Weave",
-              "logo": "images/logos/weaveworks.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Instana",
-              "company":"",
-              "logo": "images/logos/instana.jpg",
-              "visible": true
-            },
-            {
-              "productname": "OpsClarity",
-              "company":"",
-              "logo": "images/logos/opsclarity.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Dynatrace",
-              "company":"Dynatrace",
-              "logo": "images/logos/dynatrace.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Rocana",
-              "company":"",
-              "logo": "images/logos/rocana.png",
-              "visible": true
-            },
-            {
-              "productname": "Nagios",
-              "company":"",
-              "logo": "images/logos/nagios.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Riemann",
-              "company":"",
-              "logo": "images/logos/riemann.png",
-              "visible": true
-            },
-            {
-              "productname": "Zabbix",
-              "company":"",
-              "logo": "images/logos/zabbix.png",
-              "visible": true
-            },
-            {
-              "productname": "Graphite",
-              "company":"",
-              "logo": "images/logos/graphite.jpg",
-              "visible": true
-            },
-            {
-              "productname": "OpenTSDB",
-              "company":"",
-              "logo": "images/logos/opentsdb.jpg",
-              "visible": true
-            },
-            {
-              "productname": "StatsD",
-              "company":"",
-              "logo": "images/logos/statsd.jpg",
-              "visible": true
-            },
-            {
-              "productname": "InfluxDB",
-              "company":"",
-              "logo": "images/logos/influxdb.png",
-              "visible": true
-            },
-            {
-              "productname": "Dataloop",
-              "company":"",
-              "logo": "images/logos/dataloop.jpeg",
-              "visible": true
-            },
-            {
-              "productname": "Netsil",
-              "company":"",
-              "logo": "images/logos/netsil.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Meros",
-              "company":"",
-              "logo": "images/logos/meros.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Opsee",
-              "company":"",
-              "logo": "images/logos/opsee.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Nodesource",
-              "company":"",
-              "logo": "images/logos/nodesource.jpg",
-              "visible": true
-            },
-            {
-              "productname": "OpBeat",
-              "company":"",
-              "logo": "images/logos/opbeat.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Cobe.io",
-              "company":"",
-              "logo": "images/logos/cobe.jpg",
-              "visible": true
-            },
-            {
-              "productname": "ServerDensity",
-              "company":"",
-              "logo": "images/logos/serverdensity.png",
-              "visible": true
-            },
-            {
-              "productname": "Librato",
-              "company":"Solarwinds",
-              "logo": "images/logos/librato.png",
               "visible": true
             },
             {
@@ -2013,15 +1973,189 @@
               "visible": true
             },
             {
-              "productname": "CatchpointSystem",
+              "productname": "Catchpoint System",
               "company":"",
               "logo": "images/logos/catchpoint2.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Cloud Watch",
+              "company":"AWS",
+              "logo": "images/logos/cloudwatch.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Cobe.io",
+              "company":"",
+              "logo": "images/logos/cobe.jpg",
               "visible": true
             },
             {
               "productname": "CoScale",
               "company":"",
               "logo": "images/logos/coscale.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Datadog",
+              "company":"",
+              "logo": "images/logos/datadog.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Dataloop",
+              "company":"",
+              "logo": "images/logos/dataloop.jpeg",
+              "visible": true
+            },
+            {
+              "productname": "Dynatrace",
+              "company":"Dynatrace",
+              "logo": "images/logos/dynatrace.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Graphite",
+              "company":"",
+              "logo": "images/logos/graphite.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Instana",
+              "company":"",
+              "logo": "images/logos/instana.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Librato",
+              "company":"Solarwinds",
+              "logo": "images/logos/librato.png",
+              "visible": true
+            },
+            {
+              "productname": "Lightstep",
+              "company":"",
+              "logo": "images/logos/lightstep.jpg",
+              "visible": true
+            },
+            {
+              "productname": "OpsClarity",
+              "company":"",
+              "logo": "images/logos/opsclarity.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Meros",
+              "company":"",
+              "logo": "images/logos/meros.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Nagios",
+              "company":"",
+              "logo": "images/logos/nagios.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Netsil",
+              "company":"",
+              "logo": "images/logos/netsil.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Node source",
+              "company":"",
+              "logo": "images/logos/nodesource.jpg",
+              "visible": true
+            },
+            {
+              "productname": "NewRelic",
+              "company":"",
+              "logo": "images/logos/newrelic.jpg",
+              "visible": true
+            },
+            {
+              "productname": "OpBeat",
+              "company":"",
+              "logo": "images/logos/opbeat.jpg",
+              "visible": true
+            },
+            {
+              "productname": "OpenTSDB",
+              "company":"",
+              "logo": "images/logos/opentsdb.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Opsee",
+              "company":"",
+              "logo": "images/logos/opsee.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Prometheus",
+              "company":"",
+              "logo": "images/logos/prometheus.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Riemann",
+              "company":"",
+              "logo": "images/logos/riemann.png",
+              "visible": true
+            },
+            {
+              "productname": "Rocana",
+              "company":"",
+              "logo": "images/logos/rocana.png",
+              "visible": true
+            },
+            {
+              "productname": "Server Density",
+              "company":"",
+              "logo": "images/logos/serverdensity.png",
+              "visible": true
+            },
+            {
+              "productname": "SignalFx",
+              "company":"",
+              "logo": "images/logos/signalfx.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Stackdriver",
+              "company":"Google",
+              "logo": "images/logos/stackdriver.jpg",
+              "visible": true
+            },
+            {
+              "productname": "StatsD",
+              "company":"",
+              "logo": "images/logos/statsd.jpg",
+              "visible": true
+            },
+            {
+              "productname": "SysDig",
+              "company":"",
+              "logo": "images/logos/sysdig.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Wave Front",
+              "company":"",
+              "logo": "images/logos/wavefront.png",
+              "visible": true
+            },
+            {
+              "productname": "Weave Scope",
+              "company":"Weave",
+              "logo": "images/logos/weaveworks.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Zabbix",
+              "company":"",
+              "logo": "images/logos/zabbix.png",
               "visible": true
             }
           ]
@@ -2030,21 +2164,15 @@
           "name": "Logging",
           "items": [
             {
-              "productname": "Splunk",
-              "company":"",
-              "logo": "images/logos/splunk.jpg",
-              "visible": true
-            },
-            {
               "productname": "Elastic",
               "company":"",
               "logo": "images/logos/elastic.jpg",
               "visible": true
             },
             {
-              "productname": "SumoLogic",
+              "productname": "FluentD",
               "company":"",
-              "logo": "images/logos/sumologic.jpg",
+              "logo": "images/logos/fluentd.jpg",
               "visible": true
             },
             {
@@ -2060,35 +2188,28 @@
               "visible": true
             },
             {
-              "productname": "FluentD",
-              "company":"",
-              "logo": "images/logos/fluentd.jpg",
-              "visible": true
-            },
-            {
               "productname": "PaperTrail",
               "company":"",
               "logo": "images/logos/papertrail.png",
               "visible": true
+            },
+            {
+              "productname": "Splunk",
+              "company":"",
+              "logo": "images/logos/splunk.jpg",
+              "visible": true
+            },
+            {
+              "productname": "SumoLogic",
+              "company":"",
+              "logo": "images/logos/sumologic.jpg",
+              "visible": true
             }
-
           ]
         },
         {
           "name": "Tracing",
           "items": [
-            {
-              "productname": "OpenTracing",
-              "company":"",
-              "logo": "images/logos/opentracing.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Zipkin",
-              "company":"",
-              "logo": "images/logos/zipkin.jpg",
-              "visible": true
-            },
             {
               "productname": "Dtrace",
               "company":"",
@@ -2100,6 +2221,18 @@
               "company":"Uber",
               "logo": "images/logos/jaeger.jpg",
               "visible": true
+            },
+            {
+              "productname": "Open Tracing",
+              "company":"",
+              "logo": "images/logos/opentracing.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Zipkin",
+              "company":"",
+              "logo": "images/logos/zipkin.jpg",
+              "visible": true
             }
           ]
         },
@@ -2107,33 +2240,33 @@
           "name": "Specialized Tools",
           "items": [
             {
-              "productname": "Kentik",
+              "productname": "Backtrace",
               "company":"",
-              "logo": "images/logos/kentik.jpg",
-              "visible": true
-            },
-            {
-              "productname": "ThousandEyes",
-              "company":"",
-              "logo": "images/logos/thousandeyes.png",
-              "visible": true
-            },
-            {
-              "productname": "Macrobase",
-              "company":"",
-              "logo": "images/logos/macrobase.jpg",
-              "visible": true
-            },
-            {
-              "productname": "PagerDuty",
-              "company":"",
-              "logo": "images/logos/pagerduty.png",
+              "logo": "images/logos/backtrace.jpg",
               "visible": true
             },
             {
               "productname": "BigPanda",
               "company":"",
               "logo": "images/logos/bigpanda.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Gremlin",
+              "company":"",
+              "logo": "images/logos/gremlin.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Kentik",
+              "company":"",
+              "logo": "images/logos/kentik.jpg",
+              "visible": true
+            },
+            {
+              "productname": "Macrobase",
+              "company":"",
+              "logo": "images/logos/macrobase.jpg",
               "visible": true
             },
             {
@@ -2149,23 +2282,24 @@
               "visible": true
             },
             {
+              "productname": "PagerDuty",
+              "company":"",
+              "logo": "images/logos/pagerduty.png",
+              "visible": true
+            },
+            {
+              "productname": "ThousandEyes",
+              "company":"",
+              "logo": "images/logos/thousandeyes.png",
+              "visible": true
+            },
+            {
               "productname": "VictorOps",
               "company":"",
               "logo": "images/logos/victorops.jpg",
               "visible": true
-            },
-            {
-              "productname": "Gremlin",
-              "company":"",
-              "logo": "images/logos/gremlin.jpg",
-              "visible": true
-            },
-            {
-              "productname": "Backtrace",
-              "company":"",
-              "logo": "images/logos/backtrace.jpg",
-              "visible": true
             }
+
           ]
         }
       ]

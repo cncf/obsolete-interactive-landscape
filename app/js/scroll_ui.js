@@ -453,34 +453,30 @@
 											//Twitter
 											var social =$('<i>')
 												.addClass("fa fa-twitter right")
-												.attr("href","https://twitter.com");
+												.attr("href",company.twitter);
 											$(companyContent).append(social);
+
 											//Github Stars
-											var stars =$('<span>')
+											var stars =$('<a>')
 												.addClass("label right")
-												.text("2,342");
+												.attr("href", company.github)
+                                                .text(company.ghstars);
 											$(companyContent).append(stars);
 
 											//Github
 											var social =$('<i>')
 												.addClass("fa fa-github right")
-												.attr("href","https://twitter.com");
-											$(companyContent).append(social);
+												.attr("href", company.twitter);
+											$(stars).append(social);
 
 											//OSS
-											var oss =$('<span>')
-												.addClass("label right")
-												.text("OSS");
-											$(companyContent).append(oss);
 
-											//Open Source
-											var open =$('<i>')
-												.addClass("fa fa-code right");
-											$(companyContent).append(open);
-
-
-
-
+											if(company.oss){
+                                                var oss =$('<span>')
+                                                    .addClass("label right")
+                                                    .text("OSS");
+                                                $(companyContent).append(oss);
+											}
 
 											//The Product
 											var productName =$('<h5>')
@@ -494,7 +490,7 @@
 
 											//Description
 											var description =$('<p>')
-												.text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation");
+                                                .text(company.brief);
 											$(companyContent).append(description);
 
 
