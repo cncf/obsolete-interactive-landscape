@@ -654,8 +654,6 @@ p {
   height: 70%; }
 
 .infog01 .box-2 {
-  padding: 0px 20px 100px 20px;
-  margin-right: 20px;
   text-align: left; }
   .infog01 .box-2 .companies {
     display: flex; }
@@ -806,7 +804,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-1a {
@@ -824,7 +822,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-1b {
@@ -842,7 +840,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-1c {
@@ -860,7 +858,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-4 {
@@ -878,7 +876,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-2 {
@@ -896,7 +894,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-3 {
@@ -914,7 +912,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-5 {
@@ -932,7 +930,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-6 {
@@ -950,7 +948,7 @@ p {
   height: 900px;
   position: absolute;
   top: 0;
-  opacity: 0;
+  opacity: 1;
   padding: 0 40px 0 10px; }
 
 .infog01 .subcategory-7 {

@@ -75,7 +75,7 @@ for(var key in scenes) {
 // to animate scroll instead of jump
 controller.scrollTo(function(target) {
 
-  TweenMax.to(window, 0.5, {
+  TweenMax.to(window, 1, {
     scrollTo : {
       y : target,
       autoKill : true // Allow scroll position to change outside itself
@@ -127,6 +127,165 @@ anchor_nav.addEventListener('click', function(e) {
  });
 
  */
+
+// GETTING DATA
+
+function getData(){
+  $.ajax({
+    type: 'GET',
+    url: 'datatest/data.json',
+    data: { get_param: 'value' },
+    success: function (data) {
+
+      //The categories
+      for (var i in data.children){
+
+        var category =data.children[i];
+        //DEFINING CATEGORY CONTAINER
+        var boxClass= ".category-box-"+category.key ;
+
+        //PUSHING CATEGORY NAME
+        var element = $('<h2>')
+            .addClass('category')
+            .text(category.name);
+        $(boxClass).append(element);
+
+        //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER
+        var companiesClass= "companies-"+category.key ;
+        var companies = $('<div>')
+            .addClass(companiesClass + " companies");
+        $(boxClass).append(companies);
+
+        //++++++++++++++++++++++++++++++++++++++++++++++++
+        //THE SUBCATEGORIES
+        for(var c in category.children){
+          var subCategory = category.children[c];
+
+          //DEFINING SUB-CATEGORY CONTAINER
+          var boxItemsClass= "box-items"+category.key+"-"+c ;
+          var titleItemsClass= "title-items"+category.key+"-"+c ;
+
+          var boxitems = $('<div>')
+              .addClass(boxItemsClass)
+              .addClass('box-items');
+          $("."+companiesClass).append(boxitems);
+
+          //PUSHING SUBCATEGORY NAME
+
+
+          $("."+titleItemsClass).text(subCategory.name);
+
+
+          //PUSHING SUBCATEGORY COMPANIES
+          for(var m in subCategory.items){
+
+            var company = subCategory.items[m];
+            var companyItem= "item-"+category.key+'-'+c+'-'+m;
+            var companyTooltip= "tooltip-"+category.key+'-'+c+'-'+m;
+
+            //COMPANY TOOLTIP
+            var item=$('<div>')
+                .addClass('item')
+                .addClass(companyItem+" c-tooltip")
+                .attr("style","display:inline-block");
+            $("."+boxItemsClass).append(item);
+
+            //COMPANY IMAGE
+            var image =$('<h4>')
+                .addClass('company')
+                .attr('style',"background-image:url('"+company.logo+"')")
+                .attr("data-placement","top")
+                .attr("title", company.productname);
+            $("."+companyItem).append(image);
+
+            //COMPANY NAME
+            var name =$('<div>')
+                .addClass('company-name')
+                .text(company.productname)
+            $("."+companyItem).append(name);
+
+
+
+            //The tooltip container
+            var tooltip =$('<span>')
+                .addClass(companyTooltip+" c-tooltiptext");
+            $("."+companyItem).append(tooltip);
+
+
+
+            //The tooltip content`
+
+            //The image
+            var image2 =$('<img>')
+                .addClass('companyLogo')
+                .attr('src',company.logo);
+            $(tooltip).append(image2);
+
+
+            //The text content
+            var content =$('<div>')
+                .addClass(companyTooltip+"_content")
+                .addClass(" content");
+            $(tooltip).append(content);
+
+            var companyContent = "."+companyTooltip+"_content";
+
+            //Twitter
+            var social =$('<i>')
+                .addClass("fa fa-twitter right")
+                .attr("href",company.twitter);
+            $(companyContent).append(social);
+
+            //Github Stars
+            var stars =$('<a>')
+                .addClass("label right")
+                .attr("href", company.github)
+                .text(company.ghstars);
+            $(companyContent).append(stars);
+
+            //Github
+            var social =$('<i>')
+                .addClass("fa fa-github right")
+                .attr("href", company.twitter);
+            $(stars).append(social);
+
+            //OSS
+
+            if(company.oss){
+              var oss =$('<span>')
+                  .addClass("label right")
+                  .text("OSS");
+              $(companyContent).append(oss);
+            }
+
+            //The Product
+            var productName =$('<h5>')
+                .text(company.productname);
+            $(companyContent).append(productName);
+
+            //The Company Name
+            var companyName =$('<p>')
+                .text(company.company);
+            $(companyContent).append(companyName);
+
+            //Description
+            var description =$('<p>')
+                .text(company.brief);
+            $(companyContent).append(description);
+
+          }
+        }
+
+      }
+
+    }
+
+  });
+
+}
+getData();
+
+
 
 $(document).ready(function(){
   $("#sidebarTrigger").click(function(){
