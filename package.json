@@ -29,5 +29,8 @@
     "watchify": "~0.4.1"
   },
   "author": "cid",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "semantic-ui": "^2.2.10"
+  }
 }

@@ -128,4 +128,15 @@ anchor_nav.addEventListener('click', function(e) {
 
  */
 
+$(document).ready(function(){
+  $("#sidebarTrigger").click(function(){
+    $('.ui.sidebar')
+        .sidebar('setting', 'transition', 'overlay')
+        .sidebar('toggle')
+    ;
+  });
+});
+
+
+
 
