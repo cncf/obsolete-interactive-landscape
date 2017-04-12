@@ -30,6 +30,24 @@ var scenes = {
   },
   'scene4': {
     'section-3': 'anchor3'
+  },
+  'scene5': {
+    'section-4': 'anchor4'
+  },
+  'scene6': {
+    'section-5': 'anchor5'
+  },
+  'scene7': {
+    'section-6': 'anchor6'
+  },
+  'scene8': {
+    'section-7': 'anchor7'
+  },
+  'scene9': {
+    'section-8': 'anchor8'
+  },
+  'scene10': {
+    'section-9': 'anchor9'
   }
 }
 
@@ -44,8 +62,9 @@ for(var key in scenes) {
     if(!obj.hasOwnProperty(prop)) continue;
 
     new ScrollMagic.Scene({ triggerElement: '#' + prop })
-        .setClassToggle('#' + obj[prop], 'active')
-        .setClassToggle('#module-' + obj[prop], 'active')
+        //.setClassToggle('#' + obj[prop], 'active')
+        //.setClassToggle('#module-' + obj[prop], 'active')
+        .setClassToggle('.element-' + obj[prop], 'active')
         .addTo(controller);
   }
 }

@@ -489,23 +489,31 @@ p {
   display: flex;
   margin-top: 100px; }
 
-.infog01 .box-1 .diagram-container {
+.infog01 .diagram-container {
   position: relative;
   width: 90%;
   height: 40%; }
 
-.infog01 .box-1 .image-diagram {
+.infog01 .image-diagram.active {
+  filter: blur(0px);
+  opacity: 1 !important;
+  z-index: 1;
+  display: block; }
+
+.infog01 .image-diagram {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: block;
   position: absolute;
-  opacity: 1; }
+  filter: blur(2px);
+  opacity: 0.4;
+  z-index: 1; }
 
-.infog01 .box-1 .menu-container {
+.infog01 .menu-container {
   background-color: rgba(242, 104, 255, 0.4);
   position: absolute;
   bottom: 0px; }
-  .infog01 .box-1 .menu-container a {
+  .infog01 .menu-container a {
     display: block; }
 
 .infog01 .stillbox {
@@ -531,29 +539,29 @@ p {
 .infog01 .image2 {
   background-image: url("../images/stage-02.png");
   top: 30%;
-  left: 87%;
-  width: 34%;
+  left: 60%;
+  width: 24%;
   height: 100%; }
 
 .infog01 .image2b {
   background-image: url("../images/stage-02-b.png");
   top: 30%;
-  left: 87%;
-  width: 34%;
+  left: 60%;
+  width: 24%;
   height: 100%; }
 
 .infog01 .image3 {
   background-image: url("../images/stage-03.png");
   top: 30%;
   left: 70%;
-  width: 34%;
+  width: 24%;
   height: 100%; }
 
 .infog01 .image3b {
   background-image: url("../images/stage-03-b.png");
   top: 30%;
   left: 70%;
-  width: 34%;
+  width: 24%;
   height: 100%; }
 
 .infog01 .image4 {
@@ -610,7 +618,9 @@ p {
   top: 100%;
   left: 20%;
   width: 70%;
-  height: 70%; }
+  height: 70%;
+  filter: blur(15px);
+  opacity: 0.5 !important; }
 
 .infog01 .box-2 {
   padding: 0px 20px 100px 20px;
