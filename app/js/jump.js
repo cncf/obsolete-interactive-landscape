@@ -180,6 +180,7 @@ function getData(){
           for(var m in subCategory.items){
 
             var company = subCategory.items[m];
+            var companyCaja= "caja-"+category.key+'-'+c;
             var companyItem= "item-"+category.key+'-'+c+'-'+m;
             var companyTooltip= "tooltip-"+category.key+'-'+c+'-'+m;
 
@@ -189,6 +190,21 @@ function getData(){
                 .addClass(companyItem+" c-tooltip")
                 .attr("style","display:inline-block");
             $("."+boxItemsClass).append(item);
+            //popup
+
+            $("."+companyItem).click(function(){
+              $(".module").toggleClass("outfocus");
+              $("#screenButton").toggleClass("yesvisible");
+              console.log("ou of focus");
+
+            });
+            $("#screenButton").click(function(){
+              $(".module").toggleClass("outfocus");
+              $("#screenButton").toggleClass("yesvisible");
+              console.log("focus again");
+
+            });
+
 
             //COMPANY IMAGE
             var image =$('<h4>')

@@ -489,6 +489,23 @@ p {
 .border {
   border: 1px dotted red; }
 
+.outfocus {
+  filter: blur(10px); }
+
+#screenButton {
+  position: fixed;
+  top: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 60;
+  display: none; }
+
+.yesvisible {
+  display: block !important; }
+
 .infog01 .logobox {
   width: 100%;
   display: flex;
