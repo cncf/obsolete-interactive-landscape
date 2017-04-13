@@ -1201,10 +1201,11 @@
               "visible": true
             },
             {
-              "productname": "JS",
+              "productname": "Javascript",
               "company":"",
               "logo": "images/logos/js.png",
-              "visible": true
+              "visible": true,
+              "brief":"is a high-level, dynamic, untyped, and interpreted programming language.[7] It has been standardized in the ECMAScript language specification.[8] Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production"
             },
             {
               "productname": "Java",
