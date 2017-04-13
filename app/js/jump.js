@@ -283,7 +283,7 @@ function initIndividualModal(id){
     $(".ui.basic.modal."+id).modal('setting',{
       onHide: function(){
         console.log('hidden');
-        unblurrr();
+        blurrr();
       },
       onShow: function(){
         console.log('shown');
@@ -300,12 +300,7 @@ function blurrr(){
   $(".cloud-menu").toggleClass("outfocus");
   $("#companyModals").toggleClass("yesvisible");
 }
-function unblurrr(){
-  $(".module").toggleClass("outfocus");
-  $(".cloud-menu").toggleClass("outfocus");
-  $("#companyModals").toggleClass("yesvisible");
-  console.log("on focus again");
-}
+
 
 
 
