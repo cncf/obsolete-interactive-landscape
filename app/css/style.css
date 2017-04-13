@@ -706,10 +706,13 @@ p {
     text-align: center;
     vertical-align: top; }
   .infog01 .box-2 .box-items {
-    border-width: 0 3px 0 0;
-    border-color: #f5f5f5;
+    border-width: 0 0 0 1px;
+    border-color: rgba(0, 0, 0, 0.87);
     border-style: solid;
-    margin-right: 5px; }
+    margin-right: 5px;
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px; }
   .infog01 .box-2 h2 {
     color: black;
     font-size: 1.6em;
