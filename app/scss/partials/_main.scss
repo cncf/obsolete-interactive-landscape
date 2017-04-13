@@ -439,9 +439,28 @@ p {
 .border{ border: 1px dotted red;}
 
 .outfocus{
-  filter:blur(10px);
+  //filter:blur(10px);
+  //-webkit-animation: blur 5s infinite;
+
+  -webkit-animation: blur 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: blur 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out; /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-out;
+
 
 }
+
+@-webkit-keyframes blur {
+  from{ -webkit-filter: blur(0px); }
+  to { -webkit-filter: blur(10px); }
+}
+@keyframes blur {
+  from{ filter: blur(0px); }
+  to { filter: blur(10px); }
+}
+
 
 
 #companyModals{

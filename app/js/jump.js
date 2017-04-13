@@ -325,27 +325,71 @@ $(document).ready(function(){
   });
 
   //modal
-  $("#trigger1").click(function(){
-    $('.ui.basic.modal')
-        .modal('show');
+  // $("#trigger1").click(function(){
+  //   $('.ui.basic.modal')
+  //       .modal('show');
+  //       blurrr();
+  //
+  // });
+
+
+
+  $("#uno").click(function(){
+      $('.ui.basic.modal.uno').modal('setting',{
+        onHide: function(){
+          console.log('hidden');
+          unblurrr();
+        },
+        onShow: function(){
+          console.log('shown');
+          blurrr();
+        }
+      }).modal('show');
   });
-  $("#trigger2").click(function(){
-    $('.ui.basic2.modal')
-        .modal('show');
+
+  $("#dos").click(function(){
+    $('.ui.basic.modal.dos').modal('setting',{
+      onHide: function(){
+        console.log('hidden');
+        unblurrr();
+      },
+      onShow: function(){
+        console.log('shown');
+        blurrr();
+      }
+    }).modal('show');
+  });
+
+  $("#tres").click(function(){
+    $('.ui.basic.modal.tres').modal('setting',{
+      onHide: function(){
+        console.log('hidden');
+        unblurrr();
+      },
+      onShow: function(){
+        console.log('shown');
+        blurrr();
+      }
+    }).modal('show');
   });
 
 
-  //EXIT MODAL MODE
-  $("#companyModals").click(function(){
-    $(".module").toggleClass("outfocus");
-    $("#companyModals").toggleClass("yesvisible");
-
-    console.log("on focus again");
-
-  });
 
 
 });
+
+function blurrr(){
+  $(".module").toggleClass("outfocus");
+  $(".cloud-menu").toggleClass("outfocus");
+  $("#companyModals").toggleClass("yesvisible");
+}
+function unblurrr(){
+  $(".module").toggleClass("outfocus");
+  $(".cloud-menu").toggleClass("outfocus");
+  $("#companyModals").toggleClass("yesvisible");
+  console.log("on focus again");
+}
+
 
 
 
