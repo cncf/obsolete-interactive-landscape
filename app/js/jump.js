@@ -180,7 +180,7 @@ function getData(){
           for(var m in subCategory.items){
 
             var company = subCategory.items[m];
-            var companyCaja= "caja-"+category.key+'-'+c;
+            var companyModal= "modal-"+category.key+'-'+c+'-'+m;
             var companyItem= "item-"+category.key+'-'+c+'-'+m;
             var companyTooltip= "tooltip-"+category.key+'-'+c+'-'+m;
 
@@ -190,21 +190,6 @@ function getData(){
                 .addClass(companyItem+" c-tooltip")
                 .attr("style","display:inline-block");
             $("."+boxItemsClass).append(item);
-            //popup
-
-            $("."+companyItem).click(function(){
-              $(".module").toggleClass("outfocus");
-              $("#screenButton").toggleClass("yesvisible");
-              console.log("ou of focus");
-
-            });
-            $("#screenButton").click(function(){
-              $(".module").toggleClass("outfocus");
-              $("#screenButton").toggleClass("yesvisible");
-              console.log("focus again");
-
-            });
-
 
             //COMPANY IMAGE
             var image =$('<h4>')
@@ -217,47 +202,72 @@ function getData(){
             //COMPANY NAME
             var name =$('<div>')
                 .addClass('company-name')
-                .text(company.productname)
+                .text(company.productname);
             $("."+companyItem).append(name);
 
 
 
-            //The tooltip container
-            var tooltip =$('<span>')
-                .addClass(companyTooltip+" c-tooltiptext");
-            $("."+companyItem).append(tooltip);
+            //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            // MODAL
+            //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+            //THIS CREATES THE HIDDEN MODAL FOR EACH COMPANY
+            var modalContainer =$('<div>')
+                .addClass(companyModal+ " c-tooltiptext")
+                .text(company.productname)
+            $("#companyModals").append(modalContainer);
+
+
+            //THIS CREATES A USELESS DIV WITH A VALUE , STUPID I KNOW
+            var modalTrigger =$('<div>')
+                .addClass("findme_"+companyModal)
+                .attr("value",companyModal)
+                .text(companyModal);
+            $("."+companyItem).append(modalTrigger);
+
+
+            //THIS ACTIVATE THE BLUR CURTAIN + fULL SCREEN BUTTON
+            $("."+companyItem).click(function(){  //This target the specific company logo
+              $(".module").toggleClass("outfocus"); //This blur everything in the back
+              $("#companyModals").toggleClass("yesvisible");//This brings the fullscreenbutton
+
+              var thisModal = $(".findme_"+companyModal).val();
+              $("."+thisModal).attr("css","background-color:red");
+              console.log($(".findme_"+companyModal).val());
+            });
 
 
 
-            //The tooltip content`
 
             //The image
             var image2 =$('<img>')
                 .addClass('companyLogo')
                 .attr('src',company.logo);
-            $(tooltip).append(image2);
+            $("."+companyModal).append(image2);
 
 
             //The text content
             var content =$('<div>')
                 .addClass(companyTooltip+"_content")
                 .addClass(" content");
-            $(tooltip).append(content);
+            $("."+companyModal).append(content);
 
-            var companyContent = "."+companyTooltip+"_content";
+            //var companyContent = "."+companyModal+"_content";
+            var companyContent = "."+companyModal;
 
             //Twitter
             var social =$('<i>')
                 .addClass("fa fa-twitter right")
                 .attr("href",company.twitter);
-            $(companyContent).append(social);
+            $("."+companyModal).append(social);
 
             //Github Stars
             var stars =$('<a>')
                 .addClass("label right")
                 .attr("href", company.github)
                 .text(company.ghstars);
-            $(companyContent).append(stars);
+            $("."+companyModal).append(stars);
 
             //Github
             var social =$('<i>')
@@ -290,6 +300,7 @@ function getData(){
             $(companyContent).append(description);
 
           }
+
         }
 
       }
@@ -304,12 +315,36 @@ getData();
 
 
 $(document).ready(function(){
+  //sidebar
   $("#sidebarTrigger").click(function(){
     $('.ui.sidebar')
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('toggle')
     ;
+
   });
+
+  //modal
+  $("#trigger1").click(function(){
+    $('.ui.basic.modal')
+        .modal('show');
+  });
+  $("#trigger2").click(function(){
+    $('.ui.basic2.modal')
+        .modal('show');
+  });
+
+
+  //EXIT MODAL MODE
+  $("#companyModals").click(function(){
+    $(".module").toggleClass("outfocus");
+    $("#companyModals").toggleClass("yesvisible");
+
+    console.log("on focus again");
+
+  });
+
+
 });
 
 

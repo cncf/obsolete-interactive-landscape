@@ -444,9 +444,7 @@ p {
 }
 
 
-
-
-#screenButton{
+#companyModals{
 
     position:fixed;
     top:0;
@@ -461,14 +459,18 @@ p {
     z-index:60;
     display:none;
 }
+.modal-container{
+  position:fixed;
+  top:0;
+  left:0;
+
+}
 
 .yesvisible{
   display:block !important;
 }
 
 .infog01{
-
-
 
     .logobox {
        width:100%;
@@ -979,11 +981,13 @@ p {
 
 }
 
-.c-tooltip .c-tooltiptext {
+#companyModals .c-tooltiptext {
     //font-size:1em;
-    visibility: hidden;
+    //visibility: visible;
+    //display:none;
+    opacity:0.1;
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.1);
     color: #fff;
     font-weight: 500;
     text-align: center;
@@ -1036,7 +1040,7 @@ p {
 }
 
 
-.c-tooltip:hover .c-tooltiptext {
+.c-tooltip:click .c-tooltiptext {
     visibility: visible;
 }
 

@@ -492,7 +492,7 @@ p {
 .outfocus {
   filter: blur(10px); }
 
-#screenButton {
+#companyModals {
   position: fixed;
   top: 0;
   background-size: cover;
@@ -502,6 +502,11 @@ p {
   background-repeat: no-repeat;
   z-index: 60;
   display: none; }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0; }
 
 .yesvisible {
   display: block !important; }
@@ -1243,10 +1248,10 @@ p {
   position: relative;
   display: inline-block; }
 
-.c-tooltip .c-tooltiptext {
-  visibility: hidden;
+#companyModals .c-tooltiptext {
+  opacity: 0.1;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -1260,31 +1265,31 @@ p {
   bottom: 80%;
   left: 50%;
   margin-left: -400px; }
-  .c-tooltip .c-tooltiptext h4 {
+  #companyModals .c-tooltiptext h4 {
     font-size: 1.2em;
     font-weight: 800; }
-  .c-tooltip .c-tooltiptext p {
+  #companyModals .c-tooltiptext p {
     font-size: 0.7em;
     font-weight: 300; }
-  .c-tooltip .c-tooltiptext .companyLogo {
+  #companyModals .c-tooltiptext .companyLogo {
     width: 70px;
     height: 70px;
     border-radius: 5px;
     float: left; }
-  .c-tooltip .c-tooltiptext .content {
+  #companyModals .c-tooltiptext .content {
     display: inline-block;
     width: 300px;
     color: white;
     text-align: left;
     padding: 5px; }
-  .c-tooltip .c-tooltiptext .fa {
+  #companyModals .c-tooltiptext .fa {
     padding-left: 12px; }
-  .c-tooltip .c-tooltiptext .right {
+  #companyModals .c-tooltiptext .right {
     float: right; }
-  .c-tooltip .c-tooltiptext .left {
+  #companyModals .c-tooltiptext .left {
     float: left; }
 
-.c-tooltip:hover .c-tooltiptext {
+.c-tooltip:click .c-tooltiptext {
   visibility: visible; }
 
 /* ==========================================================================
