@@ -212,31 +212,57 @@ function getData(){
             //++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+            var modalTemplate = "<div class='item-modal ui basic modal uno'>" +
+                "<i class='close icon'></i>" +
+                "<div class='ui icon header'> Header text"+
+                "</div>"+
+                "<div class='content'>"+
+                  "<div>" +
+                    "<img class='item-image" src="images/logos/js.png'/>" +
+                  "</div>" +
+                  "<div>" +
+                    "<h2>Javascript</h2>" +
+                    "<p> Javascript is a high-level, dynamic, untyped</p><hr/>" +
+                    "<p>"+
+                      " OSS <i class='check icon'></i>"+
+                      " <i class='twitter icon'></i> | "+
+                      " <i class='github icon'></i> "+
+                    "</p>"+
+                  "</div>"+
+                "</div>"+
+                "<div class='actions'>"+
+                  "<div class='ui labeled button left floated mini' tabindex='0'>"+
+                    "<div class='ui blue button mini'>"+
+                      "<i class='github icon'></i> Github stars"+
+                    "</div>"+
+                    "<a class='ui basic blue left pointing label mini'> 1,049"+
+                    "</a>"+
+                  "</div>"+
+                  "<div class='ui red basic cancel button small'> Close"+
+                  "</div>"+
+                  "<div class='ui blue ok inverted button small'>"+
+                    "<i class='checkmark icon'></i> Visit Website"+
+                  "</div>"+
+                "</div>"+
+            "</div>";
+
+
             //THIS CREATES THE HIDDEN MODAL FOR EACH COMPANY
+            var allModals =$('<div>')
+                .html(modalTemplate);
+            $("#allModals").append(allModals);
+
             var modalContainer =$('<div>')
                 .addClass(companyModal+ " c-tooltiptext")
-                .text(company.productname)
+                .text(company.productname);
             $("#companyModals").append(modalContainer);
-
 
             //THIS CREATES A USELESS DIV WITH A VALUE , STUPID I KNOW
             var modalTrigger =$('<div>')
                 .addClass("findme_"+companyModal)
-                .attr("value",companyModal)
-                .text(companyModal);
+                .attr("value",companyModal);
+
             $("."+companyItem).append(modalTrigger);
-
-
-            //THIS ACTIVATE THE BLUR CURTAIN + fULL SCREEN BUTTON
-            $("."+companyItem).click(function(){  //This target the specific company logo
-              $(".module").toggleClass("outfocus"); //This blur everything in the back
-              $("#companyModals").toggleClass("yesvisible");//This brings the fullscreenbutton
-
-              var thisModal = $(".findme_"+companyModal).val();
-              $("."+thisModal).attr("css","background-color:red");
-              console.log($(".findme_"+companyModal).val());
-            });
-
 
 
 

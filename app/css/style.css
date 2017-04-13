@@ -1268,6 +1268,26 @@ p {
   position: relative;
   display: inline-block; }
 
+.item-modal p {
+  font-size: 0.9em; }
+
+.item-modal .header {
+  text-align: left !important;
+  color: black !important;
+  font-size: 0.9em; }
+
+.item-modal .content {
+  display: flex !important;
+  flex-direction: row !important;
+  color: black !important; }
+  .item-modal .content i {
+    color: black; }
+
+.item-modal .item-image {
+  margin: 0 20px;
+  height: 200px;
+  width: 200px; }
+
 #companyModals .c-tooltiptext {
   opacity: 0.1;
   width: 400px;
