@@ -1271,10 +1271,16 @@ p {
 .item-modal p {
   font-size: 0.9em; }
 
+.item-modal .close {
+  color: black !important; }
+
 .item-modal .header {
   text-align: left !important;
-  color: black !important;
-  font-size: 0.9em; }
+  color: #3c5876 !important;
+  font-size: 0.9em !important; }
+  .item-modal .header span {
+    font-weight: 200;
+    color: black; }
 
 .item-modal .content {
   display: flex !important;

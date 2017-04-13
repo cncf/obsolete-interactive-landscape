@@ -180,16 +180,14 @@ function getData(){
           for(var m in subCategory.items){
 
 
-
             var company = subCategory.items[m];
             var companyModal= "modal-"+category.key+'-'+c+'-'+m;
             var companyItem= "item-"+category.key+'-'+c+'-'+m;
             var companyTooltip= "tooltip-"+category.key+'-'+c+'-'+m;
 
-            initIndividualModal(companyModal);
-
-            //COMPANY TOOLTIP
+            //COMPANY CONTAINER
             var item=$('<div>')
+                .attr("id",companyModal)
                 .addClass('item')
                 .addClass(companyItem+" c-tooltip")
                 .attr("style","display:inline-block");
@@ -220,7 +218,7 @@ function getData(){
             var oss=" OSS <i class='checked icon'></i>" ;
 
             var modalTemplate = "<i class='close icon'></i>"+
-                "<div class='ui icon header'> Header text"+
+                "<div class='ui icon header'>"+ category.name +" / <span>"+ subCategory.name +"</span>"+
                 "</div>"+
                 "<div class='content'>"+
                   "<div>" +
@@ -255,6 +253,8 @@ function getData(){
                 .html(modalTemplate);
             $("#allModals").append(allModals);
 
+            initIndividualModal(companyModal);
+
 
           }
 
@@ -270,9 +270,21 @@ function getData(){
 getData();
 
 
-
 $(document).ready(function(){
 //Sketchy things happen here
+
+  $("#uno").click(function(){
+    $(".ui.basic.modal.uno").modal('setting',{
+      onHide: function(){
+        console.log('hidden');
+        blurrr();
+      },
+      onShow: function(){
+        console.log('shown');
+        blurrr();
+      }
+    }).modal('show');
+  });
 
 });
 

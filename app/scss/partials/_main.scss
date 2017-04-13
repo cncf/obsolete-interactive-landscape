@@ -1005,10 +1005,17 @@ p {
     p{
         font-size: 0.9em;
     }
+    .close{
+        color:black !important;
+    }
     .header{
         text-align:left !important;
-        color:black !important;
-        font-size: 0.9em;
+        color:#3c5876 !important;
+        font-size: 0.9em !important;
+        span{
+            font-weight: 200;
+            color:black;
+        }
     }
     .content{
         display:flex !important;
