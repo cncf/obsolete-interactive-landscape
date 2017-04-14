@@ -504,13 +504,13 @@ p {
   from {
     -webkit-filter: blur(0px); }
   to {
-    -webkit-filter: blur(10px); } }
+    -webkit-filter: blur(20px); } }
 
 @keyframes blur {
   from {
     filter: blur(0px); }
   to {
-    filter: blur(10px); } }
+    filter: blur(20px); } }
 
 #companyModals {
   position: fixed;
