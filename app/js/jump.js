@@ -80,16 +80,55 @@ var scenes = {
     'messaging_streaming': 'anchor5-3'
   },
   'scene6': {
-    'section-6': 'anchor6'
+    'application_definition_and_development': 'anchor6'
+  },
+  'scene6-1': {
+    'language_and_frameworks': 'anchor6-1'
+  },
+  'scene6-2': {
+    'scm': 'anchor6-2'
+  },
+  'scene6-3': {
+    'registry_services': 'anchor6-3'
+  },
+  'scene6-4': {
+    'application_definition': 'anchor6-4'
+  },
+  'scene6-5': {
+    'ci_cd': 'anchor6-5'
   },
   'scene7': {
-    'section-7': 'anchor7'
+    'apis': ''
+  },
+  'scene7-1': {
+    'services_as_code': ''
+  },
+  'scene7': {
+    'api_management': ''
   },
   'scene8': {
-    'section-8': 'anchor8'
+    'platforms': ''
+  },
+  'scene8-1': {
+    'paas': ''
+  },
+  'scene8-2': {
+    'event_based_compute': ''
   },
   'scene9': {
-    'section-9': 'anchor9'
+    'observability_and_analysis': ''
+  },
+  'scene9-1': {
+    'monitoring': 'monitoring'
+  },
+  'scene9-2': {
+    'logging': 'nnn'
+  },
+  'scene9-3': {
+    'tracing': 'nnn'
+  },
+  'scene9-4': {
+    'specialized_tools': 'nnn'
   }
 }
 
