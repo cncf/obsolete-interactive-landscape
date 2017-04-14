@@ -22,113 +22,113 @@ var scenes = {
   'intro': {
     'starter': 'anchor0'
   },
-  'scene1': {//7
-    'infrastructure': 'ancla7'
+  'scene7': {//7
+    'infrastructure': 'anchor7'
   },
-  'scene1-1': {//7-0
-    'infrastructure_details': 'ancla7-0'
+  'scene7-0': {//7-0
+    'infrastructure_details': 'anchor7-0'
   },
-  'scene2': {//6
-    'provisioning': 'ancla6'
+  'scene6': {//6
+    'provisioning': 'anchor6'
   },
-  'scene2-1': {//6-0
-    'infrastructure_automation': 'ancla6-0'
+  'scene6-0': {//6-0
+    'infrastructure_automation': 'anchor6-0'
   },
-  'scene2-2': {//6-1
-    'host_management': 'ancla6-1'
+  'scene6-1': {//6-1
+    'host_management': 'anchor6-1'
   },
-  'scene2-3': {//6-2
-    'secure_images': 'ancla6-2'
+  'scene6-2': {//6-2
+    'secure_images': 'anchor6-2'
   },
-  'scene3': {//5
+  'scene5': {//5
     'runtime': 'anchor5'
   },
-  'scene3-1': {//5-0
+  'scene5-0': {//5-0
     'os': 'anchor5-0'
   },
-  'scene3-2': {//5-1
+  'scene5-1': {//5-1
     'cloud_native_storage': 'anchor5-1'
   },
-  'scene3-3': {//5-2
+  'scene5-2': {//5-2
     'container_runtime': 'anchor5-2'
   },
-  'scene3-4': {//5-3
+  'scene5-3': {//5-3
     'cloud_native_network': 'anchor5-3'
   },
   'scene4': {//4
-    'orchestration_and_management': 'ancla4'
+    'orchestration_and_management': 'anchor4'
   },
-  'scene4-1': {//4-0
-    'scheduling_and_orchestration': 'ancla4-0'
+  'scene4-0': {//4-0
+    'scheduling_and_orchestration': 'anchor4-0'
   },
-  'scene4-2': {//4-1
-    'coordination_and_services_discovery': 'ancla4-1'
+  'scene4-1': {//4-1
+    'coordination_and_services_discovery': 'anchor4-1'
   },
-  'scene4-3': {//4-2
-    'service_management': 'ancla4-2'
+  'scene4-2': {//4-2
+    'service_management': 'anchor4-2'
   },
-  'scene5': {//1a
-    'data': 'ancla1a'
+  'scene1a': {//1a
+    'data': 'anchor1a'
   },
-  'scene5-1': {//1a-0
-    'database': 'ancla1a-0'
+  'scene1a-0': {//1a-0
+    'database': 'anchor1a-0'
   },
-  'scene5-2': {//1a-1
-    'data_warehouse': 'ancla1a-1'
+  'scene1a-1': {//1a-1
+    'data_warehouse': 'anchor1a-1'
   },
-  'scene5-3': {//1a-2
-    'messaging_streaming': 'ancla1a-2'
+  'scene1a-2': {//1a-2
+    'messaging_streaming': 'anchor1a-2'
   },
-  'scene6': {//1b
-    'application_definition_and_development': 'ancla1b'
+  'scene1b': {//1b
+    'application_definition_and_development': 'anchor1b'
   },
-  'scene6-1': {//1b-0
-    'language_and_frameworks': 'ancla1b-0'
+  'scene1b-0': {//1b-0
+    'language_and_frameworks': 'anchor1b-0'
   },
-  'scene6-2': {//1b-1
-    'scm': 'ancla1b-1'
+  'scene1': {//1b-1
+    'scm': 'anchor1b-1'
   },
-  'scene6-3': {//1b-2
-    'registry_services': 'ancla1b-2'
+  'scene1b-2': {//1b-2
+    'registry_services': 'anchor1b-2'
   },
-  'scene6-4': {//1b-3
-    'application_definition': 'ancla1b-3'
+  'scene1b-3': {//1b-3
+    'application_definition': 'anchor1b-3'
   },
-  'scene6-5': {//1b-4
-    'ci_cd': 'ancla1b-4'
+  'scene1b-4': {//1b-4
+    'ci_cd': 'anchor1b-4'
   },
-  'scene7': {//1c
-    'apis': 'ancla1c'
+  'scene1c': {//1c
+    'apis': 'anchor1c'
   },
-  'scene7-1': {//1c-0
-    'services_as_code': 'ancla1c-0'
+  'scene1c-0': {//1c-0
+    'services_as_code': 'anchor1c-0'
   },
-  'scene7-2': {//1c-1
-    'api_management': 'ancla1c-1'
+  'scene1c-1': {//1c-1
+    'api_management': 'anchor1c-1'
   },
-  'scene8': {//3
-    'platforms': 'ancla3'
+  'scene3': {//3
+    'platforms': 'anchor3'
   },
   'scene3-0': {//3-0
-    'paas': 'ancla3-0'
+    'paas': 'anchor3-0'
   },
   'scene3-1': {//3-1
-    'event_based_compute': 'ancla3-1'
+    'event_based_compute': 'anchor3-1'
   },
   'scene2': {//2
-    'observability_and_analysis': 'ancla2'
+    'observability_and_analysis': 'anchor2'
   },
   'scene2-0': {//2-0
-    'monitoring': 'ancla2-0'
+    'monitoring': 'anchor2-0'
   },
   'scene2-1': {//2-1
-    'logging': 'ancla2-1'
+    'logging': 'anchor2-1'
   },
   'scene2-2': {//2-2
-    'tracing': 'ancla2-2'
+    'tracing': 'anchor2-2'
   },
   'scene2-3': {//2-3
-    'specialized_tools': 'ancla2-3'
+    'specialized_tools': 'anchor2-3'
   }
 }
 
@@ -353,21 +353,31 @@ getData();
 $(document).ready(function(){
 //Sketchy things happen here
 
-  $("#uno").click(function(){
-    $(".ui.basic.modal.uno").modal('setting',{
-      onHide: function(){
-        console.log('hidden');
-        blurrr();
-      },
-      onShow: function(){
-        console.log('shown');
-        blurrr();
-      }
-    }).modal('show');
-  });
+
+
 
 });
 
+function keyControl(){
+  $("body").keydown(function(e) {
+    if(e.keyCode == 37) { // left
+      $("#showroom").animate({
+
+      });
+      console.log('left');
+      window.location.hash = '#data';
+    }
+    else if(e.keyCode == 39) { // right
+      $("#showroom").animate({
+
+      });
+      console.log('right');
+      window.location.hash = '#platforms';
+    }
+  });
+}
+
+keyControl();
 
 function initIndividualModal(id){
 
