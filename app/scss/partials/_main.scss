@@ -6,6 +6,8 @@ $f5-color: #478466;
 $f6-color: #6c9a40;
 $f7-color: #3e56a6;
 
+$infog_primary: #476e7a;
+
 html {
     color: #222;
     font-size: 1em;
@@ -545,7 +547,8 @@ p {
 
         h1{
             font-weight:400;
-            color: #39507f;
+            color: $infog_primary;
+            font-size: 2.5em;
         }
 
     }
@@ -704,7 +707,7 @@ p {
         }
         .box-items{
             border-width: 0 0 0 1px;
-            border-color: rgba(0,0,0,.87);
+            border-color: $infog_primary;
             border-style: solid;
             margin-right: 5px;
             width: 75%;
@@ -994,7 +997,7 @@ p {
 
         a{
           font-weight: 100;
-            color: #476e7a;
+            color: $infog_primary;
             //line-height: 2em;
 
 

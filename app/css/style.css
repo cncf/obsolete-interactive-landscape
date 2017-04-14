@@ -570,7 +570,8 @@ p {
   height: 650px; }
   .infog01 .stillbox h1 {
     font-weight: 400;
-    color: #39507f; }
+    color: #476e7a;
+    font-size: 2.5em; }
 
 .infog01 .image1 {
   background-image: url("../images/stage-01.png");
@@ -710,7 +711,7 @@ p {
     vertical-align: top; }
   .infog01 .box-2 .box-items {
     border-width: 0 0 0 1px;
-    border-color: rgba(0, 0, 0, 0.87);
+    border-color: #476e7a;
     border-style: solid;
     margin-right: 5px;
     width: 75%;
