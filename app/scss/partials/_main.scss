@@ -966,14 +966,16 @@ p {
       a{
         color:black;
       }
-       a:hover{
+      a:hover{
            color: #2780a4 !important;
            text-decoration: none;
-       }
+      }
 
       .item{
-        color:yellow;
         margin-left:2em;
+          font-size:0.9em;
+          line-height: 3em;
+
           display:none;
         a{
             color:grey;
@@ -989,9 +991,11 @@ p {
       .item{
           display:block;
 
+
         a{
           font-weight: 100;
-            color:#666;
+            color: #476e7a;
+            //line-height: 2em;
 
 
         }
@@ -1001,7 +1005,7 @@ p {
             margin-left:2em;
             display:block;
             a{
-                color:#666;
+
                 font-weight: 800;
 
             }
