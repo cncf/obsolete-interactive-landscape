@@ -253,6 +253,8 @@ function getData(){
         //DEFINING CATEGORY CONTAINER
         var boxClass= ".category-box-"+category.key ;
 
+        $(".category-title-"+category.key).text(category.name);
+
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
             .addClass('category')
