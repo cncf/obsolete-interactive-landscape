@@ -1247,11 +1247,9 @@ p {
   .cloud-menu .item.active a {
     font-weight: 800;
     color: #666; }
-  .cloud-menu .item.active .item {
-    display: block; }
-    .cloud-menu .item.active .item a {
-      font-weight: 100;
-      color: red; }
+  .cloud-menu .item.active .item a {
+    font-weight: 100;
+    color: red; }
 
 .contactus {
   display: flex;

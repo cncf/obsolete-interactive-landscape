@@ -46,11 +46,38 @@ var scenes = {
   'scene3-1': {
     'os': 'anchor3-1'
   },
+  'scene3-2': {
+    'cloud_native_storage': 'anchor3-2'
+  },
+  'scene3-3': {
+    'container_runtime': 'anchor3-3'
+  },
+  'scene3-4': {
+    'cloud_native_network': 'anchor3-4'
+  },
   'scene4': {
-    'cloud_native_storage': 'anchor4'
+    'orchestration_and_management': 'anchor4'
+  },
+  'scene4-1': {
+    'scheduling_and_orchestration': 'anchor4-1'
+  },
+  'scene4-2': {
+    'coordination_and_services_discovery': 'anchor4-2'
+  },
+  'scene4-3': {
+    'service_management': 'anchor4-3'
   },
   'scene5': {
-    'container_runtime': 'anchor5'
+    'data': 'anchor5'
+  },
+  'scene5-1': {
+    'database': 'anchor5-1'
+  },
+  'scene5-2': {
+    'data_warehouse': 'anchor5-2'
+  },
+  'scene5-3': {
+    'messaging_streaming': 'anchor5-3'
   },
   'scene6': {
     'section-6': 'anchor6'
