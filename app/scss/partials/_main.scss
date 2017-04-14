@@ -67,6 +67,11 @@ body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
     //background-color: $darkest;
 
+
+}
+.windowSize{
+    //width:1000px !important;
+    //height:700px !important;
 }
 
 .wrapper {
@@ -193,7 +198,7 @@ h1 {
 nav {
     display: none;
     position: fixed;
-    right: 30px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     text-align: right;
@@ -442,9 +447,9 @@ p {
   //filter:blur(10px);
   //-webkit-animation: blur 5s infinite;
 
-  -webkit-animation: blur 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation: blur 2s;  /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-  animation: blur 3s;
+  animation: blur 2s;
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out; /* Safari 4.0 - 8.0 */
   animation-timing-function: ease-out;
@@ -533,13 +538,14 @@ p {
     }
     .stillbox{
         display: table;
-        margin: 0 auto;
+        //margin: 0 auto;
+        margin: 0% 20% 10% 10%;
         width:900px;
         height:650px;
 
         h1{
             font-weight:400;
-            color: #3c739d;
+            color: #39507f;
         }
 
     }
@@ -953,12 +959,17 @@ p {
     font-size:0.8em;
     line-height:0.5em !important;
     color:blue;
+
+    width: 250px;
     .item{
-      color:red;
       margin-left:1em;
       a{
-        color:#CCC;
+        color:black;
       }
+       a:hover{
+           color: #2780a4 !important;
+           text-decoration: none;
+       }
 
       .item{
         color:yellow;
@@ -969,16 +980,6 @@ p {
 
         }
       }
-      .item.active{
-            color:yellow;
-            margin-left:2em;
-            display:block;
-            a{
-                color:#666;
-
-            }
-      }
-
     }
     .item.active{
       a{
@@ -986,12 +987,25 @@ p {
         color:#000;
       }
       .item{
+          display:block;
+
         a{
           font-weight: 100;
-          color:red;
+            color:#666;
+
 
         }
       }
+        .item.active{
+            color:yellow;
+            margin-left:2em;
+            display:block;
+            a{
+                color:#666;
+                font-weight: 800;
+
+            }
+        }
 
     }
 
@@ -1040,11 +1054,10 @@ p {
     }
     .header{
         text-align:left !important;
-        color:#3c5876 !important;
+        color:black !important;
         font-size: 0.9em !important;
         span{
             font-weight: 200;
-            color:black;
         }
     }
     .content{

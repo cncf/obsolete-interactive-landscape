@@ -298,7 +298,7 @@ h1 {
 nav {
   display: none;
   position: fixed;
-  right: 30px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
@@ -490,11 +490,11 @@ p {
   border: 1px dotted red; }
 
 .outfocus {
-  -webkit-animation: blur 3s;
+  -webkit-animation: blur 2s;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-fill-mode: forwards;
   /* Safari 4.0 - 8.0 */
-  animation: blur 3s;
+  animation: blur 2s;
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
   /* Safari 4.0 - 8.0 */
@@ -565,12 +565,12 @@ p {
 
 .infog01 .stillbox {
   display: table;
-  margin: 0 auto;
+  margin: 0% 20% 10% 10%;
   width: 900px;
   height: 650px; }
   .infog01 .stillbox h1 {
     font-weight: 400;
-    color: #3c739d; }
+    color: #39507f; }
 
 .infog01 .image1 {
   background-image: url("../images/stage-01.png");
@@ -1236,30 +1236,36 @@ p {
   text-align: left;
   font-size: 0.8em;
   line-height: 0.5em !important;
-  color: blue; }
+  color: blue;
+  width: 250px; }
   .cloud-menu .item {
-    color: red;
     margin-left: 1em; }
     .cloud-menu .item a {
-      color: #CCC; }
+      color: black; }
+    .cloud-menu .item a:hover {
+      color: #2780a4 !important;
+      text-decoration: none; }
     .cloud-menu .item .item {
       color: yellow;
       margin-left: 2em;
       display: none; }
       .cloud-menu .item .item a {
         color: grey; }
-    .cloud-menu .item .item.active {
-      color: yellow;
-      margin-left: 2em;
-      display: block; }
-      .cloud-menu .item .item.active a {
-        color: #666; }
   .cloud-menu .item.active a {
     font-weight: 800;
     color: #000; }
-  .cloud-menu .item.active .item a {
-    font-weight: 100;
-    color: red; }
+  .cloud-menu .item.active .item {
+    display: block; }
+    .cloud-menu .item.active .item a {
+      font-weight: 100;
+      color: #666; }
+  .cloud-menu .item.active .item.active {
+    color: yellow;
+    margin-left: 2em;
+    display: block; }
+    .cloud-menu .item.active .item.active a {
+      color: #666;
+      font-weight: 800; }
 
 .contactus {
   display: flex;
@@ -1296,11 +1302,10 @@ p {
 
 .item-modal .header {
   text-align: left !important;
-  color: #3c5876 !important;
+  color: black !important;
   font-size: 0.9em !important; }
   .item-modal .header span {
-    font-weight: 200;
-    color: black; }
+    font-weight: 200; }
 
 .item-modal .content {
   display: flex !important;

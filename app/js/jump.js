@@ -280,7 +280,7 @@ function getData(){
           $("."+companiesClass).append(boxitems);
 
           //PUSHING SUBCATEGORY NAME
-          $("."+titleItemsClass).text(subCategory.name+"("+category.key+"-"+c+")");
+          $("."+titleItemsClass).text(subCategory.name);
 
 
           //PUSHING SUBCATEGORY COMPANIES
