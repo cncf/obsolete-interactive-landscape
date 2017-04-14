@@ -20,33 +20,48 @@ var controller = new ScrollMagic.Controller({
  */
 var scenes = {
   'intro': {
-    'section-0': 'anchor0'
+    'starter': 'anchor0'
   },
-  'scene2': {
+  'scene1': {
     'infrastructure': 'anchor1'
   },
-  'scene3': {
+  'scene1-1': {
+    'infrastructure_details': 'anchor1-1'
+  },
+  'scene2': {
     'provisioning': 'anchor2'
   },
-  'scene4': {
+  'scene2-1': {
+    'infrastructure_automation': 'anchor2-1'
+  },
+  'scene2-2': {
+    'host_management': 'anchor2-2'
+  },
+  'scene2-3': {
+    'secure_images': 'anchor2-3'
+  },
+  'scene3': {
     'runtime': 'anchor3'
   },
+  'scene3-1': {
+    'os': 'anchor3-1'
+  },
+  'scene4': {
+    'cloud_native_storage': 'anchor4'
+  },
   'scene5': {
-    'section-4': 'anchor4'
+    'container_runtime': 'anchor5'
   },
   'scene6': {
-    'section-5': 'anchor5'
-  },
-  'scene7': {
     'section-6': 'anchor6'
   },
-  'scene8': {
+  'scene7': {
     'section-7': 'anchor7'
   },
-  'scene9': {
+  'scene8': {
     'section-8': 'anchor8'
   },
-  'scene10': {
+  'scene9': {
     'section-9': 'anchor9'
   }
 }
@@ -147,7 +162,7 @@ function getData(){
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
             .addClass('category')
-            .text("CATAAAA"+category.name);
+            .text(category.name);
         $(boxClass).append(element);
 
         //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER

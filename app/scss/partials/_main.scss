@@ -950,7 +950,20 @@ p {
       .item{
         color:yellow;
         margin-left:1em;
-        a{color:grey;}
+          display:none;
+        a{
+            color:grey;
+
+        }
+      }
+      .item.active{
+            color:yellow;
+            margin-left:1em;
+            display:block;
+            a{
+                color:yellow;
+
+            }
       }
 
     }
@@ -960,9 +973,11 @@ p {
         color:#666;
       }
       .item{
+          display:block;
         a{
           font-weight: 100;
           color:red;
+
         }
       }
 
