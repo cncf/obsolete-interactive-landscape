@@ -23,112 +23,112 @@ var scenes = {
     'starter': 'anchor0'
   },
   'scene1': {//7
-    'infrastructure': 'anchor1'
+    'infrastructure': 'ancla7'
   },
   'scene1-1': {//7-0
-    'infrastructure_details': 'anchor1-1'
+    'infrastructure_details': 'ancla7-0'
   },
   'scene2': {//6
-    'provisioning': 'anchor2'
+    'provisioning': 'ancla6'
   },
   'scene2-1': {//6-0
-    'infrastructure_automation': 'anchor2-1'
+    'infrastructure_automation': 'ancla6-0'
   },
   'scene2-2': {//6-1
-    'host_management': 'anchor2-2'
+    'host_management': 'ancla6-1'
   },
   'scene2-3': {//6-2
-    'secure_images': 'anchor2-3'
+    'secure_images': 'ancla6-2'
   },
   'scene3': {//5
-    'runtime': 'anchor3'
+    'runtime': 'anchor5'
   },
   'scene3-1': {//5-0
-    'os': 'anchor3-1'
+    'os': 'anchor5-0'
   },
   'scene3-2': {//5-1
-    'cloud_native_storage': 'anchor3-2'
+    'cloud_native_storage': 'anchor5-1'
   },
   'scene3-3': {//5-2
-    'container_runtime': 'anchor3-3'
+    'container_runtime': 'anchor5-2'
   },
   'scene3-4': {//5-3
-    'cloud_native_network': 'anchor3-4'
+    'cloud_native_network': 'anchor5-3'
   },
   'scene4': {//4
-    'orchestration_and_management': 'anchor4'
+    'orchestration_and_management': 'ancla4'
   },
   'scene4-1': {//4-0
-    'scheduling_and_orchestration': 'anchor4-1'
+    'scheduling_and_orchestration': 'ancla4-0'
   },
   'scene4-2': {//4-1
-    'coordination_and_services_discovery': 'anchor4-2'
+    'coordination_and_services_discovery': 'ancla4-1'
   },
   'scene4-3': {//4-2
-    'service_management': 'anchor4-3'
+    'service_management': 'ancla4-2'
   },
   'scene5': {//1a
-    'data': 'anchor5'
+    'data': 'ancla1a'
   },
   'scene5-1': {//1a-0
-    'database': 'anchor5-1'
+    'database': 'ancla1a-0'
   },
   'scene5-2': {//1a-1
-    'data_warehouse': 'anchor5-2'
+    'data_warehouse': 'ancla1a-1'
   },
   'scene5-3': {//1a-2
-    'messaging_streaming': 'anchor5-3'
+    'messaging_streaming': 'ancla1a-2'
   },
   'scene6': {//1b
-    'application_definition_and_development': 'anchor6'
+    'application_definition_and_development': 'ancla1b'
   },
   'scene6-1': {//1b-0
-    'language_and_frameworks': 'anchor6-1'
+    'language_and_frameworks': 'ancla1b-0'
   },
   'scene6-2': {//1b-1
-    'scm': 'anchor6-2'
+    'scm': 'ancla1b-1'
   },
   'scene6-3': {//1b-2
-    'registry_services': 'anchor6-3'
+    'registry_services': 'ancla1b-2'
   },
   'scene6-4': {//1b-3
-    'application_definition': 'anchor6-4'
+    'application_definition': 'ancla1b-3'
   },
   'scene6-5': {//1b-4
-    'ci_cd': 'anchor6-5'
+    'ci_cd': 'ancla1b-4'
   },
   'scene7': {//1c
-    'apis': 'anchor7'
+    'apis': 'ancla1c'
   },
   'scene7-1': {//1c-0
-    'services_as_code': 'anchor7-1'
+    'services_as_code': 'ancla1c-0'
   },
   'scene7-2': {//1c-1
-    'api_management': 'anchor7-2'
+    'api_management': 'ancla1c-1'
   },
   'scene8': {//3
-    'platforms': 'anchor8'
+    'platforms': 'ancla3'
   },
-  'scene8-1': {//3-0
-    'paas': 'anchor8-1'
+  'scene3-0': {//3-0
+    'paas': 'ancla3-0'
   },
-  'scene8-2': {//3-1
-    'event_based_compute': 'anchor8-2'
+  'scene3-1': {//3-1
+    'event_based_compute': 'ancla3-1'
   },
-  'scene9': {//2
-    'observability_and_analysis': 'anchor9'
+  'scene2': {//2
+    'observability_and_analysis': 'ancla2'
   },
-  'scene9-1': {//2-0
-    'monitoring': 'anchor9-1'
+  'scene2-0': {//2-0
+    'monitoring': 'ancla2-0'
   },
-  'scene9-2': {//2-1
-    'logging': 'anchor9-2'
+  'scene2-1': {//2-1
+    'logging': 'ancla2-1'
   },
-  'scene9-3': {//2-2
-    'tracing': 'anchor9-3'
+  'scene2-2': {//2-2
+    'tracing': 'ancla2-2'
   },
-  'scene9-4': {//2-4
-    'specialized_tools': 'anchor9-4'
+  'scene2-3': {//2-3
+    'specialized_tools': 'ancla2-3'
   }
 }
 
