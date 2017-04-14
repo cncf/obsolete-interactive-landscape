@@ -568,6 +568,9 @@ p {
   margin: 0 auto;
   width: 900px;
   height: 650px; }
+  .infog01 .stillbox h1 {
+    font-weight: 400;
+    color: #3c739d; }
 
 .infog01 .image1 {
   background-image: url("../images/stage-01.png");
@@ -1222,6 +1225,13 @@ p {
 .infog01 .cn-title {
   text-shadow: 0px 0px 5px #839ccc; }
 
+.infog01 .cn-partners {
+  opacity: 0.9;
+  right: 50px;
+  top: 20px;
+  width: 400px;
+  position: fixed; }
+
 .cloud-menu {
   text-align: left;
   font-size: 0.8em;
@@ -1302,7 +1312,8 @@ p {
 .item-modal .item-image {
   margin: 0 20px;
   height: 200px;
-  width: 200px; }
+  width: 200px;
+  border-radius: 5px; }
 
 #companyModals .c-tooltiptext {
   opacity: 0.1;

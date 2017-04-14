@@ -537,6 +537,11 @@ p {
         width:900px;
         height:650px;
 
+        h1{
+            font-weight:400;
+            color: #3c739d;
+        }
+
     }
 
     .image1{
@@ -932,6 +937,14 @@ p {
         text-shadow: 0px 0px 5px #839ccc;
     }
 
+    .cn-partners{
+        opacity: 0.9;
+        right: 50px;
+        top: 20px;
+        width: 400px;
+        position: fixed;
+    }
+
 
 }
 
@@ -1046,6 +1059,7 @@ p {
         margin:0 20px;
         height:200px;
         width:200px;
+        border-radius:5px;
     }
 
 }
