@@ -949,7 +949,7 @@ p {
 
       .item{
         color:yellow;
-        margin-left:1em;
+        margin-left:2em;
           display:none;
         a{
             color:grey;
@@ -958,10 +958,10 @@ p {
       }
       .item.active{
             color:yellow;
-            margin-left:1em;
+            margin-left:2em;
             display:block;
             a{
-                color:yellow;
+                color:#666;
 
             }
       }
@@ -970,7 +970,7 @@ p {
     .item.active{
       a{
         font-weight: 800;
-        color:#666;
+        color:#000;
       }
       .item{
         a{

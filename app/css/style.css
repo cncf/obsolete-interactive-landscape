@@ -1234,19 +1234,19 @@ p {
       color: #CCC; }
     .cloud-menu .item .item {
       color: yellow;
-      margin-left: 1em;
+      margin-left: 2em;
       display: none; }
       .cloud-menu .item .item a {
         color: grey; }
     .cloud-menu .item .item.active {
       color: yellow;
-      margin-left: 1em;
+      margin-left: 2em;
       display: block; }
       .cloud-menu .item .item.active a {
-        color: yellow; }
+        color: #666; }
   .cloud-menu .item.active a {
     font-weight: 800;
-    color: #666; }
+    color: #000; }
   .cloud-menu .item.active .item a {
     font-weight: 100;
     color: red; }
