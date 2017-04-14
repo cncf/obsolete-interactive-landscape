@@ -20,16 +20,16 @@ var controller = new ScrollMagic.Controller({
  */
 var scenes = {
   'intro': {
-    'intro': 'intro-anchor'
+    'section-0': 'anchor0'
   },
   'scene2': {
-    'section-1': 'anchor1'
+    'infrastructure': 'anchor1'
   },
   'scene3': {
-    'section-2': 'anchor2'
+    'provisioning': 'anchor2'
   },
   'scene4': {
-    'section-3': 'anchor3'
+    'runtime': 'anchor3'
   },
   'scene5': {
     'section-4': 'anchor4'
@@ -147,7 +147,7 @@ function getData(){
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
             .addClass('category')
-            .text(category.name);
+            .text("CATAAAA"+category.name);
         $(boxClass).append(element);
 
         //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER
@@ -259,6 +259,7 @@ function getData(){
           }
 
         }
+
 
       }
 
