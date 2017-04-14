@@ -358,26 +358,26 @@ $(document).ready(function(){
 
 });
 
-function keyControl(){
+function keyControl(prev,next){
   $("body").keydown(function(e) {
     if(e.keyCode == 37) { // left
       $("#showroom").animate({
 
       });
       console.log('left');
-      window.location.hash = '#data';
+      window.location.hash = "#"+prev;
     }
     else if(e.keyCode == 39) { // right
       $("#showroom").animate({
 
       });
       console.log('right');
-      window.location.hash = '#platforms';
+      window.location.hash = "#"+next;
     }
   });
 }
 
-keyControl();
+
 
 function initIndividualModal(id){
 
