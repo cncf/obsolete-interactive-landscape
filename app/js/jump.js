@@ -146,7 +146,34 @@ for(var key in scenes) {
         //.setClassToggle('#' + obj[prop], 'active')
         //.setClassToggle('#module-' + obj[prop], 'active')
         .setClassToggle('.element-' + obj[prop], 'active')
-        .addTo(controller);
+        .addTo(controller)
+        .addIndicators() // add indicators (requires plugin)
+        .on("update", function (e) {
+          $("#scrollDirection").text(e.target.controller().info("scrollDirection"));
+        })
+        // .on("enter", function (e) {
+        //   console.log('enter:');
+        //   console.log(this.triggerElement().id);
+        // })
+        // .on("leave", function (e) {
+        //   console.log('leave:');
+        //   var leaving= this.triggerElement().id ;
+        //   console.log(leaving);
+        //   keyControl(leaving , 'data');
+        // })
+        // .on("enter leave", function (e) {
+        //   $("#state").text(e.type == "enter" ? "inside" : "outside");
+        //
+        // })
+        .on("start end", function (e) {
+          $("#lastHit").text(e.type == "start" ? "top" : "bottom");
+
+        })
+        .on("progress", function (e) {
+          $("#progress").text(e.progress.toFixed(3));
+
+        });
+
   }
 }
 
@@ -154,17 +181,17 @@ for(var key in scenes) {
 
 // Change behaviour of controller
 // to animate scroll instead of jump
-controller.scrollTo(function(target) {
-
-  TweenMax.to(window, 1, {
-    scrollTo : {
-      y : target,
-      autoKill : true // Allow scroll position to change outside itself
-    },
-    ease : Cubic.easeInOut
-  });
-
-});
+// controller.scrollTo(function(target) {
+//
+//   TweenMax.to(window, 1, {
+//     scrollTo : {
+//       y : target,
+//       autoKill : true // Allow scroll position to change outside itself
+//     },
+//     ease : Cubic.easeInOut
+//   });
+//
+// });
 
 
 //  Bind scroll to anchor links using Vanilla JavaScript
@@ -173,6 +200,7 @@ var anchor_nav = document.querySelector('.anchor-nav');
 anchor_nav.addEventListener('click', function(e) {
   var target = e.target,
       id     = target.getAttribute('href');
+
 
   if(id !== null) {
     if(id.length > 0) {
@@ -354,29 +382,32 @@ $(document).ready(function(){
 //Sketchy things happen here
 
 
-
-
 });
 
+
+
 function keyControl(prev,next){
+  console.log('keyControll was called with prev as:'+prev );
   $("body").keydown(function(e) {
     if(e.keyCode == 37) { // left
-      $("#showroom").animate({
-
-      });
       console.log('left');
       window.location.hash = "#"+prev;
     }
     else if(e.keyCode == 39) { // right
-      $("#showroom").animate({
 
-      });
       console.log('right');
       window.location.hash = "#"+next;
     }
   });
 }
 
+
+
+//This function to be called everytime the trigger walks into the scene
+//This will keep the parameters updated
+//It remain silent waiting for a keyboard action
+//In case keys are pressed it will take you to the section
+//otherwise won't do anything.
 
 
 function initIndividualModal(id){
