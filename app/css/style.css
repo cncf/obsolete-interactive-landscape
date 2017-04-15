@@ -544,7 +544,7 @@ p {
 .infog01 .image-diagram.active {
   filter: blur(0px);
   opacity: 1 !important;
-  z-index: 1;
+  z-index: 10;
   display: block; }
 
 .infog01 .image-diagram {
@@ -570,8 +570,18 @@ p {
   height: 650px; }
   .infog01 .stillbox h1 {
     font-weight: 400;
-    color: #476e7a;
+    color: #55acee;
     font-size: 2.5em; }
+  .infog01 .stillbox .categ {
+    color: #CCC;
+    font-weight: 100;
+    font-size: 1.8em; }
+  .infog01 .stillbox .subcateg {
+    color: #000;
+    font-weight: 800;
+    line-height: 0.6em;
+    font-size: 1.2em;
+    padding-left: 20px; }
 
 .infog01 .image1 {
   background-image: url("../images/stage-01.png");
@@ -711,7 +721,7 @@ p {
     vertical-align: top; }
   .infog01 .box-2 .box-items {
     border-width: 0 0 0 1px;
-    border-color: #476e7a;
+    border-color: #55acee;
     border-style: solid;
     margin-right: 5px;
     width: 75%;
@@ -1260,7 +1270,7 @@ p {
     display: block; }
     .cloud-menu .item.active .item a {
       font-weight: 100;
-      color: #476e7a; }
+      color: #55acee; }
   .cloud-menu .item.active .item.active {
     color: yellow;
     margin-left: 2em;

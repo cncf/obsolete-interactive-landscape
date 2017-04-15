@@ -147,7 +147,7 @@ for(var key in scenes) {
         //.setClassToggle('#module-' + obj[prop], 'active')
         .setClassToggle('.element-' + obj[prop], 'active')
         .addTo(controller)
-        .addIndicators() // add indicators (requires plugin)
+        //.addIndicators()
         .on("update", function (e) {
           $("#scrollDirection").text(e.target.controller().info("scrollDirection"));
         })

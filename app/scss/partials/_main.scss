@@ -6,7 +6,7 @@ $f5-color: #478466;
 $f6-color: #6c9a40;
 $f7-color: #3e56a6;
 
-$infog_primary: #476e7a;
+$infog_primary: #55acee;
 
 html {
     color: #222;
@@ -515,7 +515,7 @@ p {
     .image-diagram.active{
         filter:blur(0px);
         opacity:1 !important;
-        z-index: 1;
+        z-index: 10;
         display:block;
     }
 
@@ -550,6 +550,22 @@ p {
             color: $infog_primary;
             font-size: 2.5em;
         }
+        .categ{
+            color:#CCC;
+            font-weight: 100;
+            //text-transform: uppercase;
+            //line-height: em;
+            font-size: 1.8em;
+        }
+        .subcateg{
+            color:#000;
+            font-weight: 800;
+            //text-transform: uppercase;
+            line-height: 0.6em;
+            font-size: 1.2em;
+            padding-left:20px;
+        }
+
 
     }
 
