@@ -268,7 +268,7 @@ function getData(){
         $(boxClass).append(companies);
 
         //++++++++++++++++++++++++++++++++++++++++++++++++
-        //THE SUBCATEGORIES
+        //THE SUBCATEGORIES IN CATEGORY INDEX
         for(var c in category.children){
           var subCategory = category.children[c];
 
@@ -276,18 +276,29 @@ function getData(){
           var boxItemsClass= "box-items"+category.key+"-"+c ;
           var titleItemsClass= "title-items"+category.key+"-"+c ;
 
+          //create container for the SUB-CATEGORY
           var boxitems = $('<div>')
               .addClass(boxItemsClass)
               .addClass('box-items');
           $("."+companiesClass).append(boxitems);
 
+          //PUSHING CATEGORY NAME
+          var element = $('<h5>')
+              .addClass(titleItemsClass);
+          $("."+companiesClass).append(element);
+
           //PUSHING SUBCATEGORY NAME
           $("."+titleItemsClass).text(subCategory.name);
 
 
+
+          //++++++++++++++++++++++++++++++++++++++++++++++++
+          //THE SUBCATEGORIES DETAIL
+
+          var categoryDetail= "category-detail"+category.key+"-"+c ;
+
           //PUSHING SUBCATEGORY COMPANIES
           for(var m in subCategory.items){
-
 
             var company = subCategory.items[m];
             var companyModal= "modal-"+category.key+'-'+c+'-'+m;
@@ -300,7 +311,7 @@ function getData(){
                 .addClass('item')
                 .addClass(companyItem+" c-tooltip")
                 .attr("style","display:inline-block");
-            $("."+boxItemsClass).append(item);
+            $("."+categoryDetail).append(item);
 
             //COMPANY IMAGE
             var image =$('<h4>')

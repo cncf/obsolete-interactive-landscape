@@ -544,7 +544,7 @@ p {
 .infog01 .image-diagram.active {
   filter: blur(0px);
   opacity: 1 !important;
-  z-index: 10;
+  z-index: 500;
   display: block; }
 
 .infog01 .image-diagram {
