@@ -257,8 +257,14 @@ function getData(){
 
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
-            .addClass('category')
+            .addClass('categ-big categ-color'+category.key)
             .text(category.name);
+        $(boxClass).append(element);
+
+        //PUSHING CATEGORY BRIEF
+        var element = $('<p>')
+            .addClass('categ-brief categ-color'+category.key)
+            .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate');
         $(boxClass).append(element);
 
         //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER
@@ -268,27 +274,27 @@ function getData(){
         $(boxClass).append(companies);
 
         //++++++++++++++++++++++++++++++++++++++++++++++++
-        //THE SUBCATEGORIES IN CATEGORY INDEX
+        //THE SUBCATEGORIES IN THE CATEGORY COVER
         for(var c in category.children){
           var subCategory = category.children[c];
 
           //DEFINING SUB-CATEGORY CONTAINER
+          var subCategKey= category.key+"-"+c ;
           var boxItemsClass= "box-items"+category.key+"-"+c ;
-          var titleItemsClass= "title-items"+category.key+"-"+c ;
 
           //create container for the SUB-CATEGORY
           var boxitems = $('<div>')
               .addClass(boxItemsClass)
-              .addClass('box-items');
+              .addClass('box-itemsDISABLED');
           $("."+companiesClass).append(boxitems);
 
           //PUSHING CATEGORY NAME
           var element = $('<h5>')
-              .addClass(titleItemsClass);
+              .addClass("title-items"+subCategKey+' subcateg');
           $("."+companiesClass).append(element);
 
           //PUSHING SUBCATEGORY NAME
-          $("."+titleItemsClass).text(subCategory.name);
+          $(".title-items"+subCategKey).text(subCategory.name);
 
 
 

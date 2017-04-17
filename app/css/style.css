@@ -569,18 +569,59 @@ p {
   width: 900px;
   height: 650px; }
   .infog01 .stillbox h1 {
-    font-weight: 400;
+    font-weight: 100;
     color: #55acee;
-    font-size: 2.5em; }
+    font-size: 2.2em; }
   .infog01 .stillbox .categ {
     color: #CCC;
     font-weight: 100;
     font-size: 1.8em; }
+  .infog01 .stillbox .categ-big {
+    font-size: 2.5em;
+    padding-top: 40px;
+    color: red;
+    font-weight: 100;
+    line-height: 1em; }
+  .infog01 .stillbox .categ-brief {
+    color: red;
+    font-size: 0.8em;
+    border: 1px solid red;
+    border-width: 0 0 1px 0;
+    margin-left: 30px;
+    width: 400px;
+    padding: 0 0 20px 0; }
+  .infog01 .stillbox .categ-color1a {
+    color: #17aaad;
+    border-color: #17aaad; }
+  .infog01 .stillbox .categ-color1b {
+    color: #17aaad;
+    border-color: #17aaad; }
+  .infog01 .stillbox .categ-color1c {
+    color: #17aaad;
+    border-color: #17aaad; }
+  .infog01 .stillbox .categ-color2 {
+    color: #688ca5;
+    border-color: #688ca5; }
+  .infog01 .stillbox .categ-color3 {
+    color: #635b89;
+    border-color: #635b89; }
+  .infog01 .stillbox .categ-color4 {
+    color: #1b86c8;
+    border-color: #1b86c8; }
+  .infog01 .stillbox .categ-color5 {
+    color: #478466;
+    border-color: #478466; }
+  .infog01 .stillbox .categ-color6 {
+    color: #6c9a40;
+    border-color: #6c9a40; }
+  .infog01 .stillbox .categ-color7 {
+    color: #3e56a6;
+    border-color: #3e56a6; }
   .infog01 .stillbox .subcateg {
     color: #000;
     font-weight: 800;
     line-height: 0.6em;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-left: 20px; }
 
 .infog01 .image1 {
@@ -711,8 +752,6 @@ p {
 
 .infog01 .box-2 {
   text-align: left; }
-  .infog01 .box-2 .companies {
-    display: flex; }
   .infog01 .box-2 .item {
     display: inline-block;
     border-radius: 5px;
@@ -726,12 +765,13 @@ p {
     margin-right: 5px;
     width: 75%;
     padding: 20px;
-    margin-left: 20px; }
+    margin-left: 30px; }
   .infog01 .box-2 h2 {
     color: black;
     font-size: 1.6em;
     font-weight: 100;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    margin-left: 30px; }
   .infog01 .box-2 h4 {
     font-weight: 400;
     margin: 0 0 10px 0; }
@@ -858,13 +898,16 @@ p {
 
 .infog01 .category-box-1a {
   border-color: #17aaad;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-1a {
   color: #17aaad;
@@ -876,13 +919,16 @@ p {
 
 .infog01 .category-box-1b {
   border-color: #17aaad;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-1b {
   color: #17aaad;
@@ -894,13 +940,16 @@ p {
 
 .infog01 .category-box-1c {
   border-color: #17aaad;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-1c {
   color: #17aaad;
@@ -912,13 +961,16 @@ p {
 
 .infog01 .category-box-4 {
   border-color: #1b86c8;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-4 {
   color: #1b86c8;
@@ -930,13 +982,16 @@ p {
 
 .infog01 .category-box-2 {
   border-color: #688ca5;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-2 {
   color: #688ca5;
@@ -948,13 +1003,16 @@ p {
 
 .infog01 .category-box-3 {
   border-color: #635b89;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-3 {
   color: #635b89;
@@ -966,13 +1024,16 @@ p {
 
 .infog01 .category-box-5 {
   border-color: #478466;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-5 {
   color: #478466;
@@ -984,13 +1045,16 @@ p {
 
 .infog01 .category-box-6 {
   border-color: #6c9a40;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-6 {
   color: #6c9a40;
@@ -1002,13 +1066,16 @@ p {
 
 .infog01 .category-box-7 {
   border-color: #3e56a6;
-  border-width: 0 0 0 3px;
+  border-width: 0 0 0 0;
   border-style: solid;
-  height: 900px;
+  height: 100%;
+  width: 500px;
   position: absolute;
   top: 0;
   opacity: 1;
-  padding: 0 40px 0 10px; }
+  padding: 0 40px 0 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px; }
 
 .infog01 .subcategory-7 {
   color: #3e56a6;

@@ -546,23 +546,63 @@ p {
         height:650px;
 
         h1{
-            font-weight:400;
+            font-weight:100;
             color: $infog_primary;
-            font-size: 2.5em;
+            font-size: 2.2em;
+
         }
         .categ{
             color:#CCC;
             font-weight: 100;
-            //text-transform: uppercase;
-            //line-height: em;
             font-size: 1.8em;
         }
+
+
+        .categ-big{
+            font-size:2.5em;
+            padding-top:40px;
+            color:red;
+            font-weight:100;
+            line-height:1em;
+        }
+        .categ-brief{
+            color: red;
+            font-size: 0.8em;
+            border: 1px solid red;
+            border-width: 0 0 1px 0;
+            margin-left: 30px;
+            width: 400px;
+            padding: 0 0 20px 0
+        }
+
+        @each $number, $color,$toplocation in
+                        (1a,$f1-color,170),
+                        (1b,$f1-color,170),
+                        (1c,$f1-color,170),
+                        (2,$f2-color,170),
+                        (3,$f3-color,170),
+                        (4,$f4-color,130),
+                        (5,$f5-color,220),
+                        (6,$f6-color,300),
+                        (7,$f7-color,350) {
+
+            .categ-color#{$number}{
+
+                color:$color;
+                border-color: $color;
+
+            }
+
+        }
+
+
+
         .subcateg{
             color:#000;
             font-weight: 800;
             //text-transform: uppercase;
             line-height: 0.6em;
-            font-size: 1.2em;
+            font-size: 1em;
             padding-left:20px;
         }
 
@@ -711,7 +751,7 @@ p {
         text-align: left;
 
         .companies{
-            display:flex;
+            //display:flex;
         }
 
         .item {
@@ -728,7 +768,7 @@ p {
             margin-right: 5px;
             width: 75%;
             padding: 20px;
-            margin-left: 20px;
+            margin-left: 30px;
 
         }
 
@@ -736,8 +776,8 @@ p {
             color:black;
             font-size:1.6em;
             font-weight:100;
-            //margin-left:-20px;
             padding-bottom:10px;
+            margin-left:30px;
         }
         h4{
             font-weight:400;
@@ -833,13 +873,16 @@ p {
                     (7,$f7-color) {
         .category-box-#{$number}{
             border-color: $color;
-            border-width: 0 0 0 3px;
+            border-width: 0 0 0 0;
             border-style: solid;
-            height:900px;
+            height:100%;
+            width: 500px;
             position:absolute;
             top:0;
             opacity:1;
             padding: 0 40px 0 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
             //overflow:scroll;
 
         }
