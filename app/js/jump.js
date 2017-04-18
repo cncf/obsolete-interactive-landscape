@@ -253,6 +253,16 @@ function getData(){
         //DEFINING CATEGORY CONTAINER
         var boxClass= ".category-box-"+category.key ;
 
+        //category template
+        var categoryModule= "<div class='module element-anchor"+category.key+"'>"+
+              "<div class='stillbox'>"+
+                "<div class='box-2 category-box-"+category.key+"'>"+
+                "</div>"+
+              "</div>"+
+            "</div>";
+        $("#categoryContainer").append(categoryModule);
+
+
         $(".category-title-"+category.key).text(category.name);
 
         //PUSHING CATEGORY NAME
@@ -272,6 +282,7 @@ function getData(){
         var companies = $('<div>')
             .addClass(companiesClass + " companies");
         $(boxClass).append(companies);
+
 
         //++++++++++++++++++++++++++++++++++++++++++++++++
         //THE SUBCATEGORIES IN THE CATEGORY COVER
@@ -297,26 +308,28 @@ function getData(){
           $(".title-items"+subCategKey).text(subCategory.name);
 
 
-          //subcategory template
-          var subCategoryModule= "<div class='RealShit stillbox'>"+
-                "<h1 class='category-title-"+category.key+" categ'></h1>"+
-                "<div class='box-2'>"+
-                  "<h1 class='title-items"+subCategKey+"' ></h1>"+
-                  "<div class='category-detail"+subCategKey+" box-items'>"+
-                  "</div>"+
-                "</div>"+
-              "</div>";
-
-          //THIS CREATES THE HIDDEN MODAL FOR EACH COMPANY
-          var element =$('<div>')
-              .addClass("real module element-anchor"+subCategKey)
-              .html(subCategoryModule);
-          $("#subCategContainer").append(element);
-
-
-
           //++++++++++++++++++++++++++++++++++++++++++++++++
           //THE SUBCATEGORIES DETAIL
+
+          //subcategory template
+          var subCategoryModule= "<div class='module element-anchor"+subCategKey+"'>"+
+                "<div class='stillbox'>"+
+                  "<h1 class='category-title-"+category.key+" categ'></h1>"+
+                  "<div class='box-2'>"+
+                    "<h1 class='title-items"+subCategKey+"' ></h1>"+
+                    "<div class='category-detail"+subCategKey+" box-items'>"+
+                    "</div>"+
+                  "</div>"+
+                "</div>"+
+             "</div>";
+
+
+          // var element =$('<div>')
+          //     .addClass("THISISASUBCATEGORY module element-anchor"+subCategKey)
+          //     .html(subCategoryModule);
+
+          $("#categoryContainer").append(subCategoryModule);
+
 
           var categoryDetail= "category-detail"+category.key+"-"+c ;
 
