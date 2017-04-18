@@ -297,6 +297,23 @@ function getData(){
           $(".title-items"+subCategKey).text(subCategory.name);
 
 
+          //subcategory template
+          var subCategoryModule= "<div class='RealShit stillbox'>"+
+                "<h1 class='category-title-"+category.key+" categ'></h1>"+
+                "<div class='box-2'>"+
+                  "<h1 class='title-items"+subCategKey+"' ></h1>"+
+                  "<div class='category-detail"+subCategKey+" box-items'>"+
+                  "</div>"+
+                "</div>"+
+              "</div>";
+
+          //THIS CREATES THE HIDDEN MODAL FOR EACH COMPANY
+          var element =$('<div>')
+              .addClass("real module element-anchor"+subCategKey)
+              .html(subCategoryModule);
+          $("#subCategContainer").append(element);
+
+
 
           //++++++++++++++++++++++++++++++++++++++++++++++++
           //THE SUBCATEGORIES DETAIL
