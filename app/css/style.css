@@ -759,8 +759,7 @@ p {
     text-align: center;
     vertical-align: top; }
   .infog01 .box-2 .box-items {
-    border-width: 0 0 0 1px;
-    border-color: #55acee;
+    border-width: 0 0 0 2px;
     border-style: solid;
     margin-right: 5px;
     width: 75%;

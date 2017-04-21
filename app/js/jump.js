@@ -1,3 +1,6 @@
+
+
+
 // Init controller
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
@@ -254,13 +257,11 @@ function getData(){
         var boxClass= ".category-box-"+category.key ;
 
         //category template
-        var categoryModule= "<div class='module element-anchor"+category.key+"'>"+
-              "<div class='stillbox'>"+
+        var categoryModule= "<div class='stillbox'>"+
                 "<div class='box-2 category-box-"+category.key+"'>"+
                 "</div>"+
-              "</div>"+
             "</div>";
-        $("#categoryContainer").append(categoryModule);
+        $("#module"+category.key).append(categoryModule);
 
 
         $(".category-title-"+category.key).text(category.name);
@@ -312,23 +313,17 @@ function getData(){
           //THE SUBCATEGORIES DETAIL
 
           //subcategory template
-          var subCategoryModule= "<div class='module element-anchor"+subCategKey+"'>"+
-                "<div class='stillbox'>"+
-                  "<h1 class='category-title-"+category.key+" categ'></h1>"+
+          var subCategoryModule= "<div class='stillbox'>"+
+                  "<h1 class='category-title-"+category.key+" categ'>"+category.name+"</h1>"+
                   "<div class='box-2'>"+
-                    "<h1 class='title-items"+subCategKey+"' ></h1>"+
-                    "<div class='category-detail"+subCategKey+" box-items'>"+
+                    "<h1 class='categ-color"+category.key+"' >"+subCategory.name+"</h1>"+
+                    "<div class='category-detail"+subCategKey+"  box-items categ-color"+category.key+"'>"+
                     "</div>"+
                   "</div>"+
-                "</div>"+
              "</div>";
+          $("#module"+subCategKey).append(subCategoryModule);
 
 
-          // var element =$('<div>')
-          //     .addClass("THISISASUBCATEGORY module element-anchor"+subCategKey)
-          //     .html(subCategoryModule);
-
-          $("#categoryContainer").append(subCategoryModule);
 
 
           var categoryDetail= "category-detail"+category.key+"-"+c ;
@@ -424,12 +419,13 @@ function getData(){
   });
 
 }
-getData();
+
 
 
 $(document).ready(function(){
 //Sketchy things happen here
 
+  getData();
 
 });
 
