@@ -182,19 +182,19 @@ for(var key in scenes) {
 
 
 
-// Change behaviour of controller
-// to animate scroll instead of jump
-// controller.scrollTo(function(target) {
-//
-//   TweenMax.to(window, 1, {
-//     scrollTo : {
-//       y : target,
-//       autoKill : true // Allow scroll position to change outside itself
-//     },
-//     ease : Cubic.easeInOut
-//   });
-//
-// });
+//Change behaviour of controller
+//to animate scroll instead of jump
+controller.scrollTo(function(target) {
+
+  TweenMax.to(window, 0.3, {
+    scrollTo : {
+      y : target,
+      autoKill : true // Allow scroll position to change outside itself
+    },
+    ease : Cubic.easeInOut
+  });
+
+});
 
 
 //  Bind scroll to anchor links using Vanilla JavaScript
@@ -264,17 +264,32 @@ function getData(){
         $("#module"+category.key).append(categoryModule);
 
 
-        $(".category-title-"+category.key).text(category.name);
+        //Adding category icon
+        var icon = $('<i>')
+            .addClass("arrow circle outline up icon "+category.key);
+
+        var icon = $('<img>')
+            .attr("src","../images/icons/ico_data.png")
+            .addClass("ico-med")
+            .attr("style","width:60px; padding:0 20px 0 0");
+
+        //Quarentine
+        // $(".category-title-"+category.key)
+        //     .append(icon)
+        //     .append(category.name);
+
 
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
-            .addClass('categ-big categ-color'+category.key)
-            .text(category.name);
+            .addClass('categ-big')
+            .append(icon)
+            .append(category.name);
+
         $(boxClass).append(element);
 
         //PUSHING CATEGORY BRIEF
         var element = $('<p>')
-            .addClass('categ-brief categ-color'+category.key)
+            .addClass('categ-brief')
             .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate');
         $(boxClass).append(element);
 
@@ -302,11 +317,29 @@ function getData(){
 
           //PUSHING CATEGORY NAME
           var element = $('<h5>')
-              .addClass("title-items"+subCategKey+' subcateg');
+              .addClass("title-items"+subCategKey+" subcateg");
           $("."+companiesClass).append(element);
 
+
+          //Adding icon
+          var icon = $('<i>')
+              .addClass("caret right icon "+category.key);
+          //$(".title-items"+subCategKey).append(icon);
+
           //PUSHING SUBCATEGORY NAME
-          $(".title-items"+subCategKey).text(subCategory.name);
+          $(".title-items"+subCategKey).addClass("categ-color"+category.key)
+              .append(icon)
+              .append(subCategory.name);
+
+
+          //category template
+          var subCategLink= "<a href='#'>"+
+                "<div class='box-2 category-box-"+category.key+"'>"+
+                "</div>"+
+              "</a>";
+
+
+
 
 
           //++++++++++++++++++++++++++++++++++++++++++++++++
@@ -314,7 +347,10 @@ function getData(){
 
           //subcategory template
           var subCategoryModule= "<div class='stillbox'>"+
-                  "<h1 class='category-title-"+category.key+" categ'>"+category.name+"</h1>"+
+                  "<h1 class='category-title-"+category.key+" categ'>" +
+                  "<img src='../images/icons/ico_data.png' class='ico-small'/> "+
+                  category.name+
+                  "</h1>"+
                   "<div class='box-2'>"+
                     "<h1 class='categ-color"+category.key+"' >"+subCategory.name+"</h1>"+
                     "<div class='category-detail"+subCategKey+"  box-items categ-color"+category.key+"'>"+
@@ -322,6 +358,7 @@ function getData(){
                   "</div>"+
              "</div>";
           $("#module"+subCategKey).append(subCategoryModule);
+
 
 
 

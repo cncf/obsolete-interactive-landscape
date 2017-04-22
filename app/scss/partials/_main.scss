@@ -1,10 +1,10 @@
-$f1-color: #17aaad;
-$f4-color: #1b86c8;
-$f2-color: #688ca5;
-$f3-color: #635b89;
-$f5-color: #478466;
-$f6-color: #6c9a40;
-$f7-color: #3e56a6;
+$f1-color: #17aaad;  //Data + App definition  +  APIs
+$f4-color: #1b86c8;  //Orchestration
+$f2-color: #635b89;  //Observability
+$f3-color: #688ca5;  //Platforms
+$f5-color: #478466;  //Runtime
+$f6-color: #6c9a40;  //Provisioning
+$f7-color: #3e56a6;  //infrastructure
 
 $infog_primary: #55acee;
 
@@ -552,23 +552,23 @@ p {
 
         }
         .categ{
-            color:#CCC;
-            font-weight: 100;
-            font-size: 1.8em;
+            color: #959595;
+            font-weight: 600;
+            font-size: 0.9em;
         }
 
 
         .categ-big{
-            font-size:2.5em;
+            font-size:1.6em;
             padding-top:40px;
-            color:red;
-            font-weight:100;
+            color:black;
+            font-weight:600;
             line-height:1em;
         }
         .categ-brief{
-            color: red;
+            color: black;
             font-size: 0.8em;
-            border: 1px solid red;
+            border: 1px solid #CCC;
             border-width: 0 0 1px 0;
             margin-left: 30px;
             width: 400px;
@@ -590,6 +590,8 @@ p {
 
                 color:$color;
                 border-color: $color;
+                padding-left: 25px;
+
 
             }
 
@@ -598,12 +600,10 @@ p {
 
 
         .subcateg{
-            color:#000;
             font-weight: 800;
-            //text-transform: uppercase;
             line-height: 0.6em;
             font-size: 1em;
-            padding-left:20px;
+            padding-left:40px;
         }
 
 
@@ -1015,6 +1015,14 @@ p {
 
 }
 
+.ico-med{
+    width:30px; padding-right:20px;
+}
+.ico-small{
+    width: 30px;
+    padding: 0px 5px 5px 0;
+}
+
 .cloud-menu{
     text-align:left;
     font-size:0.8em;
@@ -1028,7 +1036,7 @@ p {
         color:black;
       }
       a:hover{
-           color: #2780a4 !important;
+           color: #666 !important;
            text-decoration: none;
       }
 
@@ -1055,7 +1063,7 @@ p {
 
         a{
           font-weight: 100;
-            color: $infog_primary;
+            color: #8d8d8d;
             //line-height: 2em;
 
 
