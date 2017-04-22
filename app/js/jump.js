@@ -286,7 +286,7 @@ function getData(){
         //PUSHING CATEGORY BRIEF
         var element = $('<p>')
             .addClass('categ-brief')
-            .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate');
+            .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');
         $(boxClass).append(element);
 
         //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER
@@ -393,7 +393,13 @@ function getData(){
 
 
             if(company.oss){ oss=" OSS <i class='checked icon'></i>" };
-            var oss=" OSS <i class='checked icon'></i>" ;
+
+            if(company.brief){ var companyBrief=company.brief; }else{ companyBrief='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            ; };
+
+
+
+            var oss=" OSS <i class='check icon'></i>" ;
 
             var modalTemplate = "<i class='close icon'></i>"+
                 "<div class='ui icon header'>"+ category.name +" / <span>"+ subCategory.name +"</span>"+
@@ -404,8 +410,8 @@ function getData(){
                   "</div>"+
                   "<div>"+
                     "<h2>"+company.productname+"</h2>"+
-                    "<p>"+company.brief+"</p><hr/>"+
-                    "<p>"+oss+"</p>"+
+                    "<p>"+companyBrief+"</p><hr/>"+
+                    "<p>"+oss+" |  <i class='github icon'></i> <i class='twitter icon'></i> </p>"+
                   "</div>"+
                 "</div>"+
                 "<div class='actions'>"+
