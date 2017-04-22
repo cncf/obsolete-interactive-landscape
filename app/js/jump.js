@@ -265,13 +265,11 @@ function getData(){
 
 
         //Adding category icon
-        var icon = $('<i>')
-            .addClass("arrow circle outline up icon "+category.key);
+        //var icon = $('<i>')
+            //.addClass("arrow circle outline up icon "+category.key);
 
-        var icon = $('<img>')
-            .attr("src","../images/icons/ico_data.png")
-            .addClass("ico-med")
-            .attr("style","width:60px; padding:0 20px 0 0");
+
+        var icon = imageIcon(category.key,'medium');
 
         //Quarentine
         // $(".category-title-"+category.key)
@@ -315,28 +313,16 @@ function getData(){
               .addClass('box-itemsDISABLED');
           $("."+companiesClass).append(boxitems);
 
-          //PUSHING CATEGORY NAME
-          var element = $('<h5>')
-              .addClass("title-items"+subCategKey+" subcateg");
-          $("."+companiesClass).append(element);
-
-
-          //Adding icon
-          var icon = $('<i>')
-              .addClass("caret right icon "+category.key);
-          //$(".title-items"+subCategKey).append(icon);
-
-          //PUSHING SUBCATEGORY NAME
-          $(".title-items"+subCategKey).addClass("categ-color"+category.key)
-              .append(icon)
-              .append(subCategory.name);
-
 
           //category template
-          var subCategLink= "<a href='#'>"+
-                "<div class='box-2 category-box-"+category.key+"'>"+
-                "</div>"+
+          var subcategoryName= "<a href='#"+category.children[c].slug+"'>"+
+              "<h5 class='subcateg categ-color"+category.key+"' >" +
+                  "<i class='caret right icon'></i>"+
+                  subCategory.name+
+              "</h5>"+
               "</a>";
+          $("."+companiesClass).append(subcategoryName);
+
 
 
 
@@ -345,10 +331,11 @@ function getData(){
           //++++++++++++++++++++++++++++++++++++++++++++++++
           //THE SUBCATEGORIES DETAIL
 
+          var catIcon = imageIcon(category.key,'small');
+
           //subcategory template
           var subCategoryModule= "<div class='stillbox'>"+
-                  "<h1 class='category-title-"+category.key+" categ'>" +
-                  "<img src='../images/icons/ico_data.png' class='ico-small'/> "+
+                  "<h1 class='category-title-"+category.key+" categ'>" + catIcon +
                   category.name+
                   "</h1>"+
                   "<div class='box-2'>"+
@@ -358,7 +345,6 @@ function getData(){
                   "</div>"+
              "</div>";
           $("#module"+subCategKey).append(subCategoryModule);
-
 
 
 
@@ -483,6 +469,30 @@ function keyControl(prev,next){
   });
 }
 
+
+function imageIcon(code, size){
+  switch(code){
+    case '1a' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+      break;
+    case '1b' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+      break;
+    case '1c' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+      break;
+    case '2' : var catIcon = "<img src='../images/icons/ico_obse.png' class='ico-"+size+"'/>";
+      break;
+    case '3' : var catIcon = "<img src='../images/icons/ico_plat.png' class='ico-"+size+"'/>";
+      break;
+    case '4' : var catIcon = "<img src='../images/icons/ico_orch.png' class='ico-"+size+"'/>";
+      break;
+    case '5' : var catIcon = "<img src='../images/icons/ico_runt.png' class='ico-"+size+"'/>";
+      break;
+    case '6' : var catIcon = "<img src='../images/icons/ico_prov.png' class='ico-"+size+"'/>";
+      break;
+    case '7' : var catIcon = "<img src='../images/icons/ico_infr.png' class='ico-"+size+"'/>";
+      break;
+  }
+  return(catIcon);
+}
 
 
 //This function to be called everytime the trigger walks into the scene

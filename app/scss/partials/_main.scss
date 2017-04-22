@@ -1,7 +1,7 @@
 $f1-color: #17aaad;  //Data + App definition  +  APIs
-$f4-color: #1b86c8;  //Orchestration
 $f2-color: #635b89;  //Observability
 $f3-color: #688ca5;  //Platforms
+$f4-color: #1b86c8;  //Orchestration
 $f5-color: #478466;  //Runtime
 $f6-color: #6c9a40;  //Provisioning
 $f7-color: #3e56a6;  //infrastructure
@@ -590,14 +590,10 @@ p {
 
                 color:$color;
                 border-color: $color;
-                padding-left: 25px;
-
-
+                padding: 15px 0px;
             }
 
         }
-
-
 
         .subcateg{
             font-weight: 800;
@@ -952,8 +948,9 @@ p {
 
     }
     .navbar-header{
-        color:#FFF !important;
-        font-size:1.5em;
+        color:#7ba6c6 !important;
+
+        font-size:1em;
         padding:20px;
         text-align:left;
 
@@ -1001,7 +998,7 @@ p {
 
 
     .cn-title{
-        text-shadow: 0px 0px 5px #839ccc;
+        //text-shadow: 0px 0px 5px #839ccc;
     }
 
     .cn-partners{
@@ -1015,8 +1012,8 @@ p {
 
 }
 
-.ico-med{
-    width:30px; padding-right:20px;
+.ico-medium{
+    width:60px; padding-right:15px;
 }
 .ico-small{
     width: 30px;
@@ -1120,7 +1117,7 @@ p {
 .item-modal{
 
     p{
-        font-size: 0.9em;
+        font-size: 1em;
     }
     .close{
         color:black !important;

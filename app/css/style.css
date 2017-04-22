@@ -593,39 +593,39 @@ p {
   .infog01 .stillbox .categ-color1a {
     color: #17aaad;
     border-color: #17aaad;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color1b {
     color: #17aaad;
     border-color: #17aaad;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color1c {
     color: #17aaad;
     border-color: #17aaad;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color2 {
     color: #635b89;
     border-color: #635b89;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color3 {
     color: #688ca5;
     border-color: #688ca5;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color4 {
     color: #1b86c8;
     border-color: #1b86c8;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color5 {
     color: #478466;
     border-color: #478466;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color6 {
     color: #6c9a40;
     border-color: #6c9a40;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color7 {
     color: #3e56a6;
     border-color: #3e56a6;
-    padding-left: 25px; }
+    padding: 15px 0px; }
   .infog01 .stillbox .subcateg {
     font-weight: 800;
     line-height: 0.6em;
@@ -1263,8 +1263,8 @@ p {
   color: #666 !important; }
 
 .infog01 .navbar-header {
-  color: #FFF !important;
-  font-size: 1.5em;
+  color: #7ba6c6 !important;
+  font-size: 1em;
   padding: 20px;
   text-align: left; }
 
@@ -1307,9 +1307,6 @@ p {
 .infog01 .tag-7a {
   color: #304381; }
 
-.infog01 .cn-title {
-  text-shadow: 0px 0px 5px #839ccc; }
-
 .infog01 .cn-partners {
   opacity: 0.9;
   right: 50px;
@@ -1317,9 +1314,9 @@ p {
   width: 400px;
   position: fixed; }
 
-.ico-med {
-  width: 30px;
-  padding-right: 20px; }
+.ico-medium {
+  width: 60px;
+  padding-right: 15px; }
 
 .ico-small {
   width: 30px;
@@ -1388,7 +1385,7 @@ p {
   display: inline-block; }
 
 .item-modal p {
-  font-size: 0.9em; }
+  font-size: 1em; }
 
 .item-modal .close {
   color: black !important; }
