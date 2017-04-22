@@ -9,7 +9,7 @@
       "children": [
         {
           "name": "Infrastructure",
-          "slug": "",
+          "slug": "infrastructure_details",
           "items": [
             {
               "productname": "Alibaba Cloud",
@@ -841,6 +841,7 @@
       "children": [
         {
           "name": "Database",
+          "slug": "database",
           "items": [
             {
               "productname": "Cassandra",
@@ -1050,6 +1051,7 @@
         },
         {
           "name": "Data Warehouse",
+          "slug": "data_warehouse",
           "items": [
             {
               "productname": "BigQuery",
@@ -1097,6 +1099,7 @@
         },
         {
           "name": "Messaging / Streaming",
+          "slug": "messaging_streaming",
           "items": [
             {
               "productname": "Apex",
@@ -1169,6 +1172,7 @@
       "children": [
         {
           "name": "Languages & Frameworks",
+          "slug": "language_and_frameworks",
           "items": [
             {
               "productname": "Angular",
@@ -1277,6 +1281,7 @@
         },
         {
           "name": "SCM",
+          "slug": "scm",
           "items": [
             {
               "productname": "BitBucket",
@@ -1300,6 +1305,7 @@
         },
         {
           "name": "Registry Services",
+          "slug": "registry_services",
           "items": [
             {
               "productname": "Artifactory",
@@ -1341,6 +1347,7 @@
         },
         {
           "name": "Application Definition & Image Build",
+          "slug": "application_definition",
           "items": [
             {
               "productname": "Ant",
@@ -1388,6 +1395,7 @@
         },
         {
           "name": "CI / CD",
+          "slug": "ci_cd",
           "items": [
             {
               "productname": "Appveyor",
@@ -1508,6 +1516,7 @@
       "children": [
         {
           "name": "Services as Code",
+          "slug": "services_as_code",
           "items": [
             {
               "productname": "Algolia",
@@ -1591,6 +1600,7 @@
         },
         {
           "name": "API Management",
+          "slug": "api_management",
           "items": [
             {
               "productname": "3scale",
@@ -1669,6 +1679,7 @@
       "children": [
         {
           "name": "Paas / Container Service",
+          "slug": "paas",
           "items": [
             {
               "productname": "Apcera",
@@ -1860,6 +1871,7 @@
         },
         {
           "name": "Event-based compute",
+          "slug": "event_based_compute",
           "items": [
             {
               "productname": "Apex",
@@ -1956,10 +1968,12 @@
     },
     {
       "name": "Observability and analysis",
+      "slug": "observability_and_analysis",
       "key":"2",
       "children": [
         {
           "name": "Monitoring",
+          "slug": "monitoring",
           "items": [
             {
               "productname": "AppDynamics",
@@ -2163,6 +2177,7 @@
         },
         {
           "name": "Logging",
+          "slug": "logging",
           "items": [
             {
               "productname": "Elastic",
@@ -2210,6 +2225,7 @@
         },
         {
           "name": "Tracing",
+          "slug": "tracing",
           "items": [
             {
               "productname": "Dtrace",
@@ -2239,6 +2255,7 @@
         },
         {
           "name": "Specialized Tools",
+          "slug": "specialized_tools",
           "items": [
             {
               "productname": "Backtrace",

@@ -1016,18 +1016,34 @@ p {
 
 }
 
+.ico-data{  background-image: url('../images/icons/ico_data.png');  }
+.ico-deve{  background-image: url('../images/icons/ico_deve.png');  }
+.ico-infr{  background-image: url('../images/icons/ico_infr.png');  }
+.ico-obse{  background-image: url('../images/icons/ico_obse.png');  }
+.ico-plat{  background-image: url('../images/icons/ico_plat.png');  }
+.ico-prov{  background-image: url('../images/icons/ico_prov.png');  }
+.ico-runt{  background-image: url('../images/icons/ico_runt.png');  }
+.ico-apis{  background-image: url('../images/icons/ico_apis.png');  }
+.ico-orch{  background-image: url('../images/icons/ico_orch.png');  }
+
+
 .ico-medium{
     //width:60px; padding-right:15px;
     position: fixed;
-    width: 600px;
+    min-width: 600px;
+    height:600px;
     padding-right: 15px;
     left: -300px;
     opacity: 0.1;
 
 }
 .ico-small{
-    width: 40px;
-    padding: 0px 5px 5px 0;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display:inline-block;
+    margin:0 10px -10px 0;
 }
 
 .cloud-menu{
@@ -1154,10 +1170,14 @@ p {
         }
     }
     .item-image{
-        margin:0 20px;
-        height:200px;
-        width:200px;
-        border-radius:5px;
+
+        min-width: 200px;
+        height: 200px;
+        margin-right:20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 
 }

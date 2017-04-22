@@ -330,11 +330,12 @@ function getData(){
           //THE SUBCATEGORIES DETAIL
 
           var catIcon = imageIcon(category.key,'small');
+          //var catIcon='hello';
 
           //subcategory template
           var subCategoryModule= "<div class='stillbox'>"+
                   "<a href='#"+category.slug+"'>"+
-                  "<h2 class='category-title-"+category.key+" categ'>" + catIcon +
+                  "<h2 class='category-title-"+category.key+" categ'>"+catIcon +
                   category.name+
                   "</h2>"+
                   "</a>"+
@@ -405,8 +406,7 @@ function getData(){
                 "<div class='ui icon header'>"+ category.name +" / <span>"+ subCategory.name +"</span>"+
                 "</div>"+
                 "<div class='content'>"+
-                  "<div>" +
-                    "<img class='item-image' src='../"+company.logo+"'/>"+
+                  "<div class='item-image x2' style='background-image:url("+company.logo+")' >"+
                   "</div>"+
                   "<div>"+
                     "<h2>"+company.productname+"</h2>"+
@@ -482,23 +482,23 @@ function keyControl(prev,next){
 
 function imageIcon(code, size){
   switch(code){
-    case '1a' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+    case '1a' : var catIcon = "<div class='ico-data ico-"+size+"'></div>";
       break;
-    case '1b' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+    case '1b' : var catIcon = "<div class='ico-deve ico-"+size+"'></div>";
       break;
-    case '1c' : var catIcon = "<img src='../images/icons/ico_data.png' class='ico-"+size+"'/>";
+    case '1c' : var catIcon = "<div class='ico-apis ico-"+size+"'></div>";
       break;
-    case '2' : var catIcon = "<img src='../images/icons/ico_obse.png' class='ico-"+size+"'/>";
+    case '2' : var catIcon = "<div class='ico-obse ico-"+size+"'></div>";
       break;
-    case '3' : var catIcon = "<img src='../images/icons/ico_plat.png' class='ico-"+size+"'/>";
+    case '3' : var catIcon = "<div class='ico-plat ico-"+size+"'></div>";
       break;
-    case '4' : var catIcon = "<img src='../images/icons/ico_orch.png' class='ico-"+size+"'/>";
+    case '4' : var catIcon = "<div class='ico-orch ico-"+size+"'></div>";
       break;
-    case '5' : var catIcon = "<img src='../images/icons/ico_runt.png' class='ico-"+size+"'/>";
+    case '5' : var catIcon = "<div class='ico-runt ico-"+size+"'></div>";
       break;
-    case '6' : var catIcon = "<img src='../images/icons/ico_prov.png' class='ico-"+size+"'/>";
+    case '6' : var catIcon = "<div class='ico-prov ico-"+size+"'></div>";
       break;
-    case '7' : var catIcon = "<img src='../images/icons/ico_infr.png' class='ico-"+size+"'/>";
+    case '7' : var catIcon = "<div class='ico-infr ico-"+size+"'></div>";
       break;
   }
   return(catIcon);
