@@ -252,9 +252,16 @@ function getData(){
       //The categories
       for (var i in data.children){
 
+
+
         var category =data.children[i];
         //DEFINING CATEGORY CONTAINER
         var boxClass= ".category-box-"+category.key ;
+
+
+        //background
+        var icon = imageIcon(category.key,'medium');
+        $("#module"+category.key).append(icon);
 
         //category template
         var categoryModule= "<div class='stillbox'>"+
@@ -264,25 +271,16 @@ function getData(){
         $("#module"+category.key).append(categoryModule);
 
 
+
+
         //Adding category icon
         //var icon = $('<i>')
             //.addClass("arrow circle outline up icon "+category.key);
 
-
-        var icon = imageIcon(category.key,'medium');
-
-        //Quarentine
-        // $(".category-title-"+category.key)
-        //     .append(icon)
-        //     .append(category.name);
-
-
         //PUSHING CATEGORY NAME
         var element = $('<h2>')
             .addClass('categ-big')
-            .append(icon)
             .append(category.name);
-
         $(boxClass).append(element);
 
         //PUSHING CATEGORY BRIEF
@@ -335,14 +333,20 @@ function getData(){
 
           //subcategory template
           var subCategoryModule= "<div class='stillbox'>"+
-                  "<h1 class='category-title-"+category.key+" categ'>" + catIcon +
+                  "<a href='#"+category.slug+"'>"+
+                  "<h2 class='category-title-"+category.key+" categ'>" + catIcon +
                   category.name+
-                  "</h1>"+
+                  "</h2>"+
+                  "</a>"+
                   "<div class='box-2'>"+
                     "<h1 class='categ-color"+category.key+"' >"+subCategory.name+"</h1>"+
                     "<div class='category-detail"+subCategKey+"  box-items categ-color"+category.key+"'>"+
                     "</div>"+
+                    "<a class='back-btn' href='#"+category.slug+"'>"+
+                      "<i class='arrow left icon'></i> Back"+
+                    "</a>"+
                   "</div>"+
+
              "</div>";
           $("#module"+subCategKey).append(subCategoryModule);
 

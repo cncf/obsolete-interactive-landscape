@@ -876,10 +876,14 @@ p {
             top:0;
             opacity:1;
             padding: 0 40px 0 10px;
-            background-color: rgba(255, 255, 255, 0.5);
+            //background-color: rgba(255, 255, 255, 0.5);
             border-radius: 20px;
             //overflow:scroll;
 
+            background: -moz-linear-gradient(-45deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         }
         .subcategory-#{$number}{
             color: $color;
@@ -1013,10 +1017,16 @@ p {
 }
 
 .ico-medium{
-    width:60px; padding-right:15px;
+    //width:60px; padding-right:15px;
+    position: fixed;
+    width: 600px;
+    padding-right: 15px;
+    left: -300px;
+    opacity: 0.1;
+
 }
 .ico-small{
-    width: 30px;
+    width: 40px;
     padding: 0px 5px 5px 0;
 }
 
@@ -1094,6 +1104,11 @@ p {
         padding:0 30px 0 0;
         color: #8cd2ff;
     }
+}
+
+.back-btn{
+    color:grey;
+    font-size: 0.8em;
 }
 
 .menu-icon {
@@ -1323,7 +1338,11 @@ p {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (max-width: 1000px) {
+
+    .cloud-menu{
+        display:none;
+    }
 
 }
 
