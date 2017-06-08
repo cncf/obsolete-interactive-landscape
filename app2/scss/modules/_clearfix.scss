@@ -1,0 +1,30 @@
+%clear {
+  content:' ';
+  display:table;
+}
+.clear {
+  *zoom:1;
+  &:before {
+    @extend %clear;
+  }
+  &:after {
+    @extend %clear;
+    clear:both;
+  }
+}
+
+@mixin clearfix($extend: true) {
+ @if $extend {
+   @extend %clearfix;
+ } @else {
+   &:after {
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+  }
+}
+ 
+%clearfix {
+  @include clearfix($extend: false);
+}

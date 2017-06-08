@@ -1,0 +1,48 @@
+{
+  "name": "AWS",
+  "logo": "https://s3-us-west-2.amazonaws.com/s72hwo2o/vmware/t150/2419017156.jpg",
+  "type": "organization",
+  "website": "",
+  "contact": "",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "US",
+  "category": "Infrastructure",
+  "sub_category": "subcat1",
+  "oss": true,
+},
+{
+  "name": "",
+  "logo": "https://s3-us-west-2.amazonaws.com/s72hwo2o/vmware/t150/2419017156.jpg",
+  "type": "organization",
+  "website": "",
+  "contact": "",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "US",
+  "category": "Infrastructure",
+  "sub_category": "subcat1",
+  "oss": true,
+}
+
+
+
+"category": "Infrastructure",
+"subcategory": "",
+
+"category": "Provisioning",
+"subcategory": "Infrastructure Automation",
+"subcategory": "Host Management / Tooling",
+"subcategory": "Secure Images",
+
+"category": "Runtime",
+"subcategory": "OS",
+"subcategory": "Cloud-Native Storage",
+"subcategory": "Container Runtime",
+"subcategory": "Cloud-Native Network",
+
+"category": "Orchestration and Management",
+"subcategory": "Scheduling & Orchestration",
+"subcategory": "Coordination & Services Discovery",
+"subcategory": "Service Management",
+

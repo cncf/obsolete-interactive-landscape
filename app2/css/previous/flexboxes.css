@@ -1,0 +1,45 @@
+.lane-box {
+  min-height: 500px;
+  margin: 20px 50px 10px 50px;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row; }
+
+.lane-box .lane1 {
+  margin: 0;
+  padding: 0;
+  -webkit-flex: 1 1 60%;
+  flex: 1 1 60%;
+  order: 2; }
+
+.lane-box .lane2 {
+  margin: 25px 0 0 4px;
+  padding: 5px;
+  border-radius: 0 4px 4px 0;
+  -webkit-flex: 1 1 20%;
+  flex: 1 1 20%;
+  order: 3;
+  color: grey;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.footer {
+  display: block;
+  margin: 0 50px;
+  padding: 60px 0 10px 40px;
+  border-radius: 5pt;
+  height: 150%;
+  color: grey; }
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+  .lane-box, #page {
+    -webkit-flex-flow: column;
+    flex-flow: column; }
+  .lanebox .lane1, .lanebox .lane2, .input-box {
+    min-height: 50px;
+    max-height: 50px; }
+  .lane-box {
+    margin: 0; } }
