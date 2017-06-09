@@ -66,8 +66,9 @@ $darkest: #212121;
 $black: #000000;
 
 body {
-    font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-    //background-color: $darkest;
+    margin: 0;
+    height: 100%
+
 
 
 }
@@ -97,6 +98,58 @@ h1 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.module {
+    position:fixed;
+    width:100%;
+    height:500px;
+    top:100px;
+    color:black;
+    opacity: 0;
+    z-index: 2;
+
+}
+
+.module.active{
+    opacity:1;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+    z-index: 6;
+
+
+}
+
+.module.first {
+    opacity: 1;
+    z-index: 4;
+    margin-top:20px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EFEFEF;
+}
+
+.full-screen {
+    height: 100%; /* makes panels the entire window height */
+}
+
+
+
+
 /* =Preloader */
 #preloader {
     position: absolute;
@@ -220,6 +273,16 @@ nav {
             }
         }
     }
+    a:hover {
+        text-decoration: underline;
+    outline: 0;
+    }
+    a.active {
+        text-decoration: underline;
+        outline: 0;
+    }
+
+
     .nav-dot {
         display: block;
         width: 10px;
@@ -507,7 +570,7 @@ p {
     .diagram-container{
         //background-color: rgba(242, 104, 255, 0.4);
         position:relative;
-        width:90%;
+        width:75%;
         height:40%;
 
     }
@@ -541,7 +604,7 @@ p {
     .stillbox{
         display: table;
         //margin: 0 auto;
-        margin: 0% 20% 10% 10%;
+        margin: 0% 20% 10% 7%;
         width:900px;
         height:650px;
 
@@ -552,9 +615,9 @@ p {
 
         }
         .categ{
-            color: #959595;
+            color: #565656;
             font-weight: 600;
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
 
@@ -562,12 +625,12 @@ p {
             font-size:1.6em;
             padding-top:40px;
             color:black;
-            font-weight:600;
+            font-weight:700;
             line-height:1em;
         }
         .categ-brief{
             color: black;
-            font-size: 0.8em;
+            font-size: 1em;
             border: 1px solid #CCC;
             border-width: 0 0 1px 0;
             margin-left: 30px;
@@ -596,8 +659,8 @@ p {
         }
 
         .subcateg{
-            font-weight: 800;
-            line-height: 0.6em;
+            font-weight: 400;
+            line-height: 0.7em;
             font-size: 1em;
             padding-left:40px;
         }
@@ -798,7 +861,7 @@ p {
 
         .company-name{
 
-            font-size: 0.6em;
+            font-size: 0.7em;
             color: #454545;
             text-align: center;
             display: inline-block;
@@ -876,6 +939,7 @@ p {
             top:0;
             opacity:1;
             padding: 0 40px 0 10px;
+            margin-top:5px;
             //background-color: rgba(255, 255, 255, 0.5);
             border-radius: 20px;
             //overflow:scroll;
@@ -952,9 +1016,9 @@ p {
 
     }
     .navbar-header{
-        color:#7ba6c6 !important;
+        color:#3b6e94 !important;
 
-        font-size:1em;
+        font-size:1.2em;
         padding:20px;
         text-align:left;
 
@@ -1027,7 +1091,7 @@ p {
 .ico-orch{  background-image: url('../images/icons/ico_orch.png');  }
 
 
-.ico-medium{
+.ico-background{
     //width:60px; padding-right:15px;
     position: fixed;
     min-width: 600px;
@@ -1037,6 +1101,17 @@ p {
     opacity: 0.1;
 
 }
+
+.ico-medium {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 0 10px -10px 0;
+}
+
+
 .ico-small{
     width: 30px;
     height: 30px;
@@ -1057,6 +1132,7 @@ p {
       margin-left:1em;
       a{
         color:black;
+        line-height:1.7em;
       }
       a:hover{
            color: #666 !important;
@@ -1086,7 +1162,7 @@ p {
 
         a{
           font-weight: 100;
-            color: #8d8d8d;
+            color: #5d5d5d;
             //line-height: 2em;
 
 
