@@ -260,8 +260,12 @@ function getData(){
 
 
         //background
-        var icon = imageIcon(category.key,'medium');
-        $("#module"+category.key).append(icon);
+        var backgroundIcon = imageIcon(category.key,'background');
+        var categoryIcon = imageIcon(category.key,'medium');
+
+
+
+        $("#module"+category.key).append(backgroundIcon);
 
         //category template
         var categoryModule= "<div class='stillbox'>"+
@@ -272,16 +276,12 @@ function getData(){
 
 
 
-
-        //Adding category icon
-        //var icon = $('<i>')
-            //.addClass("arrow circle outline up icon "+category.key);
-
-        //PUSHING CATEGORY NAME
-        var element = $('<h2>')
-            .addClass('categ-big')
-            .append(category.name);
-        $(boxClass).append(element);
+          //PUSHING CATEGORY NAME
+          var catTitle= "<h2 class='category-title-"+
+              category.key+" categ-big'>"+categoryIcon +
+              category.name+
+              "</h2>";
+          $(boxClass).append(catTitle);
 
         //PUSHING CATEGORY BRIEF
         var element = $('<p>')
@@ -297,7 +297,7 @@ function getData(){
 
 
         //++++++++++++++++++++++++++++++++++++++++++++++++
-        //THE SUBCATEGORIES IN THE CATEGORY COVER
+        //THE SUBCATEGORIES LISTED IN THE CATEGORY PAGE
         for(var c in category.children){
           var subCategory = category.children[c];
 
@@ -325,17 +325,19 @@ function getData(){
 
 
 
-
           //++++++++++++++++++++++++++++++++++++++++++++++++
-          //THE SUBCATEGORIES DETAIL
+          //++++++++++++++++++++++++++++++++++++++++++++++++
+          //THE SUBCATEGORIES SECTIONS
+          //++++++++++++++++++++++++++++++++++++++++++++++++
 
-          var catIcon = imageIcon(category.key,'small');
-          //var catIcon='hello';
+          var categoryIcon = imageIcon(category.key,'small');
+          var backgroundIcon = imageIcon(category.key,'background');
 
           //subcategory template
-          var subCategoryModule= "<div class='stillbox'>"+
+          var subCategoryModule= "<span style='opacity:0.5;'>"+backgroundIcon+"</span>"+
+                  "<div class='stillbox'>"+
                   "<a href='#"+category.slug+"'>"+
-                  "<h2 class='category-title-"+category.key+" categ'>"+catIcon +
+                  "<h2 class='category-title-"+category.key+" categ'>"+categoryIcon +
                   category.name+
                   "</h2>"+
                   "</a>"+
