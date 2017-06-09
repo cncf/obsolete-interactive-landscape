@@ -242,7 +242,7 @@ header {
 .module.first {
   opacity: 1;
   z-index: 4;
-  margin-top: 20px; }
+  margin-top: 15px; }
 
 section {
   display: flex;
@@ -574,6 +574,15 @@ p {
   top: 0;
   left: 0; }
 
+.toplogos {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 98%;
+  border-style: solid;
+  border-color: #ececec;
+  border-width: 0 0 1px 0; }
+
 .yesvisible {
   display: block !important; }
 
@@ -583,9 +592,10 @@ p {
   margin-top: 100px; }
 
 .infog01 .diagram-container {
-  position: relative;
-  width: 75%;
-  height: 40%; }
+  position: absolute;
+  right: 18%;
+  width: 700px;
+  height: 290px; }
 
 .infog01 .image-diagram.active {
   filter: blur(0px);
@@ -1381,10 +1391,11 @@ p {
   color: #666 !important; }
 
 .infog01 .navbar-header {
-  color: #3b6e94 !important;
+  color: #99989c !important;
   font-size: 1.2em;
   padding: 20px;
-  text-align: left; }
+  text-align: left;
+  padding-left: 6%; }
 
 .infog01 .fw-a {
   font-weight: 200; }
@@ -1429,8 +1440,13 @@ p {
   opacity: 0.9;
   right: 50px;
   top: 20px;
-  width: 400px;
+  width: 340px;
   position: fixed; }
+
+.infog01 .cn-version {
+  font-size: 0.6em;
+  color: #CCC;
+  padding-left: 10px; }
 
 .ico-data {
   background-image: url("../images/icons/ico_data.png"); }
@@ -1702,7 +1718,10 @@ p {
 
 @media only screen and (max-width: 1000px) {
   .cloud-menu {
-    display: none; } }
+    display: none; }
+  .diagram-container {
+    position: absolute;
+    right: 0 !important; } }
 
 /* ==========================================================================
    Helper classes

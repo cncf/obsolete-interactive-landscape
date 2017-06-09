@@ -286,7 +286,7 @@ function getData(){
         //PUSHING CATEGORY BRIEF
         var element = $('<p>')
             .addClass('categ-brief')
-            .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');
+            .text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.');
         $(boxClass).append(element);
 
         //CREATING CATEGORY CONTAINER AND PUSHING IT TO MAIN CONTAINER
