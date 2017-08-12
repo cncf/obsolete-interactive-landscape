@@ -449,7 +449,7 @@ $.fn.form = function(parameters) {
                 settings   = $.extend(true, {}, $.fn.form.settings, legacyParameters);
                 validation = $.extend({}, $.fn.form.settings.defaults, parameters);
                 module.error(settings.error.oldSyntax, element);
-                module.verbose('Extending settings from legacy parameters', validation, settings);
+                module.verbose('Extending settings from v0.1 parameters', validation, settings);
               }
               else {
                 // 2.x

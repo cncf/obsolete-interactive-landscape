@@ -356,7 +356,7 @@ $.api = $.fn.api = function(parameters) {
                 module.debug('Looking for required URL variables', requiredVariables);
                 $.each(requiredVariables, function(index, templatedString) {
                   var
-                    // allow legacy {$var} style
+                    // allow v0.1 {$var} style
                     variable = (templatedString.indexOf('$') !== -1)
                       ? templatedString.substr(2, templatedString.length - 3)
                       : templatedString.substr(1, templatedString.length - 2),
@@ -388,7 +388,7 @@ $.api = $.fn.api = function(parameters) {
                 module.debug('Looking for optional URL variables', requiredVariables);
                 $.each(optionalVariables, function(index, templatedString) {
                   var
-                    // allow legacy {/$var} style
+                    // allow v0.1 {/$var} style
                     variable = (templatedString.indexOf('$') !== -1)
                       ? templatedString.substr(3, templatedString.length - 4)
                       : templatedString.substr(2, templatedString.length - 3),
@@ -1128,7 +1128,7 @@ $.api.settings = {
     error             : 'There was an error with your request',
     exitConditions    : 'API Request Aborted. Exit conditions met',
     JSONParse         : 'JSON could not be parsed during error handling',
-    legacyParameters  : 'You are using legacy API success callback names',
+    legacyParameters  : 'You are using v0.1 API success callback names',
     method            : 'The method you called is not defined',
     missingAction     : 'API action used but no url was defined',
     missingSerialize  : 'jquery-serialize-object is required to add form data to an existing data object',

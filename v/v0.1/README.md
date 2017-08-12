@@ -1,5 +1,7 @@
+#This was the first version of the Landscape, now deprecated.
 
-##Cloud Native Infographic
+
+##Cloud Native Infographic  v0.1
 
 
 

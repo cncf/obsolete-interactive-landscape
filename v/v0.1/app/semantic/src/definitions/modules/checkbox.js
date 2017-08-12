@@ -275,7 +275,7 @@ $.fn.checkbox = function(parameters) {
           module.debug('Enabling checkbox');
           module.set.enabled();
           settings.onEnable.call(input);
-          // preserve legacy callbacks
+          // preserve _legacy callbacks
           settings.onEnabled.call(input);
         },
 
@@ -287,7 +287,7 @@ $.fn.checkbox = function(parameters) {
           module.debug('Disabling checkbox');
           module.set.disabled();
           settings.onDisable.call(input);
-          // preserve legacy callbacks
+          // preserve _legacy callbacks
           settings.onDisabled.call(input);
         },
 
