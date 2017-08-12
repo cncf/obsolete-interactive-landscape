@@ -8,6 +8,13 @@ $f7-color: #3e56a6;  //infrastructure
 
 $infog_primary: #55acee;
 
+
+
+body{
+    font-family: Share,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+
 html {
     color: #222;
     font-size: 1em;
@@ -1014,7 +1021,34 @@ p {
     }
 
 
+    .home-titles{
+        height:500px;
+        padding-top:60px;
+        position:absolute;
+        right:80%;
+        top:80px;
+        z-index: 10;
+        display: block;
 
+        h2{
+            font-size:1em !important;
+        }
+        a{
+            position:absolute;
+            display:flex;
+            align-items:center !important;
+        }
+
+        .prov{
+             left:50px; top:0px;
+        }
+        .data{
+            left:0px; top:350px;
+        }
+        .runt{
+            left:50px; top:150px;
+        }
+    }
 
 
     .title{

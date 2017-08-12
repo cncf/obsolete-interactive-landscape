@@ -152,6 +152,9 @@ table {
 td, th {
   padding: 0; }
 
+body {
+  font-family: Share,'Helvetica Neue',Arial,Helvetica,sans-serif; }
+
 html {
   color: #222;
   font-size: 1em;
@@ -1381,6 +1384,30 @@ p {
   border-radius: 20px;
   position: absolute;
   top: -2px; }
+
+.infog01 .home-titles {
+  height: 500px;
+  padding-top: 60px;
+  position: absolute;
+  right: 80%;
+  top: 80px;
+  z-index: 10;
+  display: block; }
+  .infog01 .home-titles h2 {
+    font-size: 1em !important; }
+  .infog01 .home-titles a {
+    position: absolute;
+    display: flex;
+    align-items: center !important; }
+  .infog01 .home-titles .prov {
+    left: 50px;
+    top: 0px; }
+  .infog01 .home-titles .data {
+    left: 0px;
+    top: 350px; }
+  .infog01 .home-titles .runt {
+    left: 50px;
+    top: 150px; }
 
 .infog01 .title {
   font-size: 1.9em;

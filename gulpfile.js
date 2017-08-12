@@ -24,7 +24,7 @@ gulp.task('dev', function(callback){
 //Create Build
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-        ['sass','sassimage', 'useref', 'images', 'fonts','datatest'],
+        ['sass','sassimage', 'useref','nonMinJs', 'images', 'fonts','datatest'],
         callback
     )
 });
@@ -78,6 +78,12 @@ gulp.task('useref', function(){
        .pipe(gulp.dest('dist'))
 });
 
+
+//copying not minified js
+gulp.task('nonMinJs', function() {
+    gulp.src(['app/js/**/*']).pipe(gulp.dest('dist/js/'));
+
+});
 
 
 
