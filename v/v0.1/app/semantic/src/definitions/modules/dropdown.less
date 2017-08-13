@@ -38,7 +38,7 @@
 *******************************/
 
 /*--------------
-      Menu
+      SectionPanel
 ---------------*/
 
 .ui.dropdown .menu {
@@ -110,7 +110,7 @@
 }
 
 /*--------------
-    Menu Item
+    SectionPanel Item
 ---------------*/
 
 .ui.dropdown .menu > .item {
@@ -163,7 +163,7 @@
 
 
 /*--------------
-  Menu Divider
+  SectionPanel Divider
 ---------------*/
 
 .ui.dropdown .menu > .header {
@@ -224,7 +224,7 @@
 }
 
 /*--------------
-    Sub Menu
+    Sub SectionPanel
 ---------------*/
 
 .ui.dropdown .menu .menu {
@@ -297,16 +297,16 @@
 
 
 /*--------------
-      Menu
+      SectionPanel
 ---------------*/
 
-/* Remove Menu Item Divider */
+/* Remove SectionPanel Item Divider */
 .ui.dropdown .ui.menu > .item:before,
 .ui.menu .ui.dropdown .menu > .item:before {
   display: none;
 }
 
-/* Prevent Menu Item Border */
+/* Prevent SectionPanel Item Border */
 .ui.menu .ui.dropdown .menu .active.item {
   border-left: none;
 }
@@ -323,7 +323,7 @@
       Label
 ---------------*/
 
-/* Dropdown Menu */
+/* Dropdown SectionPanel */
 .ui.label.dropdown .menu {
   min-width: 100%;
 }
@@ -404,7 +404,7 @@ select.ui.dropdown {
   min-width:  0px;
 }
 
-/*  Selection Menu */
+/*  Selection SectionPanel */
 .ui.selection.dropdown .menu {
   overflow-x: hidden;
   overflow-y: auto;
@@ -455,7 +455,7 @@ select.ui.dropdown {
   }
 }
 
-/* Menu Item */
+/* SectionPanel Item */
 .ui.selection.dropdown .menu > .item {
   border-top: @selectionItemDivider;
   padding: @selectionItemPadding !important;
@@ -601,7 +601,7 @@ select.ui.dropdown {
   color: @selectionTextUnderlayColor !important;
 }
 
-/* Search Menu */
+/* Search SectionPanel */
 .ui.search.dropdown .menu {
   overflow-x: hidden;
   overflow-y: auto;
@@ -742,7 +742,7 @@ select.ui.dropdown {
         Active
 ----------------------*/
 
-/* Menu Item Active */
+/* SectionPanel Item Active */
 .ui.dropdown .menu .active.item {
   background: @activeItemBackground;
   font-weight: @activeItemFontWeight;
@@ -756,7 +756,7 @@ select.ui.dropdown {
         Hover
 ----------------------*/
 
-/* Menu Item Hover */
+/* SectionPanel Item Hover */
 .ui.dropdown .menu > .item:hover {
   background: @hoveredItemBackground;
   color: @hoveredItemColor;
@@ -949,7 +949,7 @@ select.ui.dropdown {
   border-radius: @subMenuBorderRadius !important;
 }
 
-/* Left Flyout Menu */
+/* Left Flyout SectionPanel */
 .ui.dropdown > .left.menu .menu,
 .ui.dropdown .menu .left.menu {
   left: auto !important;
@@ -979,7 +979,7 @@ select.ui.dropdown {
      Upward
 ---------------*/
 
-/* Upward Main Menu */
+/* Upward Main SectionPanel */
 .ui.upward.dropdown > .menu {
   top: auto;
   bottom: 100%;
@@ -987,7 +987,7 @@ select.ui.dropdown {
   border-radius: @upwardMenuBorderRadius;
 }
 
-/* Upward Sub Menu */
+/* Upward Sub SectionPanel */
 .ui.dropdown .upward.menu {
   top: auto !important;
   bottom: 0 !important;
@@ -1035,7 +1035,7 @@ select.ui.dropdown {
      Simple
 ---------------*/
 
-/*  Selection Menu */
+/*  Selection SectionPanel */
 .ui.scrolling.dropdown .menu,
 .ui.dropdown .scrolling.menu {
   overflow-x: hidden;
@@ -1305,7 +1305,7 @@ select.ui.dropdown {
   margin: 0em;
   transform: rotate(-135deg);
 }
-/* Reverse Sub-Menu Direction */
+/* Reverse Sub-SectionPanel Direction */
 .ui.bottom.pointing.dropdown > .menu .menu {
   top: auto !important;
   bottom: 0px !important;
