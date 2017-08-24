@@ -4,7 +4,7 @@ const postcssNested = require('postcss-nested');
 const postcssImport = require('postcss-import');
 const postcssReporter = require('postcss-browser-reporter');
 const styleLint = require('stylelint');
-const config = require('./src/main/react/src/config/index.js').default;
+const config = require('./src/config/index.js').default;
 
 module.exports = {
     plugins: [
