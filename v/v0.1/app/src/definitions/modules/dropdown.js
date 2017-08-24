@@ -1101,7 +1101,7 @@ $.fn.dropdown = function(parameters) {
                 module.refreshItems();
               }
               else {
-                module.debug('SectionPanel modified, updating selector cache');
+                module.debug('ProductPanel modified, updating selector cache');
                 module.refresh();
               }
             },
