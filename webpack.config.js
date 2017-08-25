@@ -10,6 +10,7 @@ module.exports = {
   module: {
     loaders: [
       {
+        // language=JSRegexp
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           use: [

@@ -7,29 +7,28 @@ const styleLint = require('stylelint');
 const config = require('./src/config/index.js').default;
 
 module.exports = {
-    plugins: [
-        postcssImport({
-            plugins: [
-                styleLint(),
-                postcssReporter({ clearWarnings: true }),
-            ]
-        }),
+  plugins: [
+    postcssImport({
+      plugins: [
+        styleLint(),
+        postcssReporter({ clearWarnings: true }),
+      ],
+    }),
 
-        postcssNested({}),
+    postcssNested({}),
 
-        postcssCssnext({
-            features: {
-                customProperties: {
-                    variables: config.variables,
-                    preserve: true,
-                    appendVariables: true
-                }
-            },
-            autoprefixer: {
-                browsers: ['last 2 versions', '> 5%']
-            }
-        })
-    ]
+    postcssCssnext({
+      features: {
+        customProperties: {
+          variables: config.variables,
+          preserve: true,
+          appendVariables: true,
+        },
+      },
+      autoprefixer: {
+        browsers: ['last 2 versions', '> 5%'],
+      },
+    }),
+  ],
 };
-
 
