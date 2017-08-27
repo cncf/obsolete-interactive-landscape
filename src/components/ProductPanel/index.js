@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import ProductTitle from './components/ProductTitle';
+import Product from './components/Product';
+import Graph3d from './components/Graph3d';
 import './index.css';
 
 
@@ -19,6 +21,8 @@ class ProductPanel extends Component {
       <div className="productPanel">
         {state.title}
         <ProductTitle />
+        <Product />
+        <Graph3d />
       </div>
 
     );
