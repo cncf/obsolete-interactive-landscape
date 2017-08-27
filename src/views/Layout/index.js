@@ -8,6 +8,7 @@ import Footer from './../../components/Footer';
 import Filter from './../../components/Filter';
 import Modal from './../../components/Modal';
 import ProductPanel from './../../components/ProductPanel';
+import ResultsPanel from './../../components/ResultsPanel';
 
 import './Layout.css';
 
@@ -43,6 +44,7 @@ class Layout extends Component {
         <Footer />
         <Modal />
         <ProductPanel />
+        <ResultsPanel />
 
       </div>
 

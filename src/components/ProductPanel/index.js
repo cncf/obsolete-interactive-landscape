@@ -8,7 +8,7 @@ class ProductPanel extends Component {
     super(props);
 
     this.state = {
-      title: 'this is Product Panel',
+      title: 'this is Product Product',
     };
   }
 
