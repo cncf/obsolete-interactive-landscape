@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
 
-import ProductTitle from './components/ProductTitle';
 import './index.css';
 
 
-class ProductPanel extends Component {
+class ProductTitle extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: 'this is Product',
+      title: 'this is Product Title',
     };
   }
 
   render() {
     const state = this.state;
     return (
-      <div className="productPanel">
+      <div>
         {state.title}
-        <ProductTitle />
       </div>
 
     );
@@ -26,5 +24,5 @@ class ProductPanel extends Component {
 }
 
 
-export default ProductPanel;
+export default ProductTitle;
 
