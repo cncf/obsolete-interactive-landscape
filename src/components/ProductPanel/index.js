@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ProductTitle from './components/ProductTitle';
 import Product from './components/Product';
 import Graph3d from './components/Graph3d';
+import Control from './components/Control';
 import './index.css';
 
 
@@ -23,6 +24,7 @@ class ProductPanel extends Component {
         <ProductTitle />
         <Product />
         <Graph3d />
+        <Control />
       </div>
 
     );
