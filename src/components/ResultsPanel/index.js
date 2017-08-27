@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
-import './ResultsPanel.css';
+import Results from './components/Results';
+import SearchBar from './components/SearchBar';
+
+import './index.css';
 
 
 class ResultsPanel extends Component {
@@ -8,15 +11,17 @@ class ResultsPanel extends Component {
     super(props);
 
     this.state = {
-      title: 'this is ResultsPanel',
+      title: 'this is Results Panel',
     };
   }
 
   render() {
     const state = this.state;
     return (
-      <div>
+      <div className="results-panel">
         {state.title}
+        <Results />
+        <SearchBar />
       </div>
 
     );
