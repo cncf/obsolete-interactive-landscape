@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import './Modal.css';
+import './SideBar.css';
 
 
-class Modal extends Component {
+class SideBar extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: 'this is Modal',
+      title: 'this is SideBar',
     };
   }
 
@@ -24,5 +24,5 @@ class Modal extends Component {
 }
 
 
-export default Modal;
+export default SideBar;
 

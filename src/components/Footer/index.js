@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import './Sidebar.css';
+import './Footer.css';
 
 
-class SideBar extends Component {
+class Footer extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: 'this is Sidebar',
+      title: 'this is Footer',
     };
   }
 
@@ -24,5 +24,5 @@ class SideBar extends Component {
 }
 
 
-export default SideBar;
+export default Footer;
 
