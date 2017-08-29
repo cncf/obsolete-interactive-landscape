@@ -16,38 +16,45 @@ import './Layout.css';
 class Layout extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       title: 'Layout',
     };
-
+    
     this.renderHeader = this.renderHeader.bind(this);
   }
-
+  
   renderHeader() {
     const title = this.state.title;
     return (
-      <Card>
-        <Header />
-        <h1>This is {title}</h1>
-      </Card>
-
+      <Header title={title} />
     );
   }
-
+  
   render() {
     return (
-      <div>
-        {this.renderHeader()}
-        <SideBar />
-        <Filter />
-        <Footer />
+      <div className="layout">
+        <div className="header">
+          {this.renderHeader()}
+        </div>
+        <div className="content">
+          <div className="sidebar">
+            <SideBar />
+          </div>
+          <div className="panel">
+            <ProductPanel className="product__panel"/>
+            <ResultsPanel className="results__panel"/>
+          </div>
+          <div className="filter">
+            <Filter />
+          </div>
+        </div>
+        <div className="footer">
+          <Footer/>
+        </div>
         <Modal />
-        <ProductPanel />
-        <ResultsPanel />
-
       </div>
-
+    
     );
   }
 }
