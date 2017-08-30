@@ -8,21 +8,23 @@ module.exports = {
     app: './App.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
-        // language=JSRegexp
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: { importLoaders: 1 },
-            },
-            'postcss-loader',
-          ],
-        }),
-      },
-    ],
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            }
+          }
+        ]
+      }
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'dist/assets'),

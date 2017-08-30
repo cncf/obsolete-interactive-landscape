@@ -1,3 +1,4 @@
+
 #root{
   display:flex;
   background-color: yellow;
@@ -21,12 +22,12 @@
   display:flex;
   flex:9;
   background-color: beige;
+  .sidebar{
+    flex:1;
+    background-color: #f54794;
+  }
 }
 
-.content .sidebar{
-  flex:1;
-  background-color: #f5f08b;
-}
 .content .panel{
   flex:5;
   background-color: #f5c2c8;
@@ -41,3 +42,4 @@
   background-color: #d3f593;
 
 }
+

@@ -34,6 +34,10 @@ class Layout extends Component {
   render() {
     return (
       <div className="layout">
+        <div className="test1" />
+        <div className="test2" />
+        <div className="test2_1" />
+        
         <div className="header">
           {this.renderHeader()}
         </div>
