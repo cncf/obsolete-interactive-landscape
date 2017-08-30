@@ -247,7 +247,7 @@ module.exports = function(callback) {
               };
               composer.main = component + '.js';
             }
-            composer.name = 'semantic/' + component;
+            composer.name = 'theme/' + component;
             if(version) {
               composer.version = version;
             }

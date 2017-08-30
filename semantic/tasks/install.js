@@ -8,8 +8,8 @@
    For more notes
 
    * Runs automatically after npm update (hooks)
-   * (NPM) Install - Will ask for where to put semantic (outside pm folder)
-   * (NPM) Upgrade - Will look for semantic install, copy over files and update if new version
+   * (NPM) Install - Will ask for where to put theme (outside pm folder)
+   * (NPM) Upgrade - Will look for theme install, copy over files and update if new version
    * Standard installer runs asking for paths to site files etc
 
 */
@@ -58,7 +58,7 @@ var
 module.exports = function (callback) {
 
 var
-  currentConfig = requireDotFile('semantic.json'),
+  currentConfig = requireDotFile('theme.json'),
   manager       = install.getPackageManager(),
   rootQuestions = questions.root,
   installFolder = false,
@@ -85,7 +85,7 @@ if( install.isSubModule() ) {
     Update SUI
 -----------------*/
 
-// run update scripts if semantic.json exists
+// run update scripts if theme.json exists
 if(currentConfig && manager.name === 'NPM') {
 
   var
@@ -136,7 +136,7 @@ if(currentConfig && manager.name === 'NPM') {
 
       console.info('Updating version...');
 
-      // update version number in semantic.json
+      // update version number in theme.json
       gulp.src(updatePaths.config)
         .pipe(plumber())
         .pipe(rename(settings.rename.json)) // preserve file extension
@@ -191,7 +191,7 @@ if(manager.name == 'NPM') {
 
 gulp.task('run setup', function() {
 
-  // If auto-install is switched on, we skip the configuration section and simply reuse the configuration from semantic.json
+  // If auto-install is switched on, we skip the configuration section and simply reuse the configuration from theme.json
   if(install.shouldAutoInstall()) {
     answers = {
       overwrite    : 'yes',
@@ -271,7 +271,7 @@ gulp.task('create install files', function(callback) {
       themeImport  : folders.themeImport
     });
 
-    // add project root to semantic root
+    // add project root to theme root
     installFolder = path.join(manager.root, answers.semanticRoot);
 
     // add install folder to all output paths
@@ -380,7 +380,7 @@ gulp.task('create install files', function(callback) {
     Semantic.json
   ---------------*/
 
-  gulp.task('create semantic.json', function() {
+  gulp.task('create theme.json', function() {
 
     var
       jsonConfig = install.createJSON(answers)
@@ -388,7 +388,7 @@ gulp.task('create install files', function(callback) {
 
     // adjust variables in theme.less
     if( fs.existsSync(installPaths.config) ) {
-      console.info('Extending config file (semantic.json)', installPaths.config);
+      console.info('Extending config file (theme.json)', installPaths.config);
       return gulp.src(installPaths.config)
         .pipe(plumber())
         .pipe(rename(settings.rename.json)) // preserve file extension
@@ -397,7 +397,7 @@ gulp.task('create install files', function(callback) {
       ;
     }
     else {
-      console.info('Creating config file (semantic.json)', installPaths.config);
+      console.info('Creating config file (theme.json)', installPaths.config);
       return gulp.src(source.config)
         .pipe(plumber())
         .pipe(rename({ extname : '' })) // remove .template from ext
@@ -410,7 +410,7 @@ gulp.task('create install files', function(callback) {
 
   runSequence(
     'create theme.config',
-    'create semantic.json',
+    'create theme.json',
     callback
   );
 

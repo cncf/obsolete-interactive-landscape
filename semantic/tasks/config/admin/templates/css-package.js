@@ -3,7 +3,7 @@ var
 ;
 
 Package.describe({
-  name    : 'semantic:ui-css',
+  name    : 'theme:ui-css',
   summary : 'Semantic UI - CSS Release of Semantic UI',
   version : '{version}',
   git     : 'git://github.com/Semantic-Org/Semantic-UI-CSS.git',
@@ -27,8 +27,8 @@ Package.onUse(function(api) {
     'themes/default/assets/images/flags.png',
 
     // release
-    'semantic.css',
-    'semantic.js'
+    'theme.css',
+    'theme.js'
   ], 'client');
 
 });

@@ -176,7 +176,7 @@ module.exports = function(callback) {
           definitions = gulp.src('src/definitions/**/*', { base: 'src/' })
             .pipe(gulp.dest(outputDirectory))
           ;
-          themeImport = gulp.src('src/semantic.less', { base: 'src/' })
+          themeImport = gulp.src('src/theme.less', { base: 'src/' })
             .pipe(gulp.dest(outputDirectory))
           ;
           themeImport = gulp.src('src/theme.less', { base: 'src/' })

@@ -6,7 +6,7 @@ To import them into gulp:
 ```javascript
 var
   gulp    = require('gulp'),
-  // modified to point to semantic folder
+  theme
   install = require('tasks/collections/install')
 ;
 gulp = install(gulp);

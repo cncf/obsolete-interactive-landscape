@@ -11,7 +11,7 @@ These tasks can be imported into your own gulpfile allowing you to avoid using S
 
 ```javascript
 var
-  watch = require('path/to/semantic/tasks/watch')
+  watch = require(theme)
 ;
 gulp.task('watch ui', watch);
 ```

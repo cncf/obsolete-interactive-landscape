@@ -15,7 +15,7 @@ var
 *******************************/
 
 try {
-  config = requireDotFile('semantic.json');
+  config = requireDotFile('theme.json');
 }
 catch(error) {}
 
@@ -32,7 +32,7 @@ catch(error) {
 }
 
 // looks for version in config or package.json (whichever is available)
-version = (npmPackage && npmPackage.version !== undefined && npmPackage.name == 'semantic-ui')
+version = (npmPackage && npmPackage.version !== undefined && npmPackage.name == 'theme-ui')
   ? npmPackage.version
   : config.version
 ;
@@ -46,7 +46,7 @@ module.exports = {
 
   title      : 'Semantic UI',
   repository : 'https://github.com/Semantic-Org/Semantic-UI',
-  url        : 'http://www.semantic-ui.com/',
+  url        : 'http://www.theme-ui.com/',
 
   banner: ''
     + ' /*' + '\n'

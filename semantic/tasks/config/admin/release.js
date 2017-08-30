@@ -33,7 +33,7 @@ module.exports = {
   // files created for package managers
   files: {
     composer : 'composer.json',
-    config   : 'semantic.json',
+    config   : 'theme.json',
     npm      : 'package.json',
     meteor   : 'package.js'
   },
@@ -45,12 +45,12 @@ module.exports = {
   componentRepoRoot : 'UI-',
 
   // root name for package managers
-  packageRoot          : 'semantic-ui-',
+  packageRoot          : 'theme-ui-',
 
   // root path to repos
   outputRoot  : '../repos/',
 
-  homepage    : 'http://www.semantic-ui.com',
+  homepage    : 'http://www.theme-ui.com',
 
   // distributions that get separate repos
   distributions: [

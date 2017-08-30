@@ -8,7 +8,7 @@ module.exports = {
   base : '',
 
   // base path when installed with npm
-  pmRoot: 'semantic/',
+  pmRoot: 'theme/',
 
   // octal permission for output files, i.e. 644 (false does not adjust)
   permission : 744,
@@ -18,7 +18,7 @@ module.exports = {
 
   // file paths
   files: {
-    config   : 'semantic.json',
+    config   : 'theme.json',
     site     : 'src/site',
     theme    : 'src/theme.config'
   },

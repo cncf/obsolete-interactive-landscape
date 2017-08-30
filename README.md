@@ -758,7 +758,7 @@ Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your
 
 ```js
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import semantic;
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 ```
