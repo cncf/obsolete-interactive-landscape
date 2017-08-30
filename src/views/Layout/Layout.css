@@ -18,15 +18,16 @@
   flex:1;
 }
 
-.content{
-  display:flex;
-  flex:9;
+.content {
+  display: flex;
+  flex: 9;
   background-color: beige;
+}
   .sidebar{
     flex:1;
     background-color: #f54794;
   }
-}
+
 
 .content .panel{
   flex:5;

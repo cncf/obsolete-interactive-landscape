@@ -8,9 +8,16 @@
     "react-scripts": "1.0.12"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "node-sass-chokidar": "0.0.3",
+    "nodemon": "^1.11.0"
   }
 }

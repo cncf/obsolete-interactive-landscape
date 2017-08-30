@@ -12,6 +12,13 @@ class App extends Component {
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
+          
+          <div className="mother">
+            This is mother
+            <div className="son">
+              This is son
+            </div>
+          </div>
         </p>
       </div>
     );
