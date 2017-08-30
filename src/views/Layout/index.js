@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'semantic-ui-react'
 
 import Header from './../../components/Header';
 import SideBar from './../../components/SideBar';
@@ -38,6 +39,10 @@ class Layout extends Component {
         
         <div className="header">
           {this.renderHeader()}
+  
+          <Button>
+            Click Here
+          </Button>
         </div>
         <div className="content">
           <div className="sidebar">
