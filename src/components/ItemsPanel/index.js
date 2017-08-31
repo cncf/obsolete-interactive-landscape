@@ -14,33 +14,34 @@ class ItemsPanel extends Component {
 
     this.state = {
       title: 'this is Product',
+      code: 'dat',
     };
   }
   
-  renderTitle(code){
+  defineItem(){
+    const code = this.state.code;
     
-    const state = this.state;
-    
-    let title= null;
+    let value= null;
     
     switch(code) {
       case 'app':
-        title = {name:'Application and That', icon:'ico_app'};
+        value = {name:'Application and That', icon:'ico_app'};
         break;
       case 'dat':
-        title = {name:'Databases', icon:'ico_data'};
+        value = {name:'Databases', icon:'ico_data'};
         break;
-      default : title= {name:'default', icon:'ico_default'};
+      default : value= {name:'default', icon:'ico_default'};
     }
     
-    return title;
+    return value;
     
   }
 
   render() {
     const state = this.state;
     
-    let title = this.renderTitle('dat');
+    let item = this.defineItem();
+    
     return (
       <div className="items_panel">
         <div className="content_wrapper">
@@ -48,13 +49,7 @@ class ItemsPanel extends Component {
               <Graph3d />
             </div>
             <div className="items_wrapper">
-              <ItemsTitle/>
-  
-              <h2 class="category-title-6 categ-big">
-                <div class="ico-prov ico-medium"></div>
-                { title.name}
-              </h2>
-              
+              <ItemsTitle name={item.name} icon={item.icon} />
               <Product />
               <Control />
             </div>
