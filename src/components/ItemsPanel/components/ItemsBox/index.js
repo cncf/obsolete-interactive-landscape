@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './index.css';
+import Item from './../../../../components/Item';
 
 
 class ItemsBox extends Component {
@@ -9,6 +10,7 @@ class ItemsBox extends Component {
 
     this.state = {
       title: 'this is ItemsBox',
+      density:'tight',
       category:{
         name:'Orchestration & Management',
         slug_name:'orchestration_and_management',
@@ -44,7 +46,7 @@ class ItemsBox extends Component {
             stock_ticker: 'AMZN',
             calculated:{
               resized_logo: 'http://res.cloudinary.com/demo/image/fetch/w_200,h_200,c_fit,f_png/https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png',
-              gh_stars: 26186,
+              gh_stars: 234,
               cb_founded: 'July 5, 1994',
               cb_employees: '10k +',
               cb_funds_raised: '$108M',
@@ -58,7 +60,9 @@ class ItemsBox extends Component {
     };
     
     this.renderItems = this.renderItems.bind(this);
+
   }
+  
   
   renderItems(){
     
@@ -69,23 +73,21 @@ class ItemsBox extends Component {
         <h1> {category.name}</h1>
         <div>
           {category.items.map(function(item,index){
-          return <h4>{item.name} ({ index })</h4>
+            return <div> <Item data={item} index={index} /></div>;
+            
           })}
         </div>
-        
       </div>
-      
     );
-    
-    
   }
+  
+ 
 
   render() {
     const state = this.state;
     return (
       <div className="items_box">
         {state.title}
-        
         {this.renderItems()}
       </div>
 
