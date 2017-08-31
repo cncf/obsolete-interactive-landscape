@@ -18,6 +18,7 @@ class Layout extends Component {
     
     this.state = {
       title: 'Layout',
+      panel: 'items',
     };
     
     this.renderHeader = this.renderHeader.bind(this);
@@ -28,6 +29,15 @@ class Layout extends Component {
     return (
       <Header title={title} />
     );
+  }
+  
+  renderPanel(){
+    
+    if(this.state.panel === 'items'){
+      return <ProductPanel className="product__panel"/> ;
+    }
+    return <ResultsPanel className="results__panel"/>
+    
   }
   
   render() {
@@ -44,8 +54,7 @@ class Layout extends Component {
             <SideBar />
           </div>
           <div className="panel">
-            <ProductPanel className="product__panel"/>
-            <ResultsPanel className="results__panel"/>
+            {this.renderPanel()}
           </div>
           <div className="filter">
             <Filter />
