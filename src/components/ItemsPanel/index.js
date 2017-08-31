@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ProductTitle from './components/ProductTitle';
+import ItemsTitle from './components/ItemsTitle';
 import Product from './components/Product';
 import Graph3d from './components/Graph3d';
 import Control from './components/Control';
@@ -48,6 +48,7 @@ class ItemsPanel extends Component {
               <Graph3d />
             </div>
             <div className="items_wrapper">
+              <ItemsTitle/>
   
               <h2 class="category-title-6 categ-big">
                 <div class="ico-prov ico-medium"></div>

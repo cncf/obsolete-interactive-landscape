@@ -8,14 +8,14 @@ class ProductTitle extends Component {
     super(props);
 
     this.state = {
-      title: 'this is Product Title',
+      title: 'this is Product Titlex',
     };
   }
 
   render() {
     const state = this.state;
     return (
-      <div>
+      <div className="items_title">
         {state.title}
       </div>
 
