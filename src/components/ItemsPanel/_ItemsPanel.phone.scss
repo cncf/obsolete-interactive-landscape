@@ -6,9 +6,19 @@
 
     .content_wrapper{
         display:flex;
-        flex:5;
+        flex:10;
         justify-content: center;
         .graph3d_wrapper{
+            background-color: #0e8c8c;
+
+        }
+        .items_wrapper{
+            background-color: rosybrown;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
 
         }
 

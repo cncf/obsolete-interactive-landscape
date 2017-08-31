@@ -7,8 +7,15 @@
     background-color: #00b5ad; }
     .items_panel .content_wrapper {
       display: flex;
-      flex: 5;
+      flex: 10;
       justify-content: center; }
+      .items_panel .content_wrapper .graph3d_wrapper {
+        background-color: #0e8c8c; }
+      .items_panel .content_wrapper .items_wrapper {
+        background-color: rosybrown;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
     .items_panel .footer_wrapper {
       flex: 1; } }
 

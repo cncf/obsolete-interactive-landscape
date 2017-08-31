@@ -16,18 +16,44 @@ class ItemsPanel extends Component {
       title: 'this is Product',
     };
   }
+  
+  renderTitle(code){
+    
+    const state = this.state;
+    
+    let title= null;
+    
+    switch(code) {
+      case 'app':
+        title = {name:'Application and That', icon:'ico_app'};
+        break;
+      case 'dat':
+        title = {name:'Databases', icon:'ico_data'};
+        break;
+      default : title= {name:'default', icon:'ico_default'};
+    }
+    
+    return title;
+    
+  }
 
   render() {
     const state = this.state;
+    
+    let title = this.renderTitle('dat');
     return (
       <div className="items_panel">
         <div className="content_wrapper">
-            <div className="graph3d_wra">
+            <div className="graph3d_wrapper">
+              <Graph3d />
             </div>
-            <Graph3d />
-          
-            <div>
-              <ProductTitle />
+            <div className="items_wrapper">
+  
+              <h2 class="category-title-6 categ-big">
+                <div class="ico-prov ico-medium"></div>
+                { title.name}
+              </h2>
+              
               <Product />
               <Control />
             </div>
