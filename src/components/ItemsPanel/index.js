@@ -7,7 +7,7 @@ import Control from './components/Control';
 import './index.css';
 
 
-class ProductPanel extends Component {
+class ItemsPanel extends Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +19,7 @@ class ProductPanel extends Component {
   render() {
     const state = this.state;
     return (
-      <div className="productPanel">
+      <div className="product__panel">
         {state.title}
         <ProductTitle />
         <Product />
@@ -32,5 +32,5 @@ class ProductPanel extends Component {
 }
 
 
-export default ProductPanel;
+export default ItemsPanel;
 

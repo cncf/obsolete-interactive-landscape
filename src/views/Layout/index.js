@@ -6,7 +6,7 @@ import SideBar from './../../components/SideBar';
 import Footer from './../../components/Footer';
 import Filter from './../../components/Filter';
 import Modal from './../../components/Modal';
-import ProductPanel from './../../components/ProductPanel';
+import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
 import './Layout.css';
@@ -34,7 +34,7 @@ class Layout extends Component {
   renderPanel(){
     
     if(this.state.panel === 'items'){
-      return <ProductPanel className="product__panel"/> ;
+      return <ItemsPanel/> ;
     }
     return <ResultsPanel className="results__panel"/>
     
