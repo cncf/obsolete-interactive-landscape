@@ -1,4 +1,21 @@
-.items_panel div{
-    padding-left:20px;
-    color:orange;
+.items_panel{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    background-color: #00b5ad;
+
+    .content_wrapper{
+        display:flex;
+        flex:5;
+        justify-content: center;
+        .graph3d_wrapper{
+
+        }
+
+    }
+    .footer_wrapper{
+        flex:1;
+
+    }
+
 }

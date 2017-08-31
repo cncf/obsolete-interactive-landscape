@@ -1,8 +1,16 @@
 /*PHONE*/
 @media only screen {
-  .items_panel div {
-    padding-left: 20px;
-    color: orange; } }
+  .items_panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #00b5ad; }
+    .items_panel .content_wrapper {
+      display: flex;
+      flex: 5;
+      justify-content: center; }
+    .items_panel .footer_wrapper {
+      flex: 1; } }
 
 /*TABLET*/
 /*DESKTOP*/

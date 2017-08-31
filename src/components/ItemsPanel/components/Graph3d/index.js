@@ -8,7 +8,7 @@ class Graph3d extends Component {
     super(props);
 
     this.state = {
-      title: 'this is 3D Graph3d',
+      title: 'this is Graph3d',
     };
   }
 

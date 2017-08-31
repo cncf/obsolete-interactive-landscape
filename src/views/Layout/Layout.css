@@ -9,22 +9,21 @@
   flex-direction: column;
   flex: 1; }
 
-.content {
+.header_wrapper {
+  background-color: antiquewhite;
+  flex: 1; }
+
+.content_wrapper {
   display: flex;
   flex: 9;
   background-color: beige; }
-  .content .sidebar {
+  .content_wrapper .sidebar_wrapper {
     flex: 1;
     background-color: #46f54e; }
-
-.content .panel {
-  flex: 5;
-  background-color: #f5c2c8; }
-
-.content .filter {
-  flex: 1;
-  background-color: #92e5f5; }
-
-.footer {
-  flex: 1;
-  background-color: #d3f593; }
+  .content_wrapper .panel_wrapper {
+    display: flex;
+    flex: 5;
+    background-color: #f5c2c8; }
+  .content_wrapper .filter_wrapper {
+    flex: 1;
+    background-color: #92e5f5; }

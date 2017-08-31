@@ -13,34 +13,28 @@
 
 }
 
-.header{
+.header_wrapper{
   background-color: antiquewhite;
   flex:1;
 }
 
-.content {
+.content_wrapper {
   display: flex;
   flex: 9;
   background-color: beige;
 
-  .sidebar{
+  .sidebar_wrapper{
     flex:1;
     background-color: #46f54e;
   }
-}
-
-.content .panel{
-  flex:5;
-  background-color: #f5c2c8;
-}
-.content .filter{
-  flex:1;
-  background-color: #92e5f5;
-}
-
-.footer{
-  flex:1;
-  background-color: #d3f593;
-
+  .panel_wrapper{
+    display:flex;
+    flex:5;
+    background-color: #f5c2c8;
+  }
+  .filter_wrapper{
+    flex:1;
+    background-color: #92e5f5;
+  }
 }
 

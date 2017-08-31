@@ -43,27 +43,20 @@ class Layout extends Component {
   render() {
     return (
       <div className="layout">
-        <div className="test1" />
-        <div className="test2" />
-        <div className="test2_1" />
-        
-        {this.renderHeader()}
-        
-        <div className="content">
-          <div className="sidebar">
+        <div className="header_wrapper">
+          {this.renderHeader()}
+        </div>
+        <div className="content_wrapper">
+          <div className="sidebar_wrapper">
             <SideBar />
           </div>
-          <div className="panel">
+          <div className="panel_wrapper">
             {this.renderPanel()}
           </div>
-          <div className="filter">
+          <div className="filter_wrapper">
             <Filter />
           </div>
         </div>
-        <div className="footer">
-          <Footer/>
-        </div>
-        <Modal />
       </div>
     
     );
