@@ -1,21 +1,17 @@
 /*PHONE*/
 @media only screen {
-  .header {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: antiquewhite; }
-    .header .logos {
-      background-image: url(../assets/images/brand/cncf.png);
-      background-position: center center;
+  .iconator {
+    color: red; }
+    .iconator .ico-medium, .iconator .ico-small {
       background-repeat: no-repeat;
-      background-size: 90%;
-      height: 40px;
-      min-width: 120px;
-      padding: 10px 0;
-      float: left;
-      background-color: red; } }
+      background-size: 100% 100%;
+      display: inline-block;
+      margin: 0 10px -10px 0; }
+    .iconator .ico-medium {
+      width: 50px;
+      height: 50px; }
+    .iconator .ico-prov {
+      background-image: url(./icons/ico_prov.png); } }
 
 /*TABLET*/
 /*DESKTOP*/

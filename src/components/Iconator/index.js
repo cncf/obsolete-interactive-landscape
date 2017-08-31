@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 import './index.css';
 
@@ -11,12 +12,33 @@ class Iconator extends Component {
       title: '',
     };
   }
+  
+  renderIcon(){
+    const icon = this.props.icon;
+    let value = null;
+    
+    switch(icon) {
+      case 'app':
+        value = 'ico-prov';
+        break;
+      case 'dat':
+        value = 'ico-data';
+        break;
+      default : value = 'ico-prov';
+    }
+    
+    return value;
+  }
+  
 
   render() {
-    const state = this.state;
+    const icon = this.renderIcon();
+    
     return (
       <div className="iconator">
-        Iconator
+       
+        <div className={classNames('ico-medium', icon)} />
+        
       </div>
     );
   }
