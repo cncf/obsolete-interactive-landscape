@@ -11,37 +11,43 @@ class ItemsBox extends Component {
     this.state={
       category: this.props.category,
     };
-    
-    this.renderItems = this.renderItems.bind(this);
 
   }
   
+  render() {
   
-  renderItems(){
-    
     const category= this.state.category;
     
-    return(
-      <div>
-        <h1> {category.name}</h1>
-        <div>
-          {category.items.map(function(item,index){
-            return  <Item key={index} data={item} index={index} />;
-            
-          })}
-        </div>
-      </div>
-    );
-  }
-  
- 
-
-  render() {
-    const state = this.state;
     return (
       <div className="items_box">
-        {state.title}
-        {this.renderItems()}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
+        {category.items.map(function(item,index){
+          return  <Item key={index} data={item} index={index} />;
+    
+        })}
       </div>
 
     );

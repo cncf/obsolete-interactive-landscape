@@ -3,6 +3,8 @@
   flex:9;
   background-color: #d9ff3c;
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-content:flex-start;
 
 }

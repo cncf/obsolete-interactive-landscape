@@ -1,10 +1,10 @@
 .item {
   border-radius: 5px;
   padding: 5px 5px 0;
-  text-align: center;
-  vertical-align: top;
   display:flex;
   flex-direction: column;
+  height:100px;
+  align-items: center;
 
   .company-logo {
     background-repeat: no-repeat;
@@ -14,11 +14,12 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(71,71,71,.42);
     background-color: #FFF;
+    flex:5;
   }
 
 
   .company-name {
-    font-size: .7em;
+    font-size: .6em;
     color: #454545;
     text-align: center;
     display: inline-block;
@@ -28,6 +29,8 @@
     padding: 0 0 2px;
     margin-top: 0;
     vertical-align: top;
+    padding-top:5px;
+    flex:1;
   }
 
 }
