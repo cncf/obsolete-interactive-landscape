@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react'
 
-import Header from './../../components/Header';
+import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Footer from './../../components/Footer';
 import Filter from './../../components/Filter';
@@ -37,13 +37,8 @@ class Layout extends Component {
         <div className="test2" />
         <div className="test2_1" />
         
-        <div className="header">
-          {this.renderHeader()}
-  
-          <Button>
-            Click Here
-          </Button>
-        </div>
+        {this.renderHeader()}
+        
         <div className="content">
           <div className="sidebar">
             <SideBar />

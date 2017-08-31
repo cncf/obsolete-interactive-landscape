@@ -201,7 +201,7 @@ module.exports = function(callback) {
   ;
 
   /*--------------
-    Watch Assets
+    Watch assets
   ---------------*/
 
   // only copy assets that match component names (or their plural)

@@ -173,7 +173,7 @@
   color: rgba(0, 0, 0, 0.85);
 }
 
-/* Default Header Size */
+/* Default header Size */
 .ui.cards > .card > .content > .header:not(.ui),
 .ui.card > .content > .header:not(.ui) {
   font-weight: bold;
@@ -300,7 +300,7 @@
   color: '';
 }
 
-/* Header */
+/* header */
 .ui.cards > .card > .content > a.header,
 .ui.card > .content > a.header {
   color: rgba(0, 0, 0, 0.85);

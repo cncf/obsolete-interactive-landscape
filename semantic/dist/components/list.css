@@ -154,7 +154,7 @@ ol.ui.list ol li,
   padding-left: 0em;
 }
 
-/* Header */
+/* header */
 .ui.list .list > .item .header,
 .ui.list > .item .header {
   display: block;
@@ -194,7 +194,7 @@ ol.ui.list ol li,
   color: rgba(0, 0, 0, 0.4);
 }
 
-/* Header Link */
+/* header Link */
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;

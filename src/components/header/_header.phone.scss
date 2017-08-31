@@ -1,0 +1,21 @@
+.header{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: antiquewhite;
+
+  .logos{
+    background-image: url(../assets/images/brand/cncf.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    height: 40px;
+    min-width: 120px;
+    padding:10px 0;
+    float:left;
+    background-color: red;
+
+  }
+
+}

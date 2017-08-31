@@ -9,10 +9,6 @@
   flex-direction: column;
   flex: 1; }
 
-.header {
-  background-color: antiquewhite;
-  flex: 1; }
-
 .content {
   display: flex;
   flex: 9;

@@ -1071,7 +1071,7 @@ Floated Menu / Item
   display: none !important;
 }
 
-/* Header */
+/* header */
 .ui.text.menu .header.item {
   background-color: transparent;
   opacity: 1;
@@ -1404,7 +1404,7 @@ Floated Menu / Item
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Header */
+/* header */
 .ui.inverted.menu .header.item {
   margin: 0em;
   background: transparent;

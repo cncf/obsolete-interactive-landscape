@@ -10,7 +10,7 @@
 
 
 /*******************************
-            Header
+            header
 *******************************/
 
 
@@ -33,7 +33,7 @@
 }
 
 /*--------------
-   Sub Header
+   Sub header
 ---------------*/
 
 .ui.header .sub.header {
@@ -146,7 +146,7 @@ h5.ui.header {
   font-size: 1rem;
 }
 
-/* Sub Header */
+/* Sub header */
 h1.ui.header .sub.header {
   font-size: 1.14285714rem;
 }
@@ -184,7 +184,7 @@ h5.ui.header .sub.header {
   font-size: 1em;
 }
 
-/* Sub Header */
+/* Sub header */
 .ui.huge.header .sub.header {
   font-size: 1.14285714rem;
 }
