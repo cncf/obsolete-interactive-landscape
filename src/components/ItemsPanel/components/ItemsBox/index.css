@@ -1,7 +1,9 @@
 /*PHONE*/
 @media only screen {
   .items_box {
-    color: red; } }
+    color: red;
+    flex: 9;
+    background-color: #d9ff3c; } }
 
 /*TABLET*/
 /*DESKTOP*/

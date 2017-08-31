@@ -3,7 +3,8 @@
   .items_title {
     display: flex;
     align-items: center;
-    padding: 10px; }
+    padding: 10px 0;
+    flex: 1; }
     .items_title h2 {
       margin: 0 !important; } }
 
