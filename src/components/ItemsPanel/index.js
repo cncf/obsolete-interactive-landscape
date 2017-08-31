@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ItemsTitle from './components/ItemsTitle';
-import Product from './components/Product';
+import ItemsBox from './components/ItemsBox';
 import Graph3d from './components/Graph3d';
 import Control from './components/Control';
 import Footer from './../Footer';
@@ -29,7 +29,7 @@ class ItemsPanel extends Component {
             </div>
             <div className="items_wrapper">
               <ItemsTitle name={this.state.title} icon={this.state.code} />
-              <Product />
+              <ItemsBox />
               <Control />
             </div>
          

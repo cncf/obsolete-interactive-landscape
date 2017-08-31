@@ -8,7 +8,7 @@ class ProductTitle extends Component {
     super(props);
 
     this.state = {
-      title: 'this is Product Title',
+      title: 'this is ItemsBox Title',
     };
   }
   

@@ -1,0 +1,13 @@
+/*PHONE*/
+@media only screen {
+@import '_ItemsBox.phone';
+}
+/*TABLET*/
+@media only screen and (min-device-width : 768px){
+@import '_ItemsBox.tablet';
+}
+
+/*DESKTOP*/
+@media only screen and (min-width : 1224px){
+@import '_ItemsBox.desktop';
+}
