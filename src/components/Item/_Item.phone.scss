@@ -1,9 +1,10 @@
 .item {
-  display: inline-block;
   border-radius: 5px;
   padding: 5px 5px 0;
   text-align: center;
   vertical-align: top;
+  display:flex;
+  flex-direction: column;
 
   .company-logo {
     background-repeat: no-repeat;

@@ -18,8 +18,7 @@ class Item extends Component {
     
     return (
       
-      <div className="item"
-           style={{display:'inline-block'}}>
+      <div className="item">
         <div className="company-logo"
             style={{backgroundImage: `url(${imgUrl})` }}
         />
