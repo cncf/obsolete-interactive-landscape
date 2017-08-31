@@ -17,9 +17,9 @@ class ProductTitle extends Component {
     const state = this.state;
     return (
       <div className="items_title">
-  
+        <Iconator icon={this.props.icon} size="m" />
         <h2 class="category-title-6 categ-big">
-          <Iconator icon={this.props.icon} size="m" />
+          
           { this.props.name}
         </h2>
         

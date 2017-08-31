@@ -10,12 +10,13 @@
       flex: 10;
       justify-content: center; }
       .items_panel .content_wrapper .graph3d_wrapper {
-        background-color: #0e8c8c; }
+        background-color: #0e8c8c;
+        flex: 1; }
       .items_panel .content_wrapper .items_wrapper {
         background-color: rosybrown;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; }
+        flex: 3; }
     .items_panel .footer_wrapper {
       flex: 1; } }
 

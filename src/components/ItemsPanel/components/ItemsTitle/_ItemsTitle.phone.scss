@@ -1,5 +1,11 @@
 .items_title{
-  color:red;
+  display:flex;
+  align-items: center;
+  padding:10px;
+
+  h2{
+    margin:0 !important;
+  }
 
 
 

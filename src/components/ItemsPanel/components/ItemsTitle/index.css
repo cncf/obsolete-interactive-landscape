@@ -1,7 +1,11 @@
 /*PHONE*/
 @media only screen {
   .items_title {
-    color: red; } }
+    display: flex;
+    align-items: center;
+    padding: 10px; }
+    .items_title h2 {
+      margin: 0 !important; } }
 
 /*TABLET*/
 /*DESKTOP*/
