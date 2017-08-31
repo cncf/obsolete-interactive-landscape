@@ -19,7 +19,7 @@ class ProductTitle extends Component {
       <div className="items_title">
   
         <h2 class="category-title-6 categ-big">
-          <Iconator icon={this.props.icon} />
+          <Iconator icon={this.props.icon} size="m" />
           { this.props.name}
         </h2>
         

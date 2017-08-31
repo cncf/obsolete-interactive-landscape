@@ -18,26 +18,66 @@ class Iconator extends Component {
     let value = null;
     
     switch(icon) {
-      case 'app':
+      case 'apis':
+        value = 'ico-apis';
+        break;
+      case 'data':
+        value = 'ico-data';
+        break;
+      case 'deve':
+        value = 'ico-deve';
+        break;
+      case 'infr':
+        value = 'ico-infr';
+        break;
+      case 'obse':
+        value = 'ico-obse';
+        break;
+      case 'orch':
+        value = 'ico-orch';
+        break;
+      case 'plat':
+        value = 'ico-plat';
+        break;
+      case 'prov':
         value = 'ico-prov';
         break;
-      case 'dat':
-        value = 'ico-data';
+      case 'runt':
+        value = 'ico-runt';
         break;
       default : value = 'ico-prov';
     }
+    return value;
+  }
+  
+  iconSize(){
+    const icon = this.props.size;
+    let value = null;
     
+    switch(icon) {
+      case 's':
+        value = 'ico-small';
+        break;
+      case 'm':
+        value = 'ico-medium';
+        break;
+      case 'l':
+        value = 'ico-large';
+        break;
+      default : value = 'ico-medium';
+    }
     return value;
   }
   
 
   render() {
     const icon = this.renderIcon();
+    const size = this.iconSize();
     
     return (
       <div className="iconator">
        
-        <div className={classNames('ico-medium', icon)} />
+        <div className={classNames(size, icon)} />
         
       </div>
     );

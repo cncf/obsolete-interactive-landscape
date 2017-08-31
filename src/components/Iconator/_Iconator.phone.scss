@@ -1,7 +1,6 @@
 .iconator{
-  color:red;
 
-  .ico-medium, .ico-small {
+  .ico-medium, .ico-small, .ico-large {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
@@ -12,8 +11,37 @@
     height: 50px;
   }
 
+  .ico-small {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ico-apis {
+    background-image: url(./icons/ico_apis.png);
+  }
+  .ico-data {
+    background-image: url(./icons/ico_data.png);
+  }
+  .ico-deve {
+    background-image: url(./icons/ico_deve.png);
+  }
+  .ico-infr {
+    background-image: url(./icons/ico_infr.png);
+  }
+  .ico-obse {
+    background-image: url(./icons/ico_obse.png);
+  }
+  .ico-orch {
+    background-image: url(./icons/ico_orch.png);
+  }
+  .ico-plat {
+    background-image: url(./icons/ico_plat.png);
+  }
   .ico-prov {
     background-image: url(./icons/ico_prov.png);
+  }
+  .ico-runt {
+    background-image: url(./icons/ico_runt.png);
   }
 
 

@@ -1,17 +1,34 @@
 /*PHONE*/
 @media only screen {
-  .iconator {
-    color: red; }
-    .iconator .ico-medium, .iconator .ico-small {
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      display: inline-block;
-      margin: 0 10px -10px 0; }
-    .iconator .ico-medium {
-      width: 50px;
-      height: 50px; }
-    .iconator .ico-prov {
-      background-image: url(./icons/ico_prov.png); } }
+  .iconator .ico-medium, .iconator .ico-small, .iconator .ico-large {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 0 10px -10px 0; }
+  .iconator .ico-medium {
+    width: 50px;
+    height: 50px; }
+  .iconator .ico-small {
+    width: 20px;
+    height: 20px; }
+  .iconator .ico-apis {
+    background-image: url(./icons/ico_apis.png); }
+  .iconator .ico-data {
+    background-image: url(./icons/ico_data.png); }
+  .iconator .ico-deve {
+    background-image: url(./icons/ico_deve.png); }
+  .iconator .ico-infr {
+    background-image: url(./icons/ico_infr.png); }
+  .iconator .ico-obse {
+    background-image: url(./icons/ico_obse.png); }
+  .iconator .ico-orch {
+    background-image: url(./icons/ico_orch.png); }
+  .iconator .ico-plat {
+    background-image: url(./icons/ico_plat.png); }
+  .iconator .ico-prov {
+    background-image: url(./icons/ico_prov.png); }
+  .iconator .ico-runt {
+    background-image: url(./icons/ico_runt.png); } }
 
 /*TABLET*/
 /*DESKTOP*/

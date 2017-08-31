@@ -13,34 +13,13 @@ class ItemsPanel extends Component {
     super(props);
 
     this.state = {
-      title: 'this is Product',
-      code: 'dat',
+      title: 'Orchestration',
+      code: 'orch',
     };
   }
   
-  defineItem(){
-    const code = this.state.code;
-    
-    let value= null;
-    
-    switch(code) {
-      case 'app':
-        value = {name:'Application and That', icon:'ico_app'};
-        break;
-      case 'dat':
-        value = {name:'Databases', icon:'ico_data'};
-        break;
-      default : value= {name:'default', icon:'ico_default'};
-    }
-    
-    return value;
-    
-  }
 
   render() {
-    const state = this.state;
-    
-    let item = this.defineItem();
     
     return (
       <div className="items_panel">
@@ -49,7 +28,7 @@ class ItemsPanel extends Component {
               <Graph3d />
             </div>
             <div className="items_wrapper">
-              <ItemsTitle name={item.name} icon={item.icon} />
+              <ItemsTitle name={this.state.title} icon={this.state.code} />
               <Product />
               <Control />
             </div>
