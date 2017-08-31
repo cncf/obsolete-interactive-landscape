@@ -1,0 +1,13 @@
+/*PHONE*/
+@media only screen {
+@import '_ItemsPanel.phone.scss';
+}
+/*TABLET*/
+@media only screen and (min-device-width : 768px){
+@import '_ItemsPanel.tablet.scss';
+}
+
+/*DESKTOP*/
+@media only screen and (min-width : 1224px){
+@import '_ItemsPanel.desktop.scss';
+}

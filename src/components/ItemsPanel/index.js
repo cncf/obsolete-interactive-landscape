@@ -19,7 +19,7 @@ class ItemsPanel extends Component {
   render() {
     const state = this.state;
     return (
-      <div className="product__panel">
+      <div className="items_panel">
         {state.title}
         <ProductTitle />
         <Product />
