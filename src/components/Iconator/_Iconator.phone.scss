@@ -1,0 +1,20 @@
+.iconator{
+  color:red;
+
+  .ico-medium, .ico-small {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 0 10px -10px 0;
+  }
+  .ico-medium {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ico-prov {
+    //background-image: url(../images/icons/ico_prov.png);
+  }
+
+
+}
