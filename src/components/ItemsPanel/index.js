@@ -18,7 +18,7 @@ class ItemsPanel extends Component {
     };
   }
   
-
+F
   render() {
     
     return (

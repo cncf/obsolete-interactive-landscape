@@ -1,12 +1,30 @@
 /*PHONE*/
 @media only screen {
-  .items_title {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    flex: 1; }
-    .items_title h2 {
-      margin: 0 !important; } }
+  .item {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 5px 0;
+    text-align: center;
+    vertical-align: top; }
+    .item .company-logo {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 75px;
+      width: 75px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
+      background-color: #FFF; }
+    .item .company-name {
+      font-size: .7em;
+      color: #454545;
+      text-align: center;
+      display: inline-block;
+      overflow: hidden;
+      max-width: 50px;
+      line-height: 1em;
+      padding: 0 0 2px;
+      margin-top: 0;
+      vertical-align: top; } }
 
 /*TABLET*/
 /*DESKTOP*/

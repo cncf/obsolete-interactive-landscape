@@ -73,7 +73,7 @@ class ItemsBox extends Component {
         <h1> {category.name}</h1>
         <div>
           {category.items.map(function(item,index){
-            return <div> <Item data={item} index={index} /></div>;
+            return <div key={index}> <Item data={item} index={index} /></div>;
             
           })}
         </div>

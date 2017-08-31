@@ -14,19 +14,18 @@ class Item extends Component {
   
 
   render() {
-    const state = this.state;
+    let imgUrl = this.props.data.calculated.resized_logo;
+    
     return (
-      <div className="item">
-  
-        <Image src={ this.props.data.calculated.resized_logo} size='small' />
-        <h2>
-          { this.props.data.name}
-          
-        </h2>
-        <p>
-          { this.props.data.calculated.gh_stars}
-        </p>
-        
+      
+      <div className="item"
+           style={{display:'inline-block'}}>
+        <div className="company-logo"
+            style={{backgroundImage: `url(${imgUrl})` }}
+        />
+        <div className="company-name">
+          { this.props.data.name }
+        </div>
       </div>
 
     );
