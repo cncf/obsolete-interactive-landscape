@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react'
+import { Icon, Menu } from 'semantic-ui-react'
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
@@ -45,6 +45,17 @@ class Layout extends Component {
     );
   }
   
+  renderButton() {
+    const collapsed = this.state.menu.collapsed;
+    return (
+      <Menu.Item as="a" onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
+        <a role="button" className="" >
+          <span><Icon name="content" /></span>
+        </a>
+      </Menu.Item>
+    );
+  }
+  
   renderPanel(){
     
     if(this.state.panel === 'items'){
@@ -59,10 +70,13 @@ class Layout extends Component {
       <div className="layout">
         <div className="header_wrapper">
           {this.renderHeader()}
+          
         </div>
         <div className={this.getClassNames()}>
           <div className="sidebar_wrapper">
-            <SideBar />
+            <SideBar>
+              {this.renderButton()}
+            </SideBar>
           </div>
           <div className="panel_wrapper">
             {this.renderPanel()}

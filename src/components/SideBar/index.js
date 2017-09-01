@@ -17,6 +17,7 @@ class SideBar extends Component {
     return (
       <div>
         {state.title}
+        {this.props.children}
       </div>
 
     );
