@@ -8,12 +8,14 @@
     .items_panel .content_wrapper {
       display: flex;
       flex: 10;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .items_panel .content_wrapper .graph3d_wrapper {
         background-color: #0e8c8c;
+        display: flex;
         flex: 1; }
       .items_panel .content_wrapper .items_wrapper {
-        background-color: rosybrown;
+        background-color: #bc2535;
         display: flex;
         flex-direction: column;
         flex: 3; }

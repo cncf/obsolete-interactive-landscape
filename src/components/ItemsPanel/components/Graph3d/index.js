@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
-
+import { Image } from 'semantic-ui-react'
 import './index.css';
-
+import image3d from './images/stack5.png';
 
 class Graph3d extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      title: 'this is Graph3d',
+      title: 'this is Graph 3D..',
     };
   }
+  
 
   render() {
-    const state = this.state;
     return (
-      <div>
-        {state.title}
+      <div className="graph_3d">
+          { this.state.title}
+  
+        <Image fluid src={image3d} />
       </div>
 
     );

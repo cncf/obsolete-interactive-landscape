@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react'
-
+import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Footer from './../../components/Footer';
@@ -19,9 +19,23 @@ class Layout extends Component {
     this.state = {
       title: 'Layout',
       panel: 'items',
+      menu: {
+        collapsed: false,
+      },
     };
     
     this.renderHeader = this.renderHeader.bind(this);
+    this.getClassNames = this.getClassNames.bind(this);
+  }
+  
+  getClassNames() {
+    const menu = this.state.menu.collapsed;
+    
+    
+    if (menu) { // If collapsed = TRUE
+      return classNames('content_wrapper', { collapse: true }, { open: true });
+    }
+    return classNames('content_wrapper', { open_hidden: true });
   }
   
   renderHeader() {
@@ -46,7 +60,7 @@ class Layout extends Component {
         <div className="header_wrapper">
           {this.renderHeader()}
         </div>
-        <div className="content_wrapper">
+        <div className={this.getClassNames()}>
           <div className="sidebar_wrapper">
             <SideBar />
           </div>

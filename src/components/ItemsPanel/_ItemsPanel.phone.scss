@@ -8,20 +8,20 @@
         display:flex;
         flex:10;
         justify-content: center;
+        align-items: center;
 
         .graph3d_wrapper{
             background-color: #0e8c8c;
+            display:flex;
             flex:1;
-
         }
         .items_wrapper{
-            background-color: rosybrown;
+            background-color: #bc2535;
             display:flex;
             flex-direction: column;
             flex:3;
 
         }
-
     }
     .footer_wrapper{
         flex:1;

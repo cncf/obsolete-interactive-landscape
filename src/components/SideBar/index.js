@@ -8,7 +8,7 @@ class SideBar extends Component {
     super(props);
 
     this.state = {
-      title: 'this is SideBar',
+      title: '33',
     };
   }
 

@@ -1,0 +1,13 @@
+/*PHONE*/
+@media only screen {
+@import '_Graph3d.phone';
+}
+/*TABLET*/
+@media only screen and (min-device-width : 768px){
+@import '_Graph3d.tablet';
+}
+
+/*DESKTOP*/
+@media only screen and (min-width : 1224px){
+@import '_Graph3d.desktop';
+}
