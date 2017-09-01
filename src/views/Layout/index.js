@@ -73,7 +73,8 @@ class Layout extends Component {
           
         </div>
         <div className={this.getClassNames()}>
-          <div className="sidebar_wrapper">
+          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+            
             <SideBar>
               {this.renderButton()}
             </SideBar>
