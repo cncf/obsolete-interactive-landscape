@@ -3,8 +3,7 @@
   .items_title {
     display: flex;
     align-items: center;
-    padding: 10px 0;
-    background-color: #0ea432; }
+    padding: 10px 0; }
     .items_title h2 {
       margin: 0 !important; } }
 

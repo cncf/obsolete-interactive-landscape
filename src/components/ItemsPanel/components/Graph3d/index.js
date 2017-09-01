@@ -16,8 +16,6 @@ class Graph3d extends Component {
   render() {
     return (
       <div className="graph_3d">
-          { this.state.title}
-  
         <Image fluid src={image3d} />
       </div>
 

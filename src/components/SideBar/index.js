@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import classNames from 'classnames'
+import classNames from 'classnames';
+import {Item} from 'semantic-ui-react';
 import './SideBar.css';
 
 
@@ -9,15 +10,16 @@ class SideBar extends Component {
 
     this.state = {
       title: '33',
+      collapsed:true,
     };
   
     this.getClassNames = this.getClassNames.bind(this);
   }
   
   getClassNames() {
-    const { selectedToActive } = this.state;
+    const { selectedToActive } = this.state.collapsed;
     
-    return classNames('treeview', { active: selectedToActive });
+    return classNames('treeview', { active: true });
   }
 
   render() {
@@ -33,19 +35,37 @@ class SideBar extends Component {
   
             <li className={this.getClassNames()}>
               <a role="button">
-                item1
+                <i class="fa icon-uno"/>
+                Databases and Storage
               </a>
+  
+              <ul className="treeview-menu">
+                <li className="treeview" key='namehere' >
+                  <Item>
+                    <Item.Content as="a">
+                      <i className="fa fa-holder" style={{ display: 'block' }} />
+                      Item Name 22
+                      <span className="pull-right-container">
+                        <i className="fa fa-angle-left pull-right" />
+                      </span>
+                    </Item.Content>
+                  </Item>
+      
+                  <ul className="treeview-menu level2  ">
+                    
+                      <li key='keynamehere'>
+                        <a
+                          role="button"
+                        >
+                          children here
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li className={this.getClassNames()}>
-              <a role="button">
-                item2
-              </a>
-            </li>
-            <li className={this.getClassNames()}>
-              <a role="button">
-                item3
-              </a>
-            </li>
+            
           </ul>
         </section>
 

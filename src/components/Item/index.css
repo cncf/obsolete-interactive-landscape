@@ -1,13 +1,13 @@
 /*PHONE*/
 @media only screen {
-  .item {
+  .product_item {
     border-radius: 5px;
     padding: 5px 5px 0;
     display: flex;
     flex-direction: column;
     height: 90px;
     align-items: center; }
-    .item .company-logo {
+    .product_item .company-logo {
       background-repeat: no-repeat;
       background-size: 100% 100%;
       flex: 6;
@@ -16,7 +16,7 @@
       border-radius: 5px;
       box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
       background-color: #FFF; }
-    .item .company-name {
+    .product_item .company-name {
       font-size: .6em;
       color: #454545;
       text-align: center;

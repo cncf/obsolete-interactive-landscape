@@ -4,8 +4,7 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: antiquewhite; }
+    justify-content: space-between; }
     .header .logos {
       background-image: url(../assets/images/brand/cncf.png);
       background-position: center center;
@@ -14,8 +13,7 @@
       height: 40px;
       min-width: 120px;
       padding: 10px 0;
-      float: left;
-      background-color: red; } }
+      float: left; } }
 
 /*TABLET*/
 /*DESKTOP*/

@@ -18,7 +18,7 @@ class Item extends Component {
     
     return (
       
-      <div className="item">
+      <div className="product_item">
         <div className="company-logo"
             style={{backgroundImage: `url(${imgUrl})` }}
         />

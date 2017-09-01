@@ -8,7 +8,7 @@ class Filter extends Component {
     super(props);
 
     this.state = {
-      title: 'this is Filter',
+      title: '+',
     };
   }
 

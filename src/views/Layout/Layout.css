@@ -1,32 +1,29 @@
 #root {
   display: flex;
-  background-color: yellow;
   height: 100%; }
 
 .layout {
-  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   flex: 1; }
 
 .header_wrapper {
-  background-color: antiquewhite;
   flex: 1; }
 
 .content_wrapper {
   display: flex;
-  flex: 9;
-  background-color: beige; }
+  flex: 9; }
   .content_wrapper .panel_wrapper {
     display: flex;
-    background-color: #f5c2c8; }
+    height: 100% !important; }
   .content_wrapper .filter_wrapper {
     flex: 1;
-    background-color: #92e5f5; }
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px 0 0 6px; }
 
 .panel_wrapper {
   min-height: 50%;
-  background-color: #f5f5f5;
   z-index: 800;
   height: 90% !important;
   position: relative !important;
@@ -52,7 +49,9 @@
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
   transition: transform .3s ease-in-out, width .3s ease-in-out;
   height: 100%;
-  background: #00f7f7;
+  background: #fff;
+  border:1px solid #e6e6e6;
+  border-radius:0 6px 6px 0;
   /* Old browsers */ }
   .sidebar_wrapper i {
     line-height: 2;
