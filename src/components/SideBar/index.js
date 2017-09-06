@@ -15,6 +15,8 @@ class SideBar extends Component {
   
     this.getClassNames = this.getClassNames.bind(this);
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
+    this.renderSecondLevel = this.renderSecondLevel.bind(this);
+    this.renderThirdLevel = this.renderThirdLevel.bind(this);
   }
   
   getClassNames() {
@@ -35,59 +37,52 @@ class SideBar extends Component {
           <i className="fa icon-uno"/>
           {i.name}
         </a>
+        {this.renderSecondLevel(i)}
+      </li>
+      
+    )
+  }
+  
+  renderSecondLevel(i){
+    
+    const state = this.state;
+    
+    return i.subcategories.map(i =>
         <ul className="treeview-menu">
           <li className="treeview" key='namehere' >
             <Item>
               <Item.Content as="a">
                 <i className="fa fa-holder" style={{ display: 'block' }} />
-                Item Name 22
+                {i.name}
                 <span className="pull-right-container">
-                              <i className="fa fa-angle-left pull-right" />
-                            </span>
+                    <i className="fa fa-angle-left pull-right" />
+                 </span>
               </Item.Content>
             </Item>
-          
-            <ul className="treeview-menu level2  ">
             
-              <li key='keynamehere'>
-                <a
-                  role="button"
-                >
-                  children here
-                </a>
-              </li>
-          
-            </ul>
           </li>
-          </ul>
-      </li>
-      
-      
-    )
+        </ul>
+      )
     
-    
-    // console.log('-----------');
-    // console.log(data.category.subcategory.name);
-    // console.log('-----------');
-    //
-    
-    // const items = this.props.data.category.subcategory.items;
-    // console.log(items);
-    
-    // items.map(i =>
-    //   console.log(i.item.name)
-    // );
-    
-    
-    
+  }
   
+  renderThirdLevel(i){
     
+    const state = this.state;
+    
+    return i.items.map(i =>
+      <ul className="treeview-menu level2  ">
+        <li key='keynamehere'>
+          <a role="button">
+            {i.name}
+          </a>
+        </li>
+      </ul>
+    )
     
   }
 
   render() {
-    
-    
     
     return (
       

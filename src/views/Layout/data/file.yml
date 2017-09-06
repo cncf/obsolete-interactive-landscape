@@ -66,22 +66,22 @@ landscape:
     slug_name: orchestration_and_management
     subcategories:
       - subcategory:
-        name: 'SubCategory 2.1'
+        name: 'SubCategory 3.1'
         slug_name: scheduling_and_orchestration
         items:
         - item:
-          name: item2.1.1
+          name: item3.1.1
           slug_name: orange
         - item:
-          name: item2.1.2
+          name: item3.1.2
           slug_name: grapes
       - subcategory:
-        name: 'SubCategory 2.2'
+        name: 'SubCategory 3.2'
         slug_name: scheduling_and_orchestration
         items:
         - item:
-          name: item2.2.1
+          name: item3.2.1
           slug_name: melon
         - item:
-          name: item2.2.2
+          name: item3.2.2
           slug_name: sandia
