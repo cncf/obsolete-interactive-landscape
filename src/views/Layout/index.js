@@ -3,9 +3,7 @@ import { Icon, Menu } from 'semantic-ui-react'
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
-import Footer from './../../components/Footer';
 import Filter from './../../components/Filter';
-import Modal from './../../components/Modal';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
@@ -35,11 +33,6 @@ class Layout extends Component {
   componentWillMount(){
   
     this.updateState();
-    
-    // data.map(i =>
-    //   console.log(i.item.name)
-    // )
-    
     
   }
   
@@ -76,6 +69,10 @@ class Layout extends Component {
     );
   }
   
+  categoryData(){
+  
+  }
+  
   renderPanel(){
     
     if(this.state.panel === 'items'){
@@ -87,17 +84,20 @@ class Layout extends Component {
   
   render() {
     
-    const land= this.state.landscape;
     
-    console.log(land.category.name);
-    console.log('-----------');
-    console.log(land.category.subcategory.name);
-    console.log('-----------');
-
-    const items = land.category.subcategory.items;
-    items.map(i =>
-      console.log(i.item.name)
-    )
+    const data= this.state.landscape;
+    console.log(data);
+    console.log('+++++++++++');
+    
+    // console.log(data.category.name);
+    // console.log('-----------');
+    // console.log(data.category.subcategory.name);
+    // console.log('-----------');
+    //
+    // const items = data.category.subcategory.items;
+    // items.map(i =>
+    //   console.log(i.item.name)
+    // )
     
     
     
@@ -109,7 +109,7 @@ class Layout extends Component {
           
         </div>
         <div className={this.getClassNames()}>
-          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+          <div className="sidebar_wrapper" data={data} style={{ position: 'fixed' }}>
             
             <SideBar>
               {this.renderButton()}
