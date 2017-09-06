@@ -84,23 +84,8 @@ class Layout extends Component {
   
   render() {
     
-    
     const data= this.state.landscape;
-    console.log(data);
-    console.log('+++++++++++');
-    
-    // console.log(data.category.name);
-    // console.log('-----------');
-    // console.log(data.category.subcategory.name);
-    // console.log('-----------');
-    //
-    // const items = data.category.subcategory.items;
-    // items.map(i =>
-    //   console.log(i.item.name)
-    // )
-    
-    
-    
+
     
     return (
       <div className="layout">
@@ -109,9 +94,9 @@ class Layout extends Component {
           
         </div>
         <div className={this.getClassNames()}>
-          <div className="sidebar_wrapper" data={data} style={{ position: 'fixed' }}>
+          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
             
-            <SideBar>
+            <SideBar data={data}>
               {this.renderButton()}
             </SideBar>
           </div>

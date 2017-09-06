@@ -1,6 +1,6 @@
 landscape:
   - category:
-    name: 'Category 1'
+    name: 'Orchestration & Management'
     slug_name: orchestration_and_management
     subcategories:
       - subcategory:
@@ -38,7 +38,7 @@ landscape:
             cb_employees: '10k +'
             cb_funds_raised: '$108M'
   - category:
-    name: 'Category 2x'
+    name: 'Databases and APis'
     slug_name: orchestration_and_management
     subcategories:
       - subcategory:
@@ -62,7 +62,7 @@ landscape:
           name: item2.2.2
           slug_name: sandia
   - category:
-    name: 'Category 2x'
+    name: 'Observabiulity'
     slug_name: orchestration_and_management
     subcategories:
       - subcategory:

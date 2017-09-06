@@ -2,7 +2,7 @@
   "landscape": [
     {
       "category": null,
-      "name": "Category 1",
+      "name": "Orchestration & Management",
       "slug_name": "orchestration_and_management",
       "subcategories": [
         {
@@ -54,7 +54,7 @@
     },
     {
       "category": null,
-      "name": "Category 2x",
+      "name": "Databases and APis",
       "slug_name": "orchestration_and_management",
       "subcategories": [
         {
@@ -95,7 +95,7 @@
     },
     {
       "category": null,
-      "name": "Category 2x",
+      "name": "Observabiulity",
       "slug_name": "orchestration_and_management",
       "subcategories": [
         {

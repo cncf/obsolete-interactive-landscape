@@ -14,6 +14,7 @@ class SideBar extends Component {
     };
   
     this.getClassNames = this.getClassNames.bind(this);
+    this.renderFirstLevel = this.renderFirstLevel.bind(this);
   }
   
   getClassNames() {
@@ -21,8 +22,72 @@ class SideBar extends Component {
     
     return classNames('treeview', { active: true });
   }
+  
+  renderFirstLevel(){
+    
+    let data = this.props.data.landscape;
+    //console.log(data);
+    
+    return data.map(i =>
+ 
+      <li className={this.getClassNames()}>
+        <a role="button">
+          <i className="fa icon-uno"/>
+          {i.name}
+        </a>
+        <ul className="treeview-menu">
+          <li className="treeview" key='namehere' >
+            <Item>
+              <Item.Content as="a">
+                <i className="fa fa-holder" style={{ display: 'block' }} />
+                Item Name 22
+                <span className="pull-right-container">
+                              <i className="fa fa-angle-left pull-right" />
+                            </span>
+              </Item.Content>
+            </Item>
+          
+            <ul className="treeview-menu level2  ">
+            
+              <li key='keynamehere'>
+                <a
+                  role="button"
+                >
+                  children here
+                </a>
+              </li>
+          
+            </ul>
+          </li>
+          </ul>
+      </li>
+      
+      
+    )
+    
+    
+    // console.log('-----------');
+    // console.log(data.category.subcategory.name);
+    // console.log('-----------');
+    //
+    
+    // const items = this.props.data.category.subcategory.items;
+    // console.log(items);
+    
+    // items.map(i =>
+    //   console.log(i.item.name)
+    // );
+    
+    
+    
+  
+    
+    
+  }
 
   render() {
+    
+    
     
     return (
       
@@ -32,39 +97,7 @@ class SideBar extends Component {
             <li className="header">
               {this.props.children}
             </li>
-  
-            <li className={this.getClassNames()}>
-              <a role="button">
-                <i className="fa icon-uno"/>
-                Databases and Storage
-              </a>
-  
-              <ul className="treeview-menu">
-                <li className="treeview" key='namehere' >
-                  <Item>
-                    <Item.Content as="a">
-                      <i className="fa fa-holder" style={{ display: 'block' }} />
-                      Item Name 22
-                      <span className="pull-right-container">
-                        <i className="fa fa-angle-left pull-right" />
-                      </span>
-                    </Item.Content>
-                  </Item>
-      
-                  <ul className="treeview-menu level2  ">
-                    
-                      <li key='keynamehere'>
-                        <a
-                          role="button"
-                        >
-                          children here
-                        </a>
-                      </li>
-                    
-                  </ul>
-                </li>
-              </ul>
-            </li>
+            {this.renderFirstLevel()}
             
           </ul>
         </section>
