@@ -6,6 +6,7 @@
     "json-loader": "^0.5.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.12",
     "semantic-ui-react": "^0.72.0",
     "yaml-loader": "^0.5.0"

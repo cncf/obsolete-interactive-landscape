@@ -95,7 +95,48 @@
     },
     {
       "category": null,
-      "name": "Observabiulity",
+      "name": "Observabiulity Rules",
+      "slug_name": "orchestration_and_management",
+      "subcategories": [
+        {
+          "subcategory": null,
+          "name": "SubCategory 3.1",
+          "slug_name": "scheduling_and_orchestration",
+          "items": [
+            {
+              "item": null,
+              "name": "item3.1.1",
+              "slug_name": "orange"
+            },
+            {
+              "item": null,
+              "name": "item3.1.2",
+              "slug_name": "grapes"
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "SubCategory 3.2",
+          "slug_name": "scheduling_and_orchestration",
+          "items": [
+            {
+              "item": null,
+              "name": "item3.2.1",
+              "slug_name": "melon"
+            },
+            {
+              "item": null,
+              "name": "item3.2.2",
+              "slug_name": "sandia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": null,
+      "name": "Landscape Fans",
       "slug_name": "orchestration_and_management",
       "subcategories": [
         {
