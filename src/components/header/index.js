@@ -21,7 +21,7 @@ class Header extends Component {
           <div>{state.title}</div>
           <div>{state.version}</div>
         </div>
-        <div className="logos"><h2>CNCF1</h2></div>
+        <div className="logos" />
       </div>
     );
   }

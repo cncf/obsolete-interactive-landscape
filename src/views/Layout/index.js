@@ -48,7 +48,7 @@ class Layout extends Component {
   renderButton() {
     const collapsed = this.state.menu.collapsed;
     return (
-      <Menu.Item as="a" onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
+      <Menu.Item as="span" onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
         <a role="button" className="" >
           <span><Icon name="content" /></span>
         </a>

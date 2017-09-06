@@ -27,7 +27,7 @@
   z-index: 800;
   height: 90% !important;
   position: relative !important;
-  padding: 10px 20px 0 20px;
+  padding: 10px 10px 0 0;
   display: grid; }
   .panel_wrapper .card {
     border: 0 !important;
@@ -49,9 +49,7 @@
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
   transition: transform .3s ease-in-out, width .3s ease-in-out;
   height: 100%;
-  background: #fff;
-  border:1px solid #e6e6e6;
-  border-radius:0 6px 6px 0;
+  background: #00f7f7;
   /* Old browsers */ }
   .sidebar_wrapper i {
     line-height: 2;
