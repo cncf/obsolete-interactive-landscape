@@ -29,25 +29,28 @@ class Layout extends Component {
     
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
+    this.updateState = this.updateState.bind(this);
   }
   
-  componentDidMount(){
-    
-    const data = dataSet.category.subcategory.items;
+  componentWillMount(){
   
-    //console.log(data);
+    this.updateState();
     
-    data.map(i =>
-      console.log(i.item.name)
-    )
+    // data.map(i =>
+    //   console.log(i.item.name)
+    // )
+    
     
   }
   
-  
+  updateState(){
+    const data = dataSet;
+    this.setState({landscape: data});
+    
+  }
   
   getClassNames() {
     const menu = this.state.menu.collapsed;
-    
     
     if (menu) { // If collapsed = TRUE
       return classNames('content_wrapper', { collapse: true }, { open: true });
@@ -83,6 +86,22 @@ class Layout extends Component {
   }
   
   render() {
+    
+    const land= this.state.landscape;
+    
+    console.log(land.category.name);
+    console.log('-----------');
+    console.log(land.category.subcategory.name);
+    console.log('-----------');
+
+    const items = land.category.subcategory.items;
+    items.map(i =>
+      console.log(i.item.name)
+    )
+    
+    
+    
+    
     return (
       <div className="layout">
         <div className="header_wrapper">
