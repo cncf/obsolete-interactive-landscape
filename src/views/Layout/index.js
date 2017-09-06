@@ -9,9 +9,10 @@ import Modal from './../../components/Modal';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
-import './Layout.css';
-const dataset = require('json-loader!./data/data1.json');
+import dataSet from './data/data1.json';
 
+
+import './Layout.css';
 
 
 class Layout extends Component {
@@ -31,19 +32,16 @@ class Layout extends Component {
   }
   
   componentDidMount(){
-    this.loadData();
+    
+    const data = dataSet;
+    
+    data.map(i =>
+      console.log(i.color)
+    )
+    
   }
   
-  loadData(){
-    const dataset= './data/data1.json';
-    import(dataset)
-    .then(({ dataset }) => {
-      console.log(dataset)
-    })
-    .catch(err => {
-      console.log('uups')
-    });
-  }
+  
   
   getClassNames() {
     const menu = this.state.menu.collapsed;
