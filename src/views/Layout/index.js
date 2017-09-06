@@ -10,6 +10,7 @@ import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
 import './Layout.css';
+const json = require("json-loader!yaml-loader!./file.yml");
 
 
 class Layout extends Component {

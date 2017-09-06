@@ -6,7 +6,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.12",
-    "semantic-ui-react": "^0.72.0"
+    "semantic-ui-react": "^0.72.0",
+    "yaml-loader": "^0.5.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
