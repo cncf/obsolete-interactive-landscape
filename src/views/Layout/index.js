@@ -9,7 +9,7 @@ import Modal from './../../components/Modal';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
-import dataSet from './data/data1.json';
+import dataSet from './data/file.json';
 
 
 import './Layout.css';
@@ -33,10 +33,12 @@ class Layout extends Component {
   
   componentDidMount(){
     
-    const data = dataSet;
+    const data = dataSet.category.subcategory.items;
+  
+    //console.log(data);
     
     data.map(i =>
-      console.log(i.color)
+      console.log(i.item.name)
     )
     
   }
