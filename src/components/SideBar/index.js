@@ -35,7 +35,7 @@ class SideBar extends Component {
   
             <li className={this.getClassNames()}>
               <a role="button">
-                <i class="fa icon-uno"/>
+                <i className="fa icon-uno"/>
                 Databases and Storage
               </a>
   

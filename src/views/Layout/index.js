@@ -10,7 +10,8 @@ import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
 import './Layout.css';
-const json = require("json-loader!yaml-loader!./file.yml");
+const dataset = require('json-loader!./data/data1.json');
+
 
 
 class Layout extends Component {
@@ -27,6 +28,21 @@ class Layout extends Component {
     
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
+  }
+  
+  componentDidMount(){
+    this.loadData();
+  }
+  
+  loadData(){
+    const dataset= './data/data1.json';
+    import(dataset)
+    .then(({ dataset }) => {
+      console.log(dataset)
+    })
+    .catch(err => {
+      console.log('uups')
+    });
   }
   
   getClassNames() {
