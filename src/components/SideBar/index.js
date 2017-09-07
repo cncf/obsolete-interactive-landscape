@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import {Item} from 'semantic-ui-react';
+import {
+  Link
+} from 'react-router-dom';
 import './SideBar.css';
 
 
@@ -33,10 +36,18 @@ class SideBar extends Component {
     return data.map(i =>
  
       <li className={this.getClassNames()}>
-        <a role="button">
-          <i className="fa icon-uno"/>
-          {i.name}
-        </a>
+  
+        <Link
+          key={i.slug_name}
+          to={{
+            pathname: `/img/${i.slug_name}`,
+            // this is the trick!
+            state: {modal: true}
+          }}
+        >
+          <p>{i.name}</p>
+        </Link>
+        
         {this.renderSecondLevel(i)}
       </li>
       

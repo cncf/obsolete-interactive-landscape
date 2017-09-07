@@ -55,7 +55,7 @@
     {
       "category": null,
       "name": "Databases and APis",
-      "slug_name": "orchestration_and_management",
+      "slug_name": "databases_and_apis",
       "subcategories": [
         {
           "subcategory": null,
@@ -96,7 +96,7 @@
     {
       "category": null,
       "name": "Observabiulity Rules",
-      "slug_name": "orchestration_and_management",
+      "slug_name": 2,
       "subcategories": [
         {
           "subcategory": null,

@@ -39,7 +39,7 @@ landscape:
             cb_funds_raised: '$108M'
   - category:
     name: 'Databases and APis'
-    slug_name: orchestration_and_management
+    slug_name: databases_and_apis
     subcategories:
       - subcategory:
         name: 'SubCategory 2.1'
@@ -63,7 +63,7 @@ landscape:
           slug_name: sandia
   - category:
     name: 'Observabiulity Rules'
-    slug_name: orchestration_and_management
+    slug_name: 2
     subcategories:
       - subcategory:
         name: 'SubCategory 3.1'

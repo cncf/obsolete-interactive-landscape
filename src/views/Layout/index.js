@@ -88,9 +88,31 @@ class Layout extends Component {
     );
   }
   
-  categoryData(){
+  renderHome() {
   
+    const data= this.state.landscape;
+  
+    return(
+
+      <div>
+      {IMAGES.map(i => (
+        <Link
+          key={i.id}
+          to={{
+            pathname: `/img/${i.id}`,
+            // this is the trick!
+            state: {modal: true}
+          }}
+        >
+          <Thumbnail color={i.color}/>
+          <p>{i.title}</p>
+        </Link>
+      ))}
+      </div>
+
+    );
   }
+
   
   renderPanel(){
     
@@ -132,6 +154,9 @@ class Layout extends Component {
   }
   
   render() {
+  
+    const data= this.state.landscape;
+    
     const { location } = this.props
     const isModal = !!(
       location.state &&
@@ -139,14 +164,38 @@ class Layout extends Component {
       this.previousLocation !== location // not initial render
     )
     return (
-      <div>
-        <Switch location={isModal ? this.previousLocation : location}>
-          <Route exact path='/' component={Home}/>
-          <Route path='/gallery' component={Gallery}/>
-          <Route path='/img/:id' component={ImageView}/>
-        </Switch>
-        {isModal ? <Route path='/img/:id' component={Modal} /> : null}
-      </div>
+  
+        <div className="layout">
+          <div className="header_wrapper">
+            {this.renderHeader()}
+    
+          </div>
+          <div className={this.getClassNames()}>
+            <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+        
+              <SideBar data={data}>
+                {this.renderButton()}
+              </SideBar>
+            </div>
+            <div className="panel_wrapper">
+              
+              <Switch location={isModal ? this.previousLocation : location}>
+                <Route exact path='/' component={ItemsPanel}/>
+                <Route path='/filter' component={ResultsPanel}/>
+                <Route path='/home' component={Home}/>
+                <Route path='/gallery' component={Gallery}/>
+                <Route path='/img/:id' component={ImageView}/>
+              </Switch>
+              {isModal ? <Route path='/img/:id' component={Modal} /> : null}
+              
+              
+            </div>
+            <div className="filter_wrapper">
+              <Filter />
+            </div>
+          </div>
+        </div>
+ 
     )
   }
 
