@@ -2,6 +2,7 @@
     "extends": "airbnb",
     "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "react/prop-types":0
+      "react/prop-types":0,
+      "no-trailing-spaces": 0
     }
 }

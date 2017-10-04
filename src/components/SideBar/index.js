@@ -1,41 +1,8 @@
 import React, { Component } from 'react';
-// import classNames from 'classnames';
+import classNames from 'classnames';
 import { Item } from 'semantic-ui-react';
-import {
-  Link,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './SideBar.css';
-
-function renderSecondLevel(i) {
-  return i.subcategories.map(s =>
-    (<ul className="treeview-menu">
-      <li className="treeview" key="namehere" >
-        <Item>
-          <Item.Content as="a">
-            <i className="fa fa-holder" style={{ display: 'block' }} />
-            {s.name}
-            <span className="pull-right-container">
-              <i className="fa fa-angle-left pull-right" />
-            </span>
-          </Item.Content>
-        </Item>
-      </li>
-    </ul>),
-  );
-}
-
-// function renderThirdLevel(i){
-//
-//   return i.items.map(s =>
-//     (<ul className="treeview-menu level2  ">
-//       <li key="keynamehere">
-//         <a role="button">
-//           {s.name}
-//         </a>
-//       </li>
-//     </ul>),
-//   );
-// }
 
 class SideBar extends Component {
   constructor(props) {
@@ -48,18 +15,17 @@ class SideBar extends Component {
 
     this.getClassNames = this.getClassNames.bind(this);
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
-    this.renderSecondLevel = this.renderSecondLevel.bind(this);
   }
 
-  // getClassNames() {
-  //   const { selectedToActive } = this.state.collapsed;
-  //
-  //   return classNames('treeview', { active: true });
-  // }
+  getClassNames() {
+    const { selectedToActive } = this.state.collapsed;
+
+    return classNames('treeview', { active: true });
+  }
 
   renderFirstLevel() {
     const data = this.props.data.landscape;
-
+    
     return data.map(i =>
 
       (<li className={this.getClassNames()}>
@@ -75,11 +41,39 @@ class SideBar extends Component {
           <p>{i.name}</p>
         </Link>
 
-        {renderSecondLevel(i)}
+        {/* Second level */}
+        {i.subcategories.map(s =>
+          (<ul className="treeview-menu">
+            <li className="treeview" key="namehere" >
+              <Item>
+                <Item.Content as="a">
+                  <i className="fa fa-holder" style={{ display: 'block' }} />
+                  {s.name}
+                  <span className="pull-right-container">
+                    <i className="fa fa-angle-left pull-right" />
+                  </span>
+                </Item.Content>
+              </Item>
+            </li>
+          </ul>))
+        }
       </li>),
 
     );
   }
+  
+  //   renderThirdLevel(i){
+  //
+  //   return i.items.map(s =>
+  //     (<ul className="treeview-menu level2  ">
+  //       <li key="keynamehere">
+  //         <a role="button">
+  //           {s.name}
+  //         </a>
+  //       </li>
+  //     </ul>),
+  //   );
+  // }
 
   render() {
     return (
@@ -99,7 +93,6 @@ class SideBar extends Component {
     );
   }
 }
-
 
 export default SideBar;
 
