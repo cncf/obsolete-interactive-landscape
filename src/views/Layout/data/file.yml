@@ -8,8 +8,9 @@ landscape:
         slug_name: scheduling_and_orchestration
         items:
         - item:
-          name: Kubernetes
-          slug_name: kubernetes
+          name: Kubernetes 1.1.1
+          slug_name: kubernetes_111
+          id: 111
           company: CNCF
           cncf: true
           oss: true
@@ -23,8 +24,9 @@ landscape:
             resized_logo: http://res.cloudinary.com/demo/image/fetch/w_200,h_200,c_fit,f_png/https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/name_logo_color.png
             gh_stars: 26186
         - item:
-          name: Amazon ECS
-          slug_name: amazonecs
+          name: Amazon ECS 1.1.2
+          slug_name: amazonecs_112
+          id: 102
           company: AWS
           homepage_url: https://aws.amazon.com/ecs/
           external:
@@ -38,19 +40,22 @@ landscape:
             cb_employees: '10k +'
             cb_funds_raised: '$108M'
   - category:
-    name: 'Databases and APis'
-    slug_name: databases_and_apis
+    name: 'Databases'
+    slug_name: '3'
     subcategories:
       - subcategory:
         name: 'SubCategory 2.1'
         slug_name: scheduling_and_orchestration
+        id: 21
         items:
         - item:
           name: item2.1.1
           slug_name: orange
+          id: 211
         - item:
           name: item2.1.2
           slug_name: grapes
+          id: 212
       - subcategory:
         name: 'SubCategory 2.2'
         slug_name: scheduling_and_orchestration
@@ -58,23 +63,28 @@ landscape:
         - item:
           name: item2.2.1
           slug_name: melon
+          id: 221
         - item:
           name: item2.2.2
           slug_name: sandia
+          id: 222
   - category:
-    name: 'Observabiulity Rules'
-    slug_name: 2
+    name: 'Observability & Monitoring'
+    slug_name: 'observability_and_monitoring'
     subcategories:
       - subcategory:
         name: 'SubCategory 3.1'
         slug_name: scheduling_and_orchestration
+        id: 31
         items:
         - item:
           name: item3.1.1
           slug_name: orange
+          id: 311
         - item:
           name: item3.1.2
           slug_name: grapes
+          id: 312
       - subcategory:
         name: 'SubCategory 3.2'
         slug_name: scheduling_and_orchestration
@@ -82,30 +92,38 @@ landscape:
         - item:
           name: item3.2.1
           slug_name: melon
+          id: 321
         - item:
           name: item3.2.2
           slug_name: sandia
+          id: 322
   - category:
     name: 'Landscape Fans'
     slug_name: orchestration_and_management
     subcategories:
       - subcategory:
-        name: 'SubCategory 3.1'
+        name: 'SubCategory 4.1'
         slug_name: scheduling_and_orchestration
+        id: 41
         items:
         - item:
-          name: item3.1.1
+          name: item4.1.1
           slug_name: orange
+          id: 411
         - item:
-          name: item3.1.2
+          name: item4.1.2
           slug_name: grapes
+          id: 412
       - subcategory:
-        name: 'SubCategory 3.2'
+        name: 'SubCategory 4.2'
         slug_name: scheduling_and_orchestration
+        id: 42
         items:
         - item:
-          name: item3.2.1
+          name: item4.2.1
           slug_name: melon
+          id: 421
         - item:
-          name: item3.2.2
+          name: item4.2.2
           slug_name: sandia
+          id: 422

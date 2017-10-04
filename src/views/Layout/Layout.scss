@@ -39,7 +39,7 @@
 //SIDENAV
 .panel_wrapper {
   min-height: 50%;
-  z-index: 800;
+  //z-index: 800;
   height: 90%!important;
   position: relative !important;
   padding: 10px 10px 0 0;
@@ -69,7 +69,7 @@
   overflow: hidden;
   min-height: 100%;
   width: 230px;
-  z-index: 810;
+  //z-index: 810;
   -webkit-transition: -webkit-transform .3s ease-in-out, width .3s ease-in-out;
   -moz-transition: -moz-transform .3s ease-in-out, width .3s ease-in-out;
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;

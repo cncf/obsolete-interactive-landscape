@@ -45,7 +45,7 @@ class Layout extends Component {
   previousLocation = this.props.location;
   
   componentWillUpdate(nextProps) {
-    const { location } = this.props
+    const { location } = this.props;
     // set previousLocation if props.location is not modal
     if (
       nextProps.history.action !== 'POP' &&
@@ -88,31 +88,29 @@ class Layout extends Component {
     );
   }
   
-  renderHome() {
-  
-    const data= this.state.landscape;
-  
-    return(
-
-      <div>
-      {IMAGES.map(i => (
-        <Link
-          key={i.id}
-          to={{
-            pathname: `/img/${i.id}`,
-            // this is the trick!
-            state: {modal: true}
-          }}
-        >
-          <Thumbnail color={i.color}/>
-          <p>{i.title}</p>
-        </Link>
-      ))}
-      </div>
-
-    );
-  }
-
+  // renderHome() {
+  //
+  //   const data= this.state.landscape;
+  //   return(
+  //
+  //     <div>
+  //     {IMAGES.map(i => (
+  //       <Link
+  //         key={i.id}
+  //         to={{
+  //           pathname: `/img/${i.id}`,
+  //           // this is the trick!
+  //           state: {modal: true}
+  //         }}
+  //       >
+  //         <Thumbnail color={i.color}/>
+  //         <p>{i.title}</p>
+  //       </Link>
+  //     ))}
+  //     </div>
+  //
+  //   );
+  // }
   
   renderPanel(){
     
@@ -123,46 +121,45 @@ class Layout extends Component {
     
   }
   
-  renderdos() {
-    
-    const data= this.state.landscape;
-
-    
-    return (
-      <div className="layout">
-        <div className="header_wrapper">
-          {this.renderHeader()}
-          
-        </div>
-        <div className={this.getClassNames()}>
-          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-            
-            <SideBar data={data}>
-              {this.renderButton()}
-            </SideBar>
-          </div>
-          <div className="panel_wrapper">
-            {this.renderPanel()}
-          </div>
-          <div className="filter_wrapper">
-            <Filter />
-          </div>
-        </div>
-      </div>
-    
-    );
-  }
+  // renderdos() {
+  //
+  //   const data= this.state.landscape;
+  //
+  //   return (
+  //     <div className="layout">
+  //       <div className="header_wrapper">
+  //         {this.renderHeader()}
+  //
+  //       </div>
+  //       <div className={this.getClassNames()}>
+  //         <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+  //
+  //           <SideBar data={data}>
+  //             {this.renderButton()}
+  //           </SideBar>
+  //         </div>
+  //         <div className="panel_wrapper">
+  //           {this.renderPanel()}
+  //         </div>
+  //         <div className="filter_wrapper">
+  //           <Filter />
+  //         </div>
+  //       </div>
+  //     </div>
+  //
+  //   );
+  // }
   
   render() {
   
     const data= this.state.landscape;
     
-    const { location } = this.props
+    const { location } = this.props;
     const isModal = !!(
       location.state &&
       location.state.modal &&
       this.previousLocation !== location // not initial render
-    )
+    );
     return (
   
         <div className="layout">
@@ -184,9 +181,9 @@ class Layout extends Component {
                 <Route path='/filter' component={ResultsPanel}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/gallery' component={Gallery}/>
-                <Route path='/img/:id' component={ImageView}/>
+                <Route path='/:id' component={ImageView}/>
               </Switch>
-              {isModal ? <Route path='/img/:id' component={Modal} /> : null}
+              
               
               
             </div>
@@ -194,6 +191,7 @@ class Layout extends Component {
               <Filter />
             </div>
           </div>
+          {isModal ? <Route path='/:id' component={Modal} /> : null}
         </div>
  
     )
@@ -203,37 +201,37 @@ class Layout extends Component {
 
 
 const IMAGES = [
-  { id: 0, title: 'Dark Orchid', color: 'DarkOrchid' },
-  { id: 1, title: 'Lime Green', color: 'LimeGreen' },
-  { id: 2, title: 'Tomato', color: 'Tomato' },
-  { id: 3, title: 'Seven Ate Nine', color: '#789' },
-  { id: 4, title: 'Crimson', color: 'Crimson' }
-]
+  { id: 0, title: 'Orchestration & management', color: 'purple',slug_name:'orchestration_and_management' },
+  { id: 1, title: 'Databases', color: 'green',slug_name:'databases' },
+  { id: 2, title: 'Observability & Monitoring', color:'orange', slug_name: 'observability_and_monitoring' },
+  { id: 3, title: 'Seven Ate Nine', color: '#789', slug_name:'other1' },
+  { id: 4, title: 'Crimson', color: 'Crimson',slug_name:'other2'  }
+];
 
 const Thumbnail = ({ color }) =>
   <div style={{
     width: 50,
     height: 50,
     background: color
-  }}/>
+  }}/>;
 
 const Image = ({ color }) =>
   <div style={{
     width: '100%',
     height: 400,
     background: color
-  }}/>
+  }}/>;
 
 const Home = () => (
   <div>
     <Link to='/gallery'>Visit the Gallery</Link>
     <h2>Featured Images</h2>
     <ul>
-      <li><Link to='/img/2'>Tomato</Link></li>
-      <li><Link to='/img/4'>Crimson</Link></li>
+      <li><Link to='/orchestration_and_management'>Tomato</Link></li>
+      <li><Link to='/'>Crimson</Link></li>
     </ul>
   </div>
-)
+);
 
 const Gallery = () => (
   <div>
@@ -241,7 +239,7 @@ const Gallery = () => (
       <Link
         key={i.id}
         to={{
-          pathname: `/img/${i.id}`,
+          pathname: `/${i.id}`,
           // this is the trick!
           state: { modal: true }
         }}
@@ -251,10 +249,10 @@ const Gallery = () => (
       </Link>
     ))}
   </div>
-)
+);
 
 const ImageView = ({ match }) => {
-  const image = IMAGES[parseInt(match.params.id, 10)]
+  const image = IMAGES[parseInt(match.params.id, 10)];
   if (!image) {
     return <div>Image not found</div>
   }
@@ -265,17 +263,17 @@ const ImageView = ({ match }) => {
       <Image color={image.color} />
     </div>
   )
-}
+};
 
 const Modal = ({ match, history }) => {
-  const image = IMAGES[parseInt(match.params.id, 10)]
+  const image = IMAGES[parseInt(match.params.id, 10)];
   if (!image) {
-    return null
+    // return null
   }
   const back = (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     history.goBack()
-  }
+  };
   return (
     <div
       onClick={back}
@@ -305,13 +303,13 @@ const Modal = ({ match, history }) => {
       </div>
     </div>
   )
-}
+};
 
 const ModalGallery = () => (
   <Router>
     <Route component={Layout} />
   </Router>
-)
+);
 
 
 export default ModalGallery;
