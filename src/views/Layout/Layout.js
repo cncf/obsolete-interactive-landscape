@@ -224,33 +224,33 @@ const CategoryView = ({ cat }) => {
   
   return (
 
-  <div id="module7" class="module element-anchor7">
-    <div class="ico-infr ico-background">
+  <div id="module7" className="module element-anchor7">
+    <div className="ico-infr ico-background">
     </div>
-    <div class="stillbox">
-      <div class="box-2 category-box-7">
-        <h2 class="category-title-7 categ-big">
-          <div class="ico-infr ico-medium"></div>
+    <div className="stillbox">
+      <div className="box-2 category-box-7">
+        <h2 className="category-title-7 categ-big">
+          <div className="ico-infr ico-medium"/>
           {category.name}
         </h2>
-        <p class="categ-brief">
+        <p className="categ-brief">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam.
         </p>
-        <div class="companies-6 companies">
-          <div class="box-items6-0 box-itemsDISABLED">
+        <div className="companies-6 companies">
+          <div className="box-items6-0 box-itemsDISABLED">
             {subCategories.map(i => (
               <Link
                 key={i.id}
                 to={{
-                  pathname: `/${category.name}/${i.id}`,
+                  pathname: `/${category.slug_name}/${i.id}`,
                   // this is the trick!
                   state: { modal: true }
                 }}
               >
-                <h5 class="subcateg categ-color6">
-                  <i class="caret right icon"></i>{i.name}
+                <h5 className="subcateg categ-color6">
+                  <i className="caret right icon"/>{i.name}
                 </h5>
               </Link>
             ))}
@@ -273,9 +273,45 @@ const SubCategoryView = ({ cat, match }) => {
   
   return (
     <div>
-      parent: {category.name}
-      <div>
-        <p>{subCategory.name}</p>
+      <div id="module6-0" className="module element-anchor6-0">
+        <span>
+          <div className="ico-prov ico-background"/>
+        </span>
+        <div className="stillbox">
+          <Link to={{ pathname: `/${category.slug_name}`}}>
+            <h2 className="category-title-6 categ">
+              <div className="ico-prov ico-small"/>
+              {category.name}
+            </h2>
+          </Link>
+          
+          <div className="box-2">
+            <h1 className="categ-color6">
+              {subCategory.name}
+            </h1>
+            <div className="category-detail6-0  box-items categ-color6">
+              
+              {subCategory.items.map(i =>(
+                <div id="modal-6-0-0" className="item item-6-0-0 c-tooltip">
+                  <h4 className="company" data-placement="top" title="Bosch">
+                  </h4>
+                  <div className="company-name">
+                    {i.name} xx
+                  </div>
+                </div>
+              ))}
+            </div>
+            <Link
+              to={{
+                pathname: `/${category.slug_name}`,
+                // this is the trick!
+                state: { modal: true }
+              }}
+            >
+              <i className="arrow left icon"/> Back to {category.name}
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

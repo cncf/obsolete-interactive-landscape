@@ -12,6 +12,7 @@
           "subcategory": null,
           "name": "cloud SubCategory 1.1",
           "slug_name": "scheduling_and_orchestration",
+          "id": 0,
           "items": [
             {
               "item": null,
