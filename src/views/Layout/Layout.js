@@ -7,6 +7,7 @@ import {
   Link
 } from 'react-router-dom';
 import classNames from 'classnames'
+import { parse } from 'qs'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
@@ -108,7 +109,6 @@ class Layout extends Component {
   //       </Link>
   //     ))}
   //     </div>
-  //
   //   );
   // }
   
@@ -120,6 +120,7 @@ class Layout extends Component {
     return <ResultsPanel className="results__panel"/>
     
   }
+  
   
   // renderdos() {
   //
@@ -169,29 +170,28 @@ class Layout extends Component {
           </div>
           <div className={this.getClassNames()}>
             <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-        
+              {/* sidebar receives json data */}
               <SideBar data={data}>
                 {this.renderButton()}
               </SideBar>
             </div>
             <div className="panel_wrapper">
               
-              <Switch location={isModal ? this.previousLocation : location}>
+              {/*<Switch location={isModal ? this.previousLocation : location}>*/}
+              <Switch>
                 <Route exact path='/' component={ItemsPanel}/>
                 <Route path='/filter' component={ResultsPanel}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/gallery' component={Gallery}/>
-                <Route path='/:id' component={ImageView}/>
+                <Route path='/:title' component={ImageView}/>
               </Switch>
-              
-              
               
             </div>
             <div className="filter_wrapper">
               <Filter />
             </div>
           </div>
-          {isModal ? <Route path='/:id' component={Modal} /> : null}
+          {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}
         </div>
  
     )
@@ -199,13 +199,15 @@ class Layout extends Component {
 
 }
 
-
-const IMAGES = [
-  { id: 0, title: 'Orchestration & management', color: 'purple',slug_name:'orchestration_and_management' },
-  { id: 1, title: 'Databases', color: 'green',slug_name:'databases' },
-  { id: 2, title: 'Observability & Monitoring', color:'orange', slug_name: 'observability_and_monitoring' },
-  { id: 3, title: 'Seven Ate Nine', color: '#789', slug_name:'other1' },
-  { id: 4, title: 'Crimson', color: 'Crimson',slug_name:'other2'  }
+//This is the middleman between Dataset and Router
+const CATEGORIES = [
+  { title: 'public_cloud', color: 'purple'},
+  { title: 'provisioning', color: 'green'},
+  { title: 'runtime', color:'orange'},
+  { title: 'orchestration', color: '#789'},
+  { title: 'appdefinition', color: 'Crimson'},
+  { title: 'platform', color: 'blue'},
+  { title: 'observability', color: 'yellow'}
 ];
 
 const Thumbnail = ({ color }) =>
@@ -225,7 +227,7 @@ const Image = ({ color }) =>
 const Home = () => (
   <div>
     <Link to='/gallery'>Visit the Gallery</Link>
-    <h2>Featured Images</h2>
+    <h2>Featured Imagesxx</h2>
     <ul>
       <li><Link to='/orchestration_and_management'>Tomato</Link></li>
       <li><Link to='/'>Crimson</Link></li>
@@ -235,7 +237,7 @@ const Home = () => (
 
 const Gallery = () => (
   <div>
-    {IMAGES.map(i => (
+    {CATEGORIES.map(i => (
       <Link
         key={i.id}
         to={{
@@ -251,10 +253,15 @@ const Gallery = () => (
   </div>
 );
 
+
 const ImageView = ({ match }) => {
-  const image = IMAGES[parseInt(match.params.id, 10)];
+  const image = CATEGORIES[match.params.id];
+  // const image = IMAGES[parseInt(match.params.id, 10)];
+  //const image = CATEGORIES[match.params.id];
+  console.log(image);
   if (!image) {
     return <div>Image not found</div>
+    
   }
   
   return (
@@ -266,7 +273,9 @@ const ImageView = ({ match }) => {
 };
 
 const Modal = ({ match, history }) => {
-  const image = IMAGES[parseInt(match.params.id, 10)];
+  //const image = CATEGORIES[match.params.title];
+  //const image = IMAGES[parseInt(match.params.id, 10)];
+  const image = CATEGORIES[match.params.id];
   if (!image) {
     // return null
   }
@@ -295,8 +304,8 @@ const Modal = ({ match, history }) => {
         padding: 15,
         border: '2px solid #444'
       }}>
+        {console.log(image)}
         <h1>{image.title}</h1>
-        <Image color={image.color} />
         <button type='button' onClick={back}>
           Close
         </button>
