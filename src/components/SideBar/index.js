@@ -31,9 +31,9 @@ class SideBar extends Component {
       (<li className={this.getClassNames()}>
 
         <Link
-          key={i.slug_name}
+          key={i.id}
           to={{
-            pathname: `/${i.id}`,
+            pathname: `/${i.slug_name}`,
             // this is the trick!
             state: { modal: true },
           }}
@@ -46,13 +46,21 @@ class SideBar extends Component {
           (<ul className="treeview-menu">
             <li className="treeview" key="namehere" >
               <Item>
-                <Item.Content as="a">
+                <Link
+                  key={s.id}
+                  to={{
+                    pathname: `/${i.slug_name}/${s.id}`,
+                    // this is the trick!
+                    state: { modal: true },
+                  }}
+                >
                   <i className="fa fa-holder" style={{ display: 'block' }} />
                   {s.name}
                   <span className="pull-right-container">
                     <i className="fa fa-angle-left pull-right" />
                   </span>
-                </Item.Content>
+                </Link>
+                
               </Item>
             </li>
           </ul>))
