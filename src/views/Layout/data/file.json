@@ -2,8 +2,11 @@
   "landscape": [
     {
       "category": null,
-      "name": "Public Clouder",
-      "slug_name": 0,
+      "name": "Public Cloud",
+      "slug_name": "public_cloud",
+      "id":0,
+      "title":"Nube publica",
+      "color":"red",
       "subcategories": [
         {
           "subcategory": null,
@@ -58,6 +61,9 @@
       "category": null,
       "name": "Provisioning",
       "slug_name": "provisioning",
+      "id":1,
+      "title":"Provisionamientox",
+      "color":"orange",
       "subcategories": [
         {
           "subcategory": null,
@@ -103,7 +109,8 @@
     {
       "category": null,
       "name": "Runtime",
-      "slug_name": 2,
+      "slug_name": "runtime",
+      "id":2,
       "subcategories": [
         {
           "subcategory": null,
@@ -149,7 +156,8 @@
     {
       "category": null,
       "name": "Orchestration",
-      "slug_name": 3,
+      "slug_name": "orchestration",
+      "id":3,
       "subcategories": [
         {
           "subcategory": null,

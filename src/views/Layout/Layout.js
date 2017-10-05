@@ -13,6 +13,7 @@ import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
+import Category from './Category';
 
 import dataSet from './data/file.json';
 
@@ -35,6 +36,7 @@ class Layout extends Component {
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
     this.updateState = this.updateState.bind(this);
+    this.renderCategory = this.renderCategory.bind(this);
   }
   
   componentWillMount(){
@@ -150,6 +152,16 @@ class Layout extends Component {
   //
   //   );
   // }
+  renderCategory (number){
+    const category = this.state.landscape.landscape[3];
+    console.log(category);
+  
+    return (
+      <div>
+        {category.name} + 3
+      </div>
+    )
+  }
   
   render() {
   
@@ -161,6 +173,9 @@ class Layout extends Component {
       location.state.modal &&
       this.previousLocation !== location // not initial render
     );
+    const category = this.state.landscape.landscape;
+    
+    
     return (
   
         <div className="layout">
@@ -170,7 +185,7 @@ class Layout extends Component {
           </div>
           <div className={this.getClassNames()}>
             <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-              {/* sidebar receives json data */}
+             
               <SideBar data={data}>
                 {this.renderButton()}
               </SideBar>
@@ -183,7 +198,7 @@ class Layout extends Component {
                 <Route path='/filter' component={ResultsPanel}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/gallery' component={Gallery}/>
-                <Route path='/:title' component={ImageView}/>
+                <Route path='/:id' component={CategoryView}/>
               </Switch>
               
             </div>
@@ -199,16 +214,8 @@ class Layout extends Component {
 
 }
 
-//This is the middleman between Dataset and Router
-const CATEGORIES = [
-  { title: 'public_cloud', color: 'purple'},
-  { title: 'provisioning', color: 'green'},
-  { title: 'runtime', color:'orange'},
-  { title: 'orchestration', color: '#789'},
-  { title: 'appdefinition', color: 'Crimson'},
-  { title: 'platform', color: 'blue'},
-  { title: 'observability', color: 'yellow'}
-];
+
+const CATEGORIES = dataSet.landscape;
 
 const Thumbnail = ({ color }) =>
   <div style={{
@@ -247,27 +254,31 @@ const Gallery = () => (
         }}
       >
         <Thumbnail color={i.color} />
-        <p>{i.title}</p>
+        <p>{i.name}</p>
       </Link>
     ))}
   </div>
 );
 
+const returnValue = ({ match }) => {
+  const value = match.params.id;
+    return value;
+};
 
-const ImageView = ({ match }) => {
-  const image = CATEGORIES[match.params.id];
-  // const image = IMAGES[parseInt(match.params.id, 10)];
-  //const image = CATEGORIES[match.params.id];
-  console.log(image);
-  if (!image) {
+
+const CategoryView = ({ match }) => {
+  // const image = CATEGORIES[match.params.title];
+  //const image = IMAGES[parseInt(match.params.id, 10)];
+  const cat = CATEGORIES[match.params.id];
+  if (!cat) {
     return <div>Image not found</div>
-    
   }
   
   return (
     <div>
-      <h1>{image.title}</h1>
-      <Image color={image.color} />
+      <h1>{cat.name}</h1>
+      <h3>{cat.slug_name}</h3>
+      <Image color={cat.color} />
     </div>
   )
 };
@@ -304,8 +315,7 @@ const Modal = ({ match, history }) => {
         padding: 15,
         border: '2px solid #444'
       }}>
-        {console.log(image)}
-        <h1>{image.title}</h1>
+        <h1>{image.name}</h1>
         <button type='button' onClick={back}>
           Close
         </button>
