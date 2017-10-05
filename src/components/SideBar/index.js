@@ -33,7 +33,7 @@ class SideBar extends Component {
         <Link
           key={i.slug_name}
           to={{
-            pathname: `/${i.slug_name}`,
+            pathname: `/${i.id}`,
             // this is the trick!
             state: { modal: true },
           }}

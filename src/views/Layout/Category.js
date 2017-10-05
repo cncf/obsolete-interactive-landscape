@@ -13,9 +13,7 @@ class Category extends Component {
   render() {
     return (
       <div>
-        <h1>This is Category</h1>
-        <h5>aloha {this.props.data[1].name}</h5>
-        
+        <h1>This is Category component</h1>
       </div>
     );
   }

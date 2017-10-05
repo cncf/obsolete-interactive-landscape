@@ -90,68 +90,7 @@ class Layout extends Component {
       </Menu.Item>
     );
   }
-  
-  // renderHome() {
-  //
-  //   const data= this.state.landscape;
-  //   return(
-  //
-  //     <div>
-  //     {IMAGES.map(i => (
-  //       <Link
-  //         key={i.id}
-  //         to={{
-  //           pathname: `/img/${i.id}`,
-  //           // this is the trick!
-  //           state: {modal: true}
-  //         }}
-  //       >
-  //         <Thumbnail color={i.color}/>
-  //         <p>{i.title}</p>
-  //       </Link>
-  //     ))}
-  //     </div>
-  //   );
-  // }
-  
-  renderPanel(){
-    
-    if(this.state.panel === 'items'){
-      return <ItemsPanel/> ;
-    }
-    return <ResultsPanel className="results__panel"/>
-    
-  }
-  
-  
-  // renderdos() {
-  //
-  //   const data= this.state.landscape;
-  //
-  //   return (
-  //     <div className="layout">
-  //       <div className="header_wrapper">
-  //         {this.renderHeader()}
-  //
-  //       </div>
-  //       <div className={this.getClassNames()}>
-  //         <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-  //
-  //           <SideBar data={data}>
-  //             {this.renderButton()}
-  //           </SideBar>
-  //         </div>
-  //         <div className="panel_wrapper">
-  //           {this.renderPanel()}
-  //         </div>
-  //         <div className="filter_wrapper">
-  //           <Filter />
-  //         </div>
-  //       </div>
-  //     </div>
-  //
-  //   );
-  // }
+
   renderCategory (number){
     const category = this.state.landscape.landscape[3];
     console.log(category);
@@ -175,7 +114,6 @@ class Layout extends Component {
     );
     const category = this.state.landscape.landscape;
     
-    
     return (
   
         <div className="layout">
@@ -198,7 +136,22 @@ class Layout extends Component {
                 <Route path='/filter' component={ResultsPanel}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/gallery' component={Gallery}/>
-                <Route path='/:id' component={CategoryView}/>
+  
+                <Route path='/public_cloud/:id' render={props =>
+                  <SubCategoryView cat={0} {...props} />
+                } />
+                <Route path='/public_cloud' render={props =>
+                  <CategoryView cat={0} {...props} />
+                } />
+                
+                
+                <Route path='/orchestration/:id' render={props =>
+                  <SubCategoryView cat={3} {...props} />
+                } />
+                <Route path='/orchestration' render={props =>
+                  <CategoryView cat={3} {...props} />
+                } />
+                
               </Switch>
               
             </div>
@@ -260,28 +213,49 @@ const Gallery = () => (
   </div>
 );
 
-const returnValue = ({ match }) => {
-  const value = match.params.id;
-    return value;
-};
 
-
-const CategoryView = ({ match }) => {
-  // const image = CATEGORIES[match.params.title];
-  //const image = IMAGES[parseInt(match.params.id, 10)];
-  const cat = CATEGORIES[match.params.id];
-  if (!cat) {
-    return <div>Image not found</div>
+const CategoryView = ({ cat }) => {
+  const category = CATEGORIES[cat];
+  const subCategories = category.subcategories;
+  
+  if (!category) {
+    return <div>No Category called like that</div>
   }
   
   return (
     <div>
-      <h1>{cat.name}</h1>
-      <h3>{cat.slug_name}</h3>
-      <Image color={cat.color} />
+      This is + {category.name}
+      <hr/>
+  
+      {subCategories.map(i => (
+      <div>
+        <p>{i.name}</p>
+        <Category/>
+      </div>
+      ))}
+      
     </div>
   )
 };
+
+const SubCategoryView = ({ cat, match }) => {
+  const category = CATEGORIES[cat];
+  const subCategory = category.subcategories[match.params.id];
+  
+  if (!subCategory) {
+    return <div>No Sub Category called like that</div>
+  }
+  
+  return (
+    <div>
+      parent: {category.name}
+      <div>
+        <p>{subCategory.name}</p>
+      </div>
+    </div>
+  )
+};
+
 
 const Modal = ({ match, history }) => {
   //const image = CATEGORIES[match.params.title];
