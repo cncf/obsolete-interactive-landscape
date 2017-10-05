@@ -163,7 +163,7 @@
           "subcategory": null,
           "name": "SubCategory 4.1",
           "slug_name": "scheduling_and_orchestration",
-          "id": 41,
+          "id": 0,
           "items": [
             {
               "item": null,
@@ -183,7 +183,7 @@
           "subcategory": null,
           "name": "SubCategory 4.2",
           "slug_name": "scheduling_and_orchestration",
-          "id": 42,
+          "id": 1,
           "items": [
             {
               "item": null,

@@ -223,18 +223,43 @@ const CategoryView = ({ cat }) => {
   }
   
   return (
-    <div>
-      This is + {category.name}
-      <hr/>
-  
-      {subCategories.map(i => (
-      <div>
-        <p>{i.name}</p>
-        <Category/>
-      </div>
-      ))}
-      
+
+  <div id="module7" class="module element-anchor7">
+    <div class="ico-infr ico-background">
     </div>
+    <div class="stillbox">
+      <div class="box-2 category-box-7">
+        <h2 class="category-title-7 categ-big">
+          <div class="ico-infr ico-medium"></div>
+          {category.name}
+        </h2>
+        <p class="categ-brief">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam.
+        </p>
+        <div class="companies-6 companies">
+          <div class="box-items6-0 box-itemsDISABLED">
+            {subCategories.map(i => (
+              <Link
+                key={i.id}
+                to={{
+                  pathname: `/${category.name}/${i.id}`,
+                  // this is the trick!
+                  state: { modal: true }
+                }}
+              >
+                <h5 class="subcateg categ-color6">
+                  <i class="caret right icon"></i>{i.name}
+                </h5>
+              </Link>
+            ))}
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   )
 };
 
