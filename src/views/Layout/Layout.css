@@ -100,9 +100,16 @@
         background: rgba(0, 0, 0, 0.03); }
       .sidebar_wrapper .sidebar-menu > li > a {
         border-left: 7px solid #bfcfda;
-        padding: 10px 5px 10px 35px;
-        display: block;
-        font-size: 1em; }
+        padding: 5px 5px 5px 15px;
+        display: flex;
+        font-size: 1em;
+        justify-content: space-between;
+        align-items: center; }
+        .sidebar_wrapper .sidebar-menu > li > a > div {
+          display: flex;
+          flex: 1; }
+          .sidebar_wrapper .sidebar-menu > li > a > div span {
+            padding-left: 10px; }
         .sidebar_wrapper .sidebar-menu > li > a > .fa, .sidebar_wrapper .sidebar-menu > li > a > li > a > .glyphicon, .sidebar_wrapper .sidebar-menu > li > a > li > a > .ion {
           text-align: center; }
         .sidebar_wrapper .sidebar-menu > li > a > .fa,
@@ -131,14 +138,12 @@
       transform: rotate(-90deg); }
     .sidebar_wrapper .sidebar-menu li.active > .treeview-menu {
       display: block;
-      padding-left: 10px; }
+      padding-left: 30px; }
     .sidebar_wrapper .sidebar-menu .treeview-menu {
       display: none;
       list-style: none;
       padding: 0;
-      margin: 0;
-      padding-left: 15px;
-      padding-bottom: 8px; }
+      margin: 0; }
       .sidebar_wrapper .sidebar-menu .treeview-menu > li > a {
         padding: 1px 0 1px 5px;
         display: block;
@@ -156,7 +161,7 @@
         .sidebar_wrapper .sidebar-menu .treeview-menu > li > a > .fa-angle-down {
           width: auto; }
     .sidebar_wrapper .sidebar-menu .treeview:last-child, .sidebar_wrapper .sidebar-menu .treeview:only-child {
-      padding-bottom: 10px; }
+      padding-bottom: 1px; }
     .sidebar_wrapper .sidebar-menu .treeview.active .pull-right-container i {
       -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -273,7 +278,7 @@
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
     width: 50px !important;
-    background-color: #ff00ff; }
+    background-color: rgba(255, 255, 255, 0.5); }
     .content_wrapper.collapse .sidebar_wrapper .sidebar-menu > li > a {
       border-left-width: 3px;
       padding: 10px 5px 10px 15px;
@@ -293,12 +298,11 @@
   .content_wrapper.collapse .sidebar-menu > li > a > span {
     display: none !important; }
   .content_wrapper.collapse .sidebar-menu > li > .treeview-menu {
-    padding-top: 5px;
-    padding-bottom: 5px;
     border-bottom-right-radius: 4px;
     position: fixed;
-    top: 0;
     right: 100px;
     display: none; }
     .content_wrapper.collapse .sidebar-menu > li > .treeview-menu a {
-      display: none; } }
+      display: none; }
+  .content_wrapper.collapse .sidebar-menu > li > a > div span {
+    display: none; } }

@@ -61,10 +61,6 @@
 }
 
 
-
-
-
-
 .sidebar_wrapper {
   position: absolute;
   left: 0;
@@ -158,9 +154,19 @@
       }
       & > a {
         border-left: 7px solid #bfcfda;
-        padding: 10px 5px 10px 35px;
-        display: block;
+        padding: 5px 5px 5px 15px;
+        display: flex;
         font-size: 1em;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div{
+          display: flex;
+          flex: 1;
+          span{
+            padding-left:10px;
+          }
+        }
 
         & > .fa, > li > a > .glyphicon, > li > a > .ion {
           text-align: center;
@@ -205,7 +211,7 @@
 
     li.active > .treeview-menu {
       display: block;
-      padding-left: 10px;
+      padding-left: 30px;
     }
 
     .treeview-menu {
@@ -213,9 +219,6 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      padding-left: 15px;
-      padding-bottom:8px;
-
       & > li {
 
         & > a {
@@ -250,7 +253,7 @@
 
 
       &:last-child, &:only-child {
-        padding-bottom: 10px;
+        padding-bottom: 1px;
       }
 
 
@@ -447,7 +450,7 @@
       -o-transform: translate(0, 0);
       transform: translate(0, 0);
       width: 50px !important;
-      background-color: #ff00ff;
+      background-color: rgba(255,255,255,0.5);
 
       .sidebar-menu > li > a {
         border-left-width:3px;
@@ -478,19 +481,19 @@
     }
 
     .sidebar-menu>li>.treeview-menu {
-      padding-top: 5px;
-      padding-bottom: 5px;
       border-bottom-right-radius: 4px;
       position: fixed;
-      top:0;
       right:100px;
       display:none;
-
+      //dissapear when closing
       a{
         display: none;
       }
 
 
+    }
+    .sidebar-menu > li > a > div span {
+      display: none;
     }
 
   }

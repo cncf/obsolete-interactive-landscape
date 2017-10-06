@@ -37,8 +37,11 @@ class SideBar extends Component {
             state: { modal: true },
           }}
         >
-          <Iconator icon={i.slug_name} size="s" />
-          <p>{i.name}</p>
+          <div>
+            <Iconator icon={i.slug_name} size="s" />
+            <span>{i.name}</span>
+          </div>
+          
           {i.subcategories.length ?
             <span className="pull-right-container">
               <Icon disabled name="angle left"/>
@@ -59,11 +62,9 @@ class SideBar extends Component {
                     state: { modal: true },
                   }}
                 >
-                  <i className="fa fa-holder" style={{ display: 'block' }} />
+                  
                   {s.name}
-                  <span className="pull-right-container">
-                    <i className="fa fa-angle-left pull-right" />
-                  </span>
+                  
                 </Link>
                 
               </Item>

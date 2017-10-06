@@ -1,41 +1,43 @@
 /*PHONE*/
 @media only screen {
-  .iconator .icon_medium, .iconator .icon_small, .iconator .icon_large {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: inline-block;
-    margin: 0 10px -10px 0; }
-  .iconator .icon_medium {
-    width: 50px;
-    height: 50px; }
-  .iconator .icon_small {
-    width: 20px;
-    height: 20px; }
-  .iconator .icon_apis {
-    background-image: url(./icons/ico_apis.png); }
-  .iconator .icon_data {
-    background-image: url(./icons/ico_data.png); }
-  .iconator .icon_deve {
-    background-image: url(./icons/ico_deve.png); }
-  .iconator .icon_infr {
-    background-image: url(./icons/ico_infr.png); }
-  .iconator .icon_obse {
-    background-image: url(./icons/ico_obse.png); }
-  .iconator .icon_orch {
-    background-image: url(./icons/ico_orch.png); }
-  .iconator .icon_plat {
-    background-image: url(./icons/ico_plat.png); }
-  .iconator .icon_prov {
-    background-image: url(./icons/ico_prov.png); }
-  .iconator .icon_runt {
-    background-image: url(./icons/ico_runt.png); }
-  .iconator .icon_background {
-    position: fixed;
-    min-width: 600px;
-    height: 600px;
-    padding-right: 15px;
-    left: -300px;
-    opacity: 0.1; } }
+  .iconator {
+    display: inline-block; }
+    .iconator .icon_medium, .iconator .icon_small, .iconator .icon_large {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: inline-block;
+      display: flex; }
+    .iconator .icon_medium {
+      width: 50px;
+      height: 50px; }
+    .iconator .icon_small {
+      width: 20px;
+      height: 20px; }
+    .iconator .icon_apis {
+      background-image: url(./icons/ico_apis.png); }
+    .iconator .icon_data {
+      background-image: url(./icons/ico_data.png); }
+    .iconator .icon_deve {
+      background-image: url(./icons/ico_deve.png); }
+    .iconator .icon_infr {
+      background-image: url(./icons/ico_infr.png); }
+    .iconator .icon_obse {
+      background-image: url(./icons/ico_obse.png); }
+    .iconator .icon_orch {
+      background-image: url(./icons/ico_orch.png); }
+    .iconator .icon_plat {
+      background-image: url(./icons/ico_plat.png); }
+    .iconator .icon_prov {
+      background-image: url(./icons/ico_prov.png); }
+    .iconator .icon_runt {
+      background-image: url(./icons/ico_runt.png); }
+    .iconator .icon_background {
+      position: fixed;
+      min-width: 600px;
+      height: 600px;
+      padding-right: 15px;
+      left: -300px;
+      opacity: 0.1; } }
 
 /*TABLET*/
 /*DESKTOP*/
