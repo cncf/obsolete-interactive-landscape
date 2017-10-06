@@ -10,7 +10,7 @@
 
 
 /*******************************
-             Modal
+             ItemModal
 *******************************/
 
 .ui.modal {
@@ -183,7 +183,7 @@
 --------------------*/
 
 
-/* Modal Width */
+/* ItemModal Width */
 @media only screen and (max-width: 767px) {
   .ui.modal {
     width: 95%;
@@ -433,7 +433,7 @@
   font-size: 1.3em;
 }
 
-/* Mini Modal Width */
+/* Mini ItemModal Width */
 @media only screen and (max-width: 767px) {
   .ui.mini.modal {
     width: 95%;
@@ -470,7 +470,7 @@
   font-size: 1.3em;
 }
 
-/* Tiny Modal Width */
+/* Tiny ItemModal Width */
 @media only screen and (max-width: 767px) {
   .ui.tiny.modal {
     width: 95%;
@@ -507,7 +507,7 @@
   font-size: 1.3em;
 }
 
-/* Small Modal Width */
+/* Small ItemModal Width */
 @media only screen and (max-width: 767px) {
   .ui.small.modal {
     width: 95%;
@@ -539,7 +539,7 @@
   }
 }
 
-/* Large Modal Width */
+/* Large ItemModal Width */
 .ui.large.modal > .header {
   font-size: 1.6em;
 }

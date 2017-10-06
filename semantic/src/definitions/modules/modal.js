@@ -119,7 +119,7 @@ $.fn.modal = function(parameters) {
             module.debug('Creating dimmer');
             $dimmable = $context.dimmer(dimmerSettings);
             if(settings.detachable) {
-              module.verbose('Modal is detachable, moving content into dimmer');
+              module.verbose('ItemModal is detachable, moving content into dimmer');
               $dimmable.dimmer('add content', $module);
             }
             else {
@@ -363,7 +363,7 @@ $.fn.modal = function(parameters) {
             }
           }
           else {
-            module.debug('Modal is already visible');
+            module.debug('ItemModal is already visible');
           }
         },
 
@@ -653,7 +653,7 @@ $.fn.modal = function(parameters) {
               $body.css('height', '');
             }
             else {
-              module.debug('Modal is taller than page content, resizing page height');
+              module.debug('ItemModal is taller than page content, resizing page height');
               $body
                 .css('height', module.cache.height + (settings.padding * 2) )
               ;
@@ -668,13 +668,13 @@ $.fn.modal = function(parameters) {
           },
           type: function() {
             if(module.can.fit()) {
-              module.verbose('Modal fits on screen');
+              module.verbose('ItemModal fits on screen');
               if(!module.others.active() && !module.others.animating()) {
                 module.remove.scrolling();
               }
             }
             else {
-              module.verbose('Modal cannot fit on screen setting to scrolling');
+              module.verbose('ItemModal cannot fit on screen setting to scrolling');
               module.set.scrolling();
             }
           },

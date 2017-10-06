@@ -7,18 +7,18 @@ import {
   Link
 } from 'react-router-dom';
 import classNames from 'classnames'
-import { parse } from 'qs'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
-import Category from './Category';
+import ItemModal from './../../components/ItemModal';
 
 import dataSet from './data/file.json';
 
 
 import './Layout.css';
+import './Category.css';
 
 
 class Layout extends Component {
@@ -105,18 +105,10 @@ class Layout extends Component {
   render() {
   
     const data= this.state.landscape;
-    
-    const { location } = this.props;
-    const isModal = !!(
-      location.state &&
-      location.state.modal &&
-      this.previousLocation !== location // not initial render
-    );
-    const category = this.state.landscape.landscape;
-    
+   
     return (
   
-        <div className="layout">
+        <div className="layout infog01">
           <div className="header_wrapper">
             {this.renderHeader()}
     
@@ -177,13 +169,6 @@ const Thumbnail = ({ color }) =>
     background: color
   }}/>;
 
-const Image = ({ color }) =>
-  <div style={{
-    width: '100%',
-    height: 400,
-    background: color
-  }}/>;
-
 const Home = () => (
   <div>
     <Link to='/gallery'>Visit the Gallery</Link>
@@ -223,14 +208,9 @@ const CategoryView = ({ cat }) => {
   }
   
   return (
-
-  <div id="module7" className="module element-anchor7">
-    <div className="ico-infr ico-background">
-    </div>
     <div className="stillbox">
       <div className="box-2 category-box-7">
         <h2 className="category-title-7 categ-big">
-          <div className="ico-infr ico-medium"/>
           {category.name}
         </h2>
         <p className="categ-brief">
@@ -259,7 +239,6 @@ const CategoryView = ({ cat }) => {
         </div>
       </div>
     </div>
-  </div>
   )
 };
 
@@ -272,92 +251,86 @@ const SubCategoryView = ({ cat, match }) => {
   }
   
   return (
-    <div>
-      <div id="module6-0" className="module element-anchor6-0">
-        <span>
-          <div className="ico-prov ico-background"/>
-        </span>
-        <div className="stillbox">
-          <Link to={{ pathname: `/${category.slug_name}`}}>
-            <h2 className="category-title-6 categ">
-              <div className="ico-prov ico-small"/>
-              {category.name}
-            </h2>
-          </Link>
+    
+    <div className="stillbox">
+      <Link to={{ pathname: `/${category.slug_name}`}}>
+        <h2 className="category-title-6 categ">
+          <div className="ico-prov ico-small"/>
+          {category.name}
+        </h2>
+      </Link>
+      
+      <div className="box-2">
+        <h2 className="categ-color6">
+          {subCategory.name}
+        </h2>
+        <div className="category-detail6-0  box-items categ-color6">
           
-          <div className="box-2">
-            <h1 className="categ-color6">
-              {subCategory.name}
-            </h1>
-            <div className="category-detail6-0  box-items categ-color6">
-              
-              {subCategory.items.map(i =>(
-                <div id="modal-6-0-0" className="item item-6-0-0 c-tooltip">
-                  <h4 className="company" data-placement="top" title="Bosch">
-                  </h4>
-                  <div className="company-name">
-                    {i.name} xx
-                  </div>
-                </div>
-              ))}
+          {subCategory.items.map(i =>(
+            <div id="modal-6-0-0" className="item item-6-0-0 c-tooltip">
+              <h4 className="company" data-placement="top" title="Bosch">
+              </h4>
+              <div className="company-name">
+                <ItemModal data={i} />
+              </div>
             </div>
-            <Link
-              to={{
-                pathname: `/${category.slug_name}`,
-                // this is the trick!
-                state: { modal: true }
-              }}
-            >
-              <i className="arrow left icon"/> Back to {category.name}
-            </Link>
-          </div>
+          ))}
         </div>
+        <Link
+          to={{
+            pathname: `/${category.slug_name}`,
+            // this is the trick!
+            state: { modal: true }
+          }}
+        >
+          <i className="arrow left icon"/> Back to {category.name}
+        </Link>
       </div>
     </div>
+
   )
 };
 
 
-const Modal = ({ match, history }) => {
-  //const image = CATEGORIES[match.params.title];
-  //const image = IMAGES[parseInt(match.params.id, 10)];
-  const image = CATEGORIES[match.params.id];
-  if (!image) {
-    // return null
-  }
-  const back = (e) => {
-    e.stopPropagation();
-    history.goBack()
-  };
-  return (
-    <div
-      onClick={back}
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        background: 'rgba(0, 0, 0, 0.15)'
-      }}
-    >
-      <div className='modal' style={{
-        position: 'absolute',
-        background: '#fff',
-        top: 25,
-        left: '10%',
-        right: '10%',
-        padding: 15,
-        border: '2px solid #444'
-      }}>
-        <h1>{image.name}</h1>
-        <button type='button' onClick={back}>
-          Close
-        </button>
-      </div>
-    </div>
-  )
-};
+// const Modal = ({ match, history }) => {
+//
+//   const image = CATEGORIES[match.params.id];
+//   if (!image) {
+//     // return null
+//   }
+//   const back = (e) => {
+//     e.stopPropagation();
+//     history.goBack()
+//   };
+//   return (
+//     <div
+//       onClick={back}
+//       style={{
+//         position: 'absolute',
+//         top: 0,
+//         left: 0,
+//         bottom: 0,
+//         right: 0,
+//         background: 'rgba(0, 0, 0, 0.15)'
+//       }}
+//     >
+//       <div className='modal' style={{
+//         position: 'absolute',
+//         background: '#fff',
+//         top: 25,
+//         left: '10%',
+//         right: '10%',
+//         padding: 15,
+//         border: '2px solid #444'
+//       }}>
+//         <h1>{image.name}</h1>
+//         <button type='button' onClick={back}>
+//           Close
+//         </button>
+//       </div>
+//     </div>
+//   )
+// };
 
 const ModalGallery = () => (
   <Router>

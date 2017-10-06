@@ -18,7 +18,6 @@ class SideBar extends Component {
   }
 
   getClassNames() {
-    const { selectedToActive } = this.state.collapsed;
 
     return classNames('treeview', { active: true });
   }
