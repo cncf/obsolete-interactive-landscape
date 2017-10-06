@@ -344,13 +344,13 @@ p {
   from {
     -webkit-filter: blur(0px); }
   to {
-    -webkit-filter: blur(20px); } }
+    -webkit-filter: blur(5px); } }
 
 @keyframes blur {
   from {
     filter: blur(0px); }
   to {
-    filter: blur(20px); } }
+    filter: blur(5px); } }
 
 #companyModals {
   position: fixed;

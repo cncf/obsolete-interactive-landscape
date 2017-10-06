@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Item } from 'semantic-ui-react';
+import { Item, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import Iconator from './../../components/Iconator';
+
 import './SideBar.css';
 
 class SideBar extends Component {
@@ -12,22 +14,20 @@ class SideBar extends Component {
       title: '33',
       collapsed: true,
     };
-
-    this.getClassNames = this.getClassNames.bind(this);
+    
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
   }
-
-  getClassNames() {
-
-    return classNames('treeview', { active: true });
-  }
-
+  
   renderFirstLevel() {
+    const getClassNames = () => (
+      classNames('treeview', { active: true })
+    );
+    
     const data = this.props.data.landscape;
     
     return data.map(i =>
 
-      (<li className={this.getClassNames()}>
+      (<li className={getClassNames()}>
 
         <Link
           key={i.id}
@@ -37,7 +37,13 @@ class SideBar extends Component {
             state: { modal: true },
           }}
         >
+          <Iconator icon={i.slug_name} size="s" />
           <p>{i.name}</p>
+          {i.subcategories.length ?
+            <span className="pull-right-container">
+              <Icon disabled name="angle left"/>
+            </span>
+            : ''}
         </Link>
 
         {/* Second level */}
@@ -100,6 +106,7 @@ class SideBar extends Component {
     );
   }
 }
+
 
 export default SideBar;
 

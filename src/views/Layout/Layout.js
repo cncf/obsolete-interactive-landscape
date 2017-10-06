@@ -273,13 +273,15 @@ const SubCategoryView = ({ cat, match }) => {
         <div className="category-detail6-0  box-items categ-color6">
           
           {subCategory.items.map(i =>(
-            <div id="modal-6-0-0" className="item item-6-0-0 c-tooltip">
-              <h4 className="company" data-placement="top" title="Bosch">
-              </h4>
-              <div className="company-name">
-                <ItemModal data={i} />
+            <ItemModal data={i} >
+              <div className="item c-tooltip">
+                <h4 className="company" style={{ backgroundImage: `url(${i.calculated.resized_logo})`}} data-placement="top" title="Bosch">
+                </h4>
+                <div className="company-name">
+                  {i.name}
+                </div>
               </div>
-            </div>
+            </ItemModal>
           ))}
         </div>
         <Link

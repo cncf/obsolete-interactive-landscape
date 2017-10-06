@@ -77,7 +77,7 @@
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
   transition: transform .3s ease-in-out, width .3s ease-in-out;
   height: 100%;
-  background: rgb(0,247,247); /* Old browsers */
+  background: rgba(255,255,255,0.5); /* Old browsers */
   z-index:10;
 
   i {
