@@ -1,47 +1,58 @@
 .iconator{
 
-  .ico-medium, .ico-small, .ico-large {
+  .icon_medium, .icon_small, .icon_large {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     margin: 0 10px -10px 0;
   }
-  .ico-medium {
+  .icon_medium {
     width: 50px;
     height: 50px;
   }
 
-  .ico-small {
+  .icon_small {
     width: 20px;
     height: 20px;
   }
 
-  .ico-apis {
+  .icon_apis {
     background-image: url(./icons/ico_apis.png);
   }
-  .ico-data {
+  .icon_data {
     background-image: url(./icons/ico_data.png);
   }
-  .ico-deve {
+  .icon_deve {
     background-image: url(./icons/ico_deve.png);
   }
-  .ico-infr {
+  .icon_infr {
     background-image: url(./icons/ico_infr.png);
   }
-  .ico-obse {
+  .icon_obse {
     background-image: url(./icons/ico_obse.png);
   }
-  .ico-orch {
+  .icon_orch {
     background-image: url(./icons/ico_orch.png);
   }
-  .ico-plat {
+  .icon_plat {
     background-image: url(./icons/ico_plat.png);
   }
-  .ico-prov {
+  .icon_prov {
     background-image: url(./icons/ico_prov.png);
   }
-  .ico-runt {
+  .icon_runt {
     background-image: url(./icons/ico_runt.png);
+  }
+
+  .icon_background{
+    //width:60px; padding-right:15px;
+    position: fixed;
+    min-width: 600px;
+    height:600px;
+    padding-right: 15px;
+    left: -300px;
+    opacity: 0.1;
+
   }
 
 

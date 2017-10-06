@@ -9,6 +9,7 @@ import {
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
+import Iconator from './../../components/Iconator';
 import Filter from './../../components/Filter';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
@@ -208,34 +209,39 @@ const CategoryView = ({ cat }) => {
   }
   
   return (
-    <div className="stillbox">
-      <div className="box-2 category-box-7">
-        <h2 className="category-title-7 categ-big">
-          {category.name}
-        </h2>
-        <p className="categ-brief">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam.
-        </p>
-        <div className="companies-6 companies">
-          <div className="box-items6-0 box-itemsDISABLED">
-            {subCategories.map(i => (
-              <Link
-                key={i.id}
-                to={{
-                  pathname: `/${category.slug_name}/${i.id}`,
-                  // this is the trick!
-                  state: { modal: true }
-                }}
-              >
-                <h5 className="subcateg categ-color6">
-                  <i className="caret right icon"/>{i.name}
-                </h5>
-              </Link>
-            ))}
+    <div className="module">
+      <Iconator icon={category.slug_name} size="background"/>
+      <div className="stillbox">
+        <div className="box-2 category-box-7">
+          <h2 className="category-title-7 categ-big">
+            <Iconator icon={category.slug_name} size="m"/>
+            <br/>
+            {category.name}
+          </h2>
+          <p className="categ-brief">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam.
+          </p>
+          <div className="companies-6 companies">
+            <div className="box-items6-0 box-itemsDISABLED">
+              {subCategories.map(i => (
+                <Link
+                  key={i.id}
+                  to={{
+                    pathname: `/${category.slug_name}/${i.id}`,
+                    // this is the trick!
+                    state: { modal: true }
+                  }}
+                >
+                  <h5 className="subcateg categ-color6">
+                    <i className="caret right icon"/>{i.name}
+                  </h5>
+                </Link>
+              ))}
+            </div>
+            
           </div>
-          
         </div>
       </div>
     </div>
