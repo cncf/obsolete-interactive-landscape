@@ -1,0 +1,54 @@
+
+.ui.modal {
+  background-color: transparent !important;
+  box-shadow:none !important;
+}
+.ui.dimmer {
+  background-color: rgba(255, 255, 255, .85);
+
+}
+
+.item-modal {
+
+
+  .content{
+    background-color: rgba(255,255,255,0.5) !important;
+  }
+  p {
+    font-size: 1em;
+  }
+  .close {
+    color: black !important;
+  }
+  .header {
+    text-align: left !important;
+    color: black !important;
+    font-size: 0.9em !important;
+    background-color: rgba(255,255,255,0.5) !important;
+    span {
+      font-weight: 200;
+    }
+  }
+  .details {
+    display: flex !important;
+    flex:3;
+    flex-direction: column !important;
+    color: black !important;
+    i {
+      color: black;
+    }
+  }
+  .item-image {
+    flex:1;
+    min-width:200px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .actions{
+    background-color: rgba(255,255,255,0.5) !important;
+  }
+
+}

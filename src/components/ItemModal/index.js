@@ -26,12 +26,13 @@ const ItemModal = ({ data, children }) => (
     <Modal.Actions>
       <Button
         color="red"
-        content="Like"
-        icon="heart"
-        label={{ basic: true, color: 'red', pointing: 'left', content: '2,048' }}
+        content="GH stars"
+        icon="github"
+        className="mini"
+        label={{ basic: true, color: 'red ', pointing: 'left', content: '2,048' }}
       />
-      <Button primary>
-        Proceed <Icon name="right chevron" />
+      <Button primary size="mini">
+        Website <Icon name="right chevron" />
       </Button>
     </Modal.Actions>
   </Modal>
