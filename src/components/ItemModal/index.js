@@ -9,7 +9,7 @@ const ItemModal = ({ data, children }) => (
       <div className="item-image x2" style={{ backgroundImage: `url(${data.calculated.resized_logo})` }} />
   
       <div className="details">
-        <h2>Alibaba Cloud</h2>
+        <h2>{ data.name }</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis
@@ -17,23 +17,32 @@ const ItemModal = ({ data, children }) => (
               ex ea commodo consequat.
         </p>
         <hr />
-        <p> OSS <i className="check icon" /> | <i className="github icon" />
-          <i className="twitter icon" />
+        <p>
+          {data.oss ? 'OSS |' : ''}
+          {data.external.twitter ? <Icon name="twitter" /> : ''}
+          {data.external.crunchbase ? <Icon name="hand peace" /> : ''}
+          
         </p>
       </div>
       
     </Modal.Content>
     <Modal.Actions>
-      <Button
-        color="red"
-        content="GH stars"
-        icon="github"
-        className="mini"
-        label={{ basic: true, color: 'red ', pointing: 'left', content: '2,048' }}
-      />
-      <Button primary size="mini">
-        Website <Icon name="right chevron" />
-      </Button>
+      {data.calculated.gh_stars ?
+        <Button
+          color="red"
+          content="GH stars"
+          icon="github"
+          className="mini"
+          label={{ basic: true, color: 'red ', pointing: 'left', content: data.calculated.gh_stars }}
+        />
+        : ''}
+  
+      {data.homepage_url ?
+        <Button primary size="mini" as="a" target="_blank" href={data.homepage_url}>
+          Website <Icon name="right chevron" />
+        </Button>
+        : ''}
+        
     </Modal.Actions>
   </Modal>
 );
