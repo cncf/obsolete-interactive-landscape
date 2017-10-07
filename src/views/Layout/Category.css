@@ -132,13 +132,13 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background-size: cover; }
+}
 
 /* =Navigation */
 nav {
   display: none;
   position: fixed;
-  right: 0px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
@@ -285,7 +285,7 @@ p {
   background-color: rgba(33, 33, 33, 0.5);
   padding: 5px;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   opacity: 0; }
   .footer2 h3 {
@@ -355,7 +355,6 @@ p {
 #companyModals {
   position: fixed;
   top: 0;
-  background-size: cover;
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
@@ -399,7 +398,7 @@ p {
 .infog01 .menu-container {
   background-color: rgba(242, 104, 255, 0.4);
   position: absolute;
-  bottom: 0px; }
+  bottom: 0; }
   .infog01 .menu-container a {
     display: block; }
 
@@ -422,7 +421,8 @@ p {
   .infog01 .stillbox .categ-brief {
     color: black;
     font-size: 0.8em;
-    border: 1px solid #CCC;
+    border-style: solid;
+    border-color:#CCC;
     border-width: 0 0 1px 0;
     margin-left: 30px;
     width: 400px;
@@ -430,23 +430,23 @@ p {
   .infog01 .stillbox .categ-color1a {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0px; }
+    padding: 15px 0; }
   .infog01 .stillbox .categ-color1b {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0px; }
+    padding: 15px 0; }
   .infog01 .stillbox .categ-color1c {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0px; }
+    padding: 15px 0; }
   .infog01 .stillbox .categ-color2 {
     color: #635b89;
     border-color: #635b89;
-    padding: 15px 0px; }
+    padding: 15px 0; }
   .infog01 .stillbox .categ-color3 {
     color: #688ca5;
     border-color: #688ca5;
-    padding: 15px 0px; }
+    padding: 15px 0; }
   .infog01 .stillbox .categ-color4 {
     color: #1b86c8;
     border-color: #1b86c8;
@@ -1300,35 +1300,6 @@ p {
 .c-tooltip {
   position: relative;
   display: inline-block; }
-
-.item-modal p {
-  font-size: 1em; }
-
-.item-modal .close {
-  color: black !important; }
-
-.item-modal .header {
-  text-align: left !important;
-  color: black !important;
-  font-size: 0.9em !important; }
-  .item-modal .header span {
-    font-weight: 200; }
-
-.item-modal .content {
-  display: flex !important;
-  flex-direction: row !important;
-  color: black !important; }
-  .item-modal .content i {
-    color: black; }
-
-.item-modal .item-image {
-  min-width: 200px;
-  height: 200px;
-  margin-right: 20px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
 
 #companyModals .c-tooltiptext {
   opacity: 0.1;

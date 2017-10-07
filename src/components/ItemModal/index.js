@@ -1,18 +1,41 @@
 import React from 'react';
-import { Header, Image, Modal } from 'semantic-ui-react';
+import { Modal, Button, Icon} from 'semantic-ui-react';
+import './Modal.css';
 
 const ItemModal = ({ data, children }) => (
-  <Modal trigger={<div>{ children }</div>}>
-    <Modal.Header>{ data.name }</Modal.Header>
+  <Modal className="item-modal" trigger={<div>{ children }</div>}>
+    <Modal.Header><span className="showme">{ data.name }</span></Modal.Header>
     <Modal.Content image>
-      <Image wrapped size="medium" src={data.calculated.resized_logo} />
-      <Modal.Description>
-        <Header>{ data.name }</Header>
-        <p>Weve found the following gravatar image associated with your e-mail address.</p>
-        <p>Is it okay to use this photo?</p>
-      </Modal.Description>
+      <div className="item-image x2" style={{ backgroundImage: `url(${data.calculated.resized_logo})` }} />
+  
+      <div className="details">
+        <h2>Alibaba Cloud</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+        </p>
+        <hr />
+        <p> OSS <i className="check icon" /> | <i className="github icon" />
+          <i className="twitter icon" />
+        </p>
+      </div>
+      
     </Modal.Content>
+    <Modal.Actions>
+      <Button
+        color="red"
+        content="Like"
+        icon="heart"
+        label={{ basic: true, color: 'red', pointing: 'left', content: '2,048' }}
+      />
+      <Button primary>
+        Proceed <Icon name="right chevron" />
+      </Button>
+    </Modal.Actions>
   </Modal>
 );
 
 export default ItemModal;
+

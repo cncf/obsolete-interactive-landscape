@@ -1,0 +1,38 @@
+.showme {
+  background-color: purple; }
+
+.ui.modal {
+  background-color: transparent !important; }
+
+.item-modal .content {
+  background-color: transparent !important; }
+
+.item-modal p {
+  font-size: 1em; }
+
+.item-modal .close {
+  color: black !important; }
+
+.item-modal .header {
+  text-align: left !important;
+  color: black !important;
+  font-size: 0.9em !important; }
+  .item-modal .header span {
+    font-weight: 200; }
+
+.item-modal .details {
+  display: flex !important;
+  flex: 3;
+  flex-direction: column !important;
+  color: black !important; }
+  .item-modal .details i {
+    color: black; }
+
+.item-modal .item-image {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
+  background-repeat: no-repeat;
+  background-size: 100% auto; }

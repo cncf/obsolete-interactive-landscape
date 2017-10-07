@@ -18,8 +18,8 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="title">
-          <div>{state.title}</div>
-          <div>{state.version}</div>
+          <span>{state.title}</span>
+          <span>{state.version}</span>
         </div>
         <div className="logos" />
       </div>

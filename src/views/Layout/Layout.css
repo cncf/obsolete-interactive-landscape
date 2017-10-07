@@ -7,9 +7,6 @@
   flex-direction: column;
   flex: 1; }
 
-.header_wrapper {
-  flex: 1; }
-
 .content_wrapper {
   display: flex;
   flex: 9; }
@@ -161,7 +158,7 @@
         .sidebar_wrapper .sidebar-menu .treeview-menu > li > a > .fa-angle-down {
           width: auto; }
     .sidebar_wrapper .sidebar-menu .treeview:last-child, .sidebar_wrapper .sidebar-menu .treeview:only-child {
-      padding-bottom: 1px; }
+      padding-bottom: 5px; }
     .sidebar_wrapper .sidebar-menu .treeview.active .pull-right-container i {
       -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);

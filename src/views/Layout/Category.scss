@@ -1138,43 +1138,6 @@ p {
 
 }
 
-.item-modal{
-
-  p{
-    font-size: 1em;
-  }
-  .close{
-    color:black !important;
-  }
-  .header{
-    text-align:left !important;
-    color:black !important;
-    font-size: 0.9em !important;
-    span{
-      font-weight: 200;
-    }
-  }
-  .content{
-    display:flex !important;
-    flex-direction: row !important;
-    color:black !important;
-    i{
-      color:black;
-    }
-  }
-  .item-image{
-
-    min-width: 200px;
-    height: 200px;
-    margin-right:20px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-}
-
 #companyModals .c-tooltiptext {
   //font-size:1em;
   //visibility: visible;
