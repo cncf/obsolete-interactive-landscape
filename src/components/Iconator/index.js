@@ -45,25 +45,25 @@ class Iconator extends Component {
       case 'data':
         value = 'icon_data';
         break;
-      case 'deve':
+      case 'app_definition_development':
         value = 'icon_deve';
         break;
       case 'public_cloud':
         value = 'icon_infr';
         break;
-      case 'obse':
+      case 'observability_analysis':
         value = 'icon_obse';
         break;
-      case 'orchestration':
+      case 'orchestration_and_management':
         value = 'icon_orch';
         break;
-      case 'plat':
+      case 'platform':
         value = 'icon_plat';
         break;
-      case 'prov':
+      case 'provisioning':
         value = 'icon_prov';
         break;
-      case 'runt':
+      case 'runtime':
         value = 'icon_runt';
         break;
       default : value = 'icon_prov';

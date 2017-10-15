@@ -261,20 +261,6 @@ const CategoryView = ({ cat }) => {
           </p>
           <div className="companies-6 companies">
             <div className="box-items6-0 box-itemsDISABLED">
-              {/*{subCategories.map(i => (*/}
-                {/*<Link*/}
-                  {/*key={i.id}*/}
-                  {/*to={{*/}
-                    {/*pathname: `/${category.slug_name}/${i.id}`,*/}
-                    {/*// this is the trick!*/}
-                    {/*state: { modal: true }*/}
-                  {/*}}*/}
-                {/*>*/}
-                  {/*<h5 className="subcateg categ-color6">*/}
-                    {/*<i className="caret right icon"/>{i.name}*/}
-                  {/*</h5>*/}
-                {/*</Link>*/}
-              {/*))}*/}
               {subCategories.map((i,index) => (
                 <Link
                   key={i.id}
