@@ -132,13 +132,13 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 0;
-}
+  background-size: cover; }
 
 /* =Navigation */
 nav {
   display: none;
   position: fixed;
-  right: 0;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
@@ -285,7 +285,7 @@ p {
   background-color: rgba(33, 33, 33, 0.5);
   padding: 5px;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   opacity: 0; }
   .footer2 h3 {
@@ -355,6 +355,7 @@ p {
 #companyModals {
   position: fixed;
   top: 0;
+  background-size: cover;
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
@@ -398,7 +399,7 @@ p {
 .infog01 .menu-container {
   background-color: rgba(242, 104, 255, 0.4);
   position: absolute;
-  bottom: 0; }
+  bottom: 0px; }
   .infog01 .menu-container a {
     display: block; }
 
@@ -421,8 +422,7 @@ p {
   .infog01 .stillbox .categ-brief {
     color: black;
     font-size: 0.8em;
-    border-style: solid;
-    border-color:#CCC;
+    border: 1px solid #CCC;
     border-width: 0 0 1px 0;
     margin-left: 30px;
     width: 400px;
@@ -430,23 +430,23 @@ p {
   .infog01 .stillbox .categ-color1a {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color1b {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color1c {
     color: #17aaad;
     border-color: #17aaad;
-    padding: 15px 0; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color2 {
     color: #635b89;
     border-color: #635b89;
-    padding: 15px 0; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color3 {
     color: #688ca5;
     border-color: #688ca5;
-    padding: 15px 0; }
+    padding: 15px 0px; }
   .infog01 .stillbox .categ-color4 {
     color: #1b86c8;
     border-color: #1b86c8;

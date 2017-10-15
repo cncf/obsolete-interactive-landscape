@@ -15,7 +15,8 @@ import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 import ItemModal from './../../components/ItemModal';
 
-import dataSet from './data/file.json';
+//import dataSet from './data/file_UI.json';
+import dataSet from './data/landscape_v24_jm.json';
 
 
 import './Layout.css';
@@ -130,20 +131,19 @@ class Layout extends Component {
                 <Route path='/home' component={Home}/>
                 <Route path='/gallery' component={Gallery}/>
   
-                <Route path='/public_cloud/:id' render={props =>
+                <Route path='/orchestration_and_management/:id' render={props =>
                   <SubCategoryView cat={0} {...props} />
                 } />
-                <Route path='/public_cloud' render={props =>
+                <Route path='/orchestration_and_management' render={props =>
                   <CategoryView cat={0} {...props} />
                 } />
-                
-                
-                <Route path='/orchestration/:id' render={props =>
-                  <SubCategoryView cat={3} {...props} />
+                <Route path='/public_cloud/:id' render={props =>
+                  <SubCategoryView cat={1} {...props} />
                 } />
-                <Route path='/orchestration' render={props =>
-                  <CategoryView cat={3} {...props} />
+                <Route path='/public_cloud' render={props =>
+                  <CategoryView cat={1} {...props} />
                 } />
+                
                 
               </Switch>
               
@@ -225,11 +225,25 @@ const CategoryView = ({ cat }) => {
           </p>
           <div className="companies-6 companies">
             <div className="box-items6-0 box-itemsDISABLED">
-              {subCategories.map(i => (
+              {/*{subCategories.map(i => (*/}
+                {/*<Link*/}
+                  {/*key={i.id}*/}
+                  {/*to={{*/}
+                    {/*pathname: `/${category.slug_name}/${i.id}`,*/}
+                    {/*// this is the trick!*/}
+                    {/*state: { modal: true }*/}
+                  {/*}}*/}
+                {/*>*/}
+                  {/*<h5 className="subcateg categ-color6">*/}
+                    {/*<i className="caret right icon"/>{i.name}*/}
+                  {/*</h5>*/}
+                {/*</Link>*/}
+              {/*))}*/}
+              {subCategories.map((i,index) => (
                 <Link
                   key={i.id}
                   to={{
-                    pathname: `/${category.slug_name}/${i.id}`,
+                    pathname: `/${category.slug_name}/${index}`,
                     // this is the trick!
                     state: { modal: true }
                   }}
@@ -273,8 +287,8 @@ const SubCategoryView = ({ cat, match }) => {
           </h2>
           <div className="category-detail6-0  box-items categ-color6">
             
-            {subCategory.items.map(i =>(
-              <ItemModal data={i} >
+            {subCategory.items.map((i,index) =>(
+              <ItemModal data={i} index={index} >
                 <div className="item c-tooltip">
                   <h4 className="company" style={{ backgroundImage: `url(${i.calculated.resized_logo})`}} data-placement="top" title="Bosch">
                   </h4>

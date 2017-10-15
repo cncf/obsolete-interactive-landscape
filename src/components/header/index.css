@@ -4,16 +4,19 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #ececec; }
     .header .logos {
-      background-image: url(../assets/images/brand/cncf.png);
+      background-image: url(../assets/images/brand/partners-logos.png);
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 90%;
       height: 40px;
-      min-width: 120px;
-      padding: 10px 0;
-      float: left; } }
+      min-width: 300px;
+      padding: 10px 0; } }
 
 /*TABLET*/
 /*DESKTOP*/
