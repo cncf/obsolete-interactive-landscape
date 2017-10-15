@@ -137,11 +137,47 @@ class Layout extends Component {
                 <Route path='/orchestration_and_management' render={props =>
                   <CategoryView cat={0} {...props} />
                 } />
+                
                 <Route path='/public_cloud/:id' render={props =>
                   <SubCategoryView cat={1} {...props} />
                 } />
                 <Route path='/public_cloud' render={props =>
                   <CategoryView cat={1} {...props} />
+                } />
+  
+                <Route path='/provisioning/:id' render={props =>
+                  <SubCategoryView cat={2} {...props} />
+                } />
+                <Route path='/provisioning' render={props =>
+                  <CategoryView cat={2} {...props} />
+                } />
+  
+                <Route path='/runtime/:id' render={props =>
+                  <SubCategoryView cat={3} {...props} />
+                } />
+                <Route path='/runtime' render={props =>
+                  <CategoryView cat={3} {...props} />
+                } />
+  
+                <Route path='/app_definition_development/:id' render={props =>
+                  <SubCategoryView cat={4} {...props} />
+                } />
+                <Route path='/app_definition_development' render={props =>
+                  <CategoryView cat={4} {...props} />
+                } />
+  
+                <Route path='/platform/:id' render={props =>
+                  <SubCategoryView cat={5} {...props} />
+                } />
+                <Route path='/platform' render={props =>
+                  <CategoryView cat={5} {...props} />
+                } />
+  
+                <Route path='/observability_analysis/:id' render={props =>
+                  <SubCategoryView cat={6} {...props} />
+                } />
+                <Route path='/observability_analysis' render={props =>
+                  <CategoryView cat={6} {...props} />
                 } />
                 
                 
