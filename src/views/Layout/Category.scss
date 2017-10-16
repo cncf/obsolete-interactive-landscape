@@ -442,7 +442,6 @@ p {
 
 /* =Infographic */
 
-.border{ border: 1px dotted red;}
 
 .outfocus{
   //filter:blur(10px);
@@ -474,7 +473,6 @@ p {
   position:fixed;
   top:0;
   background-size:cover;
-  //background-color: red;
   width:100%;
   height:100%;
 
@@ -688,6 +686,7 @@ p {
       }
       .category-title{
         color: $color;
+        font-size:2em;
       }
 
       .box-items{
@@ -699,19 +698,13 @@ p {
 
 
   .title{
+    display:flex;
     font-size:1em;
-    padding-top:20px;
-    color:#666 !important;
+    color:#CCC !important;
+    align-items: center;
 
   }
-  .navbar-header{
-    color:#7ba6c6 !important;
 
-    font-size:1em;
-    padding:20px;
-    text-align:left;
-
-  }
   .fw-a{font-weight:200}
   .fw-b{font-weight:400}
   .fw-c{font-weight:700}
@@ -889,7 +882,6 @@ p {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s linear;
-  color:red;
 
 }
 .c-tooltip {

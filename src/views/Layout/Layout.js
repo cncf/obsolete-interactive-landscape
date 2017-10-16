@@ -352,7 +352,7 @@ const SubCategoryView = ({ cat, match }) => {
         <div className="box-2 category-box">
           <div className="subcateg-title">
             <Link to={{ pathname: `/${category.slug_name}`}}>
-            <span className="category-title">
+            <span>
               {category.name}
             </span>
             </Link>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Item, Icon } from 'semantic-ui-react';
+import { Item, Icon, Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Iconator from './../../components/Iconator';
 
@@ -25,32 +25,39 @@ class SideBar extends Component {
     
     const data = this.props.data.landscape;
     
-    return data.map((i,index) =>
+    return data.map((i, index) =>
 
       (<li className={getClassNames()}>
-
-        <Link
-          key={index}
-          to={{
-            pathname: `/${i.slug_name}`,
-            // this is the trick!
-            state: { modal: true },
-          }}
-        >
-          <div>
-            <Iconator icon={i.slug_name} size="s" />
-            <span>{i.name}</span>
-          </div>
-          
-          {i.subcategories.length ?
-            <span className="pull-right-container">
-              <Icon disabled name="angle left"/>
-            </span>
-            : ''}
-        </Link>
-
+  
+        <Popup
+          trigger={
+            <Link
+              key={index}
+              to={{
+                pathname: `/${i.slug_name}`,
+                // this is the trick!
+                state: { modal: true },
+              }}
+            >
+              <div>
+                <Iconator icon={i.slug_name} size="s" />
+                <span>{i.name}</span>
+              </div>
+    
+              {i.subcategories.length ?
+                <span className="pull-right-container">
+                  <Icon disabled name="angle left" />
+                </span>
+                : ''}
+            </Link>
+          }
+          content={i.name}
+          size="mini"
+          position="right center"
+        />
+        
         {/* Second level */}
-        {i.subcategories.map((s,index) =>
+        {i.subcategories.map((s, index) =>
           (<ul className="treeview-menu">
             <li className="treeview" key="namehere" >
               <Item>
@@ -62,12 +69,8 @@ class SideBar extends Component {
                     state: { modal: true },
                   }}
                 >
-                  
                   {s.name}
-                  
-                  
                 </Link>
-                
               </Item>
             </li>
           </ul>))

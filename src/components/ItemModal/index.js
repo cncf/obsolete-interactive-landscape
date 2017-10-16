@@ -17,7 +17,7 @@ class ItemModal extends React.Component {
     let element;
     if (this.props.data.external) {
       if (this.props.data.external.crunchbase) {
-        element = <i className="user icon" />;
+        element = <i className="bookmark outline icon" />;
       }
     }
     return element;
@@ -45,8 +45,11 @@ class ItemModal extends React.Component {
     const data = this.props.data;
     return (
     
-      <Modal className="item-modal" trigger={<span>{ this.props.children }</span>}>
-        <Modal.Header><span className="showme">{ data.name }</span></Modal.Header>
+      <Modal className="item-modal" trigger={<span>{ this.props.children }</span>} closeIcon>
+        <Modal.Header>
+          <div className="logos-modal" />
+          { data.name }
+        </Modal.Header>
         <Modal.Content image>
           <div className="item-image x2" style={{ backgroundImage: `url(${data.raw_logo})` }} />
       
