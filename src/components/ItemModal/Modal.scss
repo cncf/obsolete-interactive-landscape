@@ -4,15 +4,28 @@
   box-shadow:none !important;
 }
 .ui.dimmer {
-  background-color: rgba(255, 255, 255, .85);
+  background-color: rgba(255, 255, 255, .15);
+
 
 }
+
+.dimmed.dimmable>#root{
+  -webkit-animation: blur 2s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation: blur 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out; /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-out;
+}
+
+
+
 
 .item-modal {
 
 
   .content{
-    background-color: rgba(255,255,255,0.5) !important;
+    background-color: rgba(255,255,255,0.2) !important;
   }
   p {
     font-size: 1em;
@@ -24,7 +37,7 @@
     text-align: left !important;
     color: black !important;
     font-size: 0.9em !important;
-    background-color: rgba(255,255,255,0.5) !important;
+    background-color: transparent !important;
     span {
       font-weight: 200;
     }

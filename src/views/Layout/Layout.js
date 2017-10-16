@@ -68,12 +68,22 @@ class Layout extends Component {
   
   getClassNames() {
     const menu = this.state.menu.collapsed;
-    
-    if (menu) { // If collapsed = TRUE
-      return classNames('content_wrapper', { collapse: true }, { open: true });
+    const focus = this.state.focus;
+  
+    if (focus) { // If focus = TRUE
+      if (menu) { // If collapsed = TRUE
+        return classNames('layout infog01 outfocus', { collapse: true }, { open: true });
+      }
+      return classNames('layout infog01 outfocus', { open_hidden: true });
     }
-    return classNames('content_wrapper', { open_hidden: true });
+    if (menu) { // If collapsed = TRUE
+      return classNames('layout infog01', { collapse: true }, { open: true });
+    }
+    return classNames('layout infog01', { open_hidden: true });
+    
+    
   }
+  
   
   renderHeader() {
     const title = this.state.title;
@@ -110,84 +120,86 @@ class Layout extends Component {
    
     return (
   
-        <div className="layout infog01">
-          <div className="header_wrapper">
-            {this.renderHeader()}
+        <div className={this.getClassNames()}>
+          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+            <SideBar data={data}>
+              {this.renderButton()}
+            </SideBar>
+          </div>
+          <div className="layout_wrapper">
+            <div className="header_wrapper">
+              {this.renderHeader()}
+  
+            </div>
+            <div className="content_wrapper">
+              <div className="panel_wrapper">
+      
+                {/*<Switch location={isModal ? this.previousLocation : location}>*/}
+                <Switch>
+                  <Route exact path='/' component={ItemsPanel}/>
+                  <Route path='/filter' component={ResultsPanel}/>
+                  <Route path='/home' component={Home}/>
+                  <Route path='/gallery' component={Gallery}/>
+        
+                  <Route path='/orchestration_and_management/:id' render={props =>
+                    <SubCategoryView cat={0} {...props} />
+                  } />
+                  <Route path='/orchestration_and_management' render={props =>
+                    <CategoryView cat={0} {...props} />
+                  } />
+        
+                  <Route path='/public_cloud/:id' render={props =>
+                    <SubCategoryView cat={1} {...props} />
+                  } />
+                  <Route path='/public_cloud' render={props =>
+                    <CategoryView cat={1} {...props} />
+                  } />
+        
+                  <Route path='/provisioning/:id' render={props =>
+                    <SubCategoryView cat={2} {...props} />
+                  } />
+                  <Route path='/provisioning' render={props =>
+                    <CategoryView cat={2} {...props} />
+                  } />
+        
+                  <Route path='/runtime/:id' render={props =>
+                    <SubCategoryView cat={3} {...props} />
+                  } />
+                  <Route path='/runtime' render={props =>
+                    <CategoryView cat={3} {...props} />
+                  } />
+        
+                  <Route path='/app_definition_development/:id' render={props =>
+                    <SubCategoryView cat={4} {...props} />
+                  } />
+                  <Route path='/app_definition_development' render={props =>
+                    <CategoryView cat={4} {...props} />
+                  } />
+        
+                  <Route path='/platform/:id' render={props =>
+                    <SubCategoryView cat={5} {...props} />
+                  } />
+                  <Route path='/platform' render={props =>
+                    <CategoryView cat={5} {...props} />
+                  } />
+        
+                  <Route path='/observability_analysis/:id' render={props =>
+                    <SubCategoryView cat={6} {...props} />
+                  } />
+                  <Route path='/observability_analysis' render={props =>
+                    <CategoryView cat={6} {...props} />
+                  } />
+      
+      
+                </Switch>
     
-          </div>
-          <div className={this.getClassNames()}>
-            <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-             
-              <SideBar data={data}>
-                {this.renderButton()}
-              </SideBar>
-            </div>
-            <div className="panel_wrapper">
-              
-              {/*<Switch location={isModal ? this.previousLocation : location}>*/}
-              <Switch>
-                <Route exact path='/' component={ItemsPanel}/>
-                <Route path='/filter' component={ResultsPanel}/>
-                <Route path='/home' component={Home}/>
-                <Route path='/gallery' component={Gallery}/>
-  
-                <Route path='/orchestration_and_management/:id' render={props =>
-                  <SubCategoryView cat={0} {...props} />
-                } />
-                <Route path='/orchestration_and_management' render={props =>
-                  <CategoryView cat={0} {...props} />
-                } />
-                
-                <Route path='/public_cloud/:id' render={props =>
-                  <SubCategoryView cat={1} {...props} />
-                } />
-                <Route path='/public_cloud' render={props =>
-                  <CategoryView cat={1} {...props} />
-                } />
-  
-                <Route path='/provisioning/:id' render={props =>
-                  <SubCategoryView cat={2} {...props} />
-                } />
-                <Route path='/provisioning' render={props =>
-                  <CategoryView cat={2} {...props} />
-                } />
-  
-                <Route path='/runtime/:id' render={props =>
-                  <SubCategoryView cat={3} {...props} />
-                } />
-                <Route path='/runtime' render={props =>
-                  <CategoryView cat={3} {...props} />
-                } />
-  
-                <Route path='/app_definition_development/:id' render={props =>
-                  <SubCategoryView cat={4} {...props} />
-                } />
-                <Route path='/app_definition_development' render={props =>
-                  <CategoryView cat={4} {...props} />
-                } />
-  
-                <Route path='/platform/:id' render={props =>
-                  <SubCategoryView cat={5} {...props} />
-                } />
-                <Route path='/platform' render={props =>
-                  <CategoryView cat={5} {...props} />
-                } />
-  
-                <Route path='/observability_analysis/:id' render={props =>
-                  <SubCategoryView cat={6} {...props} />
-                } />
-                <Route path='/observability_analysis' render={props =>
-                  <CategoryView cat={6} {...props} />
-                } />
-                
-                
-              </Switch>
-              
-            </div>
-            <div className="filter_wrapper">
-              <Filter />
+              </div>
+              <div className="filter_wrapper">
+                <Filter />
+              </div>
             </div>
           </div>
+          
           {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}
         </div>
  
@@ -331,22 +343,21 @@ const SubCategoryView = ({ cat, match }) => {
   if (!subCategory) {
     return <div>No Sub Category called like that</div>
   }
+  let focus = false;
   
   return (
     <div className="module">
       <Iconator icon={category.slug_name} size="background"/>
       <div className="stillbox" id={Color(category.slug_name)}>
         <div className="box-2 category-box">
-          <Link to={{ pathname: `/${category.slug_name}`}}>
+          <div className="subcateg-title">
+            <Link to={{ pathname: `/${category.slug_name}`}}>
             <span className="category-title">
-              
-              <Iconator icon={category.slug_name} size="m"/>
               {category.name}
             </span>
-            
-          </Link>
-          <span> / {subCategory.name}</span>
-        
+            </Link>
+            <span> / {subCategory.name}</span>
+          </div>
           <div className=" box-items">
     
             {subCategory.items.map((i,index) =>(
