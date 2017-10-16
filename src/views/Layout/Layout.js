@@ -285,8 +285,9 @@ const CategoryView = ({ cat }) => {
 };
 
 const SubCategoryView = ({ cat, match }) => {
-  const category = CATEGORIES[cat];
+  const category = dataSet.landscape[cat];
   const subCategory = category.subcategories[match.params.id];
+  
   
   if (!subCategory) {
     return <div>No Sub Category called like that</div>
@@ -302,17 +303,17 @@ const SubCategoryView = ({ cat, match }) => {
             {category.name}
           </h2>
         </Link>
-        
+      
         <div className="box-2">
           <h2 className="categ-color6">
             {subCategory.name}
           </h2>
           <div className="category-detail6-0  box-items categ-color6">
-            
+          
             {subCategory.items.map((i,index) =>(
-              <ItemModal data={i} index={index} >
+              <ItemModal data={i} external={i.external} index={index} >
                 <div className="item c-tooltip">
-                  <h4 className="company" style={{ backgroundImage: `url(${i.calculated.resized_logo})`}} data-placement="top" title="Bosch">
+                  <h4 className="company" style={{ backgroundImage: `url(${i.raw_logo})`}} data-placement="top" title="Bosch">
                   </h4>
                   <div className="company-name">
                     {i.name}
@@ -337,46 +338,6 @@ const SubCategoryView = ({ cat, match }) => {
   )
 };
 
-
-// const Modal = ({ match, history }) => {
-//
-//   const image = CATEGORIES[match.params.id];
-//   if (!image) {
-//     // return null
-//   }
-//   const back = (e) => {
-//     e.stopPropagation();
-//     history.goBack()
-//   };
-//   return (
-//     <div
-//       onClick={back}
-//       style={{
-//         position: 'absolute',
-//         top: 0,
-//         left: 0,
-//         bottom: 0,
-//         right: 0,
-//         background: 'rgba(0, 0, 0, 0.15)'
-//       }}
-//     >
-//       <div className='modal' style={{
-//         position: 'absolute',
-//         background: '#fff',
-//         top: 25,
-//         left: '10%',
-//         right: '10%',
-//         padding: 15,
-//         border: '2px solid #444'
-//       }}>
-//         <h1>{image.name}</h1>
-//         <button type='button' onClick={back}>
-//           Close
-//         </button>
-//       </div>
-//     </div>
-//   )
-// };
 
 const ModalGallery = () => (
   <Router>

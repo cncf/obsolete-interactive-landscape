@@ -1491,10 +1491,13 @@
               "oss": true,
               "homepage_url": "https://www.gluster.org/",
               "repo_url": "https://github.com/gluster",
-              "raw_logo": "community.redhat.com/images/branding/logo-gluster.png",
+              "raw_logo": "http://community.redhat.com/images/branding/logo-gluster.png",
               "external": {
                 "twitter": "https://twitter.com/gluster",
                 "crunchbase": "https://www.crunchbase.com/organization/gluster"
+              },
+              "calculated": {
+                "gh_stars": "971495"
               }
             },
             {
@@ -2456,6 +2459,9 @@
               "external": {
                 "twitter": "https://twitter.com/hadoop",
                 "crunchbase": "https://www.crunchbase.com/product/hadoop"
+              },
+              "calculated": {
+                "gh_stars": "9714"
               }
             },
             {

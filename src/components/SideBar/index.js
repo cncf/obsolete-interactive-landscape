@@ -25,12 +25,12 @@ class SideBar extends Component {
     
     const data = this.props.data.landscape;
     
-    return data.map(i =>
+    return data.map((i,index) =>
 
       (<li className={getClassNames()}>
 
         <Link
-          key={i.id}
+          key={index}
           to={{
             pathname: `/${i.slug_name}`,
             // this is the trick!
@@ -50,20 +50,21 @@ class SideBar extends Component {
         </Link>
 
         {/* Second level */}
-        {i.subcategories.map(s =>
+        {i.subcategories.map((s,index) =>
           (<ul className="treeview-menu">
             <li className="treeview" key="namehere" >
               <Item>
                 <Link
-                  key={s.id}
+                  key={index}
                   to={{
-                    pathname: `/${i.slug_name}/${s.id}`,
+                    pathname: `/${i.slug_name}/${index}`,
                     // this is the trick!
                     state: { modal: true },
                   }}
                 >
                   
                   {s.name}
+                  
                   
                 </Link>
                 
