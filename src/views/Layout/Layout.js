@@ -31,7 +31,7 @@ class Layout extends Component {
       title: 'Layout',
       panel: 'items',
       menu: {
-        collapsed: false,
+        collapsed: true,
       },
     };
     
@@ -235,10 +235,48 @@ const Gallery = () => (
   </div>
 );
 
+const Color = (cat) =>{
+  let value;
+    switch (cat) {
+      case 'apis':
+        value = '1';
+        break;
+      case 'data':
+        value = '1';
+        break;
+      case 'app_definition_development':
+        value = '1';
+        break;
+      case 'observability_analysis':
+        value = '2';
+        break;
+      case 'platform':
+        value = '3';
+        break;
+      case 'orchestration_and_management':
+        value = '4';
+        break;
+      case 'runtime':
+        value = '5';
+        break;
+      case 'provisioning':
+        value = '6';
+        break;
+      case 'public_cloud':
+        value = '7';
+        break;
+      default : value = '1';
+    }
+    
+    value = 'cat_'+ value;
+    return value;
+  
+};
 
 const CategoryView = ({ cat }) => {
   const category = CATEGORIES[cat];
   const subCategories = category.subcategories;
+  let color = Color(cat);
   
   if (!category) {
     return <div>No Category called like that</div>
@@ -247,10 +285,11 @@ const CategoryView = ({ cat }) => {
   return (
     <div className="module">
       <Iconator icon={category.slug_name} size="background"/>
-      <div className="stillbox">
-        <div className="box-2 category-box-7">
-          <h2 className="category-title-7 categ-big">
+      <div className="stillbox" id={Color(category.slug_name)}>
+        <div className="box-2 category-box">
+          <h2 className="category-title categ-big">
             <Iconator icon={category.slug_name} size="m"/>
+            
             <br/>
             {category.name}
           </h2>
@@ -259,8 +298,8 @@ const CategoryView = ({ cat }) => {
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam.
           </p>
-          <div className="companies-6 companies">
-            <div className="box-items6-0 box-itemsDISABLED">
+          <div className="companies">
+            <div className=" box-items">
               {subCategories.map((i,index) => (
                 <Link
                   key={i.id}
@@ -270,7 +309,7 @@ const CategoryView = ({ cat }) => {
                     state: { modal: true }
                   }}
                 >
-                  <h5 className="subcateg categ-color6">
+                  <h5 className="subcateg">
                     <i className="caret right icon"/>{i.name}
                   </h5>
                 </Link>
@@ -296,22 +335,22 @@ const SubCategoryView = ({ cat, match }) => {
   return (
     <div className="module">
       <Iconator icon={category.slug_name} size="background"/>
-      <div className="stillbox">
-        <Link to={{ pathname: `/${category.slug_name}`}}>
-          <h2 className="category-title-6 categ">
-            <div className="ico-prov ico-small"/>
-            {category.name}
-          </h2>
-        </Link>
-      
-        <div className="box-2">
-          <h2 className="categ-color6">
-            {subCategory.name}
-          </h2>
-          <div className="category-detail6-0  box-items categ-color6">
-          
+      <div className="stillbox" id={Color(category.slug_name)}>
+        <div className="box-2 category-box">
+          <Link to={{ pathname: `/${category.slug_name}`}}>
+            <span className="category-title">
+              
+              <Iconator icon={category.slug_name} size="m"/>
+              {category.name}
+            </span>
+            
+          </Link>
+          <span> / {subCategory.name}</span>
+        
+          <div className=" box-items">
+    
             {subCategory.items.map((i,index) =>(
-              <ItemModal data={i} external={i.external} index={index} >
+              <ItemModal data={i} category={category.slug_name} index={index} >
                 <div className="item c-tooltip">
                   <h4 className="company" style={{ backgroundImage: `url(${i.raw_logo})`}} data-placement="top" title="Bosch">
                   </h4>
@@ -322,15 +361,6 @@ const SubCategoryView = ({ cat, match }) => {
               </ItemModal>
             ))}
           </div>
-          <Link
-            to={{
-              pathname: `/${category.slug_name}`,
-              // this is the trick!
-              state: { modal: true }
-            }}
-          >
-            <i className="arrow left icon"/> Back to {category.name}
-          </Link>
         </div>
       </div>
     </div>

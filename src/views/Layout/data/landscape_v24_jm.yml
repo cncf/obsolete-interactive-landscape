@@ -1939,8 +1939,6 @@ landscape:
           external:
             twitter: https://twitter.com/hadoop
             crunchbase: https://www.crunchbase.com/product/hadoop
-          calculated:
-            gh_stars: "9714"
         - item:
           name: "Pachyderm"
           slug_name: pachyderm

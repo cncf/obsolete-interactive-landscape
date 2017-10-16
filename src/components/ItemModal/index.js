@@ -38,6 +38,9 @@ class ItemModal extends React.Component {
     return element;
   }
   
+  show = dimmer => () => this.setState({ dimmer, open: true });
+  close = () => this.setState({ open: false });
+  
   render() {
     const data = this.props.data;
     return (

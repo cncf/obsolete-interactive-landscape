@@ -33,11 +33,11 @@
       background-image: url(./icons/ico_runt.png); }
     .iconator .icon_background {
       position: fixed;
+      top: 0;
       min-width: 600px;
       height: 600px;
-      padding-right: 15px;
       left: -300px;
-      opacity: 0.1; } }
+      opacity: 0.05; } }
 
 /*TABLET*/
 /*DESKTOP*/
