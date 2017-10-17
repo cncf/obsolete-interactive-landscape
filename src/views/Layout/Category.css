@@ -467,7 +467,8 @@ p {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
     background-repeat: no-repeat;
-    background-size: 100% 100%; }
+    background-size: 90% auto;
+    background-position: center; }
   .infog01 .stillbox .company-name {
     font-size: 0.6em;
     color: #454545;
