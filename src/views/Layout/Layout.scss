@@ -136,7 +136,7 @@
     & > li {
       position: relative;
       margin: 0;
-      padding: 0;
+      padding: 0 0 0 0;
 
       .label,
       .badge {
@@ -148,10 +148,10 @@
 
       & > .treeview-menu {
         margin: 0 1px;
-        background: rgba(0,0,0,0.03);
+        line-height:1em;
       }
       & > a {
-        border-left: 7px solid #bfcfda;
+        border-left: 4px solid #bfcfda;
         padding: 5px 5px 5px 15px;
         display: flex;
         font-size: 0.9em;
@@ -209,7 +209,7 @@
 
     li.active > .treeview-menu {
       display: block;
-      padding-left: 30px;
+      padding-left: 60px;
     }
 
     .treeview-menu {

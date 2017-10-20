@@ -694,6 +694,14 @@ p {
         border-color: $color;
       }
     }
+
+    .cat_#{$number} {
+      &.active > a{
+        border-left-color: $color !important;
+      }
+
+    }
+
   }
 
 

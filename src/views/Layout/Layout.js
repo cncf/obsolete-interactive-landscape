@@ -31,7 +31,7 @@ class Layout extends Component {
       title: 'Layout',
       panel: 'items',
       menu: {
-        collapsed: false,
+        collapsed: true,
       },
     };
     
@@ -122,7 +122,7 @@ class Layout extends Component {
   
         <div className={this.getClassNames()}>
           <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-            <SideBar data={data}>
+            <SideBar data={data} >
               {this.renderButton()}
             </SideBar>
           </div>

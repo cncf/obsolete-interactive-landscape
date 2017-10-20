@@ -508,6 +508,9 @@ p {
 .infog01 #cat_1a .box-items {
   border-color: #17aaad; }
 
+.infog01 .cat_1a.active > a {
+  border-left-color: #17aaad !important; }
+
 .infog01 #cat_1b .category-box {
   border-color: #17aaad;
   border-width: 0 0 0 0;
@@ -534,6 +537,9 @@ p {
 
 .infog01 #cat_1b .box-items {
   border-color: #17aaad; }
+
+.infog01 .cat_1b.active > a {
+  border-left-color: #17aaad !important; }
 
 .infog01 #cat_1c .category-box {
   border-color: #17aaad;
@@ -562,6 +568,9 @@ p {
 .infog01 #cat_1c .box-items {
   border-color: #17aaad; }
 
+.infog01 .cat_1c.active > a {
+  border-left-color: #17aaad !important; }
+
 .infog01 #cat_1 .category-box {
   border-color: #17aaad;
   border-width: 0 0 0 0;
@@ -588,6 +597,9 @@ p {
 
 .infog01 #cat_1 .box-items {
   border-color: #17aaad; }
+
+.infog01 .cat_1.active > a {
+  border-left-color: #17aaad !important; }
 
 .infog01 #cat_4 .category-box {
   border-color: #1b86c8;
@@ -616,6 +628,9 @@ p {
 .infog01 #cat_4 .box-items {
   border-color: #1b86c8; }
 
+.infog01 .cat_4.active > a {
+  border-left-color: #1b86c8 !important; }
+
 .infog01 #cat_2 .category-box {
   border-color: #635b89;
   border-width: 0 0 0 0;
@@ -642,6 +657,9 @@ p {
 
 .infog01 #cat_2 .box-items {
   border-color: #635b89; }
+
+.infog01 .cat_2.active > a {
+  border-left-color: #635b89 !important; }
 
 .infog01 #cat_3 .category-box {
   border-color: #688ca5;
@@ -670,6 +688,9 @@ p {
 .infog01 #cat_3 .box-items {
   border-color: #688ca5; }
 
+.infog01 .cat_3.active > a {
+  border-left-color: #688ca5 !important; }
+
 .infog01 #cat_5 .category-box {
   border-color: #478466;
   border-width: 0 0 0 0;
@@ -696,6 +717,9 @@ p {
 
 .infog01 #cat_5 .box-items {
   border-color: #478466; }
+
+.infog01 .cat_5.active > a {
+  border-left-color: #478466 !important; }
 
 .infog01 #cat_6 .category-box {
   border-color: #6c9a40;
@@ -724,6 +748,9 @@ p {
 .infog01 #cat_6 .box-items {
   border-color: #6c9a40; }
 
+.infog01 .cat_6.active > a {
+  border-left-color: #6c9a40 !important; }
+
 .infog01 #cat_7 .category-box {
   border-color: #3e56a6;
   border-width: 0 0 0 0;
@@ -750,6 +777,9 @@ p {
 
 .infog01 #cat_7 .box-items {
   border-color: #3e56a6; }
+
+.infog01 .cat_7.active > a {
+  border-left-color: #3e56a6 !important; }
 
 .infog01 .title {
   display: flex;

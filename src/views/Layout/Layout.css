@@ -70,7 +70,7 @@
       height: 70px; }
   .sidebar_wrapper .sidebar a {
     color: #49627b;
-    font-size: 0.8em;
+    font-size: 0.9em;
     cursor: pointer; }
   .sidebar_wrapper .sidebar a:hover {
     text-decoration: none; }
@@ -90,7 +90,7 @@
     .sidebar_wrapper .sidebar-menu > li {
       position: relative;
       margin: 0;
-      padding: 0; }
+      padding: 0 0 0 0; }
       .sidebar_wrapper .sidebar-menu > li .label,
       .sidebar_wrapper .sidebar-menu > li .badge {
         margin-right: 5px; }
@@ -98,9 +98,9 @@
         margin-top: 3px; }
       .sidebar_wrapper .sidebar-menu > li > .treeview-menu {
         margin: 0 1px;
-      }
+        line-height: 1em; }
       .sidebar_wrapper .sidebar-menu > li > a {
-        border-left: 7px solid #bfcfda;
+        border-left: 4px solid #bfcfda;
         padding: 5px 5px 5px 15px;
         display: flex;
         font-size: 0.9em;
@@ -139,14 +139,12 @@
       transform: rotate(-90deg); }
     .sidebar_wrapper .sidebar-menu li.active > .treeview-menu {
       display: block;
-      padding-left: 30px; }
+      padding-left: 60px; }
     .sidebar_wrapper .sidebar-menu .treeview-menu {
       display: none;
       list-style: none;
       padding: 0;
-      margin: 0;
-      line-height:1.2em;
-    }
+      margin: 0; }
       .sidebar_wrapper .sidebar-menu .treeview-menu > li > a {
         padding: 1px 0 1px 5px;
         display: block;
@@ -166,7 +164,7 @@
           width: auto; }
       .sidebar_wrapper .sidebar-menu .treeview-menu .item a {
         font-size: 0.8em;
-      }
+        line-height: 0.1em !important; }
     .sidebar_wrapper .sidebar-menu .treeview-menu:last-child, .sidebar_wrapper .sidebar-menu .treeview-menu:only-child {
       padding-bottom: 5px; }
     .sidebar_wrapper .sidebar-menu .treeview.active .pull-right-container i {

@@ -1,10 +1,50 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Item, Icon, Popup } from 'semantic-ui-react';
+import { Item, Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Iconator from './../../components/Iconator';
 
 import './SideBar.css';
+
+
+const Color = (cat) => {
+  let values = null;
+  let value;
+  switch (cat) {
+    case 'apis':
+      value = '1';
+      break;
+    case 'data':
+      value = '1';
+      break;
+    case 'app_definition_development':
+      value = '1';
+      break;
+    case 'observability_analysis':
+      value = '2';
+      break;
+    case 'platform':
+      value = '3';
+      break;
+    case 'orchestration_and_management':
+      value = '4';
+      break;
+    case 'runtime':
+      value = '5';
+      break;
+    case 'provisioning':
+      value = '6';
+      break;
+    case 'public_cloud':
+      value = '7';
+      break;
+    default : value = '1';
+  }
+  
+  values = 'cat_' + value;
+  return values;
+};
+
 
 class SideBar extends Component {
   constructor(props) {
@@ -17,27 +57,11 @@ class SideBar extends Component {
     
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
   }
-  
-  handleClick() {
-    if (this.state.selectedToActive) {
-      this.props.handleActiveListItem(null);
-    } else {
-      this.props.handleActiveListItem(this.props.group.name);
-    }
-    
-    this.props.handleMenuOpen();
-  }
-  
-  renderFirstLevel() {
-    const getClassNames = () => (
-      classNames('treeview', { active: true })
-    );
-    
+  renderFirstLevel(){
     const data = this.props.data.landscape;
     
     return data.map((i, index) =>
-
-      (<li className={getClassNames()} >
+      (<li className={classNames(`treeview ${Color(i.slug_name)}`, { active: true })} >
   
         <Popup
           trigger={
@@ -56,7 +80,7 @@ class SideBar extends Component {
     
               {i.subcategories.length ?
                 <span className="pull-right-container">
-                  <Icon disabled name="angle left" />
+                  {/* <Icon disabled name="angle left" /> */}
                 </span>
                 : ''}
             </Link>
