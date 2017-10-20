@@ -548,7 +548,7 @@
       "subcategories": [
         {
           "subcategory": null,
-          "name": "Sub Public Cloud",
+          "name": "Public Cloud",
           "slug_name": "sub_public_cloud",
           "items": [
             {

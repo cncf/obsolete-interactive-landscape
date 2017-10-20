@@ -22,6 +22,7 @@
 
 
 .item-modal {
+  margin-top:200px;
 
   .logos-modal{
     background-image: url(../assets/images/brand/partners-logos.png);
@@ -71,7 +72,8 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 85% auto;
+    background-position: center;
   }
   .actions{
     background-color: rgba(255,255,255,0.5) !important;

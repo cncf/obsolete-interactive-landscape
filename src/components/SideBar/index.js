@@ -18,6 +18,16 @@ class SideBar extends Component {
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
   }
   
+  handleClick() {
+    if (this.state.selectedToActive) {
+      this.props.handleActiveListItem(null);
+    } else {
+      this.props.handleActiveListItem(this.props.group.name);
+    }
+    
+    this.props.handleMenuOpen();
+  }
+  
   renderFirstLevel() {
     const getClassNames = () => (
       classNames('treeview', { active: true })
@@ -27,7 +37,7 @@ class SideBar extends Component {
     
     return data.map((i, index) =>
 
-      (<li className={getClassNames()}>
+      (<li className={getClassNames()} >
   
         <Popup
           trigger={
@@ -56,25 +66,30 @@ class SideBar extends Component {
           position="right center"
         />
         
+        
         {/* Second level */}
-        {i.subcategories.map((s, index) =>
-          (<ul className="treeview-menu">
-            <li className="treeview" key="namehere" >
-              <Item>
-                <Link
-                  key={index}
-                  to={{
-                    pathname: `/${i.slug_name}/${index}`,
-                    // this is the trick!
-                    state: { modal: true },
-                  }}
-                >
-                  {s.name}
-                </Link>
-              </Item>
-            </li>
-          </ul>))
-        }
+        <ul className="treeview-menu">
+          <li className="treeview" key="namehere" >
+          
+            {i.subcategories.map((s, subindex) =>
+              (
+                <Item>
+                  <Link
+                    key={subindex}
+                    to={{
+                      pathname: `/${i.slug_name}/${subindex}`,
+                      // this is the trick!
+                      state: { modal: true },
+                    }}
+                  >
+                    {s.name}
+                  </Link>
+                </Item>
+              ))
+            }
+        
+          </li>
+        </ul>
       </li>),
 
     );

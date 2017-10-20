@@ -31,7 +31,7 @@ class Layout extends Component {
       title: 'Layout',
       panel: 'items',
       menu: {
-        collapsed: true,
+        collapsed: false,
       },
     };
     
@@ -135,8 +135,11 @@ class Layout extends Component {
               <div className="panel_wrapper">
       
                 {/*<Switch location={isModal ? this.previousLocation : location}>*/}
-                <Switch>
-                  <Route exact path='/' component={ItemsPanel}/>
+                <Switch>fire
+                  <Route exact path='/' render={props =>
+                    <CategoryView cat={0} {...props} />
+                  } />
+                  
                   <Route path='/filter' component={ResultsPanel}/>
                   <Route path='/home' component={Home}/>
                   <Route path='/gallery' component={Gallery}/>
@@ -221,7 +224,7 @@ const Thumbnail = ({ color }) =>
 const Home = () => (
   <div>
     <Link to='/gallery'>Visit the Gallery</Link>
-    <h2>Featured Imagesxx</h2>
+    <h2>Featured Images</h2>
     <ul>
       <li><Link to='/orchestration_and_management'>Tomato</Link></li>
       <li><Link to='/'>Crimson</Link></li>

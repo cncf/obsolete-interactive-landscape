@@ -432,7 +432,7 @@ landscape:
     slug_name: public_cloud
     subcategories:
       - subcategory:
-        name: "Sub Public Cloud"
+        name: ""
         slug_name: "sub_public_cloud"
         items:
           - item:

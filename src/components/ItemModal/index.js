@@ -8,7 +8,7 @@ class ItemModal extends React.Component {
     let element;
     if (this.props.data.external) {
       if (this.props.data.external.twitter) {
-        element = <i className="twitter icon" />;
+        element = <a href={this.props.data.external.twitter} ><i className="twitter icon" /></a>;
       }
     }
     return element;
@@ -17,7 +17,7 @@ class ItemModal extends React.Component {
     let element;
     if (this.props.data.external) {
       if (this.props.data.external.crunchbase) {
-        element = <i className="bookmark outline icon" />;
+        element = <a href={this.props.data.external.crunchbase} ><i className="bookmark outline icon" /></a>;
       }
     }
     return element;
