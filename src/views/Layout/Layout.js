@@ -11,12 +11,9 @@ import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
 import ResultsPanel from './../../components/ResultsPanel';
-
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
-
-import dataSet from './data/landscape_v24_jm.json';
-
+import dataSet from '../data/landscape_v24_jm.json';
 
 import './Layout.css';
 import './Category.css';
