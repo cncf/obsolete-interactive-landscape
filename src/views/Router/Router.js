@@ -9,12 +9,15 @@ import {
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
+import Iconator from './../../components/Iconator';
 import Filter from './../../components/Filter';
+import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
 
+//import dataSet from './data/file_UI.json';
 import dataSet from './data/landscape_v24_jm.json';
 
 
