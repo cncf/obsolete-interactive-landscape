@@ -14,6 +14,7 @@ import Filter from './../../components/Filter';
 import ItemsPanel from './../../components/ItemsPanel';
 import ResultsPanel from './../../components/ResultsPanel';
 import ItemModal from './../../components/ItemModal';
+import CategoryView from './Category';
 
 //import dataSet from './data/file_UI.json';
 import dataSet from './data/landscape_v24_jm.json';
@@ -137,7 +138,7 @@ class Layout extends Component {
                 {/*<Switch location={isModal ? this.previousLocation : location}>*/}
                 <Switch>fire
                   <Route exact path='/' render={props =>
-                    <CategoryView cat={0} {...props} />
+                    <CategoryView cat={0} {...props} data={dataSet} />
                   } />
                   
                   <Route path='/filter' component={ResultsPanel}/>
@@ -148,49 +149,49 @@ class Layout extends Component {
                     <SubCategoryView cat={0} {...props} />
                   } />
                   <Route path='/orchestration_and_management' render={props =>
-                    <CategoryView cat={0} {...props} />
+                    <CategoryView cat={0} {...props} data={dataSet}  />
                   } />
         
                   <Route path='/public_cloud/:id' render={props =>
                     <SubCategoryView cat={1} {...props} />
                   } />
                   <Route path='/public_cloud' render={props =>
-                    <CategoryView cat={1} {...props} />
+                    <CategoryView cat={1} {...props} data={dataSet} />
                   } />
         
                   <Route path='/provisioning/:id' render={props =>
                     <SubCategoryView cat={2} {...props} />
                   } />
                   <Route path='/provisioning' render={props =>
-                    <CategoryView cat={2} {...props} />
+                    <CategoryView cat={2} {...props} data={dataSet} />
                   } />
         
                   <Route path='/runtime/:id' render={props =>
                     <SubCategoryView cat={3} {...props} />
                   } />
                   <Route path='/runtime' render={props =>
-                    <CategoryView cat={3} {...props} />
+                    <CategoryView cat={3} {...props} data={dataSet} />
                   } />
         
                   <Route path='/app_definition_development/:id' render={props =>
                     <SubCategoryView cat={4} {...props} />
                   } />
                   <Route path='/app_definition_development' render={props =>
-                    <CategoryView cat={4} {...props} />
+                    <CategoryView cat={4} {...props} data={dataSet} />
                   } />
         
                   <Route path='/platform/:id' render={props =>
                     <SubCategoryView cat={5} {...props} />
                   } />
                   <Route path='/platform' render={props =>
-                    <CategoryView cat={5} {...props} />
+                    <CategoryView cat={5} {...props} data={dataSet} />
                   } />
         
                   <Route path='/observability_analysis/:id' render={props =>
                     <SubCategoryView cat={6} {...props} />
                   } />
                   <Route path='/observability_analysis' render={props =>
-                    <CategoryView cat={6} {...props} />
+                    <CategoryView cat={6} {...props} data={dataSet} />
                   } />
       
       
@@ -250,45 +251,8 @@ const Gallery = () => (
   </div>
 );
 
-const Color = (cat) =>{
-  let value;
-    switch (cat) {
-      case 'apis':
-        value = '1';
-        break;
-      case 'data':
-        value = '1';
-        break;
-      case 'app_definition_development':
-        value = '1';
-        break;
-      case 'observability_analysis':
-        value = '2';
-        break;
-      case 'platform':
-        value = '3';
-        break;
-      case 'orchestration_and_management':
-        value = '4';
-        break;
-      case 'runtime':
-        value = '5';
-        break;
-      case 'provisioning':
-        value = '6';
-        break;
-      case 'public_cloud':
-        value = '7';
-        break;
-      default : value = '1';
-    }
-    
-    value = 'cat_'+ value;
-    return value;
-  
-};
 
-const CategoryView = ({ cat }) => {
+const CategoryViewX = ({ cat }) => {
   const category = CATEGORIES[cat];
   const subCategories = category.subcategories;
   let color = Color(cat);
