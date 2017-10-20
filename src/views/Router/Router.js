@@ -1,15 +1,14 @@
 import React from 'react';
-import { Icon, Menu } from 'semantic-ui-react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
-
+import ResultsPanel from './../../components/ResultsPanel';
+import CategoryView from './../Layout/Category';
+import SubCategoryView from './../Layout/SubCategory';
 import Layout from './../Layout/Layout';
 
-import dataSet from './data/landscape_v24_jm.json';
+import dataSet from './../data/landscape_v24_jm.json';
 
 
 const Routes = ({ }) => (
@@ -17,15 +16,16 @@ const Routes = ({ }) => (
     <Route
       exact
       path="/"
-      render={props =>
-        <CategoryView cat={0} {...props} data={dataSet} />
+      render={props => (
+        <Layout>
+          <CategoryView cat={0} {...props} data={dataSet} />
+        </Layout>
+      )
+      
       }
     />
         
     <Route path="/filter" component={ResultsPanel} />
-    <Route path="/home" component={Home} />
-    <Route path="/gallery" component={Gallery} />
-
     <Route
       path="/orchestration_and_management/:id"
       render={props =>

@@ -10,9 +10,6 @@ import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
-import ResultsPanel from './../../components/ResultsPanel';
-import CategoryView from './Category';
-import SubCategoryView from './SubCategory';
 import dataSet from '../data/landscape_v24_jm.json';
 
 import './Layout.css';
@@ -129,68 +126,9 @@ class Layout extends Component {
             </div>
             <div className="content_wrapper">
               <div className="panel_wrapper">
-      
-                {/*<Switch location={isModal ? this.previousLocation : location}>*/}
-                <Switch>fire
-                  <Route exact path='/' render={props =>
-                    <CategoryView cat={0} {...props} data={dataSet} />
-                  } />
-                  
-                  <Route path='/filter' component={ResultsPanel}/>
-                  <Route path='/home' component={Home}/>
-                  <Route path='/gallery' component={Gallery}/>
-        
-                  <Route path='/orchestration_and_management/:id' render={props =>
-                    <SubCategoryView cat={0} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/orchestration_and_management' render={props =>
-                    <CategoryView cat={0} {...props} data={dataSet}  />
-                  } />
-        
-                  <Route path='/public_cloud/:id' render={props =>
-                    <SubCategoryView cat={1} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/public_cloud' render={props =>
-                    <CategoryView cat={1} {...props} data={dataSet} />
-                  } />
-        
-                  <Route path='/provisioning/:id' render={props =>
-                    <SubCategoryView cat={2} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/provisioning' render={props =>
-                    <CategoryView cat={2} {...props} data={dataSet} />
-                  } />
-        
-                  <Route path='/runtime/:id' render={props =>
-                    <SubCategoryView cat={3} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/runtime' render={props =>
-                    <CategoryView cat={3} {...props} data={dataSet} />
-                  } />
-        
-                  <Route path='/app_definition_development/:id' render={props =>
-                    <SubCategoryView cat={4} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/app_definition_development' render={props =>
-                    <CategoryView cat={4} {...props} data={dataSet} />
-                  } />
-        
-                  <Route path='/platform/:id' render={props =>
-                    <SubCategoryView cat={5} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/platform' render={props =>
-                    <CategoryView cat={5} {...props} data={dataSet} />
-                  } />
-        
-                  <Route path='/observability_analysis/:id' render={props =>
-                    <SubCategoryView cat={6} {...props} data={dataSet}/>
-                  } />
-                  <Route path='/observability_analysis' render={props =>
-                    <CategoryView cat={6} {...props} data={dataSet} />
-                  } />
-      
-      
-                </Switch>
+                
+                {this.props.children}
+                
     
               </div>
               <div className="filter_wrapper">
