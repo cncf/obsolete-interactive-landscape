@@ -7,7 +7,7 @@ import Color from './utilities/Color';
 const SubCategoryView = ({ cat, match, data }) => {
   const category = data.landscape[cat];
   const subCategory = category.subcategories[match.params.id];
-  console.log(category);
+  // console.log(category);
   
   if (!subCategory) {
     return <div>No Sub Category called like that</div>;

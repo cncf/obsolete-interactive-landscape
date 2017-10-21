@@ -6,11 +6,11 @@ import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
+import Mapping from './utilities/Mapping';
 import dataSet from '../data/landscape_v24_jm.json';
 
 import './Layout.css';
 import './Category.css';
-
 
 class Layout extends Component {
   constructor(props) {
@@ -70,9 +70,7 @@ class Layout extends Component {
     }
     return classNames('layout infog01', { open_hidden: true });
     
-    
   }
-  
   
   renderHeader() {
     const title = this.state.title;
@@ -93,21 +91,20 @@ class Layout extends Component {
   }
 
   renderCategory (){
-    const category = this.props.match.params.id;
+    let category = Mapping(this.props.match.path);
+    const subcategory = this.props.match.params.id;
     console.log(category);
-  
-    if(category){
-      return <SubCategoryView cat="0" data={dataSet} match={this.props.match} /> ;
+    
+    if(subcategory){
+      return <SubCategoryView cat={category} data={dataSet} match={this.props.match} /> ;
     }
-    return <CategoryView cat="0" data={dataSet} match={this.props.match} /> ;
+    return <CategoryView cat={category} data={dataSet} match={this.props.match} /> ;
   }
   
   render() {
-  
     const data= this.state.landscape;
    
     return (
-  
         <div className={this.getClassNames()}>
           <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
             <SideBar data={data} >
@@ -131,7 +128,7 @@ class Layout extends Component {
           
           {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}
         </div>
- 
+      
     )
   }
 
