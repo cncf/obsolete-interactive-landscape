@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { Icon, Menu } from 'semantic-ui-react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from 'react-router-dom';
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
+import CategoryView from './Category';
+import SubCategoryView from './SubCategory';
 import dataSet from '../data/landscape_v24_jm.json';
 
 import './Layout.css';
@@ -96,15 +92,14 @@ class Layout extends Component {
     );
   }
 
-  renderCategory (number){
-    const category = this.state.landscape.landscape[3];
+  renderCategory (){
+    const category = this.props.match.params.id;
     console.log(category);
   
-    return (
-      <div>
-        {category.name} + 3
-      </div>
-    )
+    if(category){
+      return <SubCategoryView cat="0" data={dataSet} match={this.props.match} /> ;
+    }
+    return <CategoryView cat="0" data={dataSet} match={this.props.match} /> ;
   }
   
   render() {
@@ -126,9 +121,7 @@ class Layout extends Component {
             </div>
             <div className="content_wrapper">
               <div className="panel_wrapper">
-                {this.props.location.pathname}
-                { console.log(this.props)}
-    
+                {this.renderCategory()}
               </div>
               <div className="filter_wrapper">
                 <Filter />
@@ -147,49 +140,6 @@ class Layout extends Component {
 
 const CATEGORIES = dataSet.landscape;
 
-const Thumbnail = ({ color }) =>
-  <div style={{
-    width: 50,
-    height: 50,
-    background: color
-  }}/>;
-
-const Home = () => (
-  <div>
-    <Link to='/gallery'>Visit the Gallery</Link>
-    <h2>Featured Images</h2>
-    <ul>
-      <li><Link to='/orchestration_and_management'>Tomato</Link></li>
-      <li><Link to='/'>Crimson</Link></li>
-    </ul>
-  </div>
-);
-
-const Gallery = () => (
-  <div>
-    {CATEGORIES.map(i => (
-      <Link
-        key={i.id}
-        to={{
-          pathname: `/${i.id}`,
-          state: { modal: true }
-        }}
-      >
-        <Thumbnail color={i.color} />
-        <p>{i.name}</p>
-      </Link>
-    ))}
-  </div>
-);
 
 
-
-
-const ModalGallery = () => (
-  <Router>
-    <Route component={Layout} />
-  </Router>
-);
-
-
-export default ModalGallery;
+export default Layout;
