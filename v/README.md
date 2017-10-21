@@ -1,3 +1,0 @@
-##CNCF
-
-Cloud Native Landscape
