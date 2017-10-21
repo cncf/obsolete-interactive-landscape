@@ -7,7 +7,6 @@ const CategoryView = ({ cat, data }) => {
   const CATEGORIES = data.landscape;
   const category = CATEGORIES[cat];
   const subCategories = category.subcategories;
-  const color = Color(cat);
   
   if (!category) {
     return <div>No Category called like that</div>;

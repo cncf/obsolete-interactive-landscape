@@ -66,7 +66,7 @@ class SideBar extends Component {
         <Popup
           trigger={
             <Link
-              key={index}
+              key={i.slug_name}
               to={{
                 pathname: `/${i.slug_name}`,
                 // this is the trick!
@@ -99,7 +99,7 @@ class SideBar extends Component {
               (
                 <Item>
                   <Link
-                    key={subindex}
+                    key={s.slug_name}
                     to={{
                       pathname: `/${i.slug_name}/${subindex}`,
                       // this is the trick!

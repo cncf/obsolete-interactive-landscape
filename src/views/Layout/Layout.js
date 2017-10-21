@@ -91,14 +91,20 @@ class Layout extends Component {
   }
 
   renderCategory (){
-    let category = Mapping(this.props.match.path);
+  
+    let parentCategory = this.props.match.url;
+    let pathArray = parentCategory.split( '/' );
+    parentCategory = Mapping(pathArray[1]);
+    console.log(parentCategory);
+    
     const subcategory = this.props.match.params.id;
-    console.log(category);
+    
     
     if(subcategory){
-      return <SubCategoryView cat={category} data={dataSet} match={this.props.match} /> ;
+      console.log(this.props);
+      return <SubCategoryView cat={parentCategory} data={dataSet} match={this.props.match} /> ;
     }
-    return <CategoryView cat={category} data={dataSet} match={this.props.match} /> ;
+    return <CategoryView cat={parentCategory} data={dataSet} /> ;
   }
   
   render() {

@@ -2,25 +2,25 @@
 const Mapping = (cat) => {
   let value;
   switch (cat) {
-    case '/orchestration_and_management':
+    case 'orchestration_and_management':
       value = '0';
       break;
-    case '/public_cloud':
+    case 'public_cloud':
       value = '1';
       break;
-    case '/provisioning':
+    case 'provisioning':
       value = '2';
       break;
-    case '/runtime':
+    case 'runtime':
       value = '3';
       break;
-    case '/app_definition_development':
+    case 'app_definition_development':
       value = '4';
       break;
-    case '/platform':
+    case 'platform':
       value = '5';
       break;
-    case '/observability_analysis':
+    case 'observability_analysis':
       value = '6';
       break;
     case 'apis':
