@@ -126,9 +126,8 @@ class Layout extends Component {
             </div>
             <div className="content_wrapper">
               <div className="panel_wrapper">
-                
-                {this.props.children}
-                
+                {this.props.location.pathname}
+                { console.log(this.props)}
     
               </div>
               <div className="filter_wrapper">
@@ -173,7 +172,6 @@ const Gallery = () => (
         key={i.id}
         to={{
           pathname: `/${i.id}`,
-          // this is the trick!
           state: { modal: true }
         }}
       >
