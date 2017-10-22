@@ -668,7 +668,7 @@ p {
                   (5,$f5-color),
                   (6,$f6-color),
                   (7,$f7-color) {
-    #cat_#{$number} {
+    .cat_#{$number} {
       .category-box{
         border-color: $color;
         border-width: 0 0 0 0;

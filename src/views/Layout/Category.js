@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ClassNames from 'classnames';
 import Iconator from './../../components/Iconator';
-import  from './utilities/Color';
+import Mapping from './utilities/Mapping';
 
 const CategoryView = ({ cat, data }) => {
   const CATEGORIES = data.landscape;
@@ -11,11 +12,14 @@ const CategoryView = ({ cat, data }) => {
   if (!category) {
     return <div>No Category called like that</div>;
   }
+  const thisCat = `cat_${Mapping(category.slug_name)}`;
   
   return (
     <div className="module">
       <Iconator icon={category.slug_name} size="background" />
-      <div className="stillbox" id={Color(category.slug_name)}>
+      <div
+        className={ClassNames(`stillbox ${thisCat}`)}
+      >
         <div className="box-2 category-box">
           <h2 className="category-title categ-big">
             <Iconator icon={category.slug_name} size="m" />
