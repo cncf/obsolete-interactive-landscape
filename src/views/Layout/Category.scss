@@ -1,10 +1,12 @@
-$f1-color: #17aaad;  //Data + App definition  +  APIs
-$f2-color: #635b89;  //Observability
-$f3-color: #688ca5;  //Platforms
-$f4-color: #1b86c8;  //Orchestration
-$f5-color: #478466;  //Runtime
-$f6-color: #6c9a40;  //Provisioning
-$f7-color: #3e56a6;  //infrastructure
+$f0-color: #1b86c8;  //Orchestration
+$f1-color: #3e56a6;  //PublicCloud
+$f2-color: #6c9a40;  //Provisioning
+$f3-color: #478466;  //Runtime
+$f4-color: #17aaad;  //Data + App definition  +  APIs
+$f5-color: #688ca5;  //Platforms
+$f6-color: #635b89;  //Observability
+$f7-color: #CCC;
+
 
 $infog_primary: #55acee;
 
@@ -658,13 +660,11 @@ p {
 
 
   @each $number, $color,$toplocation in
-                  ('1a',$f1-color),
-                  ('1b',$f1-color),
-                  ('1c',$f1-color),
+                  (0,$f0-color),
                   (1,$f1-color),
-                  (4,$f4-color),
                   (2,$f2-color),
                   (3,$f3-color),
+                  (4,$f4-color),
                   (5,$f5-color),
                   (6,$f6-color),
                   (7,$f7-color) {

@@ -90,17 +90,21 @@ class Layout extends Component {
     );
   }
 
-  renderCategory (){
-  
+  getParentCategory(){
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
     parentCategory = Mapping(pathArray[1]);
+    
+    return parentCategory;
+  }
+  renderCategory (){
+    
     const subcategory = this.props.match.params.id;
     
     if(subcategory){
-      return <SubCategoryView cat={parentCategory} data={dataSet} match={this.props.match} /> ;
+      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} /> ;
     }
-    return <CategoryView cat={parentCategory} data={dataSet} /> ;
+    return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
   }
   
   render() {
@@ -109,7 +113,7 @@ class Layout extends Component {
     return (
         <div className={this.getClassNames()}>
           <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
-            <SideBar data={data} >
+            <SideBar data={data} category={this.getParentCategory()} >
               {this.renderButton()}
             </SideBar>
           </div>

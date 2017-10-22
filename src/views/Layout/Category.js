@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Iconator from './../../components/Iconator';
-import Color from './utilities/Color';
+import  from './utilities/Color';
 
 const CategoryView = ({ cat, data }) => {
   const CATEGORIES = data.landscape;

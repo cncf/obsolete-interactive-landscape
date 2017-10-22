@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Item, Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import Iconator from './../../components/Iconator';
+import Iconator from './../Iconator';
+import Mapping from './../../views/Layout/utilities/Mapping';
 
 import './SideBar.css';
 
@@ -59,9 +60,10 @@ class SideBar extends Component {
   }
   renderFirstLevel(){
     const data = this.props.data.landscape;
+    const currentCat = this.props.category;
     
     return data.map((i, index) =>
-      (<li className={classNames(`treeview ${Color(i.slug_name)}`, { active: true })} >
+      (<li className={classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`, { active: true })} >
   
         <Popup
           trigger={
