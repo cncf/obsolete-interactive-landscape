@@ -47,7 +47,6 @@ class ItemModal extends React.Component {
     
       <Modal className="item-modal" trigger={<span>{ this.props.children }</span>} closeIcon>
         <Modal.Header>
-          <div className="logos-modal" />
           { data.name }
         </Modal.Header>
         <Modal.Content image>
