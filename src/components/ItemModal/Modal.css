@@ -18,16 +18,6 @@
 
 .item-modal {
   margin-top: 200px; }
-  .item-modal .logos-modal {
-    background-image: url(../assets/images/brand/partners-logos.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 40px;
-    min-width: 250px;
-    position: fixed;
-    bottom: -100px;
-    right: 0; }
   .item-modal .content {
     background-color: rgba(255, 255, 255, 0.2) !important; }
   .item-modal p {
@@ -36,11 +26,16 @@
     color: black !important; }
   .item-modal .header {
     text-align: left !important;
-    color: black !important;
-    font-size: 0.9em !important;
-    background-color: transparent !important; }
+    color: #8c8c8c !important;
+    font-size: 0.7em !important;
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important; }
     .item-modal .header span {
-      font-weight: 200; }
+      font-weight: 200;
+      margin: 0 10px;
+      color: #000 !important; }
   .item-modal .details {
     display: flex !important;
     flex: 3;

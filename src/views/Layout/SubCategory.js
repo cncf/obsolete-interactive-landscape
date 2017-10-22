@@ -15,7 +15,7 @@ const SubCategoryView = ({ cat, match, data }) => {
 
   return (
     <div className="module">
-      <Iconator icon={category.slug_name} size="background" />
+      <Iconator icon={category.slug_name} size="background"/>
       <div className="stillbox" id={Color(category.slug_name)}>
         <div className="box-2 category-box">
           <div className="subcateg-title">
@@ -29,7 +29,7 @@ const SubCategoryView = ({ cat, match, data }) => {
           <div className=" box-items">
             
             {subCategory.items.map((i, index) => (
-              <ItemModal data={i} category={category.slug_name} index={index} >
+              <ItemModal data={i} cat={category.name} subcat={subCategory.name} index={index} >
                 <div className="item c-tooltip" >
                   <h4
                     className={classNames('company', { no_oss: !i.oss })}

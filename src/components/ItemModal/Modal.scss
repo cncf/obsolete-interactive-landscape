@@ -33,11 +33,17 @@
   }
   .header {
     text-align: left !important;
-    color: black !important;
-    font-size: 0.9em !important;
+    color: #8c8c8c !important;
+    font-size: 0.7em !important;
     background-color: transparent !important;
+    display:flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
     span {
       font-weight: 200;
+      margin:0 10px;
+      color: #000 !important;
     }
   }
   .details {

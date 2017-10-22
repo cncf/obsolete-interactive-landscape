@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, Button, Icon } from 'semantic-ui-react';
+import Iconator from './../Iconator';
 import './Modal.css';
 
 
@@ -43,11 +44,13 @@ class ItemModal extends React.Component {
   
   render() {
     const data = this.props.data;
+    console.log(data);
     return (
     
       <Modal className="item-modal" trigger={<span>{ this.props.children }</span>} closeIcon>
         <Modal.Header>
-          { data.name }
+          <Iconator icon="public_cloud" size="s" />
+          <span>{this.props.cat}</span> | {this.props.subcat}
         </Modal.Header>
         <Modal.Content image>
           <div className="item-image x2" style={{ backgroundImage: `url(${data.raw_logo})` }} />
