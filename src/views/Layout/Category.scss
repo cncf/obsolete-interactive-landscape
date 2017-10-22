@@ -631,6 +631,10 @@ p {
       background-size: 90% auto;
       background-position: center;
 
+      &.no_oss{
+        background-color: #f0f0f0;
+      }
+
     }
 
     .company-name{

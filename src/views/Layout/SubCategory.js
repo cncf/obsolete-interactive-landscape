@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 import ItemModal from './../../components/ItemModal';
 import Iconator from './../../components/Iconator';
 import Color from './utilities/Color';
@@ -29,10 +30,16 @@ const SubCategoryView = ({ cat, match, data }) => {
             
             {subCategory.items.map((i, index) => (
               <ItemModal data={i} category={category.slug_name} index={index} >
-                <div className="item c-tooltip">
-                  <h4 className="company" style={{ backgroundImage: `url(${i.raw_logo})` }} data-placement="top" title="Bosch" />
+                <div className="item c-tooltip" >
+                  <h4
+                    className={classNames('company', { no_oss: !i.oss })}
+                    style={{ backgroundImage: `url(${i.raw_logo})` }}
+                    data-placement="top"
+                    title="Bosch"
+                  />
+                  
                   <div className="company-name">
-                    {i.name}
+                    {i.name} +  {i.oss ? 'OSS' : ''}
                   </div>
                 </div>
               </ItemModal>
@@ -44,5 +51,7 @@ const SubCategoryView = ({ cat, match, data }) => {
   
   );
 };
+
+
 export default SubCategoryView;
 
