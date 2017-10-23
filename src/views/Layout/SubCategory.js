@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classNames from 'classnames';
+import ClassNames from 'classnames';
 import ItemModal from './../../components/ItemModal';
 import Iconator from './../../components/Iconator';
-import Color from './utilities/Color';
+import Mapping from './utilities/Mapping';
 
 const SubCategoryView = ({ cat, match, data }) => {
   const category = data.landscape[cat];
   const subCategory = category.subcategories[match.params.id];
+  const thisCat = `cat_${Mapping(category.slug_name)}`;
   
   if (!subCategory) {
     return <div>No Sub Category called like that</div>;
@@ -15,12 +16,13 @@ const SubCategoryView = ({ cat, match, data }) => {
 
   return (
     <div className="module">
-      <Iconator icon={category.slug_name} size="background"/>
-      <div className="stillbox" id={Color(category.slug_name)}>
+      <Iconator icon={category.slug_name} size="background" />
+      <div className={ClassNames(`stillbox ${thisCat}`)} >
+        
         <div className="box-2 category-box">
           <div className="subcateg-title">
             <Link to={{ pathname: `/${category.slug_name}` }}>
-              <span>
+              <span className="category-title">
                 {category.name}
               </span>
             </Link>
@@ -32,7 +34,7 @@ const SubCategoryView = ({ cat, match, data }) => {
               <ItemModal data={i} cat={category.name} subcat={subCategory.name} index={index} >
                 <div className="item c-tooltip" >
                   <h4
-                    className={classNames('company', { no_oss: !i.oss })}
+                    className={ClassNames('company', { no_oss: !i.oss })}
                     style={{ backgroundImage: `url(${i.raw_logo})` }}
                     data-placement="top"
                     title="Bosch"
