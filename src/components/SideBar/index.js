@@ -7,46 +7,6 @@ import Mapping from './../../views/Layout/utilities/Mapping';
 
 import './SideBar.css';
 
-
-const Color = (cat) => {
-  let values = null;
-  let value;
-  switch (cat) {
-    case 'apis':
-      value = '1';
-      break;
-    case 'data':
-      value = '1';
-      break;
-    case 'app_definition_development':
-      value = '1';
-      break;
-    case 'observability_analysis':
-      value = '2';
-      break;
-    case 'platform':
-      value = '3';
-      break;
-    case 'orchestration_and_management':
-      value = '4';
-      break;
-    case 'runtime':
-      value = '5';
-      break;
-    case 'provisioning':
-      value = '6';
-      break;
-    case 'public_cloud':
-      value = '7';
-      break;
-    default : value = '1';
-  }
-  
-  values = 'cat_' + value;
-  return values;
-};
-
-
 class SideBar extends Component {
   constructor(props) {
     super(props);
@@ -58,11 +18,11 @@ class SideBar extends Component {
     
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
   }
-  renderFirstLevel(){
+  renderFirstLevel() {
     const data = this.props.data.landscape;
     const currentCat = this.props.category;
     
-    return data.map((i, index) =>
+    return data.map(i =>
       (<li
         className={classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`, { active: true })}
         key={i.slug_name}
