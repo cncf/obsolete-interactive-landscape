@@ -1359,17 +1359,6 @@ landscape:
             twitter: https://twitter.com/dellemc
             crunchbase: https://www.crunchbase.com/organization/dell-emc
         - item:
-          name: "OpenSDS"
-          slug_name: opensds
-          company: "OpenSDS"
-          cncf: false
-          oss: true
-          homepage_url: https://www.opensds.io/
-          repo_url: https://github.com/opensds
-          raw_logo: https://www.opensds.io/wp-content/uploads/sites/18/2016/11/logo_opensds.png
-          external:
-            crunchbase: https://www.crunchbase.com/organization/opensds
-        - item:
           name: "Hedvig"
           slug_name: hedvig
           company: "Hedvig Inc."
