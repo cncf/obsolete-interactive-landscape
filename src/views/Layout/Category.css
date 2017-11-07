@@ -481,8 +481,9 @@ p {
     text-align: center;
     overflow: hidden;
     max-width: 75px;
-    line-height: 2.5em;
-    vertical-align: top; }
+    line-height: 1em;
+    vertical-align: top;
+    margin-top: 1em; }
 
 .infog01 .cat_0 .category-box {
   border-color: #1b86c8;
