@@ -641,17 +641,12 @@ p {
     }
 
     .company-name{
-
-      font-size: 0.6em;
+      font-size: 0.7em;
       color: #454545;
       text-align: center;
-      display: inline-block;
-      //white-space: nowrap;
       overflow: hidden;
-      max-width: 50px;
-      line-height: 1em;
-      padding:0 0 2px 0;
-      margin-top:0;
+      max-width: 75px;
+      line-height: 2.5em;
       vertical-align: top;
 
     }
