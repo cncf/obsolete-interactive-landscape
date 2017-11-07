@@ -33,7 +33,7 @@ const SubCategoryView = ({ cat, match, data }) => {
             {subCategory.items.map((i, index) => (
               <ItemModal data={i} cat={category.name} subcat={subCategory.name} index={index} >
                 <div className="item c-tooltip" >
-                  <h4
+                  <div
                     className={ClassNames('company', { no_oss: !i.oss })}
                     style={{ backgroundImage: `url(${i.raw_logo})` }}
                     data-placement="top"

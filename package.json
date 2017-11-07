@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/cncf/interactive_landscape/build",
+  "homepage": "https://cncf.github.io/interactive_landscape/buildls",
   "dependencies": {
     "classnames": "^2.2.5",
     "json-loader": "^0.5.7",

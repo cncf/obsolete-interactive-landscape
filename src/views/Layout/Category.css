@@ -467,8 +467,14 @@ p {
     background-repeat: no-repeat;
     background-size: 90% auto;
     background-position: center; }
-    .infog01 .stillbox .company.no_oss {
-      background-color: #f0f0f0; }
+    .infog01 .stillbox .company.no_oss::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px; }
   .infog01 .stillbox .company-name {
     font-size: 0.6em;
     color: #454545;
