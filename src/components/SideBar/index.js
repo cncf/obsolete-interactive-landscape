@@ -63,12 +63,14 @@ class SideBar extends Component {
     const currentCat = this.props.category;
     
     return data.map((i, index) =>
-      (<li className={classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`, { active: true })} >
+      (<li
+        className={classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`, { active: true })}
+        key={i.slug_name}
+      >
   
         <Popup
           trigger={
             <Link
-              key={i.slug_name}
               to={{
                 pathname: `/${i.slug_name}`,
                 // this is the trick!
@@ -99,9 +101,10 @@ class SideBar extends Component {
           
             {i.subcategories.map((s, subindex) =>
               (
-                <Item>
+                <Item
+                  key={s.slug_name}
+                >
                   <Link
-                    key={s.slug_name}
                     to={{
                       pathname: `/${i.slug_name}/${subindex}`,
                       // this is the trick!
@@ -121,18 +124,6 @@ class SideBar extends Component {
     );
   }
   
-  //   renderThirdLevel(i){
-  //
-  //   return i.items.map(s =>
-  //     (<ul className="treeview-menu level2  ">
-  //       <li key="keynamehere">
-  //         <a role="button">
-  //           {s.name}
-  //         </a>
-  //       </li>
-  //     </ul>),
-  //   );
-  // }
 
   render() {
     return (

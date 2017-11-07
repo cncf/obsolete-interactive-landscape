@@ -36,8 +36,7 @@ const SubCategoryView = ({ cat, match, data }) => {
                 cat={category.name}
                 subcat={subCategory.name}
                 index={index}
-                key={`${i.slug_name}-${index}`}
-              
+                key={i.slug_name}
               >
                 <div className="item c-tooltip" >
                   <div
