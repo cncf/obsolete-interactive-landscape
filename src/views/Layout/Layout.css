@@ -14,14 +14,15 @@
 
 .content_wrapper {
   display: flex;
-  flex: 9; }
+  flex: 9;
+  align-items: center; }
   .content_wrapper .panel_wrapper {
     display: flex;
-    height: 100% !important;
     width: 90%;
     min-height: 50%;
     position: relative !important;
-    padding: 10px 10px 0 0; }
+    padding: 10px 10px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
     .content_wrapper .panel_wrapper .card {
       border: 0 !important;
       padding: 35px !important;
@@ -44,9 +45,8 @@
     background-size: 100% 100%;
     display: inline-block;
     margin: 0 10px -10px 0;
-    background-color: yellow;
     background-image: url("../../components/assets/images/brand/3d_placeholder.png");
-    border: 1px solid red; }
+    border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .sidebar_wrapper {
   position: absolute;

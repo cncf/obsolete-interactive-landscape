@@ -412,7 +412,6 @@ p {
     font-size: 0.9em; }
   .infog01 .stillbox .categ-big {
     font-size: 1.6em;
-    padding-top: 40px;
     color: black;
     font-weight: 600;
     line-height: 1em; }
@@ -432,7 +431,7 @@ p {
     color: #666; }
   .infog01 .stillbox .subcateg-title {
     font-size: 1.5em;
-    padding: 40px 0 10px 40px; }
+    padding: 0 0 10px 40px; }
   .infog01 .stillbox .item {
     display: inline-block;
     border-radius: 5px;
