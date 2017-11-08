@@ -123,6 +123,8 @@ class Layout extends Component {
   
             </div>
             <div className="content_wrapper">
+              <div className="ph3d" />
+              
               <div className="panel_wrapper">
                 {this.renderCategory()}
               </div>

@@ -37,6 +37,16 @@
     border: 1px solid #e6e6e6;
     border-radius: 6px 0 0 6px;
     display: none; }
+  .content_wrapper .ph3d {
+    width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 0 10px -10px 0;
+    background-color: yellow;
+    background-image: url("../../components/assets/images/brand/3d_placeholder.png");
+    border: 1px solid red; }
 
 .sidebar_wrapper {
   position: absolute;
