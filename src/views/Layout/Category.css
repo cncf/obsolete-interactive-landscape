@@ -431,7 +431,7 @@ p {
     color: #666; }
   .infog01 .stillbox .subcateg-title {
     font-size: 1.5em;
-    padding: 0 0 10px 40px; }
+    padding: 0 0 10px 0; }
   .infog01 .stillbox .item {
     display: inline-block;
     border-radius: 5px;
@@ -441,7 +441,7 @@ p {
   .infog01 .stillbox .box-items {
     border-width: 0 0 0 2px;
     border-style: solid;
-    margin: 20px 5px 0 30px;
+    margin: 20px 5px 0 0;
     width: 100%;
     padding: 20px; }
   .infog01 .stillbox h2 {
