@@ -297,7 +297,8 @@
       font-size: 1.2em; }
     .layout.collapse .sidebar_wrapper .sidebar-menu > li.header {
       color: #ccc;
-      border-left-width: 3px; }
+      border-left-width: 3px;
+      margin-bottom: 30px; }
     .layout.collapse .sidebar_wrapper .logo {
       border-left-width: 3px; }
   .layout.collapse .layout_wrapper, .layout.collapse .main__header {
