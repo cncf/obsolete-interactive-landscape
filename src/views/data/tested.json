@@ -19,7 +19,7 @@
               "oss": true,
               "homepage_url": "https://kubernetes.io/",
               "repo_url": "https://github.com/kubernetes/kubernetes",
-              "raw_logo": "https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/name_logo_color.png",
+              "raw_logo": "http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
               "external": {
                 "twitter": "https://twitter.com/kubernetesio",
                 "crunchbase": "https://www.crunchbase.com/product/kubernetes"
@@ -548,7 +548,7 @@
       "subcategories": [
         {
           "subcategory": null,
-          "name": "Public Cloud",
+          "name": "",
           "slug_name": "sub_public_cloud",
           "items": [
             {
@@ -1497,7 +1497,7 @@
                 "crunchbase": "https://www.crunchbase.com/organization/gluster"
               },
               "calculated": {
-                "gh_stars": "971495"
+                "gh_stars": "12345"
               }
             },
             {
@@ -1658,6 +1658,20 @@
             },
             {
               "item": null,
+              "name": "OpenSDS",
+              "slug_name": "opensds",
+              "company": "OpenSDS",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.opensds.io/",
+              "repo_url": "https://github.com/opensdsxloads/sites/18/2016/11/logo_opensds.png",
+              "external": {
+                "twitter": "https://twitter.com/opensds",
+                "crunchbase": "https://www.crunchbase.com/organization/opensds"
+              }
+            },
+            {
+              "item": null,
               "name": "Rex-Ray",
               "slug_name": "rex_ray",
               "company": "Dell EMC",
@@ -1713,20 +1727,6 @@
               "external": {
                 "twitter": "https://twitter.com/dellemc",
                 "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
-              }
-            },
-            {
-              "item": null,
-              "name": "OpenSDS",
-              "slug_name": "opensds",
-              "company": "OpenSDS",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.opensds.io/",
-              "repo_url": "https://github.com/opensdsxloads/sites/18/2016/11/logo_opensds.png",
-              "external": {
-                "twitter": "https://twitter.com/opensds",
-                "crunchbase": "https://www.crunchbase.com/organization/opensds"
               }
             },
             {
@@ -2445,9 +2445,6 @@
               "external": {
                 "twitter": "https://twitter.com/hadoop",
                 "crunchbase": "https://www.crunchbase.com/product/hadoop"
-              },
-              "calculated": {
-                "gh_stars": "9714"
               }
             },
             {
