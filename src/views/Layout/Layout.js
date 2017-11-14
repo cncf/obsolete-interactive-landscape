@@ -7,7 +7,7 @@ import Filter from './../../components/Filter';
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
 import Mapping from './utilities/Mapping';
-import dataSet from '../data/tested.json';
+import dataSet from '../../data/tested.json';
 
 import './Layout.css';
 import './Category.css';
