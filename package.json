@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://cncf.github.io/interactive_landscape",
+  "homepage": "https://cncf.github.io",
   "dependencies": {
     "@tweenjs/tween.js": "^17.1.1",
     "classnames": "^2.2.5",

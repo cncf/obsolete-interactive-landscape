@@ -7,8 +7,8 @@ import Filter from './../../components/Filter';
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
 import Mapping from './utilities/Mapping';
-//import dataSet from '../data/landscape_v24_jm.json';
-import dataSet from '../data/test.json';
+import dataSet from '../data/landscape_v24_jm.json';
+//import dataSet from '../data/test.json';
 
 import './Layout.css';
 import './Category.css';
