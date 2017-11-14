@@ -1,10 +1,10 @@
-##Instructions to Update Dataset
+## Instructions to Update Dataset
 
 Update via git :
 
  `cncf_landscape1/src/data/landscape_data.yml`
 
-####Testing Dataset:
+#### Testing Dataset:
 
 `yaml2json -s -p landscape_data.yml`
 
