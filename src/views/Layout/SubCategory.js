@@ -10,9 +10,7 @@ const SubCategoryView = ({ cat, match, data }) => {
   const category = data.landscape[cat];
   
   const subCategory = category.subcategories[match.params.id];
-  console.log(subCategory.items);
   const sorted = _.sortBy(subCategory.items, [function sort(o) { return o.name; }]);
-  console.log(sorted);
   
   const thisCat = `cat_${Mapping(category.slug_name)}`;
   
@@ -36,7 +34,7 @@ const SubCategoryView = ({ cat, match, data }) => {
           </div>
           <div className=" box-items">
             
-            {subCategory.items.map((i, index) => (
+            {sorted.map((i, index) => (
               <ItemModal
                 data={i}
                 cat={category.name}
@@ -48,7 +46,6 @@ const SubCategoryView = ({ cat, match, data }) => {
                   <div
                     className={ClassNames('company', { no_oss: !i.oss }, { cncf: i.cncf })}
                     style={{ backgroundImage: `url(${i.raw_logo})` }}
-                    data-placement="top"
                     title="Bosch"
                   />
                   

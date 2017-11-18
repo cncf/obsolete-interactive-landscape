@@ -44,6 +44,7 @@ class ItemModal extends React.Component {
   
   render() {
     const data = this.props.data;
+    
     return (
     
       <Modal className="item-modal" trigger={<span>{ this.props.children }</span>} closeIcon>
