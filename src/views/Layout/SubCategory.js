@@ -40,7 +40,7 @@ const SubCategoryView = ({ cat, match, data }) => {
               >
                 <div className="item c-tooltip" >
                   <div
-                    className={ClassNames('company', { no_oss: !i.oss })}
+                    className={ClassNames('company', { no_oss: !i.oss }, { cncf: i.cncf })}
                     style={{ backgroundImage: `url(${i.raw_logo})` }}
                     data-placement="top"
                     title="Bosch"
