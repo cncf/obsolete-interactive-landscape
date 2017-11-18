@@ -142,9 +142,4 @@ class Layout extends Component {
 
 }
 
-
-const CATEGORIES = dataSet.landscape;
-
-
-
 export default Layout;
