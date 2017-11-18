@@ -1,13 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ClassNames from 'classnames';
+import _ from 'lodash';
 import ItemModal from './../../components/ItemModal';
 import Iconator from './../../components/Iconator';
 import Mapping from './utilities/Mapping';
 
 const SubCategoryView = ({ cat, match, data }) => {
   const category = data.landscape[cat];
+  
   const subCategory = category.subcategories[match.params.id];
+  console.log(subCategory.items);
+  const sorted = _.sortBy(subCategory.items, [function sort(o) { return o.name; }]);
+  console.log(sorted);
+  
   const thisCat = `cat_${Mapping(category.slug_name)}`;
   
   if (!subCategory) {

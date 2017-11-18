@@ -7,6 +7,7 @@
     "@tweenjs/tween.js": "^17.1.1",
     "classnames": "^2.2.5",
     "json-loader": "^0.5.7",
+    "lodash": "^4.17.4",
     "path-to-regexp": "^2.0.0",
     "qs": "^6.5.1",
     "react": "^15.6.1",
