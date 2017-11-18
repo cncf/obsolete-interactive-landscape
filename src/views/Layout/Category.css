@@ -480,7 +480,7 @@ p {
       border-style: solid; }
     .infog01 .stillbox .company.cncf::after {
       content: "CNCF";
-      background-color: #0391ff;
+      background-color: #0092ff;
       font-size: 0.6em;
       width: 30px;
       color: white;

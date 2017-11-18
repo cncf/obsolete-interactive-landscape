@@ -65,6 +65,7 @@ class ItemModal extends React.Component {
             </p>
             <hr />
             <p>
+              {data.cncf ? 'CNCF |' : ''}
               {data.oss ? 'OSS |' : ''}
               {this.renderTwitter()}
               {this.renderCrunch()}

@@ -9,13 +9,29 @@
   border-color: #ececec;
 
   .logos{
-    background-image: url(../assets/images/brand/partners-logos.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    height: 40px;
-    min-width: 350px;
-    padding:10px 0;
+    display: flex;
+
+    div{
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 90%;
+      height: 40px;
+      padding:10px 0;
+
+      &.partner1{
+        background-image: url(../assets/images/brand/cncf.png);
+        min-width: 150px;
+      }
+      &.partner2{
+        background-image: url(../assets/images/brand/redpoint.png);
+        min-width: 100px;
+      }
+      &.partner3{
+        background-image: url(../assets/images/brand/amplify.png);
+        min-width: 80px;
+      }
+
+    }
 
   }
 

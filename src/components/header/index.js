@@ -20,7 +20,12 @@ class Header extends Component {
         <div className="title">
           <div>{state.title}</div>
         </div>
-        <div className="logos" />
+        <div className="logos">
+          <div className="partner1" />
+          <div className="partner2" />
+          <div className="partner3" />
+        </div>
+        
       </div>
     );
   }
