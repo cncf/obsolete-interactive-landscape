@@ -36,7 +36,7 @@
     background-color: white;
     border: 1px solid #e6e6e6;
     border-radius: 6px 0 0 6px;
-    display: none; }
+    padding: 20px; }
   .content_wrapper .ph3d {
     width: 300px;
     height: 300px;
