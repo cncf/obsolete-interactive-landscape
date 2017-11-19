@@ -16,9 +16,17 @@
   display: flex;
   flex: 9;
   padding-top: 5%; }
+  .content_wrapper .graph_wrapper {
+    flex: 2;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin: 0 10px -10px 0;
+    background-image: url("../../components/assets/images/placeholder/floor_02.jpg"); }
   .content_wrapper .panel_wrapper {
     display: flex;
-    width: 90%;
+    flex: 5;
     min-height: 50%;
     position: relative !important;
     padding: 10px 10px 0 0; }
@@ -37,14 +45,19 @@
     border: 1px solid #e6e6e6;
     border-radius: 6px 0 0 6px;
     padding: 20px; }
-  .content_wrapper .ph3d {
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: inline-block;
-    margin: 0 10px -10px 0;
-    background-image: url("../../components/assets/images/placeholder/floor_02.jpg"); }
+  .content_wrapper .ui.toggle.checkbox .box:before, .content_wrapper .ui.toggle.checkbox label:before {
+    width: 1.5rem;
+    height: 0.8rem;
+    background: rgba(0, 0, 0, 0.1); }
+  .content_wrapper .ui.toggle.checkbox input:checked ~ .box:after, .content_wrapper .ui.toggle.checkbox input:checked ~ label:after {
+    left: 0.75rem; }
+  .content_wrapper .ui.toggle.checkbox .box:after, .content_wrapper .ui.toggle.checkbox label:after {
+    width: 0.75rem;
+    height: 0.75rem; }
+  .content_wrapper .ui.toggle.checkbox label {
+    min-height: 1.5rem;
+    padding-left: 2.5rem;
+    font-size: 0.8em; }
 
 .sidebar_wrapper {
   position: absolute;
