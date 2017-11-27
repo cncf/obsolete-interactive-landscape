@@ -36,7 +36,7 @@ const SubCategoryView = ({ cat, match, data, filters }) => {
             </Link>
             <span> / {subCategory.name}</span>
           </div>
-          <div className={ClassNames('box-items', { f_cncf: filter1 }, { f_oss: filter2 }, { f_commercial: filter3 })}>
+          <div className={ClassNames('box-items', { filter_cncf: !filter1 }, { filter_oss: !filter2 }, { filter_commercial: !filter3 })}>
             
             {sorted.map((i, index) => (
               <ItemModal
@@ -48,7 +48,7 @@ const SubCategoryView = ({ cat, match, data, filters }) => {
               >
                 <div className="item c-tooltip" >
                   <div
-                    className={ClassNames('company', { no_oss: !i.oss }, { cncf: i.cncf })}
+                    className={ClassNames('company', { item_oss: i.oss && !i.cncf }, { item_commercial: !i.oss }, { item_cncf: i.cncf })}
                     style={{ backgroundImage: `url(${i.raw_logo})` }}
                     title="Bosch"
                   />

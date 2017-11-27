@@ -538,7 +538,6 @@ p {
     min-width: 500px;
     //margin: 0 auto;
 
-
     h1{
       font-weight:100;
       color: $infog_primary;
@@ -597,6 +596,20 @@ p {
       margin:20px 5px 0 0;
       width: 100%;
       padding: 20px;
+
+      &.filter_cncf{
+        .item_cncf{display:none !important;}
+
+      }
+      &.filter_oss{
+        .item_oss{display:none !important;}
+
+      }
+      &.filter_commercial{
+        .item_commercial{display:none !important;}
+
+      }
+
     }
 
     h2{
@@ -629,7 +642,7 @@ p {
 
 
 
-      &.no_oss::after{
+      &.item_commercial::after{
          content: "";
          background-color:rgba(0,0,0,0.1);
          font-weight: bold;
@@ -639,12 +652,12 @@ p {
          border-radius:5px;
        }
 
-      &.cncf{
+      &.item_cncf{
         border-color: #0092ff;
         border-width: 2px;
         border-style: solid;
       }
-      &.cncf::after{
+      &.item_cncf::after{
         content: "CNCF";
         background-color: #0092ff;
         font-size: 0.6em;
