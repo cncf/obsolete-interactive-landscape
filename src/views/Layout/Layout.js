@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, Menu } from 'semantic-ui-react'
+import { Icon, Menu, Checkbox } from 'semantic-ui-react'
 import classNames from 'classnames'
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
@@ -23,7 +23,18 @@ class Layout extends Component {
         collapsed: true,
       },
       filters:{
-      
+        cncf: {
+          title: 'CNCF',
+          status: true,
+        },
+        oss: {
+          title: 'Open Source',
+          status: true,
+        },
+        commercial: {
+          title: 'Commercial',
+          status: true,
+        },
       }
     };
     
@@ -105,13 +116,14 @@ class Layout extends Component {
     const subcategory = this.props.match.params.id;
     
     if(subcategory){
-      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} /> ;
+      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} filters={this.state.filters} /> ;
     }
     return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
   }
   
   render() {
     const data= this.state.landscape;
+    const filters= this.state.filters;
    
     return (
         <div className={this.getClassNames()}>
@@ -132,7 +144,11 @@ class Layout extends Component {
                 {this.renderCategory()}
               </div>
               <div className="filter_wrapper">
-                <Filter />
+                <Filter>
+                  <div><Checkbox name="cncf" toggle defaultChecked label={filters.cncf.title} /></div>
+                  <div><Checkbox name="oss" toggle label={filters.oss.title} /></div>
+                  <div><Checkbox name="com" toggle defaultChecked label={filters.commercial.title} /></div>
+                </Filter>
               </div>
             </div>
           </div>

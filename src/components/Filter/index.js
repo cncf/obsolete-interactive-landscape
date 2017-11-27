@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Checkbox } from 'semantic-ui-react';
 
 import './Filter.css';
 
@@ -27,9 +26,7 @@ class Filter extends Component {
   render() {
     return (
       <div>
-        <div><Checkbox toggle defaultChecked label={this.state.cncf.title} /></div>
-        <div><Checkbox toggle label={this.state.oss.title} /></div>
-        <div><Checkbox toggle label={this.state.commercial.title} /></div>
+        {this.props.children}
       </div>
 
     );

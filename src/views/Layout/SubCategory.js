@@ -6,11 +6,15 @@ import ItemModal from './../../components/ItemModal';
 import Iconator from './../../components/Iconator';
 import Mapping from './utilities/Mapping';
 
-const SubCategoryView = ({ cat, match, data }) => {
+const SubCategoryView = ({ cat, match, data, filters }) => {
   const category = data.landscape[cat];
   
   const subCategory = category.subcategories[match.params.id];
   const sorted = _.sortBy(subCategory.items, [function sort(o) { return o.name; }]);
+  
+  const filter1 = filters.cncf.status;
+  const filter2 = filters.oss.status;
+  const filter3 = filters.commercial.status;
   
   const thisCat = `cat_${Mapping(category.slug_name)}`;
   
@@ -32,7 +36,7 @@ const SubCategoryView = ({ cat, match, data }) => {
             </Link>
             <span> / {subCategory.name}</span>
           </div>
-          <div className=" box-items">
+          <div className={ClassNames('box-items', { f_cncf: filter1 }, { f_oss: filter2 }, { f_commercial: filter3 })}>
             
             {sorted.map((i, index) => (
               <ItemModal
