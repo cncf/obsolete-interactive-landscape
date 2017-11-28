@@ -130,6 +130,13 @@ class Layout extends Component {
             <div className="header_wrapper">
               {this.renderHeader()}
   
+              <div className={ClassNames('filter_toggle', { hidden: filters })} onClick={() => this.setState({ showFilters : !filters })} >
+                Filters
+    
+                <Icon name='angle up' />
+  
+              </div>
+              
             </div>
             <div className="content_wrapper">
               <div className="graph_wrapper" />
@@ -151,15 +158,6 @@ class Layout extends Component {
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
                 </Filter>
               </div>
-  
-              <div className={ClassNames('filter_toggle', { hidden: filters })} onClick={() => this.setState({ showFilters : !filters })} >
-                Filters
-                
-                <Icon name='angle up' />
-                
-              </div>
-              
-              
             </div>
           </div>
           

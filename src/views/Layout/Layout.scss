@@ -18,6 +18,31 @@
 }
 .header_wrapper{
 
+  .filter_toggle{
+    transform: rotate(-90deg);
+    color: grey;
+    background-color: #f1f1f1;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    right: -50px;
+    top: 150px;
+    padding: 0px 10px 0 60px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+
+    i{
+      float:right;
+      padding:0 0 0 10px;
+    }
+    &.hidden{
+      display:none;
+    }
+    &:hover{
+      background-color: #e0e0e0;
+    }
+  }
+
 }
 
 .content_wrapper {
@@ -73,29 +98,6 @@
 
     &.hidden{
       display:none;
-    }
-  }
-  .filter_toggle{
-    transform: rotate(-90deg);
-    color: grey;
-    background-color: #f1f1f1;
-    height: 20px;
-    position: relative;
-    right: -55px;
-    top: 50px;
-    padding: 0px 10px 0 60px;
-    border-radius: 10px 10px 0 0;
-    cursor: pointer;
-
-    i{
-      float:right;
-      padding:0 0 0 10px;
-    }
-    &.hidden{
-      display:none;
-    }
-    &:hover{
-      background-color: #e0e0e0;
     }
   }
 

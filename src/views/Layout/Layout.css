@@ -12,6 +12,26 @@
   flex-direction: column;
   flex: 1; }
 
+.header_wrapper .filter_toggle {
+  transform: rotate(-90deg);
+  color: grey;
+  background-color: #f1f1f1;
+  height: 50px;
+  position: fixed;
+  z-index: 100;
+  right: -50px;
+  top: 150px;
+  padding: 0px 10px 0 60px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer; }
+  .header_wrapper .filter_toggle i {
+    float: right;
+    padding: 0 0 0 10px; }
+  .header_wrapper .filter_toggle.hidden {
+    display: none; }
+  .header_wrapper .filter_toggle:hover {
+    background-color: #e0e0e0; }
+
 .content_wrapper {
   display: flex;
   flex: 9;
@@ -47,24 +67,6 @@
     padding: 20px; }
     .content_wrapper .filter_wrapper.hidden {
       display: none; }
-  .content_wrapper .filter_toggle {
-    transform: rotate(-90deg);
-    color: grey;
-    background-color: #f1f1f1;
-    height: 20px;
-    position: relative;
-    right: -55px;
-    top: 50px;
-    padding: 0px 10px 0 60px;
-    border-radius: 10px 10px 0 0;
-    cursor: pointer; }
-    .content_wrapper .filter_toggle i {
-      float: right;
-      padding: 0 0 0 10px; }
-    .content_wrapper .filter_toggle.hidden {
-      display: none; }
-    .content_wrapper .filter_toggle:hover {
-      background-color: #e0e0e0; }
   .content_wrapper .ui.toggle.checkbox .box:before, .content_wrapper .ui.toggle.checkbox label:before {
     width: 1.5rem;
     height: 0.8rem;
