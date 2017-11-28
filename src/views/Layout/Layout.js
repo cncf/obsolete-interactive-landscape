@@ -22,20 +22,9 @@ class Layout extends Component {
       menu: {
         collapsed: true,
       },
-      filters:{
-        cncf: {
-          title: 'CNCF',
-          status: true,
-        },
-        oss: {
-          title: 'Open Source',
-          status: true,
-        },
-        commercial: {
-          title: 'Commercial',
-          status: true,
-        },
-      }
+      filter_cncf:true,
+      filter_oss:true,
+      filter_com:true,
     };
     
     this.renderHeader = this.renderHeader.bind(this);
@@ -116,14 +105,17 @@ class Layout extends Component {
     const subcategory = this.props.match.params.id;
     
     if(subcategory){
-      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} filters={this.state.filters} /> ;
+      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
     }
     return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
   }
   
   render() {
     const data= this.state.landscape;
-    const filters= this.state.filters;
+    const collapsed = this.state.menu.collapsed;
+    const cncf = this.state.filter_cncf;
+    const oss = this.state.filter_oss;
+    const com = this.state.filter_com;
    
     return (
         <div className={this.getClassNames()}>
@@ -145,9 +137,9 @@ class Layout extends Component {
               </div>
               <div className="filter_wrapper">
                 <Filter>
-                  <div><Checkbox name="cncf" toggle defaultChecked label={filters.cncf.title} /></div>
-                  <div><Checkbox name="oss" toggle label={filters.oss.title} /></div>
-                  <div><Checkbox name="com" toggle defaultChecked label={filters.commercial.title} /></div>
+                  <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
+                  <div><Checkbox name="oss" toggle defaultChecked label='OSS' onClick={() => this.setState({filter_oss : !oss })} /></div>
+                  <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
                 </Filter>
               </div>
             </div>
