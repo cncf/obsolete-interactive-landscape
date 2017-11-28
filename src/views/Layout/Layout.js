@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Menu, Checkbox } from 'semantic-ui-react'
-import classNames from 'classnames'
+import ClassNames from 'classnames';
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
@@ -22,6 +22,7 @@ class Layout extends Component {
       menu: {
         collapsed: true,
       },
+      showFilters:true,
       filter_cncf:true,
       filter_oss:true,
       filter_com:true,
@@ -64,14 +65,14 @@ class Layout extends Component {
   
     if (focus) { // If focus = TRUE
       if (menu) { // If collapsed = TRUE
-        return classNames('layout infog01 outfocus', { collapse: true }, { open: true });
+        return ClassNames('layout infog01 outfocus', { collapse: true }, { open: true });
       }
-      return classNames('layout infog01 outfocus', { open_hidden: true });
+      return ClassNames('layout infog01 outfocus', { open_hidden: true });
     }
     if (menu) { // If collapsed = TRUE
-      return classNames('layout infog01', { collapse: true }, { open: true });
+      return ClassNames('layout infog01', { collapse: true }, { open: true });
     }
-    return classNames('layout infog01', { open_hidden: true });
+    return ClassNames('layout infog01', { open_hidden: true });
     
   }
   
@@ -116,6 +117,7 @@ class Layout extends Component {
     const cncf = this.state.filter_cncf;
     const oss = this.state.filter_oss;
     const com = this.state.filter_com;
+    const filters = this.state.showFilters;
    
     return (
         <div className={this.getClassNames()}>
@@ -135,7 +137,13 @@ class Layout extends Component {
               <div className="panel_wrapper">
                 {this.renderCategory()}
               </div>
-              <div className="filter_wrapper" >
+              
+              <div className={ClassNames('filter_wrapper', { hidden: !filters })}>
+  
+                <Icon disabled name='remove' style={{float:'right'}} onClick={() => this.setState({ showFilters : !filters })} />
+                
+                
+                <br/><br/>
                 
                 <Filter>
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
@@ -143,6 +151,15 @@ class Layout extends Component {
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
                 </Filter>
               </div>
+  
+              <div className={ClassNames('filter_toggle', { hidden: filters })} onClick={() => this.setState({ showFilters : !filters })} >
+                Filters
+                
+                <Icon name='angle up' />
+                
+              </div>
+              
+              
             </div>
           </div>
           
