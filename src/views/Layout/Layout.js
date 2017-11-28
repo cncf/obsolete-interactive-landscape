@@ -135,7 +135,8 @@ class Layout extends Component {
               <div className="panel_wrapper">
                 {this.renderCategory()}
               </div>
-              <div className="filter_wrapper">
+              <div className="filter_wrapper" >
+                
                 <Filter>
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
                   <div><Checkbox name="oss" toggle defaultChecked label='OSS' onClick={() => this.setState({filter_oss : !oss })} /></div>

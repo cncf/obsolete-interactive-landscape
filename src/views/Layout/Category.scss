@@ -589,24 +589,68 @@ p {
       padding: 5px 5px 0 5px;
       text-align: center;
       vertical-align: top;
+
+
+      &.item_commercial .company::after{
+        content: "";
+        background-color:rgba(0,0,0,0.1);
+        font-weight: bold;
+        display:block;
+        width:100%;
+        height:100%;
+        border-radius:5px;
+
+
+      }
+
+      &.item_cncf .company{
+        border-color: #0092ff;
+        border-width: 2px;
+        border-style: solid;
+
+
+      }
+      &.item_cncf .company::after{
+        content: "CNCF";
+        background-color: #0092ff;
+        font-size: 0.6em;
+        width: 30px;
+        color: white;
+        display: block;
+        border-radius: 10px;
+        margin-top: -6px;
+        margin-right: -10px;
+        float: right;
+      }
     }
+
     .box-items{
       border-width: 0 0 0 2px;
       border-style: solid;
       margin:20px 5px 0 0;
       width: 100%;
       padding: 20px;
+      opacity: 1;
+      display: block;
 
       &.filter_cncf{
-        .item_cncf{display:none !important;}
+        .item_cncf{
+          display:none !important;
+          transition: opacity 1s ease-out;
+          opacity: 0;
+        }
 
       }
       &.filter_oss{
-        .item_oss{display:none !important;}
+        .item_oss{
+          display:none !important;
+        }
 
       }
       &.filter_commercial{
-        .item_commercial{display:none !important;}
+        .item_commercial{
+          display:none !important;
+        }
 
       }
 
@@ -641,36 +685,6 @@ p {
       background-size: 90% auto;
       background-position: center;
 
-    }
-
-    .item{
-      &.item_commercial .company::after{
-        content: "";
-        background-color:rgba(0,0,0,0.1);
-        font-weight: bold;
-        display:block;
-        width:100%;
-        height:100%;
-        border-radius:5px;
-      }
-
-      &.item_cncf .company{
-        border-color: #0092ff;
-        border-width: 2px;
-        border-style: solid;
-      }
-      &.item_cncf .company::after{
-        content: "CNCF";
-        background-color: #0092ff;
-        font-size: 0.6em;
-        width: 30px;
-        color: white;
-        display: block;
-        border-radius: 10px;
-        margin-top: -6px;
-        margin-right: -10px;
-        float: right;
-      }
     }
 
     .company-name{
