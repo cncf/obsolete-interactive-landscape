@@ -12,7 +12,6 @@ class SideBar extends Component {
     super(props);
 
     this.state = {
-      title: '33',
       collapsed: true,
       activeIndex: 2,
     };
@@ -37,7 +36,7 @@ class SideBar extends Component {
             , { active: index === this.state.activeIndex })
         }
         key={i.slug_name}
-
+        onClick={() => this.setState({ activeIndex: index })}
       >
   
         <Popup
