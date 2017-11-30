@@ -35,7 +35,7 @@
 .content_wrapper {
   display: flex;
   flex: 9;
-  padding-top: 5%; }
+  padding-top: 3%; }
   .content_wrapper .graph_wrapper {
     flex: 2;
     height: 300px;
@@ -126,7 +126,6 @@
     padding: 0; }
     .sidebar_wrapper .sidebar-menu > li:hover > a, .sidebar_wrapper .sidebar-menu > li.active > a {
       color: #000;
-      background: #fff;
       border-left-color: #e8e8e8; }
     .sidebar_wrapper .sidebar-menu > li.header {
       color: #ccc; }

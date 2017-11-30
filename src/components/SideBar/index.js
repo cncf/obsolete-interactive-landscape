@@ -14,18 +14,30 @@ class SideBar extends Component {
     this.state = {
       title: '33',
       collapsed: true,
+      activeIndex: 2,
     };
     
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
+    this.handleTabSelect = this.handleTabSelect.bind(this);
   }
+  handleTabSelect(activeIndex) {
+    this.setState({ activeIndex });
+  }
+  
   renderFirstLevel() {
     const data = this.props.data.landscape;
     const currentCat = this.props.category;
     
-    return data.map(i =>
+    console.log(data);
+    
+    return data.map((i, index) =>
       (<li
-        className={classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`, { active: true })}
+        className={
+          classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`
+            , { active: index === this.state.activeIndex })
+        }
         key={i.slug_name}
+
       >
   
         <Popup
