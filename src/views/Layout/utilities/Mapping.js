@@ -2,19 +2,19 @@
 const Mapping = (cat) => {
   let value;
   switch (cat) {
-    case 'orchestration_and_management':
+    case 'app_definition_development':
       value = '0';
       break;
-    case 'public_cloud':
+    case 'orchestration_and_management':
       value = '1';
       break;
-    case 'provisioning':
+    case 'runtime':
       value = '2';
       break;
-    case 'runtime':
+    case 'provisioning':
       value = '3';
       break;
-    case 'app_definition_development':
+    case 'public_cloud':
       value = '4';
       break;
     case 'platform':
