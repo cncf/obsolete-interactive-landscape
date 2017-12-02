@@ -110,6 +110,20 @@ class Layout extends Component {
     }
     return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
   }
+  renderGraph (){
+    const cat = this.getParentCategory();
+    console.log(cat);
+  
+    return ClassNames('graph_wrapper cat_'+ cat );
+    
+    // switch(cat){
+    //   case 'provisioning' : return ClassNames('graph_wrapper');
+    //     break;
+    //   case 'building' : return ClassNames('graph_wrapper');
+    //     break;
+    // }
+  
+  }
   
   render() {
     const data= this.state.landscape;
@@ -132,26 +146,20 @@ class Layout extends Component {
   
               <div className={ClassNames('filter_toggle', { hidden: filters })} onClick={() => this.setState({ showFilters : !filters })} >
                 Filters
-    
                 <Icon name='angle up' />
-  
               </div>
               
             </div>
             <div className="content_wrapper">
-              <div className="graph_wrapper" />
+              <div className={this.renderGraph('provisioning')} />
               
               <div className="panel_wrapper">
                 {this.renderCategory()}
               </div>
               
               <div className={ClassNames('filter_wrapper', { hidden: !filters })}>
-  
                 <Icon disabled name='remove' style={{float:'right'}} onClick={() => this.setState({ showFilters : !filters })} />
-                
-                
                 <br/><br/>
-                
                 <Filter>
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
                   <div><Checkbox name="oss" toggle defaultChecked label='OSS' onClick={() => this.setState({filter_oss : !oss })} /></div>
