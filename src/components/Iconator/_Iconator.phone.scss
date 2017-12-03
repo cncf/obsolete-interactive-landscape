@@ -3,7 +3,6 @@
   .icon_medium, .icon_small, .icon_large {
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: inline-block;
     display: flex;
   }
   .icon_medium {
@@ -47,7 +46,6 @@
   .icon_background{
     //width:60px; padding-right:15px;
     position: fixed;
-    top:0;
     min-width: 600px;
     height:600px;
     left: -300px;

@@ -27,7 +27,7 @@
     z-index: 100;
     right: -50px;
     top: 150px;
-    padding: 0px 10px 0 60px;
+    padding: 0 10px 0 60px;
     border-radius: 10px 10px 0 0;
     cursor: pointer;
 
@@ -48,8 +48,8 @@
 .content_wrapper {
   display: flex;
   flex: 9;
-  //align-items: center;
-  padding-top:3%;
+  align-items: center;
+  margin-top:-100px;
 
   .graph_wrapper{
     flex:2;
@@ -58,6 +58,7 @@
     background-size: 100% 100%;
     display:inline-block;
     margin:0 10px -10px 0;
+    max-width: 250px;
     background-image: url('../../components/assets/images/placeholder/exports/se.jpg');
 
     &.cat_0{
@@ -88,7 +89,7 @@
 
     display:flex;
     flex:5;
-    //height:100% !important;
+    max-height:80% ;
     min-height: 50%;
     position: relative !important;
     padding: 10px 10px 0 0;
@@ -156,14 +157,14 @@
   overflow: hidden;
   min-height: 100%;
   width: 230px;
-  //z-index: 810;
   -webkit-transition: -webkit-transform .3s ease-in-out, width .3s ease-in-out;
   -moz-transition: -moz-transform .3s ease-in-out, width .3s ease-in-out;
   -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
   transition: transform .3s ease-in-out, width .3s ease-in-out;
   height: 100%;
-  background: rgba(255,255,255,0.5); /* Old browsers */
   z-index:10;
+  display: flex;
+  align-items: center;
 
   i {
     line-height: 2;
@@ -190,8 +191,9 @@
 
   }
 
-
   .sidebar {
+    margin-top: -100px;
+
     a {
       color: #49627b;
       font-size: 0.9em;
@@ -544,7 +546,6 @@
       -o-transform: translate(0, 0);
       transform: translate(0, 0);
       width: 50px !important;
-      background-color: rgba(255,255,255,0.5);
 
       .sidebar-menu > li > a {
         border-left-width:5px;
@@ -555,7 +556,7 @@
       .sidebar-menu > li.header {
         color: #ccc;
         border-left-width:3px;
-        margin-bottom: 30px;
+        //margin-bottom: 30px;
       }
       .logo {
         border-left-width:3px;

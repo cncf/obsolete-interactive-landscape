@@ -5,7 +5,6 @@
     .iconator .icon_medium, .iconator .icon_small, .iconator .icon_large {
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      display: inline-block;
       display: flex; }
     .iconator .icon_medium {
       width: 50px;
@@ -33,7 +32,6 @@
       background-image: url(./icons/ico_runt.png); }
     .iconator .icon_background {
       position: fixed;
-      top: 0;
       min-width: 600px;
       height: 600px;
       left: -300px;

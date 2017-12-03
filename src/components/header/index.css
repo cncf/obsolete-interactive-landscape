@@ -6,9 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 30px;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: #ececec; }
+
+  }
     .header .logos {
       display: flex; }
       .header .logos div {

@@ -22,7 +22,7 @@ class Layout extends Component {
       menu: {
         collapsed: true,
       },
-      showFilters:true,
+      showFilters:false,
       filter_cncf:true,
       filter_oss:true,
       filter_com:true,
@@ -86,7 +86,7 @@ class Layout extends Component {
   renderButton() {
     const collapsed = this.state.menu.collapsed;
     return (
-      <Menu.Item as="span" onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
+      <Menu.Item as="span" className='item-menu' onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
         <a role="button" className="" >
           <span><Icon name="content" /></span>
         </a>
@@ -135,6 +135,8 @@ class Layout extends Component {
    
     return (
         <div className={this.getClassNames()}>
+          
+          
           <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
             <SideBar data={data} category={this.getParentCategory()} >
               {this.renderButton()}
