@@ -140,7 +140,7 @@
     padding: 0; }
     .sidebar_wrapper .sidebar-menu > li:hover > a, .sidebar_wrapper .sidebar-menu > li.active > a {
       color: #000;
-      border-left-color: #e8e8e8; }
+      border-left-color: #9dadb8; }
     .sidebar_wrapper .sidebar-menu > li.header {
       color: #ccc; }
     .sidebar_wrapper .sidebar-menu > li {
@@ -162,6 +162,8 @@
         font-size: 0.9em;
         justify-content: space-between;
         align-items: center; }
+        .sidebar_wrapper .sidebar-menu > li > a:hover {
+          border-left-color: #acbcc7; }
         .sidebar_wrapper .sidebar-menu > li > a > div {
           display: flex;
           flex: 1; }
