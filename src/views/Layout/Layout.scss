@@ -215,7 +215,7 @@
 
     & > li:hover > a, > li.active > a {
       color: #000;
-      border-left-color: #9dadb8;
+      border-left-color: #aeaeae;
 
     }
 
@@ -241,7 +241,7 @@
         line-height:1em;
       }
       & > a {
-        border-left: 4px solid #bfcfda;
+        border-left: 4px solid #d8d8d8;
         padding: 5px 5px 5px 15px;
         display: flex;
         font-size: 0.9em;
@@ -249,7 +249,7 @@
         align-items: center;
 
         &:hover{
-          border-left-color: #acbcc7;
+          border-left-color: #c2c2c2;
         }
 
         & > div{
