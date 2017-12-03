@@ -16,23 +16,27 @@ class Header extends Component {
   render() {
     const state = this.state;
     return (
-      <div className="header">
+      <div>
         <div className="title">
-          <div>{state.title}</div>
+          {state.title}
+          <p>v0.1</p>
         </div>
-        <div className="logos">
-          <a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">
-            <div className="partner1" />
-          </a>
-          <a href="http://www.redpoint.com/" target="_blank" rel="noopener noreferrer">
-            <div className="partner2" />
-          </a>
-          <a href="http://www.amplifypartners.com/" target="_blank" rel="noopener noreferrer">
-            <div className="partner3" />
-          </a>
+        <div className="header">
+          <div className="logos">
+            <a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">
+              <div className="partner1" />
+            </a>
+            <a href="http://www.redpoint.com/" target="_blank" rel="noopener noreferrer">
+              <div className="partner2" />
+            </a>
+            <a href="http://www.amplifypartners.com/" target="_blank" rel="noopener noreferrer">
+              <div className="partner3" />
+            </a>
+          </div>
+  
         </div>
-        
       </div>
+      
     );
   }
 }

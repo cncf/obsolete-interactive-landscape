@@ -725,12 +725,6 @@ p {
 .infog01 .cat_7.active > a {
   border-left-color: #CCC !important; }
 
-.infog01 .title {
-  display: flex;
-  font-size: 1em;
-  color: #CCC !important;
-  align-items: center; }
-
 .infog01 .fw-a {
   font-weight: 200; }
 
