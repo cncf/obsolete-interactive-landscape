@@ -88,7 +88,7 @@ class Layout extends Component {
     return (
       <Menu.Item as="span" className='item-menu' onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
         <a role="button" className="" >
-          <span><Icon name="content" /></span>
+          <span><Icon className={ClassNames('angle', {right : collapsed}, {left : !collapsed})} /></span>
         </a>
       </Menu.Item>
     );
@@ -160,7 +160,7 @@ class Layout extends Component {
               </div>
               
               <div className={ClassNames('filter_wrapper', { hidden: !filters })}>
-                <Icon disabled name='remove' style={{float:'right'}} onClick={() => this.setState({ showFilters : !filters })} />
+                <Icon disabled name='angle right' style={{float:'right'}} onClick={() => this.setState({ showFilters : !filters })} />
                 <br/><br/>
                 <Filter>
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
