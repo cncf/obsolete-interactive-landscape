@@ -123,6 +123,8 @@
   z-index: 10;
   display: flex;
   align-items: center; }
+  .sidebar_wrapper.hidden {
+    display: none; }
   .sidebar_wrapper i {
     line-height: 2;
     margin-right: 10px !important; }

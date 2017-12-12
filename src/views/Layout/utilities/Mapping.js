@@ -29,7 +29,7 @@ const Mapping = (cat) => {
     case 'data':
       value = '8';
       break;
-    default : value = '3';
+    default : value = '0';
   }
   return value;
 };

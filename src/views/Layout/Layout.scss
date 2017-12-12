@@ -177,6 +177,10 @@
   display: flex;
   align-items: center;
 
+  &.hidden{
+    display:none;
+  }
+
   i {
     line-height: 2;
     margin-right: 10px !important;

@@ -21,8 +21,9 @@ class Layout extends Component {
       title: 'Layout',
       panel: 'items',
       menu: {
-        collapsed: true,
+        collapsed:true,
       },
+      menu_visible:false,
       showFilters:false,
       filter_cncf:true,
       filter_oss:true,
@@ -38,6 +39,12 @@ class Layout extends Component {
   componentWillMount(){
   
     this.updateState();
+  
+    if (this.props.match.url === '/' || this.props.match.url === '' ){
+      this.handleSidebar(false);
+    }else{
+      this.handleSidebar(true);
+    }
     
   }
   
@@ -106,8 +113,6 @@ class Layout extends Component {
     
     const subcategory = this.props.match.params.id;
     
-    console.log(this.props.match.url);
-    
     if (this.props.match.url === '/'){
       return <StartView />;
     }else{
@@ -116,7 +121,6 @@ class Layout extends Component {
       }
       return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
     }
-    
   }
   
   renderGraph (){
@@ -127,23 +131,29 @@ class Layout extends Component {
     }else{
       return <div className={ClassNames('graph_wrapper cat_'+ cat )} />
     }
-    
+  }
   
+  handleSidebar(status) {
+    this.setState({
+      menu_visible:status
+    });
   }
   
   render() {
     const data= this.state.landscape;
-    const collapsed = this.state.menu.collapsed;
+    const menuvisible = this.state.menu_visible;
     const cncf = this.state.filter_cncf;
     const oss = this.state.filter_oss;
     const com = this.state.filter_com;
     const filters = this.state.showFilters;
+    
+    console.log(':::::::::::');
+    console.log(this.props.match.url);
    
     return (
         <div className={this.getClassNames()}>
           
-          
-          <div className="sidebar_wrapper" style={{ position: 'fixed' }}>
+          <div className={ClassNames('sidebar_wrapper', { hidden: !menuvisible })}>
             <SideBar data={data} category={this.getParentCategory()} >
               {this.renderButton()}
             </SideBar>
