@@ -6,6 +6,7 @@ import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
 import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
+import StartView from './Start';
 import Mapping from './utilities/Mapping';
 import dataSet from '../../data/tested.json';
 
@@ -108,7 +109,7 @@ class Layout extends Component {
     console.log(this.props.match.url);
     
     if (this.props.match.url === '/'){
-      return <h1>Home</h1>;
+      return <StartView />;
     }else{
       if(subcategory){
         return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
@@ -122,7 +123,7 @@ class Layout extends Component {
     const cat = this.getParentCategory();
   
     if (this.props.match.url === '/'){
-      return <h1>G</h1>;
+      return <div className={ClassNames('graph_home')} />;
     }else{
       return <div className={ClassNames('graph_wrapper cat_'+ cat )} />
     }

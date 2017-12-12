@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 import './index.css';
 
 
@@ -18,7 +18,15 @@ class Header extends Component {
     return (
       <div>
         <div className="title">
-          {state.title}
+          <Link
+            to={{
+              pathname: '/',
+            }}
+          >
+            {state.title}
+          </Link>
+          
+          
           <p>v0.1</p>
         </div>
         <div className="header">

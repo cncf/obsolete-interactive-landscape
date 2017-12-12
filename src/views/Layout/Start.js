@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ClassNames from 'classnames';
 
 import './Layout.css';
 import './Category.css';
@@ -15,7 +16,8 @@ class Start extends Component {
   render() {
     return (
       <div>
-          This is home
+        This is home
+        
       </div>
       
     );
