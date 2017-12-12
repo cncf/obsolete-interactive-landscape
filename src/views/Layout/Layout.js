@@ -105,23 +105,28 @@ class Layout extends Component {
     
     const subcategory = this.props.match.params.id;
     
-    if(subcategory){
-      return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
+    console.log(this.props.match.url);
+    
+    if (this.props.match.url === '/'){
+      return <h1>Home</h1>;
+    }else{
+      if(subcategory){
+        return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
+      }
+      return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
     }
-    return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
+    
   }
+  
   renderGraph (){
     const cat = this.getParentCategory();
-    console.log(cat);
   
-    return ClassNames('graph_wrapper cat_'+ cat );
+    if (this.props.match.url === '/'){
+      return <h1>G</h1>;
+    }else{
+      return <div className={ClassNames('graph_wrapper cat_'+ cat )} />
+    }
     
-    // switch(cat){
-    //   case 'provisioning' : return ClassNames('graph_wrapper');
-    //     break;
-    //   case 'building' : return ClassNames('graph_wrapper');
-    //     break;
-    // }
   
   }
   
@@ -153,7 +158,7 @@ class Layout extends Component {
               
             </div>
             <div className="content_wrapper">
-              <div className={this.renderGraph('provisioning')} />
+              {this.renderGraph()}
               
               <div className="panel_wrapper">
                 {this.renderCategory()}
