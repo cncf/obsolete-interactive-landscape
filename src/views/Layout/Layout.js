@@ -110,11 +110,12 @@ class Layout extends Component {
     return parentCategory;
   }
   renderCategory (){
+    const data= this.state.landscape;
     
     const subcategory = this.props.match.params.id;
     
     if (this.props.match.url === '/'){
-      return <StartView />;
+      return <StartView data={data} />;
     }else{
       if(subcategory){
         return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
