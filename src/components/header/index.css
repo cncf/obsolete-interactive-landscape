@@ -32,6 +32,8 @@
     font-size: 1.3em;
     color: #6d7e90 !important;
     align-items: flex-end; }
+    .title a {
+      color: #949494; }
     .title p {
       color: #CCC;
       font-size: 0.6em; } }

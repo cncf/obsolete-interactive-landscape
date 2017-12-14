@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Item, Popup } from 'semantic-ui-react';
+import { Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Iconator from '../../components/Iconator';
 import Mapping from './../../views/Layout/utilities/Mapping';
 
-import './Layout.css';
-import './Category.css';
+import './Start.css';
 
 class Start extends Component {
   constructor(props) {
@@ -19,12 +18,13 @@ class Start extends Component {
   
   renderFirstLevel() {
     const data = this.props.data.landscape;
-    const currentCat = this.props.category;
-    
     
     return data.map((i, index) =>
       (<div
-        className="hello"
+        className={
+          classNames(`treeviewx cat_${Mapping(i.slug_name)}`
+            , { active: index === this.state.activeIndex })
+        }
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
@@ -38,7 +38,7 @@ class Start extends Component {
                 state: { modal: true },
               }}
             >
-              <div>
+              <div className="category">
                 <Iconator icon={i.slug_name} size="s" />
                 <span>{i.name}</span>
               </div>
