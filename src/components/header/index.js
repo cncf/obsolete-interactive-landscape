@@ -18,7 +18,13 @@ class Header extends Component {
     return (
       <div>
         <div className="title">
-          <a href="/">{state.title}</a>
+          <Link
+            to={{
+              pathname: '/',
+            }}
+          >
+            {state.title}
+          </Link>
           
           
           <p>v0.1</p>

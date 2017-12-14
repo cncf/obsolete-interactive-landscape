@@ -23,11 +23,8 @@ class Start extends Component {
     
     
     return data.map((i, index) =>
-      (<li
-        className={
-          classNames(`treeview ${currentCat === Mapping(i.slug_name) ? `cat_${currentCat}` : Mapping(i.slug_name)}`
-            , { active: index === this.state.activeIndex })
-        }
+      (<div
+        className="hello"
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
@@ -57,14 +54,14 @@ class Start extends Component {
           size="mini"
           position="right center"
         />
-      </li>),
+      </div>),
     
     );
   }
   
   render() {
     return (
-      <div>
+      <div className="start">
         {this.renderFirstLevel()}
         
       </div>

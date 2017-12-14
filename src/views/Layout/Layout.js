@@ -47,6 +47,16 @@ class Layout extends Component {
     }
     
   }
+  componentWillReceiveProps(nextProps){
+    
+    
+    if (nextProps.match.url === '/' || nextProps.match.url === '' ){
+      this.handleSidebar(false);
+    }else{
+      this.handleSidebar(true);
+    }
+    
+  }
   
   previousLocation = this.props.location;
   

@@ -13,7 +13,7 @@ class SideBar extends Component {
 
     this.state = {
       collapsed: true,
-      activeIndex: 2,
+      activeIndex:'',
     };
     
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
