@@ -38,3 +38,34 @@
   padding: 20px; }
   .start .category .iconator {
     padding: 0 10px; }
+
+.example {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+  font-family: Arial; }
+
+.example__guide {
+  flex: 1;
+  margin: auto;
+  padding-right: 20px;
+  line-height: 1.3; }
+
+.example__observer {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  border: solid 1px #C5CAE9;
+  border-radius: 4px;
+  transition: border .2s ease-in-out;
+  background-color: yellow; }
+
+.example__observer:hover {
+  border-color: #3F51B5; }
+
+.example__label {
+  flex: 1;
+  margin: auto;
+  padding-left: 20px; }

@@ -17,6 +17,45 @@ class Start extends Component {
       element1: { isHovering: false },
       element2: { isHovering: true },
     };
+    
+    this.onHoverChanged = this.onHoverChanged.bind(this);
+    this.onHoverChanged2 = this.onHoverChanged2.bind(this);
+    this.renderExample = this.renderExample.bind(this);
+  }
+  
+  onHoverChanged({ isHovering }) {
+    this.setState({
+      element1: { isHovering },
+    });
+  }
+  onHoverChanged2({ isHovering }) {
+    this.setState({
+      element2: { isHovering },
+    });
+  }
+  
+  renderExample() {
+    return (
+      <div className="example">
+        <ReactHoverObserver {...{
+          className: 'example__observer',
+          onHoverChanged: this.onHoverChanged,
+        }}
+        />
+        <ReactHoverObserver {...{
+          className: 'example__observer',
+          onHoverChanged: this.onHoverChanged2,
+        }}
+        />
+        <div>
+          1.{ this.state.element1.isHovering ? 'true' : 'false' }
+        </div>
+        <div>
+          2.{ this.state.element2.isHovering ? 'true' : 'false' }
+        </div>
+    
+      </div>
+    );
   }
   
   renderFirstLevel() {
@@ -31,32 +70,30 @@ class Start extends Component {
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
-        
-        <Popup
-          trigger={
-            <Link
-              to={{
-                pathname: `/${i.slug_name}`,
-                // this is the trick!
-                state: { modal: true },
-              }}
-            >
-              <div className="category">
-                <Iconator icon={i.slug_name} size="s" />
-                <span>{i.name}</span>
-              </div>
-              
-              {i.subcategories.length ?
-                <span className="pull-right-container">
-                  {/* <Icon disabled name="angle left" /> */}
-                </span>
-                : ''}
-            </Link>
-          }
-          content={i.name}
-          size="mini"
-          position="right center"
-        />
+        <ReactHoverObserver {...{
+          className: 'example__observer',
+          onHoverChanged: this.onHoverChanged2,
+        }}
+        >
+          <Link
+            to={{
+              pathname: `/${i.slug_name}`,
+              // this is the trick!
+              state: { modal: true },
+            }}
+          >
+            <div className="category">
+              <Iconator icon={i.slug_name} size="s" />
+              <span>{i.name}</span>
+            </div>
+    
+            {i.subcategories.length ?
+              <span className="pull-right-container">
+                {/* <Icon disabled name="angle left" /> */}
+              </span>
+              : ''}
+          </Link>
+        </ReactHoverObserver>
       </div>),
     
     );
@@ -65,8 +102,9 @@ class Start extends Component {
   render() {
     return (
       <div className="start">
+        {this.renderExample()}
         {this.renderFirstLevel()}
-        
+
       </div>
       
     );
