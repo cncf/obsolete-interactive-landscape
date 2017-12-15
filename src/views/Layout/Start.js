@@ -22,7 +22,7 @@ class Start extends Component {
     return data.map((i, index) =>
       (<div
         className={
-          classNames(`treeviewx cat_${Mapping(i.slug_name)}`
+          classNames(`cat_${Mapping(i.slug_name)}`
             , { active: index === this.state.activeIndex })
         }
         key={i.slug_name}

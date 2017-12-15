@@ -120,13 +120,10 @@ class Layout extends Component {
     return parentCategory;
   }
   renderCategory (){
-    const data= this.state.landscape;
-    
     const subcategory = this.props.match.params.id;
     
-    if (this.props.match.url === '/'){
-      return <StartView data={data} />;
-    }else{
+    if (this.props.match.url !== '/'){
+      
       if(subcategory){
         return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
       }
@@ -136,9 +133,14 @@ class Layout extends Component {
   
   renderGraph (){
     const cat = this.getParentCategory();
+    const data= this.state.landscape;
   
     if (this.props.match.url === '/'){
-      return <div className={ClassNames('graph_home')} />;
+      return(
+        <div className={ClassNames('graph_home')}>
+          <StartView data={data} />
+        </div>
+      );
     }else{
       return <div className={ClassNames('graph_wrapper cat_'+ cat )} />
     }

@@ -1,48 +1,39 @@
 .start{
-  margin-left: -500px;
-  background-color: rgba(255,0,0,0.1);
 
   .cat_0{
     position:relative;
-    right:-50px;
+    left:50px;
     top:50px;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_1{
     position:relative;
-    right:-90px;
+    left:90px;
     top:75px;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_2{
     position:relative;
-    right:-200px;
+    left:200px;
     top:60px;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_3{
     position:relative;
-    right:-300px;
+    left:300px;
     top:60px;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_4{
     position:relative;
-    right:-200px;
+    left:200px;
     top:100px;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_5{
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.1);
   }
   .cat_6{
-    position: absolute;
+    position: relative;
     left: 0;
     top: 100px;
-    background-color: rgba(0,0,0,0.1);
   }
 
 
