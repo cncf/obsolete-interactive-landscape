@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import ReactHoverObserver from 'react-hover-observer';
 import Iconator from '../../components/Iconator';
 import Mapping from './../../views/Layout/utilities/Mapping';
 
@@ -10,9 +11,11 @@ import './Start.css';
 class Start extends Component {
   constructor(props) {
     super(props);
-    
+   
     this.state = {
       title: 'Start',
+      element1: { isHovering: false },
+      element2: { isHovering: true },
     };
   }
   
