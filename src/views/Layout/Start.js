@@ -22,13 +22,12 @@ class Start extends Component {
     return data.map((i, index) =>
       (<div
         className={
-          classNames(`cat_${Mapping(i.slug_name)}`
+          classNames(`name cat_${Mapping(i.slug_name)}`
             , { active: index === this.state.activeIndex })
         }
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
-        
         <Popup
           trigger={
             <Link
@@ -42,18 +41,13 @@ class Start extends Component {
                 <Iconator icon={i.slug_name} size="s" />
                 <span>{i.name}</span>
               </div>
-              
-              {i.subcategories.length ?
-                <span className="pull-right-container">
-                  {/* <Icon disabled name="angle left" /> */}
-                </span>
-                : ''}
             </Link>
           }
           content={i.name}
           size="mini"
           position="right center"
         />
+        <div className="floors" />
       </div>),
     
     );
@@ -62,8 +56,9 @@ class Start extends Component {
   render() {
     return (
       <div className="start">
-        {this.renderFirstLevel()}
-      
+        <div className="name-box">
+          {this.renderFirstLevel()}
+        </div>
       </div>
     
     );
