@@ -159,9 +159,6 @@ class Layout extends Component {
     const oss = this.state.filter_oss;
     const com = this.state.filter_com;
     const filters = this.state.showFilters;
-    
-    console.log(':::::::::::');
-    console.log(this.props.match.url);
    
     return (
         <div className={this.getClassNames()}>
