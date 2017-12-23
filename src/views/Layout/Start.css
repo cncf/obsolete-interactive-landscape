@@ -2,7 +2,6 @@
   /*main container*/
   /*subcontainer*/
   /*/subcomntainers childrens*/
-  /*/subcomntainers childrens HOVER*/
   /* Content box*/ }
   .start .category {
     display: flex; }
@@ -15,45 +14,46 @@
     height: 100%;
     position: relative;
     width: 100%; }
-  .start .name {
-    font: bold 16px/100px sans-serif;
-    height: 100px; }
   .start a {
     position: absolute;
     left: 0;
     top: 0;
-    color: grey;
+    color: deepskyblue;
     display: block;
     text-align: center;
     text-decoration: none;
     z-index: 20; }
   .start .name:first-child a {
-    border-top: none; }
+    border-top: none;
+    top: 25px;
+    left: 25px;
+    color: yellow; }
   .start .name:nth-child(2) a {
-    color: grey;
-    top: 100px; }
+    color: orange;
+    top: 50px;
+    left: 50px; }
+    .start .name:nth-child(2) a:hover {
+      color: #CCC; }
   .start .name:nth-child(3) a {
-    color: grey;
-    top: 150px; }
+    top: 75px;
+    left: 75px;
+    color: red; }
   .start .name:nth-child(4) a {
-    color: grey;
-    top: 200px;
-    right: 200px; }
+    top: 100px;
+    left: 100px;
+    color: purple; }
   .start .name:nth-child(5) a {
-    color: grey;
-    top: 250px; }
+    top: 125px;
+    left: 125px;
+    color: dodgerblue; }
   .start .name:nth-child(6) a {
-    color: grey;
-    top: 300px; }
+    top: 150px;
+    left: 150px;
+    color: aqua; }
   .start .name:nth-child(7) a {
-    color: grey;
-    top: 350px; }
-  .start a:hover {
-    color: #CCC; }
-  .start .name:nth-child(2) a:hover {
-    color: #CCC; }
-  .start .name:nth-child(3) a:hover {
-    color: #CCC; }
+    top: 175px;
+    left: 175px;
+    color: green; }
   .start .floors {
     height: 301px;
     position: absolute;
