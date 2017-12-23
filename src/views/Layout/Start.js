@@ -47,7 +47,7 @@ class Start extends Component {
           size="mini"
           position="right center"
         />
-        <div className="floors" />
+        <div className="floors_position floors" />
       </div>),
     
     );
@@ -56,6 +56,7 @@ class Start extends Component {
   render() {
     return (
       <div className="start">
+        <div className="floors_position" />
         <div className="name-box">
           {this.renderFirstLevel()}
         </div>

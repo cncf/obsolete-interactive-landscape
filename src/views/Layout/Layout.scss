@@ -85,15 +85,14 @@
 
   }
   .graph_home{
-    height: 400px;
-    width: 500px;
+    position: relative;
+    height: 450px;
+    width: 300px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     margin: -100px 10px -10px 0;
     background:rgba(255,255,255,0.2);
-    //background-image: url('../../components/assets/images/placeholder/exports/se.jpg');
-
   }
 
   .panel_wrapper {

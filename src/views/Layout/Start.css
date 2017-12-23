@@ -1,8 +1,7 @@
 .start {
   /*main container*/
   /*subcontainer*/
-  /*/subcomntainers childrens*/
-  /* Content box*/ }
+  /*/subcomntainers childrens*/ }
   .start .category {
     display: flex; }
     .start .category .iconator {
@@ -12,69 +11,67 @@
   .start .name-box {
     display: inline-block;
     height: 100%;
-    position: relative;
     width: 100%; }
   .start a {
     position: absolute;
     left: 0;
     top: 0;
-    color: deepskyblue;
+    color: #000;
     display: block;
     text-align: center;
     text-decoration: none;
     z-index: 20; }
   .start .name:first-child a {
     border-top: none;
-    top: 25px;
-    left: 25px;
-    color: yellow; }
+    top: 90px;
+    left: 20px; }
   .start .name:nth-child(2) a {
-    color: orange;
-    top: 50px;
+    top: 150px;
     left: 50px; }
     .start .name:nth-child(2) a:hover {
       color: #CCC; }
   .start .name:nth-child(3) a {
-    top: 75px;
-    left: 75px;
-    color: red; }
+    top: 225px;
+    left: 105px; }
   .start .name:nth-child(4) a {
-    top: 100px;
-    left: 100px;
-    color: purple; }
+    top: 300px;
+    left: 70px; }
   .start .name:nth-child(5) a {
-    top: 125px;
-    left: 125px;
-    color: dodgerblue; }
+    top: 370px;
+    left: 125px; }
   .start .name:nth-child(6) a {
-    top: 150px;
-    left: 150px;
-    color: aqua; }
+    top: 120px;
+    left: 210px; }
   .start .name:nth-child(7) a {
-    top: 175px;
-    left: 175px;
-    color: green; }
-  .start .floors {
-    height: 301px;
-    position: absolute;
+    top: 200px;
+    left: 260px; }
+  .start .floors_position {
     left: 0;
     top: 0;
-    width: 200px;
-    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-size: 100%;
-    opacity: 0.5;
-    background-image: url("../../components/assets/images/placeholder/exports/se_0.jpg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-image: url("../../components/assets/images/placeholder/exports/se_none.jpg");
     z-index: 10; }
+  .start .floors {
+    display: none; }
+  .start .name:nth-child(1) .floors {
+    background-image: url("../../components/assets/images/placeholder/exports/se_0.jpg") !important; }
   .start .name:nth-child(2) .floors {
-    background-image: url("../../components/assets/images/placeholder/exports/se_1.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se_1.jpg") !important; }
   .start .name:nth-child(3) .floors {
-    background-image: url("../../components/assets/images/placeholder/exports/se_2.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se_2.jpg") !important; }
   .start .name:nth-child(4) .floors {
-    background-image: url("../../components/assets/images/placeholder/exports/se_3.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se_3.jpg") !important; }
   .start .name:nth-child(5) .floors {
-    background-image: url("../../components/assets/images/placeholder/exports/se_4.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se_4.jpg") !important; }
   .start .name:nth-child(6) .floors {
-    background-image: url("../../components/assets/images/placeholder/exports/se_5.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se_5.jpg") !important; }
+  .start .name:nth-child(7) .floors {
+    background-image: url("../../components/assets/images/placeholder/exports/se_6.jpg") !important; }
   .start a:hover + .floors,
   .start img:hover {
     display: block; }
