@@ -34,10 +34,13 @@ class Layout extends Component {
     this.getClassNames = this.getClassNames.bind(this);
     this.updateState = this.updateState.bind(this);
     this.renderCategory = this.renderCategory.bind(this);
+  
+  
+    
   }
   
   componentWillMount(){
-  
+    
     this.updateState();
   
     if (this.props.match.url === '/' || this.props.match.url === '' ){
@@ -125,9 +128,21 @@ class Layout extends Component {
     if (this.props.match.url !== '/'){
       
       if(subcategory){
-        return <SubCategoryView cat={this.getParentCategory()} data={dataSet} match={this.props.match} state={this.state} /> ;
+        return (<div className="panel_wrapper">
+                  <SubCategoryView
+                  cat={this.getParentCategory()}
+                  data={dataSet}
+                  match={this.props.match}
+                  state={this.state} />
+                </div>
+        );
       }
-      return <CategoryView cat={this.getParentCategory()} data={dataSet} /> ;
+      return (<div className="panel_wrapper">
+                <CategoryView
+                  cat={this.getParentCategory()}
+                  data={dataSet} />
+              </div>
+        );
     }
   }
   
@@ -136,8 +151,8 @@ class Layout extends Component {
     const data= this.state.landscape;
   
     if (this.props.match.url === '/'){
+      //if root path then send to home
       return(
-        
           <div className={ClassNames('graph_home')}>
             <StartView data={data} />
           </div>
@@ -186,12 +201,9 @@ class Layout extends Component {
             </div>
             <div className="content_wrapper">
               
-              
               {this.renderGraph()}
               
-              <div className="panel_wrapper">
-                {this.renderCategory()}
-              </div>
+              {this.renderCategory()}
               
               <div className={ClassNames('filter_wrapper', { hidden: !filters })}>
                 <Icon disabled name='angle right' style={{float:'right'}} onClick={() => this.setState({ showFilters : !filters })} />

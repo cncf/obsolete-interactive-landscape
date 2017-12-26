@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Iconator from '../../components/Iconator';
 import Mapping from './../../views/Layout/utilities/Mapping';
@@ -12,6 +13,9 @@ class Start extends Component {
     
     this.state = {
       title: 'Start',
+      icon_placement: [
+        1, 1, 1, 1, 1, 0, 0,
+      ],
     };
   }
   
@@ -27,19 +31,25 @@ class Start extends Component {
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
-        <Link
-          to={{
-            pathname: `/${i.slug_name}`,
-            // this is the trick!
-            state: { modal: true },
-          }}
-        >
-          <div className="category">
-            <Iconator icon={i.slug_name} size="s" />
-            <span>{i.name}</span>
-          </div>
-        </Link>
-         
+        <Popup
+          trigger={
+            <Link
+              to={{
+                pathname: `/${i.slug_name}`,
+                // this is the trick!
+                state: { modal: true },
+              }}
+            >
+              <div className={classNames('category unos', { right: this.state.icon_placement[index] })}>
+                <Iconator icon={i.slug_name} size="s" />
+                <span>{i.name}</span>
+              </div>
+            </Link>
+          }
+          content={i.name}
+          size="mini"
+          position="right center"
+        />
         <div className="floors_position floors" />
       </div>),
     

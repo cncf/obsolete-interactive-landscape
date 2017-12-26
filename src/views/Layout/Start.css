@@ -2,10 +2,10 @@
   /*main container*/
   /*subcontainer*/
   /*/subcomntainers childrens*/ }
-  .start .category {
-    display: flex; }
-    .start .category .iconator {
-      padding: 0 10px; }
+  .start .category .iconator {
+    padding: 0 10px; }
+  .start .category.right .iconator {
+    float: right; }
   .start body {
     padding: 50px; }
   .start .name-box {
@@ -24,37 +24,38 @@
   .start .name:first-child a {
     border-top: none;
     top: 90px;
-    left: 20px; }
+    left: 0px; }
   .start .name:nth-child(2) a {
-    top: 150px;
-    left: 50px; }
+    top: 160px;
+    left: 0px; }
     .start .name:nth-child(2) a:hover {
       color: #CCC; }
   .start .name:nth-child(3) a {
     top: 225px;
-    left: 105px; }
+    left: 0px; }
   .start .name:nth-child(4) a {
     top: 300px;
-    left: 70px; }
+    left: 0px; }
   .start .name:nth-child(5) a {
     top: 370px;
-    left: 125px; }
+    left: 0px; }
   .start .name:nth-child(6) a {
-    top: 120px;
-    left: 210px; }
-  .start .name:nth-child(7) a {
     top: 200px;
-    left: 260px; }
+    left: 300px; }
+  .start .name:nth-child(7) a {
+    top: 260px;
+    left: 340px; }
   .start .floors_position {
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
+    background-position: 30% 50%;
     opacity: 1;
-    background-image: url("../../components/assets/images/placeholder/exports/se_none.jpg");
+    background-image: url("../../components/assets/images/placeholder/exports/se.jpg");
     z-index: 10; }
   .start .floors {
     display: none; }
