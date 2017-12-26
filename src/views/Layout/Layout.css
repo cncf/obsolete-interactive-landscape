@@ -36,7 +36,8 @@
 .content_wrapper {
   display: flex;
   flex: 9;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .content_wrapper .graph_wrapper {
     flex: 2;
     height: 300px;

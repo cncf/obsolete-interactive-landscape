@@ -50,6 +50,7 @@
   display: flex;
   flex: 9;
   align-items: center;
+  justify-content: center;
 
   .graph_wrapper{
     flex:2;
@@ -96,7 +97,6 @@
   }
 
   .panel_wrapper {
-
     display:flex;
     flex:5;
     max-height:80% ;

@@ -13,7 +13,7 @@ class SideBar extends Component {
 
     this.state = {
       collapsed: true,
-      activeIndex:'',
+      activeIndex: '',
     };
     
     this.renderFirstLevel = this.renderFirstLevel.bind(this);
@@ -26,8 +26,6 @@ class SideBar extends Component {
   renderFirstLevel() {
     const data = this.props.data.landscape;
     const currentCat = this.props.category;
-    
-    console.log(data);
     
     return data.map((i, index) =>
       (<li

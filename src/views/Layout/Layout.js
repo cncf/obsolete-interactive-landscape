@@ -137,12 +137,18 @@ class Layout extends Component {
   
     if (this.props.match.url === '/'){
       return(
-        <div className={ClassNames('graph_home')}>
-          <StartView data={data} />
-        </div>
+        
+          <div className={ClassNames('graph_home')}>
+            <StartView data={data} />
+          </div>
+       
       );
     }else{
-      return <div className={ClassNames('graph_wrapper cat_'+ cat )} />
+      return (
+        
+          <div className={ClassNames('graph_wrapper cat_'+ cat )} />
+        
+      );
     }
   }
   
@@ -179,6 +185,8 @@ class Layout extends Component {
               
             </div>
             <div className="content_wrapper">
+              
+              
               {this.renderGraph()}
               
               <div className="panel_wrapper">
@@ -194,6 +202,7 @@ class Layout extends Component {
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
                 </Filter>
               </div>
+              
             </div>
           </div>
           
