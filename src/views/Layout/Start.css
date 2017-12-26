@@ -62,7 +62,9 @@
     background-image: url("../../components/assets/images/placeholder/exports/se.jpg");
     z-index: 10; }
   .start .floors {
-    display: none; }
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear; }
   .start .name:nth-child(1) .floors {
     background-image: url("../../components/assets/images/placeholder/exports/se_0.jpg") !important; }
   .start .name:nth-child(2) .floors {
@@ -77,6 +79,6 @@
     background-image: url("../../components/assets/images/placeholder/exports/se_5.jpg") !important; }
   .start .name:nth-child(7) .floors {
     background-image: url("../../components/assets/images/placeholder/exports/se_6.jpg") !important; }
-  .start a:hover + .floors,
-  .start img:hover {
-    display: block; }
+  .start a:hover + .floors {
+    visibility: visible;
+    opacity: 1; }

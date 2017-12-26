@@ -106,12 +106,16 @@
     opacity: 1;
     background-image: url('../../components/assets/images/placeholder/exports/se.jpg');
     z-index: 10;
+
   }
 
 
 
   .floors{
-    display:none;
+    //display:none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
   }
 
   .name:nth-child(1) .floors {
@@ -136,9 +140,12 @@
     background-image: url('../../components/assets/images/placeholder/exports/se_6.jpg') !important;
   }
 
-  a:hover + .floors,
-  img:hover {
-    display: block;
+  a:hover + .floors{
+    //display: block;
+    visibility: visible;
+    opacity: 1;
+
   }
+
 
 }
