@@ -29,6 +29,9 @@ class Iconator extends Component {
       case 'background':
         value = 'icon_background';
         break;
+      case 'outline':
+        value = 'icon_outline';
+        break;
       default : value = 'icon_medium';
     }
     return value;

@@ -31,25 +31,20 @@ class Start extends Component {
         key={i.slug_name}
         onClick={() => this.setState({ activeIndex: index })}
       >
-        <Popup
-          trigger={
-            <Link
-              to={{
-                pathname: `/${i.slug_name}`,
-                // this is the trick!
-                state: { modal: true },
-              }}
-            >
-              <div className={classNames('category unos', { right: this.state.icon_placement[index] })}>
-                <Iconator icon={i.slug_name} size="s" />
-                <span>{i.name}</span>
-              </div>
-            </Link>
-          }
-          content={i.name}
-          size="mini"
-          position="right center"
-        />
+        
+        <Link
+          to={{
+            pathname: `/${i.slug_name}`,
+            // this is the trick!
+            state: { modal: true },
+          }}
+        >
+          <div className={classNames('category unos', { right: this.state.icon_placement[index] })}>
+            <Iconator icon={i.slug_name} size="outline" />
+            <span>{i.name}</span>
+          </div>
+        </Link>
+          
         <div className="floors_position floors" />
       </div>),
     

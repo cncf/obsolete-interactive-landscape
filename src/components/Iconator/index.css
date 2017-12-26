@@ -2,7 +2,7 @@
 @media only screen {
   .iconator {
     display: inline-block; }
-    .iconator .icon_medium, .iconator .icon_small, .iconator .icon_large {
+    .iconator .icon_medium, .iconator .icon_small, .iconator .icon_large, .iconator .icon_outline {
       background-repeat: no-repeat;
       background-size: 100% 100%;
       display: flex; }
@@ -12,6 +12,20 @@
     .iconator .icon_small {
       width: 20px;
       height: 20px; }
+    .iconator .icon_outline {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid white;
+      background-color: rgba(255, 255, 255, 0.7); }
+    .iconator .icon_background {
+      position: fixed;
+      min-width: 600px;
+      height: 600px;
+      left: -300px;
+      top: 15%;
+      opacity: 0.03;
+      background-size: 600px 600px; }
     .iconator .icon_apis {
       background-image: url(./icons/ico_apis.png); }
     .iconator .icon_data {
@@ -29,15 +43,7 @@
     .iconator .icon_prov {
       background-image: url(./icons/ico_prov.png); }
     .iconator .icon_runt {
-      background-image: url(./icons/ico_runt.png); }
-    .iconator .icon_background {
-      position: fixed;
-      min-width: 600px;
-      height: 600px;
-      left: -300px;
-      top: 15%;
-      opacity: 0.03;
-      background-size: 600px 600px; } }
+      background-image: url(./icons/ico_runt.png); } }
 
 /*TABLET*/
 /*DESKTOP*/

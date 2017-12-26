@@ -1,14 +1,15 @@
 .start{
 
   .category{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
 
     .iconator{
       padding:0 10px;
     }
     &.right{
-      .iconator{
-        float:right;
-      }
+      flex-direction: row-reverse;
     }
   }
 
@@ -33,50 +34,49 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: #000;
+    color: #6d6d6d;
     display: block;
     text-align: center;
     text-decoration: none;
     z-index: 20;
+
+    &:hover {
+      color: #000;
+    }
   }
   /*/subcomntainers childrens*/
   .name:first-child a{
     border-top: none;
-    top: 90px;
-    left: 0px;
+    top: 70px;
+    left: -10px;
     //color:yellow;
   }
   .name:nth-child(2) a {
-    //color: orange;
-    top: 160px;
-    left:0px;
-
-    &:hover {
-      color: #CCC;
-    }
+    top: 145px;
+    left:-20px;
   }
   .name:nth-child(3) a{
-    top: 225px;
-    left: 0px;
+    top: 220px;
+    left: 70px;
     //color:red;
   }
   .name:nth-child(4) a{
-    top: 300px;
-    left: 0px;
+    top: 292px;
+    left: 70px;
     //color:purple;
   }
   .name:nth-child(5) a{
-    top: 370px;
-    left: 0px;
+    top: 365px;
+    left: 100px;
     //color:dodgerblue;
   }
   .name:nth-child(6) a{
-    top: 200px;
+    top: 180px;
     left: 300px;
     //color: aqua;
   }
   .name:nth-child(7) a{
-    top: 260px;
+    top: 235px;
     left: 340px;
     //color: green;
   }
