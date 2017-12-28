@@ -173,6 +173,24 @@ class Layout extends Component {
     });
   }
   
+  renderFooter(){
+  
+    let parentCategory = this.props.match.url;
+    let pathArray = parentCategory.split( '/' );
+    let category = Mapping(pathArray[1]);
+    let categoryName = pathArray[1];
+    let subcategory = pathArray[2];
+    
+    return(
+      <div className="footer_wrapper">
+        <a><Icon name='arrow left' /></a>
+        {categoryName} ({category}) - {subcategory}
+        <a><Icon name='arrow right' /></a>
+      </div>
+      
+    );
+  }
+  
   render() {
     const data= this.state.landscape;
     const menuvisible = this.state.menu_visible;
@@ -215,10 +233,7 @@ class Layout extends Component {
                 </Filter>
               </div>
             </div>
-            <div className="footer_wrapper">
-              <a><Icon name='arrow left' /></a>
-              <a><Icon name='arrow right' /></a>
-            </div>
+            {this.renderFooter()}
           </div>
           
           {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}
