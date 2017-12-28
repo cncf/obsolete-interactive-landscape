@@ -315,6 +315,16 @@
   margin-left: 230px;
   width: 100%; }
 
+.footer_wrapper {
+  display: flex;
+  justify-content: flex-end; }
+  .footer_wrapper a {
+    color: #CCC; }
+    .footer_wrapper a:hover {
+      color: black; }
+  .footer_wrapper i {
+    margin: 0 15px 15px 0; }
+
 @media (max-width: 767px) {
   .layout.open_hidden .sidebar_wrapper {
     -webkit-transform: translate(-230px, 0);

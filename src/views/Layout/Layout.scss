@@ -479,6 +479,23 @@
   width:100%;
 }
 
+.footer_wrapper{
+  display: flex;
+  justify-content: flex-end;
+
+  a{
+    color: #CCC;
+    &:hover{
+      color:black;
+    }
+  }
+  i{
+    margin:0 15px 15px 0;
+  }
+
+
+}
+
 
 
 //MOBILE SCREENS

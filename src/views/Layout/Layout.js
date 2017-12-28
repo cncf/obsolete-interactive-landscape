@@ -214,7 +214,10 @@ class Layout extends Component {
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
                 </Filter>
               </div>
-              
+            </div>
+            <div className="footer_wrapper">
+              <a><Icon name='arrow left' /></a>
+              <a><Icon name='arrow right' /></a>
             </div>
           </div>
           
