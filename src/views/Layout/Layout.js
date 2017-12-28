@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Menu, Checkbox } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 import ClassNames from 'classnames';
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
@@ -179,13 +180,43 @@ class Layout extends Component {
     let pathArray = parentCategory.split( '/' );
     let category = Mapping(pathArray[1]);
     let categoryName = pathArray[1];
-    let subcategory = pathArray[2];
+    let subcategory = parseInt(pathArray[2]);
+    let urlback = 0;
     
+
+      
+      if(subcategory <= 0){
+        //return ( 0 );
+        //urlback =  "/xx"+Mapping(pathArray[1]);
+      }else{
+        urlback =  "/"+categoryName+"/"+(subcategory -1);
+      }
+
+    
+    let forward = subcategory +1;
+  
     return(
       <div className="footer_wrapper">
-        <a><Icon name='arrow left' /></a>
+        <Link
+          to={{
+            pathname:`${urlback}`,
+            state: { modal: true },
+          }}
+        >
+          <Icon name='arrow left' />
+        </Link>
+        
         {categoryName} ({category}) - {subcategory}
-        <a><Icon name='arrow right' /></a>
+        
+        <Link
+          to={{
+            pathname: `/${categoryName}/${forward}`,
+            // this is the trick!
+            state: { modal: true },
+          }}
+        >
+          <Icon name='arrow right' />
+        </Link>
       </div>
       
     );
