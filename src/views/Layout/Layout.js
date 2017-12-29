@@ -3,6 +3,7 @@ import { Icon, Menu, Checkbox } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import ClassNames from 'classnames';
 import ArrowKeysReact from 'arrow-keys-react';
+import {Redirect } from 'react-router-dom';
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
@@ -37,23 +38,26 @@ class Layout extends Component {
   
     ArrowKeysReact.config({
       left: () => {
+        
         this.setState({
-          content: 'left key detected.'
+          detected: 'left'
         });
       },
       right: () => {
+        
         this.setState({
-          content: 'right key detected.'
+          detected: 'right'
         });
+        
       },
       up: () => {
         this.setState({
-          content: 'up key detected.'
+          detected: 'up'
         });
       },
       down: () => {
         this.setState({
-          content: 'down key detected.'
+          detected: 'down'
         });
       }
     });
@@ -65,6 +69,8 @@ class Layout extends Component {
     this.updateState = this.updateState.bind(this);
     this.renderCategory = this.renderCategory.bind(this);
     this.renderFooter = this.renderFooter.bind(this);
+    this.triggerRoutes = this.triggerRoutes.bind(this);
+    this.getRoutes = this.getRoutes.bind(this);
     
   }
   
@@ -79,6 +85,9 @@ class Layout extends Component {
     }else{
       this.handleSidebar(true);
     }
+  
+    const urls = this.getRoutes();
+    console.log(urls);
     
   }
   componentWillReceiveProps(nextProps){
@@ -104,6 +113,14 @@ class Layout extends Component {
       this.previousLocation = this.props.location
     }
   }
+  
+  componentDidUpdate(){
+    const urls = this.getRoutes();
+    console.log(urls);
+    
+    this.triggerRoutes(urls);
+  }
+  
   
   updateState(){
     const data = dataSet;
@@ -204,6 +221,31 @@ class Layout extends Component {
     });
   }
   
+  triggerRoutes(urls){
+    
+    let detected = this.state.detected;
+    
+    if(detected === 'right'){
+      console.log('FRONT--+>>');
+      console.log(urls[1]);
+      // const location = { pathname: urls[1] };
+      // history.push(location);
+      
+      return <Redirect to={urls[1]} push />
+      
+    }else if(detected === 'left'){
+      console.log('<<+--BACK');
+      console.log(urls[0]);
+      // const location = { pathname: urls[0] }
+      // history.push(location)
+      
+      return <Redirect to={urls[0]} push />
+    }else{
+      console.log('....');
+      
+    }
+  }
+  
   renderFooter(){
     
     let parentCategory = this.props.match.url;
@@ -252,7 +294,7 @@ class Layout extends Component {
         urlforward = "/"+categoryName+"/0";
         
       }
-  
+    
     return(
       <div className="footer_wrapper">
         
@@ -278,11 +320,66 @@ class Layout extends Component {
     );
   }
   
-  handleKeyPress = (event) => {
-    if(event.key == 'Enter'){
-      console.log('enter press here! ')
+  getRoutes(){
+    
+    let parentCategory = this.props.match.url;
+    let pathArray = parentCategory.split( '/' );
+    let category = Mapping(pathArray[1]);
+    category = parseInt(category);
+    let categoryName = pathArray[1];
+    let subcategory = parseInt(pathArray[2]);
+    let urlback = 0;
+    let urlforward = 0;
+    
+    if(subcategory || subcategory === 0){
+      //This is a Subcategory
+      if(subcategory <= 0){
+        urlback =  "/"+categoryName;
+      }else{
+        urlback =  "/"+categoryName+"/"+(subcategory -1);
+      }
+      
+      let available=this.state.sub_cat[category]-1;
+      
+      if(available === subcategory) {
+        let nextCategory = Mapping(category + 1);
+        
+        if(nextCategory <= 0){
+          urlforward = "/";
+        }else{
+          urlforward = "/" + nextCategory;
+          
+        }
+        
+      }else{
+        let nextSubcategory = subcategory +1;
+        urlforward = "/"+categoryName+"/"+nextSubcategory;
+      }
+      
+    }else{
+      //This is a category
+      if(category <= 0){
+        urlback =  "/";
+      }else{
+        let prevAvailable = this.state.sub_cat[category-1]-1;
+        urlback =  "/"+Mapping(category-1)+"/"+prevAvailable;
+        
+      }
+      urlforward = "/"+categoryName+"/0";
+      
     }
-  };
+  
+      
+      //Once we gather back and Front URLs we trigger Them
+      //console.log("getRoutes  B:"+urlback+" F:"+urlforward);
+      let urls = [urlback, urlforward];
+      
+      return urls;
+      //this.triggerRoutes(urlback,urlforward);
+    
+    
+    
+  }
   
   render() {
     const data= this.state.landscape;
@@ -327,9 +424,12 @@ class Layout extends Component {
                 </Filter>
               </div>
             </div>
+            
             {this.renderFooter()}
+            
+            
             <div >
-              This: {this.state.content}
+              This: {this.state.detected}
             </div>
           </div>
           
@@ -340,5 +440,6 @@ class Layout extends Component {
   }
 
 }
+
 
 export default Layout;
