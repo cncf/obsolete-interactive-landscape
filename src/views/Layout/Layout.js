@@ -201,7 +201,13 @@ class Layout extends Component {
       }else{
         //This is a category
         console.log('no hay');
-        urlback =  "/"+Mapping(category-1);
+        if(category <= 0){
+          urlback =  "/";
+        }else{
+          urlback =  "/"+Mapping(category-1);
+        }
+        
+       
       }
     
     
@@ -212,6 +218,7 @@ class Layout extends Component {
   
     return(
       <div className="footer_wrapper">
+        
         <Link
           to={{
             pathname:`${urlback}`,
