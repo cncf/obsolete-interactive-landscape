@@ -23,12 +23,6 @@ const Mapping = (cat) => {
     case 'observability_analysis':
       value = '6';
       break;
-    case 'apis':
-      value = '7';
-      break;
-    case 'data':
-      value = '8';
-      break;
       // inverse Mapping
     case 0:
       value = 'app_definition_development';
@@ -52,11 +46,6 @@ const Mapping = (cat) => {
       value = 'observability_analysis';
       break;
     case 7:
-      value = 'apis';
-      break;
-    case 8:
-      value = 'data';
-      break;
     default : value = '0';
   }
   return value;

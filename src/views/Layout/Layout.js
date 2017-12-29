@@ -178,9 +178,6 @@ class Layout extends Component {
   
   renderFooter(){
     
-    const data = this.state.landscape;
-    console.log(data);
-  
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
     let category = Mapping(pathArray[1]);
@@ -201,10 +198,18 @@ class Layout extends Component {
         let available=this.state.sub_cat[category]-1;
         
         if(available === subcategory) {
-          urlforward = "/" + Mapping(category + 1);
+          let nextCategory = Mapping(category + 1);
+          
+          if(nextCategory <= 0){
+            urlforward = "/";
+          }else{
+            urlforward = "/" + nextCategory;
+            
+          }
+          
         }else{
-          let nextCategory = subcategory +1;
-          urlforward = "/"+categoryName+"/"+nextCategory;
+          let nextSubcategory = subcategory +1;
+          urlforward = "/"+categoryName+"/"+nextSubcategory;
         }
         
       }else{
@@ -212,9 +217,12 @@ class Layout extends Component {
         if(category <= 0){
           urlback =  "/";
         }else{
-          urlback =  "/"+Mapping(category-1);
+          let prevAvailable = this.state.sub_cat[category-1]-1;
+          urlback =  "/"+Mapping(category-1)+"/"+prevAvailable;
+          
         }
         urlforward = "/"+categoryName+"/0";
+        
       }
   
     return(
@@ -228,8 +236,6 @@ class Layout extends Component {
         >
           <Icon name='arrow left' />
         </Link>
-        
-        {categoryName} ({category}) - { subcategory }
         
         <Link
           to={{
