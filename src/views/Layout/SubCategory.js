@@ -22,7 +22,16 @@ const SubCategoryView = ({ cat, match, data, state }) => {
     return <div>No Sub Category called like that</div>;
   }
   
-
+  const renderCalculated = (c) => {
+    let element;
+    if (c.calculated) {
+      if (c.calculated.resized_logo) {
+        element = c.calculated.resized_logo;
+      }
+    }
+    return element;
+  }
+  
   return (
     <div className="module">
       <Iconator icon={category.slug_name} size="background" />
@@ -53,7 +62,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 >
                   <div
                     className="company"
-                    style={{ backgroundImage: `url(${i.calculated})` }}
+                    style={{ backgroundImage: `url(${renderCalculated(i)})` }}
                     title="Bosch"
                   />
                   
