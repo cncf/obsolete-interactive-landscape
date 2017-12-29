@@ -19,6 +19,7 @@ landscape:
           external:
             twitter: https://twitter.com/PingCAP
             crunchbase: https://www.crunchbase.com/organization/pingcap
+          calculated:
         - item:
           name: "MySQL"
           slug_name: mysql
@@ -32,6 +33,7 @@ landscape:
           external:
             twitter: https://twitter.com/mysql
             crunchbase: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+          calculated:
         - item:
           name: "Postgres"
           slug_name: postgres
@@ -44,6 +46,7 @@ landscape:
           external:
             twitter: https://twitter.com/postgresql
             crunchbase:  https://twitter.com/postgresql
+          calculated:
         - item:
           name: "Oracle"
           slug_name: oracle
@@ -56,6 +59,7 @@ landscape:
           external:
             twitter: https://twitter.com/Oracle
             crunchbase: https://www.crunchbase.com/organization/oracle
+          calculated:
         - item:
           name: "SQL Server"
           slug_name: sql_server
@@ -68,6 +72,7 @@ landscape:
           external:
             twitter: https://twitter.com/SQLServer
             crunchbase: https://www.crunchbase.com/organization/microsoft-sql-server
+          calculated:
         - item:
           name: "IBM DB2"
           slug_name: ibm_db2
@@ -80,6 +85,7 @@ landscape:
           external:
             twitter: https://twitter.com/ibmdb2
             crunchbase: https://www.crunchbase.com/organization/ibm
+          calculated:
         - item:
           name: "MongoDB"
           slug_name: mongodb
@@ -92,6 +98,7 @@ landscape:
           external:
             twitter: https://twitter.com/mongodb
             crunchbase: https://www.crunchbase.com/organization/mongodb-inc
+          calculated:
         - item:
           name: "Cassandra"
           slug_name: cassandra
@@ -104,6 +111,7 @@ landscape:
           external:
             twitter: https://twitter.com/cassandra
             crunchbase: https://www.crunchbase.com/organization/apache-cassandra
+          calculated:
         - item:
           name: "Redis"
           slug_name: redis
@@ -116,6 +124,7 @@ landscape:
           external:
             twitter: https://twitter.com/redisfeed
             crunchbase: https://www.crunchbase.com/product/redis
+          calculated:
         - item:
           name: "MariaDB"
           slug_name: mariadb
@@ -128,6 +137,7 @@ landscape:
           external:
             twitter: https://twitter.com/mariadbfdn
             crunchbase: https://www.crunchbase.com/organization/mariadb-2
+          calculated:
         - item:
           name: "Crate"
           slug_name: crate
@@ -140,6 +150,7 @@ landscape:
           external:
             twitter: https://twitter.com/Crateio
             crunchbase: https://www.crunchbase.com/organization/crate-technology
+          calculated:
         - item:
           name: "NomsDB"
           slug_name: nomsdb
@@ -152,6 +163,7 @@ landscape:
           external:
             twitter: https://twitter.com/nomsdb
             crunchbase: https://www.crunchbase.com/product/noms
+          calculated:
         - item:
           name: "BigchainDB"
           slug_name: bigchaindb
@@ -164,6 +176,7 @@ landscape:
           external:
             twitter: https://twitter.com/BigchainDB
             crunchbase: https://www.crunchbase.com/organization/bigchaindb
+          calculated:
         - item:
           name: "Couchbase"
           slug_name: couchbase
@@ -176,6 +189,7 @@ landscape:
           external:
             twitter: https://twitter.com/couchbase
             crunchbase: https://www.crunchbase.com/organization/couchbase
+          calculated:
         - item:
           name: "CockroachDB"
           slug_name: cockroachdb
@@ -188,6 +202,7 @@ landscape:
           external:
             twitter: https://twitter.com/CockroachDB
             crunchbase: https://www.crunchbase.com/organization/cockroach-labs
+          calculated:
         - item:
           name: "RethinkDB"
           slug_name: rethinkdb
@@ -200,6 +215,7 @@ landscape:
           external:
             twitter: https://twitter.com/rethinkdb
             crunchbase: https://www.crunchbase.com/organization/rethinkdb
+          calculated:
         - item:
           name: "Vitess"
           slug_name: vitess
@@ -209,6 +225,7 @@ landscape:
           homepage_url: http://vitess.io/
           raw_logo: http://vitess.io/images/vitess_logo_with_border.svg
           repo_url: https://github.com/youtube/vitess
+          calculated:
         - item:
           name: "SQL Data Warehouse"
           slug_name: sql_data_warehouse
@@ -221,6 +238,7 @@ landscape:
           external:
             twitter: https://twitter.com/azure
             crunchbase: https://www.crunchbase.com/product/windows-azure
+          calculated:
         - item:
           name: "Snowflake"
           slug_name: snowflake
@@ -232,6 +250,7 @@ landscape:
             external:
             twitter: https://twitter.com/SnowflakeDB
             crunchbase: https://www.crunchbase.com/organization/snowflake-computing
+          calculated:
         - item:
           name: "Druid"
           slug_name: druid
@@ -243,6 +262,7 @@ landscape:
           raw_logo: https://metamarkets.com/wp-content/uploads/2016/03/Druid_MasterLogo_Full-ColorTransparent-400x108.png
           external:
             twitter: https://twitter.com/druidio
+          calculated:
         - item:
           name: "Qubole"
           slug_name: qubole
@@ -254,6 +274,7 @@ landscape:
           external:
             twitter: https://twitter.com/qubole
             crunchbase: https://www.crunchbase.com/organization/qubole
+          calculated:
         - item:
           name: "CarbonData"
           slug_name: carbondata
@@ -266,6 +287,7 @@ landscape:
           external:
             twitter: https://twitter.com/ApacheCarbonDat
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Vertica"
           slug_name: vertica
@@ -278,6 +300,7 @@ landscape:
           external:
             twitter: https://twitter.com/verticahelp
             crunchbase: https://www.crunchbase.com/organization/vertica-systems
+          calculated:
         - item:
           name: "Hadoop"
           slug_name: hadoop
@@ -290,6 +313,7 @@ landscape:
           external:
             twitter: https://twitter.com/hadoop
             crunchbase: https://www.crunchbase.com/product/hadoop
+          calculated:
         - item:
           name: "Pachyderm"
           slug_name: pachyderm
@@ -302,6 +326,7 @@ landscape:
           external:
             twitter: https://twitter.com/pachydermIO
             crunchbase: https://www.crunchbase.com/organization/pachyderm
+          calculated:
       - subcategory:
         name: "Messaging/Streaming"
         slug_name: messaging_streaming
@@ -318,6 +343,7 @@ landscape:
           external:
             twitter: https://twitter.com/apachekafka
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Dataflow"
           slug_name: dataflow
@@ -330,6 +356,7 @@ landscape:
           external:
             twitter: https://twitter.com/googlecloud
             crunchbase: https://www.crunchbase.com/organization/google-cloud-platform
+          calculated:
         - item:
           name: "Spark Streaming"
           slug_name: spark_streaming
@@ -342,6 +369,7 @@ landscape:
           external:
             twitter: https://twitter.com/apachespark
             crunchbase: https://www.crunchbase.com/organization/apache-spark
+          calculated:
         - item:
           name: "Heron"
           slug_name: heron
@@ -355,6 +383,7 @@ landscape:
           external:
             twitter: https://twitter.com/heronstreaming
             crunchbase:
+          calculated:
         - item:
           name: "Flink"
           slug_name: flink
@@ -367,6 +396,7 @@ landscape:
           external:
             twitter: https://twitter.com/apacheflink
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Apex"
           slug_name: apex
@@ -379,6 +409,7 @@ landscape:
           external:
             twitter: https://twitter.com/apacheapex/
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Apache Storm"
           slug_name: apache_storm
@@ -391,6 +422,7 @@ landscape:
           external:
             twitter: https://twitter.com/stormprocessor
             crunchbase: https://www.crunchbase.com/product/storm
+          calculated:
         - item:
           name: "RabbitMQ"
           slug_name: rabiitmq
@@ -403,6 +435,7 @@ landscape:
           external:
             twitter: https://twitter.com/rabbitmq
             crunchbase: https://www.crunchbase.com/product/rabbitmq
+          calculated:
         - item:
           name: "iguazio"
           slug_name: iquazio
@@ -415,6 +448,7 @@ landscape:
           external:
             twitter: https://twitter.com/iguazio
             crunchbase: https://www.crunchbase.com/organization/iguaz-io
+          calculated:
         - item:
           name: "NATS"
           slug_name: nats
@@ -427,6 +461,7 @@ landscape:
           external:
             twitter: https://twitter.com/nats_io
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "StreamSets"
           slug_name: streamsets
@@ -439,6 +474,7 @@ landscape:
           external:
             twitter: https://twitter.com/streamsets
             crunchbase: https://www.crunchbase.com/organization/streamsets
+          calculated:
         - item:
           name: "Kinesis"
           slug_name: kinesis
@@ -451,6 +487,7 @@ landscape:
           external:
             twitter: https://twitter.com/awscloud
             crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          calculated:
       - subcategory:
         name: "SCM"
         slug_name: scm
@@ -466,6 +503,7 @@ landscape:
           external:
             twitter: https://twitter.com/bitbucket
             crunchbase: https://www.crunchbase.com/organization/bitbucket
+          calculated:
         - item:
           name: "GitLab"
           slug_name: gitlab
@@ -478,6 +516,7 @@ landscape:
           external:
             twitter: https://twitter.com/gitlab
             crunchbase: https://www.crunchbase.com/organization/gitlab-com
+          calculated:
         - item:
           name: "GitHub"
           slug_name: github
@@ -489,6 +528,7 @@ landscape:
           external:
             twitter: https://twitter.com/github
             crunchbase: https://www.crunchbase.com/organization/github
+          calculated:
       - subcategory:
         name: "Registry Services"
         slug_name: registry_services
@@ -504,6 +544,7 @@ landscape:
           external:
             twitter: https://twitter.com/quayio
             crunchbase: https://www.crunchbase.com/organization/quay-io
+          calculated:
         - item:
           name: "Artifactory"
           slug_name: artifactory
@@ -515,6 +556,7 @@ landscape:
           external:
             twitter: https://twitter.com/jfrog
             crunchbase: https://www.crunchbase.com/product/artifactory
+          calculated:
         - item:
           name: "Sonatype"
           slug_name: sonatype
@@ -526,6 +568,7 @@ landscape:
           external:
             twitter: https://twitter.com/sonatype
             crunchbase: https://www.crunchbase.com/organization/sonatype
+          calculated:
         - item:
           name: "Harbor"
           slug_name: harbor
@@ -538,6 +581,7 @@ landscape:
           external:
             twitter: https://twitter.com/vmware
             crunchbase: https://www.crunchbase.com/organization/vmware
+          calculated:
         - item:
           name: "Azure Registry"
           slug_name: azure_registry
@@ -550,6 +594,7 @@ landscape:
           external:
             twitter: https://twitter.com/azure
             crunchbase: https://www.crunchbase.com/product/windows-azure
+          calculated:
         - item:
           name: "Atomic"
           slug_name: atomic
@@ -562,6 +607,7 @@ landscape:
           external:
             twitter: https://twitter.com/projectatomic
             crunchbase: https://www.crunchbase.com/organization/project-atomic
+          calculated:
         - item:
           name: "Docker Registry"
           slug_name: docker_registry
@@ -574,6 +620,7 @@ landscape:
           external:
             twitter: https://twitter.com/docker
             crunchbase: https://www.crunchbase.com/organization/docker
+          calculated:
         - item:
           name: "Amazon ECR"
           slug_name: amazon_ecr
@@ -586,6 +633,7 @@ landscape:
           external:
             twitter: https://twitter.com/awscloud
             crunchbase: https://www.crunchbase.com/product/amazon-ec2
+          calculated:
         - item:
           name: "Google Registry"
           slug_name: google_registry
@@ -598,6 +646,7 @@ landscape:
           external:
             twitter: https://twitter.com/googlecloud
             crunchbase: https://www.crunchbase.com/organization/google-cloud-platform
+          calculated:
       - subcategory:
         name: "Application Definition & Image Build"
         slug_name: app_definition_image_build
@@ -614,6 +663,7 @@ landscape:
           external:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
+          calculated:
         - item:
           name: "Compose"
           slug_name: compose
@@ -626,6 +676,7 @@ landscape:
           external:
             twitter: https://twitter.com/Docker
             crunchbase: https://www.crunchbase.com/organization/docker
+          calculated:
         - item:
           name: "Habitat"
           slug_name: habitat
@@ -638,6 +689,7 @@ landscape:
           external:
             twitter: https://twitter.com/hashtag/habitatsh
             crunchbase: https://www.crunchbase.com/product/habitat-2
+          calculated:
         - item:
           name: "Brooklyn"
           slug_name: brooklyn
@@ -650,6 +702,7 @@ landscape:
           external:
             twitter: https://twitter.com/apachebrooklyn
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Bitnami"
           slug_name: bitnami
@@ -661,6 +714,7 @@ landscape:
           external:
             twitter: https://twitter.com/bitnami
             crunchbase: https://www.crunchbase.com/organization/bitnami
+          calculated:
         - item:
           name: "OpenAPI"
           slug_name: openapi
@@ -673,6 +727,7 @@ landscape:
           external:
             twitter: https://twitter.com/hashtag/openapi
             crunchbase: https://www.crunchbase.com/organization/the-open-api-initiative
+          calculated:
   - category:
     name: "Orchestration & Management"
     slug_name: orchestration_and_management
@@ -693,6 +748,11 @@ landscape:
           external:
             twitter: https://twitter.com/kubernetesio
             crunchbase: https://www.crunchbase.com/product/kubernetes
+          calculated:
+            resized_logo: http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg
+            cb_founded: 'July 5, 1994'
+            cb_employees: '10k +'
+            cb_funds_raised: '$108M'
         - item:
           name: "Amazon ECS"
           slug_name: amazonecs
@@ -703,6 +763,7 @@ landscape:
           external:
             twitter: https://twitter.com/awscloud
             crunchbase: https://www.crunchbase.com/organization/amazon
+          calculated:
           stock_ticker: 'AMZN'
           raw_logo: https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png
         - item:
@@ -717,6 +778,7 @@ landscape:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
           raw_logo: http://www.developintelligence.com/blog/wp-content/uploads/2017/05/nomad-large.0d3987a5e5ece0c6bb012b72583d3e01.SJxcjUvEkZ.png
+          calculated:
         - item:
           name: "Mesos"
           slug_name: mesos
@@ -729,6 +791,7 @@ landscape:
           external:
             twitter: https://twitter.com/ApacheMesos
             crunchbase: https://www.crunchbase.com/organization/apache-mesos
+          calculated:
         - item:
           name: "Docker Swarm"
           slug_name: docker_swarm
@@ -741,6 +804,7 @@ landscape:
           external:
             twitter: https://twitter.com/Docker
             crunchbase: https://www.crunchbase.com/organization/docker
+          calculated:
       - subcategory:
         name: "Coordination & Service Discovery"
         slug_name: coordination_service_discovery
@@ -757,6 +821,7 @@ landscape:
           external:
             twitter: https://twitter.com/coreos/
             crunchbase: https://www.crunchbase.com/organization/coreos
+          calculated:
         - item:
           name: "Consul"
           slug_name: consul
@@ -769,6 +834,7 @@ landscape:
           external:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
+          calculated:
         - item:
           name: "Zookeeper"
           slug_name: zookeeper
@@ -781,6 +847,7 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "SkyDNS"
           slug_name: skydns
@@ -790,6 +857,7 @@ landscape:
           homepage_url: https://github.com/skynetservices/skydns
           repo_url: https://github.com/skynetservices/skydns
           raw_logo: https://memz.co/wp-content/uploads/2016/07/skydns.jpg
+          calculated:
         - item:
           name: "CoreDNS"
           slug_name: coredns
@@ -802,6 +870,7 @@ landscape:
           external:
             twitter: https://twitter.com/corednsio
             crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+          calculated:
         - item:
           name: "Registrator"
           slug_name: registrator
@@ -814,6 +883,7 @@ landscape:
           external:
             twitter: https://twitter.com/gliderlabs/
             crunchbase: https://www.crunchbase.com/organization/glider-labs
+          calculated:
         - item:
           name: "SmartStack"
           slug_name: smartstack
@@ -823,6 +893,7 @@ landscape:
           homepage_url: https://github.com/airbnb/smartstack-cookbook
           repo_url: https://github.com/airbnb/smartstack-cookbook
           raw_logo: https://crunchbase-production-res.cloudinary.com/image/upload/v1405534850/vubc5kxhmw6jalain0ot.jpg
+          calculated:
         - item:
           name: "Hyperbahn"
           slug_name: hyperbahn
@@ -832,6 +903,7 @@ landscape:
           homepage_url: https://github.com/uber-archive/hyperbahn
           repo_url: https://github.com/uber-archive/hyperbahn
           raw_logo: http://assets.creativity-online.com/images/work/medium/u/b/e/Uber_NewBranding16.jpg
+          calculated:
         - item:
           name: "Eureka"
           slug_name: eureka
@@ -841,6 +913,7 @@ landscape:
           homepage_url: https://github.com/Netflix/eureka
           repo_url: https://github.com/Netflix/eureka
           raw_logo: https://avatars3.githubusercontent.com/u/913567
+          calculated:
           stock_ticker: 'NFLX'
         - item:
           name: "Haret"
@@ -854,6 +927,7 @@ landscape:
           external:
             twitter: https://twitter.com/VMware
             crunchbase: https://www.crunchbase.com/organization/vmware
+          calculated:
       - subcategory:
         name: "Service Management"
         slug_name: service_management
@@ -870,6 +944,7 @@ landscape:
           external:
             twitter: https://twitter.com/nginx
             crunchbase: https://twitter.com/nginx
+          calculated:
         - item:
           name: "HAProxy"
           slug_name: haproxy
@@ -882,6 +957,7 @@ landscape:
           external:
             twitter: https://twitter.com/haproxy_tech
             crunchbase: https://www.crunchbase.com/organization/haproxy-technologies
+          calculated:
         - item:
           name: "Linkerd"
           slug_name: linkerd
@@ -894,6 +970,7 @@ landscape:
           external:
             twitter: https://twitter.com/linkerd
             crunchbase: https://www.crunchbase.com/product/linkerd
+          calculated:
         - item:
           name: "Envoy"
           slug_name: envoy
@@ -907,6 +984,7 @@ landscape:
           external:
             twitter: https://twitter.com/envoyproxy
             crunchbase: https://www.crunchbase.com/organization/lyft
+          calculated:
         - item:
           name: "Datawire"
           slug_name: datawire
@@ -919,6 +997,7 @@ landscape:
           external:
             twitter: https://twitter.com/datawireio
             crunchbase: https://www.crunchbase.com/organization/datawire#/entity
+          calculated:
         - item:
           name: "Traefik"
           slug_name: traefik
@@ -931,6 +1010,7 @@ landscape:
           external:
             twitter: https://twitter.com/traefikproxy
             crunchbase: https://www.crunchbase.com/organization/containous
+          calculated:
         - item:
           name: "Turbine Labs"
           slug_name: turbine_labs
@@ -943,6 +1023,7 @@ landscape:
           external:
             twitter: https://twitter.com/GoTurbine
             crunchbase: https://www.crunchbase.com/organization/turbine-labs-2
+          calculated:
         - item:
           name: "Avi Networks"
           slug_name: avi_networks
@@ -955,6 +1036,7 @@ landscape:
           external:
             twitter: https://twitter.com/AviNetworks
             crunchbase: https://www.crunchbase.com/organization/turbine-labs-2
+          calculated:
         - item:
           name: "gRPC"
           slug_name: grpc
@@ -968,6 +1050,7 @@ landscape:
           external:
             twitter: https://twitter.com/grpcio
             crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+          calculated:
         - item:
           name: "Apache Thrift"
           slug_name: apache_thrift
@@ -980,6 +1063,7 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Apache Avro"
           slug_name: apache_avro
@@ -992,6 +1076,7 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
         - item:
           name: "Vamp"
           slug_name: vamp
@@ -1004,6 +1089,7 @@ landscape:
           external:
             twitter: https://twitter.com/vamp_io
             crunchbase: https://www.crunchbase.com/organization/magnetic-io
+          calculated:
         - item:
           name: "Weave Flux"
           slug_name: weave_flux
@@ -1016,6 +1102,7 @@ landscape:
           external:
             twitter: https://twitter.com/weaveworks
             crunchbase: https://www.crunchbase.com/organization/weaveworks
+          calculated:
         - item:
           name: "Kong"
           slug_name: kong
@@ -1028,6 +1115,7 @@ landscape:
           external:
             twitter: https://twitter.com/mashape
             crunchbase: https://www.crunchbase.com/organization/mashape
+          calculated:
         - item:
           name: "Hystrix"
           slug_name: hystrix
@@ -1041,6 +1129,7 @@ landscape:
           external:
             twitter: https://twitter.com/hystrixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
         - item:
           name: "OSS"
           slug_name: oss
@@ -1054,6 +1143,7 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
         - item:
           name: "Ribbon"
           slug_name: ribbon
@@ -1067,6 +1157,7 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
         - item:
           name: "Zuul"
           slug_name: zuul
@@ -1080,6 +1171,7 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
         - item:
           name: "Backplane"
           slug_name: backplane
@@ -1090,6 +1182,7 @@ landscape:
           raw_logo: http://www.backplane.io/static/media/images/backplane.png
           external:
             twitter: https://twitter.com/backplaneio
+          calculated:
         - item:
           name: "F5"
           slug_name: f5
@@ -1101,6 +1194,7 @@ landscape:
           external:
             twitter: https://twitter.com/F5Networks
             crunchbase: https://www.crunchbase.com/organization/f5-networks
+          calculated:
   - category:
     name: "Runtime"
     slug_name: runtime
@@ -1121,6 +1215,7 @@ landscape:
           external:
             twitter: https://twitter.com/Ceph
             crunchbase: https://www.crunchbase.com/organization/ceph-storage
+          calculated:
         - item:
           name: "Gluster"
           slug_name: gluster
@@ -1147,6 +1242,7 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/product/hadoop
+          calculated:
         - item:
           name: "Minio"
           slug_name: minio
@@ -1159,6 +1255,7 @@ landscape:
           external:
             twitter: https://twitter.com/minio
             crunchbase: https://www.crunchbase.com/organization/minio-inc
+          calculated:
         - item:
           name: "Portworx"
           slug_name: portworx
@@ -1170,6 +1267,7 @@ landscape:
           external:
             twitter: https://twitter.com/portwx
             crunchbase: https://www.crunchbase.com/organization/portworx
+          calculated:
         - item:
           name: "libstorage"
           slug_name: libstorage
@@ -1182,6 +1280,7 @@ landscape:
           external:
             twitter: https://twitter.com/EMCcorp
             crunchbase: https://www.crunchbase.com/organization/dell-emc
+          calculated:
         - item:
           name: "Diamanti"
           slug_name: diamanti
@@ -1193,6 +1292,7 @@ landscape:
           external:
             twitter: https://twitter.com/diamanticom
             crunchbase: https://www.crunchbase.com/organization/diamanti
+          calculated:
         - item:
           name: "Rook"
           slug_name: rook
@@ -1204,6 +1304,7 @@ landscape:
           raw_logo: https://raw.githubusercontent.com/rook/rook/master/Documentation/media/logo.png
           external:
             twitter: https://twitter.com/rook_io
+          calculated:
         - item:
           name: "Robin Systems"
           slug_name: robin_systems
@@ -1215,6 +1316,7 @@ landscape:
           external:
             twitter: https://twitter.com/robinsystems
             crunchbase: https://www.crunchbase.com/organization/robin-systems
+          calculated:
         - item:
           name: "Springpath"
           slug_name: springpath
@@ -1227,6 +1329,7 @@ landscape:
           external:
             twitter: https://twitter.com/springpathinc
             crunchbase: https://www.crunchbase.com/organization/springpath-inc
+          calculated:
         - item:
           name: "Datera"
           slug_name: datera
@@ -1238,6 +1341,7 @@ landscape:
           external:
             twitter: https://twitter.com/DateraInc
             crunchbase: https://www.crunchbase.com/organization/datera-2
+          calculated:
         - item:
           name: "Infinit"
           slug_name: infinit
@@ -1250,6 +1354,7 @@ landscape:
           external:
             twitter: https://twitter.com/infinit_sh
             crunchbase: https://www.crunchbase.com/organization/infinit
+          calculated:
         - item:
           name: "Sheepdog"
           slug_name: sheepdog
@@ -1259,6 +1364,7 @@ landscape:
           homepage_url: https://sheepdog.github.io/sheepdog/
           repo_url: https://github.com/sheepdog
           raw_logo: https://avatars3.githubusercontent.com/u/4846685
+          calculated:
         - item:
           name: "OpenSDS"
           slug_name: opensds
@@ -1270,6 +1376,7 @@ landscape:
           external:
             twitter: https://twitter.com/opensds
             crunchbase: https://www.crunchbase.com/organization/opensds
+          calculated:
         - item:
           name: "Rex-Ray"
           slug_name: rex_ray
@@ -1282,6 +1389,7 @@ landscape:
           external:
             twitter: https://twitter.com/codedellemc
             crunchbase: https://www.crunchbase.com/organization/dell-emc
+          calculated:
         - item:
           name: "NetApp"
           slug_name: netapp
@@ -1294,6 +1402,7 @@ landscape:
           external:
             twitter: https://twitter.com/netapp
             crunchbase: https://www.crunchbase.com/organization/netapp
+          calculated:
         - item:
           name: "StorageOS"
           slug_name: storageos
@@ -1305,6 +1414,7 @@ landscape:
           external:
             twitter: https://twitter.com/Storage_OS
             crunchbase: https://www.crunchbase.com/organization/storageos
+          calculated:
         - item:
           name: "Dell EMC"
           slug_name: dell_emc
@@ -1317,6 +1427,7 @@ landscape:
           external:
             twitter: https://twitter.com/dellemc
             crunchbase: https://www.crunchbase.com/organization/dell-emc
+          calculated:
         - item:
           name: "Hedvig"
           slug_name: hedvig
@@ -1328,6 +1439,7 @@ landscape:
           external:
             twitter: https://twitter.com/HedvigInc
             crunchbase: https://www.crunchbase.com/organization/hedvig
+          calculated:
       - subcategory:
         name: "Container Runtime"
         slug_name: container_runtime
@@ -1344,6 +1456,7 @@ landscape:
           external:
             twitter: https://twitter.com/coreos
             crunchbase: https://www.crunchbase.com/organization/coreos
+          calculated:
         - item:
           name: "RunC"
           slug_name: runc
@@ -1355,6 +1468,7 @@ landscape:
           raw_logo: https://www.opencontainers.org/wp-content/uploads/sites/10/2016/10/logo_oci.png
           external:
             twitter: https://twitter.com/OCI_ORG
+          calculated:
         - item:
           name: "lxd"
           slug_name: lxd
@@ -1367,6 +1481,7 @@ landscape:
           external:
             twitter: https://twitter.com/Canonical
             crunchbase: https://www.crunchbase.com/organization/canonical-ltd
+          calculated:
         - item:
           name: "containerd"
           slug_name: containerd
@@ -1379,6 +1494,7 @@ landscape:
           external:
             twitter: https://twitter.com/docker
             crunchbase: https://www.crunchbase.com/organization/docker
+          calculated:
         - item:
           name: "cri-o"
           slug_name: cri_o
@@ -1390,6 +1506,7 @@ landscape:
           raw_logo: https://raw.githubusercontent.com/kubernetes-incubator/cri-o/master/logo/crio-logo.png
           external:
             twitter: https://twitter.com/hashtag/%22cri-o%22
+          calculated:
         - item:
           name: "CSI"
           slug_name: csi
@@ -1399,6 +1516,7 @@ landscape:
           homepage_url: https://github.com/container-storage-interface
           repo_url: https://github.com/container-storage-interface
           raw_logo: https://github.com/container-storage-interface/artwork/blob/master/logo/PNG/01.png
+          calculated:
       - subcategory:
         name: "Cloud-Native Network"
         slug_name: cloud_native_network
@@ -1415,6 +1533,7 @@ landscape:
           external:
             twitter: https://twitter.com/projectcalico
             crunchbase: https://www.crunchbase.com/organization/tigera
+          calculated:
         - item:
           name: "Canal"
           slug_name: canal
@@ -1427,6 +1546,7 @@ landscape:
           external:
             twitter: https://twitter.com/projectcalico
             crunchbase: https://www.crunchbase.com/organization/tigera
+          calculated:
         - item:
           name: "Aporeto"
           slug_name: aporeto
@@ -1438,6 +1558,7 @@ landscape:
           external:
             twitter: https://twitter.com/aporeto
             crunchbase: https://www.crunchbase.com/organization/aporeto
+          calculated:
         - item:
           name: "Open vSwitch"
           slug_name: open_vswitch
@@ -1450,6 +1571,7 @@ landscape:
           external:
             twitter: https://twitter.com/openvswitch
             crunchbase: https://www.crunchbase.com/organization/open-vswitch
+          calculated:
         - item:
           name: "OpenContrail"
           slug_name: opencontrail
@@ -1462,6 +1584,7 @@ landscape:
           external:
             twitter: https://twitter.com/OpenContrail
             crunchbase: https://www.crunchbase.com/organization/opencontrail
+          calculated:
         - item:
           name: "Romana"
           slug_name: romana
@@ -1471,6 +1594,7 @@ landscape:
           homepage_url: http://romana.io/
           repo_url: https://github.com/romana
           raw_logo: http://romana.io/images/Logo.250.png
+          calculated:
         - item:
           name: "Aviatrix"
           slug_name: aviatrix
@@ -1482,6 +1606,7 @@ landscape:
           external:
             twitter: https://twitter.com/aviatrixsys
             crunchbase: https://www.crunchbase.com/organization/aviatrix
+          calculated:
         - item:
           name: "Cumulus"
           slug_name: cumulus
@@ -1494,6 +1619,7 @@ landscape:
           external:
             twitter: https://twitter.com/CumulusNetworks/
             crunchbase: https://www.crunchbase.com/organization/cumulus-networks
+          calculated:
         - item:
           name: "Midokura"
           slug_name: midokura
@@ -1506,6 +1632,7 @@ landscape:
           external:
             twitter: https://twitter.com/midokura
             crunchbase: https://www.crunchbase.com/organization/midokura
+          calculated:
         - item:
           name: "Plumgrid"
           slug_name: plumgrid
@@ -1517,6 +1644,7 @@ landscape:
           external:
             twitter: https://twitter.com/PLUMgrid
             crunchbase: https://www.crunchbase.com/organization/plumgrid
+          calculated:
         - item:
           name: "CNI"
           slug_name: cni
@@ -1526,6 +1654,7 @@ landscape:
           homepage_url: https://github.com/containernetworking
           repo_url: https://github.com/containernetworking
           raw_logo: https://www.cncf.io/wp-content/uploads/sites/2/2017/05/logo_cni.png
+          calculated:
         - item:
           name: "Weavenet"
           slug_name: weavenet
@@ -1538,6 +1667,7 @@ landscape:
           external:
             twitter: https://twitter.com/weaveworks
             crunchbase: https://www.crunchbase.com/organization/weaveworks
+          calculated:
         - item:
           name: "Big Switch Networks"
           slug_name: big_switch_networks

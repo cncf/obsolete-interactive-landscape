@@ -21,6 +21,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
   if (!subCategory) {
     return <div>No Sub Category called like that</div>;
   }
+  
 
   return (
     <div className="module">
@@ -52,7 +53,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 >
                   <div
                     className="company"
-                    style={{ backgroundImage: `url(${i.raw_logo})` }}
+                    style={{ backgroundImage: `url(${i.calculated})` }}
                     title="Bosch"
                   />
                   
@@ -69,7 +70,6 @@ const SubCategoryView = ({ cat, match, data, state }) => {
   
   );
 };
-
 
 export default SubCategoryView;
 

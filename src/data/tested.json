@@ -875,6 +875,12 @@
               "external": {
                 "twitter": "https://twitter.com/kubernetesio",
                 "crunchbase": "https://www.crunchbase.com/product/kubernetes"
+              },
+              "calculated": {
+                "resized_logo": "http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
+                "cb_founded": "July 5, 1994",
+                "cb_employees": "10k +",
+                "cb_funds_raised": "$108M"
               }
             },
             {
