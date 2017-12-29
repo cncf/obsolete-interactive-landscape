@@ -871,7 +871,7 @@
               "oss": true,
               "homepage_url": "https://kubernetes.io/",
               "repo_url": "https://github.com/kubernetes/kubernetes",
-              "raw_logo": "http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
+              "raw_logo": "XXXhttp://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
               "external": {
                 "twitter": "https://twitter.com/kubernetesio",
                 "crunchbase": "https://www.crunchbase.com/product/kubernetes"

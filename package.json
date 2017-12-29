@@ -5,6 +5,7 @@
   "homepage": "https://cncf.github.io",
   "dependencies": {
     "@tweenjs/tween.js": "^17.1.1",
+    "arrow-keys-react": "^1.0.6",
     "classnames": "^2.2.5",
     "json-loader": "^0.5.7",
     "lodash": "^4.17.4",
@@ -12,6 +13,7 @@
     "qs": "^6.5.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-key-handler": "^1.0.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.12",
     "react-three-renderer": "^3.2.3",

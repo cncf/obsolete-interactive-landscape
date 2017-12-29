@@ -30,7 +30,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
       }
     }
     return element;
-  }
+  };
   
   return (
     <div className="module">
@@ -56,6 +56,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 index={index}
                 key={i.slug_name}
                 className="9714"
+                logo={renderCalculated(i)}
               >
                 <div
                   className={ClassNames('item c-tooltip', { item_oss: i.oss && !i.cncf }, { item_commercial: !i.oss }, { item_cncf: i.cncf })}

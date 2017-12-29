@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Menu, Checkbox } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import ClassNames from 'classnames';
+import ArrowKeysReact from 'arrow-keys-react';
 import Header from './../../components/header';
 import SideBar from './../../components/SideBar';
 import Filter from './../../components/Filter';
@@ -33,6 +34,31 @@ class Layout extends Component {
         5, 3, 3, 5, 1, 2, 3
       ]
     };
+  
+    ArrowKeysReact.config({
+      left: () => {
+        this.setState({
+          content: 'left key detected.'
+        });
+      },
+      right: () => {
+        this.setState({
+          content: 'right key detected.'
+        });
+      },
+      up: () => {
+        this.setState({
+          content: 'up key detected.'
+        });
+      },
+      down: () => {
+        this.setState({
+          content: 'down key detected.'
+        });
+      }
+    });
+    
+    
     
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
@@ -41,6 +67,8 @@ class Layout extends Component {
     this.renderFooter = this.renderFooter.bind(this);
     
   }
+  
+  
   
   componentWillMount(){
     
@@ -250,6 +278,12 @@ class Layout extends Component {
     );
   }
   
+  handleKeyPress = (event) => {
+    if(event.key == 'Enter'){
+      console.log('enter press here! ')
+    }
+  };
+  
   render() {
     const data= this.state.landscape;
     const menuvisible = this.state.menu_visible;
@@ -259,7 +293,8 @@ class Layout extends Component {
     const filters = this.state.showFilters;
    
     return (
-        <div className={this.getClassNames()}>
+        <div className={this.getClassNames()} {...ArrowKeysReact.events} tabIndex="1">
+          
           
           <div className={ClassNames('sidebar_wrapper', { hidden: !menuvisible })}>
             <SideBar data={data} category={this.getParentCategory()} >
@@ -293,6 +328,9 @@ class Layout extends Component {
               </div>
             </div>
             {this.renderFooter()}
+            <div >
+              This: {this.state.content}
+            </div>
           </div>
           
           {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}

@@ -53,7 +53,7 @@ class ItemModal extends React.Component {
           <span>{this.props.cat}</span> | {this.props.subcat}
         </Modal.Header>
         <Modal.Content image>
-          <div className="item-image x2" style={{ backgroundImage: `url(${data.raw_logo})` }} />
+          <div className="item-image x2" style={{ backgroundImage: `url(${this.props.logo})` }} />
       
           <div className="details">
             <h2>{ data.name }</h2>
