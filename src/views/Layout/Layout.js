@@ -183,38 +183,30 @@ class Layout extends Component {
     let categoryName = pathArray[1];
     let subcategory = parseInt(pathArray[2]);
     let urlback = 0;
+    let urlforward = 0;
     
-    
-      console.log('Categories:::::');
-      console.log(parentCategory);
-    console.log('Subcategories:::::');
-      console.log(subcategory);
- 
       if(subcategory || subcategory === 0){
         //This is a Subcategory
-        console.log('subcategory');
         if(subcategory <= 0){
           urlback =  "/"+categoryName;
         }else{
           urlback =  "/"+categoryName+"/"+(subcategory -1);
         }
+        //Logic to jump to next category here:
+        //The problem with this is that all our info is coming from the URL,
+        //We are blind to what happen in other sections
+        let nextCategory = subcategory +1;
+        urlforward = "/"+categoryName+"/"+nextCategory;
+        
       }else{
         //This is a category
-        console.log('no hay');
         if(category <= 0){
           urlback =  "/";
         }else{
           urlback =  "/"+Mapping(category-1);
         }
-        
-       
+        urlforward = "/"+categoryName+"/0";
       }
-    
-    
-      
-
-    
-    let forward = subcategory +1;
   
     return(
       <div className="footer_wrapper">
@@ -232,7 +224,7 @@ class Layout extends Component {
         
         <Link
           to={{
-            pathname: `/${categoryName}/${forward}`,
+            pathname:`${urlforward}`,
             // this is the trick!
             state: { modal: true },
           }}
@@ -243,6 +235,7 @@ class Layout extends Component {
       
     );
   }
+  
   
   render() {
     const data= this.state.landscape;
