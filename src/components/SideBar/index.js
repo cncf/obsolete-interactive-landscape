@@ -27,7 +27,7 @@ class SideBar extends Component {
     const data = this.props.data.landscape;
     const currentCat = this.props.category;
     
-    return data.map((i, index) =>
+    const sidebar = data.map((i, index) =>
       (<li
         className={
           classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`
@@ -91,6 +91,8 @@ class SideBar extends Component {
       </li>),
 
     );
+    
+    return sidebar;
   }
   
 

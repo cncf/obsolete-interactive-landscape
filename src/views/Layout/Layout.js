@@ -29,14 +29,16 @@ class Layout extends Component {
       filter_cncf:true,
       filter_oss:true,
       filter_com:true,
+      sub_cat:[
+        5, 3, 3, 5, 1, 2, 3
+      ]
     };
     
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
     this.updateState = this.updateState.bind(this);
     this.renderCategory = this.renderCategory.bind(this);
-  
-  
+    this.renderFooter = this.renderFooter.bind(this);
     
   }
   
@@ -175,6 +177,9 @@ class Layout extends Component {
   }
   
   renderFooter(){
+    
+    const data = this.state.landscape;
+    console.log(data);
   
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
@@ -192,11 +197,15 @@ class Layout extends Component {
         }else{
           urlback =  "/"+categoryName+"/"+(subcategory -1);
         }
-        //Logic to jump to next category here:
-        //The problem with this is that all our info is coming from the URL,
-        //We are blind to what happen in other sections
-        let nextCategory = subcategory +1;
-        urlforward = "/"+categoryName+"/"+nextCategory;
+        
+        let available=this.state.sub_cat[category]-1;
+        
+        if(available === subcategory) {
+          urlforward = "/" + Mapping(category + 1);
+        }else{
+          let nextCategory = subcategory +1;
+          urlforward = "/"+categoryName+"/"+nextCategory;
+        }
         
       }else{
         //This is a category
@@ -225,7 +234,6 @@ class Layout extends Component {
         <Link
           to={{
             pathname:`${urlforward}`,
-            // this is the trick!
             state: { modal: true },
           }}
         >
@@ -235,7 +243,6 @@ class Layout extends Component {
       
     );
   }
-  
   
   render() {
     const data= this.state.landscape;
