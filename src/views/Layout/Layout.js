@@ -179,18 +179,33 @@ class Layout extends Component {
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
     let category = Mapping(pathArray[1]);
+        category = parseInt(category);
     let categoryName = pathArray[1];
     let subcategory = parseInt(pathArray[2]);
     let urlback = 0;
     
-
-      
-      if(subcategory <= 0){
-        //return ( 0 );
-        //urlback =  "/xx"+Mapping(pathArray[1]);
+    
+      console.log('Categories:::::');
+      console.log(parentCategory);
+    console.log('Subcategories:::::');
+      console.log(subcategory);
+ 
+      if(subcategory || subcategory === 0){
+        //This is a Subcategory
+        console.log('subcategory');
+        if(subcategory <= 0){
+          urlback =  "/"+categoryName;
+        }else{
+          urlback =  "/"+categoryName+"/"+(subcategory -1);
+        }
       }else{
-        urlback =  "/"+categoryName+"/"+(subcategory -1);
+        //This is a category
+        console.log('no hay');
+        urlback =  "/"+Mapping(category-1);
       }
+    
+    
+      
 
     
     let forward = subcategory +1;
@@ -206,7 +221,7 @@ class Layout extends Component {
           <Icon name='arrow left' />
         </Link>
         
-        {categoryName} ({category}) - {subcategory}
+        {categoryName} ({category}) - { subcategory }
         
         <Link
           to={{

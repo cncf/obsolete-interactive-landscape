@@ -29,6 +29,34 @@ const Mapping = (cat) => {
     case 'data':
       value = '8';
       break;
+      // inverse Mapping
+    case 0:
+      value = 'app_definition_development';
+      break;
+    case 1:
+      value = 'orchestration_and_management';
+      break;
+    case 2:
+      value = 'runtime';
+      break;
+    case 3:
+      value = 'provisioning';
+      break;
+    case 4:
+      value = 'public_cloud';
+      break;
+    case 5:
+      value = 'platform';
+      break;
+    case 6:
+      value = 'observability_analysis';
+      break;
+    case 7:
+      value = 'apis';
+      break;
+    case 8:
+      value = 'data';
+      break;
     default : value = '0';
   }
   return value;
