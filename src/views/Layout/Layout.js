@@ -42,6 +42,7 @@ class Layout extends Component {
         this.setState({
           detected: 'left'
         });
+        
       },
       right: () => {
         
@@ -61,8 +62,6 @@ class Layout extends Component {
         });
       }
     });
-    
-    
     
     this.renderHeader = this.renderHeader.bind(this);
     this.getClassNames = this.getClassNames.bind(this);
@@ -86,8 +85,7 @@ class Layout extends Component {
       this.handleSidebar(true);
     }
   
-    const urls = this.getRoutes();
-    console.log(urls);
+    
     
   }
   componentWillReceiveProps(nextProps){
@@ -115,12 +113,9 @@ class Layout extends Component {
   }
   
   componentDidUpdate(){
-    const urls = this.getRoutes();
-    console.log(urls);
-    
-    this.triggerRoutes(urls);
-  }
   
+    
+  }
   
   updateState(){
     const data = dataSet;
@@ -221,25 +216,20 @@ class Layout extends Component {
     });
   }
   
-  triggerRoutes(urls){
+  triggerRoutes(urlback, urlforward){
     
     let detected = this.state.detected;
     
+    
     if(detected === 'right'){
-      console.log('FRONT--+>>');
-      console.log(urls[1]);
-      // const location = { pathname: urls[1] };
-      // history.push(location);
+      console.log('FRONT >>');
       
-      return <Redirect to={urls[1]} push />
+      return <Redirect to={urlback} push />
       
     }else if(detected === 'left'){
-      console.log('<<+--BACK');
-      console.log(urls[0]);
-      // const location = { pathname: urls[0] }
-      // history.push(location)
+      console.log('<< BACK');
       
-      return <Redirect to={urls[0]} push />
+      return <Redirect to={urlforward} push />
     }else{
       console.log('....');
       
@@ -256,6 +246,8 @@ class Layout extends Component {
     let subcategory = parseInt(pathArray[2]);
     let urlback = 0;
     let urlforward = 0;
+    
+    console.log(parentCategory);
     
       if(subcategory || subcategory === 0){
         //This is a Subcategory
@@ -295,29 +287,34 @@ class Layout extends Component {
         
       }
     
-    return(
-      <div className="footer_wrapper">
-        
-        <Link
-          to={{
-            pathname:`${urlback}`,
-            state: { modal: true },
-          }}
-        >
-          <Icon name='arrow left' />
-        </Link>
-        
-        <Link
-          to={{
-            pathname:`${urlforward}`,
-            state: { modal: true },
-          }}
-        >
-          <Icon name='arrow right' />
-        </Link>
-      </div>
+      if(parentCategory != '/'){
+  
+        return(
+          <div className="footer_wrapper">
       
-    );
+            <Link
+              to={{
+                pathname:`${urlback}`,
+                state: { modal: true },
+              }}
+            >
+              <Icon name='arrow left' />
+            </Link>
+      
+            <Link
+              to={{
+                pathname:`${urlforward}`,
+                state: { modal: true },
+              }}
+            >
+              <Icon name='arrow right' />
+            </Link>
+          </div>
+  
+        );
+        
+      }
+    
   }
   
   getRoutes(){
@@ -330,6 +327,7 @@ class Layout extends Component {
     let subcategory = parseInt(pathArray[2]);
     let urlback = 0;
     let urlforward = 0;
+    let gofor = true;
     
     if(subcategory || subcategory === 0){
       //This is a Subcategory
@@ -368,16 +366,16 @@ class Layout extends Component {
       urlforward = "/"+categoryName+"/0";
       
     }
+    
+      let detected = this.state.detected;
+      if(detected === 'right' || detected === 'left'){
   
-      
-      //Once we gather back and Front URLs we trigger Them
-      //console.log("getRoutes  B:"+urlback+" F:"+urlforward);
-      let urls = [urlback, urlforward];
-      
-      return urls;
-      //this.triggerRoutes(urlback,urlforward);
-    
-    
+        if(gofor === true) {
+          
+          return this.triggerRoutes(urlback, urlforward);
+        }
+        
+      }
     
   }
   
@@ -426,11 +424,8 @@ class Layout extends Component {
             </div>
             
             {this.renderFooter()}
+            {this.getRoutes()}
             
-            
-            <div >
-              This: {this.state.detected}
-            </div>
           </div>
           
           {/*{isModal ? <Route path='/:id' component={Modal} /> : null}*/}
