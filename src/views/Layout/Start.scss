@@ -104,7 +104,7 @@
     background-repeat: no-repeat;
     background-position: 30% 50%;
     opacity: 1;
-    background-image: url('../../components/assets/images/placeholder/exports/se_0.png');
+    background-image: url('../../components/assets/images/placeholder/exports/se.jpg');
     z-index: 10;
 
   }
@@ -116,6 +116,54 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s linear;
+  }
+
+  .name:nth-child(1) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_0.jpg') !important;
+  }
+  .name:nth-child(2) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_1.jpg') !important;
+  }
+  .name:nth-child(3) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_2.jpg') !important;
+  }
+  .name:nth-child(4) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_3.jpg') !important;
+  }
+  .name:nth-child(5) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_4.jpg') !important;
+  }
+  .name:nth-child(6) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_5.jpg') !important;
+  }
+  .name:nth-child(7) .floors {
+    background-image: url('../../components/assets/images/placeholder/exports/se_6.jpg') !important;
+  }
+
+  a:hover + .floors{
+    //display: block;
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+
+}
+
+//DarkTheme
+
+.layout.darktheme .start{
+
+  a{
+    color:#FFF;
+    text-shadow: 0 0 4px #225986;
+    &:hover{
+      color:#FFF;
+      text-shadow: 0 0 4px #142753;
+    }
+  }
+  .floors_position{
+    background-image: url('../../components/assets/images/placeholder/exports/se_none.png');
   }
 
   .name:nth-child(1) .floors {
@@ -139,13 +187,4 @@
   .name:nth-child(7) .floors {
     background-image: url('../../components/assets/images/placeholder/exports/se_6.png') !important;
   }
-
-  a:hover + .floors{
-    //display: block;
-    visibility: visible;
-    opacity: 1;
-
-  }
-
-
 }
