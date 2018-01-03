@@ -6,6 +6,17 @@
   display: flex;
   flex-direction: row;
   flex: 1; }
+  .layout.darktheme {
+    background: #003b76;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #003b76 0%, #00d1ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #003b76 0%, #00d1ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #003b76 0%, #00d1ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b76', endColorstr='#00d1ff',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
 
 .layout_wrapper {
   display: flex;
@@ -47,21 +58,21 @@
     margin: -100px 10px -10px 0;
     min-width: 250px;
     max-width: 250px;
-    background-image: url("../../components/assets/images/placeholder/exports/se.jpg"); }
+    background-image: url("../../components/assets/images/placeholder/exports/se.png"); }
     .content_wrapper .graph_wrapper.cat_0 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_0.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_0.png") !important; }
     .content_wrapper .graph_wrapper.cat_1 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_1.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_1.png") !important; }
     .content_wrapper .graph_wrapper.cat_2 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_2.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_2.png") !important; }
     .content_wrapper .graph_wrapper.cat_3 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_3.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_3.png") !important; }
     .content_wrapper .graph_wrapper.cat_4 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_4.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_4.png") !important; }
     .content_wrapper .graph_wrapper.cat_5 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_5.jpg") !important; }
+      background-image: url("../../components/assets/images/placeholder/exports/se_5.png") !important; }
     .content_wrapper .graph_wrapper.cat_6 {
-      background-image: url("../../components/assets/images/placeholder/exports/se_6.jpg"); }
+      background-image: url("../../components/assets/images/placeholder/exports/se_6.png"); }
   .content_wrapper .graph_home {
     position: relative;
     height: 450px;
@@ -69,8 +80,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
-    margin: -100px 10px -10px 0;
-    background: rgba(255, 255, 255, 0.2); }
+    margin: -100px 10px -10px 0; }
   .content_wrapper .panel_wrapper {
     display: flex;
     max-height: 80%;

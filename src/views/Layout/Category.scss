@@ -1227,3 +1227,18 @@ p {
     page-break-after: avoid;
   }
 }
+
+
+//DarkTheme
+
+.layout.darktheme{
+  .categ-brief, .category-title {
+    color:white;
+  }
+  .subcateg{
+    color:#86d0e5;
+  }
+  .header_container .title a{
+    color:#009ed1;
+  }
+}

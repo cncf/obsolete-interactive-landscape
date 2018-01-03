@@ -1083,3 +1083,12 @@ p {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+.layout.darktheme .categ-brief, .layout.darktheme .category-title {
+  color: white; }
+
+.layout.darktheme .subcateg {
+  color: #86d0e5; }
+
+.layout.darktheme .header_container .title a {
+  color: #009ed1; }

@@ -66,5 +66,18 @@
     background-image: url(./icons/ico_runt.png);
   }
 
-
 }
+
+
+//DarkTheme
+
+.layout.darktheme{
+  .icon_medium, .icon_small, .icon_large, .icon_outline {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 15px #00aeff;
+  }
+}
+
+

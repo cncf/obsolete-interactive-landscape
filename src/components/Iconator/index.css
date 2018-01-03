@@ -43,7 +43,12 @@
     .iconator .icon_prov {
       background-image: url(./icons/ico_prov.png); }
     .iconator .icon_runt {
-      background-image: url(./icons/ico_runt.png); } }
+      background-image: url(./icons/ico_runt.png); }
+  .layout.darktheme .icon_medium, .layout.darktheme .icon_small, .layout.darktheme .icon_large, .layout.darktheme .icon_outline {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 15px #00aeff; } }
 
 /*TABLET*/
 /*DESKTOP*/
