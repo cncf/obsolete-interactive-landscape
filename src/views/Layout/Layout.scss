@@ -231,7 +231,7 @@
 
   .sidebar-menu {
     list-style: none;
-    margin: 0;
+    margin: -100px 0 0 0;
     padding: 0;
 
     & > li:hover > a, > li.active > a {
@@ -484,8 +484,9 @@
 }
 
 .footer_wrapper{
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 
   a{
     color: #CCC;

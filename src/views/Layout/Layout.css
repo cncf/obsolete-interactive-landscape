@@ -158,7 +158,7 @@
       opacity: 0.8; }
   .sidebar_wrapper .sidebar-menu {
     list-style: none;
-    margin: 0;
+    margin: -100px 0 0 0;
     padding: 0; }
     .sidebar_wrapper .sidebar-menu > li:hover > a, .sidebar_wrapper .sidebar-menu > li.active > a {
       color: #000;
@@ -318,8 +318,9 @@
   width: 100%; }
 
 .footer_wrapper {
-  display: flex;
-  justify-content: flex-end; }
+  position: fixed;
+  right: 0;
+  bottom: 0; }
   .footer_wrapper a {
     color: #CCC; }
     .footer_wrapper a:hover {

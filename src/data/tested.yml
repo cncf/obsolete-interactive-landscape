@@ -2300,7 +2300,7 @@ landscape:
     slug_name: public_cloud
     subcategories:
       - subcategory:
-        name: ""
+        name: "Public Cloud"
         slug_name: "sub_public_cloud"
         items:
           - item:
