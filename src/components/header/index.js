@@ -16,7 +16,7 @@ class Header extends Component {
   render() {
     const state = this.state;
     return (
-      <div>
+      <div className="header_container">
         <div className="title">
           <Link
             to={{
@@ -25,10 +25,9 @@ class Header extends Component {
           >
             {state.title}
           </Link>
-          
-          
           <p>v0.1</p>
         </div>
+        
         <div className="header">
           <div className="logos">
             <a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer">

@@ -1,57 +1,94 @@
-.header{
-  flex:1;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 15px 30px;
 
-  .logos{
+.header_container{
+  display:flex;
+  align-items: center;
+  left: 0;
+  position: fixed;
+  width:100%;
+
+  .header{
+    flex:1;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 30px;
 
-    div{
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 90%;
-      height: 40px;
-      padding:10px 0;
+    .logos{
+      display: flex;
 
-      &.partner1{
-        background-image: url(../assets/images/brand/cncf.png);
-        min-width: 200px;
-      }
-      &.partner2{
-        background-image: url(../assets/images/brand/redpoint.png);
-        min-width: 100px;
-      }
-      &.partner3{
-        background-image: url(../assets/images/brand/amplify.png);
-        min-width: 80px;
+      div{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        height: 40px;
+        padding:10px 0;
+
+        &.partner1{
+          background-image: url(../assets/images/brand/cncf.png);
+          min-width: 200px;
+        }
+        &.partner2{
+          background-image: url(../assets/images/brand/redpoint.png);
+          min-width: 100px;
+        }
+        &.partner3{
+          background-image: url(../assets/images/brand/amplify.png);
+          min-width: 80px;
+        }
+
       }
 
     }
 
   }
 
-}
+  .title{
+    display:flex;
+    flex-direction: column;
+    font-size:1.3em;
+    color: #6d7e90 !important;
+    align-items: flex-end;
+    padding: 30px 30px;
 
-.title{
-  position:fixed;
-  top:20px;
-  left:40px;
-  display:flex;
-  flex-direction: column;
-  font-size:1.3em;
-  color: #6d7e90 !important;
-  align-items: flex-end;
+    a{
+      color:#949494;
+    }
 
-  a{
-    color:#949494;
+    p{
+      color:#CCC;
+      font-size:0.6em;
+    }
+
   }
 
-  p{
-    color:#CCC;
-    font-size:0.6em;
+}
+
+//MOBILE SCREENS
+@media (max-width: 767px) {
+
+  .header_container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    .header{
+      padding:10px 20px 0 0;
+
+      .logos div{
+        background-size:70%;
+      }
+    }
+
+    .title{
+      padding:10px 37px;
+    }
   }
 
 }
+
+
+
 

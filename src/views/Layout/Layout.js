@@ -241,9 +241,9 @@ class Layout extends Component {
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
     let category = Mapping(pathArray[1]);
-        category = parseInt(category);
+        category = parseInt(category, 10);
     let categoryName = pathArray[1];
-    let subcategory = parseInt(pathArray[2]);
+    let subcategory = parseInt(pathArray[2], 10);
     let urlback = 0;
     let urlforward = 0;
     
@@ -287,7 +287,7 @@ class Layout extends Component {
         
       }
     
-      if(parentCategory != '/'){
+      if(parentCategory !== '/'){
   
         return(
           <div className="footer_wrapper">
@@ -322,9 +322,9 @@ class Layout extends Component {
     let parentCategory = this.props.match.url;
     let pathArray = parentCategory.split( '/' );
     let category = Mapping(pathArray[1]);
-    category = parseInt(category);
+    category = parseInt(category, 10);
     let categoryName = pathArray[1];
-    let subcategory = parseInt(pathArray[2]);
+    let subcategory = parseInt(pathArray[2], 10);
     let urlback = 0;
     let urlforward = 0;
     let gofor = true;

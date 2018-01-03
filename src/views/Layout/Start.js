@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import { Popup } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Iconator from '../../components/Iconator';
 import Mapping from './../../views/Layout/utilities/Mapping';
@@ -29,6 +28,7 @@ class Start extends Component {
             , { active: index === this.state.activeIndex })
         }
         key={i.slug_name}
+        role="button"
         onClick={() => this.setState({ activeIndex: index })}
       >
         

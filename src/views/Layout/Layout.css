@@ -40,11 +40,12 @@
   justify-content: center; }
   .content_wrapper .graph_wrapper {
     flex: 2;
-    height: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     margin: -100px 10px -10px 0;
+    min-width: 250px;
     max-width: 250px;
     background-image: url("../../components/assets/images/placeholder/exports/se.jpg"); }
     .content_wrapper .graph_wrapper.cat_0 {
@@ -72,7 +73,6 @@
     background: rgba(255, 255, 255, 0.2); }
   .content_wrapper .panel_wrapper {
     display: flex;
-    flex: 5;
     max-height: 80%;
     min-height: 50%;
     position: relative !important;
