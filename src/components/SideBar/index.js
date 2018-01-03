@@ -30,7 +30,7 @@ class SideBar extends Component {
     const sidebar = data.map((i, index) =>
       (<li
         className={
-          classNames(`treeview ${currentCat === Mapping(i.slug_name) ? 'cat_' + currentCat : Mapping(i.slug_name)}`
+          classNames(`treeview ${currentCat === Mapping(i.slug_name) ? `cat_${currentCat}` : Mapping(i.slug_name)}`
             , { active: index === this.state.activeIndex })
         }
         key={i.slug_name}
@@ -42,7 +42,6 @@ class SideBar extends Component {
             <Link
               to={{
                 pathname: `/${i.slug_name}`,
-                // this is the trick!
                 state: { modal: true },
               }}
             >

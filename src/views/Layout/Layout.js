@@ -153,6 +153,7 @@ class Layout extends Component {
       <Menu.Item as="span" className='item-menu' onClick={() => this.setState({ menu: { collapsed: !collapsed } })}>
         <a role="button" className="" >
           <span><Icon className={ClassNames('angle', {right : collapsed}, {left : !collapsed})} /></span>
+          <span><Icon className="remove" /></span>
         </a>
       </Menu.Item>
     );

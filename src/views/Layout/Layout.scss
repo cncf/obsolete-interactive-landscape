@@ -181,6 +181,9 @@
   &.hidden{
     display:none;
   }
+  .remove{
+    display:none;
+  }
 
   i {
     line-height: 2;
@@ -529,6 +532,15 @@
       -ms-transform: translate(0, 0);
       -o-transform: translate(0, 0);
       transform: translate(0, 0);
+
+      .remove{
+        display:inherit;
+        color:#CCC;
+      }
+      .angle{
+        display:none;
+      }
+
     }
     .layout_wrapper, .main__header {
       -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
@@ -546,6 +558,8 @@
   .graph_wrapper{
     display:none !important;
   }
+
+
 }
 
 

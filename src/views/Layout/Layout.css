@@ -127,6 +127,8 @@
   align-items: center; }
   .sidebar_wrapper.hidden {
     display: none; }
+  .sidebar_wrapper .remove {
+    display: none; }
   .sidebar_wrapper i {
     line-height: 2;
     margin-right: 10px !important; }
@@ -343,6 +345,11 @@
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0); }
+    .layout.collapse .sidebar_wrapper .remove {
+      display: inherit;
+      color: #CCC; }
+    .layout.collapse .sidebar_wrapper .angle {
+      display: none; }
   .layout.collapse .layout_wrapper, .layout.collapse .main__header {
     -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
     -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;
