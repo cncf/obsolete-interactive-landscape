@@ -919,9 +919,12 @@ landscape:
             crunchbase: https://www.crunchbase.com/product/kubernetes
           calculated:
             resized_logo: http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg
-            cb_founded: 'July 5, 1994'
-            cb_employees: '10k +'
-            cb_funds_raised: '$108M'
+            cb_description: 'Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.'
+            cb_description_long: 'It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.'
+            cb_location: 'San Francisco'
+            cb_country: 'United States'
+            cb_employees: ''
+            cb_funds_raised: ''
         - item:
           name: "Amazon ECS"
           slug_name: amazon_ecs
@@ -931,9 +934,18 @@ landscape:
           homepage_url: https://aws.amazon.com/ecs/
           external:
             twitter: https://twitter.com/awscloud
-            crunchbase: https://www.crunchbase.com/organization/amazon
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
           stock_ticker: 'AMZN'
           raw_logo: https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png
+          calculated:
+            resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516054710/integrations_awsecs_4x-500x500_ey973u.png
+            cb_description: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.'
+            cb_description_long: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services. Its products and solutions include cloud computing, compute, networking, storage and content delivery, databases, analytics, application services, deployment and management, mobile services, applications, AWS marketplace software, startups, enterprises, partners, government and education, websites and web applications, big data and HPC, gaming, and digital media as well as backup, storage, and archive.'
+            cb_location: 'Seattle'
+            cb_country: United States
+            cb_employees: '10001+'
+            cb_founded: 'Mar 1, 2006'
+            cb_funds_raised: ''
         - item:
           name: "Nomad"
           slug_name: nomad
@@ -946,6 +958,15 @@ landscape:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
           raw_logo: https://hyzxph.media.zestyio.com/blog-nomad-list.svg
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Mesos"
           slug_name: mesos
@@ -958,6 +979,15 @@ landscape:
           external:
             twitter: https://twitter.com/ApacheMesos
             crunchbase: https://www.crunchbase.com/organization/apache-mesos
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Microsoft Azure Service Fabric"
           slug_name: microsoft_azure_service_fabric
@@ -971,6 +1001,15 @@ landscape:
           external:
             twitter: https://twitter.com/azure
             crunchbase: https://www.crunchbase.com/organization/microsoft-azure-certified
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Docker Swarm"
           slug_name: docker_swarm
@@ -983,6 +1022,15 @@ landscape:
           external:
             twitter: https://twitter.com/Docker
             crunchbase: https://www.crunchbase.com/organization/docker
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
       - subcategory:
         name: "Coordination & Service Discovery"
         slug_name: coordination_service_discovery
@@ -999,6 +1047,15 @@ landscape:
           external:
             twitter: https://twitter.com/coreos/
             crunchbase: https://www.crunchbase.com/organization/coreos
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Consul"
           slug_name: consul
@@ -1011,6 +1068,15 @@ landscape:
           external:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Zookeeper"
           slug_name: zookeeper
@@ -1023,6 +1089,15 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "ContainerPilot"
           slug_name: containerpilot
@@ -1035,6 +1110,15 @@ landscape:
           external:
             twitter: https://twitter.com/joyent
             crunchbase: https://www.crunchbase.com/organization/joyent
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "SkyDNS"
           slug_name: skydns
@@ -1044,6 +1128,15 @@ landscape:
           homepage_url: https://github.com/skynetservices/skydns
           repo_url: https://github.com/skynetservices/skydns
           raw_logo: https://memz.co/wp-content/uploads/2016/07/skydns.jpg
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "CoreDNS"
           slug_name: coredns
@@ -1056,6 +1149,15 @@ landscape:
           external:
             twitter: https://twitter.com/corednsio
             crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Registrator"
           slug_name: registrator
@@ -1068,6 +1170,15 @@ landscape:
           external:
             twitter: https://twitter.com/gliderlabs/
             crunchbase: https://www.crunchbase.com/organization/glider-labs
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "SmartStack"
           slug_name: smartstack
@@ -1077,6 +1188,15 @@ landscape:
           homepage_url: https://github.com/airbnb/smartstack-cookbook
           repo_url: https://github.com/airbnb/smartstack-cookbook
           raw_logo: https://crunchbase-production-res.cloudinary.com/image/upload/v1405534850/vubc5kxhmw6jalain0ot.jpg
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Hyperbahn"
           slug_name: hyperbahn
@@ -1086,6 +1206,15 @@ landscape:
           homepage_url: https://github.com/uber-archive/hyperbahn
           repo_url: https://github.com/uber-archive/hyperbahn
           raw_logo: http://assets.creativity-online.com/images/work/medium/u/b/e/Uber_NewBranding16.jpg
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Eureka"
           slug_name: eureka
@@ -1096,6 +1225,15 @@ landscape:
           repo_url: https://github.com/Netflix/eureka
           raw_logo: https://avatars3.githubusercontent.com/u/913567
           stock_ticker: 'NFLX'
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Haret"
           slug_name: haret
@@ -1108,6 +1246,15 @@ landscape:
           external:
             twitter: https://twitter.com/VMware
             crunchbase: https://www.crunchbase.com/organization/vmware
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
       - subcategory:
         name: "Service Management"
         slug_name: service_management
@@ -1124,6 +1271,15 @@ landscape:
           external:
             twitter: https://twitter.com/3scale
             crunchbase: https://www.crunchbase.com/organization/3scale
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "NGINX"
           slug_name: nginx
@@ -1136,6 +1292,15 @@ landscape:
           external:
             twitter: https://twitter.com/nginx
             crunchbase: https://www.crunchbase.com/organization/nginx
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "HAProxy"
           slug_name: haproxy
@@ -1148,6 +1313,15 @@ landscape:
           external:
             twitter: https://twitter.com/haproxy_tech
             crunchbase: https://www.crunchbase.com/organization/haproxy-technologies
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Linkerd"
           slug_name: linkerd
@@ -1160,6 +1334,15 @@ landscape:
           external:
             twitter: https://twitter.com/linkerd
             crunchbase: https://www.crunchbase.com/product/linkerd
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Envoy"
           slug_name: envoy
@@ -1173,6 +1356,15 @@ landscape:
           external:
             twitter: https://twitter.com/envoyproxy
             crunchbase: https://www.crunchbase.com/organization/lyft
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Datawire"
           slug_name: datawire
@@ -1185,6 +1377,15 @@ landscape:
           external:
             twitter: https://twitter.com/datawireio
             crunchbase: https://www.crunchbase.com/organization/datawire#/entity
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Traefik"
           slug_name: traefik
@@ -1197,6 +1398,15 @@ landscape:
           external:
             twitter: https://twitter.com/traefikproxy
             crunchbase: https://www.crunchbase.com/organization/containous
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Turbine Labs"
           slug_name: turbine_labs
@@ -1209,6 +1419,15 @@ landscape:
           external:
             twitter: https://twitter.com/GoTurbine
             crunchbase: https://www.crunchbase.com/organization/turbine-labs-2
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Avi Networks"
           slug_name: avi_networks
@@ -1221,6 +1440,15 @@ landscape:
           external:
             twitter: https://twitter.com/AviNetworks
             crunchbase: https://www.crunchbase.com/organization/turbine-labs-2
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "gRPC"
           slug_name: grpc
@@ -1234,6 +1462,15 @@ landscape:
           external:
             twitter: https://twitter.com/grpcio
             crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Apache Thrift"
           slug_name: apache_thrift
@@ -1246,6 +1483,15 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Apache Avro"
           slug_name: apache_avro
@@ -1258,6 +1504,15 @@ landscape:
           external:
             twitter: https://twitter.com/TheASF
             crunchbase: https://www.crunchbase.com/organization/apache
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Vamp"
           slug_name: vamp
@@ -1270,6 +1525,15 @@ landscape:
           external:
             twitter: https://twitter.com/vamp_io
             crunchbase: https://www.crunchbase.com/organization/magnetic-io
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Weave Flux"
           slug_name: weave_flux
@@ -1282,6 +1546,15 @@ landscape:
           external:
             twitter: https://twitter.com/weaveworks
             crunchbase: https://www.crunchbase.com/organization/weaveworks
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Kong"
           slug_name: kong
@@ -1294,6 +1567,15 @@ landscape:
           external:
             twitter: https://twitter.com/mashape
             crunchbase: https://www.crunchbase.com/organization/mashape
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Hystrix"
           slug_name: hystrix
@@ -1307,6 +1589,15 @@ landscape:
           external:
             twitter: https://twitter.com/hystrixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "OSS"
           slug_name: oss
@@ -1320,6 +1611,15 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Ribbon"
           slug_name: ribbon
@@ -1333,6 +1633,15 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Zuul"
           slug_name: zuul
@@ -1346,6 +1655,15 @@ landscape:
           external:
             twitter: https://twitter.com/netflixoss
             crunchbase: https://www.crunchbase.com/organization/netflix
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "Backplane"
           slug_name: backplane
@@ -1356,6 +1674,15 @@ landscape:
           raw_logo: http://www.backplane.io/static/media/images/backplane.png
           external:
             twitter: https://twitter.com/backplaneio
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
         - item:
           name: "F5"
           slug_name: f5
@@ -1367,6 +1694,15 @@ landscape:
           external:
             twitter: https://twitter.com/F5Networks
             crunchbase: https://www.crunchbase.com/organization/f5-networks
+          calculated:
+            resized_logo:
+            cb_description:
+            cb_description_long:
+            cb_location: ''
+            cb_country: United States
+            cb_employees: ''
+            cb_founded: ''
+            cb_funds_raised: ''
   - category:
     name: "Runtime"
     slug_name: runtime

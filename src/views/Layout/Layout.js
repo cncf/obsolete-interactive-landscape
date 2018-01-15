@@ -11,7 +11,7 @@ import CategoryView from './Category';
 import SubCategoryView from './SubCategory';
 import StartView from './Start';
 import Mapping from './utilities/Mapping';
-import dataSet from '../../data/interactive_landscape_v26.json';
+import dataSet from '../../data/interactive_landscape_v27.json';
 //import dataSet from '../../data/tested/tested.json';
 
 import './Layout.css';
