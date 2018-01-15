@@ -51,7 +51,7 @@ class Iconator extends Component {
       case 'app_definition_development':
         value = 'icon_deve';
         break;
-      case 'public_cloud':
+      case 'cloud':
         value = 'icon_infr';
         break;
       case 'observability_analysis':

@@ -48,7 +48,9 @@
     background-color: white;
     border-radius: 50%;
     border: 1px solid white;
-    box-shadow: 0 0 15px #00aeff; } }
+    box-shadow: 0 0 15px #00aeff; }
+  .layout.darktheme .icon_background {
+    opacity: 0.1; } }
 
 /*TABLET*/
 /*DESKTOP*/

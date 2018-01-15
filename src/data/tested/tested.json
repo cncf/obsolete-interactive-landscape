@@ -2,858 +2,6 @@
   "landscape": [
     {
       "category": null,
-      "name": "App Definition and Developement",
-      "slug_name": "app_definition_development",
-      "subcategories": [
-        {
-          "subcategory": null,
-          "name": "Database and Data Warehouse",
-          "slug_name": "database_data_warehouse",
-          "items": [
-            {
-              "item": null,
-              "name": "TiDB",
-              "slug_name": "tidb",
-              "company": "PingCAP",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://pingcap.com/index",
-              "repo_url": "https://github.com/pingcap/tidb",
-              "raw_logo": "http://static.17ky.net/Images/8164803b2f28415d9b8dff6c2499b1fb.png",
-              "external": {
-                "twitter": "https://twitter.com/PingCAP",
-                "crunchbase": "https://www.crunchbase.com/organization/pingcap"
-              }
-            },
-            {
-              "item": null,
-              "name": "MySQL",
-              "slug_name": "mysql",
-              "company": "MySQL",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.oracle.com/mysql/index.html",
-              "repo_url": "https://github.com/mysql",
-              "raw_logo": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
-              "stock_ticker": "ORCL",
-              "external": {
-                "twitter": "https://twitter.com/mysql",
-                "crunchbase": "https://www.mysql.com/common/logos/logo-mysql-170x115.png"
-              }
-            },
-            {
-              "item": null,
-              "name": "Postgres",
-              "slug_name": "postgres",
-              "company": "PostgresSQL",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.postgresql.org/",
-              "repo_url": "https://github.com/postgres",
-              "raw_logo": "https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png",
-              "external": {
-                "twitter": "https://twitter.com/postgresql",
-                "crunchbase": "https://twitter.com/postgresql"
-              }
-            },
-            {
-              "item": null,
-              "name": "Oracle",
-              "slug_name": "oracle",
-              "company": "Oracle",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://developer.oracle.com/",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/663px-Oracle_logo.svg.png",
-              "stock_ticker": "ORCL",
-              "external": {
-                "twitter": "https://twitter.com/Oracle",
-                "crunchbase": "https://www.crunchbase.com/organization/oracle"
-              }
-            },
-            {
-              "item": null,
-              "name": "SQL Server",
-              "slug_name": "sql_server",
-              "company": "Microsoft",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.microsoft.com/en-us/sql-server",
-              "raw_logo": "https://seeklogo.com/images/M/microsoft-sql-server-logo-96AF49E2B3-seeklogo.com.png",
-              "stock_ticker": "MSFT",
-              "external": {
-                "twitter": "https://twitter.com/SQLServer",
-                "crunchbase": "https://www.crunchbase.com/organization/microsoft-sql-server"
-              }
-            },
-            {
-              "item": null,
-              "name": "IBM DB2",
-              "slug_name": "ibm_db2",
-              "company": "IBM",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.ibm.com/analytics/us/en/db2/",
-              "raw_logo": "https://selectstar.io/wp-content/uploads/2017/01/imb-db2.jpg",
-              "stock_ticker": "IBM",
-              "external": {
-                "twitter": "https://twitter.com/ibmdb2",
-                "crunchbase": "https://www.crunchbase.com/organization/ibm"
-              }
-            },
-            {
-              "item": null,
-              "name": "MongoDB",
-              "slug_name": "mongodb",
-              "company": "MongoDB",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.mongodb.com/",
-              "repo_url": "https://github.com/mongodb/mongo",
-              "raw_logo": "https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png",
-              "external": {
-                "twitter": "https://twitter.com/mongodb",
-                "crunchbase": "https://www.crunchbase.com/organization/mongodb-inc"
-              }
-            },
-            {
-              "item": null,
-              "name": "Cassandra",
-              "slug_name": "cassandra",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://cassandra.apache.org/",
-              "repo_url": "https://github.com/apache/cassandra",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/279px-Cassandra_logo.svg.png",
-              "external": {
-                "twitter": "https://twitter.com/cassandra",
-                "crunchbase": "https://www.crunchbase.com/organization/apache-cassandra"
-              }
-            },
-            {
-              "item": null,
-              "name": "Redis",
-              "slug_name": "redis",
-              "company": "Redis",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://redis.io/",
-              "repo_url": "https://github.com/redis",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1280px-Redis_Logo.svg.png",
-              "external": {
-                "twitter": "https://twitter.com/redisfeed",
-                "crunchbase": "https://www.crunchbase.com/product/redis"
-              }
-            },
-            {
-              "item": null,
-              "name": "MariaDB",
-              "slug_name": "mariadb",
-              "company": "MariaDB",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://mariadb.org/",
-              "repo_url": "https://github.com/MariaDB",
-              "raw_logo": "https://mariadb.org/wp-content/uploads/2015/10/mariadb-usa-inc.png",
-              "external": {
-                "twitter": "https://twitter.com/mariadbfdn",
-                "crunchbase": "https://www.crunchbase.com/organization/mariadb-2"
-              }
-            },
-            {
-              "item": null,
-              "name": "Crate",
-              "slug_name": "crate",
-              "company": "Crate",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://crate.io/",
-              "repo_url": "https://github.com/crate/crate",
-              "raw_logo": "https://crate.io/wp-content/themes/webflow/images/logo-crate.png",
-              "external": {
-                "twitter": "https://twitter.com/Crateio",
-                "crunchbase": "https://www.crunchbase.com/organization/crate-technology"
-              }
-            },
-            {
-              "item": null,
-              "name": "NomsDB",
-              "slug_name": "nomsdb",
-              "company": "attic-labs",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://github.com/attic-labs/noms",
-              "repo_url": "https://github.com/attic-labs/noms",
-              "raw_logo": "https://pbs.twimg.com/profile_images/759150998753378304/GoY-XdnG_400x400.jpg",
-              "external": {
-                "twitter": "https://twitter.com/nomsdb",
-                "crunchbase": "https://www.crunchbase.com/product/noms"
-              }
-            },
-            {
-              "item": null,
-              "name": "BigchainDB",
-              "slug_name": "bigchaindb",
-              "company": "BigchainDB",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.bigchaindb.com/",
-              "repo_url": "https://github.com/bigchaindb/bigchaindb",
-              "raw_logo": "https://cdn-images-1.medium.com/max/1600/1*wd82_mNF-M0aNAm3UPLMVw.jpeg",
-              "external": {
-                "twitter": "https://twitter.com/BigchainDB",
-                "crunchbase": "https://www.crunchbase.com/organization/bigchaindb"
-              }
-            },
-            {
-              "item": null,
-              "name": "Couchbase",
-              "slug_name": "couchbase",
-              "company": "Counchbase",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.couchbase.com/",
-              "repo_url": "https://github.com/couchbase",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Couchbase%2C_Inc._official_logo.png/250px-Couchbase%2C_Inc._official_logo.png",
-              "external": {
-                "twitter": "https://twitter.com/couchbase",
-                "crunchbase": "https://www.crunchbase.com/organization/couchbase"
-              }
-            },
-            {
-              "item": null,
-              "name": "CockroachDB",
-              "slug_name": "cockroachdb",
-              "company": "CockroachDB",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.cockroachlabs.com/",
-              "repo_url": "https://github.com/cockroachdb",
-              "raw_logo": "https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png",
-              "external": {
-                "twitter": "https://twitter.com/CockroachDB",
-                "crunchbase": "https://www.crunchbase.com/organization/cockroach-labs"
-              }
-            },
-            {
-              "item": null,
-              "name": "RethinkDB",
-              "slug_name": "rethinkdb",
-              "company": "RethinkDB",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.rethinkdb.com/",
-              "repo_url": "https://github.com/rethinkdb",
-              "raw_logo": "http://10minbasics.com/wp-content/uploads/2015/09/rethinkdb_logo1.png",
-              "external": {
-                "twitter": "https://twitter.com/rethinkdb",
-                "crunchbase": "https://www.crunchbase.com/organization/rethinkdb"
-              }
-            },
-            {
-              "item": null,
-              "name": "Vitess",
-              "slug_name": "vitess",
-              "company": "Youtube",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://vitess.io/",
-              "raw_logo": "http://vitess.io/images/vitess_logo_with_border.svg",
-              "repo_url": "https://github.com/youtube/vitess"
-            },
-            {
-              "item": null,
-              "name": "SQL Data Warehouse",
-              "slug_name": "sql_data_warehouse",
-              "company": "Microsoft",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://azure.microsoft.com/",
-              "raw_logo": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAeiAAAAJDRhZGUzMWRhLTI4ODMtNDc1OS1hMDc5LTQwODAwZGI2OTdlMg.png",
-              "stock_ticker": "MSFT",
-              "external": {
-                "twitter": "https://twitter.com/azure",
-                "crunchbase": "https://www.crunchbase.com/product/windows-azure"
-              }
-            },
-            {
-              "item": null,
-              "name": "Snowflake",
-              "slug_name": "snowflake",
-              "company": "Snowflake Computing",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.snowflake.net/",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/en/6/62/Snowflake_Computing_logo.png\nexternal:\ntwitter: https://twitter.com/SnowflakeDB\ncrunchbase: https://www.crunchbase.com/organization/snowflake-computing"
-            },
-            {
-              "item": null,
-              "name": "Druid",
-              "slug_name": "druid",
-              "company": "Druid",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://druid.io/",
-              "repo_url": "https://github.com/druid-io",
-              "raw_logo": "https://metamarkets.com/wp-content/uploads/2016/03/Druid_MasterLogo_Full-ColorTransparent-400x108.png",
-              "external": {
-                "twitter": "https://twitter.com/druidio"
-              }
-            },
-            {
-              "item": null,
-              "name": "Qubole",
-              "slug_name": "qubole",
-              "company": "Qubole",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.qubole.com/",
-              "raw_logo": "http://go.qubole.com/rs/510-QPZ-296/images/qubole_logo.png",
-              "external": {
-                "twitter": "https://twitter.com/qubole",
-                "crunchbase": "https://www.crunchbase.com/organization/qubole"
-              }
-            },
-            {
-              "item": null,
-              "name": "CarbonData",
-              "slug_name": "carbondata",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://carbondata.apache.org/",
-              "repo_url": "https://github.com/apache/carbondata",
-              "raw_logo": "https://raw.githubusercontent.com/apache/carbondata/master/docs/images/CarbonData_logo.png",
-              "external": {
-                "twitter": "https://twitter.com/ApacheCarbonDat",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "Vertica",
-              "slug_name": "vertica",
-              "company": "HPE",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.vertica.com/",
-              "raw_logo": "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05032120.png",
-              "stock_ticker": "HPQ",
-              "external": {
-                "twitter": "https://twitter.com/verticahelp",
-                "crunchbase": "https://www.crunchbase.com/organization/vertica-systems"
-              }
-            },
-            {
-              "item": null,
-              "name": "Hadoop",
-              "slug_name": "hadoop",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://hadoop.apache.org/",
-              "repo_url": "https://github.com/apache/hadoop",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397241521/803be5a9e4289a5bf4d102bfbe1d9d7c.png",
-              "external": {
-                "twitter": "https://twitter.com/hadoop",
-                "crunchbase": "https://www.crunchbase.com/product/hadoop"
-              }
-            },
-            {
-              "item": null,
-              "name": "Pachyderm",
-              "slug_name": "pachyderm",
-              "company": "Pachyderm",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://www.pachyderm.io/",
-              "repo_url": "https://github.com/pachyderm/pachyderm",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1441394109/w8muln3r8jvrk5g0ngmj.png",
-              "external": {
-                "twitter": "https://twitter.com/pachydermIO",
-                "crunchbase": "https://www.crunchbase.com/organization/pachyderm"
-              }
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "Messaging/Streaming",
-          "slug_name": "messaging_streaming",
-          "items": [
-            {
-              "item": null,
-              "name": "Kafka",
-              "slug_name": "kafka",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://kafka.apache.org/",
-              "repo_url": "https://github.com/apache/kafka",
-              "raw_logo": "https://kafka.apache.org/images/apache-kafka.png",
-              "external": {
-                "twitter": "https://twitter.com/apachekafka",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "Dataflow",
-              "slug_name": "dataflow",
-              "company": "Google",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://cloud.google.com/dataflow/",
-              "raw_logo": "https://www.gcppodcast.com/images/icons/bigdata/Cloud-Dataflow.png",
-              "stock_ticker": "GOOGL",
-              "external": {
-                "twitter": "https://twitter.com/googlecloud",
-                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
-              }
-            },
-            {
-              "item": null,
-              "name": "Spark Streaming",
-              "slug_name": "spark_streaming",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://spark.apache.org/streaming/",
-              "repo_url": "https://github.com/apache/spark",
-              "raw_logo": "https://spark.apache.org/images/spark-logo-trademark.png",
-              "external": {
-                "twitter": "https://twitter.com/apachespark",
-                "crunchbase": "https://www.crunchbase.com/organization/apache-spark"
-              }
-            },
-            {
-              "item": null,
-              "name": "Heron",
-              "slug_name": "heron",
-              "company": "Twitter",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://twitter.github.io/heron/",
-              "repo_url": "https://github.com/twitter/heron",
-              "raw_logo": "https://streaml.io/img/heron-logo.png",
-              "stock_ticker": "TWTR",
-              "external": {
-                "twitter": "https://twitter.com/heronstreaming",
-                "crunchbase": null
-              }
-            },
-            {
-              "item": null,
-              "name": "Flink",
-              "slug_name": "flink",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://flink.apache.org/",
-              "repo_url": "https://github.com/apache/flink",
-              "raw_logo": "https://hsto.org/files/b50/94b/39c/b5094b39c19a4d4d8ad532225e67a91f.png",
-              "external": {
-                "twitter": "https://twitter.com/apacheflink",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "Apex",
-              "slug_name": "apex",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://apex.apache.org/",
-              "repo_url": "https://github.com/apache/apex-core",
-              "raw_logo": "https://www.datatorrent.com/wp-content/uploads/2015/09/Apex_550pixPNG24.png",
-              "external": {
-                "twitter": "https://twitter.com/apacheapex/",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "Apache Storm",
-              "slug_name": "apache_storm",
-              "company": "Apache Storm",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://storm.apache.org/",
-              "repo_url": "https://github.com/apache/storm",
-              "raw_logo": "http://storm.apache.org/images/logo.png",
-              "external": {
-                "twitter": "https://twitter.com/stormprocessor",
-                "crunchbase": "https://www.crunchbase.com/product/storm"
-              }
-            },
-            {
-              "item": null,
-              "name": "RabbitMQ",
-              "slug_name": "rabiitmq",
-              "company": "RabbitMQ",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.rabbitmq.com/",
-              "repo_url": "https://github.com/rabbitmq",
-              "raw_logo": "https://www.cloudamqp.com/images/blog/rabbitmq.png",
-              "external": {
-                "twitter": "https://twitter.com/rabbitmq",
-                "crunchbase": "https://www.crunchbase.com/product/rabbitmq"
-              }
-            },
-            {
-              "item": null,
-              "name": "iguazio",
-              "slug_name": "iquazio",
-              "company": "iguazio",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.iguazio.com/",
-              "repo_url": "https://github.com/iguazio",
-              "raw_logo": "http://mms.businesswire.com/media/20170314005560/en/575150/4/Logo_-_updated.jpg",
-              "external": {
-                "twitter": "https://twitter.com/iguazio",
-                "crunchbase": "https://www.crunchbase.com/organization/iguaz-io"
-              }
-            },
-            {
-              "item": null,
-              "name": "NATS",
-              "slug_name": "nats",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://nats.io/",
-              "repo_url": "https://github.com/nats-io",
-              "raw_logo": "https://i2.wp.com/rishidot.com/wp-content/uploads/2017/02/NATS_logo.png",
-              "external": {
-                "twitter": "https://twitter.com/nats_io",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "StreamSets",
-              "slug_name": "streamsets",
-              "company": "StreamSets",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://streamsets.com/",
-              "repo_url": "https://github.com/streamsets",
-              "raw_logo": "https://19ttqs47cfw33zkecq3dz58m-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/StreamSets-logo-small.png",
-              "external": {
-                "twitter": "https://twitter.com/streamsets",
-                "crunchbase": "https://www.crunchbase.com/organization/streamsets"
-              }
-            },
-            {
-              "item": null,
-              "name": "Kinesis",
-              "slug_name": "kinesis",
-              "company": "AWS",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://aws.amazon.com/kinesis/",
-              "raw_logo": "https://i0.wp.com/www.awsomeblog.com/wp-content/uploads/2016/04/kinesis.png",
-              "stock_ticker": "AMZN",
-              "external": {
-                "twitter": "https://twitter.com/awscloud",
-                "crunchbase": "https://www.crunchbase.com/organization/amazon-web-services"
-              }
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "SCM",
-          "slug_name": "scm",
-          "items": [
-            {
-              "item": null,
-              "name": "BibBucket",
-              "slug_name": "bitbucket",
-              "company": "Atlassian",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://bitbucket.org/",
-              "raw_logo": "http://cdn2.hubspot.net/hub/362403/file-658956378-png/bitbucket.png",
-              "external": {
-                "twitter": "https://twitter.com/bitbucket",
-                "crunchbase": "https://www.crunchbase.com/organization/bitbucket"
-              }
-            },
-            {
-              "item": null,
-              "name": "GitLab",
-              "slug_name": "gitlab",
-              "company": "GitLab",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://gitlab.com/",
-              "repo_url": "https://github.com/gitlabhq/gitlabhq",
-              "raw_logo": "https://mcodegeeks.com/assets/uploads/2016/11/icon-gitlab.jpg",
-              "external": {
-                "twitter": "https://twitter.com/gitlab",
-                "crunchbase": "https://www.crunchbase.com/organization/gitlab-com"
-              }
-            },
-            {
-              "item": null,
-              "name": "GitHub",
-              "slug_name": "github",
-              "company": "GitHub",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://github.com/",
-              "raw_logo": "https://www.socialtalent.co/wp-content/uploads/2015/03/github-logo.jpg",
-              "external": {
-                "twitter": "https://twitter.com/github",
-                "crunchbase": "https://www.crunchbase.com/organization/github"
-              }
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "Registry Services",
-          "slug_name": "registry_services",
-          "items": [
-            {
-              "item": null,
-              "name": "Quay",
-              "slug_name": "quay",
-              "company": "CoreOS",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://quay.io/",
-              "raw_logo": "https://quay.io/static/img/quay_preview.png",
-              "external": {
-                "twitter": "https://twitter.com/quayio",
-                "crunchbase": "https://www.crunchbase.com/organization/quay-io"
-              }
-            },
-            {
-              "item": null,
-              "name": "Artifactory",
-              "slug_name": "artifactory",
-              "company": "Jfrog",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.jfrog.com/artifactory/",
-              "raw_logo": "https://www.jfrog.com/wp-content/uploads/2015/09/Artifactory_HEX1.png",
-              "external": {
-                "twitter": "https://twitter.com/jfrog",
-                "crunchbase": "https://www.crunchbase.com/product/artifactory"
-              }
-            },
-            {
-              "item": null,
-              "name": "Sonatype",
-              "slug_name": "sonatype",
-              "company": "Sonatype",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.sonatype.com/",
-              "raw_logo": "http://cdn2.hubspot.net/hubfs/1958393/Sonatype_Logos/SON_logo_main.png",
-              "external": {
-                "twitter": "https://twitter.com/sonatype",
-                "crunchbase": "https://www.crunchbase.com/organization/sonatype"
-              }
-            },
-            {
-              "item": null,
-              "name": "Harbor",
-              "slug_name": "harbor",
-              "company": "VMware",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://vmware.github.io/harbor/",
-              "repo_url": "https://github.com/vmware/harbor",
-              "raw_logo": "https://vmware.github.io/harbor/images/harbor.png",
-              "external": {
-                "twitter": "https://twitter.com/vmware",
-                "crunchbase": "https://www.crunchbase.com/organization/vmware"
-              }
-            },
-            {
-              "item": null,
-              "name": "Azure Registry",
-              "slug_name": "azure_registry",
-              "company": "Microsoft",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://azure.microsoft.com/en-us/services/container-registry/",
-              "raw_logo": "https://azure.microsoft.com/svghandler/container-registry/?width=600&height=315",
-              "stock_ticker": "MSFT",
-              "external": {
-                "twitter": "https://twitter.com/azure",
-                "crunchbase": "https://www.crunchbase.com/product/windows-azure"
-              }
-            },
-            {
-              "item": null,
-              "name": "Atomic",
-              "slug_name": "atomic",
-              "company": "Red Hat",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.projectatomic.io/",
-              "repo_url": "https://github.com/projectatomic/atomic",
-              "raw_logo": "community.redhat.com/images/branding/logo-atomic.png",
-              "external": {
-                "twitter": "https://twitter.com/projectatomic",
-                "crunchbase": "https://www.crunchbase.com/organization/project-atomic"
-              }
-            },
-            {
-              "item": null,
-              "name": "Docker Registry",
-              "slug_name": "docker_registry",
-              "company": "Docker",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://docs.docker.com/registry/",
-              "repo_url": "https://github.com/docker/docker-registry",
-              "raw_logo": "https://blog.docker.com/media/2015/11/logo-title-final-registry-2.png",
-              "external": {
-                "twitter": "https://twitter.com/docker",
-                "crunchbase": "https://www.crunchbase.com/organization/docker"
-              }
-            },
-            {
-              "item": null,
-              "name": "Amazon ECR",
-              "slug_name": "amazon_ecr",
-              "company": "Amazon",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://aws.amazon.com/ecr/",
-              "raw_logo": "http://blog.shippable.com/hs-fs/hubfs/Blog_images/Amazon_ECR_icon.png",
-              "stock_ticker": "AMZN",
-              "external": {
-                "twitter": "https://twitter.com/awscloud",
-                "crunchbase": "https://www.crunchbase.com/product/amazon-ec2"
-              }
-            },
-            {
-              "item": null,
-              "name": "Google Registry",
-              "slug_name": "google_registry",
-              "company": "Google",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://cloud.google.com/container-registry/",
-              "raw_logo": "https://www.blackducksoftware.com/sites/default/files/images/gcr.png",
-              "stock_ticker": "GOOGL",
-              "external": {
-                "twitter": "https://twitter.com/googlecloud",
-                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
-              }
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "Application Definition & Image Build",
-          "slug_name": "app_definition_image_build",
-          "items": [
-            {
-              "item": null,
-              "name": "Packer",
-              "slug_name": "packer",
-              "company": "Hashicorp",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.packer.io/intro/index.html",
-              "repo_url": "https://github.com/hashicorp/packer",
-              "raw_logo": "https://res.cloudinary.com/crunchbase-production/image/upload/v1494031899/ni0ybdyhq4v3cyh9n88z.png",
-              "external": {
-                "twitter": "https://twitter.com/HashiCorp",
-                "crunchbase": "https://www.crunchbase.com/organization/hashicorp"
-              }
-            },
-            {
-              "item": null,
-              "name": "Compose",
-              "slug_name": "compose",
-              "company": "Docker",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://docs.docker.com/compose/",
-              "repo_url": "https://github.com/docker/compose",
-              "raw_logo": "https://www.unixmen.com/wp-content/uploads/2017/06/docker-compose-logo.png",
-              "external": {
-                "twitter": "https://twitter.com/Docker",
-                "crunchbase": "https://www.crunchbase.com/organization/docker"
-              }
-            },
-            {
-              "item": null,
-              "name": "Habitat",
-              "slug_name": "habitat",
-              "company": "Chef",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.habitat.sh/",
-              "repo_url": "https://github.com/habitat-sh",
-              "raw_logo": "http://container-solutions.com/content/uploads/2016/08/habitat.png",
-              "external": {
-                "twitter": "https://twitter.com/hashtag/habitatsh",
-                "crunchbase": "https://www.crunchbase.com/product/habitat-2"
-              }
-            },
-            {
-              "item": null,
-              "name": "Brooklyn",
-              "slug_name": "brooklyn",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://brooklyn.apache.org/",
-              "repo_url": "https://github.com/apache/brooklyn",
-              "raw_logo": "https://pbs.twimg.com/profile_images/536922892156428288/mKCs5vgS_400x400.png",
-              "external": {
-                "twitter": "https://twitter.com/apachebrooklyn",
-                "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
-            },
-            {
-              "item": null,
-              "name": "Bitnami",
-              "slug_name": "bitnami",
-              "company": "Bitnami",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://bitnami.com/",
-              "raw_logo": "https://bitnami.com/downloads/logos/bitnami.png",
-              "external": {
-                "twitter": "https://twitter.com/bitnami",
-                "crunchbase": "https://www.crunchbase.com/organization/bitnami"
-              }
-            },
-            {
-              "item": null,
-              "name": "OpenAPI",
-              "slug_name": "openapi",
-              "company": "OpenAPI",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.openapis.org/",
-              "repo_url": "https://github.com/OAI",
-              "raw_logo": "https://www.openapis.org/wp-content/uploads/sites/3/2016/10/OpenAPI_Pantone.png",
-              "external": {
-                "twitter": "https://twitter.com/hashtag/openapi",
-                "crunchbase": "https://www.crunchbase.com/organization/the-open-api-initiative"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "category": null,
       "name": "Orchestration & Management",
       "slug_name": "orchestration_and_management",
       "subcategories": [
@@ -871,7 +19,7 @@
               "oss": true,
               "homepage_url": "https://kubernetes.io/",
               "repo_url": "https://github.com/kubernetes/kubernetes",
-              "raw_logo": "XXXhttp://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
+              "raw_logo": "http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
               "external": {
                 "twitter": "https://twitter.com/kubernetesio",
                 "crunchbase": "https://www.crunchbase.com/product/kubernetes"
@@ -895,6 +43,7 @@
                 "twitter": "https://twitter.com/awscloud",
                 "crunchbase": "https://www.crunchbase.com/organization/amazon"
               },
+              "calculated": null,
               "stock_ticker": "AMZN",
               "raw_logo": "https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png"
             },
@@ -911,7 +60,8 @@
                 "twitter": "https://twitter.com/HashiCorp",
                 "crunchbase": "https://www.crunchbase.com/organization/hashicorp"
               },
-              "raw_logo": "http://www.developintelligence.com/blog/wp-content/uploads/2017/05/nomad-large.0d3987a5e5ece0c6bb012b72583d3e01.SJxcjUvEkZ.png"
+              "raw_logo": "http://www.developintelligence.com/blog/wp-content/uploads/2017/05/nomad-large.0d3987a5e5ece0c6bb012b72583d3e01.SJxcjUvEkZ.png",
+              "calculated": null
             },
             {
               "item": null,
@@ -926,7 +76,8 @@
               "external": {
                 "twitter": "https://twitter.com/ApacheMesos",
                 "crunchbase": "https://www.crunchbase.com/organization/apache-mesos"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -941,7 +92,8 @@
               "external": {
                 "twitter": "https://twitter.com/Docker",
                 "crunchbase": "https://www.crunchbase.com/organization/docker"
-              }
+              },
+              "calculated": null
             }
           ]
         },
@@ -963,7 +115,8 @@
               "external": {
                 "twitter": "https://twitter.com/coreos/",
                 "crunchbase": "https://www.crunchbase.com/organization/coreos"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -978,7 +131,8 @@
               "external": {
                 "twitter": "https://twitter.com/HashiCorp",
                 "crunchbase": "https://www.crunchbase.com/organization/hashicorp"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -993,7 +147,8 @@
               "external": {
                 "twitter": "https://twitter.com/TheASF",
                 "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1004,7 +159,8 @@
               "oss": true,
               "homepage_url": "https://github.com/skynetservices/skydns",
               "repo_url": "https://github.com/skynetservices/skydns",
-              "raw_logo": "https://memz.co/wp-content/uploads/2016/07/skydns.jpg"
+              "raw_logo": "https://memz.co/wp-content/uploads/2016/07/skydns.jpg",
+              "calculated": null
             },
             {
               "item": null,
@@ -1019,7 +175,8 @@
               "external": {
                 "twitter": "https://twitter.com/corednsio",
                 "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1034,7 +191,8 @@
               "external": {
                 "twitter": "https://twitter.com/gliderlabs/",
                 "crunchbase": "https://www.crunchbase.com/organization/glider-labs"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1045,7 +203,8 @@
               "oss": true,
               "homepage_url": "https://github.com/airbnb/smartstack-cookbook",
               "repo_url": "https://github.com/airbnb/smartstack-cookbook",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1405534850/vubc5kxhmw6jalain0ot.jpg"
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1405534850/vubc5kxhmw6jalain0ot.jpg",
+              "calculated": null
             },
             {
               "item": null,
@@ -1056,7 +215,8 @@
               "oss": true,
               "homepage_url": "https://github.com/uber-archive/hyperbahn",
               "repo_url": "https://github.com/uber-archive/hyperbahn",
-              "raw_logo": "http://assets.creativity-online.com/images/work/medium/u/b/e/Uber_NewBranding16.jpg"
+              "raw_logo": "http://assets.creativity-online.com/images/work/medium/u/b/e/Uber_NewBranding16.jpg",
+              "calculated": null
             },
             {
               "item": null,
@@ -1068,6 +228,7 @@
               "homepage_url": "https://github.com/Netflix/eureka",
               "repo_url": "https://github.com/Netflix/eureka",
               "raw_logo": "https://avatars3.githubusercontent.com/u/913567",
+              "calculated": null,
               "stock_ticker": "NFLX"
             },
             {
@@ -1083,7 +244,8 @@
               "external": {
                 "twitter": "https://twitter.com/VMware",
                 "crunchbase": "https://www.crunchbase.com/organization/vmware"
-              }
+              },
+              "calculated": null
             }
           ]
         },
@@ -1105,7 +267,8 @@
               "external": {
                 "twitter": "https://twitter.com/nginx",
                 "crunchbase": "https://twitter.com/nginx"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1120,7 +283,8 @@
               "external": {
                 "twitter": "https://twitter.com/haproxy_tech",
                 "crunchbase": "https://www.crunchbase.com/organization/haproxy-technologies"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1135,7 +299,8 @@
               "external": {
                 "twitter": "https://twitter.com/linkerd",
                 "crunchbase": "https://www.crunchbase.com/product/linkerd"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1151,7 +316,8 @@
               "external": {
                 "twitter": "https://twitter.com/envoyproxy",
                 "crunchbase": "https://www.crunchbase.com/organization/lyft"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1166,7 +332,8 @@
               "external": {
                 "twitter": "https://twitter.com/datawireio",
                 "crunchbase": "https://www.crunchbase.com/organization/datawire#/entity"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1181,7 +348,8 @@
               "external": {
                 "twitter": "https://twitter.com/traefikproxy",
                 "crunchbase": "https://www.crunchbase.com/organization/containous"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1196,7 +364,8 @@
               "external": {
                 "twitter": "https://twitter.com/GoTurbine",
                 "crunchbase": "https://www.crunchbase.com/organization/turbine-labs-2"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1211,7 +380,8 @@
               "external": {
                 "twitter": "https://twitter.com/AviNetworks",
                 "crunchbase": "https://www.crunchbase.com/organization/turbine-labs-2"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1227,7 +397,8 @@
               "external": {
                 "twitter": "https://twitter.com/grpcio",
                 "crunchbase": "https://www.crunchbase.com/organization/cloud-native-computing-foundation"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1242,7 +413,8 @@
               "external": {
                 "twitter": "https://twitter.com/TheASF",
                 "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1257,7 +429,8 @@
               "external": {
                 "twitter": "https://twitter.com/TheASF",
                 "crunchbase": "https://www.crunchbase.com/organization/apache"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1272,7 +445,8 @@
               "external": {
                 "twitter": "https://twitter.com/vamp_io",
                 "crunchbase": "https://www.crunchbase.com/organization/magnetic-io"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1287,7 +461,8 @@
               "external": {
                 "twitter": "https://twitter.com/weaveworks",
                 "crunchbase": "https://www.crunchbase.com/organization/weaveworks"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1302,7 +477,8 @@
               "external": {
                 "twitter": "https://twitter.com/mashape",
                 "crunchbase": "https://www.crunchbase.com/organization/mashape"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1318,7 +494,8 @@
               "external": {
                 "twitter": "https://twitter.com/hystrixoss",
                 "crunchbase": "https://www.crunchbase.com/organization/netflix"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1334,7 +511,8 @@
               "external": {
                 "twitter": "https://twitter.com/netflixoss",
                 "crunchbase": "https://www.crunchbase.com/organization/netflix"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1350,7 +528,8 @@
               "external": {
                 "twitter": "https://twitter.com/netflixoss",
                 "crunchbase": "https://www.crunchbase.com/organization/netflix"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1366,7 +545,8 @@
               "external": {
                 "twitter": "https://twitter.com/netflixoss",
                 "crunchbase": "https://www.crunchbase.com/organization/netflix"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1379,7 +559,8 @@
               "raw_logo": "http://www.backplane.io/static/media/images/backplane.png",
               "external": {
                 "twitter": "https://twitter.com/backplaneio"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
@@ -1393,7 +574,8 @@
               "external": {
                 "twitter": "https://twitter.com/F5Networks",
                 "crunchbase": "https://www.crunchbase.com/organization/f5-networks"
-              }
+              },
+              "calculated": null
             }
           ]
         }
@@ -1401,628 +583,186 @@
     },
     {
       "category": null,
-      "name": "Runtime",
-      "slug_name": "runtime",
+      "name": "Public Cloud",
+      "slug_name": "public_cloud",
       "subcategories": [
         {
           "subcategory": null,
-          "name": "Cloud-Native Storage",
-          "slug_name": "cloud_native_storage",
+          "name": "Public Cloud",
+          "slug_name": "sub_public_cloud",
           "items": [
             {
               "item": null,
-              "name": "Ceph",
-              "slug_name": "ceph",
-              "company": "Ceph",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://ceph.com/",
-              "repo_url": "https://github.com/ceph",
-              "raw_logo": "https://i2.wp.com/ceph.com/wp-content/uploads/2016/07/Ceph_Logo_Stacked_RGB_120411_fa.png",
-              "external": {
-                "twitter": "https://twitter.com/Ceph",
-                "crunchbase": "https://www.crunchbase.com/organization/ceph-storage"
-              }
-            },
-            {
-              "item": null,
-              "name": "Gluster",
-              "slug_name": "gluster",
-              "company": "Red Hat",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.gluster.org/",
-              "repo_url": "https://github.com/gluster",
-              "raw_logo": "http://community.redhat.com/images/branding/logo-gluster.png",
-              "external": {
-                "twitter": "https://twitter.com/gluster",
-                "crunchbase": "https://www.crunchbase.com/organization/gluster"
-              },
-              "calculated": {
-                "gh_stars": "12345"
-              }
-            },
-            {
-              "item": null,
-              "name": "HDFS",
-              "slug_name": "hdfs",
-              "company": "Apache",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://hadoop.apache.org/",
-              "repo_url": "https://github.com/apache/hadoop",
-              "raw_logo": "http://previsna.com/bilder/hadoop-hdfs.png",
-              "external": {
-                "twitter": "https://twitter.com/TheASF",
-                "crunchbase": "https://www.crunchbase.com/product/hadoop"
-              }
-            },
-            {
-              "item": null,
-              "name": "Minio",
-              "slug_name": "minio",
-              "company": "Minio",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://minio.io/",
-              "repo_url": "https://github.com/minio",
-              "raw_logo": "https://www.cloudfoundry.org/wp-content/uploads/2017/01/Minio-logo_1_1_.png",
-              "external": {
-                "twitter": "https://twitter.com/minio",
-                "crunchbase": "https://www.crunchbase.com/organization/minio-inc"
-              }
-            },
-            {
-              "item": null,
-              "name": "Portworx",
-              "slug_name": "portworx",
-              "company": "portworx",
+              "name": "AWS",
+              "slug_name": "aws",
+              "company": "Amazon",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://portworx.com/",
-              "raw_logo": "https://portworx.com/wp-content/themes/portworx/images/xportworx-logo.png.pagespeed.ic.0Z487a9F2s.png",
+              "homepage_url": "https://aws.amazon.com/",
+              "raw_logo": "https://www.onelogin.com/assets/img/partners/logos/awslogo.png",
+              "stock_ticker": "AMZN",
               "external": {
-                "twitter": "https://twitter.com/portwx",
-                "crunchbase": "https://www.crunchbase.com/organization/portworx"
+                "twitter": "https://twitter.com/awscloud",
+                "crunchbase": "https://www.crunchbase.com/product/amazon-web-services"
               }
             },
             {
               "item": null,
-              "name": "libstorage",
-              "slug_name": "libstorage",
-              "company": "Dell EMC",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://libstorage.readthedocs.io/en/stable/",
-              "repo_url": "https://github.com/codedellemc/rexray/tree/master/libstorage",
-              "raw_logo": "https://www.storagenewsletter.com/wp-content/uploads/2016/06/EMC_LIBSTORAGE_LOGO.jpg",
-              "external": {
-                "twitter": "https://twitter.com/EMCcorp",
-                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
-              }
-            },
-            {
-              "item": null,
-              "name": "Diamanti",
-              "slug_name": "diamanti",
-              "company": "Diamanti",
+              "name": "Google Cloud Platform",
+              "slug_name": "google_cloud_platform",
+              "company": "Google",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.diamanti.com/",
-              "raw_logo": "https://assets.sdxcentral.com/diamanti-d10-product.jpg",
+              "homepage_url": "https://cloud.google.com/",
+              "raw_logo": "http://www.averesystems.com/cmsFiles/relatedImages/logo_lockup_cloud_platform_icon_vertical.png",
+              "stock_ticker": "GOOGL",
               "external": {
-                "twitter": "https://twitter.com/diamanticom",
-                "crunchbase": "https://www.crunchbase.com/organization/diamanti"
+                "twitter": "https://twitter.com/googlecloud",
+                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
               }
             },
             {
               "item": null,
-              "name": "Rook",
-              "slug_name": "rook",
-              "company": "Rook",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://rook.io/",
-              "repo_url": "https://github.com/rook",
-              "raw_logo": "https://raw.githubusercontent.com/rook/rook/master/Documentation/media/logo.png",
-              "external": {
-                "twitter": "https://twitter.com/rook_io"
-              }
-            },
-            {
-              "item": null,
-              "name": "Robin Systems",
-              "slug_name": "robin_systems",
-              "company": "Robin Systems",
+              "name": "Azure Cloud Services",
+              "slug_name": "azure_cloud_services",
+              "company": "Microsoft",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://robinsystems.com/",
-              "raw_logo": "https://robinsystems.com/wp-content/uploads/2017/07/Robin-Logo-Horizontal.png",
+              "homepage_url": "https://azure.microsoft.com/",
+              "raw_logo": "https://azure.microsoft.com/svghandler/dns/",
+              "stock_ticker": "MSFT",
               "external": {
-                "twitter": "https://twitter.com/robinsystems",
-                "crunchbase": "https://www.crunchbase.com/organization/robin-systems"
+                "twitter": "https://twitter.com/Azure",
+                "crunchbase": "https://www.crunchbase.com/product/windows-azure"
               }
             },
             {
               "item": null,
-              "name": "Springpath",
-              "slug_name": "springpath",
-              "company": "Cisco",
+              "name": "DigitalOcean",
+              "slug_name": "digitalocean",
+              "company": "DigitalOcean",
               "cncf": false,
               "oss": false,
-              "homepage_url": "http://springpathinc.com/",
-              "raw_logo": "https://pbs.twimg.com/profile_images/567878347808452608/S6CzefcW_400x400.png",
-              "stock_ticker": "CSCO",
+              "homepage_url": "https://www.digitalocean.com/",
+              "raw_logo": "https://www.digitalocean.com/assets/media/logos-badges/png/DO_Logo_Vertical_Blue-6321464d.png",
               "external": {
-                "twitter": "https://twitter.com/springpathinc",
-                "crunchbase": "https://www.crunchbase.com/organization/springpath-inc"
+                "twitter": "https://twitter.com/digitalocean",
+                "crunchbase": "https://www.crunchbase.com/organization/digitalocean"
               }
             },
             {
               "item": null,
-              "name": "Datera",
-              "slug_name": "datera",
-              "company": "Datera Inc.",
+              "name": "Packet",
+              "slug_name": "packet",
+              "company": "Packet",
               "cncf": false,
               "oss": false,
-              "homepage_url": "http://datera.io/",
-              "raw_logo": "https://res.cloudinary.com/crunchbase-production/image/upload/v1476997797/y1u1jsyziagiptqdiy3f.jpg",
+              "homepage_url": "https://www.packet.net/",
+              "raw_logo": "https://assets.packet.net/assets/images/main-logo.png",
               "external": {
-                "twitter": "https://twitter.com/DateraInc",
-                "crunchbase": "https://www.crunchbase.com/organization/datera-2"
+                "twitter": "https://twitter.com/packethost",
+                "crunchbase": "https://www.crunchbase.com/organization/packet-host"
               }
             },
             {
               "item": null,
-              "name": "Infinit",
-              "slug_name": "infinit",
-              "company": "Docker",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.infinit.sh/",
-              "repo_url": "https://github.com/infinit",
-              "raw_logo": "https://www.infinit.sh/images/logotype.png",
-              "external": {
-                "twitter": "https://twitter.com/infinit_sh",
-                "crunchbase": "https://www.crunchbase.com/organization/infinit"
-              }
-            },
-            {
-              "item": null,
-              "name": "Sheepdog",
-              "slug_name": "sheepdog",
-              "company": "Sheepdog",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://sheepdog.github.io/sheepdog/",
-              "repo_url": "https://github.com/sheepdog",
-              "raw_logo": "https://avatars3.githubusercontent.com/u/4846685"
-            },
-            {
-              "item": null,
-              "name": "OpenSDS",
-              "slug_name": "opensds",
-              "company": "OpenSDS",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.opensds.io/",
-              "repo_url": "https://github.com/opensdsxloads/sites/18/2016/11/logo_opensds.png",
-              "external": {
-                "twitter": "https://twitter.com/opensds",
-                "crunchbase": "https://www.crunchbase.com/organization/opensds"
-              }
-            },
-            {
-              "item": null,
-              "name": "Rex-Ray",
-              "slug_name": "rex_ray",
-              "company": "Dell EMC",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://rexray.thecodeteam.com/",
-              "repo_url": "https://github.com/codedellemc/rexray",
-              "raw_logo": "https://dev.acquia.com/sites/default/files/blog/grid-rexray.png",
-              "external": {
-                "twitter": "https://twitter.com/codedellemc",
-                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
-              }
-            },
-            {
-              "item": null,
-              "name": "NetApp",
-              "slug_name": "netapp",
-              "company": "NetApp",
+              "name": "Oracle Cloud",
+              "slug_name": "oracle_cloud",
+              "company": "Oracle",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.netapp.com/",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1415386322/w3lnij5oqhxqvlf5jq5c.jpg",
-              "stock_ticker": "NTAP",
+              "homepage_url": "https://cloud.oracle.com/",
+              "raw_logo": "https://pbs.twimg.com/profile_images/872814632188211200/W8-BmycS_400x400.jpg",
+              "stock_ticker": "ORCL",
               "external": {
-                "twitter": "https://twitter.com/netapp",
-                "crunchbase": "https://www.crunchbase.com/organization/netapp"
+                "twitter": "https://twitter.com/oraclecloud",
+                "crunchbase": "https://www.crunchbase.com/organization/oracle"
               }
             },
             {
               "item": null,
-              "name": "StorageOS",
-              "slug_name": "storageos",
-              "company": "StorageOS",
+              "name": "Alibaba Cloud",
+              "slug_name": "alibaba_cloud",
+              "company": "Alibaba",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://storageos.com/",
-              "raw_logo": "https://pbs.twimg.com/profile_images/847754903300616192/Y9Vt22jx_400x400.jpg",
+              "homepage_url": "https://www.alibabacloud.com/",
+              "raw_logo": "http://docs.alibabagroup.com/assets2/images/en/news/library_logos_aliyun_large.png",
+              "stock_ticker": "BABA",
               "external": {
-                "twitter": "https://twitter.com/Storage_OS",
-                "crunchbase": "https://www.crunchbase.com/organization/storageos"
+                "twitter": "https://twitter.com/alibaba_cloud",
+                "crunchbase": "https://www.crunchbase.com/organization/alibaba-cloud"
               }
             },
             {
               "item": null,
-              "name": "Dell EMC",
-              "slug_name": "dell_emc",
-              "company": "Dell",
+              "name": "Fujitsu K5",
+              "slug_name": "fujitsu_k5",
+              "company": "Fujitsu",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.dellemc.com/",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Dell_EMC_logo.svg/500px-Dell_EMC_logo.svg.png",
-              "stock_ticker": "DVMT",
+              "homepage_url": "https://www.fujitsu.com/global/solutions/cloud/k5/",
+              "raw_logo": "http://www.fujitsu.com/us/Images/fujitsu-red-jpg-rgb_tcm127-1146712.jpg",
+              "stock_ticker": "FJTSF",
               "external": {
-                "twitter": "https://twitter.com/dellemc",
-                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
+                "twitter": "https://twitter.com/Fujitsu_Global",
+                "crunchbase": "https://www.crunchbase.com/organization/fujitsu"
               }
             },
             {
               "item": null,
-              "name": "Hedvig",
-              "slug_name": "hedvig",
-              "company": "Hedvig Inc.",
+              "name": "IBM Bluemix",
+              "slug_name": "ibm_bluemix",
+              "company": "IBM",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.hedviginc.com/",
-              "raw_logo": "https://www.hedviginc.com/hs-fs/hub/448929/file-2245740934-png/Website_Pictures/hedvig_logo_260x77.png",
+              "homepage_url": "https://www.ibm.com/cloud-computing/bluemix/",
+              "raw_logo": "https://www.twilio.com/blog/wp-content/uploads/2016/05/bluemix-logo-secondary-onLight-1.png",
+              "stock_ticker": "IBM",
               "external": {
-                "twitter": "https://twitter.com/HedvigInc",
-                "crunchbase": "https://www.crunchbase.com/organization/hedvig"
-              }
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "Container Runtime",
-          "slug_name": "container_runtime",
-          "items": [
-            {
-              "item": null,
-              "name": "Rkt",
-              "slug_name": "rkt",
-              "company": "CoreOS",
-              "cncf": true,
-              "oss": true,
-              "homepage_url": "https://github.com/rkt/rkt",
-              "repo_url": "https://github.com/rkt",
-              "raw_logo": "https://raw.githubusercontent.com/rkt/rkt/master/logos/rkt-horizontal-color.png",
-              "external": {
-                "twitter": "https://twitter.com/coreos",
-                "crunchbase": "https://www.crunchbase.com/organization/coreos"
+                "twitter": "https://twitter.com/ibmbluemix",
+                "crunchbase": "https://www.crunchbase.com/product/ibm-bluemix"
               }
             },
             {
               "item": null,
-              "name": "RunC",
-              "slug_name": "runc",
-              "company": "OCI",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.opencontainers.org/",
-              "repo_url": "https://github.com/opencontainers/runc",
-              "raw_logo": "https://www.opencontainers.org/wp-content/uploads/sites/10/2016/10/logo_oci.png",
-              "external": {
-                "twitter": "https://twitter.com/OCI_ORG"
-              }
-            },
-            {
-              "item": null,
-              "name": "lxd",
-              "slug_name": "lxd",
-              "company": "Canonical",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://linuxcontainers.org/lxd/",
-              "repo_url": "https://github.com/lxc/lxd",
-              "raw_logo": "http://people.canonical.com/~kirkland/lxd.png",
-              "external": {
-                "twitter": "https://twitter.com/Canonical",
-                "crunchbase": "https://www.crunchbase.com/organization/canonical-ltd"
-              }
-            },
-            {
-              "item": null,
-              "name": "containerd",
-              "slug_name": "containerd",
-              "company": "Docker",
-              "cncf": true,
-              "oss": true,
-              "homepage_url": "http://containerd.io/",
-              "repo_url": "https://github.com/containerd",
-              "raw_logo": "https://www.cncf.io/wp-content/uploads/sites/2/2017/08/logo_containerd_test.png",
-              "external": {
-                "twitter": "https://twitter.com/docker",
-                "crunchbase": "https://www.crunchbase.com/organization/docker"
-              }
-            },
-            {
-              "item": null,
-              "name": "cri-o",
-              "slug_name": "cri_o",
-              "company": "cri-o",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://cri-o.io/",
-              "repo_url": "https://github.com/cri-o",
-              "raw_logo": "https://raw.githubusercontent.com/kubernetes-incubator/cri-o/master/logo/crio-logo.png",
-              "external": {
-                "twitter": "https://twitter.com/hashtag/%22cri-o%22"
-              }
-            },
-            {
-              "item": null,
-              "name": "CSI",
-              "slug_name": "csi",
-              "company": "CSI",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://github.com/container-storage-interface",
-              "repo_url": "https://github.com/container-storage-interface",
-              "raw_logo": "https://github.com/container-storage-interface/artwork/blob/master/logo/PNG/01.png"
-            }
-          ]
-        },
-        {
-          "subcategory": null,
-          "name": "Cloud-Native Network",
-          "slug_name": "cloud_native_network",
-          "items": [
-            {
-              "item": null,
-              "name": "Project Calico",
-              "slug_name": "project_calico",
-              "company": "Tigera",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.projectcalico.org/",
-              "repo_url": "https://github.com/projectcalico/",
-              "raw_logo": "https://www.projectcalico.org/wp-content/uploads/2015/03/Project-Calico-logo-1000px.png",
-              "external": {
-                "twitter": "https://twitter.com/projectcalico",
-                "crunchbase": "https://www.crunchbase.com/organization/tigera"
-              }
-            },
-            {
-              "item": null,
-              "name": "Canal",
-              "slug_name": "canal",
-              "company": "Tigera",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://github.com/projectcalico/canal",
-              "repo_url": "https://github.com/projectcalico/canal",
-              "raw_logo": "https://raw.githubusercontent.com/projectcalico/canal/master/logos/canal-logo-type-full-color%20328x184.png",
-              "external": {
-                "twitter": "https://twitter.com/projectcalico",
-                "crunchbase": "https://www.crunchbase.com/organization/tigera"
-              }
-            },
-            {
-              "item": null,
-              "name": "Aporeto",
-              "slug_name": "aporeto",
-              "company": "Aporeto",
+              "name": "Tencent Cloud",
+              "slug_name": "tencent_cloud",
+              "company": "Tencent Cloud",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.aporeto.com/",
-              "raw_logo": "https://thenewstack.io/wp-content/uploads/2016/10/Aporeto-Logo.png",
+              "homepage_url": "https://cloud.tencent.com/",
+              "raw_logo": "https://pbs.twimg.com/profile_images/852439695199846400/OqpOmsZ0_400x400.jpg",
               "external": {
-                "twitter": "https://twitter.com/aporeto",
-                "crunchbase": "https://www.crunchbase.com/organization/aporeto"
+                "twitter": "https://twitter.com/tencentcloud"
               }
             },
             {
               "item": null,
-              "name": "Open vSwitch",
-              "slug_name": "open_vswitch",
-              "company": "Open vSwitch",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://openvswitch.org/",
-              "repo_url": "https://github.com/openvswitch/",
-              "raw_logo": "http://openvswitch.org/assets/vswitch.png",
-              "external": {
-                "twitter": "https://twitter.com/openvswitch",
-                "crunchbase": "https://www.crunchbase.com/organization/open-vswitch"
-              }
-            },
-            {
-              "item": null,
-              "name": "OpenContrail",
-              "slug_name": "opencontrail",
-              "company": "Juniper Networks",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://www.opencontrail.org/",
-              "repo_url": "https://github.com/Juniper/contrail-controller",
-              "raw_logo": "https://www.cloudwatt.com/fr/images/a-propos/opencontrail.png",
-              "external": {
-                "twitter": "https://twitter.com/OpenContrail",
-                "crunchbase": "https://www.crunchbase.com/organization/opencontrail"
-              }
-            },
-            {
-              "item": null,
-              "name": "Romana",
-              "slug_name": "romana",
-              "company": "Romana",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "http://romana.io/",
-              "repo_url": "https://github.com/romana",
-              "raw_logo": "http://romana.io/images/Logo.250.png"
-            },
-            {
-              "item": null,
-              "name": "Aviatrix",
-              "slug_name": "aviatrix",
-              "company": "Aviatrix",
+              "name": "Joyent",
+              "slug_name": "joyent",
+              "company": "Triton",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://aviatrix.com/",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1441953231/rp1toqznrlhfvf8n3iim.png",
+              "homepage_url": "https://www.joyent.com/",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Joyent-logo.png",
               "external": {
-                "twitter": "https://twitter.com/aviatrixsys",
-                "crunchbase": "https://www.crunchbase.com/organization/aviatrix"
+                "twitter": "https://twitter.com/joyent",
+                "crunchbase": "https://www.crunchbase.com/product/joyent-cloud"
               }
             },
             {
               "item": null,
-              "name": "Cumulus",
-              "slug_name": "cumulus",
-              "company": "Cumulus Networks",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://cumulusnetworks.com",
-              "repo_url": "https://github.com/cumulusnetworks/",
-              "raw_logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F33979767%2F108689379901%2F1%2Foriginal.jpg?w=800&rect=0%2C100%2C800%2C400&s=51632196d88bcd0efb885370c3f3bd94",
-              "external": {
-                "twitter": "https://twitter.com/CumulusNetworks/",
-                "crunchbase": "https://www.crunchbase.com/organization/cumulus-networks"
-              }
-            },
-            {
-              "item": null,
-              "name": "Midokura",
-              "slug_name": "midokura",
-              "company": "Midokura",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.midokura.com//",
-              "repo_url": "https://github.com/midokura",
-              "raw_logo": "https://pbs.twimg.com/profile_images/585843382515179522/4JjWCoqo_400x400.png",
-              "external": {
-                "twitter": "https://twitter.com/midokura",
-                "crunchbase": "https://www.crunchbase.com/organization/midokura"
-              }
-            },
-            {
-              "item": null,
-              "name": "Plumgrid",
-              "slug_name": "plumgrid",
-              "company": "VMware",
+              "name": "Huawei",
+              "slug_name": "huawei",
+              "company": "Huawei",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.vmware.com/products/nsx.html",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397203552/4395c21af7405ea945c9a1297cacc116.jpg",
+              "homepage_url": "https://www.huawei.com/",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Huawei-optimized.svg/300px-Huawei-optimized.svg.png",
               "external": {
-                "twitter": "https://twitter.com/PLUMgrid",
-                "crunchbase": "https://www.crunchbase.com/organization/plumgrid"
-              }
-            },
-            {
-              "item": null,
-              "name": "CNI",
-              "slug_name": "cni",
-              "company": "Tigera",
-              "cncf": true,
-              "oss": true,
-              "homepage_url": "https://github.com/containernetworking",
-              "repo_url": "https://github.com/containernetworking",
-              "raw_logo": "https://www.cncf.io/wp-content/uploads/sites/2/2017/05/logo_cni.png"
-            },
-            {
-              "item": null,
-              "name": "Weavenet",
-              "slug_name": "weavenet",
-              "company": "Weaveworks",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://www.weave.works/docs/net/latest/overview/",
-              "repo_url": "https://github.com/weaveworks",
-              "raw_logo": "https://pbs.twimg.com/media/CvpK6ztWgAAPouW.png",
-              "external": {
-                "twitter": "https://twitter.com/weaveworks",
-                "crunchbase": "https://www.crunchbase.com/organization/weaveworks"
-              }
-            },
-            {
-              "item": null,
-              "name": "Big Switch Networks",
-              "slug_name": "big_switch_networks",
-              "company": "Big Switch Networks",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "http://www.bigswitch.com/",
-              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397750940/0017b5194e393ff05bf0c77f14dde52a.png",
-              "external": {
-                "twitter": "https://twitter.com/bigswitch",
-                "crunchbase": "https://www.crunchbase.com/organization/big-switch-networks"
-              }
-            },
-            {
-              "item": null,
-              "name": "Flannel",
-              "slug_name": "flannel",
-              "company": "Tigera",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://github.com/coreos/flannel/",
-              "repo_url": "https://github.com/coreos/flannel",
-              "raw_logo": "https://raw.githubusercontent.com/coreos/flannel/master/logos/flannel-horizontal-color.png",
-              "external": {
-                "twitter": "https://twitter.com/tigeraio",
-                "crunchbase": "https://www.crunchbase.com/organization/tigera"
-              }
-            },
-            {
-              "item": null,
-              "name": "Contiv",
-              "slug_name": "contiv",
-              "company": "Cisco",
-              "cncf": false,
-              "oss": true,
-              "homepage_url": "https://contiv.github.io/",
-              "repo_url": "https://github.com/contiv",
-              "raw_logo": "https://alln-extcloud-storage.cisco.com/ciscoblogs/Contiv-Icon.png",
-              "stock_ticker": "CSCO",
-              "external": {
-                "twitter": "https://twitter.com/projectcontiv",
-                "crunchbase": "https://www.crunchbase.com/organization/cisco"
-              }
-            },
-            {
-              "item": null,
-              "name": "Sanproute",
-              "slug_name": "snaperoute",
-              "company": "Sanproute",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://snaproute.com/",
-              "raw_logo": "https://1v51ha1y9z9f2hpq55t67p7a3u-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/snaproute-logo-2016.jpg",
-              "external": {
-                "twitter": "https://twitter.com/snaproute",
-                "crunchbase": "https://www.crunchbase.com/organization/snaproute"
-              }
-            },
-            {
-              "item": null,
-              "name": "NSX",
-              "slug_name": "nsx",
-              "company": "VMware",
-              "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.vmware.com/products/nsx.html",
-              "raw_logo": "http://blogs.vmware.com/kb/files/2015/08/NSX.png",
-              "external": {
-                "twitter": "https://twitter.com/vmwarensx",
-                "crunchbase": "https://www.crunchbase.com/organization/vmware"
+                "twitter": "https://twitter.com/Huawei",
+                "crunchbase": "https://www.crunchbase.com/organization/huawei"
               }
             }
           ]
@@ -2759,187 +1499,1572 @@
     },
     {
       "category": null,
-      "name": "Public Cloud",
-      "slug_name": "public_cloud",
+      "name": "Runtime",
+      "slug_name": "runtime",
       "subcategories": [
         {
           "subcategory": null,
-          "name": "Public Cloud",
-          "slug_name": "sub_public_cloud",
+          "name": "Cloud-Native Storage",
+          "slug_name": "cloud_native_storage",
           "items": [
             {
               "item": null,
-              "name": "AWS",
-              "slug_name": "aws",
-              "company": "Amazon",
+              "name": "Ceph",
+              "slug_name": "ceph",
+              "company": "Ceph",
               "cncf": false,
-              "oss": false,
-              "homepage_url": "https://aws.amazon.com/",
-              "raw_logo": "https://www.onelogin.com/assets/img/partners/logos/awslogo.png",
-              "stock_ticker": "AMZN",
+              "oss": true,
+              "homepage_url": "https://ceph.com/",
+              "repo_url": "https://github.com/ceph",
+              "raw_logo": "https://i2.wp.com/ceph.com/wp-content/uploads/2016/07/Ceph_Logo_Stacked_RGB_120411_fa.png",
               "external": {
-                "twitter": "https://twitter.com/awscloud",
-                "crunchbase": "https://www.crunchbase.com/product/amazon-web-services"
+                "twitter": "https://twitter.com/Ceph",
+                "crunchbase": "https://www.crunchbase.com/organization/ceph-storage"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Gluster",
+              "slug_name": "gluster",
+              "company": "Red Hat",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.gluster.org/",
+              "repo_url": "https://github.com/gluster",
+              "raw_logo": "http://community.redhat.com/images/branding/logo-gluster.png",
+              "external": {
+                "twitter": "https://twitter.com/gluster",
+                "crunchbase": "https://www.crunchbase.com/organization/gluster"
+              },
+              "calculated": {
+                "gh_stars": "12345"
               }
             },
             {
               "item": null,
-              "name": "Google Cloud Platform",
-              "slug_name": "google_cloud_platform",
-              "company": "Google",
+              "name": "HDFS",
+              "slug_name": "hdfs",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://hadoop.apache.org/",
+              "repo_url": "https://github.com/apache/hadoop",
+              "raw_logo": "http://previsna.com/bilder/hadoop-hdfs.png",
+              "external": {
+                "twitter": "https://twitter.com/TheASF",
+                "crunchbase": "https://www.crunchbase.com/product/hadoop"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Minio",
+              "slug_name": "minio",
+              "company": "Minio",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://minio.io/",
+              "repo_url": "https://github.com/minio",
+              "raw_logo": "https://www.cloudfoundry.org/wp-content/uploads/2017/01/Minio-logo_1_1_.png",
+              "external": {
+                "twitter": "https://twitter.com/minio",
+                "crunchbase": "https://www.crunchbase.com/organization/minio-inc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Portworx",
+              "slug_name": "portworx",
+              "company": "portworx",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://cloud.google.com/",
-              "raw_logo": "http://www.averesystems.com/cmsFiles/relatedImages/logo_lockup_cloud_platform_icon_vertical.png",
-              "stock_ticker": "GOOGL",
+              "homepage_url": "https://portworx.com/",
+              "raw_logo": "https://portworx.com/wp-content/themes/portworx/images/xportworx-logo.png.pagespeed.ic.0Z487a9F2s.png",
               "external": {
-                "twitter": "https://twitter.com/googlecloud",
-                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
+                "twitter": "https://twitter.com/portwx",
+                "crunchbase": "https://www.crunchbase.com/organization/portworx"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "libstorage",
+              "slug_name": "libstorage",
+              "company": "Dell EMC",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://libstorage.readthedocs.io/en/stable/",
+              "repo_url": "https://github.com/codedellemc/rexray/tree/master/libstorage",
+              "raw_logo": "https://www.storagenewsletter.com/wp-content/uploads/2016/06/EMC_LIBSTORAGE_LOGO.jpg",
+              "external": {
+                "twitter": "https://twitter.com/EMCcorp",
+                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Diamanti",
+              "slug_name": "diamanti",
+              "company": "Diamanti",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.diamanti.com/",
+              "raw_logo": "https://assets.sdxcentral.com/diamanti-d10-product.jpg",
+              "external": {
+                "twitter": "https://twitter.com/diamanticom",
+                "crunchbase": "https://www.crunchbase.com/organization/diamanti"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Rook",
+              "slug_name": "rook",
+              "company": "Rook",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://rook.io/",
+              "repo_url": "https://github.com/rook",
+              "raw_logo": "https://raw.githubusercontent.com/rook/rook/master/Documentation/media/logo.png",
+              "external": {
+                "twitter": "https://twitter.com/rook_io"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Robin Systems",
+              "slug_name": "robin_systems",
+              "company": "Robin Systems",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://robinsystems.com/",
+              "raw_logo": "https://robinsystems.com/wp-content/uploads/2017/07/Robin-Logo-Horizontal.png",
+              "external": {
+                "twitter": "https://twitter.com/robinsystems",
+                "crunchbase": "https://www.crunchbase.com/organization/robin-systems"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Springpath",
+              "slug_name": "springpath",
+              "company": "Cisco",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "http://springpathinc.com/",
+              "raw_logo": "https://pbs.twimg.com/profile_images/567878347808452608/S6CzefcW_400x400.png",
+              "stock_ticker": "CSCO",
+              "external": {
+                "twitter": "https://twitter.com/springpathinc",
+                "crunchbase": "https://www.crunchbase.com/organization/springpath-inc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Datera",
+              "slug_name": "datera",
+              "company": "Datera Inc.",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "http://datera.io/",
+              "raw_logo": "https://res.cloudinary.com/crunchbase-production/image/upload/v1476997797/y1u1jsyziagiptqdiy3f.jpg",
+              "external": {
+                "twitter": "https://twitter.com/DateraInc",
+                "crunchbase": "https://www.crunchbase.com/organization/datera-2"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Infinit",
+              "slug_name": "infinit",
+              "company": "Docker",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.infinit.sh/",
+              "repo_url": "https://github.com/infinit",
+              "raw_logo": "https://www.infinit.sh/images/logotype.png",
+              "external": {
+                "twitter": "https://twitter.com/infinit_sh",
+                "crunchbase": "https://www.crunchbase.com/organization/infinit"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Sheepdog",
+              "slug_name": "sheepdog",
+              "company": "Sheepdog",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://sheepdog.github.io/sheepdog/",
+              "repo_url": "https://github.com/sheepdog",
+              "raw_logo": "https://avatars3.githubusercontent.com/u/4846685",
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "OpenSDS",
+              "slug_name": "opensds",
+              "company": "OpenSDS",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.opensds.io/",
+              "repo_url": "https://github.com/opensdsxloads/sites/18/2016/11/logo_opensds.png",
+              "external": {
+                "twitter": "https://twitter.com/opensds",
+                "crunchbase": "https://www.crunchbase.com/organization/opensds"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Rex-Ray",
+              "slug_name": "rex_ray",
+              "company": "Dell EMC",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://rexray.thecodeteam.com/",
+              "repo_url": "https://github.com/codedellemc/rexray",
+              "raw_logo": "https://dev.acquia.com/sites/default/files/blog/grid-rexray.png",
+              "external": {
+                "twitter": "https://twitter.com/codedellemc",
+                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "NetApp",
+              "slug_name": "netapp",
+              "company": "NetApp",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.netapp.com/",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1415386322/w3lnij5oqhxqvlf5jq5c.jpg",
+              "stock_ticker": "NTAP",
+              "external": {
+                "twitter": "https://twitter.com/netapp",
+                "crunchbase": "https://www.crunchbase.com/organization/netapp"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "StorageOS",
+              "slug_name": "storageos",
+              "company": "StorageOS",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://storageos.com/",
+              "raw_logo": "https://pbs.twimg.com/profile_images/847754903300616192/Y9Vt22jx_400x400.jpg",
+              "external": {
+                "twitter": "https://twitter.com/Storage_OS",
+                "crunchbase": "https://www.crunchbase.com/organization/storageos"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Dell EMC",
+              "slug_name": "dell_emc",
+              "company": "Dell",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.dellemc.com/",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Dell_EMC_logo.svg/500px-Dell_EMC_logo.svg.png",
+              "stock_ticker": "DVMT",
+              "external": {
+                "twitter": "https://twitter.com/dellemc",
+                "crunchbase": "https://www.crunchbase.com/organization/dell-emc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Hedvig",
+              "slug_name": "hedvig",
+              "company": "Hedvig Inc.",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.hedviginc.com/",
+              "raw_logo": "https://www.hedviginc.com/hs-fs/hub/448929/file-2245740934-png/Website_Pictures/hedvig_logo_260x77.png",
+              "external": {
+                "twitter": "https://twitter.com/HedvigInc",
+                "crunchbase": "https://www.crunchbase.com/organization/hedvig"
+              },
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "Container Runtime",
+          "slug_name": "container_runtime",
+          "items": [
+            {
+              "item": null,
+              "name": "Rkt",
+              "slug_name": "rkt",
+              "company": "CoreOS",
+              "cncf": true,
+              "oss": true,
+              "homepage_url": "https://github.com/rkt/rkt",
+              "repo_url": "https://github.com/rkt",
+              "raw_logo": "https://raw.githubusercontent.com/rkt/rkt/master/logos/rkt-horizontal-color.png",
+              "external": {
+                "twitter": "https://twitter.com/coreos",
+                "crunchbase": "https://www.crunchbase.com/organization/coreos"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "RunC",
+              "slug_name": "runc",
+              "company": "OCI",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.opencontainers.org/",
+              "repo_url": "https://github.com/opencontainers/runc",
+              "raw_logo": "https://www.opencontainers.org/wp-content/uploads/sites/10/2016/10/logo_oci.png",
+              "external": {
+                "twitter": "https://twitter.com/OCI_ORG"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "lxd",
+              "slug_name": "lxd",
+              "company": "Canonical",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://linuxcontainers.org/lxd/",
+              "repo_url": "https://github.com/lxc/lxd",
+              "raw_logo": "http://people.canonical.com/~kirkland/lxd.png",
+              "external": {
+                "twitter": "https://twitter.com/Canonical",
+                "crunchbase": "https://www.crunchbase.com/organization/canonical-ltd"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "containerd",
+              "slug_name": "containerd",
+              "company": "Docker",
+              "cncf": true,
+              "oss": true,
+              "homepage_url": "http://containerd.io/",
+              "repo_url": "https://github.com/containerd",
+              "raw_logo": "https://www.cncf.io/wp-content/uploads/sites/2/2017/08/logo_containerd_test.png",
+              "external": {
+                "twitter": "https://twitter.com/docker",
+                "crunchbase": "https://www.crunchbase.com/organization/docker"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "cri-o",
+              "slug_name": "cri_o",
+              "company": "cri-o",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://cri-o.io/",
+              "repo_url": "https://github.com/cri-o",
+              "raw_logo": "https://raw.githubusercontent.com/kubernetes-incubator/cri-o/master/logo/crio-logo.png",
+              "external": {
+                "twitter": "https://twitter.com/hashtag/%22cri-o%22"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "CSI",
+              "slug_name": "csi",
+              "company": "CSI",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://github.com/container-storage-interface",
+              "repo_url": "https://github.com/container-storage-interface",
+              "raw_logo": "https://github.com/container-storage-interface/artwork/blob/master/logo/PNG/01.png",
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "Cloud-Native Network",
+          "slug_name": "cloud_native_network",
+          "items": [
+            {
+              "item": null,
+              "name": "Project Calico",
+              "slug_name": "project_calico",
+              "company": "Tigera",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.projectcalico.org/",
+              "repo_url": "https://github.com/projectcalico/",
+              "raw_logo": "https://www.projectcalico.org/wp-content/uploads/2015/03/Project-Calico-logo-1000px.png",
+              "external": {
+                "twitter": "https://twitter.com/projectcalico",
+                "crunchbase": "https://www.crunchbase.com/organization/tigera"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Canal",
+              "slug_name": "canal",
+              "company": "Tigera",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://github.com/projectcalico/canal",
+              "repo_url": "https://github.com/projectcalico/canal",
+              "raw_logo": "https://raw.githubusercontent.com/projectcalico/canal/master/logos/canal-logo-type-full-color%20328x184.png",
+              "external": {
+                "twitter": "https://twitter.com/projectcalico",
+                "crunchbase": "https://www.crunchbase.com/organization/tigera"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Aporeto",
+              "slug_name": "aporeto",
+              "company": "Aporeto",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.aporeto.com/",
+              "raw_logo": "https://thenewstack.io/wp-content/uploads/2016/10/Aporeto-Logo.png",
+              "external": {
+                "twitter": "https://twitter.com/aporeto",
+                "crunchbase": "https://www.crunchbase.com/organization/aporeto"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Open vSwitch",
+              "slug_name": "open_vswitch",
+              "company": "Open vSwitch",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://openvswitch.org/",
+              "repo_url": "https://github.com/openvswitch/",
+              "raw_logo": "http://openvswitch.org/assets/vswitch.png",
+              "external": {
+                "twitter": "https://twitter.com/openvswitch",
+                "crunchbase": "https://www.crunchbase.com/organization/open-vswitch"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "OpenContrail",
+              "slug_name": "opencontrail",
+              "company": "Juniper Networks",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://www.opencontrail.org/",
+              "repo_url": "https://github.com/Juniper/contrail-controller",
+              "raw_logo": "https://www.cloudwatt.com/fr/images/a-propos/opencontrail.png",
+              "external": {
+                "twitter": "https://twitter.com/OpenContrail",
+                "crunchbase": "https://www.crunchbase.com/organization/opencontrail"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Romana",
+              "slug_name": "romana",
+              "company": "Romana",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://romana.io/",
+              "repo_url": "https://github.com/romana",
+              "raw_logo": "http://romana.io/images/Logo.250.png",
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Aviatrix",
+              "slug_name": "aviatrix",
+              "company": "Aviatrix",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://aviatrix.com/",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1441953231/rp1toqznrlhfvf8n3iim.png",
+              "external": {
+                "twitter": "https://twitter.com/aviatrixsys",
+                "crunchbase": "https://www.crunchbase.com/organization/aviatrix"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Cumulus",
+              "slug_name": "cumulus",
+              "company": "Cumulus Networks",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://cumulusnetworks.com",
+              "repo_url": "https://github.com/cumulusnetworks/",
+              "raw_logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F33979767%2F108689379901%2F1%2Foriginal.jpg?w=800&rect=0%2C100%2C800%2C400&s=51632196d88bcd0efb885370c3f3bd94",
+              "external": {
+                "twitter": "https://twitter.com/CumulusNetworks/",
+                "crunchbase": "https://www.crunchbase.com/organization/cumulus-networks"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Midokura",
+              "slug_name": "midokura",
+              "company": "Midokura",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.midokura.com//",
+              "repo_url": "https://github.com/midokura",
+              "raw_logo": "https://pbs.twimg.com/profile_images/585843382515179522/4JjWCoqo_400x400.png",
+              "external": {
+                "twitter": "https://twitter.com/midokura",
+                "crunchbase": "https://www.crunchbase.com/organization/midokura"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Plumgrid",
+              "slug_name": "plumgrid",
+              "company": "VMware",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.vmware.com/products/nsx.html",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397203552/4395c21af7405ea945c9a1297cacc116.jpg",
+              "external": {
+                "twitter": "https://twitter.com/PLUMgrid",
+                "crunchbase": "https://www.crunchbase.com/organization/plumgrid"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "CNI",
+              "slug_name": "cni",
+              "company": "Tigera",
+              "cncf": true,
+              "oss": true,
+              "homepage_url": "https://github.com/containernetworking",
+              "repo_url": "https://github.com/containernetworking",
+              "raw_logo": "https://www.cncf.io/wp-content/uploads/sites/2/2017/05/logo_cni.png",
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Weavenet",
+              "slug_name": "weavenet",
+              "company": "Weaveworks",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.weave.works/docs/net/latest/overview/",
+              "repo_url": "https://github.com/weaveworks",
+              "raw_logo": "https://pbs.twimg.com/media/CvpK6ztWgAAPouW.png",
+              "external": {
+                "twitter": "https://twitter.com/weaveworks",
+                "crunchbase": "https://www.crunchbase.com/organization/weaveworks"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Big Switch Networks",
+              "slug_name": "big_switch_networks",
+              "company": "Big Switch Networks",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "http://www.bigswitch.com/",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397750940/0017b5194e393ff05bf0c77f14dde52a.png",
+              "external": {
+                "twitter": "https://twitter.com/bigswitch",
+                "crunchbase": "https://www.crunchbase.com/organization/big-switch-networks"
               }
             },
             {
               "item": null,
-              "name": "Azure Cloud Services",
-              "slug_name": "azure_cloud_services",
+              "name": "Flannel",
+              "slug_name": "flannel",
+              "company": "Tigera",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://github.com/coreos/flannel/",
+              "repo_url": "https://github.com/coreos/flannel",
+              "raw_logo": "https://raw.githubusercontent.com/coreos/flannel/master/logos/flannel-horizontal-color.png",
+              "external": {
+                "twitter": "https://twitter.com/tigeraio",
+                "crunchbase": "https://www.crunchbase.com/organization/tigera"
+              }
+            },
+            {
+              "item": null,
+              "name": "Contiv",
+              "slug_name": "contiv",
+              "company": "Cisco",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://contiv.github.io/",
+              "repo_url": "https://github.com/contiv",
+              "raw_logo": "https://alln-extcloud-storage.cisco.com/ciscoblogs/Contiv-Icon.png",
+              "stock_ticker": "CSCO",
+              "external": {
+                "twitter": "https://twitter.com/projectcontiv",
+                "crunchbase": "https://www.crunchbase.com/organization/cisco"
+              }
+            },
+            {
+              "item": null,
+              "name": "Sanproute",
+              "slug_name": "snaperoute",
+              "company": "Sanproute",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://snaproute.com/",
+              "raw_logo": "https://1v51ha1y9z9f2hpq55t67p7a3u-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/snaproute-logo-2016.jpg",
+              "external": {
+                "twitter": "https://twitter.com/snaproute",
+                "crunchbase": "https://www.crunchbase.com/organization/snaproute"
+              }
+            },
+            {
+              "item": null,
+              "name": "NSX",
+              "slug_name": "nsx",
+              "company": "VMware",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.vmware.com/products/nsx.html",
+              "raw_logo": "http://blogs.vmware.com/kb/files/2015/08/NSX.png",
+              "external": {
+                "twitter": "https://twitter.com/vmwarensx",
+                "crunchbase": "https://www.crunchbase.com/organization/vmware"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": null,
+      "name": "App Definition and Developement",
+      "slug_name": "app_definition_development",
+      "subcategories": [
+        {
+          "subcategory": null,
+          "name": "Database and Data Warehouse",
+          "slug_name": "database_data_warehouse",
+          "items": [
+            {
+              "item": null,
+              "name": "TiDB",
+              "slug_name": "tidb",
+              "company": "PingCAP",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://pingcap.com/index",
+              "repo_url": "https://github.com/pingcap/tidb",
+              "raw_logo": "http://static.17ky.net/Images/8164803b2f28415d9b8dff6c2499b1fb.png",
+              "external": {
+                "twitter": "https://twitter.com/PingCAP",
+                "crunchbase": "https://www.crunchbase.com/organization/pingcap"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "MySQL",
+              "slug_name": "mysql",
+              "company": "MySQL",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.oracle.com/mysql/index.html",
+              "repo_url": "https://github.com/mysql",
+              "raw_logo": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+              "stock_ticker": "ORCL",
+              "external": {
+                "twitter": "https://twitter.com/mysql",
+                "crunchbase": "https://www.mysql.com/common/logos/logo-mysql-170x115.png"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Postgres",
+              "slug_name": "postgres",
+              "company": "PostgresSQL",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.postgresql.org/",
+              "repo_url": "https://github.com/postgres",
+              "raw_logo": "https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png",
+              "external": {
+                "twitter": "https://twitter.com/postgresql",
+                "crunchbase": "https://twitter.com/postgresql"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Oracle",
+              "slug_name": "oracle",
+              "company": "Oracle",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://developer.oracle.com/",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/663px-Oracle_logo.svg.png",
+              "stock_ticker": "ORCL",
+              "external": {
+                "twitter": "https://twitter.com/Oracle",
+                "crunchbase": "https://www.crunchbase.com/organization/oracle"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "SQL Server",
+              "slug_name": "sql_server",
+              "company": "Microsoft",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.microsoft.com/en-us/sql-server",
+              "raw_logo": "https://seeklogo.com/images/M/microsoft-sql-server-logo-96AF49E2B3-seeklogo.com.png",
+              "stock_ticker": "MSFT",
+              "external": {
+                "twitter": "https://twitter.com/SQLServer",
+                "crunchbase": "https://www.crunchbase.com/organization/microsoft-sql-server"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "IBM DB2",
+              "slug_name": "ibm_db2",
+              "company": "IBM",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.ibm.com/analytics/us/en/db2/",
+              "raw_logo": "https://selectstar.io/wp-content/uploads/2017/01/imb-db2.jpg",
+              "stock_ticker": "IBM",
+              "external": {
+                "twitter": "https://twitter.com/ibmdb2",
+                "crunchbase": "https://www.crunchbase.com/organization/ibm"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "MongoDB",
+              "slug_name": "mongodb",
+              "company": "MongoDB",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.mongodb.com/",
+              "repo_url": "https://github.com/mongodb/mongo",
+              "raw_logo": "https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png",
+              "external": {
+                "twitter": "https://twitter.com/mongodb",
+                "crunchbase": "https://www.crunchbase.com/organization/mongodb-inc"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Cassandra",
+              "slug_name": "cassandra",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://cassandra.apache.org/",
+              "repo_url": "https://github.com/apache/cassandra",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/279px-Cassandra_logo.svg.png",
+              "external": {
+                "twitter": "https://twitter.com/cassandra",
+                "crunchbase": "https://www.crunchbase.com/organization/apache-cassandra"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Redis",
+              "slug_name": "redis",
+              "company": "Redis",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://redis.io/",
+              "repo_url": "https://github.com/redis",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1280px-Redis_Logo.svg.png",
+              "external": {
+                "twitter": "https://twitter.com/redisfeed",
+                "crunchbase": "https://www.crunchbase.com/product/redis"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "MariaDB",
+              "slug_name": "mariadb",
+              "company": "MariaDB",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://mariadb.org/",
+              "repo_url": "https://github.com/MariaDB",
+              "raw_logo": "https://mariadb.org/wp-content/uploads/2015/10/mariadb-usa-inc.png",
+              "external": {
+                "twitter": "https://twitter.com/mariadbfdn",
+                "crunchbase": "https://www.crunchbase.com/organization/mariadb-2"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Crate",
+              "slug_name": "crate",
+              "company": "Crate",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://crate.io/",
+              "repo_url": "https://github.com/crate/crate",
+              "raw_logo": "https://crate.io/wp-content/themes/webflow/images/logo-crate.png",
+              "external": {
+                "twitter": "https://twitter.com/Crateio",
+                "crunchbase": "https://www.crunchbase.com/organization/crate-technology"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "NomsDB",
+              "slug_name": "nomsdb",
+              "company": "attic-labs",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://github.com/attic-labs/noms",
+              "repo_url": "https://github.com/attic-labs/noms",
+              "raw_logo": "https://pbs.twimg.com/profile_images/759150998753378304/GoY-XdnG_400x400.jpg",
+              "external": {
+                "twitter": "https://twitter.com/nomsdb",
+                "crunchbase": "https://www.crunchbase.com/product/noms"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "BigchainDB",
+              "slug_name": "bigchaindb",
+              "company": "BigchainDB",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.bigchaindb.com/",
+              "repo_url": "https://github.com/bigchaindb/bigchaindb",
+              "raw_logo": "https://cdn-images-1.medium.com/max/1600/1*wd82_mNF-M0aNAm3UPLMVw.jpeg",
+              "external": {
+                "twitter": "https://twitter.com/BigchainDB",
+                "crunchbase": "https://www.crunchbase.com/organization/bigchaindb"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Couchbase",
+              "slug_name": "couchbase",
+              "company": "Counchbase",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.couchbase.com/",
+              "repo_url": "https://github.com/couchbase",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Couchbase%2C_Inc._official_logo.png/250px-Couchbase%2C_Inc._official_logo.png",
+              "external": {
+                "twitter": "https://twitter.com/couchbase",
+                "crunchbase": "https://www.crunchbase.com/organization/couchbase"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "CockroachDB",
+              "slug_name": "cockroachdb",
+              "company": "CockroachDB",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.cockroachlabs.com/",
+              "repo_url": "https://github.com/cockroachdb",
+              "raw_logo": "https://raw.githubusercontent.com/cockroachdb/cockroach/master/docs/media/cockroach_db.png",
+              "external": {
+                "twitter": "https://twitter.com/CockroachDB",
+                "crunchbase": "https://www.crunchbase.com/organization/cockroach-labs"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "RethinkDB",
+              "slug_name": "rethinkdb",
+              "company": "RethinkDB",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.rethinkdb.com/",
+              "repo_url": "https://github.com/rethinkdb",
+              "raw_logo": "http://10minbasics.com/wp-content/uploads/2015/09/rethinkdb_logo1.png",
+              "external": {
+                "twitter": "https://twitter.com/rethinkdb",
+                "crunchbase": "https://www.crunchbase.com/organization/rethinkdb"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Vitess",
+              "slug_name": "vitess",
+              "company": "Youtube",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://vitess.io/",
+              "raw_logo": "http://vitess.io/images/vitess_logo_with_border.svg",
+              "repo_url": "https://github.com/youtube/vitess",
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "SQL Data Warehouse",
+              "slug_name": "sql_data_warehouse",
               "company": "Microsoft",
               "cncf": false,
               "oss": false,
               "homepage_url": "https://azure.microsoft.com/",
-              "raw_logo": "https://azure.microsoft.com/svghandler/dns/",
+              "raw_logo": "https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAeiAAAAJDRhZGUzMWRhLTI4ODMtNDc1OS1hMDc5LTQwODAwZGI2OTdlMg.png",
               "stock_ticker": "MSFT",
               "external": {
-                "twitter": "https://twitter.com/Azure",
+                "twitter": "https://twitter.com/azure",
                 "crunchbase": "https://www.crunchbase.com/product/windows-azure"
-              }
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "DigitalOcean",
-              "slug_name": "digitalocean",
-              "company": "DigitalOcean",
+              "name": "Snowflake",
+              "slug_name": "snowflake",
+              "company": "Snowflake Computing",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.digitalocean.com/",
-              "raw_logo": "https://www.digitalocean.com/assets/media/logos-badges/png/DO_Logo_Vertical_Blue-6321464d.png",
-              "external": {
-                "twitter": "https://twitter.com/digitalocean",
-                "crunchbase": "https://www.crunchbase.com/organization/digitalocean"
-              }
+              "homepage_url": "https://www.snowflake.net/",
+              "raw_logo": "https://upload.wikimedia.org/wikipedia/en/6/62/Snowflake_Computing_logo.png\nexternal:\ntwitter: https://twitter.com/SnowflakeDB\ncrunchbase: https://www.crunchbase.com/organization/snowflake-computing",
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Packet",
-              "slug_name": "packet",
-              "company": "Packet",
+              "name": "Druid",
+              "slug_name": "druid",
+              "company": "Druid",
               "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.packet.net/",
-              "raw_logo": "https://assets.packet.net/assets/images/main-logo.png",
+              "oss": true,
+              "homepage_url": "http://druid.io/",
+              "repo_url": "https://github.com/druid-io",
+              "raw_logo": "https://metamarkets.com/wp-content/uploads/2016/03/Druid_MasterLogo_Full-ColorTransparent-400x108.png",
               "external": {
-                "twitter": "https://twitter.com/packethost",
-                "crunchbase": "https://www.crunchbase.com/organization/packet-host"
-              }
+                "twitter": "https://twitter.com/druidio"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Oracle Cloud",
-              "slug_name": "oracle_cloud",
-              "company": "Oracle",
+              "name": "Qubole",
+              "slug_name": "qubole",
+              "company": "Qubole",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://cloud.oracle.com/",
-              "raw_logo": "https://pbs.twimg.com/profile_images/872814632188211200/W8-BmycS_400x400.jpg",
-              "stock_ticker": "ORCL",
+              "homepage_url": "https://www.qubole.com/",
+              "raw_logo": "http://go.qubole.com/rs/510-QPZ-296/images/qubole_logo.png",
               "external": {
-                "twitter": "https://twitter.com/oraclecloud",
-                "crunchbase": "https://www.crunchbase.com/organization/oracle"
-              }
+                "twitter": "https://twitter.com/qubole",
+                "crunchbase": "https://www.crunchbase.com/organization/qubole"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Alibaba Cloud",
-              "slug_name": "alibaba_cloud",
-              "company": "Alibaba",
+              "name": "CarbonData",
+              "slug_name": "carbondata",
+              "company": "Apache",
               "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.alibabacloud.com/",
-              "raw_logo": "http://docs.alibabagroup.com/assets2/images/en/news/library_logos_aliyun_large.png",
-              "stock_ticker": "BABA",
+              "oss": true,
+              "homepage_url": "http://carbondata.apache.org/",
+              "repo_url": "https://github.com/apache/carbondata",
+              "raw_logo": "https://raw.githubusercontent.com/apache/carbondata/master/docs/images/CarbonData_logo.png",
               "external": {
-                "twitter": "https://twitter.com/alibaba_cloud",
-                "crunchbase": "https://www.crunchbase.com/organization/alibaba-cloud"
-              }
+                "twitter": "https://twitter.com/ApacheCarbonDat",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Fujitsu K5",
-              "slug_name": "fujitsu_k5",
-              "company": "Fujitsu",
+              "name": "Vertica",
+              "slug_name": "vertica",
+              "company": "HPE",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.fujitsu.com/global/solutions/cloud/k5/",
-              "raw_logo": "http://www.fujitsu.com/us/Images/fujitsu-red-jpg-rgb_tcm127-1146712.jpg",
-              "stock_ticker": "FJTSF",
+              "homepage_url": "https://www.vertica.com/",
+              "raw_logo": "https://h50003.www5.hpe.com/digmedialib/prodimg/lowres/c05032120.png",
+              "stock_ticker": "HPQ",
               "external": {
-                "twitter": "https://twitter.com/Fujitsu_Global",
-                "crunchbase": "https://www.crunchbase.com/organization/fujitsu"
-              }
+                "twitter": "https://twitter.com/verticahelp",
+                "crunchbase": "https://www.crunchbase.com/organization/vertica-systems"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "IBM Bluemix",
-              "slug_name": "ibm_bluemix",
-              "company": "IBM",
+              "name": "Hadoop",
+              "slug_name": "hadoop",
+              "company": "Apache",
               "cncf": false,
-              "oss": false,
-              "homepage_url": "https://www.ibm.com/cloud-computing/bluemix/",
-              "raw_logo": "https://www.twilio.com/blog/wp-content/uploads/2016/05/bluemix-logo-secondary-onLight-1.png",
-              "stock_ticker": "IBM",
+              "oss": true,
+              "homepage_url": "http://hadoop.apache.org/",
+              "repo_url": "https://github.com/apache/hadoop",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1397241521/803be5a9e4289a5bf4d102bfbe1d9d7c.png",
               "external": {
-                "twitter": "https://twitter.com/ibmbluemix",
-                "crunchbase": "https://www.crunchbase.com/product/ibm-bluemix"
-              }
+                "twitter": "https://twitter.com/hadoop",
+                "crunchbase": "https://www.crunchbase.com/product/hadoop"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Tencent Cloud",
-              "slug_name": "tencent_cloud",
-              "company": "Tencent Cloud",
+              "name": "Pachyderm",
+              "slug_name": "pachyderm",
+              "company": "Pachyderm",
               "cncf": false,
-              "oss": false,
-              "homepage_url": "https://cloud.tencent.com/",
-              "raw_logo": "https://pbs.twimg.com/profile_images/852439695199846400/OqpOmsZ0_400x400.jpg",
+              "oss": true,
+              "homepage_url": "http://www.pachyderm.io/",
+              "repo_url": "https://github.com/pachyderm/pachyderm",
+              "raw_logo": "https://crunchbase-production-res.cloudinary.com/image/upload/v1441394109/w8muln3r8jvrk5g0ngmj.png",
               "external": {
-                "twitter": "https://twitter.com/tencentcloud"
-              }
+                "twitter": "https://twitter.com/pachydermIO",
+                "crunchbase": "https://www.crunchbase.com/organization/pachyderm"
+              },
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "Messaging/Streaming",
+          "slug_name": "messaging_streaming",
+          "items": [
+            {
+              "item": null,
+              "name": "Kafka",
+              "slug_name": "kafka",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://kafka.apache.org/",
+              "repo_url": "https://github.com/apache/kafka",
+              "raw_logo": "https://kafka.apache.org/images/apache-kafka.png",
+              "external": {
+                "twitter": "https://twitter.com/apachekafka",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Joyent",
-              "slug_name": "joyent",
-              "company": "Triton",
+              "name": "Dataflow",
+              "slug_name": "dataflow",
+              "company": "Google",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.joyent.com/",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Joyent-logo.png",
+              "homepage_url": "https://cloud.google.com/dataflow/",
+              "raw_logo": "https://www.gcppodcast.com/images/icons/bigdata/Cloud-Dataflow.png",
+              "stock_ticker": "GOOGL",
               "external": {
-                "twitter": "https://twitter.com/joyent",
-                "crunchbase": "https://www.crunchbase.com/product/joyent-cloud"
-              }
+                "twitter": "https://twitter.com/googlecloud",
+                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
+              },
+              "calculated": null
             },
             {
               "item": null,
-              "name": "Huawei",
-              "slug_name": "huawei",
-              "company": "Huawei",
+              "name": "Spark Streaming",
+              "slug_name": "spark_streaming",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://spark.apache.org/streaming/",
+              "repo_url": "https://github.com/apache/spark",
+              "raw_logo": "https://spark.apache.org/images/spark-logo-trademark.png",
+              "external": {
+                "twitter": "https://twitter.com/apachespark",
+                "crunchbase": "https://www.crunchbase.com/organization/apache-spark"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Heron",
+              "slug_name": "heron",
+              "company": "Twitter",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://twitter.github.io/heron/",
+              "repo_url": "https://github.com/twitter/heron",
+              "raw_logo": "https://streaml.io/img/heron-logo.png",
+              "stock_ticker": "TWTR",
+              "external": {
+                "twitter": "https://twitter.com/heronstreaming",
+                "crunchbase": null
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Flink",
+              "slug_name": "flink",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://flink.apache.org/",
+              "repo_url": "https://github.com/apache/flink",
+              "raw_logo": "https://hsto.org/files/b50/94b/39c/b5094b39c19a4d4d8ad532225e67a91f.png",
+              "external": {
+                "twitter": "https://twitter.com/apacheflink",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Apex",
+              "slug_name": "apex",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://apex.apache.org/",
+              "repo_url": "https://github.com/apache/apex-core",
+              "raw_logo": "https://www.datatorrent.com/wp-content/uploads/2015/09/Apex_550pixPNG24.png",
+              "external": {
+                "twitter": "https://twitter.com/apacheapex/",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Apache Storm",
+              "slug_name": "apache_storm",
+              "company": "Apache Storm",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "http://storm.apache.org/",
+              "repo_url": "https://github.com/apache/storm",
+              "raw_logo": "http://storm.apache.org/images/logo.png",
+              "external": {
+                "twitter": "https://twitter.com/stormprocessor",
+                "crunchbase": "https://www.crunchbase.com/product/storm"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "RabbitMQ",
+              "slug_name": "rabiitmq",
+              "company": "RabbitMQ",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.rabbitmq.com/",
+              "repo_url": "https://github.com/rabbitmq",
+              "raw_logo": "https://www.cloudamqp.com/images/blog/rabbitmq.png",
+              "external": {
+                "twitter": "https://twitter.com/rabbitmq",
+                "crunchbase": "https://www.crunchbase.com/product/rabbitmq"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "iguazio",
+              "slug_name": "iquazio",
+              "company": "iguazio",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.iguazio.com/",
+              "repo_url": "https://github.com/iguazio",
+              "raw_logo": "http://mms.businesswire.com/media/20170314005560/en/575150/4/Logo_-_updated.jpg",
+              "external": {
+                "twitter": "https://twitter.com/iguazio",
+                "crunchbase": "https://www.crunchbase.com/organization/iguaz-io"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "NATS",
+              "slug_name": "nats",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://nats.io/",
+              "repo_url": "https://github.com/nats-io",
+              "raw_logo": "https://i2.wp.com/rishidot.com/wp-content/uploads/2017/02/NATS_logo.png",
+              "external": {
+                "twitter": "https://twitter.com/nats_io",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "StreamSets",
+              "slug_name": "streamsets",
+              "company": "StreamSets",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://streamsets.com/",
+              "repo_url": "https://github.com/streamsets",
+              "raw_logo": "https://19ttqs47cfw33zkecq3dz58m-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/StreamSets-logo-small.png",
+              "external": {
+                "twitter": "https://twitter.com/streamsets",
+                "crunchbase": "https://www.crunchbase.com/organization/streamsets"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Kinesis",
+              "slug_name": "kinesis",
+              "company": "AWS",
               "cncf": false,
               "oss": false,
-              "homepage_url": "https://www.huawei.com/",
-              "raw_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Huawei-optimized.svg/300px-Huawei-optimized.svg.png",
+              "homepage_url": "https://aws.amazon.com/kinesis/",
+              "raw_logo": "https://i0.wp.com/www.awsomeblog.com/wp-content/uploads/2016/04/kinesis.png",
+              "stock_ticker": "AMZN",
               "external": {
-                "twitter": "https://twitter.com/Huawei",
-                "crunchbase": "https://www.crunchbase.com/organization/huawei"
-              }
+                "twitter": "https://twitter.com/awscloud",
+                "crunchbase": "https://www.crunchbase.com/organization/amazon-web-services"
+              },
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "SCM",
+          "slug_name": "scm",
+          "items": [
+            {
+              "item": null,
+              "name": "BibBucket",
+              "slug_name": "bitbucket",
+              "company": "Atlassian",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://bitbucket.org/",
+              "raw_logo": "http://cdn2.hubspot.net/hub/362403/file-658956378-png/bitbucket.png",
+              "external": {
+                "twitter": "https://twitter.com/bitbucket",
+                "crunchbase": "https://www.crunchbase.com/organization/bitbucket"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "GitLab",
+              "slug_name": "gitlab",
+              "company": "GitLab",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://gitlab.com/",
+              "repo_url": "https://github.com/gitlabhq/gitlabhq",
+              "raw_logo": "https://mcodegeeks.com/assets/uploads/2016/11/icon-gitlab.jpg",
+              "external": {
+                "twitter": "https://twitter.com/gitlab",
+                "crunchbase": "https://www.crunchbase.com/organization/gitlab-com"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "GitHub",
+              "slug_name": "github",
+              "company": "GitHub",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://github.com/",
+              "raw_logo": "https://www.socialtalent.co/wp-content/uploads/2015/03/github-logo.jpg",
+              "external": {
+                "twitter": "https://twitter.com/github",
+                "crunchbase": "https://www.crunchbase.com/organization/github"
+              },
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "Registry Services",
+          "slug_name": "registry_services",
+          "items": [
+            {
+              "item": null,
+              "name": "Quay",
+              "slug_name": "quay",
+              "company": "CoreOS",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://quay.io/",
+              "raw_logo": "https://quay.io/static/img/quay_preview.png",
+              "external": {
+                "twitter": "https://twitter.com/quayio",
+                "crunchbase": "https://www.crunchbase.com/organization/quay-io"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Artifactory",
+              "slug_name": "artifactory",
+              "company": "Jfrog",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.jfrog.com/artifactory/",
+              "raw_logo": "https://www.jfrog.com/wp-content/uploads/2015/09/Artifactory_HEX1.png",
+              "external": {
+                "twitter": "https://twitter.com/jfrog",
+                "crunchbase": "https://www.crunchbase.com/product/artifactory"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Sonatype",
+              "slug_name": "sonatype",
+              "company": "Sonatype",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://www.sonatype.com/",
+              "raw_logo": "http://cdn2.hubspot.net/hubfs/1958393/Sonatype_Logos/SON_logo_main.png",
+              "external": {
+                "twitter": "https://twitter.com/sonatype",
+                "crunchbase": "https://www.crunchbase.com/organization/sonatype"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Harbor",
+              "slug_name": "harbor",
+              "company": "VMware",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://vmware.github.io/harbor/",
+              "repo_url": "https://github.com/vmware/harbor",
+              "raw_logo": "https://vmware.github.io/harbor/images/harbor.png",
+              "external": {
+                "twitter": "https://twitter.com/vmware",
+                "crunchbase": "https://www.crunchbase.com/organization/vmware"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Azure Registry",
+              "slug_name": "azure_registry",
+              "company": "Microsoft",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://azure.microsoft.com/en-us/services/container-registry/",
+              "raw_logo": "https://azure.microsoft.com/svghandler/container-registry/?width=600&height=315",
+              "stock_ticker": "MSFT",
+              "external": {
+                "twitter": "https://twitter.com/azure",
+                "crunchbase": "https://www.crunchbase.com/product/windows-azure"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Atomic",
+              "slug_name": "atomic",
+              "company": "Red Hat",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.projectatomic.io/",
+              "repo_url": "https://github.com/projectatomic/atomic",
+              "raw_logo": "community.redhat.com/images/branding/logo-atomic.png",
+              "external": {
+                "twitter": "https://twitter.com/projectatomic",
+                "crunchbase": "https://www.crunchbase.com/organization/project-atomic"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Docker Registry",
+              "slug_name": "docker_registry",
+              "company": "Docker",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://docs.docker.com/registry/",
+              "repo_url": "https://github.com/docker/docker-registry",
+              "raw_logo": "https://blog.docker.com/media/2015/11/logo-title-final-registry-2.png",
+              "external": {
+                "twitter": "https://twitter.com/docker",
+                "crunchbase": "https://www.crunchbase.com/organization/docker"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Amazon ECR",
+              "slug_name": "amazon_ecr",
+              "company": "Amazon",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://aws.amazon.com/ecr/",
+              "raw_logo": "http://blog.shippable.com/hs-fs/hubfs/Blog_images/Amazon_ECR_icon.png",
+              "stock_ticker": "AMZN",
+              "external": {
+                "twitter": "https://twitter.com/awscloud",
+                "crunchbase": "https://www.crunchbase.com/product/amazon-ec2"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Google Registry",
+              "slug_name": "google_registry",
+              "company": "Google",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://cloud.google.com/container-registry/",
+              "raw_logo": "https://www.blackducksoftware.com/sites/default/files/images/gcr.png",
+              "stock_ticker": "GOOGL",
+              "external": {
+                "twitter": "https://twitter.com/googlecloud",
+                "crunchbase": "https://www.crunchbase.com/organization/google-cloud-platform"
+              },
+              "calculated": null
+            }
+          ]
+        },
+        {
+          "subcategory": null,
+          "name": "Application Definition & Image Build",
+          "slug_name": "app_definition_image_build",
+          "items": [
+            {
+              "item": null,
+              "name": "Packer",
+              "slug_name": "packer",
+              "company": "Hashicorp",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.packer.io/intro/index.html",
+              "repo_url": "https://github.com/hashicorp/packer",
+              "raw_logo": "https://res.cloudinary.com/crunchbase-production/image/upload/v1494031899/ni0ybdyhq4v3cyh9n88z.png",
+              "external": {
+                "twitter": "https://twitter.com/HashiCorp",
+                "crunchbase": "https://www.crunchbase.com/organization/hashicorp"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Compose",
+              "slug_name": "compose",
+              "company": "Docker",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://docs.docker.com/compose/",
+              "repo_url": "https://github.com/docker/compose",
+              "raw_logo": "https://www.unixmen.com/wp-content/uploads/2017/06/docker-compose-logo.png",
+              "external": {
+                "twitter": "https://twitter.com/Docker",
+                "crunchbase": "https://www.crunchbase.com/organization/docker"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Habitat",
+              "slug_name": "habitat",
+              "company": "Chef",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.habitat.sh/",
+              "repo_url": "https://github.com/habitat-sh",
+              "raw_logo": "http://container-solutions.com/content/uploads/2016/08/habitat.png",
+              "external": {
+                "twitter": "https://twitter.com/hashtag/habitatsh",
+                "crunchbase": "https://www.crunchbase.com/product/habitat-2"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Brooklyn",
+              "slug_name": "brooklyn",
+              "company": "Apache",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://brooklyn.apache.org/",
+              "repo_url": "https://github.com/apache/brooklyn",
+              "raw_logo": "https://pbs.twimg.com/profile_images/536922892156428288/mKCs5vgS_400x400.png",
+              "external": {
+                "twitter": "https://twitter.com/apachebrooklyn",
+                "crunchbase": "https://www.crunchbase.com/organization/apache"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "Bitnami",
+              "slug_name": "bitnami",
+              "company": "Bitnami",
+              "cncf": false,
+              "oss": false,
+              "homepage_url": "https://bitnami.com/",
+              "raw_logo": "https://bitnami.com/downloads/logos/bitnami.png",
+              "external": {
+                "twitter": "https://twitter.com/bitnami",
+                "crunchbase": "https://www.crunchbase.com/organization/bitnami"
+              },
+              "calculated": null
+            },
+            {
+              "item": null,
+              "name": "OpenAPI",
+              "slug_name": "openapi",
+              "company": "OpenAPI",
+              "cncf": false,
+              "oss": true,
+              "homepage_url": "https://www.openapis.org/",
+              "repo_url": "https://github.com/OAI",
+              "raw_logo": "https://www.openapis.org/wp-content/uploads/sites/3/2016/10/OpenAPI_Pantone.png",
+              "external": {
+                "twitter": "https://twitter.com/hashtag/openapi",
+                "crunchbase": "https://www.crunchbase.com/organization/the-open-api-initiative"
+              },
+              "calculated": null
             }
           ]
         }

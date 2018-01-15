@@ -7,16 +7,19 @@
   flex-direction: row;
   flex: 1; }
   .layout.darktheme {
-    background: #003b76;
+    background: #2673ba;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #003b76 0%, #00d1ff 100%);
+    background: -moz-linear-gradient(-45deg, #2673ba 0%, #0e1328 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #003b76 0%, #00d1ff 100%);
+    background: -webkit-linear-gradient(-45deg, #2673ba 0%, #0e1328 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #003b76 0%, #00d1ff 100%);
+    background: linear-gradient(135deg, #2673ba 0%, #0e1328 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b76', endColorstr='#00d1ff',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2673ba', endColorstr='#0e1328',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
+    .layout.darktheme .filter_toggle {
+      color: grey;
+      background-color: #172d50; }
 
 .layout_wrapper {
   display: flex;
@@ -57,8 +60,7 @@
     display: inline-block;
     margin: -100px 10px -10px 0;
     min-width: 250px;
-    max-width: 250px;
-    background-image: url("../../components/assets/images/placeholder/exports/se.png"); }
+    max-width: 250px; }
     .content_wrapper .graph_wrapper.cat_0 {
       background-image: url("../../components/assets/images/placeholder/exports/se_0.png") !important; }
     .content_wrapper .graph_wrapper.cat_1 {

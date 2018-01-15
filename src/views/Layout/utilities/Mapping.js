@@ -14,7 +14,7 @@ const Mapping = (cat) => {
     case 'provisioning':
       value = '3';
       break;
-    case 'public_cloud':
+    case 'cloud':
       value = '4';
       break;
     case 'platform':
@@ -37,7 +37,7 @@ const Mapping = (cat) => {
       value = 'provisioning';
       break;
     case 4:
-      value = 'public_cloud';
+      value = 'cloud';
       break;
     case 5:
       value = 'platform';

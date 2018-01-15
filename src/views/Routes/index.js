@@ -24,11 +24,11 @@ const Routes = () => (
       component={Layout}
     />
     <Route
-      path="/public_cloud/:id"
+      path="/cloud/:id"
       component={Layout}
     />
     <Route
-      path="/public_cloud"
+      path="/cloud"
       component={Layout}
     />
     <Route
