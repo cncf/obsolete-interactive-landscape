@@ -44,6 +44,9 @@ class ItemModal extends React.Component {
   
   render() {
     const data = this.props.data;
+    const c = this.props.calculated;
+    console.log('This here');
+    console.log(c);
     
     return (
     
@@ -53,15 +56,14 @@ class ItemModal extends React.Component {
           <span>{this.props.cat}</span> | {this.props.subcat}
         </Modal.Header>
         <Modal.Content image>
-          <div className="item-image x2" style={{ backgroundImage: `url(${this.props.logo})` }} />
+          <div className="item-image x2" style={{ backgroundImage: `url(${c.resized_logo})` }} />
       
           <div className="details">
             <h2>{ data.name }</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.
+            <p>
+              {c.cb_description} {c.cb_description_long}
+              
+              
             </p>
             <hr />
             <p>

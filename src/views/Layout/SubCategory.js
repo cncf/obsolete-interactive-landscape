@@ -25,12 +25,11 @@ const SubCategoryView = ({ cat, match, data, state }) => {
   const renderCalculated = (c) => {
     let element;
     if (c.calculated) {
-      if (c.calculated.resized_logo) {
-        element = c.calculated.resized_logo;
-      }
+      element = c.calculated;
     }
     return element;
   };
+  
   
   return (
     <div className="module">
@@ -55,15 +54,14 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 subcat={subCategory.name}
                 index={index}
                 key={i.slug_name}
-                className="9714"
-                logo={renderCalculated(i)}
+                calculated={renderCalculated(i)}
               >
                 <div
                   className={ClassNames('item c-tooltip', { item_oss: i.oss && !i.cncf }, { item_commercial: !i.oss }, { item_cncf: i.cncf })}
                 >
                   <div
                     className="company"
-                    style={{ backgroundImage: `url(${renderCalculated(i)})` }}
+                    style={{ backgroundImage: `url(${renderCalculated(i).resized_logo})` }}
                     title="Bosch"
                   />
                   
