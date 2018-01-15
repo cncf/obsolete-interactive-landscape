@@ -61,7 +61,7 @@ class ItemModal extends React.Component {
           <div className="details">
             <h2>{ data.name }</h2>
             <p>
-              {c.cb_description} {c.cb_description_long}
+              { c.cb_description ? c.cb_description : 'no description available' } {c.cb_description_long}
               
               
             </p>
