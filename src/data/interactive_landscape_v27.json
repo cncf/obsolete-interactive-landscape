@@ -1202,16 +1202,16 @@
               "oss": true,
               "homepage_url": "https://www.nomadproject.io/",
               "repo_url": "https://github.com/hashicorp/nomad",
+              "description": "Nomad is a single binary that schedules applications and services on Linux, Windows, and Mac. It is an open source scheduler that uses a declarative job file for scheduling virtualized, containerized, and standalone applications.",
               "external": {
                 "twitter": "https://twitter.com/HashiCorp",
                 "crunchbase": "https://www.crunchbase.com/organization/hashicorp"
               },
               "raw_logo": "https://hyzxph.media.zestyio.com/blog-nomad-list.svg",
               "calculated": {
-                "resized_logo": null,
-                "cb_description": null,
-                "cb_description_long": null,
-                "cb_location": "",
+                "resized_logo": "http://res.cloudinary.com/cncf/image/upload/v1516064416/blog-nomad-list_mwjav3.svg",
+                "cb_description": "HashiCorp enables organizations to provision, secure, and run any infrastructure for any application.",
+                "cb_location": "San Francisco",
                 "cb_country": "United States",
                 "cb_employees": "",
                 "cb_founded": "",

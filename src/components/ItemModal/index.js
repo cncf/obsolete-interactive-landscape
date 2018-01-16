@@ -45,8 +45,8 @@ class ItemModal extends React.Component {
   render() {
     const data = this.props.data;
     const c = this.props.calculated;
-    console.log('This here');
-    console.log(c);
+    
+    const companyDescription = <div><h4>About {data.company}</h4> <p>{c.cb_description} {c.cb_description_long}</p></div> ;
     
     return (
     
@@ -61,7 +61,9 @@ class ItemModal extends React.Component {
           <div className="details">
             <h2>{ data.name }</h2>
             <p>
-              { c.cb_description ? c.cb_description : 'no description available' } {c.cb_description_long}
+              { data.description ? data.description : 'no description available' }
+              { c.cb_description ? companyDescription : ''}
+              
               
               
             </p>
