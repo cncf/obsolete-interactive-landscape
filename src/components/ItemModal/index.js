@@ -39,6 +39,16 @@ class ItemModal extends React.Component {
     return element;
   }
   
+  renderLogo() {
+    let element;
+    if (this.props.data.calculated) {
+      if (this.props.data.calculated.resized_logo) {
+        element = this.props.data.calculated.resized_logo;
+      }
+    }
+    return element;
+  }
+  
   show = dimmer => () => this.setState({ dimmer, open: true });
   close = () => this.setState({ open: false });
   
@@ -46,13 +56,13 @@ class ItemModal extends React.Component {
     const data = this.props.data;
     const c = this.props.calculated;
     
-    const companyDescription = <div><h4>About {data.company}</h4> <p>{c.cb_description} {c.cb_description_long}</p></div> ;
+    const companyDescription = <div className="about"><h4>About {data.company}</h4> <p>{c.cb_description} {c.cb_description_long}</p></div> ;
     
     return (
     
       <Modal className="item-modal" trigger={<span>{ this.props.children }</span>} closeIcon>
         <Modal.Header>
-          <Iconator icon="public_cloud" size="s" />
+          <Iconator icon={this.props.slug} size="s" />
           <span>{this.props.cat}</span> | {this.props.subcat}
         </Modal.Header>
         <Modal.Content image>
@@ -60,13 +70,12 @@ class ItemModal extends React.Component {
       
           <div className="details">
             <h2>{ data.name }</h2>
-            <p>
+            
+            <div className="details_content">
               { data.description ? data.description : 'no description available' }
               { c.cb_description ? companyDescription : ''}
-              
-              
-              
-            </p>
+            </div>
+            
             <hr />
             <p>
               {data.cncf ? 'CNCF |' : ''}

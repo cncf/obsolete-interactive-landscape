@@ -1152,6 +1152,7 @@
               "cncf": true,
               "oss": true,
               "homepage_url": "https://kubernetes.io/",
+              "description": "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.",
               "repo_url": "https://github.com/kubernetes/kubernetes",
               "raw_logo": "https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/name_logo_color.png",
               "external": {
@@ -1160,8 +1161,7 @@
               },
               "calculated": {
                 "resized_logo": "http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg",
-                "cb_description": "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.",
-                "cb_description_long": "It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.",
+                "cb_description": "The CNCF provides resources to the projects, but each project continues to operate independently under its pre-existing governance structure and with its existing maintainers.",
                 "cb_location": "San Francisco",
                 "cb_country": "United States",
                 "cb_employees": "",

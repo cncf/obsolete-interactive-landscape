@@ -55,6 +55,9 @@
       color: black;
     }
   }
+  .details_content{
+    margin-left:10px;
+  }
   .item-image {
     flex:1;
     min-width:200px;
@@ -67,6 +70,15 @@
   }
   .actions{
     background-color: rgba(255,255,255,0) !important;
+  }
+  .about{
+    font-size:0.6em;
+    color:#98a6b1;
+    width: 80%;
+    h4{
+      font-size:1.2em;
+      margin:15px 0 0 0;
+    }
   }
 
 }

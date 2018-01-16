@@ -26,6 +26,16 @@ const SubCategoryView = ({ cat, match, data, state }) => {
     let element;
     if (c.calculated) {
       element = c.calculated;
+    } else {
+      element = [];
+    }
+    return element;
+  };
+  
+  const renderLogo = (c) => {
+    let element;
+    if (c.calculated) {
+      element = c.calculated.resized_logo;
     }
     return element;
   };
@@ -51,6 +61,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
               <ItemModal
                 data={i}
                 cat={category.name}
+                slug={category.slug_name}
                 subcat={subCategory.name}
                 index={index}
                 key={i.slug_name}
@@ -61,7 +72,7 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 >
                   <div
                     className="company"
-                    style={{ backgroundImage: `url(${renderCalculated(i).resized_logo})` }}
+                    style={{ backgroundImage: `url(${renderLogo(i)})` }}
                     title="Bosch"
                   />
                   

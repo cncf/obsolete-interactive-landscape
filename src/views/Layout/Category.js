@@ -36,7 +36,7 @@ const CategoryView = ({ cat, data }) => {
             <div className=" box-items">
               {subCategories.map((i, index) => (
                 <Link
-                  key={i.id}
+                  key={index}
                   to={{
                     pathname: `/${category.slug_name}/${index}`,
                     state: { modal: true },
