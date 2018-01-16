@@ -908,11 +908,11 @@ landscape:
         - item:
           name: "Kubernetes"
           slug_name: kubernetes
+          description: 'Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.'
           company: "CNCF"
           cncf: true
           oss: true
           homepage_url: https://kubernetes.io/
-          description: 'Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery.'
           repo_url: https://github.com/kubernetes/kubernetes
           raw_logo: https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/name_logo_color.png
           external:
@@ -928,6 +928,7 @@ landscape:
         - item:
           name: "Amazon ECS"
           slug_name: amazon_ecs
+          description: 'Amazon ECS is a highly scalable, high performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.'
           company: "AWS"
           cncf: false
           oss: false
@@ -939,8 +940,7 @@ landscape:
           raw_logo: https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png
           calculated:
             resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516054710/integrations_awsecs_4x-500x500_ey973u.png
-            cb_description: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.'
-            cb_description_long: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services. Its products and solutions include cloud computing, compute, networking, storage and content delivery, databases, analytics, application services, deployment and management, mobile services, applications, AWS marketplace software, startups, enterprises, partners, government and education, websites and web applications, big data and HPC, gaming, and digital media as well as backup, storage, and archive.'
+            cb_description: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services. Its products and solutions include cloud computing, compute, networking, storage and content delivery, databases, analytics, application services,  deployment and management.'
             cb_location: 'Seattle'
             cb_country: United States
             cb_employees: '10001+'
@@ -949,12 +949,13 @@ landscape:
         - item:
           name: "Nomad"
           slug_name: nomad
+          description: 'Nomad is a single binary that schedules applications and services on Linux, Windows, and Mac. It is an open source scheduler that uses a declarative job file for scheduling virtualized, containerized, and standalone applications.'
           company: "Hashicorp"
           cncf: false
           oss: true
           homepage_url: https://www.nomadproject.io/
+          description:
           repo_url: https://github.com/hashicorp/nomad
-          description: 'Nomad is a single binary that schedules applications and services on Linux, Windows, and Mac. It is an open source scheduler that uses a declarative job file for scheduling virtualized, containerized, and standalone applications.'
           external:
             twitter: https://twitter.com/HashiCorp
             crunchbase: https://www.crunchbase.com/organization/hashicorp
@@ -970,6 +971,7 @@ landscape:
         - item:
           name: "Mesos"
           slug_name: mesos
+          description: 'Mesos is built using the same principles as the Linux kernel, only at a different level of abstraction. The Mesos kernel runs on every machine and provides applications with API’s for resource management and scheduling across entire datacenter and cloud environments.'
           company: "Apache"
           cncf: false
           oss: true
@@ -980,8 +982,8 @@ landscape:
             twitter: https://twitter.com/ApacheMesos
             crunchbase: https://www.crunchbase.com/organization/apache-mesos
           calculated:
-            resized_logo:
-            cb_description:
+            resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516086752/mesos-logo_ht8awo.png
+            cb_description: 'The Apache Software Foundation provides support for the Apache community of open-source software projects. The Apache projects are characterized by a collaborative, consensus based development process, an open and pragmatic software license, and a desire to create high quality software that leads the way in its field.'
             cb_description_long:
             cb_location: ''
             cb_country: United States
@@ -991,6 +993,7 @@ landscape:
         - item:
           name: "Microsoft Azure Service Fabric"
           slug_name: microsoft_azure_service_fabric
+          description: 'Focus on building applications and business logic, and let Azure solve the hard distributed systems problems such as reliability, scalability, management, and latency. Service Fabric is the foundational technology powering core Azure infrastructure as well as other Microsoft services'
           company: "Microsoft"
           cncf: false
           oss: false
@@ -1002,8 +1005,8 @@ landscape:
             twitter: https://twitter.com/azure
             crunchbase: https://www.crunchbase.com/organization/microsoft-azure-certified
           calculated:
-            resized_logo:
-            cb_description:
+            resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516087048/service-fabric_tsoslb.png
+            cb_description: 'Microsoft, a software corporation that develops, manufactures, licenses, supports, and sells a range of software products and services.'
             cb_description_long:
             cb_location: ''
             cb_country: United States
@@ -1013,6 +1016,7 @@ landscape:
         - item:
           name: "Docker Swarm"
           slug_name: docker_swarm
+          description: 'Cluster management integrated with Docker Engine: Use the Docker Engine CLI to create a swarm of Docker Engines where you can deploy application services. You don’t need additional orchestration software to create or manage a swarm.'
           company: "Docker"
           cncf: false
           oss: true
@@ -1023,8 +1027,8 @@ landscape:
             twitter: https://twitter.com/Docker
             crunchbase: https://www.crunchbase.com/organization/docker
           calculated:
-            resized_logo:
-            cb_description:
+            resized_logo: https://res.cloudinary.com/cncf/image/upload/v1516087405/logo_ikhiyg.png
+            cb_description: 'Docker is a platform for distributed applications that allows developers and sysadmins to build, ship, and run distributed applications.'
             cb_description_long:
             cb_location: ''
             cb_country: United States
