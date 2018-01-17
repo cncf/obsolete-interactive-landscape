@@ -1737,9 +1737,10 @@ landscape:
             crunchbase: https://www.crunchbase.com/product/kubernetes
           calculated:
             resized_logo: http://res.cloudinary.com/cncf/image/upload/v1510630004/kubernetes_phjihr.svg
+            gh_stars: '31,364'
             cb_organization:
             cb_summary: 'The CNCF provides resources to the projects, but each project continues to operate independently under its pre-existing governance structure and with its existing maintainers.'
-            cb_city: 'San Francisco'
+            cb_city: 'San Francisco, CA'
             cb_country: 'United States'
             cb_homepage:
             cb_link:
@@ -1748,7 +1749,6 @@ landscape:
         - item:
           name: "Amazon ECS"
           slug_name: amazon_ecs
-          description:
           description: 'Amazon ECS is a highly scalable, high performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.'
           company: "AWS"
           cncf: false
@@ -1757,7 +1757,6 @@ landscape:
           external:
             twitter: https://twitter.com/awscloud
             crunchbase: https://www.crunchbase.com/organization/amazon-web-services
-          stock_ticker: 'AMZN'
           raw_logo: https://signalfx-82c9.kxcdn.com/wp-content/uploads/2016/03/integrations_awsecs@4x-500x500.png
           calculated:
             resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516054710/integrations_awsecs_4x-500x500_ey973u.png
@@ -1769,16 +1768,15 @@ landscape:
             cb_link:
             cb_employees: '10001+'
             cb_raised:
+            cb_stock: AMZN
         - item:
           name: "Nomad"
           slug_name: nomad
-          description:
           description: 'Nomad is a single binary that schedules applications and services on Linux, Windows, and Mac. It is an open source scheduler that uses a declarative job file for scheduling virtualized, containerized, and standalone applications.'
           company: "Hashicorp"
           cncf: false
           oss: true
           homepage_url: https://www.nomadproject.io/
-          description:
           repo_url: https://github.com/hashicorp/nomad
           external:
             twitter: https://twitter.com/HashiCorp

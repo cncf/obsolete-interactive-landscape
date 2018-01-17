@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button, Icon } from 'semantic-ui-react';
+import { Modal, Button, Icon, Label } from 'semantic-ui-react';
 import Iconator from './../Iconator';
 import './Modal.css';
 
@@ -18,22 +18,22 @@ class ItemModal extends React.Component {
     let element;
     if (this.props.data.external) {
       if (this.props.data.external.crunchbase) {
-        element = <a href={this.props.data.external.crunchbase} ><i className="bookmark outline icon" /></a>;
+        element = <a href={this.props.data.external.crunchbase} ><i className="database outline icon" /></a>;
       }
     }
     return element;
   }
-  renderStars(data) {
+  renderStars(c) {
     let element;
-    if (this.props.data.calculated) {
-      if (this.props.data.calculated.gh_stars) {
-        element = (<Button
-          color="red"
-          content="GH stars"
-          icon="github"
-          className="mini"
-          label={{ basic: true, color: 'red ', pointing: 'left', content: data.calculated.gh_stars }}
-        />);
+    if (c) {
+      if (c.gh_stars) {
+        element = (
+        <Label basic color="grey" horizontal>
+          <Icon name='github' />
+          GH stars
+          <Label.Detail>{c.gh_stars}</Label.Detail>
+        </Label>
+        )
       }
     }
     return element;
@@ -61,9 +61,10 @@ class ItemModal extends React.Component {
           <div className="list">
             <ul>
               {c.cb_city ? <li>Location: {c.cb_city} </li> : ''}
-              {c.cb_employees ? <li>Location: {c.cb_employees} </li> : ''}
-              {c.cb_raised ? <li>Location: {c.cb_raised} </li> : ''}
-              {c.cb_stock ? <li>Location: {c.cb_stock} </li> : ''}
+              {c.cb_country ? <li>Country: {c.cb_country} </li> : ''}
+              {c.cb_employees ? <li>Employees: {c.cb_employees} </li> : ''}
+              {c.cb_raised ? <li>Raised: {c.cb_raised} </li> : ''}
+              {c.cb_stock ? <li>Stock: {c.cb_stock} </li> : ''}
               
             </ul>
           </div>
@@ -78,7 +79,7 @@ class ItemModal extends React.Component {
   render() {
     const data = this.props.data;
     const c = this.props.calculated;
-    console.log(data);
+    console.log(c);
 
     
     return (
@@ -100,17 +101,19 @@ class ItemModal extends React.Component {
             </div>
             
             <hr />
-            <p>
-              {data.cncf ? 'CNCF |' : ''}
-              {data.oss ? 'OSS |' : ''}
+            <div>
+              {data.cncf ? <Label basic color='blue' horizontal>CNCF</Label> : ''}
+              {data.oss ? <Label basic color='green' horizontal>OSS</Label> : ''}
+  
+              { this.renderStars(c)}
+  
               {this.renderTwitter()}
               {this.renderCrunch()}
-            </p>
+            </div>
           </div>
     
         </Modal.Content>
         <Modal.Actions>
-          { this.renderStars(data)}
       
           {data.homepage_url ?
             <Button primary size="mini" as="a" target="_blank" href={data.homepage_url}>
