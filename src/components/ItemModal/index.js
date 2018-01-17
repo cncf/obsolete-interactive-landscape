@@ -61,6 +61,9 @@ class ItemModal extends React.Component {
           <div className="list">
             <ul>
               {c.cb_city ? <li>Location: {c.cb_city} </li> : ''}
+              {c.cb_employees ? <li>Location: {c.cb_employees} </li> : ''}
+              {c.cb_raised ? <li>Location: {c.cb_raised} </li> : ''}
+              {c.cb_stock ? <li>Location: {c.cb_stock} </li> : ''}
               
             </ul>
           </div>
