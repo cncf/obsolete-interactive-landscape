@@ -28,6 +28,7 @@ class Layout extends Component {
         collapsed:true,
       },
       menu_visible:false,
+      darktheme:false,
       showFilters:false,
       filter_cncf:true,
       filter_oss:true,
@@ -127,17 +128,18 @@ class Layout extends Component {
   getClassNames() {
     const menu = this.state.menu.collapsed;
     const focus = this.state.focus;
+    const darkActive = this.state.darktheme;
   
     if (focus) { // If focus = TRUE
       if (menu) { // If collapsed = TRUE
-        return ClassNames('layout infog01 outfocus', { collapse: true }, { open: true });
+        return ClassNames('layout infog01 outfocus', { collapse: true }, { open: true }, { darktheme: darkActive});
       }
-      return ClassNames('layout infog01 outfocus', { open_hidden: true });
+      return ClassNames('layout infog01 outfocus', { open_hidden: true }, { darktheme: darkActive});
     }
     if (menu) { // If collapsed = TRUE
-      return ClassNames('layout infog01', { collapse: true }, { open: true });
+      return ClassNames('layout infog01', { collapse: true }, { open: true }, { darktheme: darkActive});
     }
-    return ClassNames('layout infog01', { open_hidden: true });
+    return ClassNames('layout infog01', { open_hidden: true }, { darktheme: darkActive});
     
   }
   
@@ -387,6 +389,7 @@ class Layout extends Component {
     const cncf = this.state.filter_cncf;
     const oss = this.state.filter_oss;
     const com = this.state.filter_com;
+    const darktheme = this.state.darktheme;
     const filters = this.state.showFilters;
    
     return (
@@ -421,6 +424,7 @@ class Layout extends Component {
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
                   <div><Checkbox name="oss" toggle defaultChecked label='OSS' onClick={() => this.setState({filter_oss : !oss })} /></div>
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
+                  <div><Checkbox name="theme" toggle label='Theme' onClick={() => this.setState({darktheme : !darktheme })} /></div>
                 </Filter>
               </div>
             </div>

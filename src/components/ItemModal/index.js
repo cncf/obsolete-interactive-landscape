@@ -79,8 +79,6 @@ class ItemModal extends React.Component {
   render() {
     const data = this.props.data;
     const c = this.props.calculated;
-    console.log(c);
-
     
     return (
     
