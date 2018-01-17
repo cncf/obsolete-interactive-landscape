@@ -59,7 +59,14 @@
   .item-modal .about {
     font-size: 0.6em;
     color: #98a6b1;
-    width: 80%; }
+    display: flex; }
+    .item-modal .about .summary {
+      flex: 3; }
+    .item-modal .about .list {
+      flex: 1;
+      padding-top: 20px; }
+      .item-modal .about .list ul {
+        list-style: none; }
     .item-modal .about h4 {
       font-size: 1.2em;
       margin: 15px 0 0 0; }

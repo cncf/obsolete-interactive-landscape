@@ -74,7 +74,17 @@
   .about{
     font-size:0.6em;
     color:#98a6b1;
-    width: 80%;
+    display:flex;
+    .summary{
+      flex:3;
+    }
+    .list{
+      flex:1;
+      padding-top:20px;
+      ul{
+        list-style: none;
+      }
+    }
     h4{
       font-size:1.2em;
       margin:15px 0 0 0;

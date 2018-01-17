@@ -49,14 +49,34 @@ class ItemModal extends React.Component {
     return element;
   }
   
+  renderSummary(c,data){
+    if(c.cb_summary){
+      return(
+        <div className="about">
+          
+          <div className="summary">
+            <h4>About {data.company}</h4>
+            <p>{c.cb_summary} </p>
+          </div>
+          <div className="list">
+            <ul>
+              {c.cb_city ? <li>Location: {c.cb_city} </li> : ''}
+              
+            </ul>
+          </div>
+        </div>
+      );
+    }
+  }
+  
   show = dimmer => () => this.setState({ dimmer, open: true });
   close = () => this.setState({ open: false });
   
   render() {
     const data = this.props.data;
     const c = this.props.calculated;
-    
-    const companyDescription = <div className="about"><h4>About {data.company}</h4> <p>{c.cb_description} {c.cb_description_long}</p></div> ;
+    console.log(data);
+
     
     return (
     
@@ -73,7 +93,7 @@ class ItemModal extends React.Component {
             
             <div className="details_content">
               { data.description ? data.description : 'no description available' }
-              { c.cb_description ? companyDescription : ''}
+              {this.renderSummary(c,data)}
             </div>
             
             <hr />
