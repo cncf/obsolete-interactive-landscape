@@ -101,14 +101,17 @@ class ItemModal extends React.Component {
             </div>
             
             <hr />
-            <div>
+            <div className="link_bar">
+              <div>
               {data.cncf ? <Label basic color='blue' horizontal>CNCF</Label> : ''}
               {data.oss ? <Label basic color='green' horizontal>OSS</Label> : ''}
-  
               { this.renderStars(c)}
+              </div>
   
+              <div>
               {this.renderTwitter()}
               {this.renderCrunch()}
+              </div>
             </div>
           </div>
     
@@ -117,7 +120,7 @@ class ItemModal extends React.Component {
       
           {data.homepage_url ?
             <Button primary size="mini" as="a" target="_blank" href={data.homepage_url}>
-            Website <Icon name="right chevron" />
+              { data.name } Website <Icon name="right chevron" />
             </Button>
             : ''}
     

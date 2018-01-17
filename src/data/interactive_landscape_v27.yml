@@ -1749,7 +1749,7 @@ landscape:
         - item:
           name: "Amazon ECS"
           slug_name: amazon_ecs
-          description: 'Amazon ECS is a highly scalable, high performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.'
+          description: 'Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS. Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.'
           company: "AWS"
           cncf: false
           oss: false
@@ -1761,7 +1761,7 @@ landscape:
           calculated:
             resized_logo: http://res.cloudinary.com/cncf/image/upload/v1516054710/integrations_awsecs_4x-500x500_ey973u.png
             cb_organization:
-            cb_summary: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services. Its products and solutions include cloud computing, compute, networking, storage and content delivery, databases, analytics, application services,  deployment and management.'
+            cb_summary: 'Amazon Web Services provides information technology infrastructure services to businesses in the form of web services. Its products and solutions include cloud computing, compute, networking, storage and content delivery'
             cb_city: 'Seattle'
             cb_country: United States
             cb_homepage:

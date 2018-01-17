@@ -39,21 +39,23 @@
   .item-modal .details {
     display: flex !important;
     flex: 3;
-    flex-direction: column !important;
-    color: black !important; }
-    .item-modal .details i {
-      color: black; }
+    flex-direction: column !important; }
   .item-modal .details_content {
     margin-left: 10px; }
   .item-modal .item-image {
     flex: 1;
     min-width: 200px;
+    min-height: 200px;
     margin-right: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
     background-repeat: no-repeat;
     background-size: 85% auto;
     background-position: center; }
+  .item-modal .link_bar {
+    display: flex;
+    justify-content: space-between;
+    color: red; }
   .item-modal .actions {
     background-color: rgba(255, 255, 255, 0) !important; }
   .item-modal .about {
