@@ -498,7 +498,8 @@ p {
     box-shadow: 2px 2px 5px rgba(71, 71, 71, 0.42);
     background-repeat: no-repeat;
     background-size: 90% auto;
-    background-position: center; }
+    background-position: center;
+    background-color: white; }
   .infog01 .stillbox .company-name {
     font-size: 0.7em;
     color: #454545;
@@ -1092,3 +1093,6 @@ p {
 
 .layout.darktheme .header_container .title a {
   color: #b1c5e3; }
+
+.layout.darktheme .company-name {
+  color: white; }

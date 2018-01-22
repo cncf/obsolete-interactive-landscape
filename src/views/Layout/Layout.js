@@ -424,6 +424,7 @@ class Layout extends Component {
                   <div><Checkbox name="cncf" toggle defaultChecked label='CNCF' onClick={() => this.setState({filter_cncf : !cncf })} /></div>
                   <div><Checkbox name="oss" toggle defaultChecked label='OSS' onClick={() => this.setState({filter_oss : !oss })} /></div>
                   <div><Checkbox name="com" toggle defaultChecked label='Commercial' onClick={() => this.setState({filter_com : !com })} /></div>
+                  <hr/>
                   <div><Checkbox name="theme" toggle label='Theme' onClick={() => this.setState({darktheme : !darktheme })} /></div>
                 </Filter>
               </div>

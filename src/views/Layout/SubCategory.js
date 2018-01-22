@@ -72,7 +72,8 @@ const SubCategoryView = ({ cat, match, data, state }) => {
                 >
                   <div
                     className="company"
-                    style={{ backgroundImage: `url(${renderLogo(i)})` }}
+                    // style={{ backgroundImage: `url(${renderLogo(i)})` }}
+                    style={{ backgroundImage: `url(${i.raw_logo})` }}
                     title=""
                   />
                   
